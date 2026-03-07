@@ -1,0 +1,1601 @@
+[
+  {
+    "pokemonId": 1,
+    "name": "Unnumbered Promos",
+    "imageName": "1_Bulbasaur_jpn_unp_78a",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Yuuki Tanaka"
+  },
+  {
+    "pokemonId": 1,
+    "name": "Unnumbered Promos",
+    "imageName": "1_Bulbasaur_jpn_unp_57",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Ken Sugimori"
+  },
+  {
+    "pokemonId": 1,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "1_Bulbasaur_jpn_vses1_1",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Sumiyoshi Kizuki"
+  },
+  {
+    "pokemonId": 1,
+    "name": "Intro Pack: Bulbasaur Deck",
+    "imageName": "1_Bulbasaur_jpn_ipb_35",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 1,
+    "name": "McDonald's Pokémon-e Minimum Pack",
+    "imageName": "1_Bulbasaur_jpn_mcdemp_1",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Ken Sugimori"
+  },
+  {
+    "pokemonId": 1,
+    "name": "DPt-P Promos",
+    "imageName": "1_Bulbasaur_jpn_plp_30",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2008,
+    "artist": "Yuka Morii"
+  },
+  {
+    "pokemonId": 1,
+    "name": "Black & White Promos",
+    "imageName": "1_Bulbasaur_jpn_bwp_124",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2010,
+    "artist": "Masakazu Fukuda"
+  },
+  {
+    "pokemonId": 1,
+    "name": "Gallant Galaxy: Brave",
+    "imageName": "1_Bulbasaur_scn_cs5b_1",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 2,
+    "name": "Intro Pack: Bulbasaur Deck",
+    "imageName": "2_Ivysaur_jpn_ipb_32",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 2,
+    "name": "T Promos",
+    "imageName": "2_Ivysaur_jpn_tpr_10",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Kyoko Umemoto"
+  },
+  {
+    "pokemonId": 3,
+    "name": "Primordial Arts: Overgrow",
+    "imageName": "3_Venusaur_scn_cs3a_130",
+    "rarity": "Ultra Rare",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2023,
+    "artist": ""
+  },
+  {
+    "pokemonId": 3,
+    "name": "Gallant Galaxy: Brave",
+    "imageName": "3_Venusaur_scn_cs5b_4",
+    "rarity": "Radiant Rare",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 3,
+    "name": "Gallant Galaxy: Brave",
+    "imageName": "3_Venusaur_scn_cs5b_3",
+    "rarity": "Rare",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 3,
+    "name": "Primordial Arts: Overgrow",
+    "imageName": "3_Venusaur_scn_cs3a_161",
+    "rarity": "Rare Rainbow",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2023,
+    "artist": ""
+  },
+  {
+    "pokemonId": 4,
+    "name": "Unnumbered Promos",
+    "imageName": "4_Charmander_jpn_unp_78g",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Tsukasa Hosono"
+  },
+  {
+    "pokemonId": 4,
+    "name": "McDonald's Pokémon-e Minimum Pack",
+    "imageName": "4_Charmander_jpn_mcdemp_4",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Hajime Kusajima"
+  },
+  {
+    "pokemonId": 4,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "4_Charmander_jpn_vses1_13",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 4,
+    "name": "Diamond & Pearl Promos",
+    "imageName": "4_Charmander_jpn_dpp_124",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2006,
+    "artist": "Yuka Morii"
+  },
+  {
+    "pokemonId": 4,
+    "name": "Black & White Promos",
+    "imageName": "4_Charmander_jpn_bwp_165",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2010,
+    "artist": "Akira Komayama"
+  },
+  {
+    "pokemonId": 4,
+    "name": "My First Battle: Charmander Deck",
+    "imageName": "4_Charmander_mfbc_1",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2022,
+    "artist": "Kurata So"
+  },
+  {
+    "pokemonId": 4,
+    "name": "Gallant Galaxy: Charm",
+    "imageName": "4_Charmander_scn_cs5a_1",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 4,
+    "name": "Battle Party Set: Fire Deck",
+    "imageName": "4_Charmander_scn_csmPb_2",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2023,
+    "artist": ""
+  },
+  {
+    "pokemonId": 4,
+    "name": "Start Deck 100 Battle Collection",
+    "imageName": "4_Charmander_jpn_mc_83",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2025,
+    "artist": "Orca"
+  },
+  {
+    "pokemonId": 5,
+    "name": "T Promos",
+    "imageName": "5_Charmeleon_jpn_tpr_11",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Kyoko Umemoto"
+  },
+  {
+    "pokemonId": 5,
+    "name": "My First Battle: Charmander Deck",
+    "imageName": "5_Charmeleon_mfbc_4",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2022,
+    "artist": "kirisAki"
+  },
+  {
+    "pokemonId": 5,
+    "name": "MEGA Promos",
+    "imageName": "5_Charmeleon_jpn_mp_45",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2025,
+    "artist": "Teeziro"
+  },
+  {
+    "pokemonId": 5,
+    "name": "Gallant Galaxy: Charm",
+    "imageName": "5_Charmeleon_scn_cs5a_2",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 5,
+    "name": "Start Deck 100 Battle Collection",
+    "imageName": "5_Charmeleon_jpn_mc_84",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2025,
+    "artist": "Julie Hang"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Scarlet & Violet Promos",
+    "imageName": "6_Charizard_svp_56",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2023,
+    "artist": "takuyoa"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Battle Academy 2020: Charizard Deck",
+    "imageName": "6_Charizard_ba20c_60",
+    "rarity": "Rare Holo GX",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2020,
+    "artist": "aky CG Works"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Sword & Shield Promos",
+    "imageName": "6_Charizard_swshp_SWSH075",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2020,
+    "artist": "The Pokémon Company Art Team"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Sun & Moon Promos",
+    "imageName": "6_Charizard_smp_SM158",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2016,
+    "artist": "Anesaki Dynamic"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Start Deck 100 Battle Collection",
+    "imageName": "6_Charizard_jpn_mc_85",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2025,
+    "artist": "aky CG Works"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Start Deck 100 Battle Collection",
+    "imageName": "6_Charizard_jpn_mc_766",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2025,
+    "artist": "aky CG Works"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Charizard VSTAR vs Rayquaza VMAX Special Deck Set",
+    "imageName": "6_Charizard_jpn_sO2_2",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2022,
+    "artist": "5ban Graphics"
+  },
+  {
+    "pokemonId": 6,
+    "name": "XY Promos",
+    "imageName": "6_Charizard_jpn_xyp_276",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2013,
+    "artist": "Hitoshi Ariga"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Pokémon VS",
+    "imageName": "6_Charizard_jpn_versus1_97",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Aya Kusube"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Neo Premium File 2",
+    "imageName": "6_Charizard_jpn_neop2_9",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2000,
+    "artist": "Ken Sugimori"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Unnumbered Promos",
+    "imageName": "6_Charizard_jpn_unp_33",
+    "rarity": "Rare Holo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Ken Sugimori"
+  },
+  {
+    "pokemonId": 7,
+    "name": "My First Battle: Squirtle Deck",
+    "imageName": "7_Squirtle_mfbs_1",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2022,
+    "artist": "ryoma uratsuka"
+  },
+  {
+    "pokemonId": 7,
+    "name": "DPt-P Promos",
+    "imageName": "7_Squirtle_jpn_plp_9",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2008,
+    "artist": "Yuka Morii"
+  },
+  {
+    "pokemonId": 7,
+    "name": "McDonald's Pokémon-e Minimum Pack",
+    "imageName": "7_Squirtle_jpn_mcdemp_7",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Asuka Iwashita"
+  },
+  {
+    "pokemonId": 7,
+    "name": "Unnumbered Promos",
+    "imageName": "7_Squirtle_jpn_unp_78h",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Miyuki Ogino"
+  },
+  {
+    "pokemonId": 7,
+    "name": "Intro Pack: Squirtle Deck",
+    "imageName": "7_Squirtle_jpn_ips_37",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Sumiyoshi Kizuki"
+  },
+  {
+    "pokemonId": 7,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "7_Squirtle_jpn_vses1_15",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 7,
+    "name": "Overshadowed Radiance",
+    "imageName": "7_Squirtle_scn_cs55_12",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 8,
+    "name": "My First Battle: Squirtle Deck",
+    "imageName": "8_Wartortle_mfbs_4",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2022,
+    "artist": "Hitoshi Ariga"
+  },
+  {
+    "pokemonId": 8,
+    "name": "Black & White Promos",
+    "imageName": "8_Wartortle_jpn_bwp_166",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2010,
+    "artist": "Naoki Saito"
+  },
+  {
+    "pokemonId": 8,
+    "name": "T Promos",
+    "imageName": "8_Wartortle_jpn_tpr_12",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Kyoko Umemoto"
+  },
+  {
+    "pokemonId": 8,
+    "name": "Intro Pack: Squirtle Deck",
+    "imageName": "8_Wartortle_jpn_ips_10",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Sumiyoshi Kizuki"
+  },
+  {
+    "pokemonId": 8,
+    "name": "Overshadowed Radiance",
+    "imageName": "8_Wartortle_scn_cs55_13",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 9,
+    "name": "Unnumbered Promos",
+    "imageName": "9_Blastoise_jpn_unp_34",
+    "rarity": "Rare Holo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Ken Sugimori"
+  },
+  {
+    "pokemonId": 9,
+    "name": "Movie Commemoration VS Pack: Sky-Splitting Deoxys",
+    "imageName": "9_Blastoise_jpn_mcvs2_10",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2004,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 9,
+    "name": "Pokémon VS",
+    "imageName": "9_Blastoise_jpn_versus1_46",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Shin-ichi Yoshida"
+  },
+  {
+    "pokemonId": 9,
+    "name": "Miracle Crystal",
+    "imageName": "9_Blastoise_jpn_pcg8_49",
+    "rarity": "Rare Holo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2006,
+    "artist": ""
+  },
+  {
+    "pokemonId": 9,
+    "name": "Overshadowed Radiance",
+    "imageName": "9_Blastoise_scn_cs55_14",
+    "rarity": "Rare",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 9,
+    "name": "Overshadowed Radiance",
+    "imageName": "9_Blastoise_scn_cs55_15",
+    "rarity": "Radiant Rare",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 9,
+    "name": "Primordial Arts: Torrent",
+    "imageName": "9_Blastoise_scn_cs3b_129",
+    "rarity": "Ultra Rare",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2023,
+    "artist": ""
+  },
+  {
+    "pokemonId": 9,
+    "name": "Primordial Arts: Torrent",
+    "imageName": "9_Blastoise_scn_cs3b_160",
+    "rarity": "Rare Rainbow",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2023,
+    "artist": ""
+  },
+  {
+    "pokemonId": 10,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "10_Caterpie_jpn_vses1_2",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Aya Kusube"
+  },
+  {
+    "pokemonId": 11,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "11_Metapod_jpn_vses1_3",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Aya Kusube"
+  },
+  {
+    "pokemonId": 12,
+    "name": "Pokémon VS",
+    "imageName": "12_Butterfree_jpn_versus1_8",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Kyoko Umemoto"
+  },
+  {
+    "pokemonId": 13,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "13_Weedle_jpn_vses1_4",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Tomokazu Komiya"
+  },
+  {
+    "pokemonId": 14,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "14_Kakuna_jpn_vses1_5",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 15,
+    "name": "Movie Commemoration VS Pack: Sea's Manaphy",
+    "imageName": "15_Beedrill_jpn_mcvs4_1",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2006,
+    "artist": "Midori Harada"
+  },
+  {
+    "pokemonId": 15,
+    "name": "Pokémon VS",
+    "imageName": "15_Beedrill_jpn_versus1_9",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Kyoko Umemoto"
+  },
+  {
+    "pokemonId": 15,
+    "name": "Pokémon VS",
+    "imageName": "15_Beedrill_jpn_versus1_61",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Tomokazu Komiya"
+  },
+  {
+    "pokemonId": 16,
+    "name": "Call of Legends",
+    "imageName": "16_Pidgey_col1_67",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2011,
+    "artist": "Suwama Chiaki"
+  },
+  {
+    "pokemonId": 16,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "16_Pidgey_jpn_vses1_24",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Aya Kusube"
+  },
+  {
+    "pokemonId": 17,
+    "name": "Call of Legends",
+    "imageName": "17_Pidgeotto_col1_48",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2011,
+    "artist": "Suwama Chiaki"
+  },
+  {
+    "pokemonId": 17,
+    "name": "Vending Machine Expansion Sheet 3: Green",
+    "imageName": "17_Pidgeotto_jpn_vses3_32",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Shin-ichi Yoshida"
+  },
+  {
+    "pokemonId": 17,
+    "name": "Theater Limited VS Pack",
+    "imageName": "17_Pidgeotto_jpn_tlvs_10",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Midori Harada"
+  },
+  {
+    "pokemonId": 18,
+    "name": "Pokémon VS",
+    "imageName": "18_Pidgeot_jpn_versus1_1",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 304,
+    "name": "Movie Commemoration VS Pack: Aura's Lucario",
+    "imageName": "304_Aron_jpn_mcvs3_6",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2005,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 18,
+    "name": "Call of Legends",
+    "imageName": "18_Pidgeot_col1_30",
+    "rarity": "Rare",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2011,
+    "artist": "Suwama Chiaki"
+  },
+  {
+    "pokemonId": 19,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "19_Rattata_jpn_vses1_25",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 20,
+    "name": "Gallant Galaxy: Charm",
+    "imageName": "20_Raticate_scn_cs5a_65",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": ""
+  },
+  {
+    "pokemonId": 21,
+    "name": "Vending Machine Expansion Sheet 2: Red",
+    "imageName": "21_Spearow_jpn_vses2_30",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 21,
+    "name": "Intro Pack: Squirtle Deck",
+    "imageName": "21_Spearow_jpn_ips_13",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Shin-ichi Yoshida"
+  },
+  {
+    "pokemonId": 22,
+    "name": "Unnumbered Promos",
+    "imageName": "22_Fearow_jpn_unp_182",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Sumiyoshi Kizuki"
+  },
+  {
+    "pokemonId": 22,
+    "name": "Vending Machine Expansion Sheet 2: Red",
+    "imageName": "22_Fearow_jpn_vses2_31",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Shin-ichi Yoshida"
+  },
+  {
+    "pokemonId": 22,
+    "name": "Movie Commemoration VS Pack: Sea's Manaphy",
+    "imageName": "22_Fearow_jpn_mcvs4_9",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2006,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 22,
+    "name": "Pokémon VS",
+    "imageName": "22_Fearow_jpn_versus1_2",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 24,
+    "name": "Vending Machine Expansion Sheet 3: Green",
+    "imageName": "24_Arbok_jpn_vses3_1",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Naoyo Kimura"
+  },
+  {
+    "pokemonId": 24,
+    "name": "Pokémon VS",
+    "imageName": "24_Arbok_jpn_versus1_62",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Tomokazu Komiya"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Sword & Shield Promos",
+    "imageName": "25_Pikachu_jpn_swshp_208",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2019,
+    "artist": "YU NAGABA"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Sword & Shield Promos",
+    "imageName": "25_Pikachu_jpn_swshp_227",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2019,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Sun & Moon Promos",
+    "imageName": "25_Pikachu_jpn_smp_13",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2016,
+    "artist": "Kouki Saitou"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Sun & Moon Promos",
+    "imageName": "25_Pikachu_jpn_smp_270",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2016,
+    "artist": "Ken Sugimori"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Sun & Moon Promos",
+    "imageName": "25_Pikachu_jpn_smp_288",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2016,
+    "artist": "You Iribi"
+  },
+  {
+    "pokemonId": 25,
+    "name": "XY Promos",
+    "imageName": "25_Pikachu_jpn_xyp_294",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2013,
+    "artist": "Kouki Saitou"
+  },
+  {
+    "pokemonId": 25,
+    "name": "XY Promos",
+    "imageName": "25_Pikachu_jpn_xyp_296",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2013,
+    "artist": "Kouki Saitou"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Gem Pack Vol. 1",
+    "imageName": "25_Pikachu_scn_cbb1_709",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2025,
+    "artist": "Yamazaki Rei"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Collection 151",
+    "imageName": "25_Pikachu_scn_151_170",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2025,
+    "artist": "Mugi Hamada"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Collection 151",
+    "imageName": "25_Pikachu_scn_151_171",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2025,
+    "artist": "Oswaldo KATO"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Collection 151",
+    "imageName": "25_Pikachu_scn_151_172",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2025,
+    "artist": "Mékayu"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Collection 151",
+    "imageName": "25_Pikachu_scn_151_173",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2025,
+    "artist": "Oswaldo KATO"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Unnumbered Promos",
+    "imageName": "25_Pikachu_jpn_unp_13",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Toshinao Aoki"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Vending Machine Expansion Sheet 3: Green",
+    "imageName": "25_Pikachu_jpn_vses3_42",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "OOYAMA"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Unnumbered Promos",
+    "imageName": "25_Pikachu_jpn_unp_44",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Unnumbered Promos",
+    "imageName": "25_Pikachu_jpn_unp_78e",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Mina Akuhara"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Scarlet & Violet Promos",
+    "imageName": "25_Pikachu_svp_85",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2023,
+    "artist": "Naoyo Kimura"
+  },
+  {
+    "pokemonId": 26,
+    "name": "Intro Pack: Bulbasaur Deck",
+    "imageName": "26_Raichu_jpn_ipb_3",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Yukiko Baba"
+  },
+  {
+    "pokemonId": 26,
+    "name": "Pokémon VS",
+    "imageName": "26_Raichu_jpn_versus1_53",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Etsuya Hattori"
+  },
+  {
+    "pokemonId": 26,
+    "name": "Pokémon VS",
+    "imageName": "26_Raichu_jpn_versus1_27",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Yukiko Baba"
+  },
+  {
+    "pokemonId": 26,
+    "name": "My First Battle: Pikachu Deck",
+    "imageName": "26_Raichu_mfbp_4",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2022,
+    "artist": "Kariya"
+  },
+  {
+    "pokemonId": 27,
+    "name": "Vending Machine Expansion Sheet 2: Red",
+    "imageName": "27_Sandshrew_jpn_vses2_20",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Miki Tanaka"
+  },
+  {
+    "pokemonId": 27,
+    "name": "McDonald's Pokémon-e Minimum Pack",
+    "imageName": "27_Sandshrew_jpn_mcdemp_16",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Motofumi Fujiwara"
+  },
+  {
+    "pokemonId": 28,
+    "name": "Vending Machine Expansion Sheet 3: Green",
+    "imageName": "28_Sandslash_jpn_vses3_27",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Keiji Kinebuchi"
+  },
+  {
+    "pokemonId": 28,
+    "name": "Miracle of the Desert",
+    "imageName": "28_Sandslash_jpn_adv2_34",
+    "rarity": "Rare",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2003,
+    "artist": ""
+  },
+  {
+    "pokemonId": 29,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "29_Nidoran ♀_jpn_vses1_6",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 30,
+    "name": "Vending Machine Expansion Sheet 3: Green",
+    "imageName": "30_Nidorina_jpn_vses3_2",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 32,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "32_Nidoran ♂_jpn_vses1_7",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 33,
+    "name": "Vending Machine Expansion Sheet 3: Green",
+    "imageName": "33_Nidorino_jpn_vses3_3",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 34,
+    "name": "Unnumbered Promos",
+    "imageName": "34_Nidoking_jpn_unp_91",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 35,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "35_Clefairy_jpn_vses1_26",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 35,
+    "name": "Call of Legends",
+    "imageName": "35_Clefairy_col1_54",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2011,
+    "artist": "sui"
+  },
+  {
+    "pokemonId": 35,
+    "name": "Sun & Moon Promos",
+    "imageName": "35_Clefairy_jpn_smp_381",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2016,
+    "artist": ""
+  },
+  {
+    "pokemonId": 36,
+    "name": "Pokémon VS",
+    "imageName": "36_Clefable_jpn_versus1_14",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Miki Tanaka"
+  },
+  {
+    "pokemonId": 36,
+    "name": "Call of Legends",
+    "imageName": "36_Clefable_col1_1",
+    "rarity": "Rare Holo",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2011,
+    "artist": "sui"
+  },
+  {
+    "pokemonId": 37,
+    "name": "Call of Legends",
+    "imageName": "37_Vulpix_col1_75",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2011,
+    "artist": "TOKIYA"
+  },
+  {
+    "pokemonId": 37,
+    "name": "My First Battle: Charmander Deck",
+    "imageName": "37_Vulpix_mfbc_5",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2022,
+    "artist": "Mina Nakai"
+  },
+  {
+    "pokemonId": 37,
+    "name": "Sword & Shield Promos",
+    "imageName": "37_Vulpix_scn_swshp_17",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": "Taira Akitsu"
+  },
+  {
+    "pokemonId": 37,
+    "name": "Vending Machine Expansion Sheet 3: Green",
+    "imageName": "37_Vulpix_jpn_vses3_9",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 37,
+    "name": "McDonald's Pokémon-e Minimum Pack",
+    "imageName": "37_Vulpix_jpn_mcdemp_5",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 37,
+    "name": "Sun & Moon Promos",
+    "imageName": "37_Vulpix_jpn_smp_146",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2016,
+    "artist": "booota"
+  },
+  {
+    "pokemonId": 38,
+    "name": "My First Battle: Charmander Deck",
+    "imageName": "38_Ninetales_mfbc_6",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2022,
+    "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 38,
+    "name": "Call of Legends",
+    "imageName": "38_Ninetales_col1_17",
+    "rarity": "Rare Holo",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2011,
+    "artist": "TOKIYA"
+  },
+  {
+    "pokemonId": 38,
+    "name": "Pokémon VS",
+    "imageName": "38_Ninetales_jpn_versus1_20",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Naoyo Kimura"
+  },
+  {
+    "pokemonId": 39,
+    "name": "Unnumbered Promos",
+    "imageName": "39_Jigglypuff_jpn_unp_12",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 40,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "40_Wigglytuff_jpn_vses1_27",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 40,
+    "name": "Pokémon VS",
+    "imageName": "40_Wigglytuff_jpn_versus1_15",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Miki Tanaka"
+  },
+  {
+    "pokemonId": 41,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "41_Zubat_jpn_vses1_8",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Aya Kusube"
+  },
+  {
+    "pokemonId": 41,
+    "name": "XY Promos",
+    "imageName": "41_Zubat_jpn_xyp_83",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2013,
+    "artist": "match"
+  },
+  {
+    "pokemonId": 42,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "42_Golbat_jpn_vses1_9",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 43,
+    "name": "McDonald's Pokémon-e Minimum Pack",
+    "imageName": "43_Oddish_jpn_mcdemp_2",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2002,
+    "artist": "Hironobu Yoshida"
+  },
+  {
+    "pokemonId": 43,
+    "name": "My First Battle: Bulbasaur Deck",
+    "imageName": "43_Oddish_mfbb_5",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2022,
+    "artist": "Gemi"
+  },
+  {
+    "pokemonId": 43,
+    "name": "Scarlet & Violet Promos",
+    "imageName": "43_Oddish_svp_102",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇬🇧",
+    "year": 2023,
+    "artist": "Miranda Branley"
+  },
+  {
+    "pokemonId": 46,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "46_Paras_jpn_vses1_10",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 47,
+    "name": "Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "47_Parasect_jpn_vses1_11",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Ken Sugimori"
+  },
+  {
+    "pokemonId": 48,
+    "name": "Vending Machine Expansion Sheet 3: Green",
+    "imageName": "48_Venonat_jpn_vses3_4",
+    "rarity": "Uncommon",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Sumiyoshi Kizuki"
+  },
+  {
+    "pokemonId": 49,
+    "name": "Vending Machine Expansion Sheet 2: Red",
+    "imageName": "49_Venomoth_jpn_vses2_1",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1998,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 49,
+    "name": "Pokémon VS",
+    "imageName": "49_Venomoth_jpn_versus1_63",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Tomokazu Komiya"
+  },
+  {
+    "pokemonId": 50,
+    "name": "Unnumbered Promos",
+    "imageName": "50_Diglett_jpn_unp_54",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Miki Tanaka"
+  },{
+    "pokemonId": 50,
+    "name": "XY Promos",
+    "imageName": "50_Diglett_jpn_xyp_23",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2013,
+    "artist": "Mitsuhiro Arita"
+  },{
+    "pokemonId": 50,
+    "name": "Sun & Moon Promos",
+    "imageName": "50_Diglett_jpn_smp_163",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2016,
+    "artist": "Naoyo Kimura"
+  },{
+    "pokemonId": 51,
+    "name": "Unnumbered Promos",
+    "imageName": "51_Dugtrio_jpn_unp_55",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Miki Tanaka"
+  },{
+    "pokemonId": 52,
+    "name": "Unnumbered Promos",
+    "imageName": "52_Meowth_jpn_unp_29",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Ken Sugimori"
+  },{
+    "pokemonId": 52,
+    "name": "Movie Commemoration Random Pack",
+    "imageName": "52_Meowth_jpn_mcrp_17",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2009,
+    "artist": "2009 Pikachu Project"
+  },{
+    "pokemonId": 52,
+    "name": "Sun & Moon Promos",
+    "imageName": "52_Meowth_jpn_smp_255",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2016,
+    "artist": "HYOGONOSUKE"
+  },{
+    "pokemonId": 52,
+    "name": "Ash vs Team Rocket Deck Kit",
+    "imageName": "52_Meowth_jpn_smd_13",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2017,
+    "artist": "Nakano Satoshi"
+  },{
+    "pokemonId": 52,
+    "name": "Sword & Shield Promos",
+    "imageName": "52_Meowth_jpn_swshp_314",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2019,
+    "artist": "aoki"
+  },{
+    "pokemonId": 52,
+    "name": "Gem Pack Vol. 3",
+    "imageName": "52_Meowth_scn_cbb3_207",
+    "rarity": "No Rarity",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2025,
+    "artist": "Makura Tami"
+  },{
+    "pokemonId": 52,
+    "name": "Sun & Moon Promos",
+    "imageName": "52_Meowth_scn_smp_33",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2023,
+    "artist": "kirisAki"
+  },{
+    "pokemonId": 53,
+    "name": "Pokémon VS",
+    "imageName": "53_Persian_jpn_versus1_16",
+    "rarity": "Common",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Miki Tanaka"
+  },
+  {
+    "pokemonId": 60,
+    "name": "Unnumbered Releases: Unnumbered Promos",
+    "imageName": "poliwag_card_1",
+    "rarity": "Promo",
+    "description": "Carte holo française.",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Hiroyuki Sasaki"
+  },
+  {
+    "pokemonId": 60,
+    "name": "Unnumbered Releases: Vending Machine Expansion Sheet 1: Blue",
+    "imageName": "poliwag_card_2",
+    "rarity": "Common",
+    "description": "Carte holo française.",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 60,
+    "name": "Decks: My First Battle: Squirtle Deck",
+    "imageName": "poliwag_card_3",
+    "rarity": "",
+    "description": "Carte holo française.",
+    "language": "🇬🇧",
+    "year": 1999,
+    "artist": ""
+  },
+  {
+    "pokemonId": 132,
+    "name": "Unnumbered Releases: Vending Machine Expansion Sheet 2: Red",
+    "imageName": "ditto_card_1",
+    "rarity": "Uncommon",
+    "description": "Carte holo française.",
+    "language": "🇯🇵",
+    "year": 1999,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 151,
+    "name": "Scarlet & Violet Promos",
+    "imageName": "151_Mew_scn_svp_3",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇨🇳",
+    "year": 2024,
+    "artist": "satoma"
+  },
+  {
+    "pokemonId": 151,
+    "name": "Unnumbered Promos",
+    "imageName": "151_Mew_jpn_unp_190",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 1996,
+    "artist": "Hironobu Yoshida"
+  }
+]

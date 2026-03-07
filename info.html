@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéTruc — Info</title>
+  <meta name="description" content="About PokéTruc: a fan-made app to track exclusive Pokémon card illustrations. Free, ad-free, offline.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PokéTruc — Info">
+  <meta property="og:description" content="About PokéTruc: a fan-made app to track exclusive Pokémon card illustrations. Free, ad-free, offline.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://TON-USERNAME.github.io/poketruc-web/info.html">
+
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="logo.png" alt="PokéTruc" class="site-logo"></a>
+    <h1>PokéTruc</h1>
+    <p class="subtitle" data-i18n="subtitle">Exclusive Pokémon card illustrations tracker</p>
+    <nav class="site-nav">
+      <a href="index.html" data-i18n="dex">Dex</a>
+      <a href="info.html" class="active" data-i18n="info">Info</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
+    </nav>
+  </header>
+
+  <main class="info-page">
+    <div class="info-card">
+      <h2 data-i18n="about">About</h2>
+      <div data-i18n-html="purpose"></div>
+    </div>
+
+    <div class="info-card">
+      <h2 data-i18n="contact">Contact</h2>
+      <a href="mailto:poketruc@icloud.com?subject=Support%20%E2%80%93%20PokéTruc%20Web" class="info-link">poketruc@icloud.com</a>
+    </div>
+
+    <div class="info-card disclaimer">
+      <div data-i18n-html="disclaimer"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 PokéTruc — Fan-made, not affiliated with Nintendo / The Pokémon Company.</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

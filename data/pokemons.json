@@ -1,0 +1,1965 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "fr": "Bulbizarre",
+      "en": "Bulbasaur",
+      "jp": "フシギダネ",
+      "ko": "이상해씨",
+      "zh": "妙蛙种子"
+    },
+    "imageName": "bulbasaur",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 2,
+    "name": {
+      "fr": "Herbizarre",
+      "en": "Ivysaur",
+      "jp": "フシギソウ",
+      "ko": "이상해풀",
+      "zh": "妙蛙草"
+    },
+    "imageName": "ivysaur",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 3,
+    "name": {
+      "fr": "Florizarre",
+      "en": "Venusaur",
+      "jp": "フシギバナ",
+      "ko": "이상해꽃",
+      "zh": "妙蛙花"
+    },
+    "imageName": "venusaur",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 4,
+    "name": {
+      "fr": "Salamèche",
+      "en": "Charmander",
+      "jp": "ヒトカゲ",
+      "ko": "파이리",
+      "zh": "小火龙"
+    },
+    "imageName": "charmander",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 5,
+    "name": {
+      "fr": "Reptincel",
+      "en": "Charmeleon",
+      "jp": "リザード",
+      "ko": "리자드",
+      "zh": "火恐龙"
+    },
+    "imageName": "charmeleon",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 6,
+    "name": {
+      "fr": "Dracaufeu",
+      "en": "Charizard",
+      "jp": "リザードン",
+      "ko": "리자몽",
+      "zh": "喷火龙"
+    },
+    "imageName": "charizard",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 7,
+    "name": {
+      "fr": "Carapuce",
+      "en": "Squirtle",
+      "jp": "ゼニガメ",
+      "ko": "꼬부기",
+      "zh": "杰尼龟"
+    },
+    "imageName": "squirtle",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 8,
+    "name": {
+      "fr": "Carabaffe",
+      "en": "Wartortle",
+      "jp": "カメール",
+      "ko": "어니부기",
+      "zh": "卡咪龟"
+    },
+    "imageName": "wartortle",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 9,
+    "name": {
+      "fr": "Tortank",
+      "en": "Blastoise",
+      "jp": "カメックス",
+      "ko": "거북왕",
+      "zh": "水箭龟"
+    },
+    "imageName": "blastoise",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 10,
+    "name": {
+      "fr": "Chenipan",
+      "en": "Caterpie",
+      "jp": "キャタピー",
+      "ko": "캐터피",
+      "zh": "绿毛虫"
+    },
+    "imageName": "caterpie",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 11,
+    "name": {
+      "fr": "Chrysacier",
+      "en": "Metapod",
+      "jp": "トランセル",
+      "ko": "단데기",
+      "zh": "铁甲蛹"
+    },
+    "imageName": "metapod",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 12,
+    "name": {
+      "fr": "Papilusion",
+      "en": "Butterfree",
+      "jp": "バタフリー",
+      "ko": "버터플",
+      "zh": "巴大蝶"
+    },
+    "imageName": "butterfree",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 13,
+    "name": {
+      "fr": "Aspicot",
+      "en": "Weedle",
+      "jp": "ビードル",
+      "ko": "뿔충이",
+      "zh": "独角虫"
+    },
+    "imageName": "weedle",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 14,
+    "name": {
+      "fr": "Coconfort",
+      "en": "Kakuna",
+      "jp": "コクーン",
+      "ko": "딱충이",
+      "zh": "铁壳蛹"
+    },
+    "imageName": "kakuna",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 15,
+    "name": {
+      "fr": "Dardargnan",
+      "en": "Beedrill",
+      "jp": "スピアー",
+      "ko": "독침붕",
+      "zh": "大针蜂"
+    },
+    "imageName": "beedrill",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 16,
+    "name": {
+      "fr": "Roucool",
+      "en": "Pidgey",
+      "jp": "ポッポ",
+      "ko": "구구",
+      "zh": "波波"
+    },
+    "imageName": "pidgey",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 17,
+    "name": {
+      "fr": "Roucoups",
+      "en": "Pidgeotto",
+      "jp": "ピジョン",
+      "ko": "피죤",
+      "zh": "比比鸟"
+    },
+    "imageName": "pidgeotto",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 18,
+    "name": {
+      "fr": "Roucarnage",
+      "en": "Pidgeot",
+      "jp": "ピジョット",
+      "ko": "피죤투",
+      "zh": "大比鸟"
+    },
+    "imageName": "pidgeot",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 19,
+    "name": {
+      "fr": "Rattata",
+      "en": "Rattata",
+      "jp": "コラッタ",
+      "ko": "꼬렛",
+      "zh": "小拉达"
+    },
+    "imageName": "rattata",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 20,
+    "name": {
+      "fr": "Rattatac",
+      "en": "Raticate",
+      "jp": "ラッタ",
+      "ko": "레트라",
+      "zh": "拉达"
+    },
+    "imageName": "raticate",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 21,
+    "name": {
+      "fr": "Piafabec",
+      "en": "Spearow",
+      "jp": "オニスズメ",
+      "ko": "깨비참",
+      "zh": "烈雀"
+    },
+    "imageName": "spearow",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 22,
+    "name": {
+      "fr": "Rapasdepic",
+      "en": "Fearow",
+      "jp": "オニドリル",
+      "ko": "깨비드릴조",
+      "zh": "大嘴雀"
+    },
+    "imageName": "fearow",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 23,
+    "name": {
+      "fr": "Abo",
+      "en": "Ekans",
+      "jp": "アーボ",
+      "ko": "아보",
+      "zh": "阿柏蛇"
+    },
+    "imageName": "ekans",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 24,
+    "name": {
+      "fr": "Arbok",
+      "en": "Arbok",
+      "jp": "アーボック",
+      "ko": "아보크",
+      "zh": "阿柏怪"
+    },
+    "imageName": "arbok",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 25,
+    "name": {
+      "fr": "Pikachu",
+      "en": "Pikachu",
+      "jp": "ピカチュウ",
+      "ko": "피카츄",
+      "zh": "皮卡丘"
+    },
+    "imageName": "pikachu",
+    "generation": 1,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 26,
+    "name": {
+      "fr": "Raichu",
+      "en": "Raichu",
+      "jp": "ライチュウ",
+      "ko": "라이츄",
+      "zh": "雷丘"
+    },
+    "imageName": "raichu",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 27,
+    "name": {
+      "fr": "Sabelette",
+      "en": "Sandshrew",
+      "jp": "サンド",
+      "ko": "모래두지",
+      "zh": "穿山鼠"
+    },
+    "imageName": "sandshrew",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 28,
+    "name": {
+      "fr": "Sablaireau",
+      "en": "Sandslash",
+      "jp": "サンドパン",
+      "ko": "고지",
+      "zh": "穿山王"
+    },
+    "imageName": "sandslash",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 29,
+    "name": {
+      "fr": "Nidoran♀",
+      "en": "Nidoran♀",
+      "jp": "ニドラン♀",
+      "ko": "니드런♀",
+      "zh": "尼多兰"
+    },
+    "imageName": "nidoran-f",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 30,
+    "name": {
+      "fr": "Nidorina",
+      "en": "Nidorina",
+      "jp": "ニドリーナ",
+      "ko": "니드리나",
+      "zh": "尼多娜"
+    },
+    "imageName": "nidorina",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 31,
+    "name": {
+      "fr": "Nidoqueen",
+      "en": "Nidoqueen",
+      "jp": "ニドクイン",
+      "ko": "니드퀸",
+      "zh": "尼多后"
+    },
+    "imageName": "nidoqueen",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 32,
+    "name": {
+      "fr": "Nidoran♂",
+      "en": "Nidoran♂",
+      "jp": "ニドラン♂",
+      "ko": "니드런♂",
+      "zh": "尼多朗"
+    },
+    "imageName": "nidoran-m",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 33,
+    "name": {
+      "fr": "Nidorino",
+      "en": "Nidorino",
+      "jp": "ニドリーノ",
+      "ko": "니드리노",
+      "zh": "尼多力诺"
+    },
+    "imageName": "nidorino",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 34,
+    "name": {
+      "fr": "Nidoking",
+      "en": "Nidoking",
+      "jp": "ニドキング",
+      "ko": "니드킹",
+      "zh": "尼多王"
+    },
+    "imageName": "nidoking",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 35,
+    "name": {
+      "fr": "Mélofée",
+      "en": "Clefairy",
+      "jp": "ピッピ",
+      "ko": "삐삐",
+      "zh": "皮皮"
+    },
+    "imageName": "clefairy",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 36,
+    "name": {
+      "fr": "Mélodelfe",
+      "en": "Clefable",
+      "jp": "ピクシー",
+      "ko": "픽시",
+      "zh": "皮可西"
+    },
+    "imageName": "clefable",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 37,
+    "name": {
+      "fr": "Goupix",
+      "en": "Vulpix",
+      "jp": "ロコン",
+      "ko": "식스테일",
+      "zh": "六尾"
+    },
+    "imageName": "vulpix",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 38,
+    "name": {
+      "fr": "Feunard",
+      "en": "Ninetales",
+      "jp": "キュウコン",
+      "ko": "나인테일",
+      "zh": "九尾"
+    },
+    "imageName": "ninetales",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 39,
+    "name": {
+      "fr": "Rondoudou",
+      "en": "Jigglypuff",
+      "jp": "プリン",
+      "ko": "푸린",
+      "zh": "胖丁"
+    },
+    "imageName": "jigglypuff",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 40,
+    "name": {
+      "fr": "Grodoudou",
+      "en": "Wigglytuff",
+      "jp": "プクリン",
+      "ko": "푸크린",
+      "zh": "胖可丁"
+    },
+    "imageName": "wigglytuff",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 41,
+    "name": {
+      "fr": "Nosferapti",
+      "en": "Zubat",
+      "jp": "ズバット",
+      "ko": "주뱃",
+      "zh": "超音蝠"
+    },
+    "imageName": "zubat",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 42,
+    "name": {
+      "fr": "Nosferalto",
+      "en": "Golbat",
+      "jp": "ゴルバット",
+      "ko": "골뱃",
+      "zh": "大嘴蝠"
+    },
+    "imageName": "golbat",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 43,
+    "name": {
+      "fr": "Mystherbe",
+      "en": "Oddish",
+      "jp": "ナゾノクサ",
+      "ko": "뚜벅쵸",
+      "zh": "走路草"
+    },
+    "imageName": "oddish",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 44,
+    "name": {
+      "fr": "Ortide",
+      "en": "Gloom",
+      "jp": "クサイハナ",
+      "ko": "냄새꼬",
+      "zh": "臭臭花"
+    },
+    "imageName": "gloom",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 45,
+    "name": {
+      "fr": "Rafflesia",
+      "en": "Vileplume",
+      "jp": "ラフレシア",
+      "ko": "라플레시아",
+      "zh": "霸王花"
+    },
+    "imageName": "vileplume",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 46,
+    "name": {
+      "fr": "Paras",
+      "en": "Paras",
+      "jp": "パラス",
+      "ko": "파라스",
+      "zh": "派拉斯"
+    },
+    "imageName": "paras",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 47,
+    "name": {
+      "fr": "Parasect",
+      "en": "Parasect",
+      "jp": "パラセクト",
+      "ko": "파라섹트",
+      "zh": "派拉斯特"
+    },
+    "imageName": "parasect",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 48,
+    "name": {
+      "fr": "Mimitoss",
+      "en": "Venonat",
+      "jp": "コンパン",
+      "ko": "콘팡",
+      "zh": "毛球"
+    },
+    "imageName": "venonat",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 49,
+    "name": {
+      "fr": "Aéromite",
+      "en": "Venomoth",
+      "jp": "モルフォン",
+      "ko": "도나리",
+      "zh": "摩鲁蛾"
+    },
+    "imageName": "venomoth",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 50,
+    "name": {
+      "fr": "Taupiqueur",
+      "en": "Diglett",
+      "jp": "ディグダ",
+      "ko": "디그다",
+      "zh": "地鼠"
+    },
+    "imageName": "diglett",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 51,
+    "name": {
+      "fr": "Triopikeur",
+      "en": "Dugtrio",
+      "jp": "ダグトリオ",
+      "ko": "닥트리오",
+      "zh": "三地鼠"
+    },
+    "imageName": "dugtrio",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 52,
+    "name": {
+      "fr": "Miaouss",
+      "en": "Meowth",
+      "jp": "ニャース",
+      "ko": "나옹",
+      "zh": "喵喵"
+    },
+    "imageName": "meowth",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 53,
+    "name": {
+      "fr": "Persian",
+      "en": "Persian",
+      "jp": "ペルシアン",
+      "ko": "페르시온",
+      "zh": "猫老大"
+    },
+    "imageName": "persian",
+    "generation": 1,
+    "researchStatus": "done"
+  },
+  {
+    "id": 54,
+    "name": {
+      "fr": "Psykokwak",
+      "en": "Psyduck",
+      "jp": "コダック",
+      "ko": "고라파덕",
+      "zh": "可达鸭"
+    },
+    "imageName": "psyduck",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 55,
+    "name": {
+      "fr": "Akwakwak",
+      "en": "Golduck",
+      "jp": "ゴルダック",
+      "ko": "골덕",
+      "zh": "哥达鸭"
+    },
+    "imageName": "golduck",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 56,
+    "name": {
+      "fr": "Férosinge",
+      "en": "Mankey",
+      "jp": "マンキー",
+      "ko": "망키",
+      "zh": "猴怪"
+    },
+    "imageName": "mankey",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 57,
+    "name": {
+      "fr": "Colossinge",
+      "en": "Primeape",
+      "jp": "オコリザル",
+      "ko": "성원숭",
+      "zh": "火暴猴"
+    },
+    "imageName": "primeape",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 58,
+    "name": {
+      "fr": "Caninos",
+      "en": "Growlithe",
+      "jp": "ガーディ",
+      "ko": "가디",
+      "zh": "卡蒂狗"
+    },
+    "imageName": "growlithe",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 59,
+    "name": {
+      "fr": "Arcanin",
+      "en": "Arcanine",
+      "jp": "ウインディ",
+      "ko": "윈디",
+      "zh": "风速狗"
+    },
+    "imageName": "arcanine",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 60,
+    "name": {
+      "fr": "Ptitard",
+      "en": "Poliwag",
+      "jp": "ニョロモ",
+      "ko": "발챙이",
+      "zh": "蚊香蝌蚪"
+    },
+    "imageName": "poliwag",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 61,
+    "name": {
+      "fr": "Têtarte",
+      "en": "Poliwhirl",
+      "jp": "ニョロゾ",
+      "ko": "슈륙챙이",
+      "zh": "蚊香君"
+    },
+    "imageName": "poliwhirl",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 62,
+    "name": {
+      "fr": "Tartard",
+      "en": "Poliwrath",
+      "jp": "ニョロボン",
+      "ko": "강챙이",
+      "zh": "蚊香泳士"
+    },
+    "imageName": "poliwrath",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 63,
+    "name": {
+      "fr": "Abra",
+      "en": "Abra",
+      "jp": "ケーシィ",
+      "ko": "케이시",
+      "zh": "凯西"
+    },
+    "imageName": "abra",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 64,
+    "name": {
+      "fr": "Kadabra",
+      "en": "Kadabra",
+      "jp": "ユンゲラー",
+      "ko": "윤겔라",
+      "zh": "勇基拉"
+    },
+    "imageName": "kadabra",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 65,
+    "name": {
+      "fr": "Alakazam",
+      "en": "Alakazam",
+      "jp": "フーディン",
+      "ko": "후딘",
+      "zh": "胡地"
+    },
+    "imageName": "alakazam",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 66,
+    "name": {
+      "fr": "Machoc",
+      "en": "Machop",
+      "jp": "ワンリキー",
+      "ko": "알통몬",
+      "zh": "腕力"
+    },
+    "imageName": "machop",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 67,
+    "name": {
+      "fr": "Machopeur",
+      "en": "Machoke",
+      "jp": "ゴーリキー",
+      "ko": "근육몬",
+      "zh": "豪力"
+    },
+    "imageName": "machoke",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 68,
+    "name": {
+      "fr": "Mackogneur",
+      "en": "Machamp",
+      "jp": "カイリキー",
+      "ko": "괴력몬",
+      "zh": "怪力"
+    },
+    "imageName": "machamp",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 69,
+    "name": {
+      "fr": "Chétiflor",
+      "en": "Bellsprout",
+      "jp": "マダツボミ",
+      "ko": "모다피",
+      "zh": "喇叭芽"
+    },
+    "imageName": "bellsprout",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 70,
+    "name": {
+      "fr": "Boustiflor",
+      "en": "Weepinbell",
+      "jp": "ウツドン",
+      "ko": "우츠동",
+      "zh": "口呆花"
+    },
+    "imageName": "weepinbell",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 71,
+    "name": {
+      "fr": "Empiflor",
+      "en": "Victreebel",
+      "jp": "ウツボット",
+      "ko": "우츠보트",
+      "zh": "大食花"
+    },
+    "imageName": "victreebel",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 72,
+    "name": {
+      "fr": "Tentacool",
+      "en": "Tentacool",
+      "jp": "メノクラゲ",
+      "ko": "왕눈해",
+      "zh": "玛瑙水母"
+    },
+    "imageName": "tentacool",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 73,
+    "name": {
+      "fr": "Tentacruel",
+      "en": "Tentacruel",
+      "jp": "ドククラゲ",
+      "ko": "독파리",
+      "zh": "毒刺水母"
+    },
+    "imageName": "tentacruel",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 74,
+    "name": {
+      "fr": "Racaillou",
+      "en": "Geodude",
+      "jp": "イシツブテ",
+      "ko": "꼬마돌",
+      "zh": "小拳石"
+    },
+    "imageName": "geodude",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 75,
+    "name": {
+      "fr": "Gravalanch",
+      "en": "Graveler",
+      "jp": "ゴローン",
+      "ko": "데구리",
+      "zh": "隆隆石"
+    },
+    "imageName": "graveler",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 76,
+    "name": {
+      "fr": "Grolem",
+      "en": "Golem",
+      "jp": "ゴローニャ",
+      "ko": "딱구리",
+      "zh": "隆隆岩"
+    },
+    "imageName": "golem",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 77,
+    "name": {
+      "fr": "Ponyta",
+      "en": "Ponyta",
+      "jp": "ポニータ",
+      "ko": "포니타",
+      "zh": "小火马"
+    },
+    "imageName": "ponyta",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 78,
+    "name": {
+      "fr": "Galopa",
+      "en": "Rapidash",
+      "jp": "ギャロップ",
+      "ko": "날쌩마",
+      "zh": "烈焰马"
+    },
+    "imageName": "rapidash",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 79,
+    "name": {
+      "fr": "Ramoloss",
+      "en": "Slowpoke",
+      "jp": "ヤドン",
+      "ko": "야돈",
+      "zh": "呆呆兽"
+    },
+    "imageName": "slowpoke",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 80,
+    "name": {
+      "fr": "Flagadoss",
+      "en": "Slowbro",
+      "jp": "ヤドラン",
+      "ko": "야도란",
+      "zh": "呆壳兽"
+    },
+    "imageName": "slowbro",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 81,
+    "name": {
+      "fr": "Magnéti",
+      "en": "Magnemite",
+      "jp": "コイル",
+      "ko": "코일",
+      "zh": "小磁怪"
+    },
+    "imageName": "magnemite",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 82,
+    "name": {
+      "fr": "Magnéton",
+      "en": "Magneton",
+      "jp": "レアコイル",
+      "ko": "레어코일",
+      "zh": "三合一磁怪"
+    },
+    "imageName": "magneton",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 83,
+    "name": {
+      "fr": "Canarticho",
+      "en": "Farfetch'd",
+      "jp": "カモネギ",
+      "ko": "파오리",
+      "zh": "大葱鸭"
+    },
+    "imageName": "farfetchd",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 84,
+    "name": {
+      "fr": "Doduo",
+      "en": "Doduo",
+      "jp": "ドードー",
+      "ko": "두두",
+      "zh": "嘟嘟"
+    },
+    "imageName": "doduo",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 85,
+    "name": {
+      "fr": "Dodrio",
+      "en": "Dodrio",
+      "jp": "ドードリオ",
+      "ko": "두트리오",
+      "zh": "嘟嘟利"
+    },
+    "imageName": "dodrio",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 86,
+    "name": {
+      "fr": "Otaria",
+      "en": "Seel",
+      "jp": "パウワウ",
+      "ko": "쥬쥬",
+      "zh": "小海狮"
+    },
+    "imageName": "seel",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 87,
+    "name": {
+      "fr": "Lamantine",
+      "en": "Dewgong",
+      "jp": "ジュゴン",
+      "ko": "쥬레곤",
+      "zh": "白海狮"
+    },
+    "imageName": "dewgong",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 88,
+    "name": {
+      "fr": "Tadmorv",
+      "en": "Grimer",
+      "jp": "ベトベター",
+      "ko": "질퍽이",
+      "zh": "臭泥"
+    },
+    "imageName": "grimer",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 89,
+    "name": {
+      "fr": "Grotadmorv",
+      "en": "Muk",
+      "jp": "ベトベトン",
+      "ko": "질뻐기",
+      "zh": "臭臭泥"
+    },
+    "imageName": "muk",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 90,
+    "name": {
+      "fr": "Kokiyas",
+      "en": "Shellder",
+      "jp": "シェルダー",
+      "ko": "셀러",
+      "zh": "大舌贝"
+    },
+    "imageName": "shellder",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 91,
+    "name": {
+      "fr": "Crustabri",
+      "en": "Cloyster",
+      "jp": "パルシェン",
+      "ko": "파르셀",
+      "zh": "刺甲贝"
+    },
+    "imageName": "cloyster",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 92,
+    "name": {
+      "fr": "Fantominus",
+      "en": "Gastly",
+      "jp": "ゴース",
+      "ko": "고오스",
+      "zh": "鬼斯"
+    },
+    "imageName": "gastly",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 93,
+    "name": {
+      "fr": "Spectrum",
+      "en": "Haunter",
+      "jp": "ゴースト",
+      "ko": "고우스트",
+      "zh": "鬼斯通"
+    },
+    "imageName": "haunter",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 94,
+    "name": {
+      "fr": "Ectoplasma",
+      "en": "Gengar",
+      "jp": "ゲンガー",
+      "ko": "팬텀",
+      "zh": "耿鬼"
+    },
+    "imageName": "gengar",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 95,
+    "name": {
+      "fr": "Onix",
+      "en": "Onix",
+      "jp": "イワーク",
+      "ko": "롱스톤",
+      "zh": "大岩蛇"
+    },
+    "imageName": "onix",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 96,
+    "name": {
+      "fr": "Soporifik",
+      "en": "Drowzee",
+      "jp": "スリープ",
+      "ko": "슬리프",
+      "zh": "催眠貘"
+    },
+    "imageName": "drowzee",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 97,
+    "name": {
+      "fr": "Hypnomade",
+      "en": "Hypno",
+      "jp": "スリーパー",
+      "ko": "슬리퍼",
+      "zh": "引梦貘人"
+    },
+    "imageName": "hypno",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 98,
+    "name": {
+      "fr": "Krabby",
+      "en": "Krabby",
+      "jp": "クラブ",
+      "ko": "크랩",
+      "zh": "大钳蟹"
+    },
+    "imageName": "krabby",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 99,
+    "name": {
+      "fr": "Krabboss",
+      "en": "Kingler",
+      "jp": "キングラー",
+      "ko": "킹크랩",
+      "zh": "巨钳蟹"
+    },
+    "imageName": "kingler",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 100,
+    "name": {
+      "fr": "Voltorbe",
+      "en": "Voltorb",
+      "jp": "ビリリダマ",
+      "ko": "찌리리공",
+      "zh": "霹雳电球"
+    },
+    "imageName": "voltorb",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 101,
+    "name": {
+      "fr": "Électrode",
+      "en": "Electrode",
+      "jp": "マルマイン",
+      "ko": "붐볼",
+      "zh": "顽皮雷弹"
+    },
+    "imageName": "electrode",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 102,
+    "name": {
+      "fr": "Noeunoeuf",
+      "en": "Exeggcute",
+      "jp": "タマタマ",
+      "ko": "아라리",
+      "zh": "蛋蛋"
+    },
+    "imageName": "exeggcute",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 103,
+    "name": {
+      "fr": "Noadkoko",
+      "en": "Exeggutor",
+      "jp": "ナッシー",
+      "ko": "나시",
+      "zh": "椰蛋树"
+    },
+    "imageName": "exeggutor",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 104,
+    "name": {
+      "fr": "Osselait",
+      "en": "Cubone",
+      "jp": "カラカラ",
+      "ko": "탕구리",
+      "zh": "卡拉卡拉"
+    },
+    "imageName": "cubone",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 105,
+    "name": {
+      "fr": "Ossatueur",
+      "en": "Marowak",
+      "jp": "ガラガラ",
+      "ko": "텅구리",
+      "zh": "嘎啦嘎啦"
+    },
+    "imageName": "marowak",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 106,
+    "name": {
+      "fr": "Kicklee",
+      "en": "Hitmonlee",
+      "jp": "サワムラー",
+      "ko": "시라소몬",
+      "zh": "飞腿郎"
+    },
+    "imageName": "hitmonlee",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 107,
+    "name": {
+      "fr": "Tygnon",
+      "en": "Hitmonchan",
+      "jp": "エビワラー",
+      "ko": "홍수몬",
+      "zh": "快拳郎"
+    },
+    "imageName": "hitmonchan",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 108,
+    "name": {
+      "fr": "Excelangue",
+      "en": "Lickitung",
+      "jp": "ベロリンガ",
+      "ko": "내루미",
+      "zh": "大舌头"
+    },
+    "imageName": "lickitung",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 109,
+    "name": {
+      "fr": "Smogo",
+      "en": "Koffing",
+      "jp": "ドガース",
+      "ko": "또가스",
+      "zh": "瓦斯弹"
+    },
+    "imageName": "koffing",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 110,
+    "name": {
+      "fr": "Smogogo",
+      "en": "Weezing",
+      "jp": "マタドガス",
+      "ko": "또도가스",
+      "zh": "双弹瓦斯"
+    },
+    "imageName": "weezing",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 111,
+    "name": {
+      "fr": "Rhinocorne",
+      "en": "Rhyhorn",
+      "jp": "サイホーン",
+      "ko": "뿔카노",
+      "zh": "独角犀牛"
+    },
+    "imageName": "rhyhorn",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 112,
+    "name": {
+      "fr": "Rhinoféros",
+      "en": "Rhydon",
+      "jp": "サイドン",
+      "ko": "코뿌리",
+      "zh": "钻角犀兽"
+    },
+    "imageName": "rhydon",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 113,
+    "name": {
+      "fr": "Leveinard",
+      "en": "Chansey",
+      "jp": "ラッキー",
+      "ko": "럭키",
+      "zh": "吉利蛋"
+    },
+    "imageName": "chansey",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 114,
+    "name": {
+      "fr": "Saquedeneu",
+      "en": "Tangela",
+      "jp": "モンジャラ",
+      "ko": "덩쿠리",
+      "zh": "蔓藤怪"
+    },
+    "imageName": "tangela",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 115,
+    "name": {
+      "fr": "Kangourex",
+      "en": "Kangaskhan",
+      "jp": "ガルーラ",
+      "ko": "캥카",
+      "zh": "袋兽"
+    },
+    "imageName": "kangaskhan",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 116,
+    "name": {
+      "fr": "Hypotrempe",
+      "en": "Horsea",
+      "jp": "タッツー",
+      "ko": "쏘드라",
+      "zh": "墨海马"
+    },
+    "imageName": "horsea",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 117,
+    "name": {
+      "fr": "Hypocéan",
+      "en": "Seadra",
+      "jp": "シードラ",
+      "ko": "시드라",
+      "zh": "海刺龙"
+    },
+    "imageName": "seadra",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 118,
+    "name": {
+      "fr": "Poissirène",
+      "en": "Goldeen",
+      "jp": "トサキント",
+      "ko": "콘치",
+      "zh": "角金鱼"
+    },
+    "imageName": "goldeen",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 119,
+    "name": {
+      "fr": "Poissoroy",
+      "en": "Seaking",
+      "jp": "アズマオウ",
+      "ko": "왕콘치",
+      "zh": "金鱼王"
+    },
+    "imageName": "seaking",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 120,
+    "name": {
+      "fr": "Stari",
+      "en": "Staryu",
+      "jp": "ヒトデマン",
+      "ko": "별가사리",
+      "zh": "海星星"
+    },
+    "imageName": "staryu",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 121,
+    "name": {
+      "fr": "Staross",
+      "en": "Starmie",
+      "jp": "スターミー",
+      "ko": "아쿠스타",
+      "zh": "宝石海星"
+    },
+    "imageName": "starmie",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 122,
+    "name": {
+      "fr": "M. Mime",
+      "en": "Mr. Mime",
+      "jp": "バリヤード",
+      "ko": "마임맨",
+      "zh": "魔墙人偶"
+    },
+    "imageName": "mr-mime",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 123,
+    "name": {
+      "fr": "Insécateur",
+      "en": "Scyther",
+      "jp": "ストライク",
+      "ko": "스라크",
+      "zh": "飞天螳螂"
+    },
+    "imageName": "scyther",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 124,
+    "name": {
+      "fr": "Lippoutou",
+      "en": "Jynx",
+      "jp": "ルージュラ",
+      "ko": "루주라",
+      "zh": "迷唇姐"
+    },
+    "imageName": "jynx",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 125,
+    "name": {
+      "fr": "Élektek",
+      "en": "Electabuzz",
+      "jp": "エレブー",
+      "ko": "에레브",
+      "zh": "电击兽"
+    },
+    "imageName": "electabuzz",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 126,
+    "name": {
+      "fr": "Magmar",
+      "en": "Magmar",
+      "jp": "ブーバー",
+      "ko": "마그마",
+      "zh": "鸭嘴火兽"
+    },
+    "imageName": "magmar",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 127,
+    "name": {
+      "fr": "Scarabrute",
+      "en": "Pinsir",
+      "jp": "カイロス",
+      "ko": "쁘사이저",
+      "zh": "凯罗斯"
+    },
+    "imageName": "pinsir",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 128,
+    "name": {
+      "fr": "Tauros",
+      "en": "Tauros",
+      "jp": "ケンタロス",
+      "ko": "켄타로스",
+      "zh": "肯泰罗"
+    },
+    "imageName": "tauros",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 129,
+    "name": {
+      "fr": "Magicarpe",
+      "en": "Magikarp",
+      "jp": "コイキング",
+      "ko": "잉어킹",
+      "zh": "鲤鱼王"
+    },
+    "imageName": "magikarp",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 130,
+    "name": {
+      "fr": "Léviator",
+      "en": "Gyarados",
+      "jp": "ギャラドス",
+      "ko": "갸라도스",
+      "zh": "暴鲤龙"
+    },
+    "imageName": "gyarados",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 131,
+    "name": {
+      "fr": "Lokhlass",
+      "en": "Lapras",
+      "jp": "ラプラス",
+      "ko": "라프라스",
+      "zh": "拉普拉斯"
+    },
+    "imageName": "lapras",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 132,
+    "name": {
+      "fr": "Métamorph",
+      "en": "Ditto",
+      "jp": "メタモン",
+      "ko": "메타몽",
+      "zh": "百变怪"
+    },
+    "imageName": "ditto",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 133,
+    "name": {
+      "fr": "Évoli",
+      "en": "Eevee",
+      "jp": "イーブイ",
+      "ko": "이브이",
+      "zh": "伊布"
+    },
+    "imageName": "eevee",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 134,
+    "name": {
+      "fr": "Aquali",
+      "en": "Vaporeon",
+      "jp": "シャワーズ",
+      "ko": "샤미드",
+      "zh": "水伊布"
+    },
+    "imageName": "vaporeon",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 135,
+    "name": {
+      "fr": "Voltali",
+      "en": "Jolteon",
+      "jp": "サンダース",
+      "ko": "쥬피썬더",
+      "zh": "雷伊布"
+    },
+    "imageName": "jolteon",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 136,
+    "name": {
+      "fr": "Pyroli",
+      "en": "Flareon",
+      "jp": "ブースター",
+      "ko": "부스터",
+      "zh": "火伊布"
+    },
+    "imageName": "flareon",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 137,
+    "name": {
+      "fr": "Porygon",
+      "en": "Porygon",
+      "jp": "ポリゴン",
+      "ko": "폴리곤",
+      "zh": "多边兽"
+    },
+    "imageName": "porygon",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 138,
+    "name": {
+      "fr": "Amonita",
+      "en": "Omanyte",
+      "jp": "オムナイト",
+      "ko": "암나이트",
+      "zh": "菊石兽"
+    },
+    "imageName": "omanyte",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 139,
+    "name": {
+      "fr": "Amonistar",
+      "en": "Omastar",
+      "jp": "オムスター",
+      "ko": "암스타",
+      "zh": "多刺菊石兽"
+    },
+    "imageName": "omastar",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 140,
+    "name": {
+      "fr": "Kabuto",
+      "en": "Kabuto",
+      "jp": "カブト",
+      "ko": "투구",
+      "zh": "化石盔"
+    },
+    "imageName": "kabuto",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 141,
+    "name": {
+      "fr": "Kabutops",
+      "en": "Kabutops",
+      "jp": "カブトプス",
+      "ko": "투구푸스",
+      "zh": "镰刀盔"
+    },
+    "imageName": "kabutops",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 142,
+    "name": {
+      "fr": "Ptéra",
+      "en": "Aerodactyl",
+      "jp": "プテラ",
+      "ko": "프테라",
+      "zh": "化石翼龙"
+    },
+    "imageName": "aerodactyl",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 143,
+    "name": {
+      "fr": "Ronflex",
+      "en": "Snorlax",
+      "jp": "カビゴン",
+      "ko": "잠만보",
+      "zh": "卡比兽"
+    },
+    "imageName": "snorlax",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 144,
+    "name": {
+      "fr": "Artikodin",
+      "en": "Articuno",
+      "jp": "フリーザー",
+      "ko": "프리져",
+      "zh": "急冻鸟"
+    },
+    "imageName": "articuno",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 145,
+    "name": {
+      "fr": "Électhor",
+      "en": "Zapdos",
+      "jp": "サンダー",
+      "ko": "썬더",
+      "zh": "闪电鸟"
+    },
+    "imageName": "zapdos",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 146,
+    "name": {
+      "fr": "Sulfura",
+      "en": "Moltres",
+      "jp": "ファイヤー",
+      "ko": "파이어",
+      "zh": "火焰鸟"
+    },
+    "imageName": "moltres",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 147,
+    "name": {
+      "fr": "Minidraco",
+      "en": "Dratini",
+      "jp": "ミニリュウ",
+      "ko": "미뇽",
+      "zh": "迷你龙"
+    },
+    "imageName": "dratini",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 148,
+    "name": {
+      "fr": "Draco",
+      "en": "Dragonair",
+      "jp": "ハクリュー",
+      "ko": "신뇽",
+      "zh": "哈克龙"
+    },
+    "imageName": "dragonair",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 149,
+    "name": {
+      "fr": "Dracolosse",
+      "en": "Dragonite",
+      "jp": "カイリュー",
+      "ko": "망나뇽",
+      "zh": "快龙"
+    },
+    "imageName": "dragonite",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 150,
+    "name": {
+      "fr": "Mewtwo",
+      "en": "Mewtwo",
+      "jp": "ミュウツー",
+      "ko": "뮤츠",
+      "zh": "超梦"
+    },
+    "imageName": "mewtwo",
+    "generation": 1,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 151,
+    "name": {
+      "fr": "Mew",
+      "en": "Mew",
+      "jp": "ミュウ",
+      "ko": "뮤",
+      "zh": "梦幻"
+    },
+    "imageName": "mew",
+    "generation": 1,
+    "researchStatus": "in_progress"
+  }
+]

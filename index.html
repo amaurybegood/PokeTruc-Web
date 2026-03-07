@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéTruc — Exclusive Pokémon Card Tracker</title>
+  <meta name="description" content="Track all Gen 1 Pokémon cards with unique illustrations only available in one language (Japanese, English, Chinese). Free, offline, fan-made.">
+  <meta name="keywords" content="Pokémon, TCG, cards, exclusive, Japanese, English, Chinese, illustration, tracker, collector">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PokéTruc — Exclusive Pokémon Card Tracker">
+  <meta property="og:description" content="Track all Pokémon cards with unique illustrations only available in one language. Free, offline, fan-made.">
+  <!-- TODO: replace with absolute URLs once deployed -->
+  <meta property="og:image" content="logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://TON-USERNAME.github.io/poketruc-web/">
+
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="logo.png" alt="PokéTruc" class="site-logo"></a>
+    <h1>PokéTruc</h1>
+    <p class="subtitle" data-i18n="subtitle">Exclusive Pokémon card illustrations tracker</p>
+    <nav class="site-nav">
+      <a href="index.html" class="active" data-i18n="dex">Dex</a>
+      <a href="info.html" data-i18n="info">Info</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
+    </nav>
+    <div class="search-row">
+      <input type="search" id="search" data-i18n-placeholder="search.placeholder" placeholder="Search a Pokémon..." autocomplete="off">
+      <button class="filter-btn" id="filter-btn" data-i18n="filter.all">All</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="loader" class="loader">
+      <div class="loader-spinner"></div>
+    </div>
+    <div id="pokemon-grid"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 PokéTruc — Fan-made, not affiliated with Nintendo / The Pokémon Company.</p>
+  </footer>
+
+  <!-- Modal detail -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Fullscreen card -->
+  <div id="fullscreen" class="fullscreen hidden">
+    <div class="fullscreen-backdrop"></div>
+    <img id="fullscreen-img" src="" alt="">
+  </div>
+
+  <noscript>
+    <style>#loader { display: none; }</style>
+    <p style="text-align:center;padding:64px 24px;color:#6e6e73;">JavaScript is required to use PokéTruc.</p>
+  </noscript>
+
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
