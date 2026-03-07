@@ -57,6 +57,7 @@ function renderGrid(list) {
       : '';
 
     div.innerHTML = `
+      <span class="pokemon-number">#${pokemon.id}</span>
       <img src="monsters/${pokemon.imageName}.png" alt="${pokemonName(pokemon)}" loading="lazy">
       <div class="name">${pokemonName(pokemon)}</div>
       ${badgeLabel ? `<span class="${badgeClass}">${badgeLabel}</span>` : ''}
@@ -141,6 +142,7 @@ function openModal(pokemon, pkCards) {
 
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
+  document.body.style.touchAction = 'none';
 }
 
 document.querySelector('.modal-backdrop').addEventListener('click', closeModal);
@@ -149,6 +151,7 @@ document.querySelector('.modal-close').addEventListener('click', closeModal);
 function closeModal() {
   document.getElementById('modal').classList.add('hidden');
   document.body.style.overflow = '';
+  document.body.style.touchAction = '';
 }
 
 // Fullscreen
