@@ -1,15 +1,6 @@
 let pokemons = [];
 let cards = [];
-let filterCardsOnly = false;
 let searchQuery = '';
-
-const languageLabel = {
-  '🇯🇵': 'JP',
-  '🇬🇧': 'EN',
-  '🇨🇳': 'CN',
-  '🇺🇸': 'EN',
-  '🇰🇷': 'KR',
-};
 
 async function loadData() {
   try {
@@ -119,7 +110,6 @@ function applyFilter() {
   const normalize = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   const q = normalize(searchQuery);
   let filtered = pokemons;
-  if (filterCardsOnly) filtered = filtered.filter(p => cardsFor(p.id).length > 0);
   if (q) filtered = filtered.filter(p =>
     normalize(p.name.en).includes(q)
     || normalize(p.name.fr).includes(q)
@@ -132,15 +122,6 @@ function applyFilter() {
 // Search
 document.getElementById('search').addEventListener('input', e => {
   searchQuery = e.target.value;
-  applyFilter();
-});
-
-// Filter button
-document.getElementById('filter-btn').addEventListener('click', () => {
-  filterCardsOnly = !filterCardsOnly;
-  const btn = document.getElementById('filter-btn');
-  btn.textContent = t(filterCardsOnly ? 'filter.cards' : 'filter.all');
-  btn.classList.toggle('active', filterCardsOnly);
   applyFilter();
 });
 
@@ -165,7 +146,7 @@ function openModal(pokemon, pkCards) {
           <img src="cards/${card.imageName}.avif" alt="${card.name}">
           <div class="card-info">
             <div class="card-name">${card.name}</div>
-            <div class="card-meta"><span class="lang-badge">${languageLabel[card.language] ?? card.language}</span> ${card.year} · ${card.rarity}</div>
+            <div class="card-meta"><span class="lang-badge">${card.language}</span> ${card.year} · ${card.rarity}</div>
             ${card.artist ? `<div class="card-artist">${t('artist')}: ${card.artist}</div>` : ''}
           </div>
         </div>
