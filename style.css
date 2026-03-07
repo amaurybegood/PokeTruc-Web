@@ -122,7 +122,7 @@ header .subtitle {
 #search {
   width: 100%;
   max-width: 380px;
-  padding: 12px 18px;
+  padding: 10px 18px;
   border: 1px solid var(--border);
   border-radius: 999px;
   font-size: 1rem;
@@ -134,6 +134,17 @@ header .subtitle {
 
 #search:focus {
   border-color: var(--accent);
+}
+
+.gen-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 12px;
+  white-space: nowrap;
+  background: var(--card-bg);
 }
 
 .filter-btn {
@@ -158,6 +169,61 @@ header .subtitle {
 .filter-btn.active {
   background: color-mix(in srgb, var(--accent) 10%, var(--card-bg));
 }
+
+/* Stats bar */
+.stats-bar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stats-bar-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-row .progress-bar {
+  flex: 1;
+  align-self: stretch;
+  height: auto;
+}
+
+.progress-bar {
+  display: flex;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.progress-done { background: var(--accent); transition: width 0.8s cubic-bezier(0.32, 0.72, 0, 1); }
+.progress-wip  { background: #f0a500;       transition: width 0.8s cubic-bezier(0.32, 0.72, 0, 1) 0.1s; }
+.progress-soon { background: #ccc;          transition: width 0.8s cubic-bezier(0.32, 0.72, 0, 1) 0.2s; }
+
+.progress-legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.legend-total { color: var(--text); font-weight: 600; margin-right: 4px; }
+.legend-done  { color: var(--accent); }
+.legend-wip   { color: #f0a500; }
+.legend-soon  { color: #aaa; }
+
 
 /* Loader */
 .loader {
@@ -305,6 +371,12 @@ main {
 
 .pokemon-card .badge.coming-soon {
   background: #aaa;
+}
+
+.pokemon-card .badge.no-card {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
 }
 
 .pokemon-card.no-cards {

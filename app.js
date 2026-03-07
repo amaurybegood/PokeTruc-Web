@@ -20,11 +20,48 @@ async function loadData() {
     pokemons = await pkRes.json();
     cards = await cardRes.json();
     document.getElementById('loader').classList.add('hidden');
+    renderStats();
     applyFilter();
   } catch {
     document.getElementById('loader').innerHTML =
       '<p style="color:var(--text-secondary);text-align:center">Failed to load data. Please try again later.</p>';
   }
+}
+
+function renderStats() {
+  const total = pokemons.length;
+  const done  = pokemons.filter(p => p.researchStatus === 'done').length;
+  const wip   = pokemons.filter(p => p.researchStatus === 'in_progress').length;
+  const soon  = pokemons.filter(p => p.researchStatus === 'coming_soon').length;
+
+  const pDone = (done / total * 100).toFixed(1);
+  const pWip  = (wip  / total * 100).toFixed(1);
+  const pSoon = (soon / total * 100).toFixed(1);
+
+  document.getElementById('stats-bar').innerHTML = `
+    <div class="progress-row">
+      <span class="gen-badge">Gen 1</span>
+      <div class="progress-bar">
+        <div class="progress-done" style="width:0"></div>
+        <div class="progress-wip"  style="width:0"></div>
+        <div class="progress-soon" style="width:0"></div>
+      </div>
+    </div>
+    <div class="progress-legend">
+      <span class="legend-done">&#9632; ${done} <span data-i18n="stat.done"></span></span>
+      <span class="legend-wip"> &#9632; ${wip}  <span data-i18n="stat.wip"></span></span>
+      <span class="legend-soon">&#9632; ${soon} <span data-i18n="stat.soon"></span></span>
+    </div>
+  `;
+  applyTranslations();
+
+  const bar = document.querySelector('.progress-bar');
+  void bar.offsetWidth; // force reflow
+  setTimeout(() => {
+    document.querySelector('.progress-done').style.width = `${pDone}%`;
+    document.querySelector('.progress-wip').style.width  = `${pWip}%`;
+    document.querySelector('.progress-soon').style.width = `${pSoon}%`;
+  }, 50);
 }
 
 function cardsFor(pokemonId) {
@@ -49,12 +86,13 @@ function renderGrid(list) {
 
     const badgeClass = pokemon.researchStatus === 'in_progress' ? 'badge wip'
       : pokemon.researchStatus === 'coming_soon' ? 'badge coming-soon'
+      : !hasCards ? 'badge no-card'
       : 'badge';
 
     const badgeLabel = pokemon.researchStatus === 'coming_soon' ? t('coming.soon')
       : pokemon.researchStatus === 'in_progress' ? `${pkCards.length} · ${t('wip')}`
       : hasCards ? String(pkCards.length)
-      : '';
+      : t('no.card');
 
     div.innerHTML = `
       <span class="pokemon-number">#${pokemon.id}</span>

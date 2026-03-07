@@ -12,9 +12,9 @@
   <meta property="og:title" content="PokéTruc — Exclusive Pokémon Card Tracker">
   <meta property="og:description" content="Track all Pokémon cards with unique illustrations only available in one language. Free, offline, fan-made.">
   <!-- TODO: replace with absolute URLs once deployed -->
-  <meta property="og:image" content="logo.png">
+  <meta property="og:image" content="https://amaurybegood.github.io/poketruc-web/logo.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://TON-USERNAME.github.io/poketruc-web/">
+  <meta property="og:url" content="https://amaurybegood.github.io/poketruc-web/">
 
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
@@ -25,7 +25,7 @@
   <header>
     <a href="index.html"><img src="logo.png" alt="PokéTruc" class="site-logo"></a>
     <h1>PokéTruc</h1>
-    <p class="subtitle" data-i18n="subtitle">Exclusive Pokémon card illustrations tracker</p>
+    <p class="subtitle" data-i18n="subtitle">Exclusive Pokémon card illustrations</p>
     <nav class="site-nav">
       <a href="index.html" class="active" data-i18n="dex">Dex</a>
       <a href="info.html" data-i18n="info">Info</a>
@@ -36,6 +36,8 @@
       <button class="filter-btn" id="filter-btn" data-i18n="filter.all">All</button>
     </div>
   </header>
+
+  <div id="stats-bar" class="stats-bar"></div>
 
   <main>
     <div id="loader" class="loader">
