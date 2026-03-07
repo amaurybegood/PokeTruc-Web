@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TON-USERNAME.github.io/poketruc-web/sitemap.xml
+Sitemap: https://amaurybegood.github.io/poketruc-web/sitemap.xml
