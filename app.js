@@ -15,7 +15,7 @@ async function loadData() {
     applyFilter();
   } catch {
     document.getElementById('loader').innerHTML =
-      '<p style="color:var(--text-secondary);text-align:center">Failed to load data. Please try again later.</p>';
+      `<p style="color:var(--text-secondary);text-align:center">${t('load.error')}</p>`;
   }
 }
 
@@ -89,7 +89,7 @@ function renderGrid(list) {
       <span class="pokemon-number">#${pokemon.id}</span>
       <img src="monsters/${pokemon.imageName}.png" alt="${pokemonName(pokemon)}" loading="lazy">
       <div class="name">${pokemonName(pokemon)}</div>
-      ${badgeLabel ? `<span class="${badgeClass}">${badgeLabel}</span>` : ''}
+      <span class="${badgeClass}">${badgeLabel}</span>
     `;
 
     if (hasCards) {

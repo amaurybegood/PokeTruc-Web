@@ -147,28 +147,6 @@ header .subtitle {
   background: var(--card-bg);
 }
 
-.filter-btn {
-  padding: 10px 16px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--card-bg);
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: color 0.15s, border-color 0.15s, background 0.15s;
-  white-space: nowrap;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
-.filter-btn.active {
-  background: color-mix(in srgb, var(--accent) 10%, var(--card-bg));
-}
 
 /* Stats bar */
 .stats-bar {
@@ -178,12 +156,6 @@ header .subtitle {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-
-.stats-bar-top {
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 .progress-row {
@@ -219,7 +191,6 @@ header .subtitle {
   color: var(--text-secondary);
 }
 
-.legend-total { color: var(--text); font-weight: 600; margin-right: 4px; }
 .legend-done  { color: var(--accent); }
 .legend-wip   { color: #f0a500; }
 .legend-soon  { color: #aaa; }
@@ -505,9 +476,10 @@ main {
 .card-item .card-name {
   font-size: 0.75rem;
   font-weight: 500;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .card-item .card-meta {
