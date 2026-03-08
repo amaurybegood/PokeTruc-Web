@@ -2,7 +2,7 @@
 
 A fan-made website listing all Gen 1 Pokémon cards with **unique illustrations**, meaning cards only available in one language (Japanese, English, Chinese, or others).
 
-🌐 **Live site**: https://amaurybegood.github.io/PokeTruc-Web/
+**Live site**: https://amaurybegood.github.io/PokeTruc-Web/
 
 ---
 
