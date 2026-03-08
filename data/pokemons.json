@@ -699,7 +699,7 @@
     },
     "imageName": "psyduck",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 55,
@@ -712,7 +712,7 @@
     },
     "imageName": "golduck",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 56,
@@ -725,7 +725,7 @@
     },
     "imageName": "mankey",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 57,
@@ -738,7 +738,7 @@
     },
     "imageName": "primeape",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 58,
@@ -751,7 +751,7 @@
     },
     "imageName": "growlithe",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 59,
@@ -764,7 +764,7 @@
     },
     "imageName": "arcanine",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 60,

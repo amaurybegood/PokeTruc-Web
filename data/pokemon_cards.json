@@ -1549,6 +1549,124 @@
     "artist": "Miki Tanaka"
   },
   {
+  "pokemonId": 54,
+  "name": "Black & White Promos",
+  "imageName": "54_Psyduck_jpn_bwp_167",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2010,
+  "artist": "Masakazu Fukuda"
+},{
+  "pokemonId": 54,
+  "name": "XY Unnumbered Promos",
+  "imageName": "54_Psyduck_jpn_xypunp_108",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 54,
+  "name": "Sun & Moon Promos",
+  "imageName": "54_Psyduck_jpn_smp_286",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 55,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "55_Golduck_jpn_vses3_13",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Naoyo Kimura"
+},{
+  "pokemonId": 56,
+  "name": "Unnumbered Promos",
+  "imageName": "56_Mankey_jpn_unp_78",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 56,
+  "name": "Unnumbered Promos",
+  "imageName": "56_Mankey_jpn_unp_56",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 57,
+  "name": "Pokémon VS",
+  "imageName": "57_Primeape_jpn_versus1_33",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Masako Yamashita"
+},{
+  "pokemonId": 58,
+  "name": "Unnumbered Promos",
+  "imageName": "58_Growlithe_jpn_unp_67",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 58,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "58_Growlithe_jpn_vses3_10",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 58,
+  "name": "Intro Pack: Squirtle Deck",
+  "imageName": "58_Growlithe_jpn_ips_26",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1999,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 58,
+  "name": "P Promos",
+  "imageName": "58_Growlithe_jpn_ppr_30",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Kyoko Umemoto"
+},{
+  "pokemonId": 59,
+  "name": "Intro Pack: Squirtle Deck",
+  "imageName": "59_Arcanine_jpn_ips_32",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1999,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 59,
+  "name": "My First Battle: Charmander Deck",
+  "imageName": "59_Arcanine_mfbc_8",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "nisimono"
+},
+  {
     "pokemonId": 60,
     "name": "Unnumbered Releases: Unnumbered Promos",
     "imageName": "poliwag_card_1",
