@@ -1666,36 +1666,124 @@
   "year": 2022,
   "artist": "nisimono"
 },
-  {
-    "pokemonId": 60,
-    "name": "Unnumbered Releases: Unnumbered Promos",
-    "imageName": "poliwag_card_1",
-    "rarity": "Promo",
-    "description": "Carte holo française.",
-    "language": "🇯🇵",
-    "year": 1999,
-    "artist": "Hiroyuki Sasaki"
-  },
-  {
-    "pokemonId": 60,
-    "name": "Unnumbered Releases: Vending Machine Expansion Sheet 1: Blue",
-    "imageName": "poliwag_card_2",
-    "rarity": "Common",
-    "description": "Carte holo française.",
-    "language": "🇯🇵",
-    "year": 1999,
-    "artist": "Atsuko Nishida"
-  },
-  {
-    "pokemonId": 60,
-    "name": "Decks: My First Battle: Squirtle Deck",
-    "imageName": "poliwag_card_3",
-    "rarity": "",
-    "description": "Carte holo française.",
-    "language": "🇬🇧",
-    "year": 1999,
-    "artist": ""
-  },
+{
+  "pokemonId": 60,
+  "name": "My First Battle: Squirtle Deck",
+  "imageName": "60_Poliwag_mfbs_5",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "0313"
+},{
+  "pokemonId": 60,
+  "name": "Unnumbered Promos",
+  "imageName": "60_Poliwag_jpn_unp_78b",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Hiroyuki Sasaki"
+},{
+  "pokemonId": 60,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "60_Poliwag_jpn_vses1_16",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 61,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "61_Poliwhirl_jpn_vses1_17",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 61,
+  "name": "My First Battle: Squirtle Deck",
+  "imageName": "61_Poliwhirl_mfbs_6",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Mizue"
+},{
+  "pokemonId": 62,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "62_Poliwrath_jpn_vses1_18",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Yuuki Kawamura"
+},{
+  "pokemonId": 62,
+  "name": "Pokémon VS",
+  "imageName": "62_Poliwrath_jpn_versus1_34",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Masako Yamashita"
+},{
+  "pokemonId": 63,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "63_Abra_jpn_vses1_20",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Aya Kusube"
+},{
+  "pokemonId": 63,
+  "name": "McDonald's Pokémon-e Minimum Pack",
+  "imageName": "63_Abra_jpn_mcdemp_13",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Toshinao Aoki"
+},{
+  "pokemonId": 64,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "64_Kadabra_jpn_vses3_20",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Shin-ichi Yoshida"
+},{
+  "pokemonId": 64,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "64_Kadabra_jpn_vses3_19",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Miki Tanaka"
+},{
+  "pokemonId": 65,
+  "name": "Unnumbered Promos",
+  "imageName": "65_Alakazam_jpn_unp_72",
+  "rarity": "Rare Holo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Shin-ichi Yoshida"
+},{
+  "pokemonId": 65,
+  "name": "Mega Evolution Promos",
+  "imageName": "65_Alakazam_mep_3",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2025,
+  "artist": "cochi8i"
+},
   {
     "pokemonId": 132,
     "name": "Unnumbered Releases: Vending Machine Expansion Sheet 2: Red",

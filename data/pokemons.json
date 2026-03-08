@@ -790,7 +790,7 @@
     },
     "imageName": "poliwhirl",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 62,
@@ -803,7 +803,7 @@
     },
     "imageName": "poliwrath",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 63,
@@ -816,7 +816,7 @@
     },
     "imageName": "abra",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 64,
@@ -829,7 +829,7 @@
     },
     "imageName": "kadabra",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 65,
@@ -842,7 +842,7 @@
     },
     "imageName": "alakazam",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 66,
