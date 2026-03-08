@@ -130,7 +130,8 @@ function openModal(pokemon, pkCards) {
   const modal = document.getElementById('modal');
   const body = document.getElementById('modal-body');
 
-  const count = pkCards.length;
+  const sorted = [...pkCards].sort((a, b) => a.year - b.year);
+  const count = sorted.length;
   const cardWord = count === 1 ? t('card') : t('cards');
   body.innerHTML = `
     <div class="modal-header">
@@ -141,7 +142,7 @@ function openModal(pokemon, pkCards) {
       </div>
     </div>
     <div class="cards-grid">
-      ${pkCards.map(card => `
+      ${sorted.map(card => `
         <div class="card-item" data-img="cards/${card.imageName}.avif">
           <img src="cards/${card.imageName}.avif" alt="${card.name}">
           <div class="card-info">
