@@ -1571,12 +1571,22 @@
   {
     "pokemonId": 132,
     "name": "Unnumbered Releases: Vending Machine Expansion Sheet 2: Red",
-    "imageName": "ditto_card_1",
+    "imageName": "132_Ditto_card_1",
     "rarity": "Uncommon",
     "description": "Carte holo française.",
     "language": "🇯🇵",
     "year": 1999,
     "artist": "Atsuko Nishida"
+  },
+    {
+    "pokemonId": 132,
+    "name": "SV-P Promotional cards",
+    "imageName": "132_Ditto_SVPromo173",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇰🇷",
+    "year": 2025,
+    "artist": " Lee Mina"
   },
   {
     "pokemonId": 151,
