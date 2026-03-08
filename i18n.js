@@ -39,7 +39,7 @@ const translations = {
     about:          'About',
     contact:        'Contact',
     purpose:        "This site was developed for fun, and also for learning purposes (not being a developer, it's a bit of a challenge for me). That's why it is very simple and basic.\n\nIts purpose is to list all cards with unique illustrations. By unique, I mean that they are only available in one language (Japanese, English, Chinese, or other). This is the kind of card I like to collect.\n\nIt is completely free and ad-free.\n\nDespite the care taken, some information may be inaccurate. Please feel free to contact me by email if you notice an error or would like to provide feedback.\n\nVoilà, voilà :)",
-    disclaimer:     "This app is an unofficial, fan-made application. Pokémon and Pokémon character names are trademarks of Nintendo / Creatures Inc. / GAME FREAK inc.\nThis app does not collect any personal data, use any third-party services, or require a user account.\nNo information is transmitted or stored outside of your device.",
+    disclaimer:     "This site is unofficial and fan-made. Pokémon and Pokémon character names are trademarks of Nintendo / Creatures Inc. / GAME FREAK inc.\nThis site does not collect any personal data or require a user account.\nNo information is transmitted or stored outside of your device.",
   },
   fr: {
     subtitle:       'Illustrations exclusives de cartes Pokémon',
@@ -61,7 +61,7 @@ const translations = {
     about:          'À propos',
     contact:        'Contact',
     purpose:        "Ce site est développé pour le fun, et aussi à des fins d'apprentissage (n'étant pas développeur, c'est un petit défi pour moi). C'est pour cela qu'il est très simple et basique.\n\nSon but est de répertorier toutes les cartes ayant des illustrations uniques. Par unique, j'entends qui n'est disponible que dans une langue (japonais, anglais, chinois, ou autre). C'est le genre de carte que j'aime bien collectionner.\n\nIl est entièrement gratuit et sans publicité.\n\nMalgré le soin apporté, certaines informations peuvent être inexactes. N'hésitez pas à me contacter par e-mail si vous constatez une erreur ou souhaitez faire un retour.\n\nVoilà, voilà :)",
-    disclaimer:     "Cette application est une application non officielle créée par un fan.\nPokémon et les noms des personnages Pokémon sont des marques déposées de Nintendo / Creatures Inc. / GAME FREAK inc.\nCette application ne collecte aucune donnée personnelle, n'utilise aucun service tiers et ne nécessite aucun compte utilisateur.\nAucune information n'est transmise ou stockée en dehors de votre appareil.",
+    disclaimer:     "Ce site est non officiel et créé par un fan.\nPokémon et les noms des personnages Pokémon sont des marques déposées de Nintendo / Creatures Inc. / GAME FREAK inc.\nCe site ne collecte aucune donnée personnelle et ne nécessite aucun compte utilisateur.\nAucune information n'est transmise ou stockée en dehors de votre appareil.",
   },
   ja: {
     subtitle:       '限定ポケモンカードイラスト',
@@ -83,7 +83,7 @@ const translations = {
     about:          'このアプリについて',
     contact:        'お問い合わせ',
     purpose:        "このサイトは楽しみのために、また学習目的で開発しました（開発者ではないので、私には少し挑戦です）。そのため、とてもシンプルで基本的な作りになっています。\n\nその目的は、独自のイラストを持つすべてのカードをリストアップすることです。「独自」とは、1つの言語（日本語、英語、中国語、またはその他）でのみ入手可能なものを意味します。これが私がコレクションしたいカードの種類です。\n\n完全無料、広告なしです。\n\n注意を払っていますが、一部の情報が不正確な場合があります。エラーを見つけた場合やフィードバックをお送りいただける場合は、メールでご連絡ください。\n\nそれでは :)",
-    disclaimer:     "このアプリは非公式のファン制作アプリです。ポケモンおよびポケモンキャラクター名はNintendo / Creatures Inc. / GAME FREAK inc.の商標です。\nこのアプリは個人情報を収集せず、サードパーティサービスを使用せず、ユーザーアカウントも不要です。\nいかなる情報もデバイス外に送信・保存されません。",
+    disclaimer:     "このサイトは非公式のファン制作サイトです。ポケモンおよびポケモンキャラクター名はNintendo / Creatures Inc. / GAME FREAK inc.の商標です。\nこのサイトは個人情報を収集せず、ユーザーアカウントも不要です。\nいかなる情報もデバイス外に送信・保存されません。",
   },
   ko: {
     subtitle:       '독점 포켓몬 카드 일러스트',
@@ -105,7 +105,7 @@ const translations = {
     about:          '앱 소개',
     contact:        '문의하기',
     purpose:        "이 사이트는 재미를 위해, 그리고 학습 목적으로 개발되었습니다 (개발자가 아니기 때문에 저에게는 작은 도전입니다). 그래서 매우 단순하고 기본적입니다.\n\n그 목적은 독특한 일러스트를 가진 모든 카드를 나열하는 것입니다. '독특하다'는 것은 한 가지 언어(일본어, 영어, 중국어 또는 기타)로만 제공된다는 의미입니다. 이것이 제가 수집하고 싶은 카드의 종류입니다.\n\n완전 무료이며 광고가 없습니다.\n\n주의를 기울였지만 일부 정보가 부정확할 수 있습니다. 오류를 발견하거나 피드백을 제공하고 싶으시면 이메일로 연락해 주세요.\n\nVoilà, voilà :)",
-    disclaimer:     "이 앱은 비공식 팬 제작 앱입니다. 포켓몬 및 포켓몬 캐릭터 이름은 Nintendo / Creatures Inc. / GAME FREAK inc.의 상표입니다.\n이 앱은 개인 정보를 수집하지 않으며, 제3자 서비스를 사용하지 않고, 사용자 계정도 필요하지 않습니다.\n어떠한 정보도 기기 외부로 전송되거나 저장되지 않습니다.",
+    disclaimer:     "이 사이트는 비공식 팬 제작 사이트입니다. 포켓몬 및 포켓몬 캐릭터 이름은 Nintendo / Creatures Inc. / GAME FREAK inc.의 상표입니다.\n이 사이트는 개인 정보를 수집하지 않으며, 사용자 계정도 필요하지 않습니다.\n어떠한 정보도 기기 외부로 전송되거나 저장되지 않습니다.",
   },
   zh: {
     subtitle:       '独家宝可梦卡牌插图',
@@ -127,7 +127,7 @@ const translations = {
     about:          '关于',
     contact:        '联系我们',
     purpose:        "这个网站是为了乐趣而开发的，也是出于学习目的（作为一名非开发者，这对我来说是一个小挑战）。这就是为什么它非常简单和基础。\n\n它的目的是列出所有具有独特插图的卡片。所谓「独特」，是指只在一种语言（日语、英语、中文或其他语言）中提供的卡片。这就是我喜欢收藏的那种卡片。\n\n完全免费，无广告。\n\n尽管尽了一切努力，部分信息可能不准确。如果您发现错误或想提供反馈，请随时通过电子邮件联系我。\n\nVoilà, voilà :)",
-    disclaimer:     "本应用是非官方的粉丝制作应用。宝可梦及宝可梦角色名称是Nintendo / Creatures Inc. / GAME FREAK inc.的商标。\n本应用不收集任何个人数据，不使用任何第三方服务，也不需要用户账户。\n任何信息均不会在设备外部传输或存储。",
+    disclaimer:     "本网站是非官方的粉丝制作网站。宝可梦及宝可梦角色名称是Nintendo / Creatures Inc. / GAME FREAK inc.的商标。\n本网站不收集任何个人数据，也不需要用户账户。\n任何信息均不会在设备外部传输或存储。",
   },
 };
 

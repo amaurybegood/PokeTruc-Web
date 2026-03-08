@@ -380,6 +380,15 @@ main {
   to   { transform: translateY(0); }
 }
 
+@keyframes slideDown {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100%); }
+}
+
+.modal-content.closing {
+  animation: slideDown 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -411,7 +420,7 @@ main {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: var(--bg);
+  background: var(--card-bg);
   border: none;
   border-radius: 50%;
   width: 32px;
@@ -457,6 +466,8 @@ main {
   overflow: hidden;
   border: 1px solid var(--border);
   transition: transform 0.15s;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-item:hover {
@@ -471,6 +482,7 @@ main {
 .card-item .card-info {
   padding: 8px;
   background: var(--card-bg);
+  flex: 1;
 }
 
 .card-item .card-name {

@@ -168,9 +168,15 @@ document.querySelector('.modal-backdrop').addEventListener('click', closeModal);
 document.querySelector('.modal-close').addEventListener('click', closeModal);
 
 function closeModal() {
-  document.getElementById('modal').classList.add('hidden');
-  document.body.style.overflow = '';
-  document.body.style.touchAction = '';
+  const modal = document.getElementById('modal');
+  const content = modal.querySelector('.modal-content');
+  content.classList.add('closing');
+  content.addEventListener('animationend', () => {
+    content.classList.remove('closing');
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+    document.body.style.touchAction = '';
+  }, { once: true });
 }
 
 // Fullscreen
