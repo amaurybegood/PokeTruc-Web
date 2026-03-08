@@ -1020,6 +1020,16 @@
     "artist": "Naoyo Kimura"
   },
   {
+    "pokemonId": 25,
+    "name": "SM-P Promotional cards",
+    "imageName": "25_Pikachu_001SM-P",
+    "rarity": "Promo",
+    "description": "",
+    "language": "🇰🇷",
+    "year": 2016,
+    "artist": "Sanosuke Sakuma"
+  },
+  {
     "pokemonId": 26,
     "name": "Intro Pack: Bulbasaur Deck",
     "imageName": "26_Raichu_jpn_ipb_3",
