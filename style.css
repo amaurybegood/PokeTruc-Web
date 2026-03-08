@@ -395,7 +395,7 @@ main {
 .modal-content {
   position: relative;
   z-index: 1;
-  background: var(--card-bg);
+  background: var(--bg);
   border-radius: var(--radius) var(--radius) 0 0;
   width: 100%;
   max-width: 700px;
