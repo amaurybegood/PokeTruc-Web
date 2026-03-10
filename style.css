@@ -308,7 +308,6 @@ main {
   width: 72px;
   height: 72px;
   object-fit: contain;
-  image-rendering: pixelated;
   margin-top: 12px;
 }
 
@@ -441,7 +440,6 @@ main {
   width: 64px;
   height: 64px;
   object-fit: contain;
-  image-rendering: pixelated;
 }
 
 .modal-header h2 {
