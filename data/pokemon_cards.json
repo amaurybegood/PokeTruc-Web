@@ -1814,6 +1814,25 @@
   "year": 2025,
   "artist": "cochi8i"
 },
+{
+  "pokemonId": 116,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "116_Horsea_jpn_vses3_15",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 117,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "117_Seadra_jpn_vses3_16",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},
   {
     "pokemonId": 132,
     "name": "Unnumbered Releases: Vending Machine Expansion Sheet 2: Red",
