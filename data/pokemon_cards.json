@@ -1833,6 +1833,52 @@
   "year": 1998,
   "artist": "Tomokazu Komiya"
 },
+{
+  "pokemonId": 131,
+  "name": "Pokémon VS",
+  "imageName": "131_Lapras_jpn_versus1_41",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 131,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "131_Lapras_jpn_vses2_10",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 131,
+  "name": "Pokémon VS",
+  "imageName": "131_Lapras_jpn_versus1_57",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Satoshi Ohta"
+},{
+  "pokemonId": 131,
+  "name": "Sword & Shield Promos",
+  "imageName": "131_Lapras_swshp_SWSH051",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2020,
+  "artist": "Megumi Higuchi"
+},{
+  "pokemonId": 131,
+  "name": "My First Battle: Squirtle Deck",
+  "imageName": "131_Lapras_mfbs_9",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Akira Komayama"
+},
   {
     "pokemonId": 132,
     "name": "Unnumbered Releases: Vending Machine Expansion Sheet 2: Red",
