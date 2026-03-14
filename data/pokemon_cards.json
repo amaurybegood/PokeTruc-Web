@@ -1815,6 +1815,52 @@
   "artist": "cochi8i"
 },
 {
+  "pokemonId": 81,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "81_Magnemite_jpn_vses2_14",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 81,
+  "name": "My First Battle: Pikachu Deck",
+  "imageName": "81_Magnemite_mfbp_5",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Shibuzoh."
+},{
+  "pokemonId": 82,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "82_Magneton_jpn_vses2_15",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 82,
+  "name": "Pokémon VS",
+  "imageName": "82_Magneton_jpn_versus1_28",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 82,
+  "name": "My First Battle: Pikachu Deck",
+  "imageName": "82_Magneton_mfbp_6",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "GOSSAN"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",

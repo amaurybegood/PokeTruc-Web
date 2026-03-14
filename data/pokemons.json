@@ -1050,7 +1050,7 @@
     },
     "imageName": "magnemite",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 82,
@@ -1063,7 +1063,7 @@
     },
     "imageName": "magneton",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 83,
