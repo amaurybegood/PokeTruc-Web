@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amaurybegood.github.io/poketruc-web/sitemap.xml
+Sitemap: https://amaurybegood.github.io/PokeTruc-Web/sitemap.xml
