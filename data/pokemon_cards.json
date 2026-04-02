@@ -80,16 +80,6 @@
     "artist": ""
   },
   {
-  "pokemonId": 1,
-  "name": "30th Anniversary Celebration",
-  "imageName": "1_Bulbasaur_scn_30thp_1",
-  "rarity": "Promo",
-  "description": "",
-  "language": "🇨🇳",
-  "year": 2026,
-  "artist": "Saboteri"
-},
-  {
     "pokemonId": 2,
     "name": "Intro Pack: Bulbasaur Deck",
     "imageName": "2_Ivysaur_jpn_ipb_32",
@@ -239,16 +229,6 @@
     "year": 2025,
     "artist": "Orca"
   },
-  {
-  "pokemonId": 4,
-  "name": "30th Anniversary Celebration",
-  "imageName": "4_Charmander_scn_30thp_2",
-  "rarity": "Promo",
-  "description": "",
-  "language": "🇨🇳",
-  "year": 2026,
-  "artist": "Saboteri"
-},
   {
     "pokemonId": 5,
     "name": "T Promos",
@@ -479,16 +459,6 @@
     "year": 2024,
     "artist": ""
   },
-  {
-  "pokemonId": 7,
-  "name": "30th Anniversary Celebration",
-  "imageName": "7_Squirtle_scn_30thp_3",
-  "rarity": "Promo",
-  "description": "",
-  "language": "🇨🇳",
-  "year": 2026,
-  "artist": "Saboteri"
-},
   {
     "pokemonId": 8,
     "name": "My First Battle: Squirtle Deck",
