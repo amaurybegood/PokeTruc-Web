@@ -1785,6 +1785,61 @@
   "artist": "cochi8i"
 },
 {
+  "pokemonId": 66,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "66_Machop_jpn_vses2_21",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 67,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "67_Machoke_jpn_vses2_22",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Nobuyuki Habu"
+},{
+  "pokemonId": 67,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "67_Machoke_jpn_vses3_28",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 68,
+  "name": "Pokémon VS",
+  "imageName": "68_Machamp_jpn_versus1_81",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Yuka Morii"
+},{
+  "pokemonId": 68,
+  "name": "Sword & Shield Promos",
+  "imageName": "68_Machamp_swshp_SWSH053",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2020,
+  "artist": "SATOSHI NAKAI"
+},{
+  "pokemonId": 68,
+  "name": "Sword & Shield Promos",
+  "imageName": "68_Machamp_swshp_SWSH243",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2020,
+  "artist": "GOSSAN"
+},
+{
   "pokemonId": 81,
   "name": "Vending Machine Expansion Sheet 2: Red",
   "imageName": "81_Magnemite_jpn_vses2_14",

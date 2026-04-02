@@ -855,7 +855,7 @@
     },
     "imageName": "machop",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 67,
@@ -868,7 +868,7 @@
     },
     "imageName": "machoke",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 68,
@@ -881,7 +881,7 @@
     },
     "imageName": "machamp",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 69,
