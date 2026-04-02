@@ -1840,6 +1840,106 @@
   "artist": "GOSSAN"
 },
 {
+  "pokemonId": 69,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "69_Bellsprout_jpn_vses3_5",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Miki Tanaka"
+},{
+  "pokemonId": 70,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "70_Weepinbell_jpn_vses3_6",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 72,
+  "name": "Unnumbered Promos",
+  "imageName": "72_Tentacool_jpn_unp_58",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 72,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "72_Tentacool_scn_svp_144",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "osare"
+},{
+  "pokemonId": 73,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "73_Tentacruel_scn_svp_145",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "Masako Tomii"
+},{
+  "pokemonId": 74,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "74_Geodude_jpn_vses1_23",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Ai Kurihara"
+},{
+  "pokemonId": 74,
+  "name": "Intro Pack Neo: Chikorita Side Deck",
+  "imageName": "74_Geodude_jpn_ipcsd_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 74,
+  "name": "Trainer Battle Decks",
+  "imageName": "74_Geodude_jpn_smk_8",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2019,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 75,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "75_Graveler_jpn_vses2_23",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Naoyo Kimura"
+},{
+  "pokemonId": 75,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "75_Graveler_jpn_vses3_29",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Hikaru Koike"
+},{
+  "pokemonId": 76,
+  "name": "Unnumbered Promos",
+  "imageName": "76_Golem_jpn_unp_74",
+  "rarity": "Rare Holo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Nobuyuki Habu"
+},
+{
   "pokemonId": 81,
   "name": "Vending Machine Expansion Sheet 2: Red",
   "imageName": "81_Magnemite_jpn_vses2_14",

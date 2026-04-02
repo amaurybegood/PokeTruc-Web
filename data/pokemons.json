@@ -894,7 +894,7 @@
     },
     "imageName": "bellsprout",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 70,
@@ -907,7 +907,7 @@
     },
     "imageName": "weepinbell",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 71,
@@ -920,7 +920,7 @@
     },
     "imageName": "victreebel",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 72,
@@ -933,7 +933,7 @@
     },
     "imageName": "tentacool",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 73,
@@ -946,7 +946,7 @@
     },
     "imageName": "tentacruel",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 74,
@@ -959,7 +959,7 @@
     },
     "imageName": "geodude",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 75,
@@ -972,7 +972,7 @@
     },
     "imageName": "graveler",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 76,
@@ -985,7 +985,7 @@
     },
     "imageName": "golem",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 77,
