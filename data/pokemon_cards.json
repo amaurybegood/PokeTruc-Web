@@ -1940,6 +1940,88 @@
   "artist": "Nobuyuki Habu"
 },
 {
+  "pokemonId": 77,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "77_Ponyta_jpn_vses3_11",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Naoyo Kimura"
+},{
+  "pokemonId": 77,
+  "name": "Sword & Shield Promos",
+  "imageName": "77_Ponyta_jpn_swshp_310",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2019,
+  "artist": "Eri Yamaki"
+},{
+  "pokemonId": 77,
+  "name": "Start Deck 100 Battle Collection",
+  "imageName": "77_Ponyta_jpn_mc_86",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2025,
+  "artist": "takashi shiraishi"
+},{
+  "pokemonId": 77,
+  "name": "Gem Pack Vol. 4",
+  "imageName": "77_Ponyta_scn_cbb4_107",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2026,
+  "artist": "MINAMINAMI Take"
+},{
+  "pokemonId": 77,
+  "name": "Pokémon Card Game Battle Academy",
+  "imageName": "77_Ponyta_scn_csvs_7",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2026,
+  "artist": "Atsushi Furusawa"
+},{
+  "pokemonId": 78,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "78_Rapidash_jpn_vses1_14",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 78,
+  "name": "P Promos",
+  "imageName": "78_Rapidash_jpn_ppr_11",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 78,
+  "name": "Pokémon VS",
+  "imageName": "78_Rapidash_jpn_versus1_87",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 78,
+  "name": "Sword & Shield Promos",
+  "imageName": "78_Rapidash_swshp_SWSH270",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2020,
+  "artist": "aoki"
+},
+{
   "pokemonId": 81,
   "name": "Vending Machine Expansion Sheet 2: Red",
   "imageName": "81_Magnemite_jpn_vses2_14",
