@@ -1024,7 +1024,7 @@
     },
     "imageName": "slowpoke",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 80,
@@ -1037,7 +1037,7 @@
     },
     "imageName": "slowbro",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 81,

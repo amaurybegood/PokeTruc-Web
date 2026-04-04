@@ -2022,6 +2022,97 @@
   "artist": "aoki"
 },
 {
+  "pokemonId": 79,
+  "name": "Unnumbered Promos",
+  "imageName": "79_Slowpoke_jpn_unp_4",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 79,
+  "name": "T Promos",
+  "imageName": "79_Slowpoke_jpn_tpr_4",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 79,
+  "name": "McDonald's Pokémon-e Minimum Pack",
+  "imageName": "79_Slowpoke_jpn_mcdemp_14",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Taku Anekawa"
+},{
+  "pokemonId": 79,
+  "name": "MEGA Promos",
+  "imageName": "79_Slowpoke_jpn_mp_70",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2025,
+  "artist": "miki kudo"
+},{
+  "pokemonId": 79,
+  "name": "Gallant Galaxy: Brave",
+  "imageName": "79_Slowpoke_scn_cs5b_39",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "Nobuhiro Imagawa"
+},{
+  "pokemonId": 80,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "80_Slowbro_jpn_vses3_21",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 80,
+  "name": "Pokémon VS",
+  "imageName": "80_Slowbro_jpn_versus1_72",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 80,
+  "name": "T Promos",
+  "imageName": "80_Slowbro_jpn_tpr_5",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 80,
+  "name": "MEGA Promos",
+  "imageName": "80_Slowbro_jpn_mp_71",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2025,
+  "artist": "5ban Graphics"
+},{
+  "pokemonId": 80,
+  "name": "Shiny Treasure ex",
+  "imageName": "80_Slowbro_jpn_sv4a_37",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2023,
+  "artist": "Shinji Kanda"
+},
+{
   "pokemonId": 81,
   "name": "Vending Machine Expansion Sheet 2: Red",
   "imageName": "81_Magnemite_jpn_vses2_14",
