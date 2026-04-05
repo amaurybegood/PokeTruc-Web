@@ -3,7 +3,7 @@ const fs = require('fs');
 const pokemons = JSON.parse(fs.readFileSync('data/pokemons.json', 'utf8'));
 const cards    = JSON.parse(fs.readFileSync('data/pokemon_cards.json', 'utf8'));
 
-const BASE_URL = 'https://amaurybegood.github.io/PokeTruc-Web';
+const BASE_URL = 'https://poketruc.com';
 const TODAY    = new Date().toISOString().split('T')[0];
 
 function cardsFor(pokemonId) {
