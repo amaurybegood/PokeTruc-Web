@@ -2159,6 +2159,25 @@
   "artist": "GOSSAN"
 },
 {
+  "pokemonId": 83,
+  "name": "Unnumbered Promos",
+  "imageName": "83_Farfetch'd_jpn_unp_40",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 83,
+  "name": "Pokémon VS",
+  "imageName": "83_Farfetch'd_jpn_versus1_3",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Atsuko Nishida"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",
