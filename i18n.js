@@ -19,7 +19,7 @@ function pokemonName(pokemon) {
 
 const translations = {
   en: {
-    subtitle:       'Exclusive Pokémon card illustrations',
+    subtitle:       'Unique Pokémon TCG artwork — exclusive card illustrations',
     dex:            'Pokédex',
     info:           'Info',
     'search.placeholder': 'Search a Pokémon...',

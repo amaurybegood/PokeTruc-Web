@@ -3,18 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PokéTruc — Info</title>
-  <meta name="description" content="About PokéTruc: a fan-made site to track exclusive Pokémon card illustrations. Free, ad-free.">
+  <title>PokéTruc — About</title>
+  <meta name="description" content="About PokéTruc: a fan-made catalog of Pokémon TCG cards with unique artwork exclusive to one language. Free, ad-free.">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="PokéTruc — Info">
-  <meta property="og:description" content="About PokéTruc: a fan-made site to track exclusive Pokémon card illustrations. Free, ad-free.">
+  <meta property="og:title" content="PokéTruc — About">
+  <meta property="og:description" content="About PokéTruc: a fan-made catalog of Pokémon TCG cards with unique artwork exclusive to one language. Free, ad-free.">
   <meta property="og:image" content="https://amaurybegood.github.io/PokeTruc-Web/logo.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://amaurybegood.github.io/PokeTruc-Web/info.html">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PokéTruc — About">
+  <meta name="twitter:description" content="A fan-made catalog of Pokémon TCG cards with unique artwork exclusive to one language. Free, ad-free.">
+  <meta name="twitter:image" content="https://amaurybegood.github.io/PokeTruc-Web/logo.png">
+
   <link rel="canonical" href="https://amaurybegood.github.io/PokeTruc-Web/info.html">
+  <link rel="alternate" hreflang="x-default" href="https://amaurybegood.github.io/PokeTruc-Web/info.html">
+  <link rel="alternate" hreflang="en" href="https://amaurybegood.github.io/PokeTruc-Web/info.html">
+  <link rel="alternate" hreflang="fr" href="https://amaurybegood.github.io/PokeTruc-Web/info.html">
+  <link rel="alternate" hreflang="ja" href="https://amaurybegood.github.io/PokeTruc-Web/info.html">
+  <link rel="alternate" hreflang="ko" href="https://amaurybegood.github.io/PokeTruc-Web/info.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://amaurybegood.github.io/PokeTruc-Web/info.html">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
   <link rel="stylesheet" href="style.css?v=7">
@@ -22,11 +34,11 @@
 <body>
 
   <header>
-    <a href="index.html"><img src="logo.png" alt="PokéTruc" class="site-logo"></a>
-    <h1>PokéTruc</h1>
-    <p class="subtitle" data-i18n="subtitle">Exclusive Pokémon card illustrations tracker</p>
+    <a href="index.html"><img src="logo.webp" alt="PokéTruc" class="site-logo" width="80" height="80"></a>
+    <h1>PokéTruc<span class="visually-hidden"> — Unique Pokémon TCG Artwork &amp; Exclusive Card Illustrations</span></h1>
+    <p class="subtitle" data-i18n="subtitle">Unique Pokémon TCG artwork — exclusive card illustrations</p>
     <nav class="site-nav">
-      <a href="index.html" data-i18n="dex">Dex</a>
+      <a href="index.html" data-i18n="dex">Pokédex</a>
       <a href="info.html" class="active" data-i18n="info">Info</a>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
     </nav>
@@ -35,7 +47,13 @@
   <main class="info-page">
     <div class="info-card">
       <h2 data-i18n="about">About</h2>
-      <div data-i18n-html="purpose"></div>
+      <div data-i18n-html="purpose">
+        <p>This site was developed for fun, and also for learning purposes (not being a developer, it's a bit of a challenge for me). That's why it is very simple and basic.</p>
+        <p>Its purpose is to list all Pokémon TCG cards with unique illustrations. By unique, I mean artwork that is only available in one language (Japanese, English, Chinese, or other). This is the kind of card I like to collect.</p>
+        <p>It is completely free and ad-free.</p>
+        <p>Despite the care taken, some information may be inaccurate. Please feel free to contact me by email if you notice an error or would like to provide feedback.</p>
+        <p>Voilà, voilà :)</p>
+      </div>
     </div>
 
     <div class="info-card">
@@ -44,7 +62,10 @@
     </div>
 
     <div class="info-card disclaimer">
-      <div data-i18n-html="disclaimer"></div>
+      <div data-i18n-html="disclaimer">
+        <p>This site is unofficial and fan-made. Pokémon and Pokémon character names are trademarks of Nintendo / Creatures Inc. / GAME FREAK inc.</p>
+        <p>This site does not collect any personal data or require a user account. No information is transmitted or stored outside of your device.</p>
+      </div>
     </div>
   </main>
 
@@ -53,7 +74,7 @@
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="i18n.js?v=9"></script></script>
+  <script src="i18n.js?v=9"></script>
   <script src="theme.js?v=9"></script>
 </body>
 </html>

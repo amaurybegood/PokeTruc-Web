@@ -3,29 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PokéTruc — Pokémon Cards with Exclusive Illustrations</title>
+  <title>PokéTruc — Unique Pokémon TCG Card Illustrations</title>
   <meta name="description" content="Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language (Japanese, English, Chinese). Free, ad-free, fan-made.">
   <meta name="keywords" content="Pokémon, TCG, cards, exclusive, Japanese, English, Chinese, illustration, tracker, collector">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="PokéTruc — Pokémon Cards with Exclusive Illustrations">
+  <meta property="og:title" content="PokéTruc — Unique Pokémon TCG Card Illustrations">
   <meta property="og:description" content="Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language. Free, ad-free, fan-made.">
   <meta property="og:image" content="https://amaurybegood.github.io/PokeTruc-Web/logo.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://amaurybegood.github.io/PokeTruc-Web/">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PokéTruc — Unique Pokémon TCG Artwork">
+  <meta name="twitter:description" content="Discover Pokémon TCG cards with unique artwork exclusive to one language. Fan-made, free, ad-free.">
+  <meta name="twitter:image" content="https://amaurybegood.github.io/PokeTruc-Web/logo.png">
+
   <link rel="canonical" href="https://amaurybegood.github.io/PokeTruc-Web/">
+  <link rel="alternate" hreflang="x-default" href="https://amaurybegood.github.io/PokeTruc-Web/">
+  <link rel="alternate" hreflang="en" href="https://amaurybegood.github.io/PokeTruc-Web/">
+  <link rel="alternate" hreflang="fr" href="https://amaurybegood.github.io/PokeTruc-Web/">
+  <link rel="alternate" hreflang="ja" href="https://amaurybegood.github.io/PokeTruc-Web/">
+  <link rel="alternate" hreflang="ko" href="https://amaurybegood.github.io/PokeTruc-Web/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://amaurybegood.github.io/PokeTruc-Web/">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
   <link rel="stylesheet" href="style.css?v=7">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://amaurybegood.github.io/PokeTruc-Web/#website",
+        "url": "https://amaurybegood.github.io/PokeTruc-Web/",
+        "name": "PokéTruc",
+        "description": "Catalog of Pokémon TCG cards with unique artwork exclusive to one language — Japanese, English, or Chinese.",
+        "inLanguage": ["en", "fr", "ja", "ko", "zh-Hans"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://amaurybegood.github.io/PokeTruc-Web/?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://amaurybegood.github.io/PokeTruc-Web/#collection",
+        "url": "https://amaurybegood.github.io/PokeTruc-Web/",
+        "name": "Unique Pokémon TCG Artwork — Exclusive Card Illustrations",
+        "description": "A fan-made catalog tracking Pokémon TCG cards with language-exclusive artwork. Covers all 151 Gen 1 Pokémon. Free and ad-free.",
+        "isPartOf": { "@id": "https://amaurybegood.github.io/PokeTruc-Web/#website" },
+        "about": {
+          "@type": "Thing",
+          "name": "Pokémon Trading Card Game",
+          "description": "Cards featuring unique illustrations only available in one language (Japanese, English, Chinese, etc.)"
+        },
+        "keywords": "Pokémon TCG, unique artwork, exclusive illustrations, Japanese cards, language exclusive, rare Pokémon cards, collector"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <header>
-    <a href="index.html"><img src="logo.png" alt="PokéTruc" class="site-logo"></a>
-    <h1>PokéTruc</h1>
-    <p class="subtitle" data-i18n="subtitle">Exclusive Pokémon card illustrations</p>
+    <a href="index.html"><img src="logo.webp" alt="PokéTruc" class="site-logo" width="80" height="80"></a>
+    <h1>PokéTruc<span class="visually-hidden"> — Unique Pokémon TCG Artwork &amp; Exclusive Card Illustrations</span></h1>
+    <p class="subtitle" data-i18n="subtitle">Unique Pokémon TCG artwork — exclusive card illustrations</p>
     <nav class="site-nav">
       <a href="index.html" class="active" data-i18n="dex">Dex</a>
       <a href="info.html" data-i18n="info">Info</a>
@@ -44,6 +95,10 @@
     </div>
     <div id="pokemon-grid"></div>
   </main>
+
+  <section class="seo-about">
+    <p>Some Pokémon TCG cards feature unique artwork that was only ever printed in a single language — a Japanese promo never released in English, or an illustration exclusive to the Chinese market. PokéTruc catalogs these language-exclusive cards across all 151 Gen 1 Pokémon, so collectors can discover rare artwork they may have never seen.</p>
+  </section>
 
   <footer>
     <p>© 2026 - 3590 PokéTruc — Fan-made, not affiliated with Nintendo / The Pokémon Company.</p>
