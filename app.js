@@ -2,6 +2,16 @@ let pokemons = [];
 let cards = [];
 let searchQuery = '';
 
+function slugify(name) {
+  return name
+    .toLowerCase()
+    .replace(/♀/g, 'f')
+    .replace(/♂/g, 'm')
+    .replace(/['']/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 async function loadData() {
   try {
     const [pkRes, cardRes] = await Promise.all([
@@ -47,7 +57,7 @@ function renderStats() {
   applyTranslations();
 
   const bar = document.querySelector('.progress-bar');
-  void bar.offsetWidth; // force reflow
+  void bar.offsetWidth;
   setTimeout(() => {
     document.querySelector('.progress-done').style.width = `${pDone}%`;
     document.querySelector('.progress-wip').style.width  = `${pWip}%`;
@@ -99,7 +109,9 @@ function renderGrid(list) {
           img.src = `cards/${card.imageName}.avif`;
         });
       }, { once: true });
-      div.addEventListener('click', () => openModal(pokemon, pkCards));
+      div.addEventListener('click', () => {
+        window.location.href = `pokemon/${slugify(pokemon.name.en)}/`;
+      });
     }
 
     grid.appendChild(div);
@@ -119,83 +131,9 @@ function applyFilter() {
   renderGrid(filtered);
 }
 
-// Search
 document.getElementById('search').addEventListener('input', e => {
   searchQuery = e.target.value;
   applyFilter();
-});
-
-// Modal
-function openModal(pokemon, pkCards) {
-  const modal = document.getElementById('modal');
-  const body = document.getElementById('modal-body');
-
-  const sorted = [...pkCards].sort((a, b) => a.year - b.year);
-  const count = sorted.length;
-  const cardWord = count === 1 ? t('card') : t('cards');
-  body.innerHTML = `
-    <div class="modal-header">
-      <img src="monsters/${pokemon.imageName}.png" alt="${pokemonName(pokemon)}">
-      <div>
-        <h2>${pokemonName(pokemon)}</h2>
-        <div class="card-count">${count} ${cardWord}</div>
-      </div>
-    </div>
-    <div class="cards-grid">
-      ${sorted.map(card => `
-        <div class="card-item" data-img="cards/${card.imageName}.avif">
-          <img src="cards/${card.imageName}.avif" alt="${card.name}">
-          <div class="card-info">
-            <div class="card-name">${card.name}</div>
-            <div class="card-meta"><span class="lang-badge">${card.language}</span> ${card.year} · ${card.rarity}</div>
-            ${card.artist ? `<div class="card-artist">${t('artist')}: ${card.artist}</div>` : ''}
-          </div>
-        </div>
-      `).join('')}
-    </div>
-  `;
-
-  // Card fullscreen
-  body.querySelectorAll('.card-item').forEach(item => {
-    item.addEventListener('click', () => openFullscreen(item.dataset.img));
-  });
-
-  modal.classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-  document.body.style.touchAction = 'none';
-}
-
-document.querySelector('.modal-backdrop').addEventListener('click', closeModal);
-document.querySelector('.modal-close').addEventListener('click', closeModal);
-
-function closeModal() {
-  const modal = document.getElementById('modal');
-  const content = modal.querySelector('.modal-content');
-  content.classList.add('closing');
-  content.addEventListener('animationend', () => {
-    content.classList.remove('closing');
-    modal.classList.add('hidden');
-    document.body.style.overflow = '';
-    document.body.style.touchAction = '';
-  }, { once: true });
-}
-
-// Fullscreen
-function openFullscreen(src) {
-  const fs = document.getElementById('fullscreen');
-  document.getElementById('fullscreen-img').src = src;
-  fs.classList.remove('hidden');
-}
-
-document.querySelector('.fullscreen-backdrop').addEventListener('click', () => {
-  document.getElementById('fullscreen').classList.add('hidden');
-});
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    document.getElementById('fullscreen').classList.add('hidden');
-    closeModal();
-  }
 });
 
 loadData();
