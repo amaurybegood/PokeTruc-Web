@@ -2178,6 +2178,34 @@
   "artist": "Atsuko Nishida"
 },
 {
+  "pokemonId": 84,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "84_Doduo_jpn_vses1_28",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 85,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "85_Dodrio_jpn_vses1_29",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Ai Kurihara"
+},{
+  "pokemonId": 85,
+  "name": "Pokémon VS",
+  "imageName": "85_Dodrio_jpn_versus1_4",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Atsuko Nishida"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",
