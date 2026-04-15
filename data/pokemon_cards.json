@@ -2206,6 +2206,34 @@
   "artist": "Atsuko Nishida"
 },
 {
+  "pokemonId": 86,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "86_Seel_jpn_vses2_6",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Naoyo Kimura"
+},{
+  "pokemonId": 87,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "87_Dewgong_jpn_vses2_7",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 87,
+  "name": "Pokémon VS",
+  "imageName": "87_Dewgong_jpn_versus1_39",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Mitsuhiro Arita"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",
