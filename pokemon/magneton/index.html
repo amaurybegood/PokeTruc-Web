@@ -26,7 +26,7 @@
   <link rel="next" href="https://poketruc.com/pokemon/farfetchd/">
   <link rel="icon" type="image/png" href="../../logo.png">
   <link rel="apple-touch-icon" href="../../logo.png">
-  <link rel="stylesheet" href="../../style.css?v=8">
+  <link rel="stylesheet" href="../../style.css?v=9">
 
   <script type="application/ld+json">
   {
@@ -76,8 +76,19 @@
       </div>
     </div>
 
+    <section class="pokemon-summary">
+      <p class="pokemon-stats-text"
+         data-stats-en="PokéTruc has catalogued 3 language-exclusive Magneton TCG card illustrations, spanning 1998 to 2022. The collection includes 2 Japanese-exclusive cards and 1 English-exclusive card. Illustrated by 3 different artists including Mitsuhiro Arita, Yukiko Baba and GOSSAN."
+           data-stats-fr="PokéTruc recense 3 illustrations exclusives de cartes TCG Magnéton, de 1998 à 2022. La collection comprend 2 cartes japonaises et 1 carte anglaises. Illustrées par 3 artistes différents dont Mitsuhiro Arita, Yukiko Baba et GOSSAN."
+           data-stats-ja="PokéTrucでは、レアコイルの言語限定TCGカードイラスト3枚（1998年から2022年）を収録しています。内訳は日本限定2枚、英語限定1枚です。3名のイラストレーター（Mitsuhiro Arita、Yukiko Baba、GOSSANなど）が手がけています。"
+           data-stats-ko="PokéTruc에는 레어코일의 언어 한정 TCG 카드 일러스트 3장(1998년부터 2022년까지)이 수록되어 있습니다. 포함 내역: 일본어 한정 2장, 영어 한정 1장. 3명의 일러스트레이터가 참여했으며, Mitsuhiro Arita, Yukiko Baba, GOSSAN 등이 포함됩니다."
+           data-stats-zh="PokéTruc 收录了 3 张 三合一磁怪 的语言独占 TCG 卡牌插画（1998–2022 年）。包括2 张日文独占、1 张英文独占。由 3 位插画师绘制，包括 Mitsuhiro Arita、Yukiko Baba、GOSSAN 等。">PokéTruc has catalogued 3 language-exclusive Magneton TCG card illustrations, spanning 1998 to 2022. The collection includes 2 Japanese-exclusive cards and 1 English-exclusive card. Illustrated by 3 different artists including Mitsuhiro Arita, Yukiko Baba and GOSSAN.</p>
+    </section>
+
     <section class="cards-section">
-      <p class="cards-section-title">3 exclusive TCG card illustrations</p>
+      <p class="cards-section-title">3 <span data-i18n="cards.section.title">exclusive TCG card illustrations</span></p>
+      
+      <h3 class="cards-lang-title">🇯🇵 <span data-i18n="cards.lang.japanese">Japanese-exclusive cards</span> (2)</h3>
       <div class="cards-grid">
         
         <div class="card-item" data-img="../../cards/82_Magneton_jpn_vses2_15.avif">
@@ -85,7 +96,7 @@
           <div class="card-info">
             <div class="card-name">Vending Machine Expansion Sheet 2: Red</div>
             <div class="card-meta"><span class="lang-badge">🇯🇵</span> 1998 · Uncommon</div>
-            <div class="card-artist">Artist: Mitsuhiro Arita</div>
+            <div class="card-artist"><span data-i18n="artist">Artist</span>: Mitsuhiro Arita</div>
           </div>
         </div>
         <div class="card-item" data-img="../../cards/82_Magneton_jpn_versus1_28.avif">
@@ -93,20 +104,34 @@
           <div class="card-info">
             <div class="card-name">Pokémon VS</div>
             <div class="card-meta"><span class="lang-badge">🇯🇵</span> 2001 · Common</div>
-            <div class="card-artist">Artist: Yukiko Baba</div>
+            <div class="card-artist"><span data-i18n="artist">Artist</span>: Yukiko Baba</div>
           </div>
         </div>
+      </div>
+      <h3 class="cards-lang-title">🇬🇧 <span data-i18n="cards.lang.english">English-exclusive cards</span> (1)</h3>
+      <div class="cards-grid">
+        
         <div class="card-item" data-img="../../cards/82_Magneton_mfbp_6.avif">
           <img src="../../cards/82_Magneton_mfbp_6.avif" alt="My First Battle: Pikachu Deck — Magneton TCG card" loading="lazy">
           <div class="card-info">
             <div class="card-name">My First Battle: Pikachu Deck</div>
             <div class="card-meta"><span class="lang-badge">🇬🇧</span> 2022 · No Rarity</div>
-            <div class="card-artist">Artist: GOSSAN</div>
+            <div class="card-artist"><span data-i18n="artist">Artist</span>: GOSSAN</div>
           </div>
         </div>
       </div>
     </section>
 
+    <aside class="pokemon-meta">
+      <div class="meta-block">
+        <h3 class="meta-title"><span data-i18n="meta.sets">Sets featured</span> (3)</h3>
+        <p class="meta-list">Vending Machine Expansion Sheet 2: Red · Pokémon VS · My First Battle: Pikachu Deck</p>
+      </div>
+      <div class="meta-block">
+        <h3 class="meta-title"><span data-i18n="meta.artists">Artists</span> (3)</h3>
+        <p class="meta-list">Mitsuhiro Arita · Yukiko Baba · GOSSAN</p>
+      </div>
+    </aside>
     <nav class="pokemon-pager" aria-label="Browse Pokémon">
       <a class="pokemon-nav-prev" href="../magnemite/" rel="prev">← #081 Magnemite</a>
       <a class="pokemon-nav-up" href="../../index.html">↑ <span data-i18n="dex">Pokédex</span></a>
@@ -125,8 +150,8 @@
   </div>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="../../i18n.js?v=10"></script>
-  <script src="../../theme.js?v=10"></script>
-  <script src="../../pokemon.js?v=2"></script>
+  <script src="../../i18n.js?v=11"></script>
+  <script src="../../theme.js?v=11"></script>
+  <script src="../../pokemon.js?v=3"></script>
 </body>
 </html>

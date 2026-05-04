@@ -26,7 +26,7 @@
   <link rel="next" href="https://poketruc.com/pokemon/jigglypuff/">
   <link rel="icon" type="image/png" href="../../logo.png">
   <link rel="apple-touch-icon" href="../../logo.png">
-  <link rel="stylesheet" href="../../style.css?v=8">
+  <link rel="stylesheet" href="../../style.css?v=9">
 
   <script type="application/ld+json">
   {
@@ -76,8 +76,19 @@
       </div>
     </div>
 
+    <section class="pokemon-summary">
+      <p class="pokemon-stats-text"
+         data-stats-en="PokéTruc has catalogued 3 language-exclusive Ninetales TCG card illustrations, spanning 2001 to 2022. The collection includes 1 Japanese-exclusive card and 2 English-exclusive cards. Illustrated by 3 different artists including Naoyo Kimura, TOKIYA and Kagemaru Himeno."
+           data-stats-fr="PokéTruc recense 3 illustrations exclusives de cartes TCG Feunard, de 2001 à 2022. La collection comprend 1 carte japonaises et 2 cartes anglaises. Illustrées par 3 artistes différents dont Naoyo Kimura, TOKIYA et Kagemaru Himeno."
+           data-stats-ja="PokéTrucでは、キュウコンの言語限定TCGカードイラスト3枚（2001年から2022年）を収録しています。内訳は日本限定1枚、英語限定2枚です。3名のイラストレーター（Naoyo Kimura、TOKIYA、Kagemaru Himenoなど）が手がけています。"
+           data-stats-ko="PokéTruc에는 나인테일의 언어 한정 TCG 카드 일러스트 3장(2001년부터 2022년까지)이 수록되어 있습니다. 포함 내역: 일본어 한정 1장, 영어 한정 2장. 3명의 일러스트레이터가 참여했으며, Naoyo Kimura, TOKIYA, Kagemaru Himeno 등이 포함됩니다."
+           data-stats-zh="PokéTruc 收录了 3 张 九尾 的语言独占 TCG 卡牌插画（2001–2022 年）。包括1 张日文独占、2 张英文独占。由 3 位插画师绘制，包括 Naoyo Kimura、TOKIYA、Kagemaru Himeno 等。">PokéTruc has catalogued 3 language-exclusive Ninetales TCG card illustrations, spanning 2001 to 2022. The collection includes 1 Japanese-exclusive card and 2 English-exclusive cards. Illustrated by 3 different artists including Naoyo Kimura, TOKIYA and Kagemaru Himeno.</p>
+    </section>
+
     <section class="cards-section">
-      <p class="cards-section-title">3 exclusive TCG card illustrations</p>
+      <p class="cards-section-title">3 <span data-i18n="cards.section.title">exclusive TCG card illustrations</span></p>
+      
+      <h3 class="cards-lang-title">🇯🇵 <span data-i18n="cards.lang.japanese">Japanese-exclusive cards</span> (1)</h3>
       <div class="cards-grid">
         
         <div class="card-item" data-img="../../cards/38_Ninetales_jpn_versus1_20.avif">
@@ -85,15 +96,19 @@
           <div class="card-info">
             <div class="card-name">Pokémon VS</div>
             <div class="card-meta"><span class="lang-badge">🇯🇵</span> 2001 · Common</div>
-            <div class="card-artist">Artist: Naoyo Kimura</div>
+            <div class="card-artist"><span data-i18n="artist">Artist</span>: Naoyo Kimura</div>
           </div>
         </div>
+      </div>
+      <h3 class="cards-lang-title">🇬🇧 <span data-i18n="cards.lang.english">English-exclusive cards</span> (2)</h3>
+      <div class="cards-grid">
+        
         <div class="card-item" data-img="../../cards/38_Ninetales_col1_17.avif">
           <img src="../../cards/38_Ninetales_col1_17.avif" alt="Call of Legends — Ninetales TCG card" loading="lazy">
           <div class="card-info">
             <div class="card-name">Call of Legends</div>
             <div class="card-meta"><span class="lang-badge">🇬🇧</span> 2011 · Rare Holo</div>
-            <div class="card-artist">Artist: TOKIYA</div>
+            <div class="card-artist"><span data-i18n="artist">Artist</span>: TOKIYA</div>
           </div>
         </div>
         <div class="card-item" data-img="../../cards/38_Ninetales_mfbc_6.avif">
@@ -101,12 +116,22 @@
           <div class="card-info">
             <div class="card-name">My First Battle: Charmander Deck</div>
             <div class="card-meta"><span class="lang-badge">🇬🇧</span> 2022 · No Rarity</div>
-            <div class="card-artist">Artist: Kagemaru Himeno</div>
+            <div class="card-artist"><span data-i18n="artist">Artist</span>: Kagemaru Himeno</div>
           </div>
         </div>
       </div>
     </section>
 
+    <aside class="pokemon-meta">
+      <div class="meta-block">
+        <h3 class="meta-title"><span data-i18n="meta.sets">Sets featured</span> (3)</h3>
+        <p class="meta-list">Pokémon VS · Call of Legends · My First Battle: Charmander Deck</p>
+      </div>
+      <div class="meta-block">
+        <h3 class="meta-title"><span data-i18n="meta.artists">Artists</span> (3)</h3>
+        <p class="meta-list">Naoyo Kimura · TOKIYA · Kagemaru Himeno</p>
+      </div>
+    </aside>
     <nav class="pokemon-pager" aria-label="Browse Pokémon">
       <a class="pokemon-nav-prev" href="../vulpix/" rel="prev">← #037 Vulpix</a>
       <a class="pokemon-nav-up" href="../../index.html">↑ <span data-i18n="dex">Pokédex</span></a>
@@ -125,8 +150,8 @@
   </div>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="../../i18n.js?v=10"></script>
-  <script src="../../theme.js?v=10"></script>
-  <script src="../../pokemon.js?v=2"></script>
+  <script src="../../i18n.js?v=11"></script>
+  <script src="../../theme.js?v=11"></script>
+  <script src="../../pokemon.js?v=3"></script>
 </body>
 </html>

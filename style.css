@@ -644,6 +644,55 @@ footer {
   margin-bottom: 16px;
 }
 
+/* Pokemon page: auto-generated stats paragraph */
+.pokemon-summary {
+  margin-bottom: 28px;
+}
+
+.pokemon-stats-text {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+/* Cards grouped by language: subheadings */
+.cards-lang-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 24px 0 12px;
+  color: var(--text);
+}
+
+.cards-lang-title:first-child {
+  margin-top: 8px;
+}
+
+/* Sets / Artists meta block */
+.pokemon-meta {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.pokemon-meta .meta-block {
+  font-size: 0.9rem;
+}
+
+.pokemon-meta .meta-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.pokemon-meta .meta-list {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 /* Pokemon page prev/next pager */
 .pokemon-pager {
   display: grid;

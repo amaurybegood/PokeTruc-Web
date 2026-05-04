@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (localName) nameEl.textContent = localName;
   }
 
+  // Swap the auto-generated stats paragraph to user's language. The HTML ships
+  // with English visible (so Google indexes it); other locales come from
+  // data-stats-{lang} attributes embedded at build time.
+  const statsEl = document.querySelector('.pokemon-stats-text');
+  if (statsEl) {
+    const localStats = statsEl.getAttribute(`data-stats-${lang}`);
+    if (localStats) statsEl.textContent = localStats;
+  }
+
   // Fullscreen card viewer
   document.querySelectorAll('.card-item').forEach(item => {
     item.addEventListener('click', () => {
