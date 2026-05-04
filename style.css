@@ -644,6 +644,100 @@ footer {
   margin-bottom: 16px;
 }
 
+/* Pokemon page prev/next pager */
+.pokemon-pager {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 12px;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.pokemon-pager a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  transition: background 0.15s, transform 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pokemon-pager a:hover {
+  background: var(--bg);
+  transform: translateY(-1px);
+}
+
+.pokemon-nav-prev { justify-self: start; }
+.pokemon-nav-next { justify-self: end; }
+.pokemon-nav-up   { justify-self: center; color: var(--text-secondary); }
+.pokemon-nav-disabled { visibility: hidden; }
+
+/* SEO Pokédex index — static link list on the home page */
+.seo-pokedex {
+  max-width: 1200px;
+  margin: 32px auto 0;
+  padding: 0 24px;
+}
+
+.seo-pokedex-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.seo-pokedex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 4px 16px;
+}
+
+.seo-pokedex-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px 6px;
+  font-size: 0.82rem;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.seo-pokedex-link:hover {
+  background: var(--card-bg);
+  color: var(--accent);
+}
+
+.seo-pokedex-num {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  min-width: 32px;
+}
+
+.seo-pokedex-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.seo-pokedex-count {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  background: var(--card-bg);
+  border-radius: 999px;
+  padding: 1px 6px;
+  border: 1px solid var(--border);
+}
+
 @media (max-width: 600px) {
   header h1 { font-size: 1.8rem; }
   #pokemon-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
@@ -651,4 +745,7 @@ footer {
   .search-row { padding: 0 16px; }
   .pokemon-detail-name { font-size: 1.5rem; }
   .pokemon-sprite { width: 72px; height: 72px; }
+  .pokemon-pager { grid-template-columns: 1fr 1fr; }
+  .pokemon-nav-up { display: none; }
+  .seo-pokedex-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
 }
