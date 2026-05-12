@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéTruc — 语言独占的宝可梦 TCG 卡牌插画</title>
+  <meta name="description" content="PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PokéTruc — 语言独占的宝可梦 TCG 卡牌插画">
+  <meta property="og:description" content="PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。">
+  <meta property="og:image" content="https://poketruc.com/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://poketruc.com/zh/">
+  <meta property="og:locale" content="zh_Hans">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PokéTruc — 语言独占的宝可梦 TCG 卡牌插画">
+  <meta name="twitter:description" content="PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。">
+  <meta name="twitter:image" content="https://poketruc.com/logo.png">
+
+  <link rel="canonical" href="https://poketruc.com/zh/">
+  <link rel="alternate" hreflang="en" href="https://poketruc.com/">
+  <link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/">
+  <link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://poketruc.com/">
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="apple-touch-icon" href="/logo.png">
+  <link rel="stylesheet" href="/style.css?v=10">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。","inLanguage":["en","fr","ja","ko","zh-Hans"]},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/zh/#collection","url":"https://poketruc.com/zh/","name":"PokéTruc — 语言独占的宝可梦 TCG 卡牌插画","description":"PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。","inLanguage":"zh-Hans","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。"}}]}</script>
+  <noscript><style>
+    #search, .search-row, #stats-bar, #loader, #pokemon-grid { display: none !important; }
+    .noscript-fallback { display: block !important; }
+  </style></noscript>
+</head>
+<body data-lang-prefix="/zh/">
+
+  <header>
+    <a href="/zh/" class="logo-link"><img src="/logo.webp" alt="PokéTruc" class="site-logo" width="80" height="80"></a>
+    <p class="site-name">PokéTruc</p>
+    <nav class="site-nav">
+      <a href="/zh/" aria-current="page">图鉴</a>
+      <a href="/zh/info/">信息</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="切换深色模式"></button>
+    </nav>
+    <nav class="lang-switcher" aria-label="语言">
+      <a href="/" hreflang="en" class="lang-link">EN</a><a href="/fr/" hreflang="fr" class="lang-link">FR</a><a href="/ja/" hreflang="ja" class="lang-link">日本語</a><a href="/ko/" hreflang="ko" class="lang-link">한국어</a><a href="/zh/" hreflang="zh-Hans" class="lang-link active" aria-current="true">中文</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">语言独占的宝可梦 TCG 卡牌插画</h1>
+
+    <div class="search-row">
+      <input type="search" id="search" placeholder="搜索宝可梦" aria-label="搜索宝可梦" autocomplete="off">
+    </div>
+
+    <div id="stats-bar" class="stats-bar"></div>
+
+    <div id="loader" class="loader">
+      <div class="loader-spinner"></div>
+    </div>
+    <div id="pokemon-grid"></div>
+
+    <p class="noscript-fallback">您的浏览器已禁用 JavaScript，无法显示动态宝可梦网格。您仍可在下方浏览所有宝可梦。</p>
+  </main>
+
+  <section class="seo-about">
+    <p>宝可梦 TCG 中有许多卡牌的插画仅以单一语言印刷发行。1996 年作为邮票杂志附录发行的日本限定促销卡，2002 年仅在日本麦当劳发行的宝可梦-e 卡，以及最新卡组中仅在中国市场推出的独占卡牌等。PokéTruc 收录了妙蛙种子、喷火龙、皮卡丘等第一世代全 151 只宝可梦的此类语言独占卡牌，涵盖日本贩卖机扩展卡板、Black &amp; White 促销卡、DPt-P 促销卡、麦当劳促销卡以及中国独占卡组，作品由 Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Morii 等知名插画师绘制。按宝可梦、卡组、语言和年份分类整理，让您能够找到从未见过的稀有插画。完全免费、无广告、由粉丝制作。</p>
+  </section>
+
+  <nav class="seo-pokedex" aria-label="查看所有拥有独占卡牌的宝可梦">
+    <h2 class="seo-pokedex-title">查看所有拥有独占卡牌的宝可梦</h2>
+    <div class="seo-pokedex-grid">
+      <a href="/zh/pokemon/bulbasaur/" class="seo-pokedex-link" data-pokemon-id="1"><span class="seo-pokedex-num">#001</span><span class="seo-pokedex-name">妙蛙种子</span><span class="seo-pokedex-count">8</span></a>
+      <a href="/zh/pokemon/ivysaur/" class="seo-pokedex-link" data-pokemon-id="2"><span class="seo-pokedex-num">#002</span><span class="seo-pokedex-name">妙蛙草</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/venusaur/" class="seo-pokedex-link" data-pokemon-id="3"><span class="seo-pokedex-num">#003</span><span class="seo-pokedex-name">妙蛙花</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/zh/pokemon/charmander/" class="seo-pokedex-link" data-pokemon-id="4"><span class="seo-pokedex-num">#004</span><span class="seo-pokedex-name">小火龙</span><span class="seo-pokedex-count">9</span></a>
+      <a href="/zh/pokemon/charmeleon/" class="seo-pokedex-link" data-pokemon-id="5"><span class="seo-pokedex-num">#005</span><span class="seo-pokedex-name">火恐龙</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/zh/pokemon/charizard/" class="seo-pokedex-link" data-pokemon-id="6"><span class="seo-pokedex-num">#006</span><span class="seo-pokedex-name">喷火龙</span><span class="seo-pokedex-count">11</span></a>
+      <a href="/zh/pokemon/squirtle/" class="seo-pokedex-link" data-pokemon-id="7"><span class="seo-pokedex-num">#007</span><span class="seo-pokedex-name">杰尼龟</span><span class="seo-pokedex-count">7</span></a>
+      <a href="/zh/pokemon/wartortle/" class="seo-pokedex-link" data-pokemon-id="8"><span class="seo-pokedex-num">#008</span><span class="seo-pokedex-name">卡咪龟</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/zh/pokemon/blastoise/" class="seo-pokedex-link" data-pokemon-id="9"><span class="seo-pokedex-num">#009</span><span class="seo-pokedex-name">水箭龟</span><span class="seo-pokedex-count">8</span></a>
+      <a href="/zh/pokemon/caterpie/" class="seo-pokedex-link" data-pokemon-id="10"><span class="seo-pokedex-num">#010</span><span class="seo-pokedex-name">绿毛虫</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/metapod/" class="seo-pokedex-link" data-pokemon-id="11"><span class="seo-pokedex-num">#011</span><span class="seo-pokedex-name">铁甲蛹</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/butterfree/" class="seo-pokedex-link" data-pokemon-id="12"><span class="seo-pokedex-num">#012</span><span class="seo-pokedex-name">巴大蝶</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/weedle/" class="seo-pokedex-link" data-pokemon-id="13"><span class="seo-pokedex-num">#013</span><span class="seo-pokedex-name">独角虫</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/kakuna/" class="seo-pokedex-link" data-pokemon-id="14"><span class="seo-pokedex-num">#014</span><span class="seo-pokedex-name">铁壳蛹</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/beedrill/" class="seo-pokedex-link" data-pokemon-id="15"><span class="seo-pokedex-num">#015</span><span class="seo-pokedex-name">大针蜂</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/pidgey/" class="seo-pokedex-link" data-pokemon-id="16"><span class="seo-pokedex-num">#016</span><span class="seo-pokedex-name">波波</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/pidgeotto/" class="seo-pokedex-link" data-pokemon-id="17"><span class="seo-pokedex-num">#017</span><span class="seo-pokedex-name">比比鸟</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/pidgeot/" class="seo-pokedex-link" data-pokemon-id="18"><span class="seo-pokedex-num">#018</span><span class="seo-pokedex-name">大比鸟</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/rattata/" class="seo-pokedex-link" data-pokemon-id="19"><span class="seo-pokedex-num">#019</span><span class="seo-pokedex-name">小拉达</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/raticate/" class="seo-pokedex-link" data-pokemon-id="20"><span class="seo-pokedex-num">#020</span><span class="seo-pokedex-name">拉达</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/spearow/" class="seo-pokedex-link" data-pokemon-id="21"><span class="seo-pokedex-num">#021</span><span class="seo-pokedex-name">烈雀</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/fearow/" class="seo-pokedex-link" data-pokemon-id="22"><span class="seo-pokedex-num">#022</span><span class="seo-pokedex-name">大嘴雀</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/zh/pokemon/arbok/" class="seo-pokedex-link" data-pokemon-id="24"><span class="seo-pokedex-num">#024</span><span class="seo-pokedex-name">阿柏怪</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/pikachu/" class="seo-pokedex-link" data-pokemon-id="25"><span class="seo-pokedex-num">#025</span><span class="seo-pokedex-name">皮卡丘</span><span class="seo-pokedex-count">18</span></a>
+      <a href="/zh/pokemon/raichu/" class="seo-pokedex-link" data-pokemon-id="26"><span class="seo-pokedex-num">#026</span><span class="seo-pokedex-name">雷丘</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/zh/pokemon/sandshrew/" class="seo-pokedex-link" data-pokemon-id="27"><span class="seo-pokedex-num">#027</span><span class="seo-pokedex-name">穿山鼠</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/sandslash/" class="seo-pokedex-link" data-pokemon-id="28"><span class="seo-pokedex-num">#028</span><span class="seo-pokedex-name">穿山王</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/nidoranf/" class="seo-pokedex-link" data-pokemon-id="29"><span class="seo-pokedex-num">#029</span><span class="seo-pokedex-name">尼多兰</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/nidorina/" class="seo-pokedex-link" data-pokemon-id="30"><span class="seo-pokedex-num">#030</span><span class="seo-pokedex-name">尼多娜</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/nidoranm/" class="seo-pokedex-link" data-pokemon-id="32"><span class="seo-pokedex-num">#032</span><span class="seo-pokedex-name">尼多朗</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/nidorino/" class="seo-pokedex-link" data-pokemon-id="33"><span class="seo-pokedex-num">#033</span><span class="seo-pokedex-name">尼多力诺</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/nidoking/" class="seo-pokedex-link" data-pokemon-id="34"><span class="seo-pokedex-num">#034</span><span class="seo-pokedex-name">尼多王</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/clefairy/" class="seo-pokedex-link" data-pokemon-id="35"><span class="seo-pokedex-num">#035</span><span class="seo-pokedex-name">皮皮</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/clefable/" class="seo-pokedex-link" data-pokemon-id="36"><span class="seo-pokedex-num">#036</span><span class="seo-pokedex-name">皮可西</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/vulpix/" class="seo-pokedex-link" data-pokemon-id="37"><span class="seo-pokedex-num">#037</span><span class="seo-pokedex-name">六尾</span><span class="seo-pokedex-count">6</span></a>
+      <a href="/zh/pokemon/ninetales/" class="seo-pokedex-link" data-pokemon-id="38"><span class="seo-pokedex-num">#038</span><span class="seo-pokedex-name">九尾</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/jigglypuff/" class="seo-pokedex-link" data-pokemon-id="39"><span class="seo-pokedex-num">#039</span><span class="seo-pokedex-name">胖丁</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/wigglytuff/" class="seo-pokedex-link" data-pokemon-id="40"><span class="seo-pokedex-num">#040</span><span class="seo-pokedex-name">胖可丁</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/zubat/" class="seo-pokedex-link" data-pokemon-id="41"><span class="seo-pokedex-num">#041</span><span class="seo-pokedex-name">超音蝠</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/golbat/" class="seo-pokedex-link" data-pokemon-id="42"><span class="seo-pokedex-num">#042</span><span class="seo-pokedex-name">大嘴蝠</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/oddish/" class="seo-pokedex-link" data-pokemon-id="43"><span class="seo-pokedex-num">#043</span><span class="seo-pokedex-name">走路草</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/paras/" class="seo-pokedex-link" data-pokemon-id="46"><span class="seo-pokedex-num">#046</span><span class="seo-pokedex-name">派拉斯</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/parasect/" class="seo-pokedex-link" data-pokemon-id="47"><span class="seo-pokedex-num">#047</span><span class="seo-pokedex-name">派拉斯特</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/venonat/" class="seo-pokedex-link" data-pokemon-id="48"><span class="seo-pokedex-num">#048</span><span class="seo-pokedex-name">毛球</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/venomoth/" class="seo-pokedex-link" data-pokemon-id="49"><span class="seo-pokedex-num">#049</span><span class="seo-pokedex-name">摩鲁蛾</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/diglett/" class="seo-pokedex-link" data-pokemon-id="50"><span class="seo-pokedex-num">#050</span><span class="seo-pokedex-name">地鼠</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/dugtrio/" class="seo-pokedex-link" data-pokemon-id="51"><span class="seo-pokedex-num">#051</span><span class="seo-pokedex-name">三地鼠</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/meowth/" class="seo-pokedex-link" data-pokemon-id="52"><span class="seo-pokedex-num">#052</span><span class="seo-pokedex-name">喵喵</span><span class="seo-pokedex-count">7</span></a>
+      <a href="/zh/pokemon/persian/" class="seo-pokedex-link" data-pokemon-id="53"><span class="seo-pokedex-num">#053</span><span class="seo-pokedex-name">猫老大</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/psyduck/" class="seo-pokedex-link" data-pokemon-id="54"><span class="seo-pokedex-num">#054</span><span class="seo-pokedex-name">可达鸭</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/golduck/" class="seo-pokedex-link" data-pokemon-id="55"><span class="seo-pokedex-num">#055</span><span class="seo-pokedex-name">哥达鸭</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/mankey/" class="seo-pokedex-link" data-pokemon-id="56"><span class="seo-pokedex-num">#056</span><span class="seo-pokedex-name">猴怪</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/primeape/" class="seo-pokedex-link" data-pokemon-id="57"><span class="seo-pokedex-num">#057</span><span class="seo-pokedex-name">火暴猴</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/growlithe/" class="seo-pokedex-link" data-pokemon-id="58"><span class="seo-pokedex-num">#058</span><span class="seo-pokedex-name">卡蒂狗</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/zh/pokemon/arcanine/" class="seo-pokedex-link" data-pokemon-id="59"><span class="seo-pokedex-num">#059</span><span class="seo-pokedex-name">风速狗</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/poliwag/" class="seo-pokedex-link" data-pokemon-id="60"><span class="seo-pokedex-num">#060</span><span class="seo-pokedex-name">蚊香蝌蚪</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/poliwhirl/" class="seo-pokedex-link" data-pokemon-id="61"><span class="seo-pokedex-num">#061</span><span class="seo-pokedex-name">蚊香君</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/poliwrath/" class="seo-pokedex-link" data-pokemon-id="62"><span class="seo-pokedex-num">#062</span><span class="seo-pokedex-name">蚊香泳士</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/abra/" class="seo-pokedex-link" data-pokemon-id="63"><span class="seo-pokedex-num">#063</span><span class="seo-pokedex-name">凯西</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/kadabra/" class="seo-pokedex-link" data-pokemon-id="64"><span class="seo-pokedex-num">#064</span><span class="seo-pokedex-name">勇基拉</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/alakazam/" class="seo-pokedex-link" data-pokemon-id="65"><span class="seo-pokedex-num">#065</span><span class="seo-pokedex-name">胡地</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/machop/" class="seo-pokedex-link" data-pokemon-id="66"><span class="seo-pokedex-num">#066</span><span class="seo-pokedex-name">腕力</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/machoke/" class="seo-pokedex-link" data-pokemon-id="67"><span class="seo-pokedex-num">#067</span><span class="seo-pokedex-name">豪力</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/machamp/" class="seo-pokedex-link" data-pokemon-id="68"><span class="seo-pokedex-num">#068</span><span class="seo-pokedex-name">怪力</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/bellsprout/" class="seo-pokedex-link" data-pokemon-id="69"><span class="seo-pokedex-num">#069</span><span class="seo-pokedex-name">喇叭芽</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/weepinbell/" class="seo-pokedex-link" data-pokemon-id="70"><span class="seo-pokedex-num">#070</span><span class="seo-pokedex-name">口呆花</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/tentacool/" class="seo-pokedex-link" data-pokemon-id="72"><span class="seo-pokedex-num">#072</span><span class="seo-pokedex-name">玛瑙水母</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/tentacruel/" class="seo-pokedex-link" data-pokemon-id="73"><span class="seo-pokedex-num">#073</span><span class="seo-pokedex-name">毒刺水母</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/geodude/" class="seo-pokedex-link" data-pokemon-id="74"><span class="seo-pokedex-num">#074</span><span class="seo-pokedex-name">小拳石</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/graveler/" class="seo-pokedex-link" data-pokemon-id="75"><span class="seo-pokedex-num">#075</span><span class="seo-pokedex-name">隆隆石</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/golem/" class="seo-pokedex-link" data-pokemon-id="76"><span class="seo-pokedex-num">#076</span><span class="seo-pokedex-name">隆隆岩</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/ponyta/" class="seo-pokedex-link" data-pokemon-id="77"><span class="seo-pokedex-num">#077</span><span class="seo-pokedex-name">小火马</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/zh/pokemon/rapidash/" class="seo-pokedex-link" data-pokemon-id="78"><span class="seo-pokedex-num">#078</span><span class="seo-pokedex-name">烈焰马</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/zh/pokemon/slowpoke/" class="seo-pokedex-link" data-pokemon-id="79"><span class="seo-pokedex-num">#079</span><span class="seo-pokedex-name">呆呆兽</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/zh/pokemon/slowbro/" class="seo-pokedex-link" data-pokemon-id="80"><span class="seo-pokedex-num">#080</span><span class="seo-pokedex-name">呆壳兽</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/zh/pokemon/magnemite/" class="seo-pokedex-link" data-pokemon-id="81"><span class="seo-pokedex-num">#081</span><span class="seo-pokedex-name">小磁怪</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/magneton/" class="seo-pokedex-link" data-pokemon-id="82"><span class="seo-pokedex-num">#082</span><span class="seo-pokedex-name">三合一磁怪</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/zh/pokemon/farfetchd/" class="seo-pokedex-link" data-pokemon-id="83"><span class="seo-pokedex-num">#083</span><span class="seo-pokedex-name">大葱鸭</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/doduo/" class="seo-pokedex-link" data-pokemon-id="84"><span class="seo-pokedex-num">#084</span><span class="seo-pokedex-name">嘟嘟</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/dodrio/" class="seo-pokedex-link" data-pokemon-id="85"><span class="seo-pokedex-num">#085</span><span class="seo-pokedex-name">嘟嘟利</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/seel/" class="seo-pokedex-link" data-pokemon-id="86"><span class="seo-pokedex-num">#086</span><span class="seo-pokedex-name">小海狮</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/dewgong/" class="seo-pokedex-link" data-pokemon-id="87"><span class="seo-pokedex-num">#087</span><span class="seo-pokedex-name">白海狮</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/horsea/" class="seo-pokedex-link" data-pokemon-id="116"><span class="seo-pokedex-num">#116</span><span class="seo-pokedex-name">墨海马</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/seadra/" class="seo-pokedex-link" data-pokemon-id="117"><span class="seo-pokedex-num">#117</span><span class="seo-pokedex-name">海刺龙</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/zh/pokemon/lapras/" class="seo-pokedex-link" data-pokemon-id="131"><span class="seo-pokedex-num">#131</span><span class="seo-pokedex-name">拉普拉斯</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/zh/pokemon/ditto/" class="seo-pokedex-link" data-pokemon-id="132"><span class="seo-pokedex-num">#132</span><span class="seo-pokedex-name">百变怪</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/zh/pokemon/mew/" class="seo-pokedex-link" data-pokemon-id="151"><span class="seo-pokedex-num">#151</span><span class="seo-pokedex-name">梦幻</span><span class="seo-pokedex-count">2</span></a>
+    </div>
+  </nav>
+
+  <footer>
+    <p>© 2026 - 3590 PokéTruc — 粉丝制作，与任天堂／株式会社宝可梦无关。</p>
+  </footer>
+
+  <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="/i18n.js?v=12"></script>
+  <script src="/theme.js?v=12"></script>
+  <script src="/app.js?v=12"></script>
+</body>
+</html>

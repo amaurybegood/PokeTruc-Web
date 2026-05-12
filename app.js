@@ -1,3 +1,6 @@
+// Pokédex grid (index page) — dynamic search + grid render.
+// Depends on i18n.js (t, lang, pokemonName, langPathPrefix).
+
 let pokemons = [];
 let cards = [];
 let searchQuery = '';
@@ -15,8 +18,8 @@ function slugify(name) {
 async function loadData() {
   try {
     const [pkRes, cardRes] = await Promise.all([
-      fetch('data/pokemons.json'),
-      fetch('data/pokemon_cards.json')
+      fetch('/data/pokemons.json'),
+      fetch('/data/pokemon_cards.json'),
     ]);
     pokemons = await pkRes.json();
     cards = await cardRes.json();
@@ -49,12 +52,11 @@ function renderStats() {
       </div>
     </div>
     <div class="progress-legend">
-      <span class="legend-done">&#9632; ${done} <span data-i18n="stat.done"></span></span>
-      <span class="legend-wip"> &#9632; ${wip}  <span data-i18n="stat.wip"></span></span>
-      <span class="legend-soon">&#9632; ${soon} <span data-i18n="stat.soon"></span></span>
+      <span class="legend-done">&#9632; ${done} ${t('stat.done')}</span>
+      <span class="legend-wip"> &#9632; ${wip}  ${t('stat.wip')}</span>
+      <span class="legend-soon">&#9632; ${soon} ${t('stat.soon')}</span>
     </div>
   `;
-  applyTranslations();
 
   const bar = document.querySelector('.progress-bar');
   void bar.offsetWidth;
@@ -78,6 +80,8 @@ function renderGrid(list) {
     return;
   }
 
+  const prefix = langPathPrefix();
+
   list.forEach(pokemon => {
     const pkCards = cardsFor(pokemon.id);
     const hasCards = pkCards.length > 0;
@@ -97,7 +101,7 @@ function renderGrid(list) {
 
     div.innerHTML = `
       <span class="pokemon-number">#${pokemon.id}</span>
-      <img src="monsters/${pokemon.imageName}.png" alt="${pokemonName(pokemon)}" loading="lazy">
+      <img src="/monsters/${pokemon.imageName}.png" alt="${pokemonName(pokemon)}" loading="lazy">
       <div class="name">${pokemonName(pokemon)}</div>
       <span class="${badgeClass}">${badgeLabel}</span>
     `;
@@ -106,11 +110,11 @@ function renderGrid(list) {
       div.addEventListener('pointerenter', () => {
         pkCards.forEach(card => {
           const img = new Image();
-          img.src = `cards/${card.imageName}.avif`;
+          img.src = `/cards/${card.imageName}.avif`;
         });
       }, { once: true });
       div.addEventListener('click', () => {
-        window.location.href = `pokemon/${slugify(pokemon.name.en)}/`;
+        window.location.href = `${prefix}pokemon/${slugify(pokemon.name.en)}/`;
       });
     }
 
@@ -119,7 +123,7 @@ function renderGrid(list) {
 }
 
 function applyFilter() {
-  const normalize = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const normalize = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const q = normalize(searchQuery);
   let filtered = pokemons;
   if (q) filtered = filtered.filter(p =>

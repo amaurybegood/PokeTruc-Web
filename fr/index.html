@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéTruc — Illustrations exclusives de cartes Pokémon TCG</title>
+  <meta name="description" content="Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PokéTruc — Illustrations exclusives de cartes Pokémon TCG">
+  <meta property="og:description" content="Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan.">
+  <meta property="og:image" content="https://poketruc.com/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://poketruc.com/fr/">
+  <meta property="og:locale" content="fr">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PokéTruc — Illustrations exclusives de cartes Pokémon TCG">
+  <meta name="twitter:description" content="Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan.">
+  <meta name="twitter:image" content="https://poketruc.com/logo.png">
+
+  <link rel="canonical" href="https://poketruc.com/fr/">
+  <link rel="alternate" hreflang="en" href="https://poketruc.com/">
+  <link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/">
+  <link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://poketruc.com/">
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="apple-touch-icon" href="/logo.png">
+  <link rel="stylesheet" href="/style.css?v=10">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan.","inLanguage":["en","fr","ja","ko","zh-Hans"]},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/fr/#collection","url":"https://poketruc.com/fr/","name":"PokéTruc — Illustrations exclusives de cartes Pokémon TCG","description":"Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan.","inLanguage":"fr","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan."}}]}</script>
+  <noscript><style>
+    #search, .search-row, #stats-bar, #loader, #pokemon-grid { display: none !important; }
+    .noscript-fallback { display: block !important; }
+  </style></noscript>
+</head>
+<body data-lang-prefix="/fr/">
+
+  <header>
+    <a href="/fr/" class="logo-link"><img src="/logo.webp" alt="PokéTruc" class="site-logo" width="80" height="80"></a>
+    <p class="site-name">PokéTruc</p>
+    <nav class="site-nav">
+      <a href="/fr/" aria-current="page">Pokédex</a>
+      <a href="/fr/info/">Info</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode sombre"></button>
+    </nav>
+    <nav class="lang-switcher" aria-label="Langue">
+      <a href="/" hreflang="en" class="lang-link">EN</a><a href="/fr/" hreflang="fr" class="lang-link active" aria-current="true">FR</a><a href="/ja/" hreflang="ja" class="lang-link">日本語</a><a href="/ko/" hreflang="ko" class="lang-link">한국어</a><a href="/zh/" hreflang="zh-Hans" class="lang-link">中文</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Illustrations exclusives de cartes Pokémon TCG</h1>
+
+    <div class="search-row">
+      <input type="search" id="search" placeholder="Rechercher un Pokémon..." aria-label="Rechercher un Pokémon..." autocomplete="off">
+    </div>
+
+    <div id="stats-bar" class="stats-bar"></div>
+
+    <div id="loader" class="loader">
+      <div class="loader-spinner"></div>
+    </div>
+    <div id="pokemon-grid"></div>
+
+    <p class="noscript-fallback">JavaScript est nécessaire pour la grille dynamique du Pokédex. Vous pouvez tout de même parcourir tous les Pokémon ci-dessous.</p>
+  </main>
+
+  <section class="seo-about">
+    <p>Certaines cartes Pokémon TCG n'existent qu'en une seule langue. Une promo japonaise distribuée avec un magazine de timbres en 1996, jamais sortie en anglais. Une carte McDonald's Pokémon-e disponible uniquement au Japon en 2002. Une exclusivité du marché chinois sur un set récent. PokéTruc recense ces cartes en exclusivité linguistique pour les 151 Pokémon de la Génération 1 — Bulbizarre, Dracaufeu, Pikachu et tous les autres — en piochant dans les feuilles Vending Machine japonaises, les promos Black &amp; White, les promos DPt-P, les promos McDonald's et les sorties exclusives au marché chinois, illustrées par des artistes comme Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii et bien d'autres. L'objectif : permettre aux collectionneurs de découvrir des illustrations rares qu'ils n'ont peut-être jamais vues, classées par Pokémon, set, langue et année — entièrement gratuit, sans publicité, créé par un fan.</p>
+  </section>
+
+  <nav class="seo-pokedex" aria-label="Tous les Pokémon avec des cartes exclusives">
+    <h2 class="seo-pokedex-title">Tous les Pokémon avec des cartes exclusives</h2>
+    <div class="seo-pokedex-grid">
+      <a href="/fr/pokemon/bulbasaur/" class="seo-pokedex-link" data-pokemon-id="1"><span class="seo-pokedex-num">#001</span><span class="seo-pokedex-name">Bulbizarre</span><span class="seo-pokedex-count">8</span></a>
+      <a href="/fr/pokemon/ivysaur/" class="seo-pokedex-link" data-pokemon-id="2"><span class="seo-pokedex-num">#002</span><span class="seo-pokedex-name">Herbizarre</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/venusaur/" class="seo-pokedex-link" data-pokemon-id="3"><span class="seo-pokedex-num">#003</span><span class="seo-pokedex-name">Florizarre</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/fr/pokemon/charmander/" class="seo-pokedex-link" data-pokemon-id="4"><span class="seo-pokedex-num">#004</span><span class="seo-pokedex-name">Salamèche</span><span class="seo-pokedex-count">9</span></a>
+      <a href="/fr/pokemon/charmeleon/" class="seo-pokedex-link" data-pokemon-id="5"><span class="seo-pokedex-num">#005</span><span class="seo-pokedex-name">Reptincel</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/fr/pokemon/charizard/" class="seo-pokedex-link" data-pokemon-id="6"><span class="seo-pokedex-num">#006</span><span class="seo-pokedex-name">Dracaufeu</span><span class="seo-pokedex-count">11</span></a>
+      <a href="/fr/pokemon/squirtle/" class="seo-pokedex-link" data-pokemon-id="7"><span class="seo-pokedex-num">#007</span><span class="seo-pokedex-name">Carapuce</span><span class="seo-pokedex-count">7</span></a>
+      <a href="/fr/pokemon/wartortle/" class="seo-pokedex-link" data-pokemon-id="8"><span class="seo-pokedex-num">#008</span><span class="seo-pokedex-name">Carabaffe</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/fr/pokemon/blastoise/" class="seo-pokedex-link" data-pokemon-id="9"><span class="seo-pokedex-num">#009</span><span class="seo-pokedex-name">Tortank</span><span class="seo-pokedex-count">8</span></a>
+      <a href="/fr/pokemon/caterpie/" class="seo-pokedex-link" data-pokemon-id="10"><span class="seo-pokedex-num">#010</span><span class="seo-pokedex-name">Chenipan</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/metapod/" class="seo-pokedex-link" data-pokemon-id="11"><span class="seo-pokedex-num">#011</span><span class="seo-pokedex-name">Chrysacier</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/butterfree/" class="seo-pokedex-link" data-pokemon-id="12"><span class="seo-pokedex-num">#012</span><span class="seo-pokedex-name">Papilusion</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/weedle/" class="seo-pokedex-link" data-pokemon-id="13"><span class="seo-pokedex-num">#013</span><span class="seo-pokedex-name">Aspicot</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/kakuna/" class="seo-pokedex-link" data-pokemon-id="14"><span class="seo-pokedex-num">#014</span><span class="seo-pokedex-name">Coconfort</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/beedrill/" class="seo-pokedex-link" data-pokemon-id="15"><span class="seo-pokedex-num">#015</span><span class="seo-pokedex-name">Dardargnan</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/pidgey/" class="seo-pokedex-link" data-pokemon-id="16"><span class="seo-pokedex-num">#016</span><span class="seo-pokedex-name">Roucool</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/pidgeotto/" class="seo-pokedex-link" data-pokemon-id="17"><span class="seo-pokedex-num">#017</span><span class="seo-pokedex-name">Roucoups</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/pidgeot/" class="seo-pokedex-link" data-pokemon-id="18"><span class="seo-pokedex-num">#018</span><span class="seo-pokedex-name">Roucarnage</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/rattata/" class="seo-pokedex-link" data-pokemon-id="19"><span class="seo-pokedex-num">#019</span><span class="seo-pokedex-name">Rattata</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/raticate/" class="seo-pokedex-link" data-pokemon-id="20"><span class="seo-pokedex-num">#020</span><span class="seo-pokedex-name">Rattatac</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/spearow/" class="seo-pokedex-link" data-pokemon-id="21"><span class="seo-pokedex-num">#021</span><span class="seo-pokedex-name">Piafabec</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/fearow/" class="seo-pokedex-link" data-pokemon-id="22"><span class="seo-pokedex-num">#022</span><span class="seo-pokedex-name">Rapasdepic</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/fr/pokemon/arbok/" class="seo-pokedex-link" data-pokemon-id="24"><span class="seo-pokedex-num">#024</span><span class="seo-pokedex-name">Arbok</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/pikachu/" class="seo-pokedex-link" data-pokemon-id="25"><span class="seo-pokedex-num">#025</span><span class="seo-pokedex-name">Pikachu</span><span class="seo-pokedex-count">18</span></a>
+      <a href="/fr/pokemon/raichu/" class="seo-pokedex-link" data-pokemon-id="26"><span class="seo-pokedex-num">#026</span><span class="seo-pokedex-name">Raichu</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/fr/pokemon/sandshrew/" class="seo-pokedex-link" data-pokemon-id="27"><span class="seo-pokedex-num">#027</span><span class="seo-pokedex-name">Sabelette</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/sandslash/" class="seo-pokedex-link" data-pokemon-id="28"><span class="seo-pokedex-num">#028</span><span class="seo-pokedex-name">Sablaireau</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/nidoranf/" class="seo-pokedex-link" data-pokemon-id="29"><span class="seo-pokedex-num">#029</span><span class="seo-pokedex-name">Nidoran♀</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/nidorina/" class="seo-pokedex-link" data-pokemon-id="30"><span class="seo-pokedex-num">#030</span><span class="seo-pokedex-name">Nidorina</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/nidoranm/" class="seo-pokedex-link" data-pokemon-id="32"><span class="seo-pokedex-num">#032</span><span class="seo-pokedex-name">Nidoran♂</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/nidorino/" class="seo-pokedex-link" data-pokemon-id="33"><span class="seo-pokedex-num">#033</span><span class="seo-pokedex-name">Nidorino</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/nidoking/" class="seo-pokedex-link" data-pokemon-id="34"><span class="seo-pokedex-num">#034</span><span class="seo-pokedex-name">Nidoking</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/clefairy/" class="seo-pokedex-link" data-pokemon-id="35"><span class="seo-pokedex-num">#035</span><span class="seo-pokedex-name">Mélofée</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/clefable/" class="seo-pokedex-link" data-pokemon-id="36"><span class="seo-pokedex-num">#036</span><span class="seo-pokedex-name">Mélodelfe</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/vulpix/" class="seo-pokedex-link" data-pokemon-id="37"><span class="seo-pokedex-num">#037</span><span class="seo-pokedex-name">Goupix</span><span class="seo-pokedex-count">6</span></a>
+      <a href="/fr/pokemon/ninetales/" class="seo-pokedex-link" data-pokemon-id="38"><span class="seo-pokedex-num">#038</span><span class="seo-pokedex-name">Feunard</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/jigglypuff/" class="seo-pokedex-link" data-pokemon-id="39"><span class="seo-pokedex-num">#039</span><span class="seo-pokedex-name">Rondoudou</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/wigglytuff/" class="seo-pokedex-link" data-pokemon-id="40"><span class="seo-pokedex-num">#040</span><span class="seo-pokedex-name">Grodoudou</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/zubat/" class="seo-pokedex-link" data-pokemon-id="41"><span class="seo-pokedex-num">#041</span><span class="seo-pokedex-name">Nosferapti</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/golbat/" class="seo-pokedex-link" data-pokemon-id="42"><span class="seo-pokedex-num">#042</span><span class="seo-pokedex-name">Nosferalto</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/oddish/" class="seo-pokedex-link" data-pokemon-id="43"><span class="seo-pokedex-num">#043</span><span class="seo-pokedex-name">Mystherbe</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/paras/" class="seo-pokedex-link" data-pokemon-id="46"><span class="seo-pokedex-num">#046</span><span class="seo-pokedex-name">Paras</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/parasect/" class="seo-pokedex-link" data-pokemon-id="47"><span class="seo-pokedex-num">#047</span><span class="seo-pokedex-name">Parasect</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/venonat/" class="seo-pokedex-link" data-pokemon-id="48"><span class="seo-pokedex-num">#048</span><span class="seo-pokedex-name">Mimitoss</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/venomoth/" class="seo-pokedex-link" data-pokemon-id="49"><span class="seo-pokedex-num">#049</span><span class="seo-pokedex-name">Aéromite</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/diglett/" class="seo-pokedex-link" data-pokemon-id="50"><span class="seo-pokedex-num">#050</span><span class="seo-pokedex-name">Taupiqueur</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/dugtrio/" class="seo-pokedex-link" data-pokemon-id="51"><span class="seo-pokedex-num">#051</span><span class="seo-pokedex-name">Triopikeur</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/meowth/" class="seo-pokedex-link" data-pokemon-id="52"><span class="seo-pokedex-num">#052</span><span class="seo-pokedex-name">Miaouss</span><span class="seo-pokedex-count">7</span></a>
+      <a href="/fr/pokemon/persian/" class="seo-pokedex-link" data-pokemon-id="53"><span class="seo-pokedex-num">#053</span><span class="seo-pokedex-name">Persian</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/psyduck/" class="seo-pokedex-link" data-pokemon-id="54"><span class="seo-pokedex-num">#054</span><span class="seo-pokedex-name">Psykokwak</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/golduck/" class="seo-pokedex-link" data-pokemon-id="55"><span class="seo-pokedex-num">#055</span><span class="seo-pokedex-name">Akwakwak</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/mankey/" class="seo-pokedex-link" data-pokemon-id="56"><span class="seo-pokedex-num">#056</span><span class="seo-pokedex-name">Férosinge</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/primeape/" class="seo-pokedex-link" data-pokemon-id="57"><span class="seo-pokedex-num">#057</span><span class="seo-pokedex-name">Colossinge</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/growlithe/" class="seo-pokedex-link" data-pokemon-id="58"><span class="seo-pokedex-num">#058</span><span class="seo-pokedex-name">Caninos</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/fr/pokemon/arcanine/" class="seo-pokedex-link" data-pokemon-id="59"><span class="seo-pokedex-num">#059</span><span class="seo-pokedex-name">Arcanin</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/poliwag/" class="seo-pokedex-link" data-pokemon-id="60"><span class="seo-pokedex-num">#060</span><span class="seo-pokedex-name">Ptitard</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/poliwhirl/" class="seo-pokedex-link" data-pokemon-id="61"><span class="seo-pokedex-num">#061</span><span class="seo-pokedex-name">Têtarte</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/poliwrath/" class="seo-pokedex-link" data-pokemon-id="62"><span class="seo-pokedex-num">#062</span><span class="seo-pokedex-name">Tartard</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/abra/" class="seo-pokedex-link" data-pokemon-id="63"><span class="seo-pokedex-num">#063</span><span class="seo-pokedex-name">Abra</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/kadabra/" class="seo-pokedex-link" data-pokemon-id="64"><span class="seo-pokedex-num">#064</span><span class="seo-pokedex-name">Kadabra</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/alakazam/" class="seo-pokedex-link" data-pokemon-id="65"><span class="seo-pokedex-num">#065</span><span class="seo-pokedex-name">Alakazam</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/machop/" class="seo-pokedex-link" data-pokemon-id="66"><span class="seo-pokedex-num">#066</span><span class="seo-pokedex-name">Machoc</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/machoke/" class="seo-pokedex-link" data-pokemon-id="67"><span class="seo-pokedex-num">#067</span><span class="seo-pokedex-name">Machopeur</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/machamp/" class="seo-pokedex-link" data-pokemon-id="68"><span class="seo-pokedex-num">#068</span><span class="seo-pokedex-name">Mackogneur</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/bellsprout/" class="seo-pokedex-link" data-pokemon-id="69"><span class="seo-pokedex-num">#069</span><span class="seo-pokedex-name">Chétiflor</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/weepinbell/" class="seo-pokedex-link" data-pokemon-id="70"><span class="seo-pokedex-num">#070</span><span class="seo-pokedex-name">Boustiflor</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/tentacool/" class="seo-pokedex-link" data-pokemon-id="72"><span class="seo-pokedex-num">#072</span><span class="seo-pokedex-name">Tentacool</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/tentacruel/" class="seo-pokedex-link" data-pokemon-id="73"><span class="seo-pokedex-num">#073</span><span class="seo-pokedex-name">Tentacruel</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/geodude/" class="seo-pokedex-link" data-pokemon-id="74"><span class="seo-pokedex-num">#074</span><span class="seo-pokedex-name">Racaillou</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/graveler/" class="seo-pokedex-link" data-pokemon-id="75"><span class="seo-pokedex-num">#075</span><span class="seo-pokedex-name">Gravalanch</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/golem/" class="seo-pokedex-link" data-pokemon-id="76"><span class="seo-pokedex-num">#076</span><span class="seo-pokedex-name">Grolem</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/ponyta/" class="seo-pokedex-link" data-pokemon-id="77"><span class="seo-pokedex-num">#077</span><span class="seo-pokedex-name">Ponyta</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/fr/pokemon/rapidash/" class="seo-pokedex-link" data-pokemon-id="78"><span class="seo-pokedex-num">#078</span><span class="seo-pokedex-name">Galopa</span><span class="seo-pokedex-count">4</span></a>
+      <a href="/fr/pokemon/slowpoke/" class="seo-pokedex-link" data-pokemon-id="79"><span class="seo-pokedex-num">#079</span><span class="seo-pokedex-name">Ramoloss</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/fr/pokemon/slowbro/" class="seo-pokedex-link" data-pokemon-id="80"><span class="seo-pokedex-num">#080</span><span class="seo-pokedex-name">Flagadoss</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/fr/pokemon/magnemite/" class="seo-pokedex-link" data-pokemon-id="81"><span class="seo-pokedex-num">#081</span><span class="seo-pokedex-name">Magnéti</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/magneton/" class="seo-pokedex-link" data-pokemon-id="82"><span class="seo-pokedex-num">#082</span><span class="seo-pokedex-name">Magnéton</span><span class="seo-pokedex-count">3</span></a>
+      <a href="/fr/pokemon/farfetchd/" class="seo-pokedex-link" data-pokemon-id="83"><span class="seo-pokedex-num">#083</span><span class="seo-pokedex-name">Canarticho</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/doduo/" class="seo-pokedex-link" data-pokemon-id="84"><span class="seo-pokedex-num">#084</span><span class="seo-pokedex-name">Doduo</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/dodrio/" class="seo-pokedex-link" data-pokemon-id="85"><span class="seo-pokedex-num">#085</span><span class="seo-pokedex-name">Dodrio</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/seel/" class="seo-pokedex-link" data-pokemon-id="86"><span class="seo-pokedex-num">#086</span><span class="seo-pokedex-name">Otaria</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/dewgong/" class="seo-pokedex-link" data-pokemon-id="87"><span class="seo-pokedex-num">#087</span><span class="seo-pokedex-name">Lamantine</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/horsea/" class="seo-pokedex-link" data-pokemon-id="116"><span class="seo-pokedex-num">#116</span><span class="seo-pokedex-name">Hypotrempe</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/seadra/" class="seo-pokedex-link" data-pokemon-id="117"><span class="seo-pokedex-num">#117</span><span class="seo-pokedex-name">Hypocéan</span><span class="seo-pokedex-count">1</span></a>
+      <a href="/fr/pokemon/lapras/" class="seo-pokedex-link" data-pokemon-id="131"><span class="seo-pokedex-num">#131</span><span class="seo-pokedex-name">Lokhlass</span><span class="seo-pokedex-count">5</span></a>
+      <a href="/fr/pokemon/ditto/" class="seo-pokedex-link" data-pokemon-id="132"><span class="seo-pokedex-num">#132</span><span class="seo-pokedex-name">Métamorph</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/fr/pokemon/mew/" class="seo-pokedex-link" data-pokemon-id="151"><span class="seo-pokedex-num">#151</span><span class="seo-pokedex-name">Mew</span><span class="seo-pokedex-count">2</span></a>
+    </div>
+  </nav>
+
+  <footer>
+    <p>© 2026 - 3590 PokéTruc — Site fan, non affilié à Nintendo / The Pokémon Company.</p>
+  </footer>
+
+  <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="/i18n.js?v=12"></script>
+  <script src="/theme.js?v=12"></script>
+  <script src="/app.js?v=12"></script>
+</body>
+</html>

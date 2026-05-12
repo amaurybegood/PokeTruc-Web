@@ -1,3 +1,11 @@
+.noscript-fallback {
+  display: none;
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -69,10 +77,15 @@ header {
   margin-bottom: 12px;
 }
 
-header h1 {
+header h1,
+header .site-name {
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: -0.5px;
+}
+
+header .site-name {
+  margin: 0;
 }
 
 header .subtitle {
@@ -88,7 +101,8 @@ header .subtitle {
   margin-top: 16px;
 }
 
-.site-nav a {
+.site-nav a,
+.site-nav a:visited {
   text-decoration: none;
   color: var(--text-secondary);
   font-size: 0.9rem;
@@ -101,9 +115,56 @@ header .subtitle {
 }
 
 .site-nav a.active,
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
   color: var(--accent);
   border-color: var(--accent);
+}
+
+/* Language switcher (compact, below the main nav) */
+.lang-switcher {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.lang-switcher .lang-link,
+.lang-switcher .lang-link:visited {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.lang-switcher .lang-link:hover {
+  color: var(--accent);
+}
+
+.lang-switcher .lang-link.active {
+  color: var(--text);
+  border-color: var(--border);
+  background: var(--card-bg);
+  font-weight: 500;
+}
+
+/* Page-level H1 (index, info) */
+.page-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: var(--text-secondary);
+  margin: 0 24px 24px;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .page-title { font-size: 1.15rem; }
 }
 
 .theme-toggle {
