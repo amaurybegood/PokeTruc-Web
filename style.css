@@ -185,6 +185,7 @@ header .subtitle {
 
 .search-row {
   margin-top: 24px;
+  margin-bottom: 20px;
   display: flex;
   gap: 8px;
   justify-content: center;
