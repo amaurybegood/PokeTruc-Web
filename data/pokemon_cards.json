@@ -2253,6 +2253,54 @@
   "artist": "Tomokazu Komiya"
 },
 {
+  "pokemonId": 129,
+  "name": "Unnumbered Promos",
+  "imageName": "129_Magikarp_jpn_unp_78c",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Yuka Matsubara"
+},{
+  "pokemonId": 129,
+  "name": "Unnumbered Promos",
+  "imageName": "129_Magikarp_jpn_unp_63",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 129,
+  "name": "Gift Box DPt: Chimchar Half Deck",
+  "imageName": "129_Magikarp_jpn_gbchd_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2008,
+  "artist": "Masakazu Fukuda"
+},
+{
+  "pokemonId": 129,
+  "name": "My First Battle: Squirtle Deck",
+  "imageName": "129_Magikarp_mfbs_7",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Amelicart"
+},
+{
+  "pokemonId": 129,
+  "name": "Magikarp promo card (040/M-P), Pokémon Mega Festa 2026",
+  "imageName": "129_Magikarp_kor_Promo_2026_Festival",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇰🇷",
+  "year": 2026,
+  "artist": "The Pokémon Compagny"
+},
+{
   "pokemonId": 131,
   "name": "Pokémon VS",
   "imageName": "131_Lapras_jpn_versus1_41",

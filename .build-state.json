@@ -1,0 +1,1802 @@
+{
+  "/pokemon/bulbasaur/": {
+    "hash": "c512ffa85292981977fcb5b797f1a1f83e4b98cbf9cf0bb96ec58f152a8aa856",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/ivysaur/": {
+    "hash": "e878386c2d71ff38fdb9df8f53582b0cbc4785cabe24cf832ff252c09daa9109",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/venusaur/": {
+    "hash": "c1ead1693b7851da80d4d3fda2f98c1e5afcbf465a574e6758f5e3a3e4963c5e",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/charmander/": {
+    "hash": "3fe3e69aeb41e35eb2144061c3e9ed8f6a60a2cb0b6168df4ed2e24887a38df0",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/charmeleon/": {
+    "hash": "0f7336f299f51ea4534bb0feb98d23c8ac7944d67aaa42574be0a0b93361e37d",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/charizard/": {
+    "hash": "e88a2e6248b732412e10d51c73ec823cd60b7b5df8e1cfef22828aaa0fe1d238",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/squirtle/": {
+    "hash": "a0e337842566d79b2a2004c730b312e2c6787a18794639bfce0b20ff8f84c966",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/wartortle/": {
+    "hash": "b1da48cff3d28f65db288b0e98113591ce11a414ed277bb0d147b23a26346117",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/blastoise/": {
+    "hash": "78dd2f4f64d0c0c9ecae0f32c7d10314356d67fc6a2c8cfe5ec1d37034257a31",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/caterpie/": {
+    "hash": "ea6285a2b068b37d3a6a33982cfd3d9cf15d01cba3e011e576306df655323fe9",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/metapod/": {
+    "hash": "dcce88d9b54f162f79a6fa883b33f8cb7568d79b6f9bb996fb8b51426a9b3ed1",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/butterfree/": {
+    "hash": "4e2d09b8588607512ed7abd85536c2661f08b14cba6472818807b45e1d2187bc",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/weedle/": {
+    "hash": "9f2084510ef969e5fe34f3d2ca9db85655538174aeca66cffd17abf246a32dee",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/kakuna/": {
+    "hash": "3584c59940486c94bf2e64d1d5677bdf32a9aeddcd0cec074138c1dd7af71a7f",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/beedrill/": {
+    "hash": "22e5fc7cc506dd6d001ec78964d2c51721d8009a32ac34fddd7f04eb7f8a025a",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/pidgey/": {
+    "hash": "56d7c21050f046dffd7ac3f7d2efe2cead06d56b801aa61a77032d6ea822ed7c",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/pidgeotto/": {
+    "hash": "46636f9e7dd0f44a2bab3ea5fb7f29294c8bd8276fc126d0418f0e08c417b2ba",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/pidgeot/": {
+    "hash": "bc09b28aaddde06a6b991e017dbcf7a5f8990941b10fcb527695c7bc56ec764b",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/rattata/": {
+    "hash": "b6a13a4e367762cde9abf9ddbcece7ec0f8fe00ee7c6d26777609e2faa8814c5",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/raticate/": {
+    "hash": "acc94ff71c5e7fb355a8fd1070fe30948d25fe81aced8659606419752ceea919",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/spearow/": {
+    "hash": "23185ea48aa971f47be9d610a46f6a4446e6484306c74a4252a367de3ef76cdf",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/fearow/": {
+    "hash": "7e8f76b1ca00e3bc7daf85ede068cc9cea1430bc09537365ba03e4cc4f904e8b",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/arbok/": {
+    "hash": "924bbd5c19922db37fb8e383de4fef5bb965d4bcc9c5090e7d10beeff9e54342",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/pikachu/": {
+    "hash": "406dbbd53302f14bc34b903ea5bea7b30133e5a4a8f23bdbcdca747a646f87b8",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/raichu/": {
+    "hash": "64a34dc0230960c699fce2215262c035d75db26f3ace64feeabd7b53d8dcbe29",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/sandshrew/": {
+    "hash": "8a27e8ac8073ff7bdf26e8c3520c645f593dd3e254fba7fc33cc3ec24ff2304e",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/sandslash/": {
+    "hash": "7719ad0a51e2fccb5ff1c48c20ab04532c2dddc0ade88b63fffead0de60f86b5",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/nidoranf/": {
+    "hash": "91ebc62c8d4bd24c46bbe2af540bc6c1ecc49c7e825f710e7b130524c36762f0",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/nidorina/": {
+    "hash": "e64930bead80908524606b755420b2946f1bd73ff150c7efbf90622d8614782d",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/nidoranm/": {
+    "hash": "530ed174b3bb2a132c03663fa3f001088f86c27d8ed36a5c848a5e233aef3e95",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/nidorino/": {
+    "hash": "b813d39ce48248a3ed2eeafb57d5ea4492a0875bb3c3fec4982a1357671a5059",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/nidoking/": {
+    "hash": "8ddd1d49508a60ceb7b9f5a0faf4bb2fcc07330b183bb77e1d0e287079ac0454",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/clefairy/": {
+    "hash": "5596a50844bc46dae2b2f55026559c5284c24319331cc6ecd455d48546ceb63a",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/clefable/": {
+    "hash": "ebdde081941c2d75d5ce691dc8eba07a56fd68c3be3712342bca892e60449f09",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/vulpix/": {
+    "hash": "c4ef1f0aa9b214b78555b395c2979bad37047e6a40e382a9272995d8690fb851",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/ninetales/": {
+    "hash": "2ab022c55cda3feece1686294560b53479bc4aa8140a19b06e6bce320d043857",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/jigglypuff/": {
+    "hash": "42b38a417476b8038462a4740d60ce0b2a0f092ea2b008a1a48353711ad7bdaa",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/wigglytuff/": {
+    "hash": "e39cbd846b7e0d83021480e1fc99775637102f47a79c27a59cffa0367493972c",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/zubat/": {
+    "hash": "38d037115c07e876f27cfc2b07158f0fe4e2d80d1d731fefb2ff3ec3b48bc31e",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/golbat/": {
+    "hash": "5443e743b45ef6755d000f155da49a210241ccbe77b88f31930bf2e5a0bbddb8",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/oddish/": {
+    "hash": "45718b67df1eaf981e7741bac73679efc363aeafe681c37ee9d88244e2af70eb",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/paras/": {
+    "hash": "bc437704c49ae33e42fc13a792bc7f411bde5c426af169547efc307350363f90",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/parasect/": {
+    "hash": "5521164831644d27120241ef87317a55552cf067f7873d435113799c91223175",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/venonat/": {
+    "hash": "d7315ce25a6c1e31a3df925a8ec6ab014c1e24bcd0d4a24c137845c0ae60befa",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/venomoth/": {
+    "hash": "6044635cca050ba1077d90c9ac91568771ed7511ba69f92e7eeeb92e3639dc53",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/diglett/": {
+    "hash": "dc33a03fd826f96379906d3ceaa063479c3f1d6179805cfadd1ddc920c2c86b1",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/dugtrio/": {
+    "hash": "9e95fa7253e7c25aa3fc348217b48c78ab1ee778dabdde73ce3a8d7c6dbe886b",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/meowth/": {
+    "hash": "a021b7631ba69caed65922a100f9494324828fdba493c7fff0ef4478c97fb03e",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/persian/": {
+    "hash": "49dcfd135a1f4b6d85c0e1842d1ee298bff3c188fb02da7f4311c465e9a8fb88",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/psyduck/": {
+    "hash": "d8c8da7e3cdcd1b4298573e7128c3695fb21957a82f1bdf225de5af9a99c4c9a",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/golduck/": {
+    "hash": "56ec9c544e1d3f512da974b90984b0e5316a8790cb3bdcf4986cbbb8d537c235",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/mankey/": {
+    "hash": "359da1345b8ceede1373a4d680c201f2d52cf3a956611e23fb5f2b82a31a4897",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/primeape/": {
+    "hash": "ca5b84ea5ba39b094aadf7d38ef9028fd6132302349aa17a7b0f121001940cbb",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/growlithe/": {
+    "hash": "c4f0ad299724e4dcd3fc8c5b766663751d179bef8a3f4beec4bd2ac252e0940d",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/arcanine/": {
+    "hash": "214b2960547952b0d8bc09b57bdb9091751a17643352e7f10d5e363bc8e116d7",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/poliwag/": {
+    "hash": "901c57b9ab2401b81d1cadc8a87239bc827a5fd3135c41bc1755aaec180cb962",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/poliwhirl/": {
+    "hash": "834675a9449f8971d4ee3a33b98394c75929159997acd0687452a4972406cbd1",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/poliwrath/": {
+    "hash": "c08dbaf8b18aa861f23627e0205d4f714ce988100435238aa1aedd80cae99d88",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/abra/": {
+    "hash": "bf7162f0efb2f43e9dbfe6d39496f238d32cf5899616698c652856869cfa40d6",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/kadabra/": {
+    "hash": "422410e817431e41af21372fc3ca7473336a2a28b5f3709a0676c70d66dec817",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/alakazam/": {
+    "hash": "ae31188d92f141f55638f31bc2c8fd775b30565d28533c606ed9c60dba1fc484",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/machop/": {
+    "hash": "86d5509bb09257e90ade601ae2b8a11d4984bf5bbeff23d0ea4f75a1bcd5f4c3",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/machoke/": {
+    "hash": "f283a8a7e4c12e94ae7daed1b896144239d8a5d8e4cab1e6ee1b31633424a794",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/machamp/": {
+    "hash": "4ec2c5140809d868d4cd2500aa201732cf516a95c79061cf48561064443296b8",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/bellsprout/": {
+    "hash": "f317c0d3b0bd8049f5678f2cbfa9872f53c4b44ece36008112dddba6087e469a",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/weepinbell/": {
+    "hash": "607f6498272a886bc30aa1ce2879c28c8f72826017eeb5755183c4959559e717",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/tentacool/": {
+    "hash": "1b0a398bd7f92357cdd978912a386b3591bf2b781dc32852dc04c31a01d2a58f",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/tentacruel/": {
+    "hash": "b736e55828cf705d0966badc884c6e9b3cf8f738591b010086fb51c9c2e72fbf",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/geodude/": {
+    "hash": "b358c3d7186afefcd6bc51a7050ce005d955f8019656cb18afe93d5beb5055dd",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/graveler/": {
+    "hash": "bd11cf58832d1181e85a6352b11c02f971858da705727544931349d9994f7878",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/golem/": {
+    "hash": "00a432a7cb71be3b23abb04743c3d583f9d4398d831ba74a2688ffb70122268f",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/ponyta/": {
+    "hash": "88b2f05ba0e87ddee28df361e7d06c838621f9e65f17a8597235b34c845f3ebd",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/rapidash/": {
+    "hash": "ba9a8e83a07366dcdb2d957b1a2d4e13891d1792906fe21f3c483792b01459a0",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/slowpoke/": {
+    "hash": "2d77bf05b6268a5709ebf03cf38b2e80ab4a574bc76dcc66b097228783092b90",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/slowbro/": {
+    "hash": "28d1c5e97334eba33aa0705408af02ada1c23896063e19c2d4c53da8f1904958",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/magnemite/": {
+    "hash": "520eca83e1e0016a90d10887e68b68d60768645d320aad093414388c7e4540d6",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/magneton/": {
+    "hash": "c35a90fc0d7b01bf1147fc7f24c715f568b563fa42993fe826b8e2191551472f",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/farfetchd/": {
+    "hash": "06d6c89b0e9d39ed3c18c094f9db251c49100541a916ebf8e0ec3ad366a2759a",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/doduo/": {
+    "hash": "aa0a0adc53eebef1134325612f20b7f0cd3cb4769ee808cfc293751df5ebef25",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/dodrio/": {
+    "hash": "6c874127be607687524c1e76947b4355fd6971ec84a968e44dd166e9dd3fe484",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/seel/": {
+    "hash": "f1708ce5745f82216aaaf9190d15672c98872b817ec0548e34771d5e1568d81d",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/dewgong/": {
+    "hash": "dc1f7e5be2326e45a4e510eee5f34e251a89e4c8a282c6bffe6a7ed73823cf1c",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/horsea/": {
+    "hash": "0bb84ddf88b3f52963f96604b8bb7b2e44b9cd320b518ee1c932964d6f32720e",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/seadra/": {
+    "hash": "57a8c6fac362af18a64da385dbefcff25f387d58ef8b62bfe655a0d82cf81fb3",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/magikarp/": {
+    "hash": "9e3c7e386e17dcbd6192d4fe37d092c29fa9ffd4f18daf9c6d6b56000238665a",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/lapras/": {
+    "hash": "ad0beda609f8a8590bbc6a3a97a95fe66defa46e91a84da4a9525151da656c6a",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/ditto/": {
+    "hash": "6842ddc61c4ed57571a0bedcdfdeafce56e14118e6794105064805466e97072d",
+    "lastmod": "2026-05-13"
+  },
+  "/pokemon/mew/": {
+    "hash": "68c844842a27009035cabea19db48e3bbb541fd6cd807c33f7504253d92c5f1a",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/bulbasaur/": {
+    "hash": "7561db5db59f99efc4077ebcecf37939a4a462702b3f94080a97b4e2f2368a86",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/ivysaur/": {
+    "hash": "01cef20e0551bade5db1547ba7ff786ca11c7cf9b79650080098e302dafe9c37",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/venusaur/": {
+    "hash": "0b9fc330550eb30e469ca87d76761857958fafeb3c9a9f9145b6a0dfc6aac884",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/charmander/": {
+    "hash": "e6ced6cb85ea09d4e328b2d7e8ec8fdf316279b41e1045afef8d954e00808c8a",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/charmeleon/": {
+    "hash": "67a81918a782c9e9d0fad988c32bedcfa2d28e7cdb3589c7fa6a87255ece1a75",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/charizard/": {
+    "hash": "eb055f4ffcb010f03b8e40c61c0bf1fdcb63f05afa1f7005e99820103a0ee3d6",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/squirtle/": {
+    "hash": "e857697d66ec9fc6b7c581017581b0fb44f7cb17821133670c3aa5be8b4c4310",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/wartortle/": {
+    "hash": "31a8571c373f4b723acfb65153f027da35244a52384265e63c622003d95db0ad",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/blastoise/": {
+    "hash": "e3a466690ed1426fea3f5a740c8a2eef2015082cad829b5968238b55d9703234",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/caterpie/": {
+    "hash": "921622227e404f5be16eb6725a591ebb7fd022a89b680887536eecaf407aad2f",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/metapod/": {
+    "hash": "617c3625d061ecb9a1cbe5f1ddbfe808f38ada91b795176bf1532034c78af8d4",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/butterfree/": {
+    "hash": "e1e85ad1b6ef43d571294f033e3b9daec073c47388eeed0731f8c2d07a7d48a7",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/weedle/": {
+    "hash": "e09b779366f17adf7b87d4c40c94152bd0f5522db0e560ff32b98c83fc450d89",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/kakuna/": {
+    "hash": "a618270ad952dd836fc318cea114efad98045bc456744a8fff6f3f96b0b02f80",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/beedrill/": {
+    "hash": "39cf4b7c99667c7f3a5b8a09c490e22ab44f1976decdf4e0f3b741504edf2778",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/pidgey/": {
+    "hash": "ab702ab5c8b74edd0e39223e91826dbb960bba85c3acbd785900c1421663dbd0",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/pidgeotto/": {
+    "hash": "ca87c0aec65667458d1a0e5a12e0d9a99c4c51335c6c8d000bcc9e508e966212",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/pidgeot/": {
+    "hash": "4d723c12b9a5103ac2082be478df53d00884c66c8729be7a8430a4fb7981adcc",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/rattata/": {
+    "hash": "a95797f10d1ecadbdafc417a159d354735d13c214e31dfe50a9abbea2651662a",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/raticate/": {
+    "hash": "9867e28c93ef6f57344f049b0d496bdaeabc47f7e2b05e776cf5694b56cd8ead",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/spearow/": {
+    "hash": "29d8fa9cd70ea3732131dafa76a29199edf3c8f587b4e3c9ca4f80220d5d25fd",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/fearow/": {
+    "hash": "c5cf6064df0e19fe7bfad3694c6665582b2cb3342c9942decbda6a0c7cb8d3e2",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/arbok/": {
+    "hash": "8ac2ad9273a89f0044b3c99a290adfe64260e0987e59fde9b85d0aabfe4214dd",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/pikachu/": {
+    "hash": "f3ce7b248089eac56063333b5123c989ccb583a4c4bb804f8aead24668dd6cca",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/raichu/": {
+    "hash": "678ca06e12696e3f36b925ee417b7528c030fe654498aa7a2b37d222f9fd1ce1",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/sandshrew/": {
+    "hash": "9e82894067a954389e3003149da325f6196cba78fd93ee2d2eca963704863dc2",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/sandslash/": {
+    "hash": "b2792b949c7a07dd5f55e804eb917a9330a58296077121013e807acceb2f1e7a",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/nidoranf/": {
+    "hash": "50a003963e07ca14133fd06922a51df6fd3171c4c35d902e85dfd49941e7e320",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/nidorina/": {
+    "hash": "68b3830b3e0fb638b349971b02a3d2464c1097bcc88edf06a53925796aab064b",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/nidoranm/": {
+    "hash": "1c30e4d908fd7919345dbfed99bfaecc95f21838f579b1889768dc675a8f3380",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/nidorino/": {
+    "hash": "68e063aaada54a55d97c8c3f2de63fc55c95594e212609dc06c1d0fdacdf7516",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/nidoking/": {
+    "hash": "6726c959afa240a2dedaa4c508ab5aa8cc2e62ea1e8f3d2858d4bb306e753fe3",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/clefairy/": {
+    "hash": "65d90b3be10b3f5fd45aa41b28102add33bf0f716d883e67015dc14506a8ba75",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/clefable/": {
+    "hash": "ecb316c40eff56d08134734e975f939762f7a5b4d7948577846bb69d38ee8152",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/vulpix/": {
+    "hash": "719b81bb8cbcf2bdde5dc582c54c3653fcb8aefbc14665996f6fabb7af00ee04",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/ninetales/": {
+    "hash": "863eff373732a47ad66b541e64799c592be2567ad816966014fa0d219fb12d31",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/jigglypuff/": {
+    "hash": "a7bb3ce86cb3803e6cf64c4f7c32b8010ed44cfc0d4926c063c3a9250c1b7526",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/wigglytuff/": {
+    "hash": "eb829bf4a172faa190afd432ba4566a8bf08f0e02a8c0ea9a07d33cb3561d36d",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/zubat/": {
+    "hash": "9132ecbe0b120d689c3b2186c9b3242bc729035c381f896011dd92b21f9f1b3f",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/golbat/": {
+    "hash": "4ef9bcaad8e2160b0b8912d8a4a9a9e2c1d6601a9afc7c0228f5d770ac6e0171",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/oddish/": {
+    "hash": "3c2c1cc288fb9782cfd6d21d1c375020d4c3ffd77ce551568aa1d7e816012fd8",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/paras/": {
+    "hash": "9a8677a86b7e624ffea830145bf07e59645ead4a3d41e65763bc4655ca9255a6",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/parasect/": {
+    "hash": "6cef23bdee52736296278eab2714e388b86b0916578ed9b775a5ef06692ef139",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/venonat/": {
+    "hash": "3cec706f745d600f3f9f9fa9c84f85646de5b46965d7b2ca4dca56845e7186c3",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/venomoth/": {
+    "hash": "c1a931a23d772497ed117305fd853c382d97a23c2db2fcf2e0cf76c11735dc7f",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/diglett/": {
+    "hash": "a89ba98b831f443e442b2b52c7e1e422a7191a1746b81080b5d94a25931dd98e",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/dugtrio/": {
+    "hash": "e97288b61a347e9e4688f569daf4c8a68a2be7f938ab1aab9629dfe923049396",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/meowth/": {
+    "hash": "3c3dd666814d5a114cfb94b346329d3116e95844835f261bfff783434fce75e5",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/persian/": {
+    "hash": "242d4519a1f4715a5a15593daea5c8bf5c3378bbbf8f97457324424faacf0567",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/psyduck/": {
+    "hash": "e0d9d4a27173f249aded78e994d4d816f39f19035e11be1f271dec1f5a305b07",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/golduck/": {
+    "hash": "757bf9a766434e2e0cc76ebc664f3e3dc4f7c6f22db50c38621f0e91c3050bd4",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/mankey/": {
+    "hash": "7b6399b20260617ded2401057cdb60c79c59e1c1d40048cdc78a6f465a60c9e4",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/primeape/": {
+    "hash": "d2835b9ed3f968d29cf2f364554bcf9aa36c610b8c253befec9d11c1fccc8641",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/growlithe/": {
+    "hash": "1456c4e2cec9cce2a52bb49d431b26a962ca85dbf308aa1e64b9b9c5a335a5ef",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/arcanine/": {
+    "hash": "360ef54f17aad48ed395200eb6cac27dacd778ec365dba287577f14fff22ff2b",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/poliwag/": {
+    "hash": "b66909e707d3bfa8588c64c3eb15e13cae7ef89b6eaf65b2f7315b3ca0dbb4d6",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/poliwhirl/": {
+    "hash": "e72c65757e86b6a6dfb3977b90c480dd9ee72c64a9b91eb73ca91481c792d93e",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/poliwrath/": {
+    "hash": "7049574448f354381e9a08d2477894fc4e4e6febf0f06b7d9c918111723a5a39",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/abra/": {
+    "hash": "22d085a2f7ee9a601892fbcf1e253e04221a7ebd827877aa1de0736cc8f9df11",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/kadabra/": {
+    "hash": "5739973e4f57fdbc7805208a38192dcfeb55b5e971a95f4d04c9f8964ffd9b63",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/alakazam/": {
+    "hash": "4a37967b9949bbcbe9a74a6c647fbb9c0daaba4748f3eee4d7f5b0c042d4d666",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/machop/": {
+    "hash": "19d83d3a064dbbbd4463d729aea34f430e69ecb76734d474366766db178fd96b",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/machoke/": {
+    "hash": "449360260b9611c054b96d5aaee6b498f18087f296fb5ba2668d18018401cd39",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/machamp/": {
+    "hash": "438670ab525c7aaae3785e516857b409dc0e9ed2532c89c389068bee4758712f",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/bellsprout/": {
+    "hash": "e5e7c1114cbe3ed4f1b22f1c157b605f2535e5e55729aa55783fc3fdc8fa4ad2",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/weepinbell/": {
+    "hash": "a02ce31dfbfec404aca72543fdb8fb77abb95862fce00e5092bd8ad8092eea7b",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/tentacool/": {
+    "hash": "a4bd91231dbbe2c6f1dabcbcc6a3a3f22faa0dfe00cf7ae4939f68f67d490805",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/tentacruel/": {
+    "hash": "63e9cfac318842627e1b9509ed6f17b712e79e069bb13fc714c82e19ab9a1b77",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/geodude/": {
+    "hash": "5c4fe66af95457059f103a1def900d1a991a8f072ca02d8efeea50230e7ba027",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/graveler/": {
+    "hash": "60963824c77d9ccbe5da01b357ec23a8e1139de2830718baaeb0e429469f671d",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/golem/": {
+    "hash": "631f74dd7364ad419502cea4d0f0d4a6e678c67b69d86e3d33855a7f24a216d2",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/ponyta/": {
+    "hash": "723e4aa45aa0b8cb70ad0e9afaae3b8dcd863cf0c0e0fb52e09f7cf8954398c9",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/rapidash/": {
+    "hash": "801845b988d9e7bb2601a01b840c32cec2e5d5ac2ff65e92d4e6b743c4b8aed3",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/slowpoke/": {
+    "hash": "14d1b557f02a9cd211db1a77d22bcf443e2e59ad51f947a99da9202da737bc9e",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/slowbro/": {
+    "hash": "5f7fd8240659fbba6112787801f61ab48c40d7d8ba887259edcce3dd0353cc88",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/magnemite/": {
+    "hash": "5d8346cf45d68022e9217ec4f66e1b6644f05fd607040f981d6f346f0407644e",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/magneton/": {
+    "hash": "bc5568b950f8611481138e1b10770b3f1cb40d29560ab0a2bf7322291ad40483",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/farfetchd/": {
+    "hash": "b6edf61ca564ddf3365e41d174a5eaf0cf64c3e65fc4b28b2b682e6b287a3066",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/doduo/": {
+    "hash": "ca7ae25a77da7b0664a09082bb70ddda915af3f69c75439d499669bd2bfe70aa",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/dodrio/": {
+    "hash": "82a0d021f5b0adad30adc9e474eba503cb98e3d89f12667ad71a7d52cdd12670",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/seel/": {
+    "hash": "56a2c966a6a78f51bef452f4b7f13353acf59876b5a2c36405cbbb5c8b9290c2",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/dewgong/": {
+    "hash": "e6df4402d8c1846fec47a8edd28e73345f3d62319599e7e2a99b245d09cbe9ca",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/horsea/": {
+    "hash": "81d50251f834e1b99316a80d959972d823f8de01218cf4629061f1022ae26d77",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/seadra/": {
+    "hash": "ab812390e96eb00efe1104cb5637b8d9474072da3f2bd56ebd377e1ff81b2af9",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/magikarp/": {
+    "hash": "70cd47ef8b21867117a60313a4ccffb166361e198f4bcb86fb58f7602152a900",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/lapras/": {
+    "hash": "faf23403b5b674739a28ccca8090e2e0c5906f953c77a5209599af5ec5215ee4",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/ditto/": {
+    "hash": "d65caa42124cd04d48db5020a07ec9050a78402c6b082b90672886930b50babe",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/pokemon/mew/": {
+    "hash": "5a6c39f33a5a0f0e31b0d28685ddacc57bb6ebe0301191c3b1468080f1cc3063",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/bulbasaur/": {
+    "hash": "64546301a9f36de61fbbd24c56ffec0c1c60d3fc6278bf9ba4a6c11bdee65d73",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/ivysaur/": {
+    "hash": "3d72728332a62d9c086088315eb171db86bc70315f9464bc142518d1e37bd081",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/venusaur/": {
+    "hash": "4de204712932fef8ce30c67be11c8c55aa179da6d15b7dfa77dc339072680a42",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/charmander/": {
+    "hash": "3d7393f65ce575577a01222d45285f8e4e01ca2879bf1d26dc401d903adf3457",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/charmeleon/": {
+    "hash": "025328e8bd17ba89e7cb6f12f22c70b0fcfc4a30167f120f6f6abfa1186ab7af",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/charizard/": {
+    "hash": "05e8ff511b9b0a7559d1cfbec39e8246f3622f30af42818cdb918d71bd64ac0a",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/squirtle/": {
+    "hash": "63840c5230f2bd44bc49d03875b33d2aad21306e35c69d8337e44b246a2cf195",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/wartortle/": {
+    "hash": "458e4f59aab9b1c6860063e321d37ec03fa9611a5d8e6ac08801fc6c290d1331",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/blastoise/": {
+    "hash": "2074e8136449d053354b4372a92d112179e822141e8c7ba91ed2a39eff4df021",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/caterpie/": {
+    "hash": "b5590e5c465245b3d4ed337d305dd9a6daf320529c98e7289e7a02ef0e3c93ac",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/metapod/": {
+    "hash": "1cc43ac5eea6ab4ed8f43d1681cc856ed560800cc55bc199b85524a96a5c6531",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/butterfree/": {
+    "hash": "161f1743d7a28930315e6b5d51adb98132ea1e014fa57cfa022187900027ee93",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/weedle/": {
+    "hash": "1c395156130f6304a71ee08d9e7cacb93d171e7a524f7f73290c04c439adeedb",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/kakuna/": {
+    "hash": "e05953774f99d4c4cc188b404afadde0c2ca2ab9c76f7d31383a226d0ca04fc3",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/beedrill/": {
+    "hash": "1a69227f983c0bee0060117c29efd14114adbfd8f224738f71db7525a91d5953",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/pidgey/": {
+    "hash": "f4f7f16471bc392d7112f1027ee4a14b02008a14801cc4df25f6b765593fe1fd",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/pidgeotto/": {
+    "hash": "ad9f9befd3bb9d575c190195b5e1ec8e4a90899fe5b4ab82f203f17d167e4747",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/pidgeot/": {
+    "hash": "f81c5f5fc798b7c4a4228254d8f62910d2fcf4a7844d8dd2fb643f6b8bc501e6",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/rattata/": {
+    "hash": "ffe8979634a36238aa1240a11c5490476fc7e9577e520a0cb3cb1e098532182b",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/raticate/": {
+    "hash": "602d4a6b0a3486fc70e9ba17167999d5d0f98e6be71194e9d2fe808338d66218",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/spearow/": {
+    "hash": "c082f6aac5de279e364d543341e89e149585e4d47df2761bf539e5b19edfb704",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/fearow/": {
+    "hash": "13a42ff6755b2582e58d9b3f282a4cd4988ec1a2c0044cd8e1c7d20fb1728e91",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/arbok/": {
+    "hash": "7888b8db69cc920ca3e05d2ee6bc8497ff39446c727f910c44a9ed33f15e4748",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/pikachu/": {
+    "hash": "2c0f81760937d01884b2ae713c66a7c11c2b25d01340a966f182a0d85da1a565",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/raichu/": {
+    "hash": "3467f281fa9f2a95babfdf6ba7fce41168f7a27e2994be0997c06c979be27aae",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/sandshrew/": {
+    "hash": "de48a047a15a7a3d8c192b9c77eee7ccf8b399e0453b7c54a4bc782659859639",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/sandslash/": {
+    "hash": "b4a4c172ef38f2fb9b09c239bdb69672a525f9dfd9bf72e737846f7ef9673077",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/nidoranf/": {
+    "hash": "bf5be1c35e5c697971645047a05f25fcebda98f809ede061c44b717dc62cc4b2",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/nidorina/": {
+    "hash": "604a9dde4a0961e3f9cf89a3f3fa6027ae111b8c750f0f24b8a346cdc5526778",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/nidoranm/": {
+    "hash": "0f8c0e08e89111795e45c218b1ef9c3212fb98cfa8439038df33c965873dbd06",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/nidorino/": {
+    "hash": "de5cc6775a031d274e0ee01190aae7a74470186981bd5207c10b2a9bb1d647f7",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/nidoking/": {
+    "hash": "6b33e0045c04442385b7dfcbdf272be4495b8aa07e17975ca379a628bd5569c8",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/clefairy/": {
+    "hash": "d70b16a754842e57eb864f4e3a3482fbee27b6dd527fb2bd34196c90de001ffd",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/clefable/": {
+    "hash": "afa35cb0eee4f0b593ed2d1eef1f0a053a38f6063ffc8e554510e9d1373ca4f6",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/vulpix/": {
+    "hash": "d1d5228af416444d1eab8a9312a9594272576e4b2a3dd10cfc283376c353a1b1",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/ninetales/": {
+    "hash": "75690aaa427f9c3584c0c5e4005d10657c84849de7cce3e0b6fb1aa5d3a97331",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/jigglypuff/": {
+    "hash": "be277a2c03a97852f1ee3ce0135731d202fc4cd59c38051c8f81039687c1ce8a",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/wigglytuff/": {
+    "hash": "53cc7dff96f38cd35ca5685fa894843070f07848c6553710ba891288535dd74b",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/zubat/": {
+    "hash": "d9d775a41b7414c757147fbc8d7bf7580453e2a1f04f037ec62751e4fff72f5b",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/golbat/": {
+    "hash": "dae746f2fe6a6db9a412de3b378f8a13af48813b4e3f7e3ceb53dd91776e83d1",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/oddish/": {
+    "hash": "90b117794f2d4466b9c54792e5c711db58ea992d3f55b2cf7a64cbab635bb95b",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/paras/": {
+    "hash": "ce1018d2d7acc4a566cb64393f141f7e75469a6f10ab8fa92552be4bcec1be91",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/parasect/": {
+    "hash": "46f9aa41c28adaf63eba1dd25b02aaed7c05f561ab344195a97cfff491507c9e",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/venonat/": {
+    "hash": "8f866665d1a3bcc659859d725beb0a3d90f3f3d7071cb5e95be6d47e662f044c",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/venomoth/": {
+    "hash": "5553ad54a066d74af9872b5c07c65f8fe749f98549971533ee894444e4d7efc0",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/diglett/": {
+    "hash": "b65fb12f1b0956dd282682a159ea580a3854d38a0a836f65f21ea29d4c2bd752",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/dugtrio/": {
+    "hash": "5dff47b94ab6adee7b13ea4ff2beeef015ef9a82ea5636e69b6eba8afae902ea",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/meowth/": {
+    "hash": "cd0a5ba004e2ef30c74ce5c0dfc98ab3612e5f8a59b5156d96c83a85ab44606c",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/persian/": {
+    "hash": "dad721d9067377a3ca66b405628de8c60532562b8d1f2a5bb08921db1ff0d3a0",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/psyduck/": {
+    "hash": "98af766bbc48549820c1b2605e37fafee2ade707c1e5caacab3ee365e7545e7f",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/golduck/": {
+    "hash": "bb5dbdd4dc8b2cbdf7bc8718aa3f7228b6362e15b13082550d231aeba964a3cc",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/mankey/": {
+    "hash": "9526f5686a00d5ceb2414a8824b4172fb4127a60270da46412778af26f6c6a7d",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/primeape/": {
+    "hash": "32f07c6517517f6bfb2f1f2e921e1f13e19f1c56dd7db338a7b1974226a32d6b",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/growlithe/": {
+    "hash": "84188ab962c826c7c69f7097a2a0ab45188c20c38e1980493a0369de21590e16",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/arcanine/": {
+    "hash": "c5ee36ad14d1842b7036b463656d51f9ad3a26c6e3b399e3727ad04f0b3cb432",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/poliwag/": {
+    "hash": "f2b52889d8bacf502d6847a1c80028dd9603eba846a979c7cc345e54b18f3375",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/poliwhirl/": {
+    "hash": "25279c0d8718e608164fdbb778e9382f82133bb073545ba899066b12ff3d7c09",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/poliwrath/": {
+    "hash": "ffb9010bdf69709ee3c9599524fd82af1e7900b47b53b925af69b62a58d3debe",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/abra/": {
+    "hash": "3c537aeab568d2b324ee9b3d1fc9600a1803d6f8a62810c2174b184adbfa0793",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/kadabra/": {
+    "hash": "a74520688aff809dafb72ec563c6fd91661334f5e6f866faf8d6983aef18d4c2",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/alakazam/": {
+    "hash": "72ced66ea63eacd7f9e02a46f40aa7a99109ec896f685805cd6e823897b46a18",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/machop/": {
+    "hash": "ecc674baac66cae48769d5fcff720f527fae7833094bf7794aaa0e626b70db76",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/machoke/": {
+    "hash": "12f98c3468ea500dff7313c0cc7c202bf3d6e96bdb1e9f8c709fed1fa5b9b2a4",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/machamp/": {
+    "hash": "b90fd1daf82fdff0b73bb74bdd96e6f68c0f5a8501deb7d79277f406da930e99",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/bellsprout/": {
+    "hash": "ba5a463ea891d6ecabd1e2aedb54883ed0788ef1964946f50e5ed42ac0e94cbe",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/weepinbell/": {
+    "hash": "32772556c7846b783a2597682394f74a5645ca0738f89565b9bc1081a82b4400",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/tentacool/": {
+    "hash": "22d21f710e7310ca141a72e1f7096e1725b2949447428e5adbc81ef20168041e",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/tentacruel/": {
+    "hash": "8804fa01e11f02bb4234c6b02972cdd04ba470a25ad4c71eb26248d2eacfe3d2",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/geodude/": {
+    "hash": "7cba5a42196f70869e5883cf3eb4c7c9aee7a06fb662556d1d56155ea6420bb2",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/graveler/": {
+    "hash": "56a54777d6b684045a77c236742c782c56b8e593828352b1790b1e4e67d67fab",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/golem/": {
+    "hash": "17efef689f5d45118694b54489754c378a3084456b1fc9c2f388a5175e42517d",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/ponyta/": {
+    "hash": "8cae5bab79c11be89f71e99477d2bb3d40b1697dd53a9750d349edad0a1cb33d",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/rapidash/": {
+    "hash": "970a765ad789b993c9b4338b95e11ef480667280ad84d5261068bd47a46dc0c1",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/slowpoke/": {
+    "hash": "6cbab8d8fb5569057a554b9ffe4b30f86c18a0b4409904fdc1ef2becdf9e6298",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/slowbro/": {
+    "hash": "14e1d3fcf9a21cf841f27cdfb81ab7fab8bbb87678f80039cda7a700b41dba70",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/magnemite/": {
+    "hash": "30c41c1ff411a64e1c6d699281609689cbb763b749968f9f42fb91e1d84eef3f",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/magneton/": {
+    "hash": "a2dd3542e7b84bd55f19442301c65238fe793c0b8fb6b85e156981078fa734f9",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/farfetchd/": {
+    "hash": "a2ad28b0822f163df23c591f4fb7fa8f7c99529d8879501c335a830542d64681",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/doduo/": {
+    "hash": "154280988df61aa867de59c7a963d4e99bb4c4e2dbb13db85bb880d7b00482e1",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/dodrio/": {
+    "hash": "643bf71c5182ea83376c1f330bdc5ec2110f555662a12e777c6442f8b3e62a3a",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/seel/": {
+    "hash": "601c561759bf3a4c5560ee2db083dc9d7958a556c66c27e99dd24a6dd707d779",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/dewgong/": {
+    "hash": "a81ece5dbe38b79530d032fda922fde67b6608b46d58fe0957ea3c8966409966",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/horsea/": {
+    "hash": "659f623da605a425144e6ee9926a2180ad9e3242a3215e71b8ac7f5360cc3f19",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/seadra/": {
+    "hash": "10e79afb402b29ea2f18a3bc925737bf928c7d1b0f0cffc9b9778b3d39ef24aa",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/magikarp/": {
+    "hash": "56f88220014d1d697aeea022c8fe48e1fe427a44b09c6ed814f3466b2a93a697",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/lapras/": {
+    "hash": "11dd3dc74f0332dc286fe20b4e47eead3a7dcc6aa3468078161c04bf43a9ffab",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/ditto/": {
+    "hash": "0bef5c6ace709b6e7541ed779358a5ac6a5d0d9aaf714e620b52a2c0b28ec7dc",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/pokemon/mew/": {
+    "hash": "ea62b604c802395e39d1db9e8575dc8872a3c7137ed37c5e550b3b2a9ee4e9b5",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/bulbasaur/": {
+    "hash": "2e45f1fa2695013ef68cd1ab924e261672e752cb1731b0c52990f92dec6ffa51",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/ivysaur/": {
+    "hash": "81b226aa0bd2379179c4b1942323096f35b0eaf80334d61e82bab514b03a30ae",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/venusaur/": {
+    "hash": "4386a0a2a60c207fbd63207832d96802c7cf053cef813048890a479d5f416047",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/charmander/": {
+    "hash": "263de66d45768036cc6e40cfd97bc6ffaf4ac12e256db5067aed2388afb40aab",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/charmeleon/": {
+    "hash": "ca0d20d4ecd56956fb195987202d15494aca593133c4db0819a5a2936852513c",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/charizard/": {
+    "hash": "759ff1857ee898736b8101e4ed3f84bb5b26a4c92def85c0fc2f7e149deeda6e",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/squirtle/": {
+    "hash": "53db821f3c3888dac23517be961a5aef06329edbe1b7eb160716029e2e297657",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/wartortle/": {
+    "hash": "10a7dfaf74b8961f81a3cd6539ab6f11ded5af5483278bb5cfb156ed7ea3df01",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/blastoise/": {
+    "hash": "b11845a7125ff922f1511f762a76392ad9221fbdddda205d13fc85fc36ad20ef",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/caterpie/": {
+    "hash": "47b1b672bcde3f7e7f629a69d193a638672455b3a8ef82ffbc874c39aae6d834",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/metapod/": {
+    "hash": "5e8309a24ce5e75c0adbac433bc65babc1220152a5002b21fc219b8a02431868",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/butterfree/": {
+    "hash": "5ba9c671156f520eef2586f33b426094ec40c6f04e5ae98fa2a152cd7b82a3df",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/weedle/": {
+    "hash": "24408692ad6255d6b944b2fc6d7d63e1371006b4633a03e1e7d54729da085b35",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/kakuna/": {
+    "hash": "80c967c0881c6cfc3f296f16deb11715a8167f32244c40dee593730c792b2003",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/beedrill/": {
+    "hash": "b41f84018d2abe957dbad5bb27ab8d7e3be1386a662106d55dd3fb3fbff479ab",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/pidgey/": {
+    "hash": "eee7ed8019e74e28a3afbeddcdb4ba5a7402bcbb52bc7e8db875fdb8a494d0b9",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/pidgeotto/": {
+    "hash": "199ffaf53f2094e8b8969a3dc2149875ed043b7518507319cba1f662ca024eaf",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/pidgeot/": {
+    "hash": "b41945c4f0ee3f7542135a7fe29724b406bbb79cb448fb817899f08b5e48961c",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/rattata/": {
+    "hash": "1878d1a839d6fa96ee3d2b10fcc1e5457082ae9a7821ba5f9b23f8efa854d523",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/raticate/": {
+    "hash": "1246c1bf7c0df01dbec858bf6399f1762a1c7c1bf83a105c431e04287a186261",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/spearow/": {
+    "hash": "d99f6a922a768d22ae068ad7ab5782adf699f3588ae61e98d68dc101ed5c3ebb",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/fearow/": {
+    "hash": "ff1202e4654b2a40bb11fc08a57df0583f916499eb4901eb48dbce55793d4134",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/arbok/": {
+    "hash": "dc341f06f5740764a570c04a6da26d02624ac4924a8fbb69f8e9b949f991ede4",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/pikachu/": {
+    "hash": "7908f34b3c77353309328b8c43e75833b1d4e68dc83cae0121461868fbce4501",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/raichu/": {
+    "hash": "ebe0876412af633a5a26e5287b80db8e3509aac5bce4db8298c6f4856f3b503a",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/sandshrew/": {
+    "hash": "3aa9559698a38f581ccf56900264cedc0b6a65cc3adc7dc6e049c3f1df52eb9f",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/sandslash/": {
+    "hash": "3daa1fe2da1a6276b3345b9ad55292514c253e3b48ba7d31e791f25db9d4a300",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/nidoranf/": {
+    "hash": "cfe0231ec30f1cb0b31dc6bb6245d1816f65a883af6ffb15e240a8f41c37e98d",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/nidorina/": {
+    "hash": "9dcdd70ad970a33ed90d01af0788a65380d46e5628b24dab2c0ccda90f2ced5a",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/nidoranm/": {
+    "hash": "3af15406af752c9d89aa4d69ab081a9772d3d8016581e3af8bee381f2523addd",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/nidorino/": {
+    "hash": "a0501ceaf2cdb42cbcc1d32dd96d71873bc630efbb1518683f83ac1cfdb5fc89",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/nidoking/": {
+    "hash": "b8ef34c06e57f00566bd579be9312b5eec81e1646ec860991356d75215505a18",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/clefairy/": {
+    "hash": "6b2c0240d419efeb8bb03825f9658fa1cd4d9d37dec08ad060864d7fd3e7b831",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/clefable/": {
+    "hash": "3bf8a02084c3cb84d740c5aacb6f48a455335c91a2a113838d0899ccb5d9c8d5",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/vulpix/": {
+    "hash": "6541ba0bc2610fd4e3319e8a89b0663087a38095202412d3c31d182b571ab99b",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/ninetales/": {
+    "hash": "ed20d894fd5a66f7882e1a66d51a30df22307363e2885a0e291c59cec6d0bc79",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/jigglypuff/": {
+    "hash": "a93692cd2d3ceefcb98b57826b2885326b025621c5e76ce3f2ee020be1c7c0f4",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/wigglytuff/": {
+    "hash": "a340a488680e046f894e0300c6ecc08b122e67452972bdd5db0716d36fe328da",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/zubat/": {
+    "hash": "1cec4244e33d30484cc95c16f9674cd539f2b19314d1e696a54b6bebedfc2984",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/golbat/": {
+    "hash": "9bd04cc4131189414d6fc8bca96385656d44a60f940e06b63e546a4c48ea8a3a",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/oddish/": {
+    "hash": "8ce1f0fda521ee5ddc63f7460dd92b9a326cef886c0cf1c900fefd3a9a51acbe",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/paras/": {
+    "hash": "eab774ee8da0403a4d511713709e154c1cf867b868bf42c1d28e7f40ae0c6eb7",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/parasect/": {
+    "hash": "ae59eb05b9a86b3de8a77d0a74f638bdb6032c80b186a0a109c4c3629be9d0c4",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/venonat/": {
+    "hash": "7ce20e5d6aac12d314f85c327209c0c7bac3dabf6bc08d85341fe3951992855f",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/venomoth/": {
+    "hash": "e2485af0a4e453e269c75c2bafe0dd679e790602ed2c89892efbaa2458a6089d",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/diglett/": {
+    "hash": "cbcff02fbc208aeefdcff55c752b7a788eedd602b73513a63f083f3a3f2cad45",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/dugtrio/": {
+    "hash": "8d0fb701e91677700e6af91036145d10b4a8c4bbf4f25f165c5d059be0d70a41",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/meowth/": {
+    "hash": "231aac3eb735ed3ec343ad7d55f705c94cf43c6727ef862f9a0cc837bfcef9e7",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/persian/": {
+    "hash": "c6118925b8de18f5609fea87dd38deb061d3bde02dd355920e93f116a8a9d05a",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/psyduck/": {
+    "hash": "9f903d88f1fe3babfb782b099edb4f2268b2ee64acd25d5e19db74371601627e",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/golduck/": {
+    "hash": "5b26189898f565b69ecc16a68457f5f33f739e7490da3ae389fd78887d9c989f",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/mankey/": {
+    "hash": "6d70c4289146e1ceeeb8e6f754f1e95a9c6468c0a2781bead19303dd6085bc73",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/primeape/": {
+    "hash": "122646d81f57a535d6a0671684f19138fb09a92014335b338214b24d54f79b5f",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/growlithe/": {
+    "hash": "8b25148f19fd57b897c6d2b2771f1b784927c62715498e8a1343715feb4ff72b",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/arcanine/": {
+    "hash": "268c3f6be95b660aa117bbd95d7810d649545c78ad383f37a157e9b8529f4703",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/poliwag/": {
+    "hash": "14704742b9cd429b9dc56f1610951693c2cea3a3fbc9ea0f2d062894747b927a",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/poliwhirl/": {
+    "hash": "297cdf78176bbdc3c439e059eb71c418f585076894a67be3e4afca81bd63e0b7",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/poliwrath/": {
+    "hash": "20fa9b39e1c68ec2b2e6e6a8df5698c76808c047b01197ca782a18cecc81d15e",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/abra/": {
+    "hash": "34f6adb4d4ecda404daaf2bbeb4bcc9c3ea1dc9592d8c8fe116a9214dddf86ae",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/kadabra/": {
+    "hash": "bb33fd71e7f3a561d41aba9069a21a78d33270c98588b11d2128b88fad26f7b0",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/alakazam/": {
+    "hash": "f9a6ccbd44e797b8ecf2183b191f7597d12df331cc96288d1e59ac90baf0407d",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/machop/": {
+    "hash": "c572cdbd1d18e76aa55eee6b04161e6355643de3cb9e4e9fbc4f3da6ae9c7ce0",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/machoke/": {
+    "hash": "86107dc1416933ca6b536ff7846e3e34729d9859e1db40fc4e496c594f3de3c7",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/machamp/": {
+    "hash": "e2fa804e27b35024621b2bf815929ee7245f0f11d9a299e158e803d253c75adb",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/bellsprout/": {
+    "hash": "0b4bdcf46d4d0164a1469afb5d2b3d011b88241aa274b22d882d96d4e65b44c0",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/weepinbell/": {
+    "hash": "5b7f90179ccbbf74609ed6101b4d30bc1903f0f5621c33ad832686f545d74d66",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/tentacool/": {
+    "hash": "48a6e0d1cdeb87f32a195f0559200baa16e15d06e6ec5ed6f40473715836c8ee",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/tentacruel/": {
+    "hash": "01e752efd6671cda2e9b64baf72a67ea202bda2880cf66a8452457e2c784c76c",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/geodude/": {
+    "hash": "80a033828bf0881e7e393c2e2b7d6ac29edb2a9f36b59ec83db573c068782119",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/graveler/": {
+    "hash": "1fdf5d41ccb72d30cb2bcffb23236369acafe1788acfbef72f45e3d43fd96488",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/golem/": {
+    "hash": "e7cf97c245d922d90c95a14c4d905010bd6bd9ecd8524b9f3122f8fe09ac74a5",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/ponyta/": {
+    "hash": "53647154c371b7c481e4ee97e90f532eb0ddb2eac19a56c4e2b2b029dc84c4ed",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/rapidash/": {
+    "hash": "22cc08d9d3763b568b78708913dd9cc7a16f0964f7ddbf2fb4294e97d9f982a8",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/slowpoke/": {
+    "hash": "921698c6740d2ff18d5b433eb19a66667c7ccb4fcee2ac0b9937b7c077018497",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/slowbro/": {
+    "hash": "8c362201fd68abbb842a354f2bae9b2b35fad2c550ae89682a5b719476f7755a",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/magnemite/": {
+    "hash": "6cc8c40e4d525453510c0db07434dae5e356b48177b36f16ca33a94eaba376e4",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/magneton/": {
+    "hash": "c3af93f62afd2f2c22ba92fbb0ab923962156a1ee525aedd5e89f2543a99179b",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/farfetchd/": {
+    "hash": "7b7b289ad3dab5d4d9ade6a3eacb4f994fbd534559b0e93fb84c108eed7fa497",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/doduo/": {
+    "hash": "324388b3a375f6788c6e568f4dec7dce6250838113a902606bfa667c6d441035",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/dodrio/": {
+    "hash": "69517981311157485f7a1243717ee3ed869de1f5bab14419808b2ef2f601a4a6",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/seel/": {
+    "hash": "2833afce33eb17483b1f8a5908e68ce46279599d34adc47a5de15aafba7a13c2",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/dewgong/": {
+    "hash": "60e24a4c8d056b7541089e9a7155212b5334d648f0bb4d74646c1d9246baa763",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/horsea/": {
+    "hash": "410172d62f86b45413d22d70057c679aec9e456acccddfc90e515b455d8d1d9f",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/seadra/": {
+    "hash": "65bb8bbaa98a8644c5f94e7f47cc1c86a7753314864b103dc5f3d48fce4d71a5",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/magikarp/": {
+    "hash": "acaf71902c22f7111284ba1d407d4abf64cdbe7fa935e18ac2186da84d26bff4",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/lapras/": {
+    "hash": "1481422ee9e980d693c81aea070bf6966de72ea52a6710dc88369cbeda3d226f",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/ditto/": {
+    "hash": "f416c62a343168c182fbea1979a0120ac6b95bc951f76d09ef3c233120e1e70d",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/pokemon/mew/": {
+    "hash": "058afbbea5d3f5575140b8f17f204e7f1127ff0b10418e27abbe9c1de34426f3",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/bulbasaur/": {
+    "hash": "17122086befa7c3018f90a9fe44aca3b6a18bb845444dde617737f0440bb78b2",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/ivysaur/": {
+    "hash": "06952d58f541344236e91842cda3513b9fb732e564165d741c8a413e3d099235",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/venusaur/": {
+    "hash": "eb7b04e5c609386e4fd8816d3f4b5d71f04ea9b115ad6df6a6b630fc129911d7",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/charmander/": {
+    "hash": "ec7528e4047b4ecee88882a07ef1b718f51c46ba5954d453fd81363523815a1f",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/charmeleon/": {
+    "hash": "94becc322cddeb8ebdcc2e4a9a4e83f7d0008394d71afdbd36749b516f9f19cd",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/charizard/": {
+    "hash": "9265e2afd505e4e60080ab9e7104f27bfb367bc67f287806a136a6f06f3a9646",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/squirtle/": {
+    "hash": "6dcb8e1cacfea2e4365e23a432bcc10dd499547854c707cac525169842091b86",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/wartortle/": {
+    "hash": "9247837715f090b147c0c486f0ae67008e17937bf202d07944340fa64d167f99",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/blastoise/": {
+    "hash": "67858bb9bfc43381ca4d128e6a4438df574deceece6c2274bd92f031388b7713",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/caterpie/": {
+    "hash": "3923db7ab9cedd2507381c0db69a313deaf6229a97cc0e15481fe6b4d1d9272d",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/metapod/": {
+    "hash": "cbf918e07251980fc522a2b81959bcd3a6d6ab44b97e1727163adc89cb558543",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/butterfree/": {
+    "hash": "8e59cfa03fef731a574bb6f8d8a650c200c792df0a48650a8e3a6054636c7570",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/weedle/": {
+    "hash": "1d981119654ecfca1d559fc4d96c9f3d6129d1d1e6856c92bacb592ad0a31013",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/kakuna/": {
+    "hash": "e2ec556cb42fe50b7761de9130a935cbdf90cf226add64205b799da5bdf7fe45",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/beedrill/": {
+    "hash": "f47c4d09a2219613a08cf15305a4226de0de24bb64b4a96d7d06fb400323604e",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/pidgey/": {
+    "hash": "9c8a186bea7d2d4a941f8d88dec21aaffc144e95807b02d2cf99609bbe412387",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/pidgeotto/": {
+    "hash": "e0d9b16515e2dc559424341dbebcdd2df23e4d776abc5f7216436a4d31dd7eac",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/pidgeot/": {
+    "hash": "18c9834828b5cda996f908c0b3acf3146371f6ef4a0454ae09998d0ae40419ea",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/rattata/": {
+    "hash": "e67d54509e559da56ade31320913b1d42dbf7cb8a3c99441082a242cac8e2adb",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/raticate/": {
+    "hash": "7b716d282f97c9f5b0dff2f263b274be6aa739d55207f65f7f28eec2e55e58a3",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/spearow/": {
+    "hash": "baff4dc9834f0e03a62c5840d68b2a517c9f0e33b65fbf54cd5d0150f2bdaf65",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/fearow/": {
+    "hash": "2400f38b3fc808b8f03fa5501dade1c421c915b2905f3958943ae8ed3cd3e020",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/arbok/": {
+    "hash": "4abff7a9b5816e6a34f43d9b02166e5c59120bbca6a0d7bcf90accbd0edbcb90",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/pikachu/": {
+    "hash": "c51638e88ac76d14f9a85489def409c19abaec877d8afb11aa9b998787fea513",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/raichu/": {
+    "hash": "d65ed619404aa207a5871265ab7e8affb246823e9e6b6a3d78875759000172b7",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/sandshrew/": {
+    "hash": "aa36499e728531a0fb070f770b3462a9179baa85b9fa4d625b828525b732026e",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/sandslash/": {
+    "hash": "544fedc868fde21f7fd0ee5cbc51598154c7b2beafbd6bcc2a9c60a2cbf5de74",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/nidoranf/": {
+    "hash": "bd9c33a7873f65b6503d4dd55d3ca3ac81e12f271b4aa0f449ce2e10b317686e",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/nidorina/": {
+    "hash": "58859ea1826f1c4417942a4a28aa7bc57fadf721056041bbba46915b1e37b638",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/nidoranm/": {
+    "hash": "a6d2bbf5a4b7dcafcb1f90b56ad21c79a94dca2932d1f011266c83c0d5999f44",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/nidorino/": {
+    "hash": "5efea867e6e46d61c4ba61502d2cab70ed1264c1639711e23995ef4ccbd1395c",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/nidoking/": {
+    "hash": "f183de67047dfe212171ca0f323eb23004d80202414e41d87ac9bd627b0498ca",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/clefairy/": {
+    "hash": "a4adcb10238b341b60e0c3df0ac8a882087260f186e48a1aa0aa86063f15117c",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/clefable/": {
+    "hash": "036a8a1dd39daf3a8c56394fa2bc66bd15cbe4c2e6458408e385f15c1063cd91",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/vulpix/": {
+    "hash": "d03967deab86a54ab498d7c519cf818da62b3e1d641559705807e7d0855567c1",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/ninetales/": {
+    "hash": "81d2d3b0fa8b7dfd90fc7486c8aa58bcc3abbd36ef524e68231ead126de26c2b",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/jigglypuff/": {
+    "hash": "d0382e18d3589adefc27e9a179b6ec483c7ecc8370f0c10373f0ac9121313561",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/wigglytuff/": {
+    "hash": "3491aa7144291ac4e0ac56f1e9ab755b842640f5928002c9b0885654aa713955",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/zubat/": {
+    "hash": "8a97df8664353dc35adf53623ae569d067f7875968c1a7f951c15b4970292ef7",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/golbat/": {
+    "hash": "e9974ae418f3c5f93aef1e5253420f185e4a0a4a2842a74942d398f909dd6cfb",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/oddish/": {
+    "hash": "d608d2a963af4da2a3c1f56f2a75e85db15c2f2bc8c323c8a75b801a63dc4fb9",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/paras/": {
+    "hash": "70da56c1cc732bf377db283944fd627a93331bca92efc06848ea9c3df0a59fbc",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/parasect/": {
+    "hash": "a7f5f34cd6d20235f20c8d79651c0bfc29d0b71f8e73a1694a42b5d9ddc03259",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/venonat/": {
+    "hash": "869b8337a04fae40c80b1001fec6759bbfbeb9ace58d20c4ee3029f6c2debe0f",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/venomoth/": {
+    "hash": "7e8b927f8fc2167c65d8f26370765af67f659f26f929a64927fb19ae9c101ad2",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/diglett/": {
+    "hash": "56199444192f38a486e239b98551890d2d6a44aec44f82bf3e3b476cfad07368",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/dugtrio/": {
+    "hash": "6c25e3e3028bf84f898b74be4f7b368a99a3c2ba37f00d9afafc27043edbd8eb",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/meowth/": {
+    "hash": "1a78ea372025a89a8ce633de59aa1ad004920202e1566f4a817ff1aec016e710",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/persian/": {
+    "hash": "5aa35d02ad70c6c023a525ba55425ba332a8f28b4de1a3c76807254f4b4ee093",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/psyduck/": {
+    "hash": "495583525ad51774d8847149dafdaf0b0b595f5148ac31cc96a74b58a0a27235",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/golduck/": {
+    "hash": "f688f668f08a1bba1fe36198037fd5178c0bbb0c28c0bc6063536d151c2b9879",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/mankey/": {
+    "hash": "25baba0fe6cf382c325b42aadf32d0a7d5dfdd63762066628cd24f3c07084161",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/primeape/": {
+    "hash": "0a1ed05c6598765fa8b5c55059ba8c0be3e8609ae732665e0374705f8a5ed563",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/growlithe/": {
+    "hash": "44d6d9d222ee94fc6915b12c33b6ecaa7167a33d39f0b3631bbb4c3359d56113",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/arcanine/": {
+    "hash": "c7c1b92517ee478cc0f1bc0c87948893ccd2a09c3d512d36e4a87694cbc1dec2",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/poliwag/": {
+    "hash": "1d866ffbfd3e480da8b8eb917d80ade3b62a4d6d19f79a1e65b70eb8be770fa2",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/poliwhirl/": {
+    "hash": "bd97affbd4c8e621b316382341e4cf8f0eeb1a1c954df3c084d03f7ee74fe893",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/poliwrath/": {
+    "hash": "368429f786fd945b4c64fe0e3d9b33f7d28b13885e1cba4cf8668ad840e74d13",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/abra/": {
+    "hash": "e4fd20b07b81dc9490cde7864756f436021e401ae3e141ddf0f038303b464d54",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/kadabra/": {
+    "hash": "94de893de0a40ea6fec3c7221f1f3f84dd0228c384ce784a1c1bb53d9f897b6d",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/alakazam/": {
+    "hash": "42a35619d8439dbba034ed07831ec7a26ae66425ec20f44a836a89cc52093219",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/machop/": {
+    "hash": "f7bdb03a4a90830fd7eb58fbddbeff2ba2a789a6c0dcec07258dcb2ad17da414",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/machoke/": {
+    "hash": "217cc07b1b24df12d85fd6d7e5bc6d11893ef3e6338e277c58d7a3555cd7deb2",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/machamp/": {
+    "hash": "ecd238fb629753a55de069f6c37f7a6a08cd3e13ec1001ff6cf4e04aa3825f52",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/bellsprout/": {
+    "hash": "de8073500e7985408108c189a0f614b347cd78906ec472a7e095a344986f5561",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/weepinbell/": {
+    "hash": "e9431041d713a1eaa44fee44e9264c93248168cc026e9f9b5fccd108584ecc2d",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/tentacool/": {
+    "hash": "9739d72f22797c62a7d592cd9a19522260b24019c8dbdd8867a5b6063c2a77b5",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/tentacruel/": {
+    "hash": "afe127786ef301c1fc78317cba3c0578975b8ede7d8a2b131b96f8745c41cc4d",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/geodude/": {
+    "hash": "38544df741614389cbf259856f9e7a4598881dd70bcb09e0102c05d13ff834a8",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/graveler/": {
+    "hash": "2ebf2c690ae70c8d23af3629b2662f090d0f2720a182fefad4855881232749b8",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/golem/": {
+    "hash": "60783968a5de9e5885863bcaaf21642d6a0e8ab86ee426ffd8cfbaa64526fadb",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/ponyta/": {
+    "hash": "e259f93e6de8ebafc30d45883ba701feac123662401cf3e10560713a0c00fe96",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/rapidash/": {
+    "hash": "dc79a678035c25026e8c018b835882dd168ae72450e5a0f9af38b8b6fcde0a33",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/slowpoke/": {
+    "hash": "64421526ec374709af0af5947ff3b3add6bdcd41d81e6a81ca1203242200c3cf",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/slowbro/": {
+    "hash": "b2776ca918c9e9fd9dfdbb33983be6a0ffa4d391ec6eb824afb0aa4c2156ad93",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/magnemite/": {
+    "hash": "c7012e9eaabad3d949f1cfab9017913f18d12373c260e7a985f9a1c87fba4404",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/magneton/": {
+    "hash": "5fb119b013e3f948989f096d402136fbee2ffffff2c5f5ad35cc72a46f7c4f94",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/farfetchd/": {
+    "hash": "7c9c35336543bad60bf5a64774c5d7cc6177ea72934c71ca22b9fc74b79634b9",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/doduo/": {
+    "hash": "ad33d605943aae601d02f9af33e5e15fd41ed2a3f5e7fc61a549745b09d8bbc7",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/dodrio/": {
+    "hash": "9af581090acafa5dedfcb858ae19344fb1469857a40f5e0ef6384106933536c7",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/seel/": {
+    "hash": "67cee7da1b6ae0c49e0f8a4ea94908354ef474de955e81838ff587fa900e6573",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/dewgong/": {
+    "hash": "aadb400d94e0d4816b24e7f51e9307b9a006c0c9ef21e78042fc4f2a9b586f46",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/horsea/": {
+    "hash": "926106278db942a93b14865cc4fda40bab2e4c5560d9c68c43c983f2875768bd",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/seadra/": {
+    "hash": "f354f7c4effc9dd46d53f4d8b4fb524a0c30472ae89f31b65f86ddd8d4a7c7dc",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/magikarp/": {
+    "hash": "46990cad2b984cf1d9e4665192de3a63450b496690d7491464c5ff4eae59d05b",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/lapras/": {
+    "hash": "72e029b59498833ce606fdf93289ece3b8f97f28d6d7b9be8806eff34bf2d092",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/ditto/": {
+    "hash": "ee6603b0cc5201096779b3afb11e84e93578883cb6934d02435f5f864c069cd1",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/pokemon/mew/": {
+    "hash": "3e59b6efb3cf4b4e1e4ed82ac4db87d6327bc75a1f25cdf4b75af711d4dcaf56",
+    "lastmod": "2026-05-13"
+  },
+  "/": {
+    "hash": "3617e2cefeec1829524b4713aa8f635727873c9afddb2a78a5e47066b0d049de",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/": {
+    "hash": "20fa6322ad96bfd8a93c30b845e23e0fbb21460c848c971cdf6393e6a44cde67",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/": {
+    "hash": "5eae2cb7c16918c7caaefcccb4aa3682ac3d3948cc6e18c199d0a9a040297520",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/": {
+    "hash": "a6e1ebd45d267215c709787ea0a0c7eb2003524b242c2e8fb0a5ce128f8f21e3",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/": {
+    "hash": "7ae471b1f051e3baf8eb06253e16e757ec7b0d1994b1c3be7b1c4885b1e2a053",
+    "lastmod": "2026-05-13"
+  },
+  "/info/": {
+    "hash": "b44206c75127d209c57f5b85b041a9e03d97c70017835d2b7406c3c6d3cacf7d",
+    "lastmod": "2026-05-13"
+  },
+  "/fr/info/": {
+    "hash": "10f15f8635819cc56071b67e09d33e73f274ac389613c9a4ca6ffbdc549c46af",
+    "lastmod": "2026-05-13"
+  },
+  "/ja/info/": {
+    "hash": "4ff039e82027f9c690de53a0115cb8355078bfbba2e24b602d4f464e4bc5ca6a",
+    "lastmod": "2026-05-13"
+  },
+  "/ko/info/": {
+    "hash": "9af02b58c3b7d8f7667d216a60ea90d49dabe053466f884fd9413113a867dc92",
+    "lastmod": "2026-05-13"
+  },
+  "/zh/info/": {
+    "hash": "4e7fd80456874b1f003318cd75c9635194a615606f150c8ef0d24e09e556be24",
+    "lastmod": "2026-05-13"
+  }
+}
