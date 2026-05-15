@@ -36,7 +36,7 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 13;
+const CSS_V = 15;
 const JS_V  = 12;
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
