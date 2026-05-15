@@ -36,7 +36,7 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 11;
+const CSS_V = 13;
 const JS_V  = 12;
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
@@ -88,13 +88,13 @@ const JOIN_RULES = {
 const LANG = {
   en: {
     siteName: 'PokéTruc',
-    tagline: 'Unique Pokémon TCG artwork — exclusive card illustrations',
+    tagline: 'Pokémon TCG illustrations / artworks that exist in only one language',
     pokedex: 'Pokédex',
     info: 'Info',
     searchPlaceholder: 'Search a Pokémon...',
     indexTitle: 'PokéTruc — Unique Pokémon TCG Card Illustrations',
     indexDescription: 'Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language (Japanese, English, Chinese or Korean). Free, ad-free, fan-made.',
-    indexH1: 'Unique Pokémon TCG artwork — exclusive card illustrations',
+    indexH1: 'Pokémon TCG illustrations / artworks that exist in only one language',
     seoAbout: "Some Pokémon TCG cards feature artwork that was only ever printed in a single language. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. PokéTruc catalogs these language-exclusive cards across all 151 Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every classic — pulling artwork from Japanese Vending Machine expansion sheets, Black & White promos, DPt-P promos, McDonald's promos, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, language and year — fully free, ad-free, and built by a fan.",
     seoPokedexHeading: 'Browse all Pokémon with exclusive cards',
     infoTitle: 'PokéTruc — About',
@@ -139,13 +139,13 @@ const LANG = {
   },
   fr: {
     siteName: 'PokéTruc',
-    tagline: 'Illustrations exclusives de cartes Pokémon TCG',
+    tagline: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue",
     pokedex: 'Pokédex',
     info: 'Info',
     searchPlaceholder: 'Rechercher un Pokémon...',
     indexTitle: 'PokéTruc — Illustrations exclusives de cartes Pokémon TCG',
     indexDescription: 'Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan.',
-    indexH1: 'Illustrations exclusives de cartes Pokémon TCG',
+    indexH1: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue",
     seoAbout: "Certaines cartes Pokémon TCG n'existent qu'en une seule langue. Une promo japonaise distribuée avec un magazine de timbres en 1996, jamais sortie en anglais. Une carte McDonald's Pokémon-e disponible uniquement au Japon en 2002. Une exclusivité du marché chinois sur un set récent. PokéTruc recense ces cartes en exclusivité linguistique pour les 151 Pokémon de la Génération 1 — Bulbizarre, Dracaufeu, Pikachu et tous les autres — en piochant dans les feuilles Vending Machine japonaises, les promos Black & White, les promos DPt-P, les promos McDonald's et les sorties exclusives au marché chinois, illustrées par des artistes comme Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii et bien d'autres. L'objectif : permettre aux collectionneurs de découvrir des illustrations rares qu'ils n'ont peut-être jamais vues, classées par Pokémon, set, langue et année — entièrement gratuit, sans publicité, créé par un fan.",
     seoPokedexHeading: 'Tous les Pokémon avec des cartes exclusives',
     infoTitle: 'PokéTruc — À propos',
@@ -191,13 +191,13 @@ const LANG = {
   },
   ja: {
     siteName: 'PokéTruc',
-    tagline: '言語限定のポケモンTCGカードイラスト',
+    tagline: '1つの言語にしか存在しないポケモンTCGのイラスト / アートワーク',
     pokedex: '図鑑',
     info: '情報',
     searchPlaceholder: 'ポケモンをさがす',
     indexTitle: 'PokéTruc — 言語限定のポケモンTCGカードイラスト',
     indexDescription: 'PokéTrucでは、日本語・英語・中国語・韓国語など特定の言語でしか発行されていないポケモンTCGカードの限定イラストを掲載しています。完全無料・広告なし・ファン制作。',
-    indexH1: '言語限定のポケモンTCGカードイラスト',
+    indexH1: '1つの言語にしか存在しないポケモンTCGのイラスト / アートワーク',
     seoAbout: 'ポケモンTCGには、特定の言語でしか印刷されなかった限定イラストのカードが数多く存在します。1996年に切手雑誌の付録として配布された日本限定プロモ、2002年に日本でのみ配布されたマクドナルドのポケモン-e、最新セットの中国市場限定カードなど。PokéTrucでは、フシギダネ、リザードン、ピカチュウをはじめとする第1世代の151匹すべてについて、こうした言語限定カードを収録しています。Vending Machine拡張シート、Black & Whiteプロモ、DPt-Pプロモ、マクドナルドプロモ、中国限定セットなど幅広く対象とし、Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Moriiといった著名イラストレーターの作品も含まれます。ポケモン別・セット別・言語別・年代別に整理されたPokéTrucで、まだ見たことのない希少なイラストを見つけてください。完全無料・広告なし・ファン制作です。',
     seoPokedexHeading: '限定カードがあるポケモンをすべて見る',
     infoTitle: 'PokéTruc — このサイトについて',
@@ -242,13 +242,13 @@ const LANG = {
   },
   ko: {
     siteName: 'PokéTruc',
-    tagline: '언어 한정 포켓몬 TCG 카드 일러스트',
+    tagline: '한 가지 언어로만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
     pokedex: '도감',
     info: '정보',
     searchPlaceholder: '포켓몬 검색',
     indexTitle: 'PokéTruc — 언어 한정 포켓몬 TCG 카드 일러스트',
     indexDescription: 'PokéTruc은 일본어, 영어, 중국어, 한국어 등 하나의 언어로만 발매된 포켓몬 TCG 카드의 한정 일러스트를 정리합니다. 무료, 광고 없음, 팬 제작.',
-    indexH1: '언어 한정 포켓몬 TCG 카드 일러스트',
+    indexH1: '한 가지 언어로만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
     seoAbout: '포켓몬 TCG에는 단 하나의 언어로만 인쇄된 한정 일러스트 카드가 다수 존재합니다. 1996년 우표 잡지 부록으로 배포된 일본 한정 프로모, 2002년 일본에서만 배포된 맥도날드 포켓몬-e 카드, 최신 세트의 중국 시장 한정 카드 등이 대표적입니다. PokéTruc은 이상해씨, 리자몽, 피카츄를 비롯한 1세대 151마리 전부에 대해 이러한 언어 한정 카드를 정리합니다. 일본 자판기 익스팬션 시트, Black & White 프로모, DPt-P 프로모, 맥도날드 프로모, 중국 한정 세트까지 폭넓게 다루며 Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii 등 유명 일러스트레이터의 작품도 포함됩니다. 포켓몬·세트·언어·연도별로 정리된 PokéTruc에서 한 번도 보지 못한 희귀 일러스트를 찾아보세요. 완전 무료, 광고 없음, 팬 제작.',
     seoPokedexHeading: '한정 카드가 있는 모든 포켓몬 둘러보기',
     infoTitle: 'PokéTruc — 사이트 소개',
@@ -293,13 +293,13 @@ const LANG = {
   },
   zh: {
     siteName: 'PokéTruc',
-    tagline: '语言独占的宝可梦 TCG 卡牌插画',
+    tagline: '仅在一种语言中发行的宝可梦 TCG 插画 / 美术图',
     pokedex: '图鉴',
     info: '信息',
     searchPlaceholder: '搜索宝可梦',
     indexTitle: 'PokéTruc — 语言独占的宝可梦 TCG 卡牌插画',
     indexDescription: 'PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。',
-    indexH1: '语言独占的宝可梦 TCG 卡牌插画',
+    indexH1: '仅在一种语言中发行的宝可梦 TCG 插画 / 美术图',
     seoAbout: '宝可梦 TCG 中有许多卡牌的插画仅以单一语言印刷发行。1996 年作为邮票杂志附录发行的日本限定促销卡，2002 年仅在日本麦当劳发行的宝可梦-e 卡，以及最新卡组中仅在中国市场推出的独占卡牌等。PokéTruc 收录了妙蛙种子、喷火龙、皮卡丘等第一世代全 151 只宝可梦的此类语言独占卡牌，涵盖日本贩卖机扩展卡板、Black & White 促销卡、DPt-P 促销卡、麦当劳促销卡以及中国独占卡组，作品由 Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Morii 等知名插画师绘制。按宝可梦、卡组、语言和年份分类整理，让您能够找到从未见过的稀有插画。完全免费、无广告、由粉丝制作。',
     seoPokedexHeading: '查看所有拥有独占卡牌的宝可梦',
     infoTitle: 'PokéTruc — 关于本站',
@@ -550,6 +550,7 @@ function headerBlock(lang, currentPath, kind) {
   return `  <header>
     <a href="${pathRoot(lang)}" class="logo-link"><img src="/logo.webp" alt="${escapeHtml(L.siteName)}" class="site-logo" width="80" height="80"></a>
     <p class="site-name">${escapeHtml(L.siteName)}</p>
+    <p class="site-tagline">${escapeHtml(L.tagline)}</p>
     <nav class="site-nav">
       <a href="${pathRoot(lang)}"${dexActive}>${escapeHtml(L.pokedex)}</a>
       <a href="${pathInfo(lang)}"${infoActive}>${escapeHtml(L.info)}</a>
@@ -911,7 +912,7 @@ ${head}
 ${headerBlock(lang, '', 'index')}
 
   <main>
-    <h1 class="page-title">${escapeHtml(L.indexH1)}</h1>
+    <h1 class="page-title visually-hidden">${escapeHtml(L.indexH1)}</h1>
 
     <div class="search-row">
       <input type="search" id="search" placeholder="${escapeHtml(L.searchPlaceholder)}" aria-label="${escapeHtml(L.searchPlaceholder)}" autocomplete="off">

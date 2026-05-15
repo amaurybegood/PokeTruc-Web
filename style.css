@@ -88,6 +88,19 @@ header .site-name {
   margin: 0;
 }
 
+header .site-tagline {
+  color: var(--text-secondary);
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  line-height: 1.4;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
 header .subtitle {
   color: var(--text-secondary);
   margin-top: 6px;
@@ -342,7 +355,7 @@ header .subtitle {
 
 /* Grid */
 main {
-  max-width: 1100px;
+  max-width: 1224px;
   margin: 0 auto;
   padding: 0 24px 64px;
 }
