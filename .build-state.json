@@ -240,7 +240,7 @@
     "lastmod": "2026-05-16"
   },
   "/pokemon/abra/": {
-    "hash": "eb58b722f334faa9e773b39123c0683fbc00978384f6fe10c95491b051410497",
+    "hash": "52a91238d0956acf69374e0f95a8335eecb05717073ed455a36d665e3a7cd1e9",
     "lastmod": "2026-05-16"
   },
   "/pokemon/kadabra/": {
@@ -600,7 +600,7 @@
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/abra/": {
-    "hash": "5d53e5c8b6ee71a592f438f7a9aaeacc2df462b005d96c2423425fbbe3b0c7af",
+    "hash": "817299a85d015df73678c89deb5529a4eecc3442341a24ff444f2a6276e7a902",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/kadabra/": {
@@ -960,7 +960,7 @@
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/abra/": {
-    "hash": "56404a7cdcd2e9c0f7b5ef037fae2187fac80a22dafb202bb83275cc7796cbdd",
+    "hash": "472cd37f3e3f73f76a1940fdafc7fca4f5049ba8e57743534484eb9460e36a10",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/kadabra/": {
@@ -1320,7 +1320,7 @@
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/abra/": {
-    "hash": "fbb5844592c237ed41716e75f598c8951317cb9163b0d3cbc95e927ab0fbd112",
+    "hash": "0fd89c25a22b2a5bde266b6c64a99bb93e40fa0ee7aa09b6555039fa4b49b540",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/kadabra/": {
@@ -1680,7 +1680,7 @@
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/abra/": {
-    "hash": "f4eeec5acf69cfadefbadc670abc514a255805726fb9f684b336e12eaf39f507",
+    "hash": "2c8dbfe9d31b8271b6744a1e3c59daf378c8cedea4404524b388a623db2b7678",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/kadabra/": {
@@ -1800,23 +1800,23 @@
     "lastmod": "2026-05-16"
   },
   "/": {
-    "hash": "0e9a57d13f67e01c3adcf5a55fad8f9d32dce4e1f10788d559a01824d9e3029a",
+    "hash": "0a36d4a98b2cb3f8bbb699daeb2fad2e880366f8398ca00c9fd1f0bc245d27b5",
     "lastmod": "2026-05-16"
   },
   "/fr/": {
-    "hash": "ba1f6d69361751b8c318a90b0033b3e275460ec4ce9bbb41b9fb21753267a51e",
+    "hash": "9291a59d2bad99db5f4e7bd60885896110a206e5a17f3f306914a23df72f908c",
     "lastmod": "2026-05-16"
   },
   "/ja/": {
-    "hash": "290cd18668f2b2a9146031597df42cfff3485ab94232139f23949135aad47c48",
+    "hash": "145f56efe2d555a6284857e689634eff621afbcf7ce3a75dea7d60435d6e45b8",
     "lastmod": "2026-05-16"
   },
   "/ko/": {
-    "hash": "9077346e130322cbd61d75d2d14a00dd43cb3d306ef4b2e8183953e926dfa42f",
+    "hash": "39d3a8db6b854ed69cca4d1a349151acd9af9544d5dc7eafef0b823e6578d136",
     "lastmod": "2026-05-16"
   },
   "/zh/": {
-    "hash": "6402660a3d613ad7baefd282507578e8d3f652da21bb001fbfc9b797d75d32aa",
+    "hash": "3584f845f46b2c3ddd11d4b43197affbf023cfba494af989a0a052c9c523e977",
     "lastmod": "2026-05-16"
   },
   "/info/": {

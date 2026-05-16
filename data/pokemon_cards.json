@@ -1779,7 +1779,18 @@
   "language": "🇯🇵",
   "year": 2002,
   "artist": "Toshinao Aoki"
-},{
+},
+{
+  "pokemonId": 63,
+  "name": "Intro Pack Neo: Totodile Side Deck",
+  "imageName": "63_Abra_jpn_iptsd_3",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Atsuko Nishida"
+},
+{
   "pokemonId": 64,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "64_Kadabra_jpn_vses3_20",
