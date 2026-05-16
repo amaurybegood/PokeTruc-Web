@@ -1031,16 +1031,6 @@
   },
   {
     "pokemonId": 26,
-    "name": "Pokémon VS",
-    "imageName": "26_Raichu_jpn_versus1_27",
-    "rarity": "Common",
-    "description": "",
-    "language": "🇯🇵",
-    "year": 2001,
-    "artist": "Yukiko Baba"
-  },
-  {
-    "pokemonId": 26,
     "name": "My First Battle: Pikachu Deck",
     "imageName": "26_Raichu_mfbp_4",
     "rarity": "No Rarity",
