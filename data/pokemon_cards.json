@@ -1548,7 +1548,18 @@
     "language": "🇨🇳",
     "year": 2023,
     "artist": "kirisAki"
-  },{
+  },
+  {
+  "pokemonId": 52,
+  "name": "Intro Pack: Bulbasaur Deck",
+  "imageName": "52_Meowth_jpn_ipb_16",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1999,
+  "artist": "Kagemaru Himeno"
+},
+  {
     "pokemonId": 53,
     "name": "Pokémon VS",
     "imageName": "53_Persian_jpn_versus1_16",
