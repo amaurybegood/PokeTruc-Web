@@ -1100,6 +1100,16 @@
     "artist": "Atsuko Nishida"
   },
   {
+  "pokemonId": 31,
+  "name": "Sun & Moon Promos",
+  "imageName": "31_Nidoqueen_smp_SM160",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2016,
+  "artist": "Midori Harada"
+  },
+  {
     "pokemonId": 32,
     "name": "Vending Machine Expansion Sheet 1: Blue",
     "imageName": "32_Nidoran ♂_jpn_vses1_7",

@@ -112,11 +112,15 @@
     "lastmod": "2026-05-16"
   },
   "/pokemon/nidorina/": {
-    "hash": "653bcd9529d84ffab379d609bbb85bea124df844b502c1461b00cc209c2ed4e4",
+    "hash": "14be0d774ff4d7b21ef8cbeadfb0fa71d97bc338ca5588b03f10b575b7337197",
+    "lastmod": "2026-05-16"
+  },
+  "/pokemon/nidoqueen/": {
+    "hash": "affad80ef72dd895360ad96fc56ebde8720c6f750cd9a664f486ff3a588ae857",
     "lastmod": "2026-05-16"
   },
   "/pokemon/nidoranm/": {
-    "hash": "722321f2feb247fb333c5d9b8dee733c1ae2b0d0567a2109e810131dd0bfc64d",
+    "hash": "f5907cfad97c2704fe7cd1e76f8d216b2a038d4bfdc8fa0c50f5e330103643a8",
     "lastmod": "2026-05-16"
   },
   "/pokemon/nidorino/": {
@@ -464,11 +468,15 @@
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/nidorina/": {
-    "hash": "1b47e653a68f7ecdf61df6f7740fe800eefda114a607cf6888c702a8da5d3a6f",
+    "hash": "85bc907795f1ac8d30d000ad61f6e0654a2f918f8b837c818be9722227c31d43",
+    "lastmod": "2026-05-16"
+  },
+  "/fr/pokemon/nidoqueen/": {
+    "hash": "174139d74541163c71826410ce59ef8853a23193a0240a963b4a2833e8a64de9",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/nidoranm/": {
-    "hash": "2bd20a4baea3296c3a9df74f054a232ce0efd84c6c60d4ee60f857bb6a5c19c1",
+    "hash": "379f8c223372c1d5a32186359578807415f4e7061fabc156105e2b6d9aaaacc0",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/nidorino/": {
@@ -816,11 +824,15 @@
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/nidorina/": {
-    "hash": "dbdde846827b39e2c8d3d103b51b57e8e85471851f532d3be352c0fe6f6786dc",
+    "hash": "99f5f66375cfe1ec59e784120d6a0aae4624029f4be1e7a14f7d904643743efc",
+    "lastmod": "2026-05-16"
+  },
+  "/ja/pokemon/nidoqueen/": {
+    "hash": "03a32c0e667f123d17f6066d409edd9b43b5e837c50677e0ec0b703aa0f74633",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/nidoranm/": {
-    "hash": "ebf73fbfb4debef4876b5485c0743c95ffb6cc8ce335221a151c77e164f8027a",
+    "hash": "2842919c7fb6a5daf50a743f2adbb86927db91b9b7bc9bed19cd4175265122a1",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/nidorino/": {
@@ -1168,11 +1180,15 @@
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/nidorina/": {
-    "hash": "d13d97b4e3bbd71cbbe074e58cd183803122c86006549fa8634528b877438b6f",
+    "hash": "e1156f6515dac3b91092fbe725293733db5827174e867d8135129befd6cacd43",
+    "lastmod": "2026-05-16"
+  },
+  "/ko/pokemon/nidoqueen/": {
+    "hash": "5644abb476d7252a8523e7abf404ca48d8fbab027715600f770dc1583bbbfc36",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/nidoranm/": {
-    "hash": "dd63a341593966250b3c769253eb5410914dfc34ed8ae82fab4a9028e7be493a",
+    "hash": "17d9828bf42881c0fd8f35d5a189e69f0115dbb275e1d9e72e7311e214aa0a1d",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/nidorino/": {
@@ -1520,11 +1536,15 @@
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/nidorina/": {
-    "hash": "3df572a0c9832f61911d941a69df9f2937edd9cdb3ff931d5d6a4defe7514d2e",
+    "hash": "71f1b6b282a2eaf80c45c8335abc3b52d86ac18bebfbdc366fdb2b3693fd61e7",
+    "lastmod": "2026-05-16"
+  },
+  "/zh/pokemon/nidoqueen/": {
+    "hash": "1c97de6ab335ea54207a974dc76c4eca87a0d702b2e7b7c10e0bb036c74ee06c",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/nidoranm/": {
-    "hash": "0cda2d6b54df0924e7780a1854a630fdc1b9c869c33c874468ce1e75ac566dda",
+    "hash": "23c4dde60c81253dffff53744a62a2bb30e6be495851c55ef2e80e9283c3467a",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/nidorino/": {
@@ -1760,23 +1780,23 @@
     "lastmod": "2026-05-16"
   },
   "/": {
-    "hash": "95ab39f409e1f78f44bd85fe3046709d8a86245d230cf830d426e2cc8beb2a18",
+    "hash": "583338d84dacf58b71fda69bb276221ed8b44091047556d47b2e697ccc5c6857",
     "lastmod": "2026-05-16"
   },
   "/fr/": {
-    "hash": "f4e735f9f27bbeb33c5fb1fc06a87b3f43fabaadb15b89a7467485d054db9843",
+    "hash": "afc0090739a09bed98e7756d39ae2575ce6aaf85799ab029adc3c763736b0494",
     "lastmod": "2026-05-16"
   },
   "/ja/": {
-    "hash": "d4f0ca98ae0481206bd312b96e3b8854eb67b1ed3889c2c65cd6e7cf88837a4c",
+    "hash": "1c11e62836c0cea149e8c29c7a6e6558e8021ca49561bc64c56822ff1091ae4d",
     "lastmod": "2026-05-16"
   },
   "/ko/": {
-    "hash": "67e860f3bfa783e890d5aa59cb0849673acbedb1f887ec2bf9e3b06104c8ef6c",
+    "hash": "c9dabac3bfa3543f2de3745319dfa49118140659d5fe9a4e4337fd0d069e82ee",
     "lastmod": "2026-05-16"
   },
   "/zh/": {
-    "hash": "1c75cfd6062695d374ebb05f982de7cf1394fe8f516814e693c28ca1a111dbd3",
+    "hash": "499447bf0a95dcb4b40d333f9c45dd79512f434919861c8765b4db2ff809dd14",
     "lastmod": "2026-05-16"
   },
   "/info/": {
