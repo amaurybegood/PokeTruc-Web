@@ -210,26 +210,6 @@
     "artist": ""
   },
   {
-    "pokemonId": 4,
-    "name": "Battle Party Set: Fire Deck",
-    "imageName": "4_Charmander_scn_csmPb_2",
-    "rarity": "No Rarity",
-    "description": "",
-    "language": "🇨🇳",
-    "year": 2023,
-    "artist": ""
-  },
-  {
-    "pokemonId": 4,
-    "name": "Start Deck 100 Battle Collection",
-    "imageName": "4_Charmander_jpn_mc_83",
-    "rarity": "No Rarity",
-    "description": "",
-    "language": "🇯🇵",
-    "year": 2025,
-    "artist": "Orca"
-  },
-  {
     "pokemonId": 5,
     "name": "T Promos",
     "imageName": "5_Charmeleon_jpn_tpr_11",
