@@ -1240,6 +1240,16 @@
     "artist": "booota"
   },
   {
+  "pokemonId": 37,
+  "name": "XY Promos",
+  "imageName": "37_Vulpix_jpn_xyp_110",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "kirisAki"
+},
+  {
     "pokemonId": 38,
     "name": "My First Battle: Charmander Deck",
     "imageName": "38_Ninetales_mfbc_6",
