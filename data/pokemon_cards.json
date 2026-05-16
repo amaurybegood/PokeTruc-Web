@@ -1668,7 +1668,18 @@
   "language": "🇯🇵",
   "year": 2001,
   "artist": "Kyoko Umemoto"
-},{
+},
+{
+  "pokemonId": 58,
+  "name": "My First Battle: Charmander Deck",
+  "imageName": "58_Growlithe_mfbc_7",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Yuu Nishida"
+},
+{
   "pokemonId": 59,
   "name": "Intro Pack: Squirtle Deck",
   "imageName": "59_Arcanine_jpn_ips_32",
