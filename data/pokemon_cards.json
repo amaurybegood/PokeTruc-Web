@@ -2329,6 +2329,16 @@
   "artist": "The Pokémon Compagny"
 },
 {
+  "pokemonId": 129,
+  "name": "Black & White Promos",
+  "imageName": "129_Magikarp_jpn_bwp_210",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2010,
+  "artist": "Midori Harada"
+},
+{
   "pokemonId": 131,
   "name": "Pokémon VS",
   "imageName": "131_Lapras_jpn_versus1_41",
