@@ -272,15 +272,11 @@
     "lastmod": "2026-05-16"
   },
   "/pokemon/tentacool/": {
-    "hash": "30dae02b838d65aa84c31bee2a269722410ee05adb6426009cdd113bcf86808c",
-    "lastmod": "2026-05-16"
-  },
-  "/pokemon/tentacruel/": {
-    "hash": "2663e798da06005ee6fa896572e476f0b31d4ca7aa14b9bc0cbb712ee5bc8413",
+    "hash": "cd3e0a6d49a4c3f42dd5dd1db6f92b49c2b9251ce65b9cd6c6fe551ef38c19a4",
     "lastmod": "2026-05-16"
   },
   "/pokemon/geodude/": {
-    "hash": "85d74043799c31decb6c8f4218863df42beaa45c21689dd477a34debd1a2a38f",
+    "hash": "306c2e849d6b6bd994dc911056d212814982b39df90c2dc2c39b18a0bae80a78",
     "lastmod": "2026-05-16"
   },
   "/pokemon/graveler/": {
@@ -632,15 +628,11 @@
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/tentacool/": {
-    "hash": "70a96c5f231e8f04af264e334ba5fe14c976429ade1e33f24aeb6f9535506fd6",
-    "lastmod": "2026-05-16"
-  },
-  "/fr/pokemon/tentacruel/": {
-    "hash": "3002765bbec82edb71f1055d1f9fb3d6f9ebf06a9d430d75275de75ecf205b5b",
+    "hash": "bdc0350e440dddf207708779ad425f72036f2307f14ec2c09160c09fdc04f93a",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/geodude/": {
-    "hash": "848bcbf8bd7524a45e313fccd90a88ce040d6c43a032817bf64e9a75f32b056e",
+    "hash": "8db88724defb2d1e34fe3da66261976beb7c76743510f1f52184dd4e94ec83b3",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/graveler/": {
@@ -992,15 +984,11 @@
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/tentacool/": {
-    "hash": "7938fcdfb9aa14486ce38ab0d624151a34cb4d64b11cd455eca2e425c3f61ae3",
-    "lastmod": "2026-05-16"
-  },
-  "/ja/pokemon/tentacruel/": {
-    "hash": "2fcfdf5992d12857328fb58eb1c9000ae97c831e48fdc322e6ca3f6d1109a5a6",
+    "hash": "da59ba61250163456ac6a7ad960f0c1e4f22e340994da8140d0f4bf74f0dbdc0",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/geodude/": {
-    "hash": "e5b1bf76322c41f927aee01da7c4cb30862c38c3f08372f753267dfb2d312764",
+    "hash": "ce26517378ebf8a6b31274b333a50ac27a55f7ccb04a891b94d0af05c31b4e76",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/graveler/": {
@@ -1352,15 +1340,11 @@
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/tentacool/": {
-    "hash": "474b3400154d4cd16d126a06f1745ea9509c1a14e4e9625f2d0dbeb9a61d62cd",
-    "lastmod": "2026-05-16"
-  },
-  "/ko/pokemon/tentacruel/": {
-    "hash": "bcd2d1ce08bb830744bc14126fc8fc9601ffe8fcae0275faf0d79dc0efb96486",
+    "hash": "6d0cfe2d2c6554d7888f450670b0d9416b2bba7b13fc4cfb8bf22497c8e87356",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/geodude/": {
-    "hash": "adb8077eb9b1e6ef1c26343df653d3a005ab08c64ab631e57ef29b702ad1365b",
+    "hash": "56da17566bb34a36ce05cce37d5ba4578c70471715f2b4955be91131228a0bd3",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/graveler/": {
@@ -1712,15 +1696,11 @@
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/tentacool/": {
-    "hash": "3c0d80f798e7e302ab1813bb483dccaa3f5fc2f1d7d18e3fecef035277822362",
-    "lastmod": "2026-05-16"
-  },
-  "/zh/pokemon/tentacruel/": {
-    "hash": "4cea892b2d846e9363afeb4efbba8188aba0b36a7081fbb76d9450b3d0b4d2c5",
+    "hash": "b55caed173dcfeda9d10cd01abc9390745c4fc3b1b59003f38994f9076e570a7",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/geodude/": {
-    "hash": "14adde54b6e23341db5b091c9c245beebaf192eaf145f2fb66bd46010965bfbc",
+    "hash": "0139cbebd5bf3fd504ec369043f9c722dc5fe57b54caf7e14c5843a59c03b4ea",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/graveler/": {
@@ -1800,23 +1780,23 @@
     "lastmod": "2026-05-16"
   },
   "/": {
-    "hash": "5e73586e2d6730daf8d3bb02bbcae653d7b534246e9afd025ab326b3fb1263bd",
+    "hash": "dc5d5a9e18b58d8e3517bb9260edf7f79fb49be6a70e8f5d18870d3fe9c70826",
     "lastmod": "2026-05-16"
   },
   "/fr/": {
-    "hash": "2b4dea458d8dc97d5981a40fa70c907305a3721e419aea41bc0cf902f78f1696",
+    "hash": "47dffac165e3dc6169f21c40e182fd0731922fcd51cd437b3ef1e3cc1659f6c7",
     "lastmod": "2026-05-16"
   },
   "/ja/": {
-    "hash": "dbf530926ed78fdc7a49a41b9ac44199ab970e9521b6f869699c5e7e19542229",
+    "hash": "016e9a9dfa82e311cbaab0333729a2f68d0f07acc905764d60fa79977d2afa0b",
     "lastmod": "2026-05-16"
   },
   "/ko/": {
-    "hash": "6be67244304c4b141a5dbea2fb1a6d0ee4587b7110a1f36b5a99dfd19a794c29",
+    "hash": "04d6465ede5ad7405da5f0f9b5d3614c4424386d1b901bb3ba9d634119169b7e",
     "lastmod": "2026-05-16"
   },
   "/zh/": {
-    "hash": "40fcb81000597185193e8a4c2ebc6dc01d8d7287cc9ab2b19f764919d36c813b",
+    "hash": "5d8c92b162bf9a8ab5129d765da3a62e8f9c7783c8f5c4ffc736aad49f2f0b28",
     "lastmod": "2026-05-16"
   },
   "/info/": {
