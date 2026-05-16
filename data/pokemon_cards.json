@@ -489,6 +489,16 @@
     "year": 2024,
     "artist": ""
   },
+    {
+    "pokemonId": 8,
+    "name": "Sample Set",
+    "imageName": "WartortleSampleSet",
+    "rarity": "Sample",
+    "description": "",
+    "language": "🇯🇵",
+    "year": 2001,
+    "artist": "Ken Sugimori"
+  },
   {
     "pokemonId": 9,
     "name": "Unnumbered Promos",
