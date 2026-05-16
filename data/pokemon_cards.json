@@ -2496,5 +2496,15 @@
     "language": "🇯🇵",
     "year": 1996,
     "artist": "Hironobu Yoshida"
-  }
+  },
+  {
+  "pokemonId": 151,
+  "name": "XY Unnumbered Promos",
+  "imageName": "MewArtAcademyPromo",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇩🇪",
+  "year": 2015,
+  "artist": "Phanpy"
+}
 ]
