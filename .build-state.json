@@ -328,11 +328,15 @@
     "lastmod": "2026-05-16"
   },
   "/pokemon/dewgong/": {
-    "hash": "6b42c99cd6b2da6dcc95864db301f16760f7917c5cbaeca44a839d490db82b27",
+    "hash": "15b934a6f9e1c6d36f7e5059f74274f346441d968e8b0976028e4784007cc66f",
+    "lastmod": "2026-05-16"
+  },
+  "/pokemon/grimer/": {
+    "hash": "fd09b036eca47b3aa15c8780a876744b61a26a610ea7b0c5ee050352ca45e415",
     "lastmod": "2026-05-16"
   },
   "/pokemon/horsea/": {
-    "hash": "1db667f6c77928537550fc1827e0f0ba3fa82588114e60544b8c36244f063dfb",
+    "hash": "1c55e96b710d6625a463fd6e1f19db780db9f0b1612c5c1eecff1d0faaa85109",
     "lastmod": "2026-05-16"
   },
   "/pokemon/seadra/": {
@@ -684,11 +688,15 @@
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/dewgong/": {
-    "hash": "dc485d194cfe7dbe051d0f98b94b59e14be73230e848cb764bb4ceedf4f66f59",
+    "hash": "e61aa4e6e3f8e2d44fd547538aee1c90985d16b44e06a1b6402c3659c79733ac",
+    "lastmod": "2026-05-16"
+  },
+  "/fr/pokemon/grimer/": {
+    "hash": "59c2c0953f2d796f17e579f86e01b0a456ccabc430e52b6ee766921d4bf4891d",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/horsea/": {
-    "hash": "5462d24e3d023917baf76486f0c22594fbc4fd17060229513b6906d5b48d91f6",
+    "hash": "24feb2e586b2bb36b8eeaf0e1d3529aa8ee4af4dbef91dd67daf932a3f90b99a",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/seadra/": {
@@ -1040,11 +1048,15 @@
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/dewgong/": {
-    "hash": "7b3125a1cce626c793227ea2736241954abe1a3d8e84dc969bb59d10720b4449",
+    "hash": "0c33667d1007988bb6f1dfa13f50a2176be99e153aec81135ac2e30de8fe326c",
+    "lastmod": "2026-05-16"
+  },
+  "/ja/pokemon/grimer/": {
+    "hash": "006400eb61298370d004bde550a4e10e0528cee7b4be47fde51e21a410843987",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/horsea/": {
-    "hash": "f12dfd406bbcab05007679167e3010c52aafd962171c80fea9717dd84a4f5f30",
+    "hash": "786896b8945ac5bc9d8e8f59a21243fa9dd59b4f896e23d361e196f2f86ec0ba",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/seadra/": {
@@ -1396,11 +1408,15 @@
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/dewgong/": {
-    "hash": "7636b69462ebfd25637f6bb852317cfb459e0a8838a06d942a5f22a40bb9ca10",
+    "hash": "40c3563ef827b19cc2ff5fbe1e7a49b2abe25e37e701941997e77f2d92fe9696",
+    "lastmod": "2026-05-16"
+  },
+  "/ko/pokemon/grimer/": {
+    "hash": "16da5f31bac16a71297d32666749037a56308c6b707e4e26e2d3343ee41aa22a",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/horsea/": {
-    "hash": "4892fca05edc8e0fb8c55b0aec0066f3e4d5fe32264633096003dd0fafc423a8",
+    "hash": "b4e8f5654a6aa33fc118ce2aa72016176ea2ee7d553101f17768b87c45a20ee7",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/seadra/": {
@@ -1752,11 +1768,15 @@
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/dewgong/": {
-    "hash": "1f28734b8bd2113c07726ac23143af8d1cf1ebd85182c191a1c097b280500553",
+    "hash": "add07ed6ac84908f13a44ff153b1fc55a047c7e63ba27fc81df3407594a6f88b",
+    "lastmod": "2026-05-16"
+  },
+  "/zh/pokemon/grimer/": {
+    "hash": "40e515fbb038a2aba41362925318e30ccee58a707bf7ddce3156a5489fd4ee25",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/horsea/": {
-    "hash": "6053dc9128864782b8e113d4cc771d02a194ed258f6d9e7a46f1ccfa48190411",
+    "hash": "a164809d851a5824eb86c8738a709933ba066f35f62965ff7fdf3ad7ef747d4f",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/seadra/": {
@@ -1780,23 +1800,23 @@
     "lastmod": "2026-05-16"
   },
   "/": {
-    "hash": "4c4caa908db1b8c6804084951c03f07080c83387259004629897a5479fd3c614",
+    "hash": "85211477797a15e80a7288a4ca14192b3d8bf47c27a9754dcce714508b5127d6",
     "lastmod": "2026-05-16"
   },
   "/fr/": {
-    "hash": "616b2ddbbe1a1ff2e88a22a49791179c40c17dc605334bd0d331a44a556740c0",
+    "hash": "72ce4a59b237ce281873704234439553243524c86fbd2f21da5e2154cd186d0a",
     "lastmod": "2026-05-16"
   },
   "/ja/": {
-    "hash": "ae3079d360eb46d91080c6c48a4eff74d9669f149170a9a3559895ef6d38a0b9",
+    "hash": "f560f06fd3ac730bc42e9f325cf649d00e73e1530e8a210d893991f708a6dbf8",
     "lastmod": "2026-05-16"
   },
   "/ko/": {
-    "hash": "5727bc0e2d808ff2801f6ef15cd000ffbc9e433911c1bd1e085718a8a2bf0f78",
+    "hash": "289c552c4743b01a4bafa93a5fb90b1fb78c5367efea19c2f2039151dc51e961",
     "lastmod": "2026-05-16"
   },
   "/zh/": {
-    "hash": "f88e4a1b98977e97dcec4671a5f888a065833046d60a373ad0e58eb61863b113",
+    "hash": "bcd2a8f24893477ae4ba9be187d0d89b9692a30216ed0e5476841fe2de282dc5",
     "lastmod": "2026-05-16"
   },
   "/info/": {
