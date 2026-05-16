@@ -1390,6 +1390,16 @@
     "artist": "Miranda Branley"
   },
   {
+  "pokemonId": 44,
+  "name": "My First Battle: Bulbasaur Deck",
+  "imageName": "44_Gloom_mfbb_6",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Natsumi Yoshida"
+},
+  {
     "pokemonId": 46,
     "name": "Vending Machine Expansion Sheet 1: Blue",
     "imageName": "46_Paras_jpn_vses1_10",

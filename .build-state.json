@@ -164,11 +164,15 @@
     "lastmod": "2026-05-16"
   },
   "/pokemon/oddish/": {
-    "hash": "51ac8bdd123323d7e51e17c06635101ac8c5095beff2321e76ded5131a8e9cc0",
+    "hash": "22e4faeb6ba68730d90329ea818df18340c4874e87117d6c4c7f76ee7ec1b096",
+    "lastmod": "2026-05-16"
+  },
+  "/pokemon/gloom/": {
+    "hash": "0cb1581d2851da736fdc31503a863c34fea5573d227e5bec579578fda572b4da",
     "lastmod": "2026-05-16"
   },
   "/pokemon/paras/": {
-    "hash": "8dffc50d0793759d5a6ca6a79755c05be8b0ae26774cf836474613f7c7cc3f78",
+    "hash": "00fbd6c05058cb22014e44ae2e03dfd463169c94ad2f9f0be0742dbbed1a6663",
     "lastmod": "2026-05-16"
   },
   "/pokemon/parasect/": {
@@ -520,11 +524,15 @@
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/oddish/": {
-    "hash": "8d44a949cc284c0b798c92f63ae8ad3023dfc9b68acd371922fdf30d6e2b6204",
+    "hash": "093ca03133682b086992b9f632fe708ff058d236341e20877f5fc12660d00a6f",
+    "lastmod": "2026-05-16"
+  },
+  "/fr/pokemon/gloom/": {
+    "hash": "aa53978892c48015e033665d287d1a558d6df59c951552795656c484f304b09f",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/paras/": {
-    "hash": "8080960f78814ca4340be987e80e36b7f9c6dcee5349d243a25af07b0b61bd51",
+    "hash": "be03c85afc6c410c07a1313ca453e788b1ccecb60ea29802e0cc09522b6f3dcc",
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/parasect/": {
@@ -876,11 +884,15 @@
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/oddish/": {
-    "hash": "117c001d87803d058997a95cab0fab7ef3b9b1020e80e51b84fdbb2cd1076aa9",
+    "hash": "8cc551c1445eefda294c6511d6581b017d8493f3221dacb18443c18fdfab6a50",
+    "lastmod": "2026-05-16"
+  },
+  "/ja/pokemon/gloom/": {
+    "hash": "e0847b3279b501fd33d1b7d0ce391997ec3ffd44f0803524a1f03bdd503caf5e",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/paras/": {
-    "hash": "0087185f4444d047ec747667396950f4caa1d7d22588fd973d8f566d94e4262a",
+    "hash": "bc09ea52cf2b2d758802ecade50594b3342a3ed2613d35df7e8c792a51eb449d",
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/parasect/": {
@@ -1232,11 +1244,15 @@
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/oddish/": {
-    "hash": "2d37d4170fea6839c3e868b60b5772abc43a241f7e1aef53f995b8d1cb7e232b",
+    "hash": "5d7eea8cba1686ad82ec5449082d1c27e23badc1ec8460f7627cf3a2518875bb",
+    "lastmod": "2026-05-16"
+  },
+  "/ko/pokemon/gloom/": {
+    "hash": "3848cd691cf0de625f4ebf446ccdf4f9098cd43f04399b2c8f4555c7bc0f546c",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/paras/": {
-    "hash": "74b3c414b0a5350f0e453db289eed5a3b8ccff4f06be33da322e1d1115cf7370",
+    "hash": "b60dfdfb7aa3cb36e12dcadae89c4d70d4239f3af2482ff19fa97588ad3fb859",
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/parasect/": {
@@ -1588,11 +1604,15 @@
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/oddish/": {
-    "hash": "06ce6103d281af97d52ae5e577bc15c1646636a78e333c88f3cb4c22a15b2bca",
+    "hash": "0fa15eada39c41ccba9172892ac09ce7e27f35152e7143cb01f67c012b7530fb",
+    "lastmod": "2026-05-16"
+  },
+  "/zh/pokemon/gloom/": {
+    "hash": "7a346cecd94504b057a2b2d8beb6c1c7783b104fb7396489d323b03ed71c184a",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/paras/": {
-    "hash": "6fa9bfa1315ff22d9eb90a2a0eda5a951faf68f0b67c4425ff99a1eec8097184",
+    "hash": "972626b32134712532c52527fa9c05ceee29472ceca526ee1a6e9a3cd3b13fd1",
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/parasect/": {
@@ -1780,23 +1800,23 @@
     "lastmod": "2026-05-16"
   },
   "/": {
-    "hash": "8edc7d9ef3a6bddf182ae963f4165cd80284b0db5a63185b3fccb0142de1485a",
+    "hash": "012f10a249bc652c0a9826b960e413792e421dc3c3b81f821b22e1047ba2f102",
     "lastmod": "2026-05-16"
   },
   "/fr/": {
-    "hash": "3b248b5a204e2c902cabdbac5831ee830cd339138538ed84e1d79c550f7e5777",
+    "hash": "9b16f87a15a9d6cf30af0fc62c4fc2aae2d101e5464cea39bfd4fd8d11caf242",
     "lastmod": "2026-05-16"
   },
   "/ja/": {
-    "hash": "0ad93b31645404614cec8963e8f21919e49a8a610d97d652cfa0def77dcf8a8b",
+    "hash": "574384c5d915a06aea1051788892bd73886fa8efb626b8b47faf5dc624e246a1",
     "lastmod": "2026-05-16"
   },
   "/ko/": {
-    "hash": "4def7663bde4a98dc290159764bba6fa244cfec5c1d78f18557dd8888762c8b1",
+    "hash": "370feb2a7f0aa4c47c71a71f2829af9b1aabc4014bd5f96fac368f6f4f1b92d5",
     "lastmod": "2026-05-16"
   },
   "/zh/": {
-    "hash": "ce35e509c8b2b92989e725cd55f136520ce5443dc5fc9179c02da49c1b4cb5aa",
+    "hash": "408704b0be065f7e50dff682865910f0e60418f750ba97a26a8da9a67fc54fba",
     "lastmod": "2026-05-16"
   },
   "/info/": {
