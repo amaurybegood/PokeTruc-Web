@@ -1249,6 +1249,16 @@
   "year": 2013,
   "artist": "kirisAki"
 },
+{
+  "pokemonId": 37,
+  "name": "Sun & Moon Promos",
+  "imageName": "37_Vulpix_jpn_smp_147",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "booota"
+},
   {
     "pokemonId": 38,
     "name": "My First Battle: Charmander Deck",
