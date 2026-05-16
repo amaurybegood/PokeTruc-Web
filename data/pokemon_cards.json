@@ -1883,6 +1883,16 @@
   "artist": "GOSSAN"
 },
 {
+  "pokemonId": 68,
+  "name": "XY Promos",
+  "imageName": "68_Machamp_xyp_XY13",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2013,
+  "artist": "PLANETA"
+},
+{
   "pokemonId": 69,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "69_Bellsprout_jpn_vses3_5",
