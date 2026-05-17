@@ -2291,6 +2291,115 @@
   "artist": "Mitsuhiro Arita"
 },
 {
+  "pokemonId": 92,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "92_Gastly_jpn_vses3_22",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Masako Yamashita"
+},{
+  "pokemonId": 93,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "93_Haunter_jpn_vses3_24",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 93,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "93_Haunter_jpn_vses3_23",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Nobuyuki Habu"
+},{
+  "pokemonId": 94,
+  "name": "Unnumbered Promos",
+  "imageName": "94_Gengar_jpn_unp_73",
+  "rarity": "Rare Holo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Hironobu Yoshida"
+},{
+  "pokemonId": 94,
+  "name": "Pokémon VS",
+  "imageName": "94_Gengar_jpn_versus1_21",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Naoyo Kimura"
+},{
+  "pokemonId": 95,
+  "name": "Unnumbered Promos",
+  "imageName": "95_Onix_jpn_unp_36",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 95,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "95_Onix_jpn_vses2_24",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 97,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "97_Hypno_jpn_vses3_25",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Masako Yamashita"
+},{
+  "pokemonId": 98,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "98_Krabby_jpn_vses2_9",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 99,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "99_Kingler_jpn_vses3_14",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Masako Yamashita"
+},{
+  "pokemonId": 100,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "100_Voltorb_jpn_vses2_16",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 101,
+  "name": "Pokémon Web",
+  "imageName": "101_Electrode_jpn_web1_26",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Ken Sugimori"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",

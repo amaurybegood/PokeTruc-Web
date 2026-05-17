@@ -1193,7 +1193,7 @@
     },
     "imageName": "gastly",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 93,
@@ -1206,7 +1206,7 @@
     },
     "imageName": "haunter",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 94,
@@ -1219,7 +1219,7 @@
     },
     "imageName": "gengar",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 95,
@@ -1232,7 +1232,7 @@
     },
     "imageName": "onix",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 96,
@@ -1245,7 +1245,7 @@
     },
     "imageName": "drowzee",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 97,
@@ -1258,7 +1258,7 @@
     },
     "imageName": "hypno",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 98,
@@ -1271,7 +1271,7 @@
     },
     "imageName": "krabby",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 99,
@@ -1284,7 +1284,7 @@
     },
     "imageName": "kingler",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 100,
@@ -1297,7 +1297,7 @@
     },
     "imageName": "voltorb",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 101,
@@ -1310,7 +1310,7 @@
     },
     "imageName": "electrode",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 102,
