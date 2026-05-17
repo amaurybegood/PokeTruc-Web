@@ -332,12 +332,20 @@
     "lastmod": "2026-05-16"
   },
   "/pokemon/grimer/": {
-    "hash": "fd09b036eca47b3aa15c8780a876744b61a26a610ea7b0c5ee050352ca45e415",
-    "lastmod": "2026-05-16"
+    "hash": "ee99605b4c90fb7b78a3bdaf9b039296c8d13b3ab783afd257c704d421a48a0e",
+    "lastmod": "2026-05-17"
+  },
+  "/pokemon/shellder/": {
+    "hash": "7e81609397ba7d39fa6f484377e152982c07009e6ce113119df899e8754ef474",
+    "lastmod": "2026-05-17"
+  },
+  "/pokemon/cloyster/": {
+    "hash": "c5921baa6426d0ba050b2a9bad2de473ab860b8f7330f4c0dc4ed70417be5463",
+    "lastmod": "2026-05-17"
   },
   "/pokemon/horsea/": {
-    "hash": "1c55e96b710d6625a463fd6e1f19db780db9f0b1612c5c1eecff1d0faaa85109",
-    "lastmod": "2026-05-16"
+    "hash": "8fcc348ba3a7f2f3e74895b789ffd347d099f9a26aa5b4bfb6b41cfa3ea6cabc",
+    "lastmod": "2026-05-17"
   },
   "/pokemon/seadra/": {
     "hash": "f95d8391b26e365012e207d2d2bdbda7d93e689abbc3a827d528bc397df5d310",
@@ -692,12 +700,20 @@
     "lastmod": "2026-05-16"
   },
   "/fr/pokemon/grimer/": {
-    "hash": "59c2c0953f2d796f17e579f86e01b0a456ccabc430e52b6ee766921d4bf4891d",
-    "lastmod": "2026-05-16"
+    "hash": "4a5e8ceeaa159a435f683ec2d98053c174a8a73f29e82c0bd842becffce77feb",
+    "lastmod": "2026-05-17"
+  },
+  "/fr/pokemon/shellder/": {
+    "hash": "115dc0466f9e96abf8903d2fbd3ae411d4f0a66cb9c53db16a62b3f959d63ca7",
+    "lastmod": "2026-05-17"
+  },
+  "/fr/pokemon/cloyster/": {
+    "hash": "b6966a18c2296b7a5665290ef888129b33bb437d915a3a3066345b335417b277",
+    "lastmod": "2026-05-17"
   },
   "/fr/pokemon/horsea/": {
-    "hash": "24feb2e586b2bb36b8eeaf0e1d3529aa8ee4af4dbef91dd67daf932a3f90b99a",
-    "lastmod": "2026-05-16"
+    "hash": "af12d3e29c30a0d80ade6317db10e77c71ab40b53c1f05e96c40d5f9b4d29835",
+    "lastmod": "2026-05-17"
   },
   "/fr/pokemon/seadra/": {
     "hash": "b23d92fb9371525309c82790a936371408bc7748dc4c093c7d6c395fae773ff9",
@@ -1052,12 +1068,20 @@
     "lastmod": "2026-05-16"
   },
   "/ja/pokemon/grimer/": {
-    "hash": "006400eb61298370d004bde550a4e10e0528cee7b4be47fde51e21a410843987",
-    "lastmod": "2026-05-16"
+    "hash": "f355e01eacb1054aa6f337d480e492a787e91bd841d8b36883aadd10b94e7051",
+    "lastmod": "2026-05-17"
+  },
+  "/ja/pokemon/shellder/": {
+    "hash": "1794c411617aa91bd50daa6d9a585ee44ef9ad6dd379691c421a19ceb4f87801",
+    "lastmod": "2026-05-17"
+  },
+  "/ja/pokemon/cloyster/": {
+    "hash": "3804fe48c7aa67e665b6dd6931e138c04e6a4d870c819f050f5e9311e9b4fba4",
+    "lastmod": "2026-05-17"
   },
   "/ja/pokemon/horsea/": {
-    "hash": "786896b8945ac5bc9d8e8f59a21243fa9dd59b4f896e23d361e196f2f86ec0ba",
-    "lastmod": "2026-05-16"
+    "hash": "653ffb837552ad28462ac74d8d6815c179f92d818c95706f260b6fa9ccd554f1",
+    "lastmod": "2026-05-17"
   },
   "/ja/pokemon/seadra/": {
     "hash": "f27e6c3871496edab61345411494683863cb48955f285418323b5ac2c32ee03d",
@@ -1412,12 +1436,20 @@
     "lastmod": "2026-05-16"
   },
   "/ko/pokemon/grimer/": {
-    "hash": "16da5f31bac16a71297d32666749037a56308c6b707e4e26e2d3343ee41aa22a",
-    "lastmod": "2026-05-16"
+    "hash": "399b0e733a4ef2ae77439deaf6a590e3ff1bca944da9c4a5a1a84bc3144458e7",
+    "lastmod": "2026-05-17"
+  },
+  "/ko/pokemon/shellder/": {
+    "hash": "64fd0c00bd95f5b540d9c52b8f860246cb05abacd833e485a09c86c98488c50d",
+    "lastmod": "2026-05-17"
+  },
+  "/ko/pokemon/cloyster/": {
+    "hash": "f7cae97c328cfdaad586311f6d9dbcad5d19d6ad0e2d59d867109021bd6c3efa",
+    "lastmod": "2026-05-17"
   },
   "/ko/pokemon/horsea/": {
-    "hash": "b4e8f5654a6aa33fc118ce2aa72016176ea2ee7d553101f17768b87c45a20ee7",
-    "lastmod": "2026-05-16"
+    "hash": "1d21dad3de8cf23471a3f4c7aa4b6f455aa665c06784c47099519368c4e4ebe6",
+    "lastmod": "2026-05-17"
   },
   "/ko/pokemon/seadra/": {
     "hash": "59c968bf4d685dd9326bddf71624910b6f14463234e4d9fb14c35e69055f74d9",
@@ -1772,12 +1804,20 @@
     "lastmod": "2026-05-16"
   },
   "/zh/pokemon/grimer/": {
-    "hash": "40e515fbb038a2aba41362925318e30ccee58a707bf7ddce3156a5489fd4ee25",
-    "lastmod": "2026-05-16"
+    "hash": "5735be59e6f3e7e98f2e6de6c903cea143273c5328c71df26631addda5c2ac8c",
+    "lastmod": "2026-05-17"
+  },
+  "/zh/pokemon/shellder/": {
+    "hash": "dbcbf4a9d7d88cd639902414e0f1b6f2ab6fc5a4c46483961381c129fa450d17",
+    "lastmod": "2026-05-17"
+  },
+  "/zh/pokemon/cloyster/": {
+    "hash": "1fa46701d89b71440d5964f6d0bf44d2e33c2abcdfe9560b97efa33bbc761e60",
+    "lastmod": "2026-05-17"
   },
   "/zh/pokemon/horsea/": {
-    "hash": "a164809d851a5824eb86c8738a709933ba066f35f62965ff7fdf3ad7ef747d4f",
-    "lastmod": "2026-05-16"
+    "hash": "3f899332132d01005fe46b5a290a6ed9b3230558c2df727fd69e91a7d65904c8",
+    "lastmod": "2026-05-17"
   },
   "/zh/pokemon/seadra/": {
     "hash": "dcf3ea776da9b04b70a5aeac144c4fb2834eb73014fcdfeaaa911319db897b04",
@@ -1800,24 +1840,24 @@
     "lastmod": "2026-05-16"
   },
   "/": {
-    "hash": "85211477797a15e80a7288a4ca14192b3d8bf47c27a9754dcce714508b5127d6",
-    "lastmod": "2026-05-16"
+    "hash": "a66d7b47eaa8471a481de0e59338bf642b863a506118fc4316a2a4b63bfc96e5",
+    "lastmod": "2026-05-17"
   },
   "/fr/": {
-    "hash": "72ce4a59b237ce281873704234439553243524c86fbd2f21da5e2154cd186d0a",
-    "lastmod": "2026-05-16"
+    "hash": "bf8d34ab88edb5c1298cb8956992854cc70fbcc2f7085f4efefcfe56d307eadb",
+    "lastmod": "2026-05-17"
   },
   "/ja/": {
-    "hash": "f560f06fd3ac730bc42e9f325cf649d00e73e1530e8a210d893991f708a6dbf8",
-    "lastmod": "2026-05-16"
+    "hash": "a04992ae6e7640fba0a392ebf5e0daed2938f989aa19c1753c79246970e27495",
+    "lastmod": "2026-05-17"
   },
   "/ko/": {
-    "hash": "289c552c4743b01a4bafa93a5fb90b1fb78c5367efea19c2f2039151dc51e961",
-    "lastmod": "2026-05-16"
+    "hash": "4aecd6ba7a037a80dfd013b822c8422665727d42382204449fab0f2a1cbee972",
+    "lastmod": "2026-05-17"
   },
   "/zh/": {
-    "hash": "bcd2a8f24893477ae4ba9be187d0d89b9692a30216ed0e5476841fe2de282dc5",
-    "lastmod": "2026-05-16"
+    "hash": "f46d74dfacf29f7600de3128143c8311fa1cb473bd01d091f432c7606ffddab0",
+    "lastmod": "2026-05-17"
   },
   "/info/": {
     "hash": "ae32bdbdf872e866b2edbdac28e94082e074d205ee6ddc3909a4c1c52fae15eb",

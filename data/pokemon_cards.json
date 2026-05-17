@@ -2272,6 +2272,25 @@
   "artist": "Shin-ichi Yoshida"
 },
 {
+  "pokemonId": 90,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "90_Shellder_jpn_vses2_8",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Nobuyuki Habu"
+},{
+  "pokemonId": 91,
+  "name": "Pokémon VS",
+  "imageName": "91_Cloyster_jpn_versus1_40",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Mitsuhiro Arita"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",
