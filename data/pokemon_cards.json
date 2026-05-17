@@ -2400,6 +2400,70 @@
   "artist": "Ken Sugimori"
 },
 {
+  "pokemonId": 102,
+  "name": "Sun & Moon Promos",
+  "imageName": "102_Exeggcute_jpn_smp_355",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "HYOGONOSUKE"
+},{
+  "pokemonId": 102,
+  "name": "Sun & Moon Promos",
+  "imageName": "102_Exeggcute_jpn_smp_99",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouichi Ooyama"
+},{
+  "pokemonId": 102,
+  "name": "My First Battle: Bulbasaur Deck",
+  "imageName": "102_Exeggcute_mfbb_7",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Jerky"
+},{
+  "pokemonId": 101,
+  "name": "My First Battle: Pikachu Deck",
+  "imageName": "101_Electrode_mfbp_8",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "miki kudo"
+},{
+  "pokemonId": 103,
+  "name": "Unnumbered Promos",
+  "imageName": "103_Exeggutor_jpn_unp_99",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Dr. Ooyama"
+},{
+  "pokemonId": 103,
+  "name": "Pokémon VS",
+  "imageName": "103_Exeggutor_jpn_versus1_73",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 103,
+  "name": "My First Battle: Bulbasaur Deck",
+  "imageName": "103_Exeggutor_mfbb_8",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "nagimiso"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",

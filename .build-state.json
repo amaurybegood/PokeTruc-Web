@@ -376,11 +376,19 @@
     "lastmod": "2026-05-17"
   },
   "/pokemon/electrode/": {
-    "hash": "42d751947dc4bf88c981278ff3471ac32e9f1338ed4ec8b86f5bb7a1987b854b",
+    "hash": "6d8c7df8ce310bf43c52f81ee2ce561629cfc7560f18392c466366ef7d7902e3",
+    "lastmod": "2026-05-17"
+  },
+  "/pokemon/exeggcute/": {
+    "hash": "1e279879a9923a27d20469124efc9fc8bd114a6e87fed2d5f8abaf9a01f6609e",
+    "lastmod": "2026-05-17"
+  },
+  "/pokemon/exeggutor/": {
+    "hash": "2d26db049f6bd5474f24652ff639026bf44c0d185f386c8e3d4c9bf3f0a82d78",
     "lastmod": "2026-05-17"
   },
   "/pokemon/horsea/": {
-    "hash": "c10437e41c9b967b586f0fe3baa5071c2f66341105bffef0af2081f7326cb164",
+    "hash": "3d3e37bad6f6d33f93dad303ffd62af9c320a8c5c5043edd9cfd83450bf90f5c",
     "lastmod": "2026-05-17"
   },
   "/pokemon/seadra/": {
@@ -780,11 +788,19 @@
     "lastmod": "2026-05-17"
   },
   "/fr/pokemon/electrode/": {
-    "hash": "a513d9f0fe63c55fa9a2955df298493c33fd319835283649383a5b0ba748ceb7",
+    "hash": "ae4dcb90683b649f3bf24ad5c56e7ae36679324ee65e885c43f01537012febdb",
+    "lastmod": "2026-05-17"
+  },
+  "/fr/pokemon/exeggcute/": {
+    "hash": "b3d2a3293e721a47bdab9963399daa571df9ab376051a56ef8a46019698ce003",
+    "lastmod": "2026-05-17"
+  },
+  "/fr/pokemon/exeggutor/": {
+    "hash": "a0c24fb117f094e0a89340846e8be3a0f1771ded3daa472c4932dc677dca00fe",
     "lastmod": "2026-05-17"
   },
   "/fr/pokemon/horsea/": {
-    "hash": "c7e74806c6ce1719a8e59a4c2db8580bb45504f0339d39b01b9c8da10a6c6b16",
+    "hash": "4eff9664a801012dcdc52900be8f14b689e23e11efc1028c08929e5285f3ee1f",
     "lastmod": "2026-05-17"
   },
   "/fr/pokemon/seadra/": {
@@ -1184,11 +1200,19 @@
     "lastmod": "2026-05-17"
   },
   "/ja/pokemon/electrode/": {
-    "hash": "e2ca5637b0b8b3710f5bdf3c31e4836dfb695d9cdf81d296da99050b368cb8c2",
+    "hash": "a64b9fa192256429e0d1494d4916c81db51b1f3ce79fe0819de8bc6e8be2ac07",
+    "lastmod": "2026-05-17"
+  },
+  "/ja/pokemon/exeggcute/": {
+    "hash": "9cfa12105943f5c1c9eb00520a205923432af7d7fecbcddfa511f7a750ed5fa2",
+    "lastmod": "2026-05-17"
+  },
+  "/ja/pokemon/exeggutor/": {
+    "hash": "0c04db2512dba1fbb60da28de34533193e63f5266f12e5b64c27cfa07c17c982",
     "lastmod": "2026-05-17"
   },
   "/ja/pokemon/horsea/": {
-    "hash": "e939627a1894ed4982702d2460c25045f4539a0317ecccb6fddb52c2b72ea8b3",
+    "hash": "398ddb290977f849d31aea3f72b0f7ee27d64eba5f5d16bfaa1b60f8042da50c",
     "lastmod": "2026-05-17"
   },
   "/ja/pokemon/seadra/": {
@@ -1588,11 +1612,19 @@
     "lastmod": "2026-05-17"
   },
   "/ko/pokemon/electrode/": {
-    "hash": "126bb821fe7cc87b45fbc7d90568120227f01408bf1bab39e3ecefe822b62c4d",
+    "hash": "43019503182d216a980c05759c554cf5054b279bb66121f3ddd14b1df8ce4ae2",
+    "lastmod": "2026-05-17"
+  },
+  "/ko/pokemon/exeggcute/": {
+    "hash": "50d2e090876094c32cd738ef4517fc2837498000d4f1d7efff2a34d1b5d8a7fc",
+    "lastmod": "2026-05-17"
+  },
+  "/ko/pokemon/exeggutor/": {
+    "hash": "8f1f3c8afbeecc1daf892f1740a1ccb7ba088b48206988550fa9d1f1edb091eb",
     "lastmod": "2026-05-17"
   },
   "/ko/pokemon/horsea/": {
-    "hash": "36069748e165117aedb21423dbf0222d002392f02f63896ee0a7c55e2314831b",
+    "hash": "e04427961e2165436b1363a6863c82f318cbf03e40780cc898f753e330bafe27",
     "lastmod": "2026-05-17"
   },
   "/ko/pokemon/seadra/": {
@@ -1992,11 +2024,19 @@
     "lastmod": "2026-05-17"
   },
   "/zh/pokemon/electrode/": {
-    "hash": "6905fac7a933e18ae5145c111cc1cb9f6ae840fa19535bdd5abe96099ec0aee0",
+    "hash": "0a262b7f2b28cb502d1b823a155ccc23ad1e1b5203ba14701593f33754ae3c34",
+    "lastmod": "2026-05-17"
+  },
+  "/zh/pokemon/exeggcute/": {
+    "hash": "96ce9157e7196f3afe7d767e19503b81728547f3d7e24e046617445c6f03ad31",
+    "lastmod": "2026-05-17"
+  },
+  "/zh/pokemon/exeggutor/": {
+    "hash": "77db50194367c82fedf47688afeb794d2743f48226f827418f6cc69bffab67fa",
     "lastmod": "2026-05-17"
   },
   "/zh/pokemon/horsea/": {
-    "hash": "d20ee058f2c33fa86438b7bba5e00c5e9023e9eb2f667b1477b960eed1d24c1b",
+    "hash": "cc311475994505720cfeb7897ea407f8dc685d7050e994b0c388d091d6f00662",
     "lastmod": "2026-05-17"
   },
   "/zh/pokemon/seadra/": {
@@ -2020,23 +2060,23 @@
     "lastmod": "2026-05-16"
   },
   "/": {
-    "hash": "2fe121be1b37fddba5bfbe6b3387d3b916cf506efc10141a7ff69418f77a7ebb",
+    "hash": "ec6e2243e5a257d09be8040dd9c29fe76b5366229752a8b35f5acf5890683e10",
     "lastmod": "2026-05-17"
   },
   "/fr/": {
-    "hash": "4b1239f9ced63cbf6d482a50d132e1790c1f5e0897979cf2efd895ac2fed86a1",
+    "hash": "401ad9f5ed9ca6d7e466a8608a2814d1321257326103f03f829e1890ec3926b6",
     "lastmod": "2026-05-17"
   },
   "/ja/": {
-    "hash": "8c77849396ac7c8e3c4b825b6245d4d44336ddfb35d28dbef0c7fc17d37d830f",
+    "hash": "5d240bf7b5e4a53493f10bb50eff610813e9b8504aeddedd6617a6cf9e2b5b9d",
     "lastmod": "2026-05-17"
   },
   "/ko/": {
-    "hash": "89459d8597782d6efd819c8267ab200027ee404ec8bcbe592ceb5c360dc73684",
+    "hash": "f525cb80f9b545e2aca5db575b87221914ecae21a10099085a3ceb62eb7a4861",
     "lastmod": "2026-05-17"
   },
   "/zh/": {
-    "hash": "c2c3e339eafb93ee2bc0f2ed5ea54bd09453708606ea415db0be4eb0a83b9ce4",
+    "hash": "61b4f3949c18174f6a458fe87bed212ba7a50e0c5816a4baf53157bd50449b71",
     "lastmod": "2026-05-17"
   },
   "/info/": {
