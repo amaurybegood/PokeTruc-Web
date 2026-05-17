@@ -2519,6 +2519,232 @@
   "artist": "Naoyo Kimura"
 },
 {
+  "pokemonId": 106,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "106_Hitmonlee_jpn_vses2_26",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Shin-ichi Yoshida"
+},{
+  "pokemonId": 106,
+  "name": "Pokémon VS",
+  "imageName": "106_Hitmonlee_jpn_versus1_82",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Yuka Morii"
+},{
+  "pokemonId": 107,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "107_Hitmonchan_jpn_vses2_27",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Nobuyuki Habu"
+},{
+  "pokemonId": 107,
+  "name": "Pokémon VS",
+  "imageName": "107_Hitmonchan_jpn_versus1_83",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Yuka Morii"
+},{
+  "pokemonId": 107,
+  "name": "Call of Legends",
+  "imageName": "107_Hitmonchan_col1_57",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 108,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "108_Lickitung_jpn_vses1_30",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 108,
+  "name": "Pokémon VS",
+  "imageName": "108_Lickitung_jpn_versus1_17",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Miki Tanaka"
+},{
+  "pokemonId": 109,
+  "name": "Unnumbered Promos",
+  "imageName": "109_Koffing_jpn_unp_78f",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Natsu Sato"
+},{
+  "pokemonId": 109,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "109_Koffing_jpn_vses2_3",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 109,
+  "name": "Intro Pack: Bulbasaur Deck",
+  "imageName": "109_Koffing_jpn_ipb_39",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1999,
+  "artist": "Nobuyuki Habu"
+},{
+  "pokemonId": 109,
+  "name": "Call of Legends",
+  "imageName": "109_Koffing_col1_60",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 110,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "110_Weezing_jpn_vses3_7",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Keiji Kinebuchi"
+},{
+  "pokemonId": 110,
+  "name": "Pokémon VS",
+  "imageName": "110_Weezing_jpn_versus1_64",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 110,
+  "name": "Call of Legends",
+  "imageName": "110_Weezing_col1_38",
+  "rarity": "Rare",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 112,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "112_Rhydon_jpn_vses3_31",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 112,
+  "name": "Pokémon VS",
+  "imageName": "112_Rhydon_jpn_versus1_35",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Masako Yamashita"
+},{
+  "pokemonId": 112,
+  "name": "XY Promos",
+  "imageName": "112_Rhydon_jpn_xyp_113",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Shin Nagasawa"
+},{
+  "pokemonId": 113,
+  "name": "Unnumbered Promos",
+  "imageName": "113_Chansey_jpn_unp_78j",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Kaori Samoya"
+},{
+  "pokemonId": 113,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "113_Chansey_jpn_vses1_31",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Tomokazu Komiya"
+},{
+  "pokemonId": 113,
+  "name": "Challenge from the Darkness",
+  "imageName": "113_Chansey_jpn_b06_75",
+  "rarity": "Secret Rare",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1999,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 114,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "114_Tangela_jpn_vses2_4",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Miki Tanaka"
+},{
+  "pokemonId": 114,
+  "name": "Pokémon Web",
+  "imageName": "114_Tangela_jpn_web1_5",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 114,
+  "name": "Everyone's Exciting Battle",
+  "imageName": "114_Tangela_jpn_wak_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2012,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 115,
+  "name": "Unnumbered Promos",
+  "imageName": "115_Kangaskhan_jpn_unp_43",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 115,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "115_Kangaskhan_jpn_vses3_33",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Masako Yamashita"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",
