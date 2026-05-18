@@ -2337,7 +2337,18 @@
   "language": "🇯🇵",
   "year": 1998,
   "artist": "Nobuyuki Habu"
-},{
+},
+{
+  "pokemonId": 94,
+  "name": "Gem Pack Vol. 3",
+  "imageName": "94_Gengar_scn_cbb3_307",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2025,
+  "artist": "aspara"
+},
+{
   "pokemonId": 94,
   "name": "Unnumbered Promos",
   "imageName": "94_Gengar_jpn_unp_73",
