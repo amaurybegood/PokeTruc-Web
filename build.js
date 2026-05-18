@@ -123,7 +123,7 @@ const LANG = {
     creditsHeading: 'Credits',
     creditsBefore: 'A big thank you to Redditor "',
     creditsLinkText: 'TwentyFour7',
-    creditsAfter: '" for their invaluable help in finding cards that only exist in a single language.',
+    creditsAfter: '" for his precious help in finding cards that only exist in a single language.',
     backToPokedex: '← Pokédex',
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets featured',
