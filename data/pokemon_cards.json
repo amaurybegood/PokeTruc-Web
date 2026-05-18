@@ -760,6 +760,16 @@
     "artist": "Kagemaru Himeno"
   },
   {
+  "pokemonId": 19,
+  "name": "Gallant Galaxy: Charm",
+  "imageName": "19_Rattata_scn_cs5a_64",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "Mugi Hamada"
+},
+  {
     "pokemonId": 20,
     "name": "Gallant Galaxy: Charm",
     "imageName": "20_Raticate_scn_cs5a_65",
