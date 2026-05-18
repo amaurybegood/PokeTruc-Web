@@ -370,6 +370,16 @@
     "artist": "Ken Sugimori"
   },
   {
+  "pokemonId": 6,
+  "name": "Battle Party: Shared Dream",
+  "imageName": "6_Charizard_scn_csve1_14",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2025,
+  "artist": "LINNE"
+},
+  {
     "pokemonId": 7,
     "name": "My First Battle: Squirtle Deck",
     "imageName": "7_Squirtle_mfbs_1",
