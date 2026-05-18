@@ -1,5 +1,10 @@
 function getTheme() {
-  return localStorage.getItem('theme') || 'auto';
+  try { return localStorage.getItem('theme') || 'auto'; }
+  catch { return 'auto'; }
+}
+
+function setTheme(value) {
+  try { localStorage.setItem('theme', value); } catch {}
 }
 
 function applyTheme(theme) {
@@ -9,7 +14,14 @@ function applyTheme(theme) {
   else root.removeAttribute('data-theme');
 
   const btn = document.getElementById('theme-toggle');
-  if (btn) btn.textContent = theme === 'dark' ? '☀️' : theme === 'light' ? '🌙' : '🌓';
+  if (!btn) return;
+  btn.textContent = theme === 'dark' ? '☀️' : theme === 'light' ? '🌙' : '🌓';
+  // aria-label reflects current state (depends on i18n.js being loaded first).
+  const label = (typeof t === 'function')
+    ? t('theme.' + theme)
+    : ({ dark: 'Dark theme', light: 'Light theme', auto: 'Auto theme' })[theme];
+  btn.setAttribute('aria-label', label);
+  btn.setAttribute('aria-pressed', String(theme === 'dark'));
 }
 
 function toggleTheme() {
@@ -17,9 +29,10 @@ function toggleTheme() {
   const next = current === 'auto'
     ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark')
     : current === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('theme', next);
+  setTheme(next);
   applyTheme(next);
 }
 
 applyTheme(getTheme());
-document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+const themeBtn = document.getElementById('theme-toggle');
+if (themeBtn) themeBtn.addEventListener('click', toggleTheme);

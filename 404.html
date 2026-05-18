@@ -3,23 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PokéTruc — Page not found</title>
-  <link rel="icon" type="image/png" href="logo.png">
-  <link rel="stylesheet" href="style.css">
+  <title>PokéTruc — 404</title>
+  <meta name="robots" content="noindex,follow">
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="logo.png" alt="PokéTruc" class="site-logo"></a>
+    <a href="/" id="home-link"><img src="/logo.png" alt="PokéTruc" class="site-logo"></a>
     <h1>PokéTruc</h1>
   </header>
 
   <main style="text-align:center;padding:64px 24px;">
     <p style="font-size:4rem;margin-bottom:16px;">404</p>
-    <p style="color:var(--text-secondary);margin-bottom:32px;">This page doesn't exist.</p>
-    <a href="index.html" style="color:var(--accent);text-decoration:none;font-weight:500;">← Back to Pokédex</a>
+    <p id="msg" style="color:var(--text-secondary);margin-bottom:32px;">This page doesn't exist.</p>
+    <a href="/" id="back-link" style="color:var(--accent);text-decoration:none;font-weight:500;">← Back to Pokédex</a>
   </main>
 
-  <script src="i18n.js"></script>
-  <script src="theme.js"></script>
+  <script>
+    (function () {
+      var langs = {
+        fr: { html: 'fr',      msg: "Cette page n'existe pas.",       back: '← Retour au Pokédex', home: '/fr/' },
+        ja: { html: 'ja',      msg: 'このページは存在しません。',        back: '← 図鑑に戻る',         home: '/ja/' },
+        ko: { html: 'ko',      msg: '이 페이지는 존재하지 않습니다.',     back: '← 도감으로 돌아가기',   home: '/ko/' },
+        zh: { html: 'zh-Hans', msg: '此页面不存在。',                  back: '← 返回图鉴',            home: '/zh/' }
+      };
+      var m = location.pathname.match(/^\/(fr|ja|ko|zh)(\/|$)/);
+      if (!m) return;
+      var L = langs[m[1]];
+      document.documentElement.lang = L.html;
+      document.getElementById('msg').textContent = L.msg;
+      var back = document.getElementById('back-link');
+      back.textContent = L.back;
+      back.href = L.home;
+      document.getElementById('home-link').href = L.home;
+    })();
+  </script>
+  <script src="/i18n.js"></script>
+  <script src="/theme.js"></script>
 </body>
 </html>

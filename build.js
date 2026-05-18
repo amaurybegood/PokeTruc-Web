@@ -14,6 +14,10 @@ const cards    = JSON.parse(fs.readFileSync('data/pokemon_cards.json', 'utf8'));
 const BASE_URL = 'https://poketruc.com';
 const TODAY    = new Date().toISOString().split('T')[0];
 
+// External profile credited on the Info page for help discovering
+// language-exclusive cards.
+const REDDIT_TWENTYFOUR7_URL = 'https://www.reddit.com/user/TwentyFour7/';
+
 // Persistent build state: maps URL paths to { hash, lastmod }. Used so that
 // sitemap <lastmod> only advances when the actual rendered HTML changes —
 // keeping the freshness signal trustworthy for crawlers.
@@ -36,8 +40,8 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 15;
-const JS_V  = 12;
+const CSS_V = 18;
+const JS_V  = 13;
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
 
@@ -56,14 +60,15 @@ const LANG_INFO = [
   { flag: '🇬🇧', key: 'langEnglishHeading'  },
   { flag: '🇨🇳', key: 'langChineseHeading'  },
   { flag: '🇰🇷', key: 'langKoreanHeading'   },
+  { flag: '🇩🇪', key: 'langGermanHeading'   },
 ];
 
 const STATS_LANG_LABEL = {
-  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean'    },
-  fr: { '🇯🇵': 'japonaises', '🇬🇧': 'anglaises', '🇨🇳': 'chinoises', '🇰🇷': 'coréennes' },
-  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정' },
-  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占'   },
+  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German'      },
+  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande'   },
+  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定' },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정' },
+  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占'    },
 };
 
 // ISO language code for each flag emoji used on a card. Used by JSON-LD
@@ -73,6 +78,7 @@ const FLAG_TO_ISO = {
   '🇬🇧': 'en',
   '🇨🇳': 'zh-Hans',
   '🇰🇷': 'ko',
+  '🇩🇪': 'de',
 };
 
 const JOIN_RULES = {
@@ -92,6 +98,7 @@ const LANG = {
     pokedex: 'Pokédex',
     info: 'Info',
     searchPlaceholder: 'Search a Pokémon...',
+    skipToContent: 'Skip to main content',
     indexTitle: 'PokéTruc — Unique Pokémon TCG Card Illustrations',
     indexDescription: 'Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language (Japanese, English, Chinese or Korean). Free, ad-free, fan-made.',
     indexH1: 'Pokémon TCG illustrations / artworks that exist in only one language',
@@ -113,6 +120,10 @@ const LANG = {
       'This site is unofficial and fan-made. Pokémon and Pokémon character names are trademarks of Nintendo / Creatures Inc. / GAME FREAK inc.',
       'This site does not collect any personal data or require a user account. No information is transmitted or stored outside of your device.',
     ],
+    creditsHeading: 'Credits',
+    creditsBefore: 'A big thank you to Redditor "',
+    creditsLinkText: 'TwentyFour7',
+    creditsAfter: '" for their invaluable help in finding cards that only exist in a single language.',
     backToPokedex: '← Pokédex',
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets featured',
@@ -122,6 +133,7 @@ const LANG = {
     langEnglishHeading:  'English-exclusive cards',
     langChineseHeading:  'Chinese-exclusive cards',
     langKoreanHeading:   'Korean-exclusive cards',
+    langGermanHeading:   'German-exclusive cards',
     cardsSection: (n) => `${n} exclusive TCG card ${n === 1 ? 'illustration' : 'illustrations'}`,
     detailTitle: (name, n) => `${name} — Exclusive TCG Card ${n === 1 ? 'Illustration' : 'Illustrations'} | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -143,6 +155,7 @@ const LANG = {
     pokedex: 'Pokédex',
     info: 'Info',
     searchPlaceholder: 'Rechercher un Pokémon...',
+    skipToContent: 'Aller au contenu',
     indexTitle: 'PokéTruc — Illustrations exclusives de cartes Pokémon TCG',
     indexDescription: 'Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan.',
     indexH1: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue",
@@ -164,6 +177,10 @@ const LANG = {
       'Ce site est non officiel et créé par un fan. Pokémon et les noms des personnages Pokémon sont des marques déposées de Nintendo / Creatures Inc. / GAME FREAK inc.',
       "Ce site ne collecte aucune donnée personnelle et ne nécessite aucun compte utilisateur. Aucune information n'est transmise ou stockée en dehors de votre appareil.",
     ],
+    creditsHeading: 'Remerciements',
+    creditsBefore: 'Un grand merci au Redditeur "',
+    creditsLinkText: 'TwentyFour7',
+    creditsAfter: '" pour son aide précieuse à dénicher des cartes existant uniquement dans une seule langue.',
     backToPokedex: '← Pokédex',
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets présentés',
@@ -173,6 +190,7 @@ const LANG = {
     langEnglishHeading:  'Cartes exclusives anglaises',
     langChineseHeading:  'Cartes exclusives chinoises',
     langKoreanHeading:   'Cartes exclusives coréennes',
+    langGermanHeading:   'Cartes exclusives allemandes',
     cardsSection: (n) => `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG`,
     detailTitle: (name, n) =>
       `${name} — Illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG | PokéTruc`,
@@ -195,6 +213,7 @@ const LANG = {
     pokedex: '図鑑',
     info: '情報',
     searchPlaceholder: 'ポケモンをさがす',
+    skipToContent: 'メインコンテンツへスキップ',
     indexTitle: 'PokéTruc — 言語限定のポケモンTCGカードイラスト',
     indexDescription: 'PokéTrucでは、日本語・英語・中国語・韓国語など特定の言語でしか発行されていないポケモンTCGカードの限定イラストを掲載しています。完全無料・広告なし・ファン制作。',
     indexH1: '1つの言語にしか存在しないポケモンTCGのイラスト / アートワーク',
@@ -216,6 +235,10 @@ const LANG = {
       'このサイトは非公式のファン制作サイトです。ポケモンおよびポケモンキャラクター名はNintendo / Creatures Inc. / GAME FREAK inc.の商標です。',
       'このサイトは個人情報を収集せず、ユーザーアカウントも不要です。いかなる情報もデバイス外に送信・保存されません。',
     ],
+    creditsHeading: 'クレジット',
+    creditsBefore: '1つの言語にしか存在しないカードを見つける際にご協力いただいたRedditユーザー「',
+    creditsLinkText: 'TwentyFour7',
+    creditsAfter: '」さんに心より感謝いたします。',
     backToPokedex: '← 図鑑',
     upToPokedex:   '↑ 図鑑',
     setsHeading: '収録セット',
@@ -225,6 +248,7 @@ const LANG = {
     langEnglishHeading:  '英語限定カード',
     langChineseHeading:  '中国語限定カード',
     langKoreanHeading:   '韓国語限定カード',
+    langGermanHeading:   'ドイツ語限定カード',
     cardsSection: (n) => `${n}枚の言語限定TCGカードイラスト`,
     detailTitle: (name, n) => `${name} — 言語限定TCGカードイラスト${n}枚 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -246,6 +270,7 @@ const LANG = {
     pokedex: '도감',
     info: '정보',
     searchPlaceholder: '포켓몬 검색',
+    skipToContent: '본문으로 건너뛰기',
     indexTitle: 'PokéTruc — 언어 한정 포켓몬 TCG 카드 일러스트',
     indexDescription: 'PokéTruc은 일본어, 영어, 중국어, 한국어 등 하나의 언어로만 발매된 포켓몬 TCG 카드의 한정 일러스트를 정리합니다. 무료, 광고 없음, 팬 제작.',
     indexH1: '한 가지 언어로만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
@@ -267,6 +292,10 @@ const LANG = {
       '이 사이트는 비공식 팬 제작 사이트입니다. 포켓몬 및 포켓몬 캐릭터 이름은 Nintendo / Creatures Inc. / GAME FREAK inc.의 상표입니다.',
       '이 사이트는 개인 정보를 수집하지 않으며 사용자 계정도 필요하지 않습니다. 어떠한 정보도 기기 외부로 전송되거나 저장되지 않습니다.',
     ],
+    creditsHeading: '감사의 말',
+    creditsBefore: '한 가지 언어로만 존재하는 카드를 찾는 데 큰 도움을 주신 Reddit 사용자 "',
+    creditsLinkText: 'TwentyFour7',
+    creditsAfter: '" 님께 진심으로 감사드립니다.',
     backToPokedex: '← 도감',
     upToPokedex:   '↑ 도감',
     setsHeading: '수록 세트',
@@ -276,6 +305,7 @@ const LANG = {
     langEnglishHeading:  '영어 한정 카드',
     langChineseHeading:  '중국어 한정 카드',
     langKoreanHeading:   '한국어 한정 카드',
+    langGermanHeading:   '독일어 한정 카드',
     cardsSection: (n) => `${n}장의 언어 한정 TCG 카드 일러스트`,
     detailTitle: (name, n) => `${name} — 언어 한정 TCG 카드 일러스트 ${n}장 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -297,6 +327,7 @@ const LANG = {
     pokedex: '图鉴',
     info: '信息',
     searchPlaceholder: '搜索宝可梦',
+    skipToContent: '跳到主要内容',
     indexTitle: 'PokéTruc — 语言独占的宝可梦 TCG 卡牌插画',
     indexDescription: 'PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。',
     indexH1: '仅在一种语言中发行的宝可梦 TCG 插画 / 美术图',
@@ -318,6 +349,10 @@ const LANG = {
       '本网站是非官方的粉丝制作网站。宝可梦及宝可梦角色名称是 Nintendo / Creatures Inc. / GAME FREAK inc. 的商标。',
       '本网站不收集任何个人数据，也不需要用户账户。任何信息均不会在设备外部传输或存储。',
     ],
+    creditsHeading: '鸣谢',
+    creditsBefore: '特别感谢 Reddit 用户「',
+    creditsLinkText: 'TwentyFour7',
+    creditsAfter: '」协助寻找仅以单一语言发行的卡牌。',
     backToPokedex: '← 图鉴',
     upToPokedex:   '↑ 图鉴',
     setsHeading: '收录的卡组',
@@ -327,6 +362,7 @@ const LANG = {
     langEnglishHeading:  '英文独占卡牌',
     langChineseHeading:  '中文独占卡牌',
     langKoreanHeading:   '韩文独占卡牌',
+    langGermanHeading:   '德文独占卡牌',
     cardsSection: (n) => `${n} 张语言独占 TCG 卡牌插画`,
     detailTitle: (name, n) => `${name} — ${n} 张语言独占 TCG 卡牌插画 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -406,7 +442,8 @@ const STATS_BUILDERS = {
     const yearPart = (minY === maxY) ? `publiée${count > 1 ? 's' : ''} en ${minY}` : `de ${minY} à ${maxY}`;
     const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => {
       const n = byLang[l.flag];
-      return `${n} carte${n > 1 ? 's' : ''} ${STATS_LANG_LABEL.fr[l.flag]}`;
+      const s = n > 1 ? 's' : '';
+      return `${n} carte${s} ${STATS_LANG_LABEL.fr[l.flag]}${s}`;
     });
     const langSentence = langParts.length ? `La collection comprend ${joinListLang(langParts, 'fr')}.` : '';
     let artistSentence = '';
@@ -496,15 +533,22 @@ function hreflangBlock(urlsByLang) {
 function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, ogImage, twitterCard }) {
   const og = ogImage || `${BASE_URL}/logo.png`;
   const twCard = twitterCard || 'summary_large_image';
+  const t = escapeHtml(title);
+  const d = escapeHtml(description);
   return `  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title}</title>
-  <meta name="description" content="${description}">
+  <title>${t}</title>
+  <meta name="description" content="${d}">
   <meta name="robots" content="index, follow">
 
+  <link rel="preload" as="style" href="/style.css?v=${CSS_V}">
+  <link rel="preload" as="image" href="/logo.webp" type="image/webp">
+  <link rel="dns-prefetch" href="//gc.zgo.at">
+  <link rel="preconnect" href="//gc.zgo.at" crossorigin>
+
   <!-- Open Graph -->
-  <meta property="og:title" content="${title}">
-  <meta property="og:description" content="${description}">
+  <meta property="og:title" content="${t}">
+  <meta property="og:description" content="${d}">
   <meta property="og:image" content="${og}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${canonical}">
@@ -512,8 +556,8 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="${twCard}">
-  <meta name="twitter:title" content="${title}">
-  <meta name="twitter:description" content="${description}">
+  <meta name="twitter:title" content="${t}">
+  <meta name="twitter:description" content="${d}">
   <meta name="twitter:image" content="${og}">
 
   <link rel="canonical" href="${canonical}">
@@ -580,11 +624,11 @@ function scriptTags() {
 
 // Card-language adjective per UI language, used in image alt-text.
 const CARD_LANG_ADJ = {
-  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive' },
-  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne' },
-  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정' },
-  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占' },
+  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇩🇪': 'German-exclusive' },
+  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇩🇪': 'exclusivité allemande' },
+  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定' },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정' },
+  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇩🇪': '德文独占' },
 };
 
 const CARD_ALT_SUFFIX = {
@@ -770,8 +814,8 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
 
   const head = headBlock({
     lang,
-    title: escapeHtml(title),
-    description: escapeHtml(description),
+    title,
+    description,
     canonical,
     urlsByLang,
     jsonLd,
@@ -803,10 +847,11 @@ ${head}
 ${navLinks}
 </head>
 <body data-lang-prefix="${langPathPrefix(lang)}">
+<a href="#main-content" class="skip-link">${escapeHtml(L.skipToContent)}</a>
 
 ${headerBlock(lang, { slug }, 'pokemon')}
 
-  <main class="pokemon-page">
+  <main id="main-content" class="pokemon-page">
     <div class="pokemon-hero">
       <a href="${pathRoot(lang)}" class="back-link">${escapeHtml(L.backToPokedex)}</a>
       <img src="/monsters/${pokemon.imageName}.png"
@@ -878,12 +923,19 @@ function indexPageHTML(lang, pokemonsWithCards) {
       "description": L.indexDescription,
     },
   };
-  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [websiteSchema, collectionPage] });
+  const breadcrumbList = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": L.pokedex, "item": urlForRoot(lang) },
+    ],
+  };
+  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [websiteSchema, collectionPage, breadcrumbList] });
 
   const head = headBlock({
     lang,
-    title: escapeHtml(L.indexTitle),
-    description: escapeHtml(L.indexDescription),
+    title: L.indexTitle,
+    description: L.indexDescription,
     canonical,
     urlsByLang,
     jsonLd,
@@ -908,10 +960,11 @@ ${head}
   </style></noscript>
 </head>
 <body data-lang-prefix="${langPathPrefix(lang)}">
+<a href="#main-content" class="skip-link">${escapeHtml(L.skipToContent)}</a>
 
 ${headerBlock(lang, '', 'index')}
 
-  <main>
+  <main id="main-content">
     <h1 class="page-title visually-hidden">${escapeHtml(L.indexH1)}</h1>
 
     <div class="search-row">
@@ -956,17 +1009,32 @@ function infoPageHTML(lang) {
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForInfo(l)]));
   const canonical  = urlsByLang[lang];
 
+  const breadcrumbList = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": L.pokedex, "item": urlForRoot(lang) },
+      { "@type": "ListItem", "position": 2, "name": L.info,    "item": canonical },
+    ],
+  };
+  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [breadcrumbList] });
+
   const head = headBlock({
     lang,
-    title: escapeHtml(L.infoTitle),
-    description: escapeHtml(L.infoDescription),
+    title: L.infoTitle,
+    description: L.infoDescription,
     canonical,
     urlsByLang,
+    jsonLd,
     twitterCard: 'summary',
   });
 
   const aboutHTML = L.aboutBody.map(p => `<p>${escapeHtml(p)}</p>`).join('\n        ');
   const disclaimerHTML = L.disclaimerBody.map(p => `<p>${escapeHtml(p)}</p>`).join('\n        ');
+  const creditsHTML =
+    `<p>${escapeHtml(L.creditsBefore)}` +
+    `<a href="${REDDIT_TWENTYFOUR7_URL}" class="info-link" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText)}</a>` +
+    `${escapeHtml(L.creditsAfter)}</p>`;
 
   return `<!DOCTYPE html>
 <html lang="${HTML_LANG[lang]}">
@@ -974,16 +1042,24 @@ function infoPageHTML(lang) {
 ${head}
 </head>
 <body data-lang-prefix="${langPathPrefix(lang)}">
+<a href="#main-content" class="skip-link">${escapeHtml(L.skipToContent)}</a>
 
 ${headerBlock(lang, '', 'info')}
 
-  <main class="info-page">
+  <main id="main-content" class="info-page">
     <h1 class="page-title">${escapeHtml(L.infoH1)}</h1>
 
     <div class="info-card">
       <h2>${escapeHtml(L.aboutHeading)}</h2>
       <div>
         ${aboutHTML}
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h2>${escapeHtml(L.creditsHeading)}</h2>
+      <div>
+        ${creditsHTML}
       </div>
     </div>
 
@@ -1075,7 +1151,7 @@ for (const lang of LANGS) {
 // 4) Sitemap with hreflang annotations. <lastmod> per URL comes from the
 //    per-page hash tracker so it only changes when the rendered HTML changes.
 const sitemapUrls = [];
-function sitemapEntry(urlsByLang, lang, urlKey) {
+function sitemapEntry(urlsByLang, lang, urlKey, { priority, changefreq }) {
   const alt = LANGS.map(l =>
     `    <xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${urlsByLang[l]}"/>`
   ).join('\n');
@@ -1083,6 +1159,8 @@ function sitemapEntry(urlsByLang, lang, urlKey) {
   return `  <url>
     <loc>${urlsByLang[lang]}</loc>
     <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
 ${alt}
     <xhtml:link rel="alternate" hreflang="x-default" href="${urlsByLang.en}"/>
   </url>`;
@@ -1091,18 +1169,18 @@ ${alt}
 // Index pages
 {
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForRoot(l)]));
-  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathRoot(lang)));
+  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathRoot(lang), { priority: '1.0', changefreq: 'weekly' }));
 }
 // Info pages
 {
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForInfo(l)]));
-  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathInfo(lang)));
+  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathInfo(lang), { priority: '0.7', changefreq: 'monthly' }));
 }
 // Pokémon pages
 for (const p of pokemonsWithCards) {
   const slug = slugify(p.name.en);
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForPokemon(l, slug)]));
-  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathPokemon(lang, slug)));
+  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathPokemon(lang, slug), { priority: '0.8', changefreq: 'monthly' }));
 }
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -1113,6 +1191,22 @@ ${sitemapUrls.join('\n')}
 
 fs.writeFileSync('sitemap.xml', sitemap, 'utf8');
 
+// Clean up orphan /pokemon/<slug>/ directories from prior builds whose Pokémon
+// were removed from data (e.g. all cards de-listed). Without this they linger
+// on disk serving stale content that isn't in the sitemap.
+const validSlugs = new Set(pokemonsWithCards.map(p => slugify(p.name.en)));
+let orphanCount = 0;
+for (const lang of LANGS) {
+  const baseDir = (lang === 'en' ? '' : lang + '/') + 'pokemon';
+  if (!fs.existsSync(baseDir)) continue;
+  for (const d of fs.readdirSync(baseDir)) {
+    if (!validSlugs.has(d)) {
+      fs.rmSync(`${baseDir}/${d}`, { recursive: true, force: true });
+      orphanCount++;
+    }
+  }
+}
+
 // Persist content hashes for the next build.
 fs.writeFileSync(STATE_PATH, JSON.stringify(newState, null, 2), 'utf8');
 
@@ -1121,3 +1215,4 @@ console.log(`✓ ${LANGS.length} index + ${LANGS.length} info pages générés +
 console.log(`✓ sitemap.xml mis à jour (${sitemapUrls.length} URLs, hreflang inclus)`);
 console.log(`✓ Contenu modifié : ${changedCount} pages · inchangé : ${unchangedCount} pages`);
 console.log(`✓ Total : ${pageCount} fichiers HTML générés`);
+if (orphanCount > 0) console.log(`✓ ${orphanCount} dossier(s) orphelin(s) supprimé(s)`);

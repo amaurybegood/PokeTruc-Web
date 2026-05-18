@@ -42,6 +42,10 @@ const translations = {
     'stat.wip':     'Pkm in progress',
     'stat.soon':    'Pkm coming soon',
     'load.error':   'Failed to load data. Please try again later.',
+    'retry':        'Retry',
+    'theme.auto':   'Auto theme — click to switch',
+    'theme.dark':   'Dark theme — click for light',
+    'theme.light':  'Light theme — click for dark',
   },
   fr: {
     'coming.soon':  'Bientôt',
@@ -52,6 +56,10 @@ const translations = {
     'stat.wip':     'Pkm en cours',
     'stat.soon':    'Pkm à venir',
     'load.error':   'Impossible de charger les données. Veuillez réessayer.',
+    'retry':        'Réessayer',
+    'theme.auto':   'Thème auto — clic pour changer',
+    'theme.dark':   'Thème sombre — clic pour clair',
+    'theme.light':  'Thème clair — clic pour sombre',
   },
   ja: {
     'coming.soon':  '近日公開',
@@ -62,6 +70,10 @@ const translations = {
     'stat.wip':     'ポケモン作業中',
     'stat.soon':    'ポケモン近日公開',
     'load.error':   'データを読み込めませんでした。後でもう一度お試しください。',
+    'retry':        '再試行',
+    'theme.auto':   '自動テーマ — クリックで切替',
+    'theme.dark':   'ダークテーマ — クリックでライト',
+    'theme.light':  'ライトテーマ — クリックでダーク',
   },
   ko: {
     'coming.soon':  '출시 예정',
@@ -72,6 +84,10 @@ const translations = {
     'stat.wip':     '포켓몬 진행 중',
     'stat.soon':    '포켓몬 출시 예정',
     'load.error':   '데이터를 불러올 수 없습니다. 나중에 다시 시도해 주세요.',
+    'retry':        '다시 시도',
+    'theme.auto':   '자동 테마 — 클릭하여 전환',
+    'theme.dark':   '다크 테마 — 클릭하여 라이트로',
+    'theme.light':  '라이트 테마 — 클릭하여 다크로',
   },
   zh: {
     'coming.soon':  '即将推出',
@@ -82,6 +98,10 @@ const translations = {
     'stat.wip':     '宝可梦进行中',
     'stat.soon':    '宝可梦即将推出',
     'load.error':   '无法加载数据，请稍后重试。',
+    'retry':        '重试',
+    'theme.auto':   '自动主题 — 点击切换',
+    'theme.dark':   '深色主题 — 点击切换浅色',
+    'theme.light':  '浅色主题 — 点击切换深色',
   },
 };
 

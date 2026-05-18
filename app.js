@@ -16,19 +16,30 @@ function slugify(name) {
 }
 
 async function loadData() {
+  const loader = document.getElementById('loader');
   try {
     const [pkRes, cardRes] = await Promise.all([
       fetch('/data/pokemons.json'),
       fetch('/data/pokemon_cards.json'),
     ]);
+    if (!pkRes.ok || !cardRes.ok) throw new Error('HTTP ' + (pkRes.status || cardRes.status));
     pokemons = await pkRes.json();
     cards = await cardRes.json();
-    document.getElementById('loader').classList.add('hidden');
+    loader.classList.add('hidden');
     renderStats();
     applyFilter();
-  } catch {
-    document.getElementById('loader').innerHTML =
-      `<p style="color:var(--text-secondary);text-align:center">${t('load.error')}</p>`;
+  } catch (e) {
+    console.error('Data load failed:', e);
+    loader.innerHTML = `
+      <div role="alert" style="text-align:center;padding:24px;">
+        <p style="color:var(--text);margin-bottom:16px;font-weight:500;">${t('load.error')}</p>
+        <button type="button" id="retry-load" style="padding:8px 18px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;cursor:pointer;font-size:0.9rem;font-weight:500;">${t('retry')}</button>
+      </div>`;
+    const btn = document.getElementById('retry-load');
+    if (btn) btn.addEventListener('click', () => {
+      loader.innerHTML = '<div class="loader-spinner" aria-label="Loading"></div>';
+      loadData();
+    });
   }
 }
 
