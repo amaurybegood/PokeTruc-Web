@@ -100,6 +100,16 @@
     "artist": "Kyoko Umemoto"
   },
   {
+  "pokemonId": 2,
+  "name": "Gallant Galaxy: Brave",
+  "imageName": "2_Ivysaur_scn_cs5b_2",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "Atsuya Uki"
+},
+  {
     "pokemonId": 3,
     "name": "Primordial Arts: Overgrow",
     "imageName": "3_Venusaur_scn_cs3a_130",
