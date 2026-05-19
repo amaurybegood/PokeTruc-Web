@@ -2815,6 +2815,214 @@
   "artist": "Tomokazu Komiya"
 },
 {
+  "pokemonId": 120,
+  "name": "Unnumbered Promos",
+  "imageName": "120_Staryu_jpn_unp_37",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 120,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "120_Staryu_jpn_vses3_17",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Miki Tanaka"
+},{
+  "pokemonId": 122,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "122_Mr. Mime_jpn_vses1_21",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Kasumi Matsuda"
+},{
+  "pokemonId": 123,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "123_Scyther_jpn_vses3_8",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Hironobu Yoshida"
+},{
+  "pokemonId": 123,
+  "name": "My First Battle: Bulbasaur Deck",
+  "imageName": "123_Scyther_mfbb_9",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 124,
+  "name": "Unnumbered Promos",
+  "imageName": "124_Jynx_jpn_unp_119",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 124,
+  "name": "Unnumbered Promos",
+  "imageName": "124_Jynx_jpn_unp_38",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 124,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "124_Jynx_jpn_vses2_19",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 124,
+  "name": "Intro Pack: Bulbasaur Deck",
+  "imageName": "124_Jynx_jpn_ipb_37",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1999,
+  "artist": "Miki Tanaka"
+},{
+  "pokemonId": 124,
+  "name": "Pokémon VS",
+  "imageName": "124_Jynx_jpn_versus1_74",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 124,
+  "name": "Pokémon VS",
+  "imageName": "124_Jynx_jpn_versus1_47",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Shin-ichi Yoshida"
+},{
+  "pokemonId": 125,
+  "name": "Unnumbered Promos",
+  "imageName": "125_Electabuzz_jpn_unp_48",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 125,
+  "name": "Intro Pack: Bulbasaur Deck",
+  "imageName": "125_Electabuzz_jpn_ipb_26",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1999,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 125,
+  "name": "Pokémon VS",
+  "imageName": "125_Electabuzz_jpn_versus1_29",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 125,
+  "name": "Everyone's Exciting Battle",
+  "imageName": "125_Electabuzz_jpn_wak_17",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2012,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 125,
+  "name": "My First Battle: Pikachu Deck",
+  "imageName": "125_Electabuzz_mfbp_9",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "hncl"
+},{
+  "pokemonId": 126,
+  "name": "Intro Pack: Squirtle Deck",
+  "imageName": "126_Magmar_jpn_ips_39",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1999,
+  "artist": "Shin-ichi Yoshida"
+},{
+  "pokemonId": 126,
+  "name": "Pokémon VS",
+  "imageName": "126_Magmar_jpn_versus1_88",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 126,
+  "name": "Diamond & Pearl Promos",
+  "imageName": "126_Magmar_jpn_dpp_64",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2006,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 126,
+  "name": "Bastiodon the Defender",
+  "imageName": "126_Magmar_jpn_btd_2",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2007,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 126,
+  "name": "Call of Legends",
+  "imageName": "126_Magmar_col1_62",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 126,
+  "name": "Everyone's Exciting Battle",
+  "imageName": "126_Magmar_jpn_wak_6",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2012,
+  "artist": "sui"
+},{
+  "pokemonId": 126,
+  "name": "My First Battle: Charmander Deck",
+  "imageName": "126_Magmar_mfbc_9",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Ryuta Fuse"
+},
+{
   "pokemonId": 129,
   "name": "Unnumbered Promos",
   "imageName": "129_Magikarp_jpn_unp_78c",

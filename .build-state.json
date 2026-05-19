@@ -436,11 +436,35 @@
     "lastmod": "2026-05-19"
   },
   "/pokemon/seadra/": {
-    "hash": "af641877ecd422a5d7abadd5be02afeb16e3a77183fc4d5948e62f7b126beff3",
+    "hash": "bf32ec17d843a8b15d9cb39b34de8b886dc935b29b8005c775f5096ad0cd4ecd",
+    "lastmod": "2026-05-19"
+  },
+  "/pokemon/staryu/": {
+    "hash": "06d593a5110a68181e518f18e64977f2a9d043cbf0e4481613653ec2133c5ff5",
+    "lastmod": "2026-05-19"
+  },
+  "/pokemon/mr-mime/": {
+    "hash": "77d7f43d34ba76e95d1c296a572b2b9be2dc18a62ad818d94fb3a3b1b74ce800",
+    "lastmod": "2026-05-19"
+  },
+  "/pokemon/scyther/": {
+    "hash": "f929085a7b06f61a410accb17b8fd667bf606eeb6f2b83e009d471af46277ee9",
+    "lastmod": "2026-05-19"
+  },
+  "/pokemon/jynx/": {
+    "hash": "0d7c798fdb0143af3d83cd2eb10208ea0bce24b5e976e10a00f66eb912180520",
+    "lastmod": "2026-05-19"
+  },
+  "/pokemon/electabuzz/": {
+    "hash": "abfc2bba65c8cb334050544ee138444ee0e653e43b6c3003f612e29cca532f43",
+    "lastmod": "2026-05-19"
+  },
+  "/pokemon/magmar/": {
+    "hash": "b3037b09227d3096a6e22c2c5d7fc37c5d04fd598f599cc539a5c011a5510256",
     "lastmod": "2026-05-19"
   },
   "/pokemon/magikarp/": {
-    "hash": "7c2d7e16b8e07d3638dd1b5b2a89ab44ef08967d5ef8436f0a167e546ffda2eb",
+    "hash": "c30bbcded3bf2d2c047bcf6909fc7d7756d0db010db5adf483c6c97f8dc398e1",
     "lastmod": "2026-05-19"
   },
   "/pokemon/lapras/": {
@@ -892,11 +916,35 @@
     "lastmod": "2026-05-19"
   },
   "/fr/pokemon/seadra/": {
-    "hash": "3cc1d37d87fa2c5b1f9e54a5d44ce0fd5ceb53f40dba31e5f4c830af11ffab06",
+    "hash": "366aa9fd8f891afb73bd5d0185cbc748c9740f91fb1985a6235dedd73eab5f43",
+    "lastmod": "2026-05-19"
+  },
+  "/fr/pokemon/staryu/": {
+    "hash": "aab5a70350cd2a039ae917f491fdaca169b1da56d924f6605bdf66c03335535a",
+    "lastmod": "2026-05-19"
+  },
+  "/fr/pokemon/mr-mime/": {
+    "hash": "7ec1c279420599de6d693facd8ccb394d9204a3315d480a1d04174c9caff3506",
+    "lastmod": "2026-05-19"
+  },
+  "/fr/pokemon/scyther/": {
+    "hash": "a661a0c89eba106039b41ca68b74b54e4aaefa596a5c081f5e2042b10ea2a4bb",
+    "lastmod": "2026-05-19"
+  },
+  "/fr/pokemon/jynx/": {
+    "hash": "3bb7aaadd0c9055fed899fd8d6357203363c67fdde763bcc2d30336455c614f3",
+    "lastmod": "2026-05-19"
+  },
+  "/fr/pokemon/electabuzz/": {
+    "hash": "52b45533365564e1aa6b3411cbcbbe065205e1c900ba864956b47bacee61797b",
+    "lastmod": "2026-05-19"
+  },
+  "/fr/pokemon/magmar/": {
+    "hash": "de8acef0865ba89a54efca06f72df9bd821f6316cf93b30f7bfe3138a405990d",
     "lastmod": "2026-05-19"
   },
   "/fr/pokemon/magikarp/": {
-    "hash": "a39b1b3815242c47e1927312dbc4bb978ed02729b1486ad6e8b57a4caa523c8b",
+    "hash": "f83a50c7a75a8964323b6d88390c21eadf176b80e1116e3ed2162f76e07949d1",
     "lastmod": "2026-05-19"
   },
   "/fr/pokemon/lapras/": {
@@ -1348,11 +1396,35 @@
     "lastmod": "2026-05-19"
   },
   "/ja/pokemon/seadra/": {
-    "hash": "98a366f33125334412854936f7708235173044cb7523dece62d9261a65ef3882",
+    "hash": "45cd5dc29c8819680f4b57d4e213bc04907a88e389083facec604059451bd70b",
+    "lastmod": "2026-05-19"
+  },
+  "/ja/pokemon/staryu/": {
+    "hash": "96e8c294f75e6a5cdf86519b6af5e5e3b24afaba3fd29dbbee4c7ecedf6029de",
+    "lastmod": "2026-05-19"
+  },
+  "/ja/pokemon/mr-mime/": {
+    "hash": "5571387b53863b74704bc7e9b089bcc60e3a4c841f0d143eb6bfb6ed182b54c5",
+    "lastmod": "2026-05-19"
+  },
+  "/ja/pokemon/scyther/": {
+    "hash": "78760a8fa4a9b658af74352ddaf1fe5f387e8a9fe62366e0acafeb30d5ac77fe",
+    "lastmod": "2026-05-19"
+  },
+  "/ja/pokemon/jynx/": {
+    "hash": "8e13e836f4f5cebf8c4be1f053786bd6891c6735974df8d4babe7caf104ba6b5",
+    "lastmod": "2026-05-19"
+  },
+  "/ja/pokemon/electabuzz/": {
+    "hash": "d54ac96e2878617e0a0980ad41da8feb6d566792e48df0541c5807ec4ec1efc0",
+    "lastmod": "2026-05-19"
+  },
+  "/ja/pokemon/magmar/": {
+    "hash": "a1885ef9ed3706523c6c4d89335c9984723998fe99ef664db9e921e315246453",
     "lastmod": "2026-05-19"
   },
   "/ja/pokemon/magikarp/": {
-    "hash": "e8fcdd1981c0f4e2832d7d743f23f85e8c3718ddf54a04a0e71987d19c13f773",
+    "hash": "c74e8419fde338e7434e04f2aad61952b864f011d09835cad5101489bf32cd1e",
     "lastmod": "2026-05-19"
   },
   "/ja/pokemon/lapras/": {
@@ -1804,11 +1876,35 @@
     "lastmod": "2026-05-19"
   },
   "/ko/pokemon/seadra/": {
-    "hash": "c9e983766488f396eb03a9542ad23e81cf41f9232a099106d4660028abc16d91",
+    "hash": "cb8efa3e823d2dfb3ab0f812cea6d2a27c4bf6c97c187ae43643a495f7385090",
+    "lastmod": "2026-05-19"
+  },
+  "/ko/pokemon/staryu/": {
+    "hash": "f456daddd1d9fe694200863dda975555f5d383b5085e1857c37c0ea88279fc5f",
+    "lastmod": "2026-05-19"
+  },
+  "/ko/pokemon/mr-mime/": {
+    "hash": "3f80a2ed3888ac50757eaf8a42729d279d982f696d4bc3d3cb379926edb55e7c",
+    "lastmod": "2026-05-19"
+  },
+  "/ko/pokemon/scyther/": {
+    "hash": "57cb3847a243bad9df1a779d96756651e82f1ff86a3163a816ba6d77e2121309",
+    "lastmod": "2026-05-19"
+  },
+  "/ko/pokemon/jynx/": {
+    "hash": "18b833145119ee2b8d37eb1e8166ea67ba0d41b8930305a9ae768dd6975bac88",
+    "lastmod": "2026-05-19"
+  },
+  "/ko/pokemon/electabuzz/": {
+    "hash": "19bec14f0c9ca155f558b5eba3a859680a306423280afc77a62d41be37a0deac",
+    "lastmod": "2026-05-19"
+  },
+  "/ko/pokemon/magmar/": {
+    "hash": "fd5aa15eb1e5f3da4ee0811b6cc7fbd1732231a948372113bbe0bf028d8211eb",
     "lastmod": "2026-05-19"
   },
   "/ko/pokemon/magikarp/": {
-    "hash": "b5e77813b8db42016ba445d031effa0738a58761c842fa538eb04038ab89a9e9",
+    "hash": "1d2fec293afe6619b22707d58a80c99b53a76e9c1ae6ee6cd1503fc6c5e3e8ee",
     "lastmod": "2026-05-19"
   },
   "/ko/pokemon/lapras/": {
@@ -2260,11 +2356,35 @@
     "lastmod": "2026-05-19"
   },
   "/zh/pokemon/seadra/": {
-    "hash": "f9ff2630165c149243de81217e0af3f2cf5a25cb3a71234bc57a1b5b8e42ce1e",
+    "hash": "897d40b2847585c95f5b553c19f22008dcb9f2f3fd1abfbc46b3ac8a91ad716a",
+    "lastmod": "2026-05-19"
+  },
+  "/zh/pokemon/staryu/": {
+    "hash": "1f320c697047501d49ff341bfb588d01780b532575bfca85b5804167c347d64a",
+    "lastmod": "2026-05-19"
+  },
+  "/zh/pokemon/mr-mime/": {
+    "hash": "0feada258d7b911d466697f8a299f88e1f6889b74c20bbe29020bbf0af0a43fb",
+    "lastmod": "2026-05-19"
+  },
+  "/zh/pokemon/scyther/": {
+    "hash": "460a7b1e2701be98da6d535901ba0082bf669685b18a3ce7bdc9736c1b4764d6",
+    "lastmod": "2026-05-19"
+  },
+  "/zh/pokemon/jynx/": {
+    "hash": "70a60bfa4c61468e0be1ad24259e3cc55304441e2b337f64632f0bcb23dbea0e",
+    "lastmod": "2026-05-19"
+  },
+  "/zh/pokemon/electabuzz/": {
+    "hash": "81456391098b4cead09a1cb4b25606de9789d8230bfc10b449056d6c35908328",
+    "lastmod": "2026-05-19"
+  },
+  "/zh/pokemon/magmar/": {
+    "hash": "db616b21605c8e3f0fdf0f6b16293b09686020cc495f58d3d537f5e838e78af6",
     "lastmod": "2026-05-19"
   },
   "/zh/pokemon/magikarp/": {
-    "hash": "27f300095aac6a3754db82962610bf00aa10260871c06fb7128713b5f3f944fe",
+    "hash": "b788ddbf7038441c2c6e68d327844096030e82564dfdf1fece075d9fe80bd801",
     "lastmod": "2026-05-19"
   },
   "/zh/pokemon/lapras/": {
@@ -2280,23 +2400,23 @@
     "lastmod": "2026-05-19"
   },
   "/": {
-    "hash": "7729e0b1a3959dddee64d686805091ce001beecc4dc696a7a32b7d754eb3af2c",
+    "hash": "f570c74f2796a3aeea58918380bb9654c425d6fa195f1f961e6f1a05d1d103a7",
     "lastmod": "2026-05-19"
   },
   "/fr/": {
-    "hash": "e3d0fba84c96ac7c1d0a3e1a8d4e990297cdbcb3dc9a0742fa41b86b366b8a3d",
+    "hash": "aba5ad36f268d4c736003b1be5d6ad38c57715b4e0aae34f92992112c7bb9e2b",
     "lastmod": "2026-05-19"
   },
   "/ja/": {
-    "hash": "9dc96f9f1ca26dcf0a86aa09a23c9f69a94a2d6a267ccc9f9958d40ab7c9a12d",
+    "hash": "87e078e5f852c27becb92ad1a2e147898700138356e09d535fbc78784c8d5133",
     "lastmod": "2026-05-19"
   },
   "/ko/": {
-    "hash": "92e19488b54c1a4b7b4e3a1a123c5276e4838d37119125c06bfe504def9e1bab",
+    "hash": "fd11e0abcaf93791007fe35b8e3d9dcfb8f0d464bc985851deb25ee17987b83a",
     "lastmod": "2026-05-19"
   },
   "/zh/": {
-    "hash": "25dd803214898846021e9bcb72f62639fba7f963c5a75302249e57eeaf8498fd",
+    "hash": "fcfed86c0c592cac6b020fdf37ef1249530dcd19a8503dc585d14cd4f1e347bd",
     "lastmod": "2026-05-19"
   },
   "/info/": {
