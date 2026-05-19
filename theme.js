@@ -36,3 +36,17 @@ function toggleTheme() {
 applyTheme(getTheme());
 const themeBtn = document.getElementById('theme-toggle');
 if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
+
+document.addEventListener('click', (e) => {
+  document.querySelectorAll('.lang-picker[open]').forEach((picker) => {
+    if (!picker.contains(e.target)) picker.open = false;
+  });
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  const picker = document.querySelector('.lang-picker[open]');
+  if (!picker) return;
+  picker.open = false;
+  picker.querySelector('summary')?.focus();
+});

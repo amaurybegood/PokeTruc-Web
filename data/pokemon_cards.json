@@ -1729,6 +1729,16 @@
   "artist": "nisimono"
 },
 {
+  "pokemonId": 59,
+  "name": "Fearless Terastal",
+  "imageName": "59_Arcanine_scn_csv3_155",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2025,
+  "artist": "Gemi"
+},
+{
   "pokemonId": 60,
   "name": "My First Battle: Squirtle Deck",
   "imageName": "60_Poliwag_mfbs_5",

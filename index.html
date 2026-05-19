@@ -7,7 +7,7 @@
   <meta name="description" content="Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language (Japanese, English, Chinese or Korean). Free, ad-free, fan-made.">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=18">
+  <link rel="preload" as="style" href="/style.css?v=23">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
@@ -35,7 +35,7 @@
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/">
   <link rel="icon" type="image/png" href="/logo.png">
   <link rel="apple-touch-icon" href="/logo.png">
-  <link rel="stylesheet" href="/style.css?v=18">
+  <link rel="stylesheet" href="/style.css?v=23">
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language (Japanese, English, Chinese or Korean). Free, ad-free, fan-made.","inLanguage":["en","fr","ja","ko","zh-Hans"]},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/#collection","url":"https://poketruc.com/","name":"PokéTruc — Unique Pokémon TCG Card Illustrations","description":"Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language (Japanese, English, Chinese or Korean). Free, ad-free, fan-made.","inLanguage":"en","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language (Japanese, English, Chinese or Korean). Free, ad-free, fan-made."}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/"}]}]}</script>
   <noscript><style>
@@ -53,10 +53,11 @@
     <nav class="site-nav">
       <a href="/" aria-current="page">Pokédex</a>
       <a href="/info/">Info</a>
+      <details class="lang-picker">
+        <summary class="lang-picker-toggle" aria-label="Language"><span class="lang-picker-code">EN</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
+        <ul class="lang-picker-menu" role="menu"><li role="none"><a href="/" hreflang="en" role="menuitem" class="lang-link active" aria-current="true">EN</a></li><li role="none"><a href="/fr/" hreflang="fr" role="menuitem" class="lang-link">FR</a></li><li role="none"><a href="/ja/" hreflang="ja" role="menuitem" class="lang-link">日本語</a></li><li role="none"><a href="/ko/" hreflang="ko" role="menuitem" class="lang-link">한국어</a></li><li role="none"><a href="/zh/" hreflang="zh-Hans" role="menuitem" class="lang-link">中文</a></li></ul>
+      </details>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
-    </nav>
-    <nav class="lang-switcher" aria-label="Language">
-      <a href="/" hreflang="en" class="lang-link active" aria-current="true">EN</a><a href="/fr/" hreflang="fr" class="lang-link">FR</a><a href="/ja/" hreflang="ja" class="lang-link">日本語</a><a href="/ko/" hreflang="ko" class="lang-link">한국어</a><a href="/zh/" hreflang="zh-Hans" class="lang-link">中文</a>
     </nav>
   </header>
 
@@ -140,7 +141,7 @@
       <a href="/pokemon/mankey/" class="seo-pokedex-link" data-pokemon-id="56"><span class="seo-pokedex-num">#056</span><span class="seo-pokedex-name">Mankey</span><span class="seo-pokedex-count">2</span></a>
       <a href="/pokemon/primeape/" class="seo-pokedex-link" data-pokemon-id="57"><span class="seo-pokedex-num">#057</span><span class="seo-pokedex-name">Primeape</span><span class="seo-pokedex-count">1</span></a>
       <a href="/pokemon/growlithe/" class="seo-pokedex-link" data-pokemon-id="58"><span class="seo-pokedex-num">#058</span><span class="seo-pokedex-name">Growlithe</span><span class="seo-pokedex-count">5</span></a>
-      <a href="/pokemon/arcanine/" class="seo-pokedex-link" data-pokemon-id="59"><span class="seo-pokedex-num">#059</span><span class="seo-pokedex-name">Arcanine</span><span class="seo-pokedex-count">2</span></a>
+      <a href="/pokemon/arcanine/" class="seo-pokedex-link" data-pokemon-id="59"><span class="seo-pokedex-num">#059</span><span class="seo-pokedex-name">Arcanine</span><span class="seo-pokedex-count">3</span></a>
       <a href="/pokemon/poliwag/" class="seo-pokedex-link" data-pokemon-id="60"><span class="seo-pokedex-num">#060</span><span class="seo-pokedex-name">Poliwag</span><span class="seo-pokedex-count">3</span></a>
       <a href="/pokemon/poliwhirl/" class="seo-pokedex-link" data-pokemon-id="61"><span class="seo-pokedex-num">#061</span><span class="seo-pokedex-name">Poliwhirl</span><span class="seo-pokedex-count">2</span></a>
       <a href="/pokemon/poliwrath/" class="seo-pokedex-link" data-pokemon-id="62"><span class="seo-pokedex-num">#062</span><span class="seo-pokedex-name">Poliwrath</span><span class="seo-pokedex-count">2</span></a>
@@ -206,8 +207,8 @@
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="/i18n.js?v=13"></script>
-  <script src="/theme.js?v=13"></script>
-  <script src="/app.js?v=13"></script>
+  <script src="/i18n.js?v=14"></script>
+  <script src="/theme.js?v=14"></script>
+  <script src="/app.js?v=14"></script>
 </body>
 </html>

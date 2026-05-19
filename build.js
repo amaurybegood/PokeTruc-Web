@@ -40,8 +40,8 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 18;
-const JS_V  = 13;
+const CSS_V = 23;
+const JS_V  = 14;
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
 
@@ -124,7 +124,6 @@ const LANG = {
     creditsBefore: 'A big thank you to Redditor "',
     creditsLinkText: 'TwentyFour7',
     creditsAfter: '" for his precious help in finding cards that only exist in a single language.',
-    backToPokedex: '← Pokédex',
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets featured',
     artistsHeading: 'Artists',
@@ -181,7 +180,6 @@ const LANG = {
     creditsBefore: 'Un grand merci au Redditeur "',
     creditsLinkText: 'TwentyFour7',
     creditsAfter: '" pour son aide précieuse à dénicher des cartes existant uniquement dans une seule langue.',
-    backToPokedex: '← Pokédex',
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets présentés',
     artistsHeading: 'Artistes',
@@ -239,7 +237,6 @@ const LANG = {
     creditsBefore: '1つの言語にしか存在しないカードを見つける際にご協力いただいたRedditユーザー「',
     creditsLinkText: 'TwentyFour7',
     creditsAfter: '」さんに心より感謝いたします。',
-    backToPokedex: '← 図鑑',
     upToPokedex:   '↑ 図鑑',
     setsHeading: '収録セット',
     artistsHeading: 'イラストレーター',
@@ -296,7 +293,6 @@ const LANG = {
     creditsBefore: '한 가지 언어로만 존재하는 카드를 찾는 데 큰 도움을 주신 Reddit 사용자 "',
     creditsLinkText: 'TwentyFour7',
     creditsAfter: '" 님께 진심으로 감사드립니다.',
-    backToPokedex: '← 도감',
     upToPokedex:   '↑ 도감',
     setsHeading: '수록 세트',
     artistsHeading: '일러스트레이터',
@@ -353,7 +349,6 @@ const LANG = {
     creditsBefore: '特别感谢 Reddit 用户「',
     creditsLinkText: 'TwentyFour7',
     creditsAfter: '」协助寻找仅以单一语言发行的卡牌。',
-    backToPokedex: '← 图鉴',
     upToPokedex:   '↑ 图鉴',
     setsHeading: '收录的卡组',
     artistsHeading: '插画师',
@@ -585,10 +580,13 @@ function headerBlock(lang, currentPath, kind) {
     return pathRoot(targetLang);
   }
 
-  const langLinks = LANGS.map(l => {
+  const TOGGLE_CODE = { en: 'EN', fr: 'FR', ja: 'JA', ko: 'KO', zh: 'ZH' };
+  const langItems = LANGS.map(l => {
     const label = l === 'en' ? 'EN' : l === 'fr' ? 'FR' : l === 'ja' ? '日本語' : l === 'ko' ? '한국어' : '中文';
-    const active = (l === lang) ? ' aria-current="true"' : '';
-    return `<a href="${altPathFor(l)}" hreflang="${HREFLANG[l]}" class="lang-link${l === lang ? ' active' : ''}"${active}>${label}</a>`;
+    const isCurrent = (l === lang);
+    const ariaCurrent = isCurrent ? ' aria-current="true"' : '';
+    const activeClass = isCurrent ? ' active' : '';
+    return `<li role="none"><a href="${altPathFor(l)}" hreflang="${HREFLANG[l]}" role="menuitem" class="lang-link${activeClass}"${ariaCurrent}>${label}</a></li>`;
   }).join('');
 
   return `  <header>
@@ -598,10 +596,11 @@ function headerBlock(lang, currentPath, kind) {
     <nav class="site-nav">
       <a href="${pathRoot(lang)}"${dexActive}>${escapeHtml(L.pokedex)}</a>
       <a href="${pathInfo(lang)}"${infoActive}>${escapeHtml(L.info)}</a>
+      <details class="lang-picker">
+        <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}"><span class="lang-picker-code">${TOGGLE_CODE[lang]}</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
+        <ul class="lang-picker-menu" role="menu">${langItems}</ul>
+      </details>
       <button class="theme-toggle" id="theme-toggle" aria-label="${escapeHtml(L.themeToggleLabel)}"></button>
-    </nav>
-    <nav class="lang-switcher" aria-label="${escapeHtml(L.langSwitcherLabel)}">
-      ${langLinks}
     </nav>
   </header>`;
 }
@@ -853,7 +852,6 @@ ${headerBlock(lang, { slug }, 'pokemon')}
 
   <main id="main-content" class="pokemon-page">
     <div class="pokemon-hero">
-      <a href="${pathRoot(lang)}" class="back-link">${escapeHtml(L.backToPokedex)}</a>
       <img src="/monsters/${pokemon.imageName}.png"
            alt="${escapeHtml(localizedName)}"
            class="pokemon-sprite"
