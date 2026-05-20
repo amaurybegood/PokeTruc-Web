@@ -18,6 +18,11 @@ const TODAY    = new Date().toISOString().split('T')[0];
 // language-exclusive cards.
 const REDDIT_TWENTYFOUR7_URL = 'https://www.reddit.com/user/TwentyFour7/';
 
+// Author profile + project repo. Surfaced on the Info page (Contact + Source
+// code sections) so the site has a couple of honest backlinks pointing out.
+const REDDIT_BEGOODERRR_URL = 'https://www.reddit.com/user/Begooderrr/';
+const GITHUB_REPO_URL       = 'https://github.com/amaurybegood/PokeTruc-Web';
+
 // Persistent build state: maps URL paths to { hash, lastmod }. Used so that
 // sitemap <lastmod> only advances when the actual rendered HTML changes —
 // keeping the freshness signal trustworthy for crawlers.
@@ -40,7 +45,7 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 23;
+const CSS_V = 25;
 const JS_V  = 14;
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
@@ -100,7 +105,7 @@ const LANG = {
     searchPlaceholder: 'Search a Pokémon...',
     skipToContent: 'Skip to main content',
     indexTitle: 'PokéTruc — Unique Pokémon TCG Card Illustrations',
-    indexDescription: 'Discover Pokémon TCG cards with unique and exclusive artwork illustrations only available in one language (Japanese, English, Chinese or Korean). Free, ad-free, fan-made.',
+    indexDescription: 'Pokémon TCG illustrations / artworks that exist in only one language — Japanese, English, Chinese or Korean. Free, fan-made, ad-free.',
     indexH1: 'Pokémon TCG illustrations / artworks that exist in only one language',
     seoAbout: "Some Pokémon TCG cards feature artwork that was only ever printed in a single language. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. PokéTruc catalogs these language-exclusive cards across all 151 Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every classic — pulling artwork from Japanese Vending Machine expansion sheets, Black & White promos, DPt-P promos, McDonald's promos, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, language and year — fully free, ad-free, and built by a fan.",
     seoPokedexHeading: 'Browse all Pokémon with exclusive cards',
@@ -121,9 +126,14 @@ const LANG = {
       'This site does not collect any personal data or require a user account. No information is transmitted or stored outside of your device.',
     ],
     creditsHeading: 'Credits',
-    creditsBefore: 'A big thank you to Redditor "',
-    creditsLinkText: 'TwentyFour7',
-    creditsAfter: '" for his precious help in finding cards that only exist in a single language.',
+    creditsBefore: 'A big thank you to Redditor ',
+    creditsLinkText: 'u/TwentyFour7',
+    creditsAfter: ' for his precious help in finding cards that only exist in a single language.',
+    sourceCodeHeading: 'Source code',
+    sourceCodeBefore: 'The source code of this site is open source on GitHub: ',
+    emailLabel: 'Email:',
+    redditLabel: 'Reddit:',
+    opensInNewTab: 'opens in new tab',
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets featured',
     artistsHeading: 'Artists',
@@ -156,7 +166,7 @@ const LANG = {
     searchPlaceholder: 'Rechercher un Pokémon...',
     skipToContent: 'Aller au contenu',
     indexTitle: 'PokéTruc — Illustrations exclusives de cartes Pokémon TCG',
-    indexDescription: 'Découvrez les cartes Pokémon TCG aux illustrations uniques et exclusives, disponibles dans une seule langue (japonais, anglais, chinois ou coréen). Gratuit, sans publicité, créé par un fan.',
+    indexDescription: "Illustrations / artworks de cartes Pokémon TCG n'existant qu'en une langue (japonais, anglais, chinois, coréen). Gratuit, sans pub, fait par un fan.",
     indexH1: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue",
     seoAbout: "Certaines cartes Pokémon TCG n'existent qu'en une seule langue. Une promo japonaise distribuée avec un magazine de timbres en 1996, jamais sortie en anglais. Une carte McDonald's Pokémon-e disponible uniquement au Japon en 2002. Une exclusivité du marché chinois sur un set récent. PokéTruc recense ces cartes en exclusivité linguistique pour les 151 Pokémon de la Génération 1 — Bulbizarre, Dracaufeu, Pikachu et tous les autres — en piochant dans les feuilles Vending Machine japonaises, les promos Black & White, les promos DPt-P, les promos McDonald's et les sorties exclusives au marché chinois, illustrées par des artistes comme Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii et bien d'autres. L'objectif : permettre aux collectionneurs de découvrir des illustrations rares qu'ils n'ont peut-être jamais vues, classées par Pokémon, set, langue et année — entièrement gratuit, sans publicité, créé par un fan.",
     seoPokedexHeading: 'Tous les Pokémon avec des cartes exclusives',
@@ -177,9 +187,14 @@ const LANG = {
       "Ce site ne collecte aucune donnée personnelle et ne nécessite aucun compte utilisateur. Aucune information n'est transmise ou stockée en dehors de votre appareil.",
     ],
     creditsHeading: 'Remerciements',
-    creditsBefore: 'Un grand merci au Redditeur "',
-    creditsLinkText: 'TwentyFour7',
-    creditsAfter: '" pour son aide précieuse à dénicher des cartes existant uniquement dans une seule langue.',
+    creditsBefore: 'Un grand merci au Redditeur ',
+    creditsLinkText: 'u/TwentyFour7',
+    creditsAfter: ' pour son aide précieuse à dénicher des cartes existant uniquement dans une seule langue.',
+    sourceCodeHeading: 'Code source',
+    sourceCodeBefore: 'Le code source de ce site est ouvert sur GitHub : ',
+    emailLabel: 'E-mail :',
+    redditLabel: 'Reddit :',
+    opensInNewTab: 'ouvre dans un nouvel onglet',
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets présentés',
     artistsHeading: 'Artistes',
@@ -213,7 +228,7 @@ const LANG = {
     searchPlaceholder: 'ポケモンをさがす',
     skipToContent: 'メインコンテンツへスキップ',
     indexTitle: 'PokéTruc — 言語限定のポケモンTCGカードイラスト',
-    indexDescription: 'PokéTrucでは、日本語・英語・中国語・韓国語など特定の言語でしか発行されていないポケモンTCGカードの限定イラストを掲載しています。完全無料・広告なし・ファン制作。',
+    indexDescription: '1つの言語（日本語・英語・中国語・韓国語）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。',
     indexH1: '1つの言語にしか存在しないポケモンTCGのイラスト / アートワーク',
     seoAbout: 'ポケモンTCGには、特定の言語でしか印刷されなかった限定イラストのカードが数多く存在します。1996年に切手雑誌の付録として配布された日本限定プロモ、2002年に日本でのみ配布されたマクドナルドのポケモン-e、最新セットの中国市場限定カードなど。PokéTrucでは、フシギダネ、リザードン、ピカチュウをはじめとする第1世代の151匹すべてについて、こうした言語限定カードを収録しています。Vending Machine拡張シート、Black & Whiteプロモ、DPt-Pプロモ、マクドナルドプロモ、中国限定セットなど幅広く対象とし、Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Moriiといった著名イラストレーターの作品も含まれます。ポケモン別・セット別・言語別・年代別に整理されたPokéTrucで、まだ見たことのない希少なイラストを見つけてください。完全無料・広告なし・ファン制作です。',
     seoPokedexHeading: '限定カードがあるポケモンをすべて見る',
@@ -234,9 +249,14 @@ const LANG = {
       'このサイトは個人情報を収集せず、ユーザーアカウントも不要です。いかなる情報もデバイス外に送信・保存されません。',
     ],
     creditsHeading: 'クレジット',
-    creditsBefore: '1つの言語にしか存在しないカードを見つける際にご協力いただいたRedditユーザー「',
-    creditsLinkText: 'TwentyFour7',
-    creditsAfter: '」さんに心より感謝いたします。',
+    creditsBefore: '1つの言語にしか存在しないカードを見つける際にご協力いただいたRedditユーザー ',
+    creditsLinkText: 'u/TwentyFour7',
+    creditsAfter: ' さんに心より感謝いたします。',
+    sourceCodeHeading: 'ソースコード',
+    sourceCodeBefore: 'このサイトのソースコードはGitHubで公開されています：',
+    emailLabel: 'メール：',
+    redditLabel: 'Reddit：',
+    opensInNewTab: '新しいタブで開く',
     upToPokedex:   '↑ 図鑑',
     setsHeading: '収録セット',
     artistsHeading: 'イラストレーター',
@@ -269,7 +289,7 @@ const LANG = {
     searchPlaceholder: '포켓몬 검색',
     skipToContent: '본문으로 건너뛰기',
     indexTitle: 'PokéTruc — 언어 한정 포켓몬 TCG 카드 일러스트',
-    indexDescription: 'PokéTruc은 일본어, 영어, 중국어, 한국어 등 하나의 언어로만 발매된 포켓몬 TCG 카드의 한정 일러스트를 정리합니다. 무료, 광고 없음, 팬 제작.',
+    indexDescription: '한 가지 언어(일본어, 영어, 중국어, 한국어)로만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.',
     indexH1: '한 가지 언어로만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
     seoAbout: '포켓몬 TCG에는 단 하나의 언어로만 인쇄된 한정 일러스트 카드가 다수 존재합니다. 1996년 우표 잡지 부록으로 배포된 일본 한정 프로모, 2002년 일본에서만 배포된 맥도날드 포켓몬-e 카드, 최신 세트의 중국 시장 한정 카드 등이 대표적입니다. PokéTruc은 이상해씨, 리자몽, 피카츄를 비롯한 1세대 151마리 전부에 대해 이러한 언어 한정 카드를 정리합니다. 일본 자판기 익스팬션 시트, Black & White 프로모, DPt-P 프로모, 맥도날드 프로모, 중국 한정 세트까지 폭넓게 다루며 Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii 등 유명 일러스트레이터의 작품도 포함됩니다. 포켓몬·세트·언어·연도별로 정리된 PokéTruc에서 한 번도 보지 못한 희귀 일러스트를 찾아보세요. 완전 무료, 광고 없음, 팬 제작.',
     seoPokedexHeading: '한정 카드가 있는 모든 포켓몬 둘러보기',
@@ -290,9 +310,14 @@ const LANG = {
       '이 사이트는 개인 정보를 수집하지 않으며 사용자 계정도 필요하지 않습니다. 어떠한 정보도 기기 외부로 전송되거나 저장되지 않습니다.',
     ],
     creditsHeading: '감사의 말',
-    creditsBefore: '한 가지 언어로만 존재하는 카드를 찾는 데 큰 도움을 주신 Reddit 사용자 "',
-    creditsLinkText: 'TwentyFour7',
-    creditsAfter: '" 님께 진심으로 감사드립니다.',
+    creditsBefore: '한 가지 언어로만 존재하는 카드를 찾는 데 큰 도움을 주신 Reddit 사용자 ',
+    creditsLinkText: 'u/TwentyFour7',
+    creditsAfter: ' 님께 진심으로 감사드립니다.',
+    sourceCodeHeading: '소스 코드',
+    sourceCodeBefore: '이 사이트의 소스 코드는 GitHub에 공개되어 있습니다: ',
+    emailLabel: '이메일:',
+    redditLabel: 'Reddit:',
+    opensInNewTab: '새 탭에서 열기',
     upToPokedex:   '↑ 도감',
     setsHeading: '수록 세트',
     artistsHeading: '일러스트레이터',
@@ -325,7 +350,7 @@ const LANG = {
     searchPlaceholder: '搜索宝可梦',
     skipToContent: '跳到主要内容',
     indexTitle: 'PokéTruc — 语言独占的宝可梦 TCG 卡牌插画',
-    indexDescription: 'PokéTruc 收录了仅在单一语言（日文、英文、中文或韩文）发行的宝可梦 TCG 独占插画。免费、无广告、由粉丝制作。',
+    indexDescription: '仅在一种语言（日文、英文、中文或韩文）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。',
     indexH1: '仅在一种语言中发行的宝可梦 TCG 插画 / 美术图',
     seoAbout: '宝可梦 TCG 中有许多卡牌的插画仅以单一语言印刷发行。1996 年作为邮票杂志附录发行的日本限定促销卡，2002 年仅在日本麦当劳发行的宝可梦-e 卡，以及最新卡组中仅在中国市场推出的独占卡牌等。PokéTruc 收录了妙蛙种子、喷火龙、皮卡丘等第一世代全 151 只宝可梦的此类语言独占卡牌，涵盖日本贩卖机扩展卡板、Black & White 促销卡、DPt-P 促销卡、麦当劳促销卡以及中国独占卡组，作品由 Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Morii 等知名插画师绘制。按宝可梦、卡组、语言和年份分类整理，让您能够找到从未见过的稀有插画。完全免费、无广告、由粉丝制作。',
     seoPokedexHeading: '查看所有拥有独占卡牌的宝可梦',
@@ -346,9 +371,14 @@ const LANG = {
       '本网站不收集任何个人数据，也不需要用户账户。任何信息均不会在设备外部传输或存储。',
     ],
     creditsHeading: '鸣谢',
-    creditsBefore: '特别感谢 Reddit 用户「',
-    creditsLinkText: 'TwentyFour7',
-    creditsAfter: '」协助寻找仅以单一语言发行的卡牌。',
+    creditsBefore: '特别感谢 Reddit 用户 ',
+    creditsLinkText: 'u/TwentyFour7',
+    creditsAfter: ' 协助寻找仅以单一语言发行的卡牌。',
+    sourceCodeHeading: '源代码',
+    sourceCodeBefore: '本站源代码已在 GitHub 上开源：',
+    emailLabel: '邮箱：',
+    redditLabel: 'Reddit：',
+    opensInNewTab: '在新标签页中打开',
     upToPokedex:   '↑ 图鉴',
     setsHeading: '收录的卡组',
     artistsHeading: '插画师',
@@ -433,18 +463,18 @@ const STATS_BUILDERS = {
     return `PokéTruc has catalogued ${count} language-exclusive ${name} TCG card ${wordP}, ${yearPart}. ${langSentence}${artistSentence}`;
   },
   fr: ({ name, count, minY, maxY, byLang, artists }) => {
-    const wordP = count === 1 ? 'illustration exclusive' : 'illustrations exclusives';
-    const yearPart = (minY === maxY) ? `publiée${count > 1 ? 's' : ''} en ${minY}` : `de ${minY} à ${maxY}`;
+    const s = count > 1 ? 's' : '';
+    const yearPart = (minY === maxY) ? `publiée${s} en ${minY}` : `de ${minY} à ${maxY}`;
     const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => {
       const n = byLang[l.flag];
-      const s = n > 1 ? 's' : '';
-      return `${n} carte${s} ${STATS_LANG_LABEL.fr[l.flag]}${s}`;
+      const sn = n > 1 ? 's' : '';
+      return `${n} carte${sn} ${STATS_LANG_LABEL.fr[l.flag]}${sn}`;
     });
     const langSentence = langParts.length ? `La collection comprend ${joinListLang(langParts, 'fr')}.` : '';
     let artistSentence = '';
-    if (artists.length === 1) artistSentence = ` Illustrée${count > 1 ? 's' : ''} par ${artists[0]}.`;
+    if (artists.length === 1) artistSentence = ` Illustrée${s} par ${artists[0]}.`;
     else if (artists.length > 1) artistSentence = ` Illustrées par ${artists.length} artistes différents dont ${joinListLang(artists.slice(0, 3), 'fr')}.`;
-    return `PokéTruc recense ${count} ${wordP} de cartes TCG ${name}, ${yearPart}. ${langSentence}${artistSentence}`;
+    return `PokéTruc recense ${count} illustration${s} de carte${s} TCG ${name} exclusive${s} à une seule langue, ${yearPart}. ${langSentence}${artistSentence}`;
   },
   ja: ({ name, count, minY, maxY, byLang, artists }) => {
     const yearPart = (minY === maxY) ? `${minY}年発行` : `${minY}年から${maxY}年`;
@@ -1029,10 +1059,19 @@ function infoPageHTML(lang) {
 
   const aboutHTML = L.aboutBody.map(p => `<p>${escapeHtml(p)}</p>`).join('\n        ');
   const disclaimerHTML = L.disclaimerBody.map(p => `<p>${escapeHtml(p)}</p>`).join('\n        ');
+  // Visible ↗ icon + screen-reader-only label appended inside every outbound
+  // link, so both sighted and assistive-tech users know it opens a new tab.
+  const extSuffix = `<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (${escapeHtml(L.opensInNewTab)})</span>`;
   const creditsHTML =
     `<p>${escapeHtml(L.creditsBefore)}` +
-    `<a href="${REDDIT_TWENTYFOUR7_URL}" class="info-link" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText)}</a>` +
+    `<a href="${REDDIT_TWENTYFOUR7_URL}" class="info-link" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText)}${extSuffix}</a>` +
     `${escapeHtml(L.creditsAfter)}</p>`;
+  // Author backlinks intentionally use rel="noopener" (no "noreferrer") so the
+  // Referer header is preserved — keeps GitHub/Reddit referral analytics honest
+  // and avoids weakening the SEO signal on outbound links to the author profile.
+  const sourceCodeHTML =
+    `<p>${escapeHtml(L.sourceCodeBefore)}` +
+    `<a href="${GITHUB_REPO_URL}" class="info-link" target="_blank" rel="noopener">github.com/amaurybegood/PokeTruc-Web${extSuffix}</a></p>`;
 
   return `<!DOCTYPE html>
 <html lang="${HTML_LANG[lang]}">
@@ -1062,8 +1101,16 @@ ${headerBlock(lang, '', 'info')}
     </div>
 
     <div class="info-card">
+      <h2>${escapeHtml(L.sourceCodeHeading)}</h2>
+      <div>
+        ${sourceCodeHTML}
+      </div>
+    </div>
+
+    <div class="info-card">
       <h2>${escapeHtml(L.contactHeading)}</h2>
-      <a href="mailto:poketruc@icloud.com?subject=Support%20%E2%80%93%20PokéTruc%20Web" class="info-link">poketruc@icloud.com</a>
+      <a href="mailto:poketruc@icloud.com?subject=Support%20%E2%80%93%20PokéTruc%20Web" class="info-link">${escapeHtml(L.emailLabel)} poketruc@icloud.com</a>
+      <a href="${REDDIT_BEGOODERRR_URL}" class="info-link" target="_blank" rel="noopener">${escapeHtml(L.redditLabel)} u/Begooderrr${extSuffix}</a>
     </div>
 
     <div class="info-card disclaimer">
