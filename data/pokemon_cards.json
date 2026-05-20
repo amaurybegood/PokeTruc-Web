@@ -2811,6 +2811,16 @@
   "artist": "Masako Yamashita"
 },
 {
+  "pokemonId": 115,
+  "name": "Sword & Shield Promos",
+  "imageName": "115_Kangaskhan_swshp_SWSH038",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2020,
+  "artist": "HYOGONOSUKE"
+},
+{
   "pokemonId": 116,
   "name": "Vending Machine Expansion Sheet 3: Green",
   "imageName": "116_Horsea_jpn_vses3_15",
