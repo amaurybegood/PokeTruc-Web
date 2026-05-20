@@ -2591,7 +2591,18 @@
   "language": "🇯🇵",
   "year": 2001,
   "artist": "Yuka Morii"
-},{
+},
+{
+  "pokemonId": 106,
+  "name": "Call of Legends",
+  "imageName": "106_Hitmonlee_col1_58",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "Kouki Saitou"
+},
+{
   "pokemonId": 107,
   "name": "Vending Machine Expansion Sheet 2: Red",
   "imageName": "107_Hitmonchan_jpn_vses2_27",
