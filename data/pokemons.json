@@ -1648,7 +1648,7 @@
     },
     "imageName": "pinsir",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 128,
@@ -1661,7 +1661,7 @@
     },
     "imageName": "tauros",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 129,
@@ -1687,7 +1687,7 @@
     },
     "imageName": "gyarados",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 131,

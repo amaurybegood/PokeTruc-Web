@@ -3023,6 +3023,61 @@
   "artist": "Ryuta Fuse"
 },
 {
+  "pokemonId": 127,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "127_Pinsir_jpn_vses1_12",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 127,
+  "name": "Pokémon VS",
+  "imageName": "127_Pinsir_jpn_versus1_10",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Kyoko Umemoto"
+},{
+  "pokemonId": 128,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "128_Tauros_jpn_vses3_34",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 128,
+  "name": "Pokémon VS",
+  "imageName": "128_Tauros_jpn_versus1_36",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Masako Yamashita"
+},{
+  "pokemonId": 128,
+  "name": "PCG-P Promos",
+  "imageName": "128_Tauros_jpn_pcgp_49",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2004,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 128,
+  "name": "Ash vs Team Rocket Deck Kit",
+  "imageName": "128_Tauros_jpn_smd_14",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2017,
+  "artist": "Yasuda Shuhei"
+},
+{
   "pokemonId": 129,
   "name": "Unnumbered Promos",
   "imageName": "129_Magikarp_jpn_unp_78c",
@@ -3079,6 +3134,79 @@
   "language": "🇯🇵",
   "year": 2010,
   "artist": "Midori Harada"
+},
+{
+  "pokemonId": 130,
+  "name": "Unnumbered Promos",
+  "imageName": "130_Gyarados_jpn_unp_78d",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ryouichi Abe"
+},{
+  "pokemonId": 130,
+  "name": "Pokémon VS",
+  "imageName": "130_Gyarados_jpn_versus1_98",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Aya Kusube"
+},{
+  "pokemonId": 130,
+  "name": "Pokémon VS",
+  "imageName": "130_Gyarados_jpn_versus1_48",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Shin-ichi Yoshida"
+},{
+  "pokemonId": 130,
+  "name": "HS Trainer Kit: Gyarados Half Deck",
+  "imageName": "130_Gyarados_tk4a_20",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2010,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 130,
+  "name": "Call of Legends",
+  "imageName": "130_Gyarados_col1_7",
+  "rarity": "Rare Holo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 130,
+  "name": "XY Promos",
+  "imageName": "130_Gyarados_xyp_XY109",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2013,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 130,
+  "name": "XY Promos",
+  "imageName": "130_Gyarados_xyp_XY106",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2013,
+  "artist": "Eske Yoshinob"
+},{
+  "pokemonId": 130,
+  "name": "My First Battle: Squirtle Deck",
+  "imageName": "130_Gyarados_mfbs_8",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "NC Empire"
 },
 {
   "pokemonId": 131,

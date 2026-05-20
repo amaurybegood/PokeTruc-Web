@@ -460,15 +460,27 @@
     "lastmod": "2026-05-20"
   },
   "/pokemon/magmar/": {
-    "hash": "9260b13d15aeda0a4cb2c75d6113f7a90797d6faf54a070d960f737cc8844ab4",
+    "hash": "69869a0bd18285da0d0ad2fdb1675ec461ed4a89445fe5cb0575ee2b8dc9f9bb",
+    "lastmod": "2026-05-20"
+  },
+  "/pokemon/pinsir/": {
+    "hash": "77e660586619344945ccb488028e59e4647e98a58b5556b28714e1c3fa494f22",
+    "lastmod": "2026-05-20"
+  },
+  "/pokemon/tauros/": {
+    "hash": "f3775de863a010b79e826c13cfc68b89c8920a3e9e0c60b4dca36b3f12622763",
     "lastmod": "2026-05-20"
   },
   "/pokemon/magikarp/": {
-    "hash": "ebf6cfa480aa0866ec1b91de36ca3d69b77ccdf308976719fedd74aff54fd57b",
+    "hash": "d9100fcff6b51bc5ad5f0027b52485feda3deb5efd30348bea833c2a60d34b1f",
+    "lastmod": "2026-05-20"
+  },
+  "/pokemon/gyarados/": {
+    "hash": "0b9a4bee0733a7c777fb0fd57ee3dbf3adf9e26130e3857e41c18d5ab2269752",
     "lastmod": "2026-05-20"
   },
   "/pokemon/lapras/": {
-    "hash": "5148903b6c9849b19b91a63af148d021ceaaeebd562e7e24b79f711fea4b4aa5",
+    "hash": "3238bfc02062d6c35674d5b618ff998c023fa5187b782a89083cbe613669992b",
     "lastmod": "2026-05-20"
   },
   "/pokemon/ditto/": {
@@ -940,15 +952,27 @@
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/magmar/": {
-    "hash": "4647381f9b55fbb551d29ca085b5d637688e239551cdd86fdee2beddd53c5e3b",
+    "hash": "1f1c4d73fb7d5d4ef251a25a145cc984bdceade78229fb531af5fece5a65d912",
+    "lastmod": "2026-05-20"
+  },
+  "/fr/pokemon/pinsir/": {
+    "hash": "db6ac71c8955e07038ae0606227f2240fc5984a51f4ad9093c3a2838d573f6da",
+    "lastmod": "2026-05-20"
+  },
+  "/fr/pokemon/tauros/": {
+    "hash": "b56f131f17a92148e9254c3e2001b613c074db9d944918db28daa276e837d7a8",
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/magikarp/": {
-    "hash": "d4eeb8c4e19c4d6e6d2cd3ea6a6f8c005bf52ca5b8f581061e807e20151ac668",
+    "hash": "fe43cbc993d7fffdd7ff8575ba50f0f73edd8bf78651693ed92fc399bc846e79",
+    "lastmod": "2026-05-20"
+  },
+  "/fr/pokemon/gyarados/": {
+    "hash": "a2135140a148be3590a0902aa42906cc27181242282399a9986f393b02fb70a0",
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/lapras/": {
-    "hash": "5f128aaf5513c204a6a9969cfbe4b80d7e3d9ecab3eb86c37d4874e44dc31660",
+    "hash": "43613df6cda946ac005f111b7559108e847492b96ce8a8007723eb5c1a97e3c3",
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/ditto/": {
@@ -1420,15 +1444,27 @@
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/magmar/": {
-    "hash": "11130f5351e5fb3c5ec0448d0d85ea4ca9da95f26821a3d7176c1ea561d37820",
+    "hash": "9f112c79213b0b7c94cafe271574e34f2fa16d93abbc9f091c48d43b64527ce6",
+    "lastmod": "2026-05-20"
+  },
+  "/ja/pokemon/pinsir/": {
+    "hash": "22da7ee69bf841c73cb4d8d655b157599b52218b3dc51c698d288ba107fbb0e9",
+    "lastmod": "2026-05-20"
+  },
+  "/ja/pokemon/tauros/": {
+    "hash": "16f692b06d63ce93710a927364c044a4f80769d0ae3b9107f82c5fa5fce3b5b0",
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/magikarp/": {
-    "hash": "5f804416462e4b8216211bfe2b3cf7f582e37530c6f070b2a3d98b69c2a283a3",
+    "hash": "016329ad3663e34872915f8fdd24b818e2e124a38180abc514acbefc5609c419",
+    "lastmod": "2026-05-20"
+  },
+  "/ja/pokemon/gyarados/": {
+    "hash": "36094bd5267815d34aa6ba6d93fba0b1a8734dcfe942ecf829c89b440c8fd378",
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/lapras/": {
-    "hash": "f94bf7a4aab1d33ccbbd21b08821da8135678c0dd825e3ce75420fb8b9b5d4f9",
+    "hash": "5f2d3288453b33d6e067064b8fc3a201b0e4e2258de0322953a9c716d3e1079b",
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/ditto/": {
@@ -1900,15 +1936,27 @@
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/magmar/": {
-    "hash": "df0d3e52ddd2a6df18a337bfd0021caf46e0837cb58da4d7f511423c755d2312",
+    "hash": "1f076f066d37b93020a0d18f84e1b9eee799399863c40f4f32c78e5c48787ccd",
+    "lastmod": "2026-05-20"
+  },
+  "/ko/pokemon/pinsir/": {
+    "hash": "231e62e4469922ed01732a07a11448785d1c12153f9d2f6e2ee936c24d1bb3b3",
+    "lastmod": "2026-05-20"
+  },
+  "/ko/pokemon/tauros/": {
+    "hash": "30eb86aa88dc02e3da84334af54d861cdd9b843d72604166861eac5c25e82b2d",
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/magikarp/": {
-    "hash": "737b6df1719b819ba74a76ec0f482cd009533fe746acee4e4df282d38517009c",
+    "hash": "eea1a1c07c076e669211e96537b8805172fb63e5253be093ba916221659cab4b",
+    "lastmod": "2026-05-20"
+  },
+  "/ko/pokemon/gyarados/": {
+    "hash": "2b24afa970fec0484bc4ed187a8bc89584da73f98e3c0d33fa916dd6cf2b1ca4",
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/lapras/": {
-    "hash": "c6133ab8d5dfc67c9caafa172ae34e85a0c4bf193412215e5983810962e4a2d3",
+    "hash": "0e9491b377503a3adfcffe854be35fe7b5b3c8e9955104f6c24f1ba4aea1c249",
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/ditto/": {
@@ -2380,15 +2428,27 @@
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/magmar/": {
-    "hash": "ba777708748758fdd91fbdac482714fb50d1201a04565f7107333a04bdbd479d",
+    "hash": "f8f137884aae48fd1fcdfb7d7e865cc2a3e04cccf519fbebb6a368c355f31988",
+    "lastmod": "2026-05-20"
+  },
+  "/zh/pokemon/pinsir/": {
+    "hash": "9e15da0b728a7a45f4eb69c2fe660cea1c9249a0a9c6f8e8ffa907e0f1bf7e58",
+    "lastmod": "2026-05-20"
+  },
+  "/zh/pokemon/tauros/": {
+    "hash": "8b79863744a0575aebaefbf6ba41e1cdedd1391567c671c234b60f54a1a1dcd8",
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/magikarp/": {
-    "hash": "442e76e0413653999a5c329055d7fef1cbac9116cf1f29bb203d68ce68677229",
+    "hash": "53888fa7a6843f5a38d6ffc99502e4cc79b130860e0f15f98bd48ce22c544111",
+    "lastmod": "2026-05-20"
+  },
+  "/zh/pokemon/gyarados/": {
+    "hash": "51f767c21f09991cf1e18cdc5af536d3a421e2d95bca4f816fc5f809e724d5c0",
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/lapras/": {
-    "hash": "197070f4999f1d3b4709a0e86eaa2e03fbb628a42a66c936bac90437f1947dce",
+    "hash": "0af2eba0701ccd61be6441190b2f934eb016ade40a143e86132518d6c62f2310",
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/ditto/": {
@@ -2400,23 +2460,23 @@
     "lastmod": "2026-05-20"
   },
   "/": {
-    "hash": "2c184a53aea096ce8ba5f8c5b844fd59d0b7ced9a80a70b5beb67226f9e044ae",
+    "hash": "a7b90fa74f656ae519deb1909510cb3003543a63cde9cb216ee1c068fa44c091",
     "lastmod": "2026-05-20"
   },
   "/fr/": {
-    "hash": "1c083b5e4e49e2fa4e14f83857141add3694265d31ad9ed53b4a5e357cb5b364",
+    "hash": "e4b636e14052aee122a3873134bf6713aa245deb9ca199e494e2eea0962c6023",
     "lastmod": "2026-05-20"
   },
   "/ja/": {
-    "hash": "f663ead9352ca69be3e59a4c2adb096c9ea48fe8841eda2063b96f22928bdb13",
+    "hash": "208d110c6bc796b1458b80f415724b09adacad7886e448ed348e5bc709507d86",
     "lastmod": "2026-05-20"
   },
   "/ko/": {
-    "hash": "197abd328c6e3a492e70cdc83b5717db7d617540d51a2d281b3ccbfc9cb1a417",
+    "hash": "36b6efcbc8bcdd5983044977e8c5baa228ef6684cb1b1de7253abc7f6b3b18ed",
     "lastmod": "2026-05-20"
   },
   "/zh/": {
-    "hash": "6eff6642f99fe8da14547dc96a8fdc9dbaa130a8f28e06f24dddc3bf1f2c3881",
+    "hash": "96b9cf2094e836869f7a5351578fea2582a9c37c30583b0253ad1c73c50ec54e",
     "lastmod": "2026-05-20"
   },
   "/info/": {
