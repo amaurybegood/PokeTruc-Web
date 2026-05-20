@@ -440,15 +440,11 @@
     "lastmod": "2026-05-20"
   },
   "/pokemon/staryu/": {
-    "hash": "4f883087499b7bb8a4cf8a5c98ada9575c67cb5f94cad50494ddd806e6e58d09",
-    "lastmod": "2026-05-20"
-  },
-  "/pokemon/mr-mime/": {
-    "hash": "a38d32c017121dbe41c43af4a75415b3cb6719722610dfc019141f0d1c12d4df",
+    "hash": "e10a8d5cc92e4df7828d63ef3deeb673f01ed9fa9721d45e5fcd0688fe1606ca",
     "lastmod": "2026-05-20"
   },
   "/pokemon/scyther/": {
-    "hash": "818781262525e38d844b7271db94b2fbc453b0003c7995a71ca84d22fd79a602",
+    "hash": "923a9aa67038b029420bbd47e13be3c85cf3613990e3400e2f534e2f1049d944",
     "lastmod": "2026-05-20"
   },
   "/pokemon/jynx/": {
@@ -932,15 +928,11 @@
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/staryu/": {
-    "hash": "0ad89807e5f4662908712227cff9d51e1bbb67b99a0399f58f6c10af25e69d1e",
-    "lastmod": "2026-05-20"
-  },
-  "/fr/pokemon/mr-mime/": {
-    "hash": "85f5a04d4d0f5af6e1ace0c39541fd0eb75b3c61e01caef4e53f6ba331f0c7cc",
+    "hash": "6aa75743985368c094cd2c0f90b07d48128edd9ebc572cf1e2c1b257e9d9ae9b",
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/scyther/": {
-    "hash": "c72343eee7510da28f60eba074088fedeb5e5da69ebe45cc8d4213845008695b",
+    "hash": "98a8fee7b7bb8de10d2ed95d55eee57e6d6846705b8cb34a3008ffe3ec0c6d9f",
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/jynx/": {
@@ -1424,15 +1416,11 @@
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/staryu/": {
-    "hash": "60d5d8a87bd4bb1950eb672a6731edb046d52d5ed2780f3c79049adaf1e6944f",
-    "lastmod": "2026-05-20"
-  },
-  "/ja/pokemon/mr-mime/": {
-    "hash": "d2b14660ed76b5bcdf30257b675c8bb856b2fb9048cc8de9c7a7e0e9112383f4",
+    "hash": "14d5890c1fa0c7fc49734db6eaaad0b4e606045cd94c5ed7ffee1e48bbd10ce0",
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/scyther/": {
-    "hash": "3875cb76e21334a8e26e9885c50da6009b1f3e17fa393a1298fd1da3e99ca3d3",
+    "hash": "833601e1db5afd1771c8428af9ff017df2b11fb64efa05c99481ccc170986630",
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/jynx/": {
@@ -1916,15 +1904,11 @@
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/staryu/": {
-    "hash": "220618caf8d2cacb40cae575ed4dee48be53cae2a4e71005f459cc54a51b1635",
-    "lastmod": "2026-05-20"
-  },
-  "/ko/pokemon/mr-mime/": {
-    "hash": "f0af74bc8b3175149943d185fc23a5f23907a141b64248a7b609ceff032f1eb6",
+    "hash": "e5cd53b0125bb13118af195f02daa1efad79e6bfb8e1737ee34b38f178813f4d",
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/scyther/": {
-    "hash": "6f54a3e567e2233750651da73e268beeb4732b793c593fe57dd67585077c1d11",
+    "hash": "5a34130cd61cb0d65725b3336f62c1c999a66cb45e75c1a50f968b467df94c2a",
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/jynx/": {
@@ -2408,15 +2392,11 @@
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/staryu/": {
-    "hash": "ded84a12bfeb1ceae5f2e77e34745eed40be8d00899e3b270cb660d82abc7b35",
-    "lastmod": "2026-05-20"
-  },
-  "/zh/pokemon/mr-mime/": {
-    "hash": "cdea28f9c93db468b36a833fb4accb7228ae5e41396eaa264b6a259b2d378e2c",
+    "hash": "89038772e8c137434d4be3617653e715a20c620ce702ee08f7e042ac29c341db",
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/scyther/": {
-    "hash": "332d24de313e7e43b635aef6e232e4d766c77090ccc5fa245c52fc7c3154a949",
+    "hash": "74937c82d0cb79592509a3caca920a91dca87cccff926a21e39f92a4776d09ab",
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/jynx/": {
@@ -2460,23 +2440,23 @@
     "lastmod": "2026-05-20"
   },
   "/": {
-    "hash": "da3e31c1974374731c14a89176e382f43d936fb0e36c46ca74f1ddc5baf11638",
+    "hash": "9dceebd027a2414b70c445b8c871fe66276c09c87e8649e50bd1080d3fc0e23b",
     "lastmod": "2026-05-20"
   },
   "/fr/": {
-    "hash": "f7fdff6b2288c3baad9ea3afac58face31c812c6ee42f6442cc7073937ff622b",
+    "hash": "e1ab11d9c57f67dc96d9e1fe77dfa293a40a56af4204143f3cd6d928b8ca8349",
     "lastmod": "2026-05-20"
   },
   "/ja/": {
-    "hash": "83103390c74bbde8866106d41763c1ac5090ecf8d08c817c28f0655b1b2d1e0e",
+    "hash": "4ea521226a7122efbf29d046e0f6d76391584a269371d1ffe37ba3229d17f154",
     "lastmod": "2026-05-20"
   },
   "/ko/": {
-    "hash": "d9cb4b0e3603392cd8e2ff6186000cc1615aafb8e35328d6cc7828c84a3016b3",
+    "hash": "8737bbb1a9bdb21458751d8560c224ccf81ba99bb87c6b8c163ce82bdfde7f70",
     "lastmod": "2026-05-20"
   },
   "/zh/": {
-    "hash": "df270b1f46a85fc62a59de867e255ed7237760d6b9430029a2d9b5ee2cf009b2",
+    "hash": "947575902ed5989f0c270073d2196edf5420ccb46a25ffc9b5d8a7a34831cf40",
     "lastmod": "2026-05-20"
   },
   "/info/": {
