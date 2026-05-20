@@ -2386,7 +2386,18 @@
   "language": "🇯🇵",
   "year": 2001,
   "artist": "Naoyo Kimura"
-},{
+},
+{
+  "pokemonId": 94,
+  "name": "Mega Evolution Promos",
+  "imageName": "94_Gengar_mep_73",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2025,
+  "artist": "Ultimateinudog"
+},
+{
   "pokemonId": 95,
   "name": "Unnumbered Promos",
   "imageName": "95_Onix_jpn_unp_36",
