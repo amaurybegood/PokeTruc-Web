@@ -2451,7 +2451,18 @@
   "language": "🇯🇵",
   "year": 1998,
   "artist": "Tomokazu Komiya"
-},{
+},
+{
+  "pokemonId": 100,
+  "name": "My First Battle: Pikachu Deck",
+  "imageName": "100_Voltorb_mfbp_7",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "OKACHEKE"
+},
+{
   "pokemonId": 101,
   "name": "Pokémon Web",
   "imageName": "101_Electrode_jpn_web1_26",

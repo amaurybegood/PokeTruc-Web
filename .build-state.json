@@ -372,7 +372,7 @@
     "lastmod": "2026-05-20"
   },
   "/pokemon/voltorb/": {
-    "hash": "85da3801a9ab3f01d682aa2c42dc3b2162d082e75bcbd2973324e521c3574560",
+    "hash": "c899be97f684da19cf6ea45487dd7eac087e5b9587bd5321f2b625be1eaf6e80",
     "lastmod": "2026-05-20"
   },
   "/pokemon/electrode/": {
@@ -864,7 +864,7 @@
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/voltorb/": {
-    "hash": "4a0283442cb70659c424288730e33c1bd3a9f8273ad153f6c2706952b03a72fc",
+    "hash": "1b2adefaef5366d6d1587a8908b0e931c2e58f537d9fe35bb2f14303dec341ed",
     "lastmod": "2026-05-20"
   },
   "/fr/pokemon/electrode/": {
@@ -1356,7 +1356,7 @@
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/voltorb/": {
-    "hash": "4780b1f3cdb17badcc5989705ec9836b2b04cadf4ed75e37e0f861c5cea27f63",
+    "hash": "4948c0a91a1e93e72a704bc609d3711e3a39c08b89a8e765015e37c7cadf1c6c",
     "lastmod": "2026-05-20"
   },
   "/ja/pokemon/electrode/": {
@@ -1848,7 +1848,7 @@
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/voltorb/": {
-    "hash": "4aea1e147aa6d0c1570e9bc927463f882cbc1ea46fe2c79174df0973f7cd107e",
+    "hash": "03d517e541ae2bdedf4a76ba1c3403b62d66204041dfc9c53f38014ee60db660",
     "lastmod": "2026-05-20"
   },
   "/ko/pokemon/electrode/": {
@@ -2340,7 +2340,7 @@
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/voltorb/": {
-    "hash": "eebf63d9b247f10dedfed8c9afbe5fea9d9bacfd78934e3a56426b48ee185b83",
+    "hash": "ee6d8fb8d7b89f35ea60262934c5cfd9c855d8bd0282793a8e01882e158b250b",
     "lastmod": "2026-05-20"
   },
   "/zh/pokemon/electrode/": {
@@ -2460,23 +2460,23 @@
     "lastmod": "2026-05-20"
   },
   "/": {
-    "hash": "e2fd82a3c534ba3cd6b7209bf50227cd8c91ed5050a3ecf96406c5b69396585a",
+    "hash": "48a437ecbe4d116ccf7781805d5244d00835ebfb52f452026c321fba1b7b3d91",
     "lastmod": "2026-05-20"
   },
   "/fr/": {
-    "hash": "900837cfcc0a036fb6a487b4aa42a2b5c95e47aae6e42ab20f2b64b7f2ae0bd4",
+    "hash": "cad4b49cc1e4cc4c154dfcd30b6a85e34d2953d3f53d6b2203449cc80749046a",
     "lastmod": "2026-05-20"
   },
   "/ja/": {
-    "hash": "b99e488419fd858787f301c35c0d69b9f3652113f6d0b206e6f97a74bfd34eca",
+    "hash": "095b766fb118e79614d89d1d3aada3618448f7cac4aa9d274e29369553d15aea",
     "lastmod": "2026-05-20"
   },
   "/ko/": {
-    "hash": "fbc02c7586783e6fd067072fc288d0929e806a136536aa10e6b4ae56fcbd8e92",
+    "hash": "6434823937c1a410ae1876016450e837c0b6f1db81fa91fb102fce4f051f0dbf",
     "lastmod": "2026-05-20"
   },
   "/zh/": {
-    "hash": "826698fc265f5af8115e9e642b39091430be457b5b29a9213b2b84c154144cfd",
+    "hash": "8eaeb58c14e32a90a3932dabd3882fdb7e9aa53b07f3673f6720384c9e07dd81",
     "lastmod": "2026-05-20"
   },
   "/info/": {
