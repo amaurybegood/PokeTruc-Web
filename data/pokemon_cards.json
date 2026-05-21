@@ -683,7 +683,7 @@
     "name": "Pokémon VS",
     "imageName": "15_Beedrill_jpn_versus1_61",
     "rarity": "Common",
-    "description": "",
+    "description": "This card was released in other languages too, but only a dozen copies were released. Consequently, we consider this illustration to be available only in Japanese.  https://bulbapedia.bulbagarden.net/wiki/Tyranitar_Half_Deck_(TCG)",
     "language": "🇯🇵",
     "year": 2001,
     "artist": "Tomokazu Komiya"
@@ -853,7 +853,7 @@
     "name": "Pokémon VS",
     "imageName": "22_Fearow_jpn_versus1_2",
     "rarity": "Common",
-    "description": "",
+    "description": "This card was released in other languages too, but only a dozen copies were released. Consequently, we consider this illustration to be available only in Japanese.  https://bulbapedia.bulbagarden.net/wiki/Tyranitar_Half_Deck_(TCG)",
     "language": "🇯🇵",
     "year": 2001,
     "artist": "Atsuko Nishida"
@@ -2102,7 +2102,7 @@
   "name": "Pokémon VS",
   "imageName": "78_Rapidash_jpn_versus1_87",
   "rarity": "Common",
-  "description": "",
+  "description": "This card was released in other languages too, but only a dozen copies were released. Consequently, we consider this illustration to be available only in Japanese.  https://bulbapedia.bulbagarden.net/wiki/Tyranitar_Half_Deck_(TCG)",
   "language": "🇯🇵",
   "year": 2001,
   "artist": "Hajime Kusajima"
@@ -2354,7 +2354,7 @@
   "name": "Pokémon VS",
   "imageName": "91_Cloyster_jpn_versus1_40",
   "rarity": "Common",
-  "description": "",
+  "description": "This card was released in other languages too, but only a dozen copies were released. Consequently, we consider this illustration to be available only in Japanese.  https://bulbapedia.bulbagarden.net/wiki/Tyranitar_Half_Deck_(TCG)",
   "language": "🇯🇵",
   "year": 2001,
   "artist": "Mitsuhiro Arita"
@@ -2453,7 +2453,18 @@
   "language": "🇯🇵",
   "year": 1998,
   "artist": "Masako Yamashita"
-},{
+},
+{
+  "pokemonId": 97,
+  "name": "Pokémon VS",
+  "imageName": "97_Hypno_jpn_versus1_22",
+  "rarity": "Common",
+  "description": "This card was released in other languages too, but only a dozen copies were released. Consequently, we consider this illustration to be available only in Japanese.  https://bulbapedia.bulbagarden.net/wiki/Tyranitar_Half_Deck_(TCG)",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Naoyo Kimura"
+},
+{
   "pokemonId": 98,
   "name": "Vending Machine Expansion Sheet 2: Red",
   "imageName": "98_Krabby_jpn_vses2_9",
@@ -2645,7 +2656,7 @@
   "name": "Pokémon VS",
   "imageName": "107_Hitmonchan_jpn_versus1_83",
   "rarity": "Common",
-  "description": "",
+  "description": "This card was released in other languages too, but only a dozen copies were released. Consequently, we consider this illustration to be available only in Japanese.  https://bulbapedia.bulbagarden.net/wiki/Tyranitar_Half_Deck_(TCG)",
   "language": "🇯🇵",
   "year": 2001,
   "artist": "Yuka Morii"
