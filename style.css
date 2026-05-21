@@ -700,6 +700,91 @@ main {
   overflow: hidden;
 }
 
+.card-item .card-description {
+  margin-top: 2px;
+}
+
+.card-item .card-description-toggle {
+  font-size: 0.7rem;
+  color: var(--accent);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+  list-style: none;
+  padding: 6px 8px;
+  margin: 0 -8px;
+  border-radius: 6px;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.15s ease;
+}
+
+.card-item .card-description-toggle:active {
+  background-color: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+.card-item .card-description-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.card-item .card-description-toggle::before {
+  content: 'ℹ';
+}
+
+.card-item .card-description-toggle::after {
+  content: '▸';
+  font-size: 0.6rem;
+  transition: transform 0.18s ease;
+}
+
+.card-item .card-description[open] .card-description-toggle::after {
+  transform: rotate(90deg);
+}
+
+.card-item .card-description-body {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  white-space: normal;
+  word-break: break-word;
+  animation: card-description-reveal 180ms ease-out;
+}
+
+.card-item .card-description-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  padding: 2px 4px;
+  margin: 0 -4px;
+  border-radius: 4px;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.15s ease;
+}
+
+.card-item .card-description-body a:active {
+  background-color: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+@keyframes card-description-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-item .card-description-body {
+    animation: none;
+  }
+  .card-item .card-description-toggle::after {
+    transition: none;
+  }
+}
+
 .lang-badge {
   vertical-align: middle;
 }

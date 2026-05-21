@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.querySelectorAll('.card-item .card-description').forEach(d => {
+    d.addEventListener('click', e => e.stopPropagation());
+  });
+
   document.querySelector('.fullscreen-backdrop').addEventListener('click', () => {
     document.getElementById('fullscreen').classList.add('hidden');
   });

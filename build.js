@@ -138,6 +138,8 @@ const LANG = {
     setsHeading: 'Sets featured',
     artistsHeading: 'Artists',
     artistPrefix: 'Artist',
+    sourceLinkText: 'source',
+    descriptionToggle: 'Note',
     langJapaneseHeading: 'Japanese-exclusive cards',
     langEnglishHeading:  'English-exclusive cards',
     langChineseHeading:  'Chinese-exclusive cards',
@@ -199,6 +201,8 @@ const LANG = {
     setsHeading: 'Sets présentés',
     artistsHeading: 'Artistes',
     artistPrefix: 'Artiste',
+    sourceLinkText: 'source',
+    descriptionToggle: 'Note',
     langJapaneseHeading: 'Cartes exclusives japonaises',
     langEnglishHeading:  'Cartes exclusives anglaises',
     langChineseHeading:  'Cartes exclusives chinoises',
@@ -261,6 +265,8 @@ const LANG = {
     setsHeading: '収録セット',
     artistsHeading: 'イラストレーター',
     artistPrefix: 'イラストレーター',
+    sourceLinkText: '出典',
+    descriptionToggle: 'メモ',
     langJapaneseHeading: '日本限定カード',
     langEnglishHeading:  '英語限定カード',
     langChineseHeading:  '中国語限定カード',
@@ -322,6 +328,8 @@ const LANG = {
     setsHeading: '수록 세트',
     artistsHeading: '일러스트레이터',
     artistPrefix: '일러스트레이터',
+    sourceLinkText: '출처',
+    descriptionToggle: '메모',
     langJapaneseHeading: '일본어 한정 카드',
     langEnglishHeading:  '영어 한정 카드',
     langChineseHeading:  '중국어 한정 카드',
@@ -383,6 +391,8 @@ const LANG = {
     setsHeading: '收录的卡组',
     artistsHeading: '插画师',
     artistPrefix: '插画师',
+    sourceLinkText: '来源',
+    descriptionToggle: '备注',
     langJapaneseHeading: '日文独占卡牌',
     langEnglishHeading:  '英文独占卡牌',
     langChineseHeading:  '中文独占卡牌',
@@ -423,6 +433,18 @@ function escapeHtml(s) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+function linkifyDescription(text, L) {
+  const escaped = escapeHtml(text);
+  const linkText = escapeHtml(L.sourceLinkText);
+  const ariaLabel = escapeHtml(`${L.sourceLinkText} (${L.opensInNewTab})`);
+  return escaped.replace(/https?:\/\/[^\s]+/g, (match) => {
+    const trailMatch = match.match(/[.,;:!?]+$/);
+    const trail = trailMatch ? trailMatch[0] : '';
+    const url = trail ? match.slice(0, -trail.length) : match;
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${ariaLabel}">${linkText}<span aria-hidden="true"> ↗</span></a>${trail}`;
+  });
 }
 
 function cardsFor(pokemonId) {
@@ -693,6 +715,10 @@ function renderCard(card, pokemon, L, lang, localizedName) {
             <div class="card-name">${escapeHtml(card.name)}</div>
             <div class="card-meta"><span class="lang-badge">${card.language}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
             ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
+            ${card.description ? `<details class="card-description">
+              <summary class="card-description-toggle">${escapeHtml(L.descriptionToggle)}</summary>
+              <div class="card-description-body">${linkifyDescription(card.description, L)}</div>
+            </details>` : ''}
           </div>
         </div>`;
 }
