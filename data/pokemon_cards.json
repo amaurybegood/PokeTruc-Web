@@ -1089,6 +1089,16 @@
     "artist": "Kariya"
   },
   {
+  "pokemonId": 26,
+  "name": "Pokémon VS",
+  "imageName": "26_Raichu_jpn_versus1_27",
+  "rarity": "Common",
+  "description": "This card was released in other languages too, but only a dozen copies were released. Consequently, we consider this illustration to be available only in Japanese.  https://bulbapedia.bulbagarden.net/wiki/Tyranitar_Half_Deck_(TCG)",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Yukiko Baba"
+},
+  {
     "pokemonId": 27,
     "name": "Vending Machine Expansion Sheet 2: Red",
     "imageName": "27_Sandshrew_jpn_vses2_20",
