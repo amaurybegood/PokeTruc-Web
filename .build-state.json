@@ -1,10 +1,10 @@
 {
   "/pokemon/bulbasaur/": {
-    "hash": "7b65d59297cfeec0bb1a2ca45d1f3247722ae01a281d38855c6eed844c847a7b",
+    "hash": "3d172c0809520094cfb651f5be025083b453efaa791c7dd0dc06cbdaa0c2a298",
     "lastmod": "2026-05-21"
   },
   "/pokemon/ivysaur/": {
-    "hash": "3f058e44647cb06bba741f1fddfdd294f682f5b422c9bf5f59b619b545bb3ff1",
+    "hash": "ddf2934cb434b0e55e12e0db857d64dcfe1a85c46c51f1fd2e19263a8812e87c",
     "lastmod": "2026-05-21"
   },
   "/pokemon/venusaur/": {
@@ -488,11 +488,11 @@
     "lastmod": "2026-05-21"
   },
   "/fr/pokemon/bulbasaur/": {
-    "hash": "246e800cdeee8a60976bbcae496fb3adb429c973b2b218bc6fd74d1dfb558498",
+    "hash": "6c5bb5fed89d9da4073227b65cca9839c1c4f278df8d10296059e46065326037",
     "lastmod": "2026-05-21"
   },
   "/fr/pokemon/ivysaur/": {
-    "hash": "ef09f1a1b71dd16084fe63d2c360066e258eaf8ebef5404c8da9c6f0e213965d",
+    "hash": "34552c317b539d6237bdec75b1245e70779b90d74610ce76950ca896e3f3cb7d",
     "lastmod": "2026-05-21"
   },
   "/fr/pokemon/venusaur/": {
@@ -976,11 +976,11 @@
     "lastmod": "2026-05-21"
   },
   "/ja/pokemon/bulbasaur/": {
-    "hash": "7277322d0c7a404ec71de136f3a9c2ebd3d0297009349e24ec098c0731d5e7db",
+    "hash": "500acac53e131fed54fbf6a43f305ff60d2469295cbb9d8a0c115ddfaa91e4c3",
     "lastmod": "2026-05-21"
   },
   "/ja/pokemon/ivysaur/": {
-    "hash": "dcd1462c62fad2d65dd0360569868fa606349aad80e4758048e0ae20bc805440",
+    "hash": "d5100afe38684d241a3a391be95597c25efe0c353ceb6558bfc7e846eec0b05b",
     "lastmod": "2026-05-21"
   },
   "/ja/pokemon/venusaur/": {
@@ -1464,11 +1464,11 @@
     "lastmod": "2026-05-21"
   },
   "/ko/pokemon/bulbasaur/": {
-    "hash": "2ab4e99135d6ceb0a47dd76bf272b42b4ecff90250ba93bde18c2a77bc148f2a",
+    "hash": "a54a928efd7b9e458e813b31a3a553f1351ef0125cb6262859e78034a17cd170",
     "lastmod": "2026-05-21"
   },
   "/ko/pokemon/ivysaur/": {
-    "hash": "28a5ec8cb0e4eeacba9877e82a1b15bdc4a2af4c110ed0310d76c5a0ab3ed8af",
+    "hash": "e6e71fbb388e21f36785a9753e77f893d087ff905d4345287db9079c7fc92eda",
     "lastmod": "2026-05-21"
   },
   "/ko/pokemon/venusaur/": {
@@ -1952,11 +1952,11 @@
     "lastmod": "2026-05-21"
   },
   "/zh/pokemon/bulbasaur/": {
-    "hash": "7985372dd979cee7d67b992c9522f7a8e5755c6cb5c14850d55ff581f4731a00",
+    "hash": "587dc22b464d20cd703578aab621432e3a48138053cdcac6f77ec42c02e7bfbe",
     "lastmod": "2026-05-21"
   },
   "/zh/pokemon/ivysaur/": {
-    "hash": "f3cf4a4e021621414e324650eff52c626dbb9e44125a1a94abf1c79192b3870c",
+    "hash": "11de6c8129439f8a44fa34aaa2ca2490ba52daab38b5eac0d185acaf0684eea9",
     "lastmod": "2026-05-21"
   },
   "/zh/pokemon/venusaur/": {
@@ -2440,24 +2440,24 @@
     "lastmod": "2026-05-21"
   },
   "/": {
-    "hash": "b6fdfa9ccb8ef2a0956ca31945a281b2ca72b214c318bf2f7f008b63e24a16dd",
-    "lastmod": "2026-05-20"
+    "hash": "f8be92e9574224f04463dd462a2240c7f9c531276d9feb5685033319a301b641",
+    "lastmod": "2026-05-21"
   },
   "/fr/": {
-    "hash": "9318b4561fc477fbe226c2e86f8cbac7d9158923d33af587837b63ffa6c111f6",
-    "lastmod": "2026-05-20"
+    "hash": "35c65f19184af87685091ae27c1c84b41fc90d34316d218273cbacd5c1466c75",
+    "lastmod": "2026-05-21"
   },
   "/ja/": {
-    "hash": "8f5a079700d807c5275a41330bf19b253fd38f77d023859b8aa9a21ff5fef00b",
-    "lastmod": "2026-05-20"
+    "hash": "3109b2e013bcaf2f0158db25ab1a563fda992e9eeb0734e180826ca644b92c24",
+    "lastmod": "2026-05-21"
   },
   "/ko/": {
-    "hash": "5b904210d13c90f388bc819ef6a3b2229ea91e457044750858cd845af9d3680b",
-    "lastmod": "2026-05-20"
+    "hash": "e8de0de57d47e36e541131e581eae0923fb849ccf80241f5ff0a99f97de8394b",
+    "lastmod": "2026-05-21"
   },
   "/zh/": {
-    "hash": "a92816afb8c4559b3245572568db551d13fa161fa96dd5b70517eb826a06dad0",
-    "lastmod": "2026-05-20"
+    "hash": "b5ec8a6817a6368baa877ff778452474e758317c5f96c52a6a0a5e62275aeedd",
+    "lastmod": "2026-05-21"
   },
   "/info/": {
     "hash": "2aed4527ba0e010166698a53dadd161c8c9943757ca4f87a52ace6c18c1044ab",

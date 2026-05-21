@@ -80,6 +80,25 @@
     "artist": ""
   },
   {
+  "pokemonId": 1,
+  "name": "My First Battle: Bulbasaur Deck",
+  "imageName": "1_Bulbasaur_mfbb_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Saya Tsuruta"
+},{
+  "pokemonId": 2,
+  "name": "My First Battle: Bulbasaur Deck",
+  "imageName": "2_Ivysaur_mfbb_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "Narumi Sato"
+},
+  {
     "pokemonId": 2,
     "name": "Intro Pack: Bulbasaur Deck",
     "imageName": "2_Ivysaur_jpn_ipb_32",
