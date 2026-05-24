@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://poketruc.com/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -7323,7 +7323,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/pokemon/ditto/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/ditto/"/>
@@ -7335,7 +7335,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/ditto/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/ditto/"/>
@@ -7347,7 +7347,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/ditto/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/ditto/"/>
@@ -7359,7 +7359,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/ditto/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/ditto/"/>
@@ -7371,7 +7371,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/ditto/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/ditto/"/>
@@ -7382,8 +7382,68 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/ditto/"/>
   </url>
   <url>
+    <loc>https://poketruc.com/pokemon/eevee/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/eevee/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/fr/pokemon/eevee/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/eevee/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ja/pokemon/eevee/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/eevee/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ko/pokemon/eevee/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/eevee/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/zh/pokemon/eevee/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/eevee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/eevee/"/>
+  </url>
+  <url>
     <loc>https://poketruc.com/pokemon/mew/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
@@ -7395,7 +7455,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/mew/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
@@ -7407,7 +7467,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/mew/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
@@ -7419,7 +7479,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/mew/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
@@ -7431,7 +7491,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/mew/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
