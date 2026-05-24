@@ -1739,7 +1739,7 @@
     },
     "imageName": "vaporeon",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 135,
@@ -1752,7 +1752,7 @@
     },
     "imageName": "jolteon",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 136,
@@ -1765,7 +1765,7 @@
     },
     "imageName": "flareon",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 137,
@@ -1778,7 +1778,7 @@
     },
     "imageName": "porygon",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 138,

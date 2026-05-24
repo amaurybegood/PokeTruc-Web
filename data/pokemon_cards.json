@@ -3529,6 +3529,106 @@
   "year": 2025,
   "artist": "HYOGONOSUKE"
 },
+{
+  "pokemonId": 134,
+  "name": "T Promos",
+  "imageName": "134_Vaporeon_jpn_tpr_2",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 134,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "134_Vaporeon_jpn_svp_63",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2022,
+  "artist": "YU NAGABA"
+},{
+  "pokemonId": 135,
+  "name": "Unnumbered Promos",
+  "imageName": "135_Jolteon_jpn_unp_59",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 135,
+  "name": "Pokémon VS",
+  "imageName": "135_Jolteon_jpn_versus1_30",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 135,
+  "name": "T Promos",
+  "imageName": "135_Jolteon_jpn_tpr_3",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 135,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "135_Jolteon_jpn_svp_64",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2022,
+  "artist": "YU NAGABA"
+},{
+  "pokemonId": 136,
+  "name": "Pokémon VS",
+  "imageName": "136_Flareon_jpn_versus1_89",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 136,
+  "name": "T Promos",
+  "imageName": "136_Flareon_jpn_tpr_1",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 136,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "136_Flareon_jpn_svp_65",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2022,
+  "artist": "YU NAGABA"
+},{
+  "pokemonId": 137,
+  "name": "Unnumbered Promos",
+  "imageName": "137_Porygon_jpn_unp_123",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Tomoaki Imakuni"
+},{
+  "pokemonId": 137,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "137_Porygon_jpn_vses1_33",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Sumiyoshi Kizuki"
+},
   {
     "pokemonId": 151,
     "name": "Scarlet & Violet Promos",
