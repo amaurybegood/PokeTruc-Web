@@ -536,11 +536,27 @@
     "lastmod": "2026-05-25"
   },
   "/pokemon/moltres/": {
-    "hash": "ef47a88e77fa88d59dbb88d238833cbb4512bfd511008dfb592ed0cccdc29238",
+    "hash": "9baf96714951e9aab8e43a346f10e27d890afddc45fd8854c7c1f7add3e59940",
+    "lastmod": "2026-05-25"
+  },
+  "/pokemon/dratini/": {
+    "hash": "97bc48f292057732c7d0a1ab8516d69c202a3310f83b73dc1a2ef02774fa39fd",
+    "lastmod": "2026-05-25"
+  },
+  "/pokemon/dragonair/": {
+    "hash": "b0dae40d26ba73acba3621a22660e0e5f123b1087a957ae9bc3a10cef1070be3",
+    "lastmod": "2026-05-25"
+  },
+  "/pokemon/dragonite/": {
+    "hash": "d3c3d226bcc82f8e8a8240539826de702d6fa01621033b9fc147e3412f03bc0d",
+    "lastmod": "2026-05-25"
+  },
+  "/pokemon/mewtwo/": {
+    "hash": "4d9a4e9932d7eb7dfc472da9dbbc29f93218a899b1410b560515794b8ce88641",
     "lastmod": "2026-05-25"
   },
   "/pokemon/mew/": {
-    "hash": "7ebf7b016fe3289477e16e438db545d74b5c41a1524164f2fa6219b2de7b7ae4",
+    "hash": "aaed39ac055feb7e8200f08e67fcf42c807c7f8e825eba7edee868d1ebe2c8df",
     "lastmod": "2026-05-25"
   },
   "/fr/pokemon/bulbasaur/": {
@@ -1080,11 +1096,27 @@
     "lastmod": "2026-05-25"
   },
   "/fr/pokemon/moltres/": {
-    "hash": "762847fc4811b4f9cde71702e75234cfbb8838df7d1cfe0ca4432acd65111d81",
+    "hash": "b613874ad6f08951b8a680fea3f98eea2cc32a1a5154f7512d22ed5bc8c4a31b",
+    "lastmod": "2026-05-25"
+  },
+  "/fr/pokemon/dratini/": {
+    "hash": "1e2718424a039f9c9a3feb3f22660e942e2713a9850bb312b33978dee157121c",
+    "lastmod": "2026-05-25"
+  },
+  "/fr/pokemon/dragonair/": {
+    "hash": "0c9c5176e13354c1e7769f0411697cf1978e5282a44cfd68ac852d441a2e5127",
+    "lastmod": "2026-05-25"
+  },
+  "/fr/pokemon/dragonite/": {
+    "hash": "37d97202d4377767d129ea7bba615df4e3a36ef22185679d14d4e2ffdfe5c3e2",
+    "lastmod": "2026-05-25"
+  },
+  "/fr/pokemon/mewtwo/": {
+    "hash": "611d6d2dbc2d09278b09de3220a766f8910c0bc62862d4e8f20ba15b63162cf3",
     "lastmod": "2026-05-25"
   },
   "/fr/pokemon/mew/": {
-    "hash": "7ebd04e945951d94558982220a28d35922270afc6d88a673c761d981d430e9ed",
+    "hash": "7dcb9c47475d5f9a5f91bcbd9d9fa8e7c341373f74401f7e8109cbd02f7644c6",
     "lastmod": "2026-05-25"
   },
   "/ja/pokemon/bulbasaur/": {
@@ -1624,11 +1656,27 @@
     "lastmod": "2026-05-25"
   },
   "/ja/pokemon/moltres/": {
-    "hash": "b6492f561f63faec3424a10d6603d43649eed442400a9930305bd43ec9a879c9",
+    "hash": "0220bc05f47195f35168128405c300042e91bd1fa1218d80162202a2466965ff",
+    "lastmod": "2026-05-25"
+  },
+  "/ja/pokemon/dratini/": {
+    "hash": "ae8b0842852641b5b865a6aaada481984f8a89a0c5428056a0e67f435e8f6a30",
+    "lastmod": "2026-05-25"
+  },
+  "/ja/pokemon/dragonair/": {
+    "hash": "caeda38dbbfd8225ca9cc304e4dcee3a2e634c5e62dd33e16b6e1328a72a7c57",
+    "lastmod": "2026-05-25"
+  },
+  "/ja/pokemon/dragonite/": {
+    "hash": "060eace87a1764f1600ca89562f7beca03973fb42cd7bbf0297aa01e7790c8d1",
+    "lastmod": "2026-05-25"
+  },
+  "/ja/pokemon/mewtwo/": {
+    "hash": "a93ccceca62edfb9d362cfe999f93e88b8f213f942b865e5f743b86987184c9d",
     "lastmod": "2026-05-25"
   },
   "/ja/pokemon/mew/": {
-    "hash": "9d06dfa60804a362544be18f4d2404b474aaff6c3321b2eb1da9aadb6b92724d",
+    "hash": "ec63e5f3012cc9713574473dccad5d98815d140bc223a962e29f287fbeef833f",
     "lastmod": "2026-05-25"
   },
   "/ko/pokemon/bulbasaur/": {
@@ -2168,11 +2216,27 @@
     "lastmod": "2026-05-25"
   },
   "/ko/pokemon/moltres/": {
-    "hash": "a0c381743eb168b1fdfeb45c949bdaa6211df3b3e8b6491db48ef00f22cb7666",
+    "hash": "4fc779f79f2160e1cc9b5caf82996161456fae7fb80db5a34eebd45927b3e990",
+    "lastmod": "2026-05-25"
+  },
+  "/ko/pokemon/dratini/": {
+    "hash": "51cd87fd94c228c692a066e6f283cd27cd019d60eb9defcd83762dcf57ea29d5",
+    "lastmod": "2026-05-25"
+  },
+  "/ko/pokemon/dragonair/": {
+    "hash": "8a85ceb425a4de2c4e7cb2ee2b81c33fb6d083c3b6bd33b3477640903827d778",
+    "lastmod": "2026-05-25"
+  },
+  "/ko/pokemon/dragonite/": {
+    "hash": "1864218b8c6ba0c661aa02027965ed840350c6cb7eeab19b7bca8be45d4ccb99",
+    "lastmod": "2026-05-25"
+  },
+  "/ko/pokemon/mewtwo/": {
+    "hash": "04f6f563addaeb4d3945044f677cfd6f00e3e020a763d45d7243933de0db6718",
     "lastmod": "2026-05-25"
   },
   "/ko/pokemon/mew/": {
-    "hash": "1e4e654ee66b8123b867f84d98e3df034c0dfea58d46c3990b9473f8d76ae459",
+    "hash": "8eafc0e63ac15dc0a448710788532ed232e5428fdcc65d539f0a16f39f047b43",
     "lastmod": "2026-05-25"
   },
   "/zh/pokemon/bulbasaur/": {
@@ -2712,31 +2776,47 @@
     "lastmod": "2026-05-25"
   },
   "/zh/pokemon/moltres/": {
-    "hash": "ce336e3b32f3f49800e50e5ef23d0c9a71d7015d0c4bbd138c5cd923da70b488",
+    "hash": "86ee34d9a83601940ee77da51fd34c89162815c6d9126838ac91558172dce368",
+    "lastmod": "2026-05-25"
+  },
+  "/zh/pokemon/dratini/": {
+    "hash": "f64ba76fcd590100c183921d3f2f40273784b1abb528183333ff0426859d8093",
+    "lastmod": "2026-05-25"
+  },
+  "/zh/pokemon/dragonair/": {
+    "hash": "f58da63b0eaa45aa34118886dc593810efde9644725be8e5d927db7e50ea9228",
+    "lastmod": "2026-05-25"
+  },
+  "/zh/pokemon/dragonite/": {
+    "hash": "a2be54d5be97f37a09f373a7ee521a72f9f51f2a1d16215d07b866f6270f2f81",
+    "lastmod": "2026-05-25"
+  },
+  "/zh/pokemon/mewtwo/": {
+    "hash": "45b9f2b9b6df92a1cb3a7772bdecd3cefd17b6ebe0fa616d6f32a783c871204a",
     "lastmod": "2026-05-25"
   },
   "/zh/pokemon/mew/": {
-    "hash": "06063bcb5085df215b2e23a87908476caa2e95e55bb46282ea9f6397198af778",
+    "hash": "056397f6a282e9a4898ca6c2c16d19f4d72e87566b36f12e2d1fad8e4153bfe4",
     "lastmod": "2026-05-25"
   },
   "/": {
-    "hash": "77750d3c02ce0abebfa901e6c82c74581970531e6675b25a04661f6724788d4b",
+    "hash": "c29912f64ec73d9e50f1b9bd7aba844e5fc3bc4f14f647a45b4dc843d186ac0c",
     "lastmod": "2026-05-25"
   },
   "/fr/": {
-    "hash": "ee65668d84496d6d7c466afe60ce3dc2be8276ac66635baf90402c438082933c",
+    "hash": "48213a3f8c5c161ed3e3a39386c7717d5f7089f0abf2a045cccbddbd0ea3c98c",
     "lastmod": "2026-05-25"
   },
   "/ja/": {
-    "hash": "ff5e0dbda2dbf2eabb565da8377d360854dc6ada0967405c96c785c5e8aba7ad",
+    "hash": "158cd714200895f1c6cb3f58ceb8851b142b9f5ae51b2e32dbf933eab0c4bf48",
     "lastmod": "2026-05-25"
   },
   "/ko/": {
-    "hash": "b694130fee63ae0a0dd6d3bd6738a2bec8dd80f615e30e0c4e4ac367e1955334",
+    "hash": "3bd0d9a4c02e6c044748d6412686ccb9b96b757927b72eea9100205d453270d2",
     "lastmod": "2026-05-25"
   },
   "/zh/": {
-    "hash": "c2b8de9a3b03b6f03b60ce608cd20e234c61e5e6010461877ac75e4a3ef3f9ea",
+    "hash": "e418ba29fe08d9513f14c4cc07764c3e2fab11dd35d706aa43ff4776818ee918",
     "lastmod": "2026-05-25"
   },
   "/info/": {
