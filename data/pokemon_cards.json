@@ -1571,6 +1571,556 @@
   "year": 2013,
   "artist": "adidas enjin project"
 },
+{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_21",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "2014 Pikachu Project"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_20",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "2014 Pikachu Project"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_407",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_400",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_392",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_369",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "2019 Pikachu Project"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_338",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "MPC Film"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_325",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_307",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Saya Tsuruta"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_283",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Saya Tsuruta"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_282",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Saya Tsuruta"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_281",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Saya Tsuruta"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_280",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Saya Tsuruta"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_276",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Akira Komayama"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_227",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Naoki Saito"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_224",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_211",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_210",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_209",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_208",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_200",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Naoki Saito"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_197",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Sanosuke Sakuma"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_196",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Sanosuke Sakuma"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_195",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Sanosuke Sakuma"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_194",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Sanosuke Sakuma"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_193",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Sanosuke Sakuma"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_192",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Sanosuke Sakuma"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_191",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Sanosuke Sakuma"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_88",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_68",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Naoki Saito"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_55",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "hanako"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_38",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_37",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_14",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_5",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2016,
+  "artist": "kawayoo"
+},{
+  "pokemonId": 25,
+  "name": "Ash vs Team Rocket Deck Kit",
+  "imageName": "25_Pikachu_jpn_smd_5",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2017,
+  "artist": "Nakano Satoshi"
+},{
+  "pokemonId": 25,
+  "name": "Sword & Shield Promos",
+  "imageName": "25_Pikachu_jpn_swshp_147",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2019,
+  "artist": "Fuzichoco"
+},{
+  "pokemonId": 25,
+  "name": "Sword & Shield Promos",
+  "imageName": "25_Pikachu_jpn_swshp_105",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2019,
+  "artist": "2020 Pikachu Project"
+},{
+  "pokemonId": 25,
+  "name": "Sword & Shield Promos",
+  "imageName": "25_Pikachu_jpn_swshp_99",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2019,
+  "artist": ""
+},{
+  "pokemonId": 25,
+  "name": "Sword & Shield Promos",
+  "imageName": "25_Pikachu_jpn_swshp_36",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2019,
+  "artist": "Spike Chunsoft."
+},{
+  "pokemonId": 25,
+  "name": "Sword & Shield Promos",
+  "imageName": "25_Pikachu_jpn_swshp_2",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2019,
+  "artist": ""
+},{
+  "pokemonId": 25,
+  "name": "25th Anniversary Golden Box",
+  "imageName": "25_Pikachu_jpn_s8aB_3",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2021,
+  "artist": "Ryuta Fuse"
+},{
+  "pokemonId": 25,
+  "name": "25th Anniversary Golden Box",
+  "imageName": "25_Pikachu_jpn_s8aB_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2021,
+  "artist": "5ban Graphics"
+},{
+  "pokemonId": 25,
+  "name": "Start Deck 100 CoroCoro Comic Version",
+  "imageName": "25_Pikachu_jpn_sN_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2022,
+  "artist": "You Iribi"
+},{
+  "pokemonId": 25,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "25_Pikachu_jpn_svp_289",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2022,
+  "artist": "Nelnal"
+},{
+  "pokemonId": 25,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "25_Pikachu_jpn_svp_261",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2022,
+  "artist": "REOspikee"
+},{
+  "pokemonId": 25,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "25_Pikachu_jpn_svp_260",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2022,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Start Deck 100 Battle Collection CoroCiao Version",
+  "imageName": "25_Pikachu_jpn_mp1_6",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2025,
+  "artist": "5ban Graphics"
+},{
+  "pokemonId": 25,
+  "name": "MEGA Promos",
+  "imageName": "25_Pikachu_jpn_mp_20",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2025,
+  "artist": "Yuu Nishida"
+},{
+  "pokemonId": 25,
+  "name": "Sword & Shield Promos",
+  "imageName": "25_Pikachu_swshp_SWSH074",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2020,
+  "artist": "The Pokémon Company Art Team"
+},{
+  "pokemonId": 25,
+  "name": "Pokémon Futsal",
+  "imageName": "25_Pikachu_fut20_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2020,
+  "artist": "The Pokémon Company Art Team"
+},{
+  "pokemonId": 25,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "25_Pikachu_aac_6",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2015,
+  "artist": "Meli"
+},{
+  "pokemonId": 25,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "25_Pikachu_aac_5",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2015,
+  "artist": "Rhivern"
+},{
+  "pokemonId": 25,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "25_Pikachu_aac_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2015,
+  "artist": "Lily-Chan"
+},{
+  "pokemonId": 25,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "25_Pikachu_aac_3",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2015,
+  "artist": "Me!"
+},{
+  "pokemonId": 25,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "25_Pikachu_aac_2",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2015,
+  "artist": "Ashley"
+},{
+  "pokemonId": 25,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "25_Pikachu_aac_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2015,
+  "artist": "Xime"
+},{
+  "pokemonId": 25,
+  "name": "Gem Pack Vol. 5",
+  "imageName": "25_Pikachu_scn_cbb5_107",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2026,
+  "artist": "Keita Hagiwara"
+},{
+  "pokemonId": 25,
+  "name": "Gem Pack Vol. 1",
+  "imageName": "25_Pikachu_scn_cbb1_707",
+  "rarity": "Double Rare",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2025,
+  "artist": "Ito Kyoko"
+},{
+  "pokemonId": 25,
+  "name": "Gem Pack Vol. 5",
+  "imageName": "25_Pikachu_scn_cbb5_106",
+  "rarity": "Double Rare",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2026,
+  "artist": "Miyuki Matsumoto"
+},{
+  "pokemonId": 25,
+  "name": "Gem Pack Vol. 5",
+  "imageName": "25_Pikachu_scn_cbb5_107",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2026,
+  "artist": "Keita Hagiwara"
+},
   {
     "pokemonId": 26,
     "name": "Intro Pack: Bulbasaur Deck",
