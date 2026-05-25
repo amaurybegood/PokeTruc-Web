@@ -524,11 +524,23 @@
     "lastmod": "2026-05-25"
   },
   "/pokemon/snorlax/": {
-    "hash": "da08c66bdb1db2892ae6b020dd3b07edc8e82b61518d10d45c79356b8f51f3ac",
+    "hash": "6d4ab9ee137ae719d542833b5cb7303941a1ae356fa4d471aead56c1dce5c9ec",
+    "lastmod": "2026-05-25"
+  },
+  "/pokemon/articuno/": {
+    "hash": "4f7c25789e5846f3bc740c89219a74fb6a5622697ae732d83a14cf97e54fda4a",
+    "lastmod": "2026-05-25"
+  },
+  "/pokemon/zapdos/": {
+    "hash": "d7606e1a130e7c55da680f6833e41a70d48ae45ff643c1fae9363c03d45042c4",
+    "lastmod": "2026-05-25"
+  },
+  "/pokemon/moltres/": {
+    "hash": "ef47a88e77fa88d59dbb88d238833cbb4512bfd511008dfb592ed0cccdc29238",
     "lastmod": "2026-05-25"
   },
   "/pokemon/mew/": {
-    "hash": "d08855f731f4dae589f50ae276c6a8baf9964cfae5f7eb3853c9ff17f46ec05f",
+    "hash": "7ebf7b016fe3289477e16e438db545d74b5c41a1524164f2fa6219b2de7b7ae4",
     "lastmod": "2026-05-25"
   },
   "/fr/pokemon/bulbasaur/": {
@@ -1056,11 +1068,23 @@
     "lastmod": "2026-05-25"
   },
   "/fr/pokemon/snorlax/": {
-    "hash": "fea475497e0f9c3ef106511f4fca168dc4df219db17a9cd5bf439d28507f5dcc",
+    "hash": "efe1bb0495e57245935ae0fbf29be912fcbe5146f0fed41b71dcb131828bc764",
+    "lastmod": "2026-05-25"
+  },
+  "/fr/pokemon/articuno/": {
+    "hash": "a0f4107b4dca3e254a281f620f839eda06cd0cc98bcc9acdf6bbe34b41417552",
+    "lastmod": "2026-05-25"
+  },
+  "/fr/pokemon/zapdos/": {
+    "hash": "672457d5396e2e782375f957c470c685a4a2107f77cce76febe930795c074798",
+    "lastmod": "2026-05-25"
+  },
+  "/fr/pokemon/moltres/": {
+    "hash": "762847fc4811b4f9cde71702e75234cfbb8838df7d1cfe0ca4432acd65111d81",
     "lastmod": "2026-05-25"
   },
   "/fr/pokemon/mew/": {
-    "hash": "b9bc5e08b415c3ef01b3e54a4cb4ee4745e15e287a4617dda5a3d8b3b3571a1b",
+    "hash": "7ebd04e945951d94558982220a28d35922270afc6d88a673c761d981d430e9ed",
     "lastmod": "2026-05-25"
   },
   "/ja/pokemon/bulbasaur/": {
@@ -1588,11 +1612,23 @@
     "lastmod": "2026-05-25"
   },
   "/ja/pokemon/snorlax/": {
-    "hash": "5e9966debf57758f4144560b7d7a9fd63b5e2671d351d38885b8b11758f2b61c",
+    "hash": "0e688e498ef8c871d099c008f47f20360800048d8663c0c99b492a28a184bfb4",
+    "lastmod": "2026-05-25"
+  },
+  "/ja/pokemon/articuno/": {
+    "hash": "68641bb1cc31c89c4b397e26203f030584f251a323335de07d268b1dbfc6ac48",
+    "lastmod": "2026-05-25"
+  },
+  "/ja/pokemon/zapdos/": {
+    "hash": "bc27c5a45599ab802bc766ba3dce11383c120db030d94a2f1b6093a5ef6b4da4",
+    "lastmod": "2026-05-25"
+  },
+  "/ja/pokemon/moltres/": {
+    "hash": "b6492f561f63faec3424a10d6603d43649eed442400a9930305bd43ec9a879c9",
     "lastmod": "2026-05-25"
   },
   "/ja/pokemon/mew/": {
-    "hash": "3e3f6cfbb33152637fc921587a5896328b9fea335170f3d28deadba6251c25b1",
+    "hash": "9d06dfa60804a362544be18f4d2404b474aaff6c3321b2eb1da9aadb6b92724d",
     "lastmod": "2026-05-25"
   },
   "/ko/pokemon/bulbasaur/": {
@@ -2120,11 +2156,23 @@
     "lastmod": "2026-05-25"
   },
   "/ko/pokemon/snorlax/": {
-    "hash": "2c36a49cab9314cb4800301cd1ad1c733bc07f867a22f8eadb14749535d970f7",
+    "hash": "4cbf8b2f514e3f322a6ecfa47db169d7bf8074f30da5623ef8697b34fca7641f",
+    "lastmod": "2026-05-25"
+  },
+  "/ko/pokemon/articuno/": {
+    "hash": "5e93e11dc85630df6e46f212ea83b229036ad697811a8680db955daa8a04ba69",
+    "lastmod": "2026-05-25"
+  },
+  "/ko/pokemon/zapdos/": {
+    "hash": "d746c0b25654663d8cf87910fceddb15cce6e6fcef5a1accd2a60330d26d384d",
+    "lastmod": "2026-05-25"
+  },
+  "/ko/pokemon/moltres/": {
+    "hash": "a0c381743eb168b1fdfeb45c949bdaa6211df3b3e8b6491db48ef00f22cb7666",
     "lastmod": "2026-05-25"
   },
   "/ko/pokemon/mew/": {
-    "hash": "5f63da352a15893e89f07dee09cf561a799fdd7626fbbf9d4d087e0ee824c333",
+    "hash": "1e4e654ee66b8123b867f84d98e3df034c0dfea58d46c3990b9473f8d76ae459",
     "lastmod": "2026-05-25"
   },
   "/zh/pokemon/bulbasaur/": {
@@ -2652,31 +2700,43 @@
     "lastmod": "2026-05-25"
   },
   "/zh/pokemon/snorlax/": {
-    "hash": "4b359f6d666600428500bdd2ad11eceabcfbafd6f09555d5cf6c90e7e91b7d15",
+    "hash": "51893d2cab093ee97d3ccbc32c59c79ddeb669f34c692b08ac0680df7eef91b0",
+    "lastmod": "2026-05-25"
+  },
+  "/zh/pokemon/articuno/": {
+    "hash": "c0efc18efbfa4a5b6a81c0f0555fbc7050d26b916d63809000b31ee67178ee4d",
+    "lastmod": "2026-05-25"
+  },
+  "/zh/pokemon/zapdos/": {
+    "hash": "72b0a08bc2a0103e158b65a05d96c1ed0985cc05d187880448f1fd4df00c8fe9",
+    "lastmod": "2026-05-25"
+  },
+  "/zh/pokemon/moltres/": {
+    "hash": "ce336e3b32f3f49800e50e5ef23d0c9a71d7015d0c4bbd138c5cd923da70b488",
     "lastmod": "2026-05-25"
   },
   "/zh/pokemon/mew/": {
-    "hash": "0ff85ce4677a2d474ccea915185564bcfcaf68cae13672698cd1283488c345c5",
+    "hash": "06063bcb5085df215b2e23a87908476caa2e95e55bb46282ea9f6397198af778",
     "lastmod": "2026-05-25"
   },
   "/": {
-    "hash": "592e2790f5dd5420bea2dc837c35683a35c6ec78c1792e8ecc02cfbadb085853",
+    "hash": "4353e190df76010efed22f94f417a1e8aae47d8ebf02a73c7d515285c0deb064",
     "lastmod": "2026-05-25"
   },
   "/fr/": {
-    "hash": "1168d861aec97c0759bce32561124be3a78a70bacee1f37ff0b4d84f96bde037",
+    "hash": "4a859ad42ea025c5b8936bde112d67966cca5d88a9f1881e9332f79a6ca9e52a",
     "lastmod": "2026-05-25"
   },
   "/ja/": {
-    "hash": "40a73d71e3a17ab689be8bef30f27e33c7868e7e917e0ff6dabec40609336bc9",
+    "hash": "733f528420eb10fd61abcda7362ddfd4c0c30f4617692b1b4945175247d436c7",
     "lastmod": "2026-05-25"
   },
   "/ko/": {
-    "hash": "f43ed878e9fe07726d5c5b1af27faf8469c720c4700d1bb072bc82a15452ea4a",
+    "hash": "3ae435afa357c642f0b91e3b413eb69de590c2f482cb595f3e7b97b8279f4383",
     "lastmod": "2026-05-25"
   },
   "/zh/": {
-    "hash": "ef998606d9ff01d7aaf40cc209468ce69003aeba636b4411417d676c59024976",
+    "hash": "ccc21b4764742794fc308a3148ba23366a2d36da27dba3e7a2326ea970ad8819",
     "lastmod": "2026-05-25"
   },
   "/info/": {

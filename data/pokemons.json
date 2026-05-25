@@ -1869,7 +1869,7 @@
     },
     "imageName": "articuno",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 145,
@@ -1882,7 +1882,7 @@
     },
     "imageName": "zapdos",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 146,
@@ -1895,7 +1895,7 @@
     },
     "imageName": "moltres",
     "generation": 1,
-    "researchStatus": "coming_soon"
+    "researchStatus": "done"
   },
   {
     "id": 147,

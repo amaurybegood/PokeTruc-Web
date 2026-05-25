@@ -3747,6 +3747,124 @@
   "year": 2024,
   "artist": "Saboteri"
 },
+{
+  "pokemonId": 144,
+  "name": "Unnumbered Promos",
+  "imageName": "144_Articuno_jpn_unp_78i",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Yui Tanaka"
+},{
+  "pokemonId": 144,
+  "name": "Unnumbered Promos",
+  "imageName": "144_Articuno_jpn_unp_78i",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Yui Tanaka"
+},{
+  "pokemonId": 144,
+  "name": "Pokémon VS",
+  "imageName": "144_Articuno_jpn_versus1_42",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 144,
+  "name": "T Promos",
+  "imageName": "144_Articuno_jpn_tpr_14",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 144,
+  "name": "Victory Lodestar",
+  "imageName": "144_Articuno_scn_cs65_15",
+  "rarity": "Rare",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "AKIRA EGAWA"
+},{
+  "pokemonId": 145,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "145_Zapdos_jpn_vses2_18",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Naoyo Kimura"
+},{
+  "pokemonId": 145,
+  "name": "P Promos",
+  "imageName": "145_Zapdos_jpn_ppr_24",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 145,
+  "name": "T Promos",
+  "imageName": "145_Zapdos_jpn_tpr_15",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 145,
+  "name": "Marine Shadow: Roar",
+  "imageName": "145_Zapdos_scn_cs6a_57",
+  "rarity": "Rare",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "Hasuno"
+},{
+  "pokemonId": 146,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "146_Moltres_jpn_vses2_5",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 146,
+  "name": "Pokémon Web",
+  "imageName": "146_Moltres_jpn_web1_43",
+  "rarity": "Rare Holo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Naoyo Kimura"
+},{
+  "pokemonId": 146,
+  "name": "T Promos",
+  "imageName": "146_Moltres_jpn_tpr_13",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 146,
+  "name": "Overshadowed Radiance",
+  "imageName": "146_Moltres_scn_cs55_8",
+  "rarity": "Rare",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "danciao"
+},
   {
     "pokemonId": 151,
     "name": "Scarlet & Violet Promos",
