@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://poketruc.com/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -7623,7 +7623,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/pokemon/porygon/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/porygon/"/>
@@ -7635,7 +7635,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/porygon/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/porygon/"/>
@@ -7647,7 +7647,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/porygon/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/porygon/"/>
@@ -7659,7 +7659,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/porygon/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/porygon/"/>
@@ -7671,7 +7671,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/porygon/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/porygon/"/>
@@ -7682,8 +7682,368 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/porygon/"/>
   </url>
   <url>
+    <loc>https://poketruc.com/pokemon/omanyte/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omanyte/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/fr/pokemon/omanyte/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omanyte/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ja/pokemon/omanyte/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omanyte/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ko/pokemon/omanyte/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omanyte/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/zh/pokemon/omanyte/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omanyte/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omanyte/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/pokemon/omastar/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omastar/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/fr/pokemon/omastar/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omastar/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ja/pokemon/omastar/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omastar/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ko/pokemon/omastar/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omastar/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/zh/pokemon/omastar/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/omastar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/omastar/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/pokemon/kabuto/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabuto/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/fr/pokemon/kabuto/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabuto/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ja/pokemon/kabuto/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabuto/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ko/pokemon/kabuto/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabuto/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/zh/pokemon/kabuto/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabuto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabuto/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/pokemon/kabutops/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabutops/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/fr/pokemon/kabutops/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabutops/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ja/pokemon/kabutops/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabutops/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ko/pokemon/kabutops/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabutops/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/zh/pokemon/kabutops/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kabutops/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kabutops/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/pokemon/aerodactyl/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/aerodactyl/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/fr/pokemon/aerodactyl/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/aerodactyl/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ja/pokemon/aerodactyl/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/aerodactyl/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ko/pokemon/aerodactyl/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/aerodactyl/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/zh/pokemon/aerodactyl/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/aerodactyl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/aerodactyl/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/pokemon/snorlax/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/snorlax/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/fr/pokemon/snorlax/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/snorlax/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ja/pokemon/snorlax/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/snorlax/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/ko/pokemon/snorlax/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/snorlax/"/>
+  </url>
+  <url>
+    <loc>https://poketruc.com/zh/pokemon/snorlax/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://poketruc.com/fr/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://poketruc.com/ja/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/snorlax/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/snorlax/"/>
+  </url>
+  <url>
     <loc>https://poketruc.com/pokemon/mew/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
@@ -7695,7 +8055,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/mew/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
@@ -7707,7 +8067,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/mew/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
@@ -7719,7 +8079,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/mew/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>
@@ -7731,7 +8091,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/mew/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mew/"/>

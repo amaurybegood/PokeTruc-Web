@@ -3629,6 +3629,124 @@
   "year": 1998,
   "artist": "Sumiyoshi Kizuki"
 },
+{
+  "pokemonId": 138,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "138_Omanyte_jpn_vses2_11",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 138,
+  "name": "Vending Machine Expansion Sheet 3: Green",
+  "imageName": "138_Omanyte_jpn_vses3_18",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Aya Kusube"
+},{
+  "pokemonId": 139,
+  "name": "Unnumbered Promos",
+  "imageName": "139_Omastar_jpn_unp_71",
+  "rarity": "Rare Holo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Yukiko Baba"
+},{
+  "pokemonId": 139,
+  "name": "Pokémon VS",
+  "imageName": "139_Omastar_jpn_versus1_68",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Kei Hoshiba"
+},{
+  "pokemonId": 140,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "140_Kabuto_jpn_vses2_28",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 141,
+  "name": "Pokémon VS",
+  "imageName": "141_Kabutops_jpn_versus1_69",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Katsura Tabata"
+},{
+  "pokemonId": 141,
+  "name": "Theater Limited VS Pack",
+  "imageName": "141_Kabutops_jpn_tlvs_8",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 142,
+  "name": "Vending Machine Expansion Sheet 2: Red",
+  "imageName": "142_Aerodactyl_jpn_vses2_29",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 142,
+  "name": "Pokémon VS",
+  "imageName": "142_Aerodactyl_jpn_versus1_99",
+  "rarity": "Common",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Aya Kusube"
+},{
+  "pokemonId": 142,
+  "name": "Theater Limited VS Pack",
+  "imageName": "142_Aerodactyl_jpn_tlvs_9",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 143,
+  "name": "Vending Machine Expansion Sheet 1: Blue",
+  "imageName": "143_Snorlax_jpn_vses1_34",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1998,
+  "artist": "Keita Takahashi"
+},{
+  "pokemonId": 143,
+  "name": "Wizards Promos",
+  "imageName": "143_Snorlax_basep_49",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 1999,
+  "artist": "Craig Turvey"
+},{
+  "pokemonId": 143,
+  "name": "Gallant Galaxy: Charm",
+  "imageName": "143_Snorlax_scn_cs5a_93",
+  "rarity": "Rare",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "Saboteri"
+},
   {
     "pokemonId": 151,
     "name": "Scarlet & Violet Promos",
