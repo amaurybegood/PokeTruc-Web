@@ -1049,6 +1049,529 @@
     "artist": "Sanosuke Sakuma"
   },
   {
+  "pokemonId": 25,
+  "name": "Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_unp_80",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Toshinao Aoki"
+},{
+  "pokemonId": 25,
+  "name": "Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_unp_207",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 25,
+  "name": "Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_unp_51",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Toshinao Aoki"
+},{
+  "pokemonId": 25,
+  "name": "P Promos",
+  "imageName": "25_Pikachu_jpn_ppr_44",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 25,
+  "name": "P Promos",
+  "imageName": "25_Pikachu_jpn_ppr_38",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 25,
+  "name": "P Promos",
+  "imageName": "25_Pikachu_jpn_ppr_21",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 25,
+  "name": "P Promos",
+  "imageName": "25_Pikachu_jpn_ppr_4",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2001,
+  "artist": "Hironobu Yoshida"
+},{
+  "pokemonId": 25,
+  "name": "McDonald's Pokémon-e Minimum Pack",
+  "imageName": "25_Pikachu_jpn_mcdemp_10",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2002,
+  "artist": "Satoshi Ohta"
+},{
+  "pokemonId": 25,
+  "name": "PCG-P Promos",
+  "imageName": "25_Pikachu_jpn_pcgp_43",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2004,
+  "artist": "Kanako Eo"
+},{
+  "pokemonId": 25,
+  "name": "PokéPark Premium File: Forest Sheet",
+  "imageName": "25_Pikachu_jpn_pkpf_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2005,
+  "artist": "Kanako Eo"
+},{
+  "pokemonId": 25,
+  "name": "Diamond & Pearl Promos",
+  "imageName": "25_Pikachu_jpn_dpp_102",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2006,
+  "artist": "Yuka Morii"
+},{
+  "pokemonId": 25,
+  "name": "Diamond & Pearl Promos",
+  "imageName": "25_Pikachu_jpn_dpp_100",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2006,
+  "artist": "Yuka Morii"
+},{
+  "pokemonId": 25,
+  "name": "11th Movie Commemoration Set",
+  "imageName": "25_Pikachu_jpn_mcs11_3",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2008,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 25,
+  "name": "DPt-P Promos",
+  "imageName": "25_Pikachu_jpn_plp_43",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2008,
+  "artist": "2009 Pikachu Project"
+},{
+  "pokemonId": 25,
+  "name": "Gift Box DPt: Pikachu Half Deck",
+  "imageName": "25_Pikachu_jpn_gbpikhd_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2008,
+  "artist": "Takao Unno"
+},{
+  "pokemonId": 25,
+  "name": "Movie Commemoration Random Pack",
+  "imageName": "25_Pikachu_jpn_mcrp_12",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2009,
+  "artist": "2009 Pikachu Project"
+},{
+  "pokemonId": 25,
+  "name": "LEGEND Promos",
+  "imageName": "25_Pikachu_jpn_legp_79",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2009,
+  "artist": "Kagemaru Himeno"
+},{
+  "pokemonId": 25,
+  "name": "Black & White Promos",
+  "imageName": "25_Pikachu_jpn_bwp_229",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2010,
+  "artist": "5ban Graphics"
+},{
+  "pokemonId": 25,
+  "name": "Black & White Promos",
+  "imageName": "25_Pikachu_jpn_bwp_151",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2010,
+  "artist": "Mizue"
+},{
+  "pokemonId": 25,
+  "name": "Black & White Promos",
+  "imageName": "25_Pikachu_jpn_bwp_120",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2010,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "Everyone's Exciting Battle",
+  "imageName": "25_Pikachu_jpn_wak_16",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2012,
+  "artist": "Naoyo Kimura"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_295",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_293",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_279",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Naoki Saito"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_275",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_274",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_231",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_230",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_221",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_208",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_207",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_206",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "MAHOU"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_204",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_203",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_175",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "5ban Graphics"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_151",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_150",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_151",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_99",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kanako Eo"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_98",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_99",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Mizue"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_97",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "kirisAki"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_96",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "match"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_95",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Hitoshi Ariga"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_94",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Akira Komayama"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_90",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Hitoshi Ariga"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_80",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Ginga"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_75",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Sayaka Maruyama"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_74",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Y. Fujishima"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_73",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Mame Akimaru"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_72",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "pikamania"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_71",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "gogotake"
+},{
+  "pokemonId": 25,
+  "name": "XY Unnumbered Promos",
+  "imageName": "25_Pikachu_jpn_xypunp_50",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Naoki Saito"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_70",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_69",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_68",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_56",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": ""
+},{
+  "pokemonId": 25,
+  "name": "XY Promos",
+  "imageName": "25_Pikachu_jpn_xyp_50",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇯🇵",
+  "year": 2013,
+  "artist": "adidas enjin project"
+},
+  {
     "pokemonId": 26,
     "name": "Intro Pack: Bulbasaur Deck",
     "imageName": "26_Raichu_jpn_ipb_3",
