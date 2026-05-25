@@ -1021,16 +1021,6 @@
   {
     "pokemonId": 25,
     "name": "Unnumbered Promos",
-    "imageName": "25_Pikachu_jpn_unp_44",
-    "rarity": "Promo",
-    "description": "",
-    "language": "🇯🇵",
-    "year": 1996,
-    "artist": "Atsuko Nishida"
-  },
-  {
-    "pokemonId": 25,
-    "name": "Unnumbered Promos",
     "imageName": "25_Pikachu_jpn_unp_78e",
     "rarity": "Promo",
     "description": "",
@@ -1347,16 +1337,6 @@
     "language": "🇯🇵",
     "year": 2001,
     "artist": "Naoyo Kimura"
-  },
-  {
-    "pokemonId": 39,
-    "name": "Unnumbered Promos",
-    "imageName": "39_Jigglypuff_jpn_unp_12",
-    "rarity": "Promo",
-    "description": "",
-    "language": "🇯🇵",
-    "year": 1996,
-    "artist": "Atsuko Nishida"
   },
   {
   "pokemonId": 39,
