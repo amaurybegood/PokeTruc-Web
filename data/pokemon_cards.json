@@ -2113,6 +2113,16 @@
   "year": 2004,
   "artist": "Sylvia Forrest"
 },
+{
+  "pokemonId": 25,
+  "name": "My First Battle: Pikachu Deck",
+  "imageName": "25_Pikachu_mfbp_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2022,
+  "artist": "saino misaki"
+},
   {
     "pokemonId": 26,
     "name": "Intro Pack: Bulbasaur Deck",
