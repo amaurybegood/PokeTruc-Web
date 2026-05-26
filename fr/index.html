@@ -39,7 +39,7 @@
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"Illustrations / artworks de cartes Pokémon TCG n'existant qu'en une langue (japonais, anglais, chinois, coréen). Gratuit, sans pub, fait par un fan.","inLanguage":["en","fr","ja","ko","zh-Hans"]},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/fr/#collection","url":"https://poketruc.com/fr/","name":"PokéTruc — Illustrations exclusives de cartes Pokémon TCG","description":"Illustrations / artworks de cartes Pokémon TCG n'existant qu'en une langue (japonais, anglais, chinois, coréen). Gratuit, sans pub, fait par un fan.","inLanguage":"fr","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"Illustrations / artworks de cartes Pokémon TCG n'existant qu'en une langue (japonais, anglais, chinois, coréen). Gratuit, sans pub, fait par un fan."}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/fr/"}]}]}</script>
   <noscript><style>
-    #search, .search-row, #stats-bar, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -64,11 +64,15 @@
   <main id="main-content">
     <h1 class="page-title visually-hidden">Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue</h1>
 
+    <section class="home-summary">
+      <p class="home-stats-text">PokéTruc recense 548 illustrations de cartes TCG Pokémon exclusives à une seule langue, réparties sur 140 Pokémon de la première génération, de 1996 à 2026. La collection comprend 433 cartes japonaises, 69 cartes anglaises, 41 cartes chinoises, 3 cartes coréennes, 1 carte allemande et 1 carte espagnole.</p>
+    </section>
+
     <div class="search-row">
       <input type="search" id="search" placeholder="Rechercher un Pokémon..." aria-label="Rechercher un Pokémon..." autocomplete="off">
     </div>
 
-    <div id="stats-bar" class="stats-bar"></div>
+    <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="Filtrer par langue de carte"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
@@ -233,8 +237,8 @@
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="/i18n.js?v=14"></script>
-  <script src="/theme.js?v=14"></script>
-  <script src="/app.js?v=14"></script>
+  <script src="/i18n.js?v=15"></script>
+  <script src="/theme.js?v=15"></script>
+  <script src="/app.js?v=15"></script>
 </body>
 </html>

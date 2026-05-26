@@ -46,7 +46,7 @@ function recordWrite(filePath, content, urlKey) {
 }
 
 const CSS_V = 25;
-const JS_V  = 14;
+const JS_V  = 15;
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
 
@@ -61,19 +61,24 @@ const NAME_FIELD = { en: 'en', fr: 'fr', ja: 'jp', ko: 'ko', zh: 'zh' };
 
 // Card-language flags, in the order they should appear on the page.
 const LANG_INFO = [
-  { flag: '🇯🇵', key: 'langJapaneseHeading' },
-  { flag: '🇬🇧', key: 'langEnglishHeading'  },
-  { flag: '🇨🇳', key: 'langChineseHeading'  },
-  { flag: '🇰🇷', key: 'langKoreanHeading'   },
-  { flag: '🇩🇪', key: 'langGermanHeading'   },
+  { flag: '🇯🇵', key: 'langJapaneseHeading'   },
+  { flag: '🇬🇧', key: 'langEnglishHeading'    },
+  { flag: '🇨🇳', key: 'langChineseHeading'    },
+  { flag: '🇰🇷', key: 'langKoreanHeading'     },
+  { flag: '🇩🇪', key: 'langGermanHeading'     },
+  { flag: '🇪🇸', key: 'langSpanishHeading'    },
+  { flag: '🇫🇷', key: 'langFrenchHeading'     },
+  { flag: '🇮🇹', key: 'langItalianHeading'    },
+  { flag: '🇵🇹', key: 'langPortugueseHeading' },
+  { flag: '🇵🇱', key: 'langPolishHeading'     },
 ];
 
 const STATS_LANG_LABEL = {
-  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German'      },
-  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande'   },
-  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정' },
-  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占'    },
+  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German',      '🇪🇸': 'Spanish',     '🇫🇷': 'French',      '🇮🇹': 'Italian',      '🇵🇹': 'Portuguese',     '🇵🇱': 'Polish'       },
+  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande',   '🇪🇸': 'espagnole',   '🇫🇷': 'française',   '🇮🇹': 'italienne',    '🇵🇹': 'portugaise',     '🇵🇱': 'polonaise'    },
+  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定' },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정',  '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정'  },
+  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占',    '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占',     '🇮🇹': '意大利文独占',  '🇵🇹': '葡萄牙文独占',   '🇵🇱': '波兰文独占'    },
 };
 
 // ISO language code for each flag emoji used on a card. Used by JSON-LD
@@ -84,6 +89,11 @@ const FLAG_TO_ISO = {
   '🇨🇳': 'zh-Hans',
   '🇰🇷': 'ko',
   '🇩🇪': 'de',
+  '🇪🇸': 'es',
+  '🇫🇷': 'fr',
+  '🇮🇹': 'it',
+  '🇵🇹': 'pt',
+  '🇵🇱': 'pl',
 };
 
 const JOIN_RULES = {
@@ -103,6 +113,7 @@ const LANG = {
     pokedex: 'Pokédex',
     info: 'Info',
     searchPlaceholder: 'Search a Pokémon...',
+    langFilterAria: 'Filter by card language',
     skipToContent: 'Skip to main content',
     indexTitle: 'PokéTruc — Unique Pokémon TCG Card Illustrations',
     indexDescription: 'Pokémon TCG illustrations / artworks that exist in only one language — Japanese, English, Chinese or Korean. Free, fan-made, ad-free.',
@@ -140,11 +151,16 @@ const LANG = {
     artistPrefix: 'Artist',
     sourceLinkText: 'source',
     descriptionToggle: 'Note',
-    langJapaneseHeading: 'Japanese-exclusive cards',
-    langEnglishHeading:  'English-exclusive cards',
-    langChineseHeading:  'Chinese-exclusive cards',
-    langKoreanHeading:   'Korean-exclusive cards',
-    langGermanHeading:   'German-exclusive cards',
+    langJapaneseHeading:   'Japanese-exclusive cards',
+    langEnglishHeading:    'English-exclusive cards',
+    langChineseHeading:    'Chinese-exclusive cards',
+    langKoreanHeading:     'Korean-exclusive cards',
+    langGermanHeading:     'German-exclusive cards',
+    langSpanishHeading:    'Spanish-exclusive cards',
+    langFrenchHeading:     'French-exclusive cards',
+    langItalianHeading:    'Italian-exclusive cards',
+    langPortugueseHeading: 'Portuguese-exclusive cards',
+    langPolishHeading:     'Polish-exclusive cards',
     cardsSection: (n) => `${n} exclusive TCG card ${n === 1 ? 'illustration' : 'illustrations'}`,
     detailTitle: (name, n) => `${name} — Exclusive TCG Card ${n === 1 ? 'Illustration' : 'Illustrations'} | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -166,6 +182,7 @@ const LANG = {
     pokedex: 'Pokédex',
     info: 'Info',
     searchPlaceholder: 'Rechercher un Pokémon...',
+    langFilterAria: 'Filtrer par langue de carte',
     skipToContent: 'Aller au contenu',
     indexTitle: 'PokéTruc — Illustrations exclusives de cartes Pokémon TCG',
     indexDescription: "Illustrations / artworks de cartes Pokémon TCG n'existant qu'en une langue (japonais, anglais, chinois, coréen). Gratuit, sans pub, fait par un fan.",
@@ -203,11 +220,16 @@ const LANG = {
     artistPrefix: 'Artiste',
     sourceLinkText: 'source',
     descriptionToggle: 'Note',
-    langJapaneseHeading: 'Cartes exclusives japonaises',
-    langEnglishHeading:  'Cartes exclusives anglaises',
-    langChineseHeading:  'Cartes exclusives chinoises',
-    langKoreanHeading:   'Cartes exclusives coréennes',
-    langGermanHeading:   'Cartes exclusives allemandes',
+    langJapaneseHeading:   'Cartes exclusives japonaises',
+    langEnglishHeading:    'Cartes exclusives anglaises',
+    langChineseHeading:    'Cartes exclusives chinoises',
+    langKoreanHeading:     'Cartes exclusives coréennes',
+    langGermanHeading:     'Cartes exclusives allemandes',
+    langSpanishHeading:    'Cartes exclusives espagnoles',
+    langFrenchHeading:     'Cartes exclusives françaises',
+    langItalianHeading:    'Cartes exclusives italiennes',
+    langPortugueseHeading: 'Cartes exclusives portugaises',
+    langPolishHeading:     'Cartes exclusives polonaises',
     cardsSection: (n) => `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG`,
     detailTitle: (name, n) =>
       `${name} — Illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG | PokéTruc`,
@@ -230,6 +252,7 @@ const LANG = {
     pokedex: '図鑑',
     info: '情報',
     searchPlaceholder: 'ポケモンをさがす',
+    langFilterAria: 'カードの言語で絞り込む',
     skipToContent: 'メインコンテンツへスキップ',
     indexTitle: 'PokéTruc — 言語限定のポケモンTCGカードイラスト',
     indexDescription: '1つの言語（日本語・英語・中国語・韓国語）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。',
@@ -267,11 +290,16 @@ const LANG = {
     artistPrefix: 'イラストレーター',
     sourceLinkText: '出典',
     descriptionToggle: 'メモ',
-    langJapaneseHeading: '日本限定カード',
-    langEnglishHeading:  '英語限定カード',
-    langChineseHeading:  '中国語限定カード',
-    langKoreanHeading:   '韓国語限定カード',
-    langGermanHeading:   'ドイツ語限定カード',
+    langJapaneseHeading:   '日本限定カード',
+    langEnglishHeading:    '英語限定カード',
+    langChineseHeading:    '中国語限定カード',
+    langKoreanHeading:     '韓国語限定カード',
+    langGermanHeading:     'ドイツ語限定カード',
+    langSpanishHeading:    'スペイン語限定カード',
+    langFrenchHeading:     'フランス語限定カード',
+    langItalianHeading:    'イタリア語限定カード',
+    langPortugueseHeading: 'ポルトガル語限定カード',
+    langPolishHeading:     'ポーランド語限定カード',
     cardsSection: (n) => `${n}枚の言語限定TCGカードイラスト`,
     detailTitle: (name, n) => `${name} — 言語限定TCGカードイラスト${n}枚 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -293,6 +321,7 @@ const LANG = {
     pokedex: '도감',
     info: '정보',
     searchPlaceholder: '포켓몬 검색',
+    langFilterAria: '카드 언어로 필터링',
     skipToContent: '본문으로 건너뛰기',
     indexTitle: 'PokéTruc — 언어 한정 포켓몬 TCG 카드 일러스트',
     indexDescription: '한 가지 언어(일본어, 영어, 중국어, 한국어)로만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.',
@@ -330,11 +359,16 @@ const LANG = {
     artistPrefix: '일러스트레이터',
     sourceLinkText: '출처',
     descriptionToggle: '메모',
-    langJapaneseHeading: '일본어 한정 카드',
-    langEnglishHeading:  '영어 한정 카드',
-    langChineseHeading:  '중국어 한정 카드',
-    langKoreanHeading:   '한국어 한정 카드',
-    langGermanHeading:   '독일어 한정 카드',
+    langJapaneseHeading:   '일본어 한정 카드',
+    langEnglishHeading:    '영어 한정 카드',
+    langChineseHeading:    '중국어 한정 카드',
+    langKoreanHeading:     '한국어 한정 카드',
+    langGermanHeading:     '독일어 한정 카드',
+    langSpanishHeading:    '스페인어 한정 카드',
+    langFrenchHeading:     '프랑스어 한정 카드',
+    langItalianHeading:    '이탈리아어 한정 카드',
+    langPortugueseHeading: '포르투갈어 한정 카드',
+    langPolishHeading:     '폴란드어 한정 카드',
     cardsSection: (n) => `${n}장의 언어 한정 TCG 카드 일러스트`,
     detailTitle: (name, n) => `${name} — 언어 한정 TCG 카드 일러스트 ${n}장 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -356,6 +390,7 @@ const LANG = {
     pokedex: '图鉴',
     info: '信息',
     searchPlaceholder: '搜索宝可梦',
+    langFilterAria: '按卡牌语言筛选',
     skipToContent: '跳到主要内容',
     indexTitle: 'PokéTruc — 语言独占的宝可梦 TCG 卡牌插画',
     indexDescription: '仅在一种语言（日文、英文、中文或韩文）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。',
@@ -393,11 +428,16 @@ const LANG = {
     artistPrefix: '插画师',
     sourceLinkText: '来源',
     descriptionToggle: '备注',
-    langJapaneseHeading: '日文独占卡牌',
-    langEnglishHeading:  '英文独占卡牌',
-    langChineseHeading:  '中文独占卡牌',
-    langKoreanHeading:   '韩文独占卡牌',
-    langGermanHeading:   '德文独占卡牌',
+    langJapaneseHeading:   '日文独占卡牌',
+    langEnglishHeading:    '英文独占卡牌',
+    langChineseHeading:    '中文独占卡牌',
+    langKoreanHeading:     '韩文独占卡牌',
+    langGermanHeading:     '德文独占卡牌',
+    langSpanishHeading:    '西班牙文独占卡牌',
+    langFrenchHeading:     '法文独占卡牌',
+    langItalianHeading:    '意大利文独占卡牌',
+    langPortugueseHeading: '葡萄牙文独占卡牌',
+    langPolishHeading:     '波兰文独占卡牌',
     cardsSection: (n) => `${n} 张语言独占 TCG 卡牌插画`,
     detailTitle: (name, n) => `${name} — ${n} 张语言独占 TCG 卡牌插画 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -526,6 +566,65 @@ const STATS_BUILDERS = {
     return `PokéTruc 收录了 ${count} 张 ${name} 的语言独占 TCG 卡牌插画（${yearPart}）。${langSentence}${artistSentence}`;
   },
 };
+
+// Build the aggregate "PokéTruc has catalogued N illustrations across the whole
+// Gen 1 collection..." sentence shown on the home page (no artist mention).
+const HOME_STATS_BUILDERS = {
+  en: ({ count, minY, maxY, byLang, pokemonCount }) => {
+    const wordP = count === 1 ? 'illustration' : 'illustrations';
+    const yearPart = (minY === maxY) ? `published in ${minY}` : `spanning ${minY} to ${maxY}`;
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => {
+      const n = byLang[l.flag];
+      return `${n} ${STATS_LANG_LABEL.en[l.flag]}-exclusive ${n === 1 ? 'card' : 'cards'}`;
+    });
+    const langSentence = langParts.length ? `The collection includes ${joinListLang(langParts, 'en')}.` : '';
+    return `PokéTruc has catalogued ${count} language-exclusive Pokémon TCG card ${wordP} across ${pokemonCount} Generation 1 Pokémon, ${yearPart}. ${langSentence}`;
+  },
+  fr: ({ count, minY, maxY, byLang, pokemonCount }) => {
+    const s = count > 1 ? 's' : '';
+    const yearPart = (minY === maxY) ? `publiée${s} en ${minY}` : `de ${minY} à ${maxY}`;
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => {
+      const n = byLang[l.flag];
+      const sn = n > 1 ? 's' : '';
+      return `${n} carte${sn} ${STATS_LANG_LABEL.fr[l.flag]}${sn}`;
+    });
+    const langSentence = langParts.length ? `La collection comprend ${joinListLang(langParts, 'fr')}.` : '';
+    return `PokéTruc recense ${count} illustration${s} de carte${s} TCG Pokémon exclusive${s} à une seule langue, réparties sur ${pokemonCount} Pokémon de la première génération, ${yearPart}. ${langSentence}`;
+  },
+  ja: ({ count, minY, maxY, byLang, pokemonCount }) => {
+    const yearPart = (minY === maxY) ? `${minY}年発行` : `${minY}年から${maxY}年`;
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${STATS_LANG_LABEL.ja[l.flag]}${byLang[l.flag]}枚`);
+    const langSentence = langParts.length ? `内訳は${joinListLang(langParts, 'ja')}です。` : '';
+    return `PokéTrucでは、第1世代の${pokemonCount}匹のポケモンを対象に、言語限定TCGカードイラスト${count}枚（${yearPart}）を収録しています。${langSentence}`;
+  },
+  ko: ({ count, minY, maxY, byLang, pokemonCount }) => {
+    const yearPart = (minY === maxY) ? `${minY}년 발행` : `${minY}년부터 ${maxY}년까지`;
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${STATS_LANG_LABEL.ko[l.flag]} ${byLang[l.flag]}장`);
+    const langSentence = langParts.length ? `포함 내역: ${joinListLang(langParts, 'ko')}.` : '';
+    return `PokéTruc에는 1세대 ${pokemonCount}마리 포켓몬의 언어 한정 TCG 카드 일러스트 ${count}장(${yearPart})이 수록되어 있습니다. ${langSentence}`;
+  },
+  zh: ({ count, minY, maxY, byLang, pokemonCount }) => {
+    const yearPart = (minY === maxY) ? `${minY} 年发行` : `${minY}–${maxY} 年`;
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${byLang[l.flag]} 张${STATS_LANG_LABEL.zh[l.flag]}`);
+    const langSentence = langParts.length ? `包括${joinListLang(langParts, 'zh')}。` : '';
+    return `PokéTruc 收录了第一世代 ${pokemonCount} 只宝可梦的 ${count} 张语言独占 TCG 卡牌插画（${yearPart}）。${langSentence}`;
+  },
+};
+
+function buildHomeStatsSentence(lang) {
+  const count = cards.length;
+  const years = cards.map(c => c.year);
+  const minY = Math.min(...years);
+  const maxY = Math.max(...years);
+
+  const byLangRaw = cards.reduce((a, c) => { a[c.language] = (a[c.language] || 0) + 1; return a; }, {});
+  const byLang = {};
+  for (const l of LANG_INFO) if (byLangRaw[l.flag]) byLang[l.flag] = byLangRaw[l.flag];
+
+  const pokemonCount = new Set(cards.map(c => c.pokemonId)).size;
+
+  return HOME_STATS_BUILDERS[lang]({ count, minY, maxY, byLang, pokemonCount });
+}
 
 function buildStatsSentence(lang, pokemon, pkCards) {
   const count = pkCards.length;
@@ -675,11 +774,11 @@ function scriptTags() {
 
 // Card-language adjective per UI language, used in image alt-text.
 const CARD_LANG_ADJ = {
-  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇩🇪': 'German-exclusive' },
-  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇩🇪': 'exclusivité allemande' },
-  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정' },
-  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇩🇪': '德文独占' },
+  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇩🇪': 'German-exclusive', '🇪🇸': 'Spanish-exclusive', '🇫🇷': 'French-exclusive', '🇮🇹': 'Italian-exclusive', '🇵🇹': 'Portuguese-exclusive', '🇵🇱': 'Polish-exclusive' },
+  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇩🇪': 'exclusivité allemande', '🇪🇸': 'exclusivité espagnole', '🇫🇷': 'exclusivité française', '🇮🇹': 'exclusivité italienne', '🇵🇹': 'exclusivité portugaise', '🇵🇱': 'exclusivité polonaise' },
+  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定' },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정', '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정' },
+  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇩🇪': '德文独占', '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占', '🇮🇹': '意大利文独占', '🇵🇹': '葡萄牙文独占', '🇵🇱': '波兰文独占' },
 };
 
 const CARD_ALT_SUFFIX = {
@@ -750,10 +849,15 @@ function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
     const cs = groups.get(flag).slice().sort((a, b) => a.year - b.year);
     const heading = headingByFlag[flag] || 'Other-exclusive cards';
     return `
-      <h2 class="cards-lang-title">${flag} ${escapeHtml(heading)} (${cs.length})</h2>
-      <div class="cards-grid">
-        ${cs.map(c => renderCard(c, pokemon, L, lang, localizedName)).join('')}
-      </div>`;
+      <details class="cards-lang-group" open>
+        <summary class="cards-lang-summary">
+          <h2 class="cards-lang-title">${flag} ${escapeHtml(heading)} (${cs.length})</h2>
+          <span class="cards-lang-caret" aria-hidden="true">▾</span>
+        </summary>
+        <div class="cards-grid">
+          ${cs.map(c => renderCard(c, pokemon, L, lang, localizedName)).join('')}
+        </div>
+      </details>`;
   }).join('');
 
   return `
@@ -996,6 +1100,8 @@ function indexPageHTML(lang, pokemonsWithCards) {
     twitterCard: 'summary_large_image',
   });
 
+  const homeStatsSentence = buildHomeStatsSentence(lang);
+
   // Static SEO grid: one <a> per Pokémon with a detail page. Names localised.
   const seoLinks = pokemonsWithCards.map(p => {
     const slug = slugify(p.name.en);
@@ -1009,7 +1115,7 @@ function indexPageHTML(lang, pokemonsWithCards) {
 <head>
 ${head}
   <noscript><style>
-    #search, .search-row, #stats-bar, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -1021,11 +1127,15 @@ ${headerBlock(lang, '', 'index')}
   <main id="main-content">
     <h1 class="page-title visually-hidden">${escapeHtml(L.indexH1)}</h1>
 
+    <section class="home-summary">
+      <p class="home-stats-text">${homeStatsSentence}</p>
+    </section>
+
     <div class="search-row">
       <input type="search" id="search" placeholder="${escapeHtml(L.searchPlaceholder)}" aria-label="${escapeHtml(L.searchPlaceholder)}" autocomplete="off">
     </div>
 
-    <div id="stats-bar" class="stats-bar"></div>
+    <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="${escapeHtml(L.langFilterAria)}"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>

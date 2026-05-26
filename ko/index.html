@@ -39,7 +39,7 @@
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"한 가지 언어(일본어, 영어, 중국어, 한국어)로만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.","inLanguage":["en","fr","ja","ko","zh-Hans"]},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/ko/#collection","url":"https://poketruc.com/ko/","name":"PokéTruc — 언어 한정 포켓몬 TCG 카드 일러스트","description":"한 가지 언어(일본어, 영어, 중국어, 한국어)로만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.","inLanguage":"ko","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"한 가지 언어(일본어, 영어, 중국어, 한국어)로만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작."}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"도감","item":"https://poketruc.com/ko/"}]}]}</script>
   <noscript><style>
-    #search, .search-row, #stats-bar, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -64,11 +64,15 @@
   <main id="main-content">
     <h1 class="page-title visually-hidden">한 가지 언어로만 존재하는 포켓몬 TCG 일러스트 / 아트워크</h1>
 
+    <section class="home-summary">
+      <p class="home-stats-text">PokéTruc에는 1세대 140마리 포켓몬의 언어 한정 TCG 카드 일러스트 548장(1996년부터 2026년까지)이 수록되어 있습니다. 포함 내역: 일본어 한정 433장, 영어 한정 69장, 중국어 한정 41장, 한국어 한정 3장, 독일어 한정 1장, 스페인어 한정 1장.</p>
+    </section>
+
     <div class="search-row">
       <input type="search" id="search" placeholder="포켓몬 검색" aria-label="포켓몬 검색" autocomplete="off">
     </div>
 
-    <div id="stats-bar" class="stats-bar"></div>
+    <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="카드 언어로 필터링"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
@@ -233,8 +237,8 @@
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="/i18n.js?v=14"></script>
-  <script src="/theme.js?v=14"></script>
-  <script src="/app.js?v=14"></script>
+  <script src="/i18n.js?v=15"></script>
+  <script src="/theme.js?v=15"></script>
+  <script src="/app.js?v=15"></script>
 </body>
 </html>

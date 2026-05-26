@@ -39,7 +39,7 @@
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"仅在一种语言（日文、英文、中文或韩文）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。","inLanguage":["en","fr","ja","ko","zh-Hans"]},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/zh/#collection","url":"https://poketruc.com/zh/","name":"PokéTruc — 语言独占的宝可梦 TCG 卡牌插画","description":"仅在一种语言（日文、英文、中文或韩文）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。","inLanguage":"zh-Hans","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"仅在一种语言（日文、英文、中文或韩文）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"图鉴","item":"https://poketruc.com/zh/"}]}]}</script>
   <noscript><style>
-    #search, .search-row, #stats-bar, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -64,11 +64,15 @@
   <main id="main-content">
     <h1 class="page-title visually-hidden">仅在一种语言中发行的宝可梦 TCG 插画 / 美术图</h1>
 
+    <section class="home-summary">
+      <p class="home-stats-text">PokéTruc 收录了第一世代 140 只宝可梦的 548 张语言独占 TCG 卡牌插画（1996–2026 年）。包括433 张日文独占、69 张英文独占、41 张中文独占、3 张韩文独占、1 张德文独占、1 张西班牙文独占。</p>
+    </section>
+
     <div class="search-row">
       <input type="search" id="search" placeholder="搜索宝可梦" aria-label="搜索宝可梦" autocomplete="off">
     </div>
 
-    <div id="stats-bar" class="stats-bar"></div>
+    <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="按卡牌语言筛选"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
@@ -233,8 +237,8 @@
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="/i18n.js?v=14"></script>
-  <script src="/theme.js?v=14"></script>
-  <script src="/app.js?v=14"></script>
+  <script src="/i18n.js?v=15"></script>
+  <script src="/theme.js?v=15"></script>
+  <script src="/app.js?v=15"></script>
 </body>
 </html>

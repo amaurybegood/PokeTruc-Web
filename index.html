@@ -39,7 +39,7 @@
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"Pokémon TCG illustrations / artworks that exist in only one language — Japanese, English, Chinese or Korean. Free, fan-made, ad-free.","inLanguage":["en","fr","ja","ko","zh-Hans"]},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/#collection","url":"https://poketruc.com/","name":"PokéTruc — Unique Pokémon TCG Card Illustrations","description":"Pokémon TCG illustrations / artworks that exist in only one language — Japanese, English, Chinese or Korean. Free, fan-made, ad-free.","inLanguage":"en","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"Pokémon TCG illustrations / artworks that exist in only one language — Japanese, English, Chinese or Korean. Free, fan-made, ad-free."}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/"}]}]}</script>
   <noscript><style>
-    #search, .search-row, #stats-bar, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -64,11 +64,15 @@
   <main id="main-content">
     <h1 class="page-title visually-hidden">Pokémon TCG illustrations / artworks that exist in only one language</h1>
 
+    <section class="home-summary">
+      <p class="home-stats-text">PokéTruc has catalogued 548 language-exclusive Pokémon TCG card illustrations across 140 Generation 1 Pokémon, spanning 1996 to 2026. The collection includes 433 Japanese-exclusive cards, 69 English-exclusive cards, 41 Chinese-exclusive cards, 3 Korean-exclusive cards, 1 German-exclusive card and 1 Spanish-exclusive card.</p>
+    </section>
+
     <div class="search-row">
       <input type="search" id="search" placeholder="Search a Pokémon..." aria-label="Search a Pokémon..." autocomplete="off">
     </div>
 
-    <div id="stats-bar" class="stats-bar"></div>
+    <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="Filter by card language"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
@@ -233,8 +237,8 @@
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="/i18n.js?v=14"></script>
-  <script src="/theme.js?v=14"></script>
-  <script src="/app.js?v=14"></script>
+  <script src="/i18n.js?v=15"></script>
+  <script src="/theme.js?v=15"></script>
+  <script src="/app.js?v=15"></script>
 </body>
 </html>

@@ -39,7 +39,7 @@
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"1つの言語（日本語・英語・中国語・韓国語）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。","inLanguage":["en","fr","ja","ko","zh-Hans"]},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/ja/#collection","url":"https://poketruc.com/ja/","name":"PokéTruc — 言語限定のポケモンTCGカードイラスト","description":"1つの言語（日本語・英語・中国語・韓国語）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。","inLanguage":"ja","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"1つの言語（日本語・英語・中国語・韓国語）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"図鑑","item":"https://poketruc.com/ja/"}]}]}</script>
   <noscript><style>
-    #search, .search-row, #stats-bar, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -64,11 +64,15 @@
   <main id="main-content">
     <h1 class="page-title visually-hidden">1つの言語にしか存在しないポケモンTCGのイラスト / アートワーク</h1>
 
+    <section class="home-summary">
+      <p class="home-stats-text">PokéTrucでは、第1世代の140匹のポケモンを対象に、言語限定TCGカードイラスト548枚（1996年から2026年）を収録しています。内訳は日本限定433枚、英語限定69枚、中国語限定41枚、韓国語限定3枚、ドイツ語限定1枚、スペイン語限定1枚です。</p>
+    </section>
+
     <div class="search-row">
       <input type="search" id="search" placeholder="ポケモンをさがす" aria-label="ポケモンをさがす" autocomplete="off">
     </div>
 
-    <div id="stats-bar" class="stats-bar"></div>
+    <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="カードの言語で絞り込む"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
@@ -233,8 +237,8 @@
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="/i18n.js?v=14"></script>
-  <script src="/theme.js?v=14"></script>
-  <script src="/app.js?v=14"></script>
+  <script src="/i18n.js?v=15"></script>
+  <script src="/theme.js?v=15"></script>
+  <script src="/app.js?v=15"></script>
 </body>
 </html>
