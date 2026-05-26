@@ -2189,16 +2189,6 @@
 },
 {
   "pokemonId": 25,
-  "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 101)",
-  "imageName": "25_SV-P_ID_101",
-  "rarity": "Promo",
-  "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
-  "language": "🇮🇩",
-  "year": 2024,
-  "artist": ""
-},
-{
-  "pokemonId": 25,
   "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 154)",
   "imageName": "25_SV-P_ID_154",
   "rarity": "Promo",
