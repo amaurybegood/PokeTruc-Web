@@ -2177,6 +2177,76 @@
   "year": 2010,
   "artist": "Kouki Saitou"
 },
+{
+  "pokemonId": 25,
+  "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 101)",
+  "imageName": "25_SV-P_ID_101",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
+  "language": "🇮🇩",
+  "year": 2024,
+  "artist": ""
+},
+{
+  "pokemonId": 25,
+  "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 101)",
+  "imageName": "25_SV-P_ID_101",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
+  "language": "🇮🇩",
+  "year": 2024,
+  "artist": ""
+},
+{
+  "pokemonId": 25,
+  "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 154)",
+  "imageName": "25_SV-P_ID_154",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
+  "language": "🇮🇩",
+  "year": 2024,
+  "artist": ""
+},
+{
+  "pokemonId": 25,
+  "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 155)",
+  "imageName": "25_SV-P_ID_155",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
+  "language": "🇮🇩",
+  "year": 2024,
+  "artist": ""
+},
+{
+  "pokemonId": 25,
+  "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 190)",
+  "imageName": "25_SV-P_ID_190",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
+  "language": "🇮🇩",
+  "year": 2024,
+  "artist": ""
+},
+{
+  "pokemonId": 25,
+  "name": "Taipei's Pikachu (SV-P Promo 57)",
+  "imageName": "25_57_SV_P_Pokemon_Chinese_Promo",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Taipei's_Pikachu_(SV-P_Promo_57)",
+  "language": "🇨🇳",
+  "year": 2023,
+  "artist": "REOspikee"
+},
+{
+  "pokemonId": 25,
+  "name": "Pikachu #153/SV-P Pokemon Chinese Promo 5th Anniversary",
+  "imageName": "25_153/SV_P_Pokemon_Chinese_Promo",
+  "rarity": "Promo",
+  "description": "",
+  "language": "🇨🇳",
+  "year": 2024,
+  "artist": "aspara"
+},
   {
     "pokemonId": 26,
     "name": "Intro Pack: Bulbasaur Deck",
