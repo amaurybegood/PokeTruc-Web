@@ -17,6 +17,7 @@ const TODAY    = new Date().toISOString().split('T')[0];
 // External profile credited on the Info page for help discovering
 // language-exclusive cards.
 const REDDIT_TWENTYFOUR7_URL = 'https://www.reddit.com/user/TwentyFour7/';
+const REDDIT_QUUADOR_URL     = 'https://www.reddit.com/user/Quuador/';
 
 // Author profile + project repo. Surfaced on the Info page (Contact + Source
 // code sections) so the site has a couple of honest backlinks pointing out.
@@ -137,9 +138,11 @@ const LANG = {
       'This site does not collect any personal data or require a user account. No information is transmitted or stored outside of your device.',
     ],
     creditsHeading: 'Credits',
-    creditsBefore: 'A big thank you to Redditor ',
+    creditsBefore: 'A big thank you to Redditors ',
     creditsLinkText: 'u/TwentyFour7',
-    creditsAfter: ' for his precious help in finding cards that only exist in a single language.',
+    creditsBetween: ' and ',
+    creditsLinkText2: 'u/Quuador',
+    creditsAfter: ' for their precious help in finding cards that only exist in a single language.',
     sourceCodeHeading: 'Source code',
     sourceCodeBefore: 'The source code of this site is open source on GitHub: ',
     emailLabel: 'Email:',
@@ -206,9 +209,11 @@ const LANG = {
       "Ce site ne collecte aucune donnée personnelle et ne nécessite aucun compte utilisateur. Aucune information n'est transmise ou stockée en dehors de votre appareil.",
     ],
     creditsHeading: 'Remerciements',
-    creditsBefore: 'Un grand merci au Redditeur ',
+    creditsBefore: 'Un grand merci aux Redditeurs ',
     creditsLinkText: 'u/TwentyFour7',
-    creditsAfter: ' pour son aide précieuse à dénicher des cartes existant uniquement dans une seule langue.',
+    creditsBetween: ' et ',
+    creditsLinkText2: 'u/Quuador',
+    creditsAfter: ' pour leur aide précieuse à dénicher des cartes existant uniquement dans une seule langue.',
     sourceCodeHeading: 'Code source',
     sourceCodeBefore: 'Le code source de ce site est ouvert sur GitHub : ',
     emailLabel: 'E-mail :',
@@ -278,6 +283,8 @@ const LANG = {
     creditsHeading: 'クレジット',
     creditsBefore: '1つの言語にしか存在しないカードを見つける際にご協力いただいたRedditユーザー ',
     creditsLinkText: 'u/TwentyFour7',
+    creditsBetween: ' さんと',
+    creditsLinkText2: 'u/Quuador',
     creditsAfter: ' さんに心より感謝いたします。',
     sourceCodeHeading: 'ソースコード',
     sourceCodeBefore: 'このサイトのソースコードはGitHubで公開されています：',
@@ -347,6 +354,8 @@ const LANG = {
     creditsHeading: '감사의 말',
     creditsBefore: '한 가지 언어로만 존재하는 카드를 찾는 데 큰 도움을 주신 Reddit 사용자 ',
     creditsLinkText: 'u/TwentyFour7',
+    creditsBetween: ' 님과 ',
+    creditsLinkText2: 'u/Quuador',
     creditsAfter: ' 님께 진심으로 감사드립니다.',
     sourceCodeHeading: '소스 코드',
     sourceCodeBefore: '이 사이트의 소스 코드는 GitHub에 공개되어 있습니다: ',
@@ -416,6 +425,8 @@ const LANG = {
     creditsHeading: '鸣谢',
     creditsBefore: '特别感谢 Reddit 用户 ',
     creditsLinkText: 'u/TwentyFour7',
+    creditsBetween: ' 和 ',
+    creditsLinkText2: 'u/Quuador',
     creditsAfter: ' 协助寻找仅以单一语言发行的卡牌。',
     sourceCodeHeading: '源代码',
     sourceCodeBefore: '本站源代码已在 GitHub 上开源：',
@@ -1201,6 +1212,8 @@ function infoPageHTML(lang) {
   const creditsHTML =
     `<p>${escapeHtml(L.creditsBefore)}` +
     `<a href="${REDDIT_TWENTYFOUR7_URL}" class="info-link" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText)}${extSuffix}</a>` +
+    `${escapeHtml(L.creditsBetween)}` +
+    `<a href="${REDDIT_QUUADOR_URL}" class="info-link" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText2)}${extSuffix}</a>` +
     `${escapeHtml(L.creditsAfter)}</p>`;
   // Author backlinks intentionally use rel="noopener" (no "noreferrer") so the
   // Referer header is preserved — keeps GitHub/Reddit referral analytics honest
