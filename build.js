@@ -72,14 +72,15 @@ const LANG_INFO = [
   { flag: '🇮🇹', key: 'langItalianHeading'    },
   { flag: '🇵🇹', key: 'langPortugueseHeading' },
   { flag: '🇵🇱', key: 'langPolishHeading'     },
+  { flag: '🇮🇩', key: 'langIndonesianHeading' },
 ];
 
 const STATS_LANG_LABEL = {
-  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German',      '🇪🇸': 'Spanish',     '🇫🇷': 'French',      '🇮🇹': 'Italian',      '🇵🇹': 'Portuguese',     '🇵🇱': 'Polish'       },
-  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande',   '🇪🇸': 'espagnole',   '🇫🇷': 'française',   '🇮🇹': 'italienne',    '🇵🇹': 'portugaise',     '🇵🇱': 'polonaise'    },
-  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정',  '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정'  },
-  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占',    '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占',     '🇮🇹': '意大利文独占',  '🇵🇹': '葡萄牙文独占',   '🇵🇱': '波兰文独占'    },
+  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German',      '🇪🇸': 'Spanish',     '🇫🇷': 'French',      '🇮🇹': 'Italian',      '🇵🇹': 'Portuguese',     '🇵🇱': 'Polish',       '🇮🇩': 'Indonesian'      },
+  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande',   '🇪🇸': 'espagnole',   '🇫🇷': 'française',   '🇮🇹': 'italienne',    '🇵🇹': 'portugaise',     '🇵🇱': 'polonaise',    '🇮🇩': 'indonésienne'    },
+  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇮🇩': 'インドネシア語限定' },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정',  '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정',  '🇮🇩': '인도네시아어 한정' },
+  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占',    '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占',     '🇮🇹': '意大利文独占',  '🇵🇹': '葡萄牙文独占',   '🇵🇱': '波兰文独占',    '🇮🇩': '印尼文独占'      },
 };
 
 // ISO language code for each flag emoji used on a card. Used by JSON-LD
@@ -95,6 +96,7 @@ const FLAG_TO_ISO = {
   '🇮🇹': 'it',
   '🇵🇹': 'pt',
   '🇵🇱': 'pl',
+  '🇮🇩': 'id',
 };
 
 const JOIN_RULES = {
@@ -164,6 +166,7 @@ const LANG = {
     langItalianHeading:    'Italian-exclusive cards',
     langPortugueseHeading: 'Portuguese-exclusive cards',
     langPolishHeading:     'Polish-exclusive cards',
+    langIndonesianHeading: 'Indonesian-exclusive cards',
     cardsSection: (n) => `${n} exclusive TCG card ${n === 1 ? 'illustration' : 'illustrations'}`,
     detailTitle: (name, n) => `${name} — Exclusive TCG Card ${n === 1 ? 'Illustration' : 'Illustrations'} | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -235,6 +238,7 @@ const LANG = {
     langItalianHeading:    'Cartes exclusives italiennes',
     langPortugueseHeading: 'Cartes exclusives portugaises',
     langPolishHeading:     'Cartes exclusives polonaises',
+    langIndonesianHeading: 'Cartes exclusives indonésiennes',
     cardsSection: (n) => `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG`,
     detailTitle: (name, n) =>
       `${name} — Illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG | PokéTruc`,
@@ -307,6 +311,7 @@ const LANG = {
     langItalianHeading:    'イタリア語限定カード',
     langPortugueseHeading: 'ポルトガル語限定カード',
     langPolishHeading:     'ポーランド語限定カード',
+    langIndonesianHeading: 'インドネシア語限定カード',
     cardsSection: (n) => `${n}枚の言語限定TCGカードイラスト`,
     detailTitle: (name, n) => `${name} — 言語限定TCGカードイラスト${n}枚 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -378,6 +383,7 @@ const LANG = {
     langItalianHeading:    '이탈리아어 한정 카드',
     langPortugueseHeading: '포르투갈어 한정 카드',
     langPolishHeading:     '폴란드어 한정 카드',
+    langIndonesianHeading: '인도네시아어 한정 카드',
     cardsSection: (n) => `${n}장의 언어 한정 TCG 카드 일러스트`,
     detailTitle: (name, n) => `${name} — 언어 한정 TCG 카드 일러스트 ${n}장 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -449,6 +455,7 @@ const LANG = {
     langItalianHeading:    '意大利文独占卡牌',
     langPortugueseHeading: '葡萄牙文独占卡牌',
     langPolishHeading:     '波兰文独占卡牌',
+    langIndonesianHeading: '印尼文独占卡牌',
     cardsSection: (n) => `${n} 张语言独占 TCG 卡牌插画`,
     detailTitle: (name, n) => `${name} — ${n} 张语言独占 TCG 卡牌插画 | PokéTruc`,
     detailDescription: (name, id, n) =>
@@ -525,7 +532,7 @@ const STATS_BUILDERS = {
   en: ({ name, count, minY, maxY, byLang, artists }) => {
     const wordP = count === 1 ? 'illustration' : 'illustrations';
     const yearPart = (minY === maxY) ? `published in ${minY}` : `spanning ${minY} to ${maxY}`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => {
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => {
       const n = byLang[l.flag];
       return `${n} ${STATS_LANG_LABEL.en[l.flag]}-exclusive ${n === 1 ? 'card' : 'cards'}`;
     });
@@ -538,7 +545,7 @@ const STATS_BUILDERS = {
   fr: ({ name, count, minY, maxY, byLang, artists }) => {
     const s = count > 1 ? 's' : '';
     const yearPart = (minY === maxY) ? `publiée${s} en ${minY}` : `de ${minY} à ${maxY}`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => {
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => {
       const n = byLang[l.flag];
       const sn = n > 1 ? 's' : '';
       return `${n} carte${sn} ${STATS_LANG_LABEL.fr[l.flag]}${sn}`;
@@ -551,7 +558,7 @@ const STATS_BUILDERS = {
   },
   ja: ({ name, count, minY, maxY, byLang, artists }) => {
     const yearPart = (minY === maxY) ? `${minY}年発行` : `${minY}年から${maxY}年`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${STATS_LANG_LABEL.ja[l.flag]}${byLang[l.flag]}枚`);
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${STATS_LANG_LABEL.ja[l.flag]}${byLang[l.flag]}枚`);
     const langSentence = langParts.length ? `内訳は${joinListLang(langParts, 'ja')}です。` : '';
     let artistSentence = '';
     if (artists.length === 1) artistSentence = `イラストは${artists[0]}が担当しています。`;
@@ -560,7 +567,7 @@ const STATS_BUILDERS = {
   },
   ko: ({ name, count, minY, maxY, byLang, artists }) => {
     const yearPart = (minY === maxY) ? `${minY}년 발행` : `${minY}년부터 ${maxY}년까지`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${STATS_LANG_LABEL.ko[l.flag]} ${byLang[l.flag]}장`);
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${STATS_LANG_LABEL.ko[l.flag]} ${byLang[l.flag]}장`);
     const langSentence = langParts.length ? `포함 내역: ${joinListLang(langParts, 'ko')}.` : '';
     let artistSentence = '';
     if (artists.length === 1) artistSentence = ` 일러스트는 ${artists[0]}이(가) 그렸습니다.`;
@@ -569,7 +576,7 @@ const STATS_BUILDERS = {
   },
   zh: ({ name, count, minY, maxY, byLang, artists }) => {
     const yearPart = (minY === maxY) ? `${minY} 年发行` : `${minY}–${maxY} 年`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${byLang[l.flag]} 张${STATS_LANG_LABEL.zh[l.flag]}`);
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${byLang[l.flag]} 张${STATS_LANG_LABEL.zh[l.flag]}`);
     const langSentence = langParts.length ? `包括${joinListLang(langParts, 'zh')}。` : '';
     let artistSentence = '';
     if (artists.length === 1) artistSentence = `由 ${artists[0]} 绘制。`;
@@ -584,7 +591,7 @@ const HOME_STATS_BUILDERS = {
   en: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const wordP = count === 1 ? 'illustration' : 'illustrations';
     const yearPart = (minY === maxY) ? `published in ${minY}` : `spanning ${minY} to ${maxY}`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => {
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => {
       const n = byLang[l.flag];
       return `${n} ${STATS_LANG_LABEL.en[l.flag]}-exclusive ${n === 1 ? 'card' : 'cards'}`;
     });
@@ -594,7 +601,7 @@ const HOME_STATS_BUILDERS = {
   fr: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const s = count > 1 ? 's' : '';
     const yearPart = (minY === maxY) ? `publiée${s} en ${minY}` : `de ${minY} à ${maxY}`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => {
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => {
       const n = byLang[l.flag];
       const sn = n > 1 ? 's' : '';
       return `${n} carte${sn} ${STATS_LANG_LABEL.fr[l.flag]}${sn}`;
@@ -604,19 +611,19 @@ const HOME_STATS_BUILDERS = {
   },
   ja: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY}年発行` : `${minY}年から${maxY}年`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${STATS_LANG_LABEL.ja[l.flag]}${byLang[l.flag]}枚`);
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${STATS_LANG_LABEL.ja[l.flag]}${byLang[l.flag]}枚`);
     const langSentence = langParts.length ? `内訳は${joinListLang(langParts, 'ja')}です。` : '';
     return `PokéTrucでは、第1世代の${pokemonCount}匹のポケモンを対象に、言語限定TCGカードイラスト${count}枚（${yearPart}）を収録しています。${langSentence}`;
   },
   ko: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY}년 발행` : `${minY}년부터 ${maxY}년까지`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${STATS_LANG_LABEL.ko[l.flag]} ${byLang[l.flag]}장`);
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${STATS_LANG_LABEL.ko[l.flag]} ${byLang[l.flag]}장`);
     const langSentence = langParts.length ? `포함 내역: ${joinListLang(langParts, 'ko')}.` : '';
     return `PokéTruc에는 1세대 ${pokemonCount}마리 포켓몬의 언어 한정 TCG 카드 일러스트 ${count}장(${yearPart})이 수록되어 있습니다. ${langSentence}`;
   },
   zh: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY} 年发行` : `${minY}–${maxY} 年`;
-    const langParts = LANG_INFO.filter(l => byLang[l.flag]).map(l => `${byLang[l.flag]} 张${STATS_LANG_LABEL.zh[l.flag]}`);
+    const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${byLang[l.flag]} 张${STATS_LANG_LABEL.zh[l.flag]}`);
     const langSentence = langParts.length ? `包括${joinListLang(langParts, 'zh')}。` : '';
     return `PokéTruc 收录了第一世代 ${pokemonCount} 只宝可梦的 ${count} 张语言独占 TCG 卡牌插画（${yearPart}）。${langSentence}`;
   },
@@ -836,10 +843,11 @@ function renderCard(card, pokemon, L, lang, localizedName) {
 function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
   const count = pkCards.length;
   const groups = groupBy(pkCards, c => c.language);
+  // Sort sections by card count (desc); LANG_INFO order (then unknown) breaks ties (stable sort).
   const orderedFlags = [
     ...LANG_INFO.map(l => l.flag).filter(f => groups.has(f)),
     ...[...groups.keys()].filter(f => !LANG_INFO.some(l => l.flag === f)),
-  ];
+  ].sort((a, b) => groups.get(b).length - groups.get(a).length);
   const headingByFlag = Object.fromEntries(LANG_INFO.map(l => [l.flag, L[l.key]]));
 
   const sectionTitle = `<p class="cards-section-title">${L.cardsSection(count)}</p>`;
@@ -1068,6 +1076,13 @@ function indexPageHTML(lang, pokemonsWithCards) {
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForRoot(l)]));
   const canonical  = urlsByLang[lang];
 
+  const creatorSchema = {
+    "@type": "Person",
+    "@id": `${BASE_URL}/#creator`,
+    "name": "Begooderrr",
+    "url": REDDIT_BEGOODERRR_URL,
+    "sameAs": [REDDIT_BEGOODERRR_URL],
+  };
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -1076,6 +1091,8 @@ function indexPageHTML(lang, pokemonsWithCards) {
     "name": "PokéTruc",
     "description": L.indexDescription,
     "inLanguage": LANGS.map(l => HTML_LANG[l]),
+    "author":  { "@id": `${BASE_URL}/#creator` },
+    "creator": { "@id": `${BASE_URL}/#creator` },
   };
   const collectionPage = {
     "@context": "https://schema.org",
@@ -1099,7 +1116,7 @@ function indexPageHTML(lang, pokemonsWithCards) {
       { "@type": "ListItem", "position": 1, "name": L.pokedex, "item": urlForRoot(lang) },
     ],
   };
-  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [websiteSchema, collectionPage, breadcrumbList] });
+  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [creatorSchema, websiteSchema, collectionPage, breadcrumbList] });
 
   const head = headBlock({
     lang,
@@ -1385,6 +1402,47 @@ ${sitemapUrls.join('\n')}
 
 fs.writeFileSync('sitemap.xml', sitemap, 'utf8');
 
+// 5) llms.txt — a concise, LLM-friendly map of the site (https://llmstxt.org/).
+//    Regenerated each build so the stats and Pokémon list stay in sync.
+{
+  const byLangRaw = cards.reduce((a, c) => { a[c.language] = (a[c.language] || 0) + 1; return a; }, {});
+  const langBreakdown = LANG_INFO
+    .filter(l => byLangRaw[l.flag])
+    .sort((a, b) => byLangRaw[b.flag] - byLangRaw[a.flag])
+    .map(l => `${byLangRaw[l.flag]} ${STATS_LANG_LABEL.en[l.flag]}`)
+    .join(', ');
+  const years = cards.map(c => c.year);
+  const minY = Math.min(...years), maxY = Math.max(...years);
+
+  const pokemonLines = pokemonsWithCards.map(p => {
+    const n = cardsFor(p.id).length;
+    const slug = slugify(p.name.en);
+    return `- [${p.name.en}](${urlForPokemon('en', slug)}): ${n} language-exclusive card${n > 1 ? 's' : ''}`;
+  }).join('\n');
+
+  const llms = `# PokéTruc
+
+> PokéTruc is a free, fan-made, ad-free catalogue of language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language or region. It lists ${cards.length} such cards across ${pokemonsWithCards.length} Generation 1 Pokémon, published from ${minY} to ${maxY}.
+
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its language-exclusive cards grouped by card language, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Card languages in the collection: ${langBreakdown}. Created by Begooderrr (${REDDIT_BEGOODERRR_URL}); source code at ${GITHUB_REPO_URL}.
+
+## Main pages
+
+- [Pokédex (home)](${urlForRoot('en')}): searchable grid of all Generation 1 Pokémon, filterable by card language.
+- [Info / About](${urlForInfo('en')}): what the project is, plus credits and sources.
+
+## Pokémon (Generation 1)
+
+${pokemonLines}
+
+## Optional
+
+- [XML sitemap](${BASE_URL}/sitemap.xml): every URL, in all 5 languages, with hreflang annotations.
+`;
+
+  fs.writeFileSync('llms.txt', llms, 'utf8');
+}
+
 // Clean up orphan /pokemon/<slug>/ directories from prior builds whose Pokémon
 // were removed from data (e.g. all cards de-listed). Without this they linger
 // on disk serving stale content that isn't in the sitemap.
@@ -1407,6 +1465,7 @@ fs.writeFileSync(STATE_PATH, JSON.stringify(newState, null, 2), 'utf8');
 console.log(`✓ ${pokemonsWithCards.length} Pokémon × ${LANGS.length} langues = ${pokemonsWithCards.length * LANGS.length} pages détail générées`);
 console.log(`✓ ${LANGS.length} index + ${LANGS.length} info pages générés + ${LANGS.length} redirect stubs`);
 console.log(`✓ sitemap.xml mis à jour (${sitemapUrls.length} URLs, hreflang inclus)`);
+console.log(`✓ llms.txt généré (${pokemonsWithCards.length} Pokémon listés)`);
 console.log(`✓ Contenu modifié : ${changedCount} pages · inchangé : ${unchangedCount} pages`);
 console.log(`✓ Total : ${pageCount} fichiers HTML générés`);
 if (orphanCount > 0) console.log(`✓ ${orphanCount} dossier(s) orphelin(s) supprimé(s)`);

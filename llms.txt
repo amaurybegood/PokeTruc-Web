@@ -1,0 +1,157 @@
+# PokéTruc
+
+> PokéTruc is a free, fan-made, ad-free catalogue of language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language or region. It lists 560 such cards across 140 Generation 1 Pokémon, published from 1996 to 2026.
+
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its language-exclusive cards grouped by card language, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Card languages in the collection: 432 Japanese, 70 English, 43 Chinese, 4 Indonesian, 3 Korean, 2 German, 2 Spanish, 1 French, 1 Italian, 1 Portuguese, 1 Polish. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
+
+## Main pages
+
+- [Pokédex (home)](https://poketruc.com/): searchable grid of all Generation 1 Pokémon, filterable by card language.
+- [Info / About](https://poketruc.com/info/): what the project is, plus credits and sources.
+
+## Pokémon (Generation 1)
+
+- [Bulbasaur](https://poketruc.com/pokemon/bulbasaur/): 9 language-exclusive cards
+- [Ivysaur](https://poketruc.com/pokemon/ivysaur/): 4 language-exclusive cards
+- [Venusaur](https://poketruc.com/pokemon/venusaur/): 4 language-exclusive cards
+- [Charmander](https://poketruc.com/pokemon/charmander/): 7 language-exclusive cards
+- [Charmeleon](https://poketruc.com/pokemon/charmeleon/): 5 language-exclusive cards
+- [Charizard](https://poketruc.com/pokemon/charizard/): 12 language-exclusive cards
+- [Squirtle](https://poketruc.com/pokemon/squirtle/): 7 language-exclusive cards
+- [Wartortle](https://poketruc.com/pokemon/wartortle/): 5 language-exclusive cards
+- [Blastoise](https://poketruc.com/pokemon/blastoise/): 8 language-exclusive cards
+- [Caterpie](https://poketruc.com/pokemon/caterpie/): 1 language-exclusive card
+- [Metapod](https://poketruc.com/pokemon/metapod/): 1 language-exclusive card
+- [Butterfree](https://poketruc.com/pokemon/butterfree/): 1 language-exclusive card
+- [Weedle](https://poketruc.com/pokemon/weedle/): 1 language-exclusive card
+- [Kakuna](https://poketruc.com/pokemon/kakuna/): 1 language-exclusive card
+- [Beedrill](https://poketruc.com/pokemon/beedrill/): 3 language-exclusive cards
+- [Pidgey](https://poketruc.com/pokemon/pidgey/): 2 language-exclusive cards
+- [Pidgeotto](https://poketruc.com/pokemon/pidgeotto/): 3 language-exclusive cards
+- [Pidgeot](https://poketruc.com/pokemon/pidgeot/): 3 language-exclusive cards
+- [Rattata](https://poketruc.com/pokemon/rattata/): 2 language-exclusive cards
+- [Raticate](https://poketruc.com/pokemon/raticate/): 1 language-exclusive card
+- [Spearow](https://poketruc.com/pokemon/spearow/): 2 language-exclusive cards
+- [Fearow](https://poketruc.com/pokemon/fearow/): 4 language-exclusive cards
+- [Arbok](https://poketruc.com/pokemon/arbok/): 2 language-exclusive cards
+- [Pikachu](https://poketruc.com/pokemon/pikachu/): 148 language-exclusive cards
+- [Raichu](https://poketruc.com/pokemon/raichu/): 4 language-exclusive cards
+- [Sandshrew](https://poketruc.com/pokemon/sandshrew/): 2 language-exclusive cards
+- [Sandslash](https://poketruc.com/pokemon/sandslash/): 1 language-exclusive card
+- [Nidoran♀](https://poketruc.com/pokemon/nidoranf/): 1 language-exclusive card
+- [Nidorina](https://poketruc.com/pokemon/nidorina/): 1 language-exclusive card
+- [Nidoqueen](https://poketruc.com/pokemon/nidoqueen/): 1 language-exclusive card
+- [Nidoran♂](https://poketruc.com/pokemon/nidoranm/): 1 language-exclusive card
+- [Nidorino](https://poketruc.com/pokemon/nidorino/): 1 language-exclusive card
+- [Nidoking](https://poketruc.com/pokemon/nidoking/): 1 language-exclusive card
+- [Clefairy](https://poketruc.com/pokemon/clefairy/): 3 language-exclusive cards
+- [Clefable](https://poketruc.com/pokemon/clefable/): 2 language-exclusive cards
+- [Vulpix](https://poketruc.com/pokemon/vulpix/): 8 language-exclusive cards
+- [Ninetales](https://poketruc.com/pokemon/ninetales/): 3 language-exclusive cards
+- [Jigglypuff](https://poketruc.com/pokemon/jigglypuff/): 1 language-exclusive card
+- [Wigglytuff](https://poketruc.com/pokemon/wigglytuff/): 2 language-exclusive cards
+- [Zubat](https://poketruc.com/pokemon/zubat/): 2 language-exclusive cards
+- [Golbat](https://poketruc.com/pokemon/golbat/): 1 language-exclusive card
+- [Oddish](https://poketruc.com/pokemon/oddish/): 3 language-exclusive cards
+- [Gloom](https://poketruc.com/pokemon/gloom/): 1 language-exclusive card
+- [Paras](https://poketruc.com/pokemon/paras/): 1 language-exclusive card
+- [Parasect](https://poketruc.com/pokemon/parasect/): 1 language-exclusive card
+- [Venonat](https://poketruc.com/pokemon/venonat/): 1 language-exclusive card
+- [Venomoth](https://poketruc.com/pokemon/venomoth/): 2 language-exclusive cards
+- [Diglett](https://poketruc.com/pokemon/diglett/): 3 language-exclusive cards
+- [Dugtrio](https://poketruc.com/pokemon/dugtrio/): 1 language-exclusive card
+- [Meowth](https://poketruc.com/pokemon/meowth/): 8 language-exclusive cards
+- [Persian](https://poketruc.com/pokemon/persian/): 1 language-exclusive card
+- [Psyduck](https://poketruc.com/pokemon/psyduck/): 3 language-exclusive cards
+- [Golduck](https://poketruc.com/pokemon/golduck/): 1 language-exclusive card
+- [Mankey](https://poketruc.com/pokemon/mankey/): 2 language-exclusive cards
+- [Primeape](https://poketruc.com/pokemon/primeape/): 1 language-exclusive card
+- [Growlithe](https://poketruc.com/pokemon/growlithe/): 5 language-exclusive cards
+- [Arcanine](https://poketruc.com/pokemon/arcanine/): 3 language-exclusive cards
+- [Poliwag](https://poketruc.com/pokemon/poliwag/): 3 language-exclusive cards
+- [Poliwhirl](https://poketruc.com/pokemon/poliwhirl/): 2 language-exclusive cards
+- [Poliwrath](https://poketruc.com/pokemon/poliwrath/): 2 language-exclusive cards
+- [Abra](https://poketruc.com/pokemon/abra/): 3 language-exclusive cards
+- [Kadabra](https://poketruc.com/pokemon/kadabra/): 2 language-exclusive cards
+- [Alakazam](https://poketruc.com/pokemon/alakazam/): 2 language-exclusive cards
+- [Machop](https://poketruc.com/pokemon/machop/): 1 language-exclusive card
+- [Machoke](https://poketruc.com/pokemon/machoke/): 2 language-exclusive cards
+- [Machamp](https://poketruc.com/pokemon/machamp/): 4 language-exclusive cards
+- [Bellsprout](https://poketruc.com/pokemon/bellsprout/): 1 language-exclusive card
+- [Weepinbell](https://poketruc.com/pokemon/weepinbell/): 1 language-exclusive card
+- [Tentacool](https://poketruc.com/pokemon/tentacool/): 1 language-exclusive card
+- [Geodude](https://poketruc.com/pokemon/geodude/): 3 language-exclusive cards
+- [Graveler](https://poketruc.com/pokemon/graveler/): 2 language-exclusive cards
+- [Golem](https://poketruc.com/pokemon/golem/): 1 language-exclusive card
+- [Ponyta](https://poketruc.com/pokemon/ponyta/): 5 language-exclusive cards
+- [Rapidash](https://poketruc.com/pokemon/rapidash/): 3 language-exclusive cards
+- [Slowpoke](https://poketruc.com/pokemon/slowpoke/): 5 language-exclusive cards
+- [Slowbro](https://poketruc.com/pokemon/slowbro/): 4 language-exclusive cards
+- [Magnemite](https://poketruc.com/pokemon/magnemite/): 2 language-exclusive cards
+- [Magneton](https://poketruc.com/pokemon/magneton/): 3 language-exclusive cards
+- [Farfetch'd](https://poketruc.com/pokemon/farfetchd/): 2 language-exclusive cards
+- [Doduo](https://poketruc.com/pokemon/doduo/): 1 language-exclusive card
+- [Dodrio](https://poketruc.com/pokemon/dodrio/): 2 language-exclusive cards
+- [Seel](https://poketruc.com/pokemon/seel/): 2 language-exclusive cards
+- [Dewgong](https://poketruc.com/pokemon/dewgong/): 2 language-exclusive cards
+- [Grimer](https://poketruc.com/pokemon/grimer/): 1 language-exclusive card
+- [Shellder](https://poketruc.com/pokemon/shellder/): 1 language-exclusive card
+- [Cloyster](https://poketruc.com/pokemon/cloyster/): 1 language-exclusive card
+- [Gastly](https://poketruc.com/pokemon/gastly/): 1 language-exclusive card
+- [Haunter](https://poketruc.com/pokemon/haunter/): 2 language-exclusive cards
+- [Gengar](https://poketruc.com/pokemon/gengar/): 4 language-exclusive cards
+- [Onix](https://poketruc.com/pokemon/onix/): 2 language-exclusive cards
+- [Hypno](https://poketruc.com/pokemon/hypno/): 2 language-exclusive cards
+- [Krabby](https://poketruc.com/pokemon/krabby/): 1 language-exclusive card
+- [Kingler](https://poketruc.com/pokemon/kingler/): 1 language-exclusive card
+- [Voltorb](https://poketruc.com/pokemon/voltorb/): 2 language-exclusive cards
+- [Electrode](https://poketruc.com/pokemon/electrode/): 2 language-exclusive cards
+- [Exeggcute](https://poketruc.com/pokemon/exeggcute/): 2 language-exclusive cards
+- [Exeggutor](https://poketruc.com/pokemon/exeggutor/): 3 language-exclusive cards
+- [Cubone](https://poketruc.com/pokemon/cubone/): 3 language-exclusive cards
+- [Marowak](https://poketruc.com/pokemon/marowak/): 2 language-exclusive cards
+- [Hitmonlee](https://poketruc.com/pokemon/hitmonlee/): 3 language-exclusive cards
+- [Hitmonchan](https://poketruc.com/pokemon/hitmonchan/): 3 language-exclusive cards
+- [Lickitung](https://poketruc.com/pokemon/lickitung/): 2 language-exclusive cards
+- [Koffing](https://poketruc.com/pokemon/koffing/): 4 language-exclusive cards
+- [Weezing](https://poketruc.com/pokemon/weezing/): 3 language-exclusive cards
+- [Rhydon](https://poketruc.com/pokemon/rhydon/): 3 language-exclusive cards
+- [Chansey](https://poketruc.com/pokemon/chansey/): 3 language-exclusive cards
+- [Tangela](https://poketruc.com/pokemon/tangela/): 3 language-exclusive cards
+- [Kangaskhan](https://poketruc.com/pokemon/kangaskhan/): 3 language-exclusive cards
+- [Horsea](https://poketruc.com/pokemon/horsea/): 1 language-exclusive card
+- [Seadra](https://poketruc.com/pokemon/seadra/): 1 language-exclusive card
+- [Staryu](https://poketruc.com/pokemon/staryu/): 2 language-exclusive cards
+- [Scyther](https://poketruc.com/pokemon/scyther/): 1 language-exclusive card
+- [Jynx](https://poketruc.com/pokemon/jynx/): 6 language-exclusive cards
+- [Electabuzz](https://poketruc.com/pokemon/electabuzz/): 5 language-exclusive cards
+- [Magmar](https://poketruc.com/pokemon/magmar/): 6 language-exclusive cards
+- [Pinsir](https://poketruc.com/pokemon/pinsir/): 2 language-exclusive cards
+- [Tauros](https://poketruc.com/pokemon/tauros/): 4 language-exclusive cards
+- [Magikarp](https://poketruc.com/pokemon/magikarp/): 6 language-exclusive cards
+- [Gyarados](https://poketruc.com/pokemon/gyarados/): 8 language-exclusive cards
+- [Lapras](https://poketruc.com/pokemon/lapras/): 5 language-exclusive cards
+- [Ditto](https://poketruc.com/pokemon/ditto/): 2 language-exclusive cards
+- [Eevee](https://poketruc.com/pokemon/eevee/): 24 language-exclusive cards
+- [Vaporeon](https://poketruc.com/pokemon/vaporeon/): 2 language-exclusive cards
+- [Jolteon](https://poketruc.com/pokemon/jolteon/): 4 language-exclusive cards
+- [Flareon](https://poketruc.com/pokemon/flareon/): 3 language-exclusive cards
+- [Porygon](https://poketruc.com/pokemon/porygon/): 2 language-exclusive cards
+- [Omanyte](https://poketruc.com/pokemon/omanyte/): 2 language-exclusive cards
+- [Omastar](https://poketruc.com/pokemon/omastar/): 2 language-exclusive cards
+- [Kabuto](https://poketruc.com/pokemon/kabuto/): 1 language-exclusive card
+- [Kabutops](https://poketruc.com/pokemon/kabutops/): 2 language-exclusive cards
+- [Aerodactyl](https://poketruc.com/pokemon/aerodactyl/): 3 language-exclusive cards
+- [Snorlax](https://poketruc.com/pokemon/snorlax/): 3 language-exclusive cards
+- [Articuno](https://poketruc.com/pokemon/articuno/): 4 language-exclusive cards
+- [Zapdos](https://poketruc.com/pokemon/zapdos/): 4 language-exclusive cards
+- [Moltres](https://poketruc.com/pokemon/moltres/): 4 language-exclusive cards
+- [Dratini](https://poketruc.com/pokemon/dratini/): 2 language-exclusive cards
+- [Dragonair](https://poketruc.com/pokemon/dragonair/): 2 language-exclusive cards
+- [Dragonite](https://poketruc.com/pokemon/dragonite/): 3 language-exclusive cards
+- [Mewtwo](https://poketruc.com/pokemon/mewtwo/): 7 language-exclusive cards
+- [Mew](https://poketruc.com/pokemon/mew/): 11 language-exclusive cards
+
+## Optional
+
+- [XML sitemap](https://poketruc.com/sitemap.xml): every URL, in all 5 languages, with hreflang annotations.

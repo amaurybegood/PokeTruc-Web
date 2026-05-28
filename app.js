@@ -3,10 +3,10 @@
 
 const FLAG_TO_ISO = {
   '🇯🇵': 'ja', '🇬🇧': 'en', '🇨🇳': 'zh', '🇰🇷': 'ko', '🇩🇪': 'de',
-  '🇪🇸': 'es', '🇫🇷': 'fr', '🇮🇹': 'it', '🇵🇹': 'pt', '🇵🇱': 'pl',
+  '🇪🇸': 'es', '🇫🇷': 'fr', '🇮🇹': 'it', '🇵🇹': 'pt', '🇵🇱': 'pl', '🇮🇩': 'id',
 };
 const ISO_TO_FLAG = Object.fromEntries(Object.entries(FLAG_TO_ISO).map(([f, i]) => [i, f]));
-const FLAG_ORDER = ['🇯🇵', '🇬🇧', '🇨🇳', '🇰🇷', '🇩🇪', '🇪🇸', '🇫🇷', '🇮🇹', '🇵🇹', '🇵🇱'];
+const FLAG_ORDER = ['🇯🇵', '🇬🇧', '🇨🇳', '🇰🇷', '🇩🇪', '🇪🇸', '🇫🇷', '🇮🇹', '🇵🇹', '🇵🇱', '🇮🇩'];
 
 let pokemons = [];
 let cards = [];
@@ -80,7 +80,8 @@ function renderLangFilter() {
   for (const c of cards) counts[c.language] = (counts[c.language] || 0) + 1;
 
   const total = cards.length;
-  const flags = FLAG_ORDER.filter(f => counts[f]);
+  // Sort chips by card count (desc); FLAG_ORDER breaks ties (stable sort).
+  const flags = FLAG_ORDER.filter(f => counts[f]).sort((a, b) => counts[b] - counts[a]);
 
   const chips = [
     `<button type="button" class="lang-filter-chip" data-iso="">${t('filter.all')} <span class="lang-filter-count">${total}</span></button>`,
