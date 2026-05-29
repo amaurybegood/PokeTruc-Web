@@ -1,8 +1,8 @@
 # PokéTruc
 
-> PokéTruc is a free, fan-made, ad-free catalogue of language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language or region. It lists 560 such cards across 140 Generation 1 Pokémon, published from 1996 to 2026.
+> PokéTruc is a free, fan-made, ad-free catalogue of language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language or region. It lists 569 such cards across 140 Generation 1 Pokémon, published from 1996 to 2026.
 
-The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its language-exclusive cards grouped by card language, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Card languages in the collection: 432 Japanese, 70 English, 43 Chinese, 4 Indonesian, 3 Korean, 2 German, 2 Spanish, 1 French, 1 Italian, 1 Portuguese, 1 Polish. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its language-exclusive cards grouped by card language, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Card languages in the collection: 437 Japanese, 74 English, 43 Chinese, 4 Indonesian, 3 Korean, 2 German, 2 Spanish, 1 French, 1 Italian, 1 Portuguese, 1 Polish. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
 
 ## Main pages
 
@@ -132,24 +132,24 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Gyarados](https://poketruc.com/pokemon/gyarados/): 8 language-exclusive cards
 - [Lapras](https://poketruc.com/pokemon/lapras/): 5 language-exclusive cards
 - [Ditto](https://poketruc.com/pokemon/ditto/): 2 language-exclusive cards
-- [Eevee](https://poketruc.com/pokemon/eevee/): 24 language-exclusive cards
-- [Vaporeon](https://poketruc.com/pokemon/vaporeon/): 2 language-exclusive cards
-- [Jolteon](https://poketruc.com/pokemon/jolteon/): 4 language-exclusive cards
-- [Flareon](https://poketruc.com/pokemon/flareon/): 3 language-exclusive cards
+- [Eevee](https://poketruc.com/pokemon/eevee/): 23 language-exclusive cards
+- [Vaporeon](https://poketruc.com/pokemon/vaporeon/): 3 language-exclusive cards
+- [Jolteon](https://poketruc.com/pokemon/jolteon/): 5 language-exclusive cards
+- [Flareon](https://poketruc.com/pokemon/flareon/): 4 language-exclusive cards
 - [Porygon](https://poketruc.com/pokemon/porygon/): 2 language-exclusive cards
 - [Omanyte](https://poketruc.com/pokemon/omanyte/): 2 language-exclusive cards
 - [Omastar](https://poketruc.com/pokemon/omastar/): 2 language-exclusive cards
 - [Kabuto](https://poketruc.com/pokemon/kabuto/): 1 language-exclusive card
 - [Kabutops](https://poketruc.com/pokemon/kabutops/): 2 language-exclusive cards
-- [Aerodactyl](https://poketruc.com/pokemon/aerodactyl/): 3 language-exclusive cards
-- [Snorlax](https://poketruc.com/pokemon/snorlax/): 3 language-exclusive cards
-- [Articuno](https://poketruc.com/pokemon/articuno/): 4 language-exclusive cards
-- [Zapdos](https://poketruc.com/pokemon/zapdos/): 4 language-exclusive cards
-- [Moltres](https://poketruc.com/pokemon/moltres/): 4 language-exclusive cards
+- [Aerodactyl](https://poketruc.com/pokemon/aerodactyl/): 4 language-exclusive cards
+- [Snorlax](https://poketruc.com/pokemon/snorlax/): 5 language-exclusive cards
+- [Articuno](https://poketruc.com/pokemon/articuno/): 5 language-exclusive cards
+- [Zapdos](https://poketruc.com/pokemon/zapdos/): 5 language-exclusive cards
+- [Moltres](https://poketruc.com/pokemon/moltres/): 3 language-exclusive cards
 - [Dratini](https://poketruc.com/pokemon/dratini/): 2 language-exclusive cards
 - [Dragonair](https://poketruc.com/pokemon/dragonair/): 2 language-exclusive cards
-- [Dragonite](https://poketruc.com/pokemon/dragonite/): 3 language-exclusive cards
-- [Mewtwo](https://poketruc.com/pokemon/mewtwo/): 7 language-exclusive cards
+- [Dragonite](https://poketruc.com/pokemon/dragonite/): 4 language-exclusive cards
+- [Mewtwo](https://poketruc.com/pokemon/mewtwo/): 9 language-exclusive cards
 - [Mew](https://poketruc.com/pokemon/mew/): 11 language-exclusive cards
 
 ## Optional

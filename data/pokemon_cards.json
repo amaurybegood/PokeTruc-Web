@@ -5134,6 +5134,106 @@
   "year": 2010,
   "artist": "Hitoshi Ariga"
 },
+{
+  "pokemonId": 134,
+  "name": "Call of Legends",
+  "imageName": "134_Vaporeon_col1_52",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "sui"
+},{
+  "pokemonId": 135,
+  "name": "Call of Legends",
+  "imageName": "135_Jolteon_col1_45",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "Shin Nagasawa"
+},{
+  "pokemonId": 136,
+  "name": "Call of Legends",
+  "imageName": "136_Flareon_col1_44",
+  "rarity": "Uncommon",
+  "description": "",
+  "language": "🇬🇧",
+  "year": 2011,
+  "artist": "kawayoo"
+},{
+  "pokemonId": 142,
+  "name": "Sword & Shield Promos",
+  "imageName": "142_Aerodactyl_jpn_swshp_315",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Aerodactyl_(S-P_Promo_315)",
+  "language": "🇯🇵",
+  "year": 2019,
+  "artist": "Uta"
+},{
+  "pokemonId": 143,
+  "name": "Sword & Shield Promos",
+  "imageName": "143_Snorlax_swshp_SWSH032",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Snorlax_(Sword_%26_Shield_140)",
+  "language": "🇬🇧",
+  "year": 2020,
+  "artist": "Tika Matsuno"
+},{
+  "pokemonId": 143,
+  "name": "Unnumbered Promos",
+  "imageName": "143_Snorlax_jpn_unp_28",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Hungry_Snorlax_(Nintendo_64_promo)",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Sumiyoshi Kizuki"
+},{
+  "pokemonId": 144,
+  "name": "Unnumbered Promos",
+  "imageName": "144_Articuno_jpn_unp_97",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Articuno_(Fossil_2)",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 145,
+  "name": "Unnumbered Promos",
+  "imageName": "145_Zapdos_jpn_unp_98",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Zapdos_(Fossil_15)#",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 149,
+  "name": "Unnumbered Promos",
+  "imageName": "149_Dragonite_jpn_unp_60",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Dragonite_(Pokémon_Card_GB_promo)",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 150,
+  "name": "Unnumbered Promos",
+  "imageName": "150_Mewtwo_jpn_unp_26",
+  "rarity": "Rare",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Mewtwo_(Wizards_Promo_12)#",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 150,
+  "name": "Unnumbered Promos",
+  "imageName": "150_Mewtwo_jpn_unp_156",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Mewtwo_(Wizards_Promo_12)#",
+  "language": "🇯🇵",
+  "year": 1996,
+  "artist": "Christopher Rush"
+},
   {
     "pokemonId": 151,
     "name": "Scarlet & Violet Promos",
