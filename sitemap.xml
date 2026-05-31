@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://poketruc.com/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -1503,7 +1503,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/pokemon/pikachu/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/pikachu/"/>
@@ -1515,7 +1515,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/pikachu/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/pikachu/"/>
@@ -1527,7 +1527,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/pikachu/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/pikachu/"/>
@@ -1539,7 +1539,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/pikachu/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/pikachu/"/>
@@ -1551,7 +1551,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/pikachu/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/pikachu/"/>

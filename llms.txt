@@ -1,8 +1,8 @@
 # PokéTruc
 
-> PokéTruc is a free, fan-made, ad-free catalogue of language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language or region. It lists 569 such cards across 140 Generation 1 Pokémon, published from 1996 to 2026.
+> PokéTruc is a free, fan-made, ad-free catalogue of language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language or region. It lists 566 such cards across 140 Generation 1 Pokémon, published from 1996 to 2026.
 
-The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its language-exclusive cards grouped by card language, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Card languages in the collection: 437 Japanese, 74 English, 43 Chinese, 4 Indonesian, 3 Korean, 2 German, 2 Spanish, 1 French, 1 Italian, 1 Portuguese, 1 Polish. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its language-exclusive cards grouped by card language, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Card languages in the collection: 434 Japanese, 74 English, 43 Chinese, 4 Indonesian, 3 Korean, 2 German, 2 Spanish, 1 French, 1 Italian, 1 Portuguese, 1 Polish. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
 
 ## Main pages
 
@@ -34,7 +34,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Spearow](https://poketruc.com/pokemon/spearow/): 2 language-exclusive cards
 - [Fearow](https://poketruc.com/pokemon/fearow/): 4 language-exclusive cards
 - [Arbok](https://poketruc.com/pokemon/arbok/): 2 language-exclusive cards
-- [Pikachu](https://poketruc.com/pokemon/pikachu/): 148 language-exclusive cards
+- [Pikachu](https://poketruc.com/pokemon/pikachu/): 145 language-exclusive cards
 - [Raichu](https://poketruc.com/pokemon/raichu/): 4 language-exclusive cards
 - [Sandshrew](https://poketruc.com/pokemon/sandshrew/): 2 language-exclusive cards
 - [Sandslash](https://poketruc.com/pokemon/sandslash/): 1 language-exclusive card

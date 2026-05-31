@@ -1699,15 +1699,6 @@
 },{
   "pokemonId": 25,
   "name": "Sun & Moon Promos",
-  "imageName": "25_Pikachu_jpn_smp_200",
-  "rarity": "Promo",
-  "description": "",
-  "language": "🇯🇵",
-  "year": 2016,
-  "artist": "Naoki Saito"
-},{
-  "pokemonId": 25,
-  "name": "Sun & Moon Promos",
   "imageName": "25_Pikachu_jpn_smp_197",
   "rarity": "Promo",
   "description": "",
@@ -1831,15 +1822,6 @@
   "language": "🇯🇵",
   "year": 2016,
   "artist": "kawayoo"
-},{
-  "pokemonId": 25,
-  "name": "Ash vs Team Rocket Deck Kit",
-  "imageName": "25_Pikachu_jpn_smd_5",
-  "rarity": "No Rarity",
-  "description": "",
-  "language": "🇯🇵",
-  "year": 2017,
-  "artist": "Nakano Satoshi"
 },{
   "pokemonId": 25,
   "name": "Sword & Shield Promos",
