@@ -60,7 +60,9 @@ const HREFLANG = HTML_LANG;
 // Pokémon name field per UI lang (mirrors data/pokemons.json key naming).
 const NAME_FIELD = { en: 'en', fr: 'fr', ja: 'jp', ko: 'ko', zh: 'zh' };
 
-// Card-language flags, in the order they should appear on the page.
+// Exclusivity categories, in the order they should appear on the page.
+// First the 11 single-language categories (a card with languages=[flag]),
+// then the 2 macro region categories (Western / Asian multi-language).
 const LANG_INFO = [
   { flag: '🇯🇵', key: 'langJapaneseHeading'   },
   { flag: '🇬🇧', key: 'langEnglishHeading'    },
@@ -73,14 +75,16 @@ const LANG_INFO = [
   { flag: '🇵🇹', key: 'langPortugueseHeading' },
   { flag: '🇵🇱', key: 'langPolishHeading'     },
   { flag: '🇮🇩', key: 'langIndonesianHeading' },
+  { flag: '🌍', key: 'langWesternHeading'     },
+  { flag: '🏯', key: 'langAsianHeading'       },
 ];
 
 const STATS_LANG_LABEL = {
-  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German',      '🇪🇸': 'Spanish',     '🇫🇷': 'French',      '🇮🇹': 'Italian',      '🇵🇹': 'Portuguese',     '🇵🇱': 'Polish',       '🇮🇩': 'Indonesian'      },
-  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande',   '🇪🇸': 'espagnole',   '🇫🇷': 'française',   '🇮🇹': 'italienne',    '🇵🇹': 'portugaise',     '🇵🇱': 'polonaise',    '🇮🇩': 'indonésienne'    },
-  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇮🇩': 'インドネシア語限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정',  '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정',  '🇮🇩': '인도네시아어 한정' },
-  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占',    '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占',     '🇮🇹': '意大利文独占',  '🇵🇹': '葡萄牙文独占',   '🇵🇱': '波兰文独占',    '🇮🇩': '印尼文独占'      },
+  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German',      '🇪🇸': 'Spanish',     '🇫🇷': 'French',      '🇮🇹': 'Italian',      '🇵🇹': 'Portuguese',     '🇵🇱': 'Polish',       '🇮🇩': 'Indonesian',     '🌍': 'Western',         '🏯': 'Asian'           },
+  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande',   '🇪🇸': 'espagnole',   '🇫🇷': 'française',   '🇮🇹': 'italienne',    '🇵🇹': 'portugaise',     '🇵🇱': 'polonaise',    '🇮🇩': 'indonésienne',   '🌍': 'occidentale',     '🏯': 'asiatique'       },
+  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇮🇩': 'インドネシア語限定', '🌍': '欧米限定',        '🏯': 'アジア限定'       },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정',  '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정',  '🇮🇩': '인도네시아어 한정', '🌍': '서양 한정',       '🏯': '아시아 한정'      },
+  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占',    '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占',     '🇮🇹': '意大利文独占',  '🇵🇹': '葡萄牙文独占',   '🇵🇱': '波兰文独占',    '🇮🇩': '印尼文独占',     '🌍': '西方独占',        '🏯': '亚洲独占'        },
 };
 
 // ISO language code for each flag emoji used on a card. Used by JSON-LD
@@ -99,6 +103,16 @@ const FLAG_TO_ISO = {
   '🇮🇩': 'id',
 };
 
+// Exclusivity key for grouping / filtering. Cards released in a single
+// language are keyed by that flag; multi-language cards collapse into the
+// macro region stored in `card.region` ("western" → 🌍, "asian" → 🏯).
+function exclusivityKey(card) {
+  if (card.region === 'western') return '🌍';
+  if (card.region === 'asian')   return '🏯';
+  if (card.languages.length === 1) return card.languages[0];
+  return null;
+}
+
 const JOIN_RULES = {
   en: { sep: ', ', last: ' and ' },
   fr: { sep: ', ', last: ' et '  },
@@ -112,16 +126,16 @@ const JOIN_RULES = {
 const LANG = {
   en: {
     siteName: 'PokéTruc',
-    tagline: 'Pokémon TCG illustrations / artworks that exist in only one language',
+    tagline: 'Pokémon TCG illustrations / artworks released in only one language or one region',
     pokedex: 'Pokédex',
     info: 'Info',
     searchPlaceholder: 'Search a Pokémon...',
-    langFilterAria: 'Filter by card language',
+    langFilterAria: 'Filter by exclusivity category',
     skipToContent: 'Skip to main content',
     indexTitle: 'PokéTruc — Unique Pokémon TCG Card Illustrations',
-    indexDescription: 'Pokémon TCG illustrations / artworks that exist in only one language — Japanese, English, Chinese or Korean. Free, fan-made, ad-free.',
-    indexH1: 'Pokémon TCG illustrations / artworks that exist in only one language',
-    seoAbout: "Some Pokémon TCG cards feature artwork that was only ever printed in a single language. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. PokéTruc catalogs these language-exclusive cards across all 151 Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every classic — pulling artwork from Japanese Vending Machine expansion sheets, Black & White promos, DPt-P promos, McDonald's promos, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, language and year — fully free, ad-free, and built by a fan.",
+    indexDescription: 'Pokémon TCG illustrations / artworks released in only one language or region — Japanese, English, Chinese, Western-only, Asian-only and more. Free, fan-made, ad-free.',
+    indexH1: 'Pokémon TCG illustrations / artworks released in only one language or one region',
+    seoAbout: "Some Pokémon TCG cards feature artwork that was only ever printed in a single language; others were only ever released in a single region. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. A Call of Legends or My First Battle card that shipped across Western markets (English, German, French, Italian, Spanish) but never reached Japan. PokéTruc catalogs these language- and region-exclusive cards across all 151 Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every classic — pulling artwork from Japanese Vending Machine expansion sheets, Black & White promos, DPt-P promos, McDonald's promos, Western-only trainer kits, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, exclusivity and year — fully free, ad-free, and built by a fan.",
     seoPokedexHeading: 'Browse all Pokémon with exclusive cards',
     infoTitle: 'PokéTruc — About',
     infoDescription: 'About PokéTruc: a fan-made catalog of Pokémon TCG cards with unique artwork exclusive to one language. Free, ad-free.',
@@ -129,7 +143,7 @@ const LANG = {
     aboutHeading: 'About',
     aboutBody: [
       "This site was developed for fun, and also for learning purposes (not being a developer, it's a bit of a challenge for me). That's why it is very simple and basic.",
-      "Its purpose is to list all Pokémon TCG cards with unique illustrations. By unique, I mean artwork that is only available in one language (Japanese, English, Chinese, or other). This is the kind of card I like to collect.",
+      "Its purpose is to list all Pokémon TCG cards with unique illustrations. By unique, I mean artwork that is only available in one language (Japanese, English, Chinese, or other) or only released in a single region (e.g. Western-only sets like Call of Legends or My First Battle, never released in Japan). This is the kind of card I like to collect.",
       "It is completely free and ad-free.",
       "Despite the care taken, some information may be inaccurate. Please feel free to contact me by email if you notice an error or would like to provide feedback.",
       "Voilà, voilà :)",
@@ -167,14 +181,16 @@ const LANG = {
     langPortugueseHeading: 'Portuguese-exclusive cards',
     langPolishHeading:     'Polish-exclusive cards',
     langIndonesianHeading: 'Indonesian-exclusive cards',
+    langWesternHeading:    'Western-exclusive cards',
+    langAsianHeading:      'Asian-exclusive cards',
     cardsSection: (n) => `${n} exclusive TCG card ${n === 1 ? 'illustration' : 'illustrations'}`,
     detailTitle: (name, n) => `${name} — Exclusive TCG Card ${n === 1 ? 'Illustration' : 'Illustrations'} | PokéTruc`,
     detailDescription: (name, id, n) =>
-      `${n} language-exclusive Pokémon TCG card ${n === 1 ? 'illustration' : 'illustrations'} for ${name} (#${pad(id)}). Unique artwork only available in one language (Japanese, English, Chinese, or other).`,
+      `${n} exclusive Pokémon TCG card ${n === 1 ? 'illustration' : 'illustrations'} for ${name} (#${pad(id)}). Unique artwork only released in one language (Japanese, English, Chinese, or other) or one region (Western-only or Asian-only).`,
     detailOgDescription: (name, n) =>
-      `${n} language-exclusive TCG card ${n === 1 ? 'illustration' : 'illustrations'} for ${name}. Unique artwork only available in one language.`,
+      `${n} exclusive TCG card ${n === 1 ? 'illustration' : 'illustrations'} for ${name}. Unique artwork only released in one language or region.`,
     schemaDetailDescription: (name, id) =>
-      `Language-exclusive Pokémon TCG card illustrations for ${name} (#${pad(id)}). Unique artwork only available in one language.`,
+      `Exclusive Pokémon TCG card illustrations for ${name} (#${pad(id)}). Unique artwork only released in one language or region.`,
     nextLabel: (id, name) => `#${pad(id)} ${name} →`,
     prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: 'JavaScript is required for the live Pokédex grid above. You can still browse every Pokémon below.',
@@ -184,16 +200,16 @@ const LANG = {
   },
   fr: {
     siteName: 'PokéTruc',
-    tagline: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue",
+    tagline: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région",
     pokedex: 'Pokédex',
     info: 'Info',
     searchPlaceholder: 'Rechercher un Pokémon...',
-    langFilterAria: 'Filtrer par langue de carte',
+    langFilterAria: "Filtrer par catégorie d'exclusivité",
     skipToContent: 'Aller au contenu',
     indexTitle: 'PokéTruc — Illustrations exclusives de cartes Pokémon TCG',
-    indexDescription: "Illustrations / artworks de cartes Pokémon TCG n'existant qu'en une langue (japonais, anglais, chinois, coréen). Gratuit, sans pub, fait par un fan.",
-    indexH1: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue",
-    seoAbout: "Certaines cartes Pokémon TCG n'existent qu'en une seule langue. Une promo japonaise distribuée avec un magazine de timbres en 1996, jamais sortie en anglais. Une carte McDonald's Pokémon-e disponible uniquement au Japon en 2002. Une exclusivité du marché chinois sur un set récent. PokéTruc recense ces cartes en exclusivité linguistique pour les 151 Pokémon de la Génération 1 — Bulbizarre, Dracaufeu, Pikachu et tous les autres — en piochant dans les feuilles Vending Machine japonaises, les promos Black & White, les promos DPt-P, les promos McDonald's et les sorties exclusives au marché chinois, illustrées par des artistes comme Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii et bien d'autres. L'objectif : permettre aux collectionneurs de découvrir des illustrations rares qu'ils n'ont peut-être jamais vues, classées par Pokémon, set, langue et année — entièrement gratuit, sans publicité, créé par un fan.",
+    indexDescription: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou région (japonais, anglais, chinois, occident, asie). Gratuit, sans pub, fait par un fan.",
+    indexH1: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région",
+    seoAbout: "Certaines cartes Pokémon TCG n'existent qu'en une seule langue ; d'autres ne sont sorties que dans une seule région. Une promo japonaise distribuée avec un magazine de timbres en 1996, jamais sortie en anglais. Une carte McDonald's Pokémon-e disponible uniquement au Japon en 2002. Une exclusivité du marché chinois sur un set récent. Une carte d'un set L'appel des légendes ou My First Battle distribuée en occident (anglais, allemand, français, italien, espagnol) mais jamais sortie au Japon. PokéTruc recense ces cartes en exclusivité linguistique ou régionale pour les 151 Pokémon de la Génération 1 — Bulbizarre, Dracaufeu, Pikachu et tous les autres — en piochant dans les feuilles Vending Machine japonaises, les promos Black & White, les promos DPt-P, les promos McDonald's, les decks d'initiation occidentaux et les sorties exclusives au marché chinois, illustrées par des artistes comme Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii et bien d'autres. L'objectif : permettre aux collectionneurs de découvrir des illustrations rares qu'ils n'ont peut-être jamais vues, classées par Pokémon, set, exclusivité et année — entièrement gratuit, sans publicité, créé par un fan.",
     seoPokedexHeading: 'Tous les Pokémon avec des cartes exclusives',
     infoTitle: 'PokéTruc — À propos',
     infoDescription: 'À propos de PokéTruc : un catalogue créé par un fan, recensant les cartes Pokémon TCG aux illustrations exclusives à une seule langue. Gratuit, sans publicité.',
@@ -201,7 +217,7 @@ const LANG = {
     aboutHeading: 'À propos',
     aboutBody: [
       "Ce site est développé pour le fun, et aussi à des fins d'apprentissage (n'étant pas développeur, c'est un petit défi pour moi). C'est pour cela qu'il est très simple et basique.",
-      "Son but est de répertorier toutes les cartes Pokémon TCG ayant des illustrations uniques. Par unique, j'entends qui n'est disponible que dans une langue (japonais, anglais, chinois ou autre). C'est le genre de carte que j'aime bien collectionner.",
+      "Son but est de répertorier toutes les cartes Pokémon TCG ayant des illustrations uniques. Par unique, j'entends qui n'est disponible que dans une seule langue (japonais, anglais, chinois ou autre) ou que dans une seule région (par exemple les sets occidentaux comme L'appel des légendes ou My First Battle, jamais sortis au Japon). C'est le genre de carte que j'aime bien collectionner.",
       "Il est entièrement gratuit et sans publicité.",
       "Malgré le soin apporté, certaines informations peuvent être inexactes. N'hésitez pas à me contacter par e-mail si vous constatez une erreur ou souhaitez faire un retour.",
       "Voilà, voilà :)",
@@ -239,15 +255,17 @@ const LANG = {
     langPortugueseHeading: 'Cartes exclusives portugaises',
     langPolishHeading:     'Cartes exclusives polonaises',
     langIndonesianHeading: 'Cartes exclusives indonésiennes',
+    langWesternHeading:    'Cartes exclusives occidentales',
+    langAsianHeading:      'Cartes exclusives asiatiques',
     cardsSection: (n) => `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG`,
     detailTitle: (name, n) =>
       `${name} — Illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG | PokéTruc`,
     detailDescription: (name, id, n) =>
-      `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes Pokémon TCG pour ${name} (#${pad(id)}). Artwork unique disponible dans une seule langue (japonais, anglais, chinois ou autre).`,
+      `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes Pokémon TCG pour ${name} (#${pad(id)}). Artwork unique disponible dans une seule langue (japonais, anglais, chinois ou autre) ou une seule région (occidentale ou asiatique).`,
     detailOgDescription: (name, n) =>
-      `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG pour ${name}. Artwork unique disponible dans une seule langue.`,
+      `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG pour ${name}. Artwork unique disponible dans une seule langue ou région.`,
     schemaDetailDescription: (name, id) =>
-      `Illustrations exclusives de cartes Pokémon TCG pour ${name} (#${pad(id)}). Artwork unique disponible dans une seule langue.`,
+      `Illustrations exclusives de cartes Pokémon TCG pour ${name} (#${pad(id)}). Artwork unique disponible dans une seule langue ou région.`,
     nextLabel: (id, name) => `#${pad(id)} ${name} →`,
     prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: "JavaScript est nécessaire pour la grille dynamique du Pokédex. Vous pouvez tout de même parcourir tous les Pokémon ci-dessous.",
@@ -257,16 +275,16 @@ const LANG = {
   },
   ja: {
     siteName: 'PokéTruc',
-    tagline: '1つの言語にしか存在しないポケモンTCGのイラスト / アートワーク',
+    tagline: '1つの言語または1つの地域にしか存在しないポケモンTCGのイラスト / アートワーク',
     pokedex: '図鑑',
     info: '情報',
     searchPlaceholder: 'ポケモンをさがす',
-    langFilterAria: 'カードの言語で絞り込む',
+    langFilterAria: '限定カテゴリで絞り込む',
     skipToContent: 'メインコンテンツへスキップ',
-    indexTitle: 'PokéTruc — 言語限定のポケモンTCGカードイラスト',
-    indexDescription: '1つの言語（日本語・英語・中国語・韓国語）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。',
-    indexH1: '1つの言語にしか存在しないポケモンTCGのイラスト / アートワーク',
-    seoAbout: 'ポケモンTCGには、特定の言語でしか印刷されなかった限定イラストのカードが数多く存在します。1996年に切手雑誌の付録として配布された日本限定プロモ、2002年に日本でのみ配布されたマクドナルドのポケモン-e、最新セットの中国市場限定カードなど。PokéTrucでは、フシギダネ、リザードン、ピカチュウをはじめとする第1世代の151匹すべてについて、こうした言語限定カードを収録しています。Vending Machine拡張シート、Black & Whiteプロモ、DPt-Pプロモ、マクドナルドプロモ、中国限定セットなど幅広く対象とし、Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Moriiといった著名イラストレーターの作品も含まれます。ポケモン別・セット別・言語別・年代別に整理されたPokéTrucで、まだ見たことのない希少なイラストを見つけてください。完全無料・広告なし・ファン制作です。',
+    indexTitle: 'PokéTruc — 言語・地域限定のポケモンTCGカードイラスト',
+    indexDescription: '1つの言語（日本語・英語・中国語・韓国語）または1つの地域（欧米・アジア）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。',
+    indexH1: '1つの言語または1つの地域にしか存在しないポケモンTCGのイラスト / アートワーク',
+    seoAbout: 'ポケモンTCGには、特定の言語でしか印刷されなかった限定イラストのカードや、特定の地域でしか発売されなかったカードが数多く存在します。1996年に切手雑誌の付録として配布された日本限定プロモ、2002年に日本でのみ配布されたマクドナルドのポケモン-e、最新セットの中国市場限定カード、欧米向けにのみ展開された Call of Legends や My First Battle のような日本未発売のセットなど。PokéTrucでは、フシギダネ、リザードン、ピカチュウをはじめとする第1世代の151匹すべてについて、こうした言語限定・地域限定カードを収録しています。Vending Machine拡張シート、Black & Whiteプロモ、DPt-Pプロモ、マクドナルドプロモ、欧米限定のトレーナーキット、中国限定セットなど幅広く対象とし、Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Moriiといった著名イラストレーターの作品も含まれます。ポケモン別・セット別・限定カテゴリ別・年代別に整理されたPokéTrucで、まだ見たことのない希少なイラストを見つけてください。完全無料・広告なし・ファン制作です。',
     seoPokedexHeading: '限定カードがあるポケモンをすべて見る',
     infoTitle: 'PokéTruc — このサイトについて',
     infoDescription: 'PokéTrucについて：1つの言語にしか存在しないポケモンTCGカードの限定イラストを集めたファン制作のカタログです。無料・広告なし。',
@@ -274,7 +292,7 @@ const LANG = {
     aboutHeading: 'このアプリについて',
     aboutBody: [
       'このサイトは楽しみのために、また学習目的で開発しました（開発者ではないので、私には少し挑戦です）。そのため、とてもシンプルで基本的な作りになっています。',
-      'その目的は、独自のイラストを持つすべてのポケモンTCGカードをリストアップすることです。「独自」とは、1つの言語（日本語、英語、中国語、またはその他）でのみ入手可能なものを意味します。これが私がコレクションしたいカードの種類です。',
+      'その目的は、独自のイラストを持つすべてのポケモンTCGカードをリストアップすることです。「独自」とは、1つの言語（日本語、英語、中国語、またはその他）でのみ入手可能なもの、または1つの地域でのみ発売されたもの（例：欧米限定の Call of Legends や My First Battle のような日本未発売セット）を意味します。これが私がコレクションしたいカードの種類です。',
       '完全無料、広告なしです。',
       '注意を払っていますが、一部の情報が不正確な場合があります。エラーを見つけた場合やフィードバックをお送りいただける場合は、メールでご連絡ください。',
       'それでは :)',
@@ -312,14 +330,16 @@ const LANG = {
     langPortugueseHeading: 'ポルトガル語限定カード',
     langPolishHeading:     'ポーランド語限定カード',
     langIndonesianHeading: 'インドネシア語限定カード',
-    cardsSection: (n) => `${n}枚の言語限定TCGカードイラスト`,
-    detailTitle: (name, n) => `${name} — 言語限定TCGカードイラスト${n}枚 | PokéTruc`,
+    langWesternHeading:    '欧米限定カード',
+    langAsianHeading:      'アジア限定カード',
+    cardsSection: (n) => `${n}枚の限定TCGカードイラスト`,
+    detailTitle: (name, n) => `${name} — 限定TCGカードイラスト${n}枚 | PokéTruc`,
     detailDescription: (name, id, n) =>
-      `${name}（#${pad(id)}）の言語限定ポケモンTCGカードイラスト${n}枚。1つの言語（日本語、英語、中国語など）でのみ発行された独自イラストを掲載しています。`,
+      `${name}（#${pad(id)}）の限定ポケモンTCGカードイラスト${n}枚。1つの言語（日本語、英語、中国語など）または1つの地域（欧米限定・アジア限定）でのみ発行された独自イラストを掲載しています。`,
     detailOgDescription: (name, n) =>
-      `${name}の言語限定TCGカードイラスト${n}枚。1つの言語でのみ発行された独自イラストを掲載しています。`,
+      `${name}の限定TCGカードイラスト${n}枚。1つの言語または地域でのみ発行された独自イラストを掲載しています。`,
     schemaDetailDescription: (name, id) =>
-      `${name}（#${pad(id)}）の言語限定ポケモンTCGカードイラスト。1つの言語でのみ発行された独自イラストです。`,
+      `${name}（#${pad(id)}）の限定ポケモンTCGカードイラスト。1つの言語または地域でのみ発行された独自イラストです。`,
     nextLabel: (id, name) => `#${pad(id)} ${name} →`,
     prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: 'JavaScriptが無効です。動的なポケモン一覧は表示されませんが、下のリストからすべてのポケモンを閲覧できます。',
@@ -329,16 +349,16 @@ const LANG = {
   },
   ko: {
     siteName: 'PokéTruc',
-    tagline: '한 가지 언어로만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
+    tagline: '한 가지 언어 또는 한 지역에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
     pokedex: '도감',
     info: '정보',
     searchPlaceholder: '포켓몬 검색',
-    langFilterAria: '카드 언어로 필터링',
+    langFilterAria: '한정 카테고리로 필터링',
     skipToContent: '본문으로 건너뛰기',
-    indexTitle: 'PokéTruc — 언어 한정 포켓몬 TCG 카드 일러스트',
-    indexDescription: '한 가지 언어(일본어, 영어, 중국어, 한국어)로만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.',
-    indexH1: '한 가지 언어로만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
-    seoAbout: '포켓몬 TCG에는 단 하나의 언어로만 인쇄된 한정 일러스트 카드가 다수 존재합니다. 1996년 우표 잡지 부록으로 배포된 일본 한정 프로모, 2002년 일본에서만 배포된 맥도날드 포켓몬-e 카드, 최신 세트의 중국 시장 한정 카드 등이 대표적입니다. PokéTruc은 이상해씨, 리자몽, 피카츄를 비롯한 1세대 151마리 전부에 대해 이러한 언어 한정 카드를 정리합니다. 일본 자판기 익스팬션 시트, Black & White 프로모, DPt-P 프로모, 맥도날드 프로모, 중국 한정 세트까지 폭넓게 다루며 Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii 등 유명 일러스트레이터의 작품도 포함됩니다. 포켓몬·세트·언어·연도별로 정리된 PokéTruc에서 한 번도 보지 못한 희귀 일러스트를 찾아보세요. 완전 무료, 광고 없음, 팬 제작.',
+    indexTitle: 'PokéTruc — 언어·지역 한정 포켓몬 TCG 카드 일러스트',
+    indexDescription: '한 가지 언어(일본어, 영어, 중국어, 한국어) 또는 한 지역(서양·아시아)에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.',
+    indexH1: '한 가지 언어 또는 한 지역에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
+    seoAbout: '포켓몬 TCG에는 단 하나의 언어로만 인쇄된 한정 일러스트 카드, 또는 단 하나의 지역에서만 출시된 카드가 다수 존재합니다. 1996년 우표 잡지 부록으로 배포된 일본 한정 프로모, 2002년 일본에서만 배포된 맥도날드 포켓몬-e 카드, 최신 세트의 중국 시장 한정 카드, 일본에서는 출시되지 않은 서양 한정 세트인 Call of Legends나 My First Battle 등이 대표적입니다. PokéTruc은 이상해씨, 리자몽, 피카츄를 비롯한 1세대 151마리 전부에 대해 이러한 언어·지역 한정 카드를 정리합니다. 일본 자판기 익스팬션 시트, Black & White 프로모, DPt-P 프로모, 맥도날드 프로모, 서양 한정 트레이너 키트, 중국 한정 세트까지 폭넓게 다루며 Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii 등 유명 일러스트레이터의 작품도 포함됩니다. 포켓몬·세트·한정 카테고리·연도별로 정리된 PokéTruc에서 한 번도 보지 못한 희귀 일러스트를 찾아보세요. 완전 무료, 광고 없음, 팬 제작.',
     seoPokedexHeading: '한정 카드가 있는 모든 포켓몬 둘러보기',
     infoTitle: 'PokéTruc — 사이트 소개',
     infoDescription: 'PokéTruc 소개: 하나의 언어로만 발매된 포켓몬 TCG 카드의 한정 일러스트를 모은 팬 제작 카탈로그입니다. 무료, 광고 없음.',
@@ -346,7 +366,7 @@ const LANG = {
     aboutHeading: '앱 소개',
     aboutBody: [
       "이 사이트는 재미를 위해, 그리고 학습 목적으로 개발되었습니다 (개발자가 아니기 때문에 저에게는 작은 도전입니다). 그래서 매우 단순하고 기본적입니다.",
-      "그 목적은 독특한 일러스트를 가진 모든 포켓몬 TCG 카드를 나열하는 것입니다. '독특하다'는 것은 한 가지 언어(일본어, 영어, 중국어 또는 기타)로만 제공된다는 의미입니다. 이것이 제가 수집하고 싶은 카드의 종류입니다.",
+      "그 목적은 독특한 일러스트를 가진 모든 포켓몬 TCG 카드를 나열하는 것입니다. '독특하다'는 것은 한 가지 언어(일본어, 영어, 중국어 또는 기타)로만 제공되거나, 한 지역에서만 출시된 것(예: 일본에서 출시되지 않은 Call of Legends나 My First Battle 같은 서양 한정 세트)을 의미합니다. 이것이 제가 수집하고 싶은 카드의 종류입니다.",
       "완전 무료이며 광고가 없습니다.",
       "주의를 기울였지만 일부 정보가 부정확할 수 있습니다. 오류를 발견하거나 피드백을 제공하고 싶으시면 이메일로 연락해 주세요.",
       "Voilà, voilà :)",
@@ -384,14 +404,16 @@ const LANG = {
     langPortugueseHeading: '포르투갈어 한정 카드',
     langPolishHeading:     '폴란드어 한정 카드',
     langIndonesianHeading: '인도네시아어 한정 카드',
-    cardsSection: (n) => `${n}장의 언어 한정 TCG 카드 일러스트`,
-    detailTitle: (name, n) => `${name} — 언어 한정 TCG 카드 일러스트 ${n}장 | PokéTruc`,
+    langWesternHeading:    '서양 한정 카드',
+    langAsianHeading:      '아시아 한정 카드',
+    cardsSection: (n) => `${n}장의 한정 TCG 카드 일러스트`,
+    detailTitle: (name, n) => `${name} — 한정 TCG 카드 일러스트 ${n}장 | PokéTruc`,
     detailDescription: (name, id, n) =>
-      `${name}(#${pad(id)})의 언어 한정 포켓몬 TCG 카드 일러스트 ${n}장. 한 가지 언어(일본어, 영어, 중국어 등)로만 발매된 독점 일러스트를 모았습니다.`,
+      `${name}(#${pad(id)})의 한정 포켓몬 TCG 카드 일러스트 ${n}장. 한 가지 언어(일본어, 영어, 중국어 등) 또는 한 지역(서양 한정·아시아 한정)으로만 발매된 독점 일러스트를 모았습니다.`,
     detailOgDescription: (name, n) =>
-      `${name}의 언어 한정 TCG 카드 일러스트 ${n}장. 한 가지 언어로만 발매된 독점 일러스트입니다.`,
+      `${name}의 한정 TCG 카드 일러스트 ${n}장. 한 가지 언어 또는 한 지역으로만 발매된 독점 일러스트입니다.`,
     schemaDetailDescription: (name, id) =>
-      `${name}(#${pad(id)})의 언어 한정 포켓몬 TCG 카드 일러스트. 한 가지 언어로만 발매된 독점 일러스트입니다.`,
+      `${name}(#${pad(id)})의 한정 포켓몬 TCG 카드 일러스트. 한 가지 언어 또는 한 지역으로만 발매된 독점 일러스트입니다.`,
     nextLabel: (id, name) => `#${pad(id)} ${name} →`,
     prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: 'JavaScript가 비활성화되어 있어 동적 포켓몬 그리드는 표시되지 않습니다. 아래 목록에서 모든 포켓몬을 확인할 수 있습니다.',
@@ -401,16 +423,16 @@ const LANG = {
   },
   zh: {
     siteName: 'PokéTruc',
-    tagline: '仅在一种语言中发行的宝可梦 TCG 插画 / 美术图',
+    tagline: '仅在一种语言或一个地区中发行的宝可梦 TCG 插画 / 美术图',
     pokedex: '图鉴',
     info: '信息',
     searchPlaceholder: '搜索宝可梦',
-    langFilterAria: '按卡牌语言筛选',
+    langFilterAria: '按独占类别筛选',
     skipToContent: '跳到主要内容',
-    indexTitle: 'PokéTruc — 语言独占的宝可梦 TCG 卡牌插画',
-    indexDescription: '仅在一种语言（日文、英文、中文或韩文）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。',
-    indexH1: '仅在一种语言中发行的宝可梦 TCG 插画 / 美术图',
-    seoAbout: '宝可梦 TCG 中有许多卡牌的插画仅以单一语言印刷发行。1996 年作为邮票杂志附录发行的日本限定促销卡，2002 年仅在日本麦当劳发行的宝可梦-e 卡，以及最新卡组中仅在中国市场推出的独占卡牌等。PokéTruc 收录了妙蛙种子、喷火龙、皮卡丘等第一世代全 151 只宝可梦的此类语言独占卡牌，涵盖日本贩卖机扩展卡板、Black & White 促销卡、DPt-P 促销卡、麦当劳促销卡以及中国独占卡组，作品由 Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Morii 等知名插画师绘制。按宝可梦、卡组、语言和年份分类整理，让您能够找到从未见过的稀有插画。完全免费、无广告、由粉丝制作。',
+    indexTitle: 'PokéTruc — 语言·地区独占的宝可梦 TCG 卡牌插画',
+    indexDescription: '仅在一种语言（日文、英文、中文或韩文）或一个地区（西方·亚洲）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。',
+    indexH1: '仅在一种语言或一个地区中发行的宝可梦 TCG 插画 / 美术图',
+    seoAbout: '宝可梦 TCG 中有许多卡牌的插画仅以单一语言印刷发行，也有许多卡牌仅在单一地区发行。1996 年作为邮票杂志附录发行的日本限定促销卡，2002 年仅在日本麦当劳发行的宝可梦-e 卡，最新卡组中仅在中国市场推出的独占卡牌，以及只在西方地区发行（英文、德文、法文、意大利文、西班牙文）但从未在日本发行的 Call of Legends 或 My First Battle 等卡组。PokéTruc 收录了妙蛙种子、喷火龙、皮卡丘等第一世代全 151 只宝可梦的此类语言·地区独占卡牌，涵盖日本贩卖机扩展卡板、Black & White 促销卡、DPt-P 促销卡、麦当劳促销卡、西方限定训练家组以及中国独占卡组，作品由 Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Morii 等知名插画师绘制。按宝可梦、卡组、独占类别和年份分类整理，让您能够找到从未见过的稀有插画。完全免费、无广告、由粉丝制作。',
     seoPokedexHeading: '查看所有拥有独占卡牌的宝可梦',
     infoTitle: 'PokéTruc — 关于本站',
     infoDescription: '关于 PokéTruc：一份由粉丝制作的目录，收录仅在单一语言中发行的宝可梦 TCG 独占卡牌插画。免费、无广告。',
@@ -418,7 +440,7 @@ const LANG = {
     aboutHeading: '关于',
     aboutBody: [
       "这个网站是为了乐趣而开发的，也是出于学习目的（作为一名非开发者，这对我来说是一个小挑战）。这就是为什么它非常简单和基础。",
-      "它的目的是列出所有具有独特插图的宝可梦 TCG 卡片。所谓「独特」，是指只在一种语言（日语、英语、中文或其他语言）中提供的卡片。这就是我喜欢收藏的那种卡片。",
+      "它的目的是列出所有具有独特插图的宝可梦 TCG 卡片。所谓「独特」，是指只在一种语言（日语、英语、中文或其他语言）中提供，或只在一个地区发行的卡片（例如未在日本发行的西方限定卡组，如 Call of Legends 或 My First Battle）。这就是我喜欢收藏的那种卡片。",
       "完全免费，无广告。",
       "尽管尽了一切努力，部分信息可能不准确。如果您发现错误或想提供反馈，请随时通过电子邮件联系我。",
       "Voilà, voilà :)",
@@ -456,14 +478,16 @@ const LANG = {
     langPortugueseHeading: '葡萄牙文独占卡牌',
     langPolishHeading:     '波兰文独占卡牌',
     langIndonesianHeading: '印尼文独占卡牌',
-    cardsSection: (n) => `${n} 张语言独占 TCG 卡牌插画`,
-    detailTitle: (name, n) => `${name} — ${n} 张语言独占 TCG 卡牌插画 | PokéTruc`,
+    langWesternHeading:    '西方独占卡牌',
+    langAsianHeading:      '亚洲独占卡牌',
+    cardsSection: (n) => `${n} 张独占 TCG 卡牌插画`,
+    detailTitle: (name, n) => `${name} — ${n} 张独占 TCG 卡牌插画 | PokéTruc`,
     detailDescription: (name, id, n) =>
-      `${name}（#${pad(id)}）的 ${n} 张语言独占宝可梦 TCG 卡牌插画。仅在单一语言（日文、英文、中文或其他语言）发行的独家插画。`,
+      `${name}（#${pad(id)}）的 ${n} 张独占宝可梦 TCG 卡牌插画。仅在单一语言（日文、英文、中文或其他语言）或单一地区（西方独占·亚洲独占）发行的独家插画。`,
     detailOgDescription: (name, n) =>
-      `${name}的 ${n} 张语言独占 TCG 卡牌插画。仅在单一语言发行的独家插画。`,
+      `${name}的 ${n} 张独占 TCG 卡牌插画。仅在单一语言或单一地区发行的独家插画。`,
     schemaDetailDescription: (name, id) =>
-      `${name}（#${pad(id)}）的语言独占宝可梦 TCG 卡牌插画。仅在单一语言发行的独家插画。`,
+      `${name}（#${pad(id)}）的独占宝可梦 TCG 卡牌插画。仅在单一语言或单一地区发行的独家插画。`,
     nextLabel: (id, name) => `#${pad(id)} ${name} →`,
     prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: '您的浏览器已禁用 JavaScript，无法显示动态宝可梦网格。您仍可在下方浏览所有宝可梦。',
@@ -540,7 +564,7 @@ const STATS_BUILDERS = {
     let artistSentence = '';
     if (artists.length === 1) artistSentence = ` Illustrated by ${artists[0]}.`;
     else if (artists.length > 1) artistSentence = ` Illustrated by ${artists.length} different artists including ${joinListLang(artists.slice(0, 3), 'en')}.`;
-    return `PokéTruc has catalogued ${count} language-exclusive ${name} TCG card ${wordP}, ${yearPart}. ${langSentence}${artistSentence}`;
+    return `PokéTruc has catalogued ${count} exclusive ${name} TCG card ${wordP}, ${yearPart}. ${langSentence}${artistSentence}`;
   },
   fr: ({ name, count, minY, maxY, byLang, artists }) => {
     const s = count > 1 ? 's' : '';
@@ -554,7 +578,7 @@ const STATS_BUILDERS = {
     let artistSentence = '';
     if (artists.length === 1) artistSentence = ` Illustrée${s} par ${artists[0]}.`;
     else if (artists.length > 1) artistSentence = ` Illustrées par ${artists.length} artistes différents dont ${joinListLang(artists.slice(0, 3), 'fr')}.`;
-    return `PokéTruc recense ${count} illustration${s} de carte${s} TCG ${name} exclusive${s} à une seule langue, ${yearPart}. ${langSentence}${artistSentence}`;
+    return `PokéTruc recense ${count} illustration${s} de carte${s} TCG ${name} exclusive${s} à une seule langue ou région, ${yearPart}. ${langSentence}${artistSentence}`;
   },
   ja: ({ name, count, minY, maxY, byLang, artists }) => {
     const yearPart = (minY === maxY) ? `${minY}年発行` : `${minY}年から${maxY}年`;
@@ -563,7 +587,7 @@ const STATS_BUILDERS = {
     let artistSentence = '';
     if (artists.length === 1) artistSentence = `イラストは${artists[0]}が担当しています。`;
     else if (artists.length > 1) artistSentence = `${artists.length}名のイラストレーター（${joinListLang(artists.slice(0, 3), 'ja')}など）が手がけています。`;
-    return `PokéTrucでは、${name}の言語限定TCGカードイラスト${count}枚（${yearPart}）を収録しています。${langSentence}${artistSentence}`;
+    return `PokéTrucでは、${name}の限定TCGカードイラスト${count}枚（${yearPart}）を収録しています。${langSentence}${artistSentence}`;
   },
   ko: ({ name, count, minY, maxY, byLang, artists }) => {
     const yearPart = (minY === maxY) ? `${minY}년 발행` : `${minY}년부터 ${maxY}년까지`;
@@ -572,7 +596,7 @@ const STATS_BUILDERS = {
     let artistSentence = '';
     if (artists.length === 1) artistSentence = ` 일러스트는 ${artists[0]}이(가) 그렸습니다.`;
     else if (artists.length > 1) artistSentence = ` ${artists.length}명의 일러스트레이터가 참여했으며, ${joinListLang(artists.slice(0, 3), 'ko')} 등이 포함됩니다.`;
-    return `PokéTruc에는 ${name}의 언어 한정 TCG 카드 일러스트 ${count}장(${yearPart})이 수록되어 있습니다. ${langSentence}${artistSentence}`;
+    return `PokéTruc에는 ${name}의 한정 TCG 카드 일러스트 ${count}장(${yearPart})이 수록되어 있습니다. ${langSentence}${artistSentence}`;
   },
   zh: ({ name, count, minY, maxY, byLang, artists }) => {
     const yearPart = (minY === maxY) ? `${minY} 年发行` : `${minY}–${maxY} 年`;
@@ -581,7 +605,7 @@ const STATS_BUILDERS = {
     let artistSentence = '';
     if (artists.length === 1) artistSentence = `由 ${artists[0]} 绘制。`;
     else if (artists.length > 1) artistSentence = `由 ${artists.length} 位插画师绘制，包括 ${joinListLang(artists.slice(0, 3), 'zh')} 等。`;
-    return `PokéTruc 收录了 ${count} 张 ${name} 的语言独占 TCG 卡牌插画（${yearPart}）。${langSentence}${artistSentence}`;
+    return `PokéTruc 收录了 ${count} 张 ${name} 的独占 TCG 卡牌插画（${yearPart}）。${langSentence}${artistSentence}`;
   },
 };
 
@@ -596,7 +620,7 @@ const HOME_STATS_BUILDERS = {
       return `${n} ${STATS_LANG_LABEL.en[l.flag]}-exclusive ${n === 1 ? 'card' : 'cards'}`;
     });
     const langSentence = langParts.length ? `The collection includes ${joinListLang(langParts, 'en')}.` : '';
-    return `PokéTruc has catalogued ${count} language-exclusive Pokémon TCG card ${wordP} across ${pokemonCount} Generation 1 Pokémon, ${yearPart}. ${langSentence}`;
+    return `PokéTruc has catalogued ${count} exclusive Pokémon TCG card ${wordP} across ${pokemonCount} Generation 1 Pokémon, ${yearPart}. ${langSentence}`;
   },
   fr: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const s = count > 1 ? 's' : '';
@@ -607,25 +631,25 @@ const HOME_STATS_BUILDERS = {
       return `${n} carte${sn} ${STATS_LANG_LABEL.fr[l.flag]}${sn}`;
     });
     const langSentence = langParts.length ? `La collection comprend ${joinListLang(langParts, 'fr')}.` : '';
-    return `PokéTruc recense ${count} illustration${s} de carte${s} TCG Pokémon exclusive${s} à une seule langue, réparties sur ${pokemonCount} Pokémon de la première génération, ${yearPart}. ${langSentence}`;
+    return `PokéTruc recense ${count} illustration${s} de carte${s} TCG Pokémon exclusive${s} à une seule langue ou région, réparties sur ${pokemonCount} Pokémon de la première génération, ${yearPart}. ${langSentence}`;
   },
   ja: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY}年発行` : `${minY}年から${maxY}年`;
     const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${STATS_LANG_LABEL.ja[l.flag]}${byLang[l.flag]}枚`);
     const langSentence = langParts.length ? `内訳は${joinListLang(langParts, 'ja')}です。` : '';
-    return `PokéTrucでは、第1世代の${pokemonCount}匹のポケモンを対象に、言語限定TCGカードイラスト${count}枚（${yearPart}）を収録しています。${langSentence}`;
+    return `PokéTrucでは、第1世代の${pokemonCount}匹のポケモンを対象に、限定TCGカードイラスト${count}枚（${yearPart}）を収録しています。${langSentence}`;
   },
   ko: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY}년 발행` : `${minY}년부터 ${maxY}년까지`;
     const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${STATS_LANG_LABEL.ko[l.flag]} ${byLang[l.flag]}장`);
     const langSentence = langParts.length ? `포함 내역: ${joinListLang(langParts, 'ko')}.` : '';
-    return `PokéTruc에는 1세대 ${pokemonCount}마리 포켓몬의 언어 한정 TCG 카드 일러스트 ${count}장(${yearPart})이 수록되어 있습니다. ${langSentence}`;
+    return `PokéTruc에는 1세대 ${pokemonCount}마리 포켓몬의 한정 TCG 카드 일러스트 ${count}장(${yearPart})이 수록되어 있습니다. ${langSentence}`;
   },
   zh: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY} 年发行` : `${minY}–${maxY} 年`;
     const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${byLang[l.flag]} 张${STATS_LANG_LABEL.zh[l.flag]}`);
     const langSentence = langParts.length ? `包括${joinListLang(langParts, 'zh')}。` : '';
-    return `PokéTruc 收录了第一世代 ${pokemonCount} 只宝可梦的 ${count} 张语言独占 TCG 卡牌插画（${yearPart}）。${langSentence}`;
+    return `PokéTruc 收录了第一世代 ${pokemonCount} 只宝可梦的 ${count} 张独占 TCG 卡牌插画（${yearPart}）。${langSentence}`;
   },
 };
 
@@ -635,7 +659,7 @@ function buildHomeStatsSentence(lang) {
   const minY = Math.min(...years);
   const maxY = Math.max(...years);
 
-  const byLangRaw = cards.reduce((a, c) => { a[c.language] = (a[c.language] || 0) + 1; return a; }, {});
+  const byLangRaw = cards.reduce((a, c) => { const k = exclusivityKey(c); a[k] = (a[k] || 0) + 1; return a; }, {});
   const byLang = {};
   for (const l of LANG_INFO) if (byLangRaw[l.flag]) byLang[l.flag] = byLangRaw[l.flag];
 
@@ -650,7 +674,7 @@ function buildStatsSentence(lang, pokemon, pkCards) {
   const minY = Math.min(...years);
   const maxY = Math.max(...years);
 
-  const byLangRaw = pkCards.reduce((a, c) => { a[c.language] = (a[c.language] || 0) + 1; return a; }, {});
+  const byLangRaw = pkCards.reduce((a, c) => { const k = exclusivityKey(c); a[k] = (a[k] || 0) + 1; return a; }, {});
   const byLang = {};
   for (const l of LANG_INFO) if (byLangRaw[l.flag]) byLang[l.flag] = byLangRaw[l.flag];
 
@@ -792,11 +816,11 @@ function scriptTags() {
 
 // Card-language adjective per UI language, used in image alt-text.
 const CARD_LANG_ADJ = {
-  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇩🇪': 'German-exclusive', '🇪🇸': 'Spanish-exclusive', '🇫🇷': 'French-exclusive', '🇮🇹': 'Italian-exclusive', '🇵🇹': 'Portuguese-exclusive', '🇵🇱': 'Polish-exclusive' },
-  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇩🇪': 'exclusivité allemande', '🇪🇸': 'exclusivité espagnole', '🇫🇷': 'exclusivité française', '🇮🇹': 'exclusivité italienne', '🇵🇹': 'exclusivité portugaise', '🇵🇱': 'exclusivité polonaise' },
-  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정', '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정' },
-  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇩🇪': '德文独占', '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占', '🇮🇹': '意大利文独占', '🇵🇹': '葡萄牙文独占', '🇵🇱': '波兰文独占' },
+  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇩🇪': 'German-exclusive', '🇪🇸': 'Spanish-exclusive', '🇫🇷': 'French-exclusive', '🇮🇹': 'Italian-exclusive', '🇵🇹': 'Portuguese-exclusive', '🇵🇱': 'Polish-exclusive', '🌍': 'Western-exclusive', '🏯': 'Asian-exclusive' },
+  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇩🇪': 'exclusivité allemande', '🇪🇸': 'exclusivité espagnole', '🇫🇷': 'exclusivité française', '🇮🇹': 'exclusivité italienne', '🇵🇹': 'exclusivité portugaise', '🇵🇱': 'exclusivité polonaise', '🌍': 'exclusivité occidentale', '🏯': 'exclusivité asiatique' },
+  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🌍': '欧米限定', '🏯': 'アジア限定' },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정', '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정', '🌍': '서양 한정', '🏯': '아시아 한정' },
+  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇩🇪': '德文独占', '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占', '🇮🇹': '意大利文独占', '🇵🇹': '葡萄牙文独占', '🇵🇱': '波兰文独占', '🌍': '西方独占', '🏯': '亚洲独占' },
 };
 
 const CARD_ALT_SUFFIX = {
@@ -816,7 +840,7 @@ const CARD_ALT_BY_ARTIST = {
 };
 
 function cardAltText(lang, card, localizedName) {
-  const adj = (CARD_LANG_ADJ[lang] || CARD_LANG_ADJ.en)[card.language] || '';
+  const adj = (CARD_LANG_ADJ[lang] || CARD_LANG_ADJ.en)[exclusivityKey(card)] || '';
   const artistPart = card.artist ? CARD_ALT_BY_ARTIST[lang](card.artist) : '';
   const suffix = CARD_ALT_SUFFIX[lang];
   const year = card.year ? `, ${card.year}` : '';
@@ -830,7 +854,7 @@ function renderCard(card, pokemon, L, lang, localizedName) {
           <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy">
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.name)}</div>
-            <div class="card-meta"><span class="lang-badge">${card.language}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
+            <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
             ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
             ${card.description ? `<details class="card-description">
               <summary class="card-description-toggle">${escapeHtml(L.descriptionToggle)}</summary>
@@ -842,7 +866,7 @@ function renderCard(card, pokemon, L, lang, localizedName) {
 
 function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
   const count = pkCards.length;
-  const groups = groupBy(pkCards, c => c.language);
+  const groups = groupBy(pkCards, exclusivityKey);
   // Sort sections by card count (desc); LANG_INFO order (then unknown) breaks ties (stable sort).
   const orderedFlags = [
     ...LANG_INFO.map(l => l.flag).filter(f => groups.has(f)),
@@ -961,7 +985,7 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
     "itemListOrder": "https://schema.org/ItemListOrderAscending",
     "isPartOf": { "@id": `${canonical}#collection` },
     "itemListElement": pkCards.map((card, i) => {
-      const iso = FLAG_TO_ISO[card.language];
+      const isos = card.languages.map(f => FLAG_TO_ISO[f]).filter(Boolean);
       const artwork = {
         "@type": "VisualArtwork",
         "@id": `${BASE_URL}/cards/${card.imageName}`,
@@ -972,8 +996,9 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
         "about": { "@type": "Thing", "name": localizedName },
         "isPartOf": { "@type": "CreativeWorkSeries", "name": card.name },
       };
-      if (card.year)     artwork.datePublished = String(card.year);
-      if (iso)           artwork.inLanguage = iso;
+      if (card.year)        artwork.datePublished = String(card.year);
+      if (isos.length === 1) artwork.inLanguage = isos[0];
+      else if (isos.length > 1) artwork.inLanguage = isos;
       if (card.artist)   artwork.creator = { "@type": "Person", "name": card.artist };
       if (card.rarity)   artwork.additionalType = card.rarity;
       return { "@type": "ListItem", "position": i + 1, "item": artwork };
@@ -1405,11 +1430,11 @@ fs.writeFileSync('sitemap.xml', sitemap, 'utf8');
 // 5) llms.txt — a concise, LLM-friendly map of the site (https://llmstxt.org/).
 //    Regenerated each build so the stats and Pokémon list stay in sync.
 {
-  const byLangRaw = cards.reduce((a, c) => { a[c.language] = (a[c.language] || 0) + 1; return a; }, {});
+  const byLangRaw = cards.reduce((a, c) => { const k = exclusivityKey(c); a[k] = (a[k] || 0) + 1; return a; }, {});
   const langBreakdown = LANG_INFO
     .filter(l => byLangRaw[l.flag])
     .sort((a, b) => byLangRaw[b.flag] - byLangRaw[a.flag])
-    .map(l => `${byLangRaw[l.flag]} ${STATS_LANG_LABEL.en[l.flag]}`)
+    .map(l => `${byLangRaw[l.flag]} ${STATS_LANG_LABEL.en[l.flag]}-exclusive`)
     .join(', ');
   const years = cards.map(c => c.year);
   const minY = Math.min(...years), maxY = Math.max(...years);
@@ -1417,18 +1442,18 @@ fs.writeFileSync('sitemap.xml', sitemap, 'utf8');
   const pokemonLines = pokemonsWithCards.map(p => {
     const n = cardsFor(p.id).length;
     const slug = slugify(p.name.en);
-    return `- [${p.name.en}](${urlForPokemon('en', slug)}): ${n} language-exclusive card${n > 1 ? 's' : ''}`;
+    return `- [${p.name.en}](${urlForPokemon('en', slug)}): ${n} exclusive card${n > 1 ? 's' : ''}`;
   }).join('\n');
 
   const llms = `# PokéTruc
 
-> PokéTruc is a free, fan-made, ad-free catalogue of language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language or region. It lists ${cards.length} such cards across ${pokemonsWithCards.length} Generation 1 Pokémon, published from ${minY} to ${maxY}.
+> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists ${cards.length} such cards across ${pokemonsWithCards.length} Generation 1 Pokémon, published from ${minY} to ${maxY}.
 
-The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its language-exclusive cards grouped by card language, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Card languages in the collection: ${langBreakdown}. Created by Begooderrr (${REDDIT_BEGOODERRR_URL}); source code at ${GITHUB_REPO_URL}.
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: ${langBreakdown}. Created by Begooderrr (${REDDIT_BEGOODERRR_URL}); source code at ${GITHUB_REPO_URL}.
 
 ## Main pages
 
-- [Pokédex (home)](${urlForRoot('en')}): searchable grid of all Generation 1 Pokémon, filterable by card language.
+- [Pokédex (home)](${urlForRoot('en')}): searchable grid of all Generation 1 Pokémon, filterable by exclusivity category.
 - [Info / About](${urlForInfo('en')}): what the project is, plus credits and sources.
 
 ## Pokémon (Generation 1)

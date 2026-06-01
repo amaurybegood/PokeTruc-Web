@@ -1,12 +1,22 @@
-// Pokédex grid (index page) — dynamic search + grid render + language filter.
+// Pokédex grid (index page) — dynamic search + grid render + exclusivity filter.
 // Depends on i18n.js (t, lang, pokemonName, langPathPrefix).
 
 const FLAG_TO_ISO = {
   '🇯🇵': 'ja', '🇬🇧': 'en', '🇨🇳': 'zh', '🇰🇷': 'ko', '🇩🇪': 'de',
   '🇪🇸': 'es', '🇫🇷': 'fr', '🇮🇹': 'it', '🇵🇹': 'pt', '🇵🇱': 'pl', '🇮🇩': 'id',
+  '🌍': 'west', '🏯': 'asia',
 };
 const ISO_TO_FLAG = Object.fromEntries(Object.entries(FLAG_TO_ISO).map(([f, i]) => [i, f]));
-const FLAG_ORDER = ['🇯🇵', '🇬🇧', '🇨🇳', '🇰🇷', '🇩🇪', '🇪🇸', '🇫🇷', '🇮🇹', '🇵🇹', '🇵🇱', '🇮🇩'];
+const FLAG_ORDER = ['🇯🇵', '🇬🇧', '🇨🇳', '🇰🇷', '🇩🇪', '🇪🇸', '🇫🇷', '🇮🇹', '🇵🇹', '🇵🇱', '🇮🇩', '🌍', '🏯'];
+
+// Mirror of build.js exclusivityKey(). Region (if stored) wins; otherwise the
+// card is keyed by its single language flag.
+function exclusivityKey(card) {
+  if (card.region === 'western') return '🌍';
+  if (card.region === 'asian')   return '🏯';
+  if (card.languages.length === 1) return card.languages[0];
+  return null;
+}
 
 let pokemons = [];
 let cards = [];
@@ -69,7 +79,7 @@ async function loadData() {
 }
 
 function cardsFor(pokemonId, flag) {
-  return cards.filter(c => c.pokemonId === pokemonId && (!flag || c.language === flag));
+  return cards.filter(c => c.pokemonId === pokemonId && (!flag || exclusivityKey(c) === flag));
 }
 
 function renderLangFilter() {
@@ -77,7 +87,7 @@ function renderLangFilter() {
   if (!container) return;
 
   const counts = {};
-  for (const c of cards) counts[c.language] = (counts[c.language] || 0) + 1;
+  for (const c of cards) { const k = exclusivityKey(c); counts[k] = (counts[k] || 0) + 1; }
 
   const total = cards.length;
   // Sort chips by card count (desc); FLAG_ORDER breaks ties (stable sort).
@@ -173,7 +183,7 @@ function applyFilter() {
   const q = normalize(searchQuery);
   const flag = activeFlag();
   let filtered = pokemons;
-  if (flag) filtered = filtered.filter(p => cards.some(c => c.pokemonId === p.id && c.language === flag));
+  if (flag) filtered = filtered.filter(p => cards.some(c => c.pokemonId === p.id && exclusivityKey(c) === flag));
   if (q) filtered = filtered.filter(p =>
     normalize(p.name.en).includes(q)
     || normalize(p.name.fr).includes(q)
