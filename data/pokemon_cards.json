@@ -2965,10 +2965,15 @@
     "rarity": "Promo",
     "description": "",
     "languages": [
-      "🇬🇧"
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
     ],
     "year": 2016,
-    "artist": "Midori Harada"
+    "artist": "Midori Harada",
+    "region": "western"
   },
   {
     "pokemonId": 32,
