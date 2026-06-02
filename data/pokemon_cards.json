@@ -2846,6 +2846,20 @@
     "artist": "aspara"
   },
   {
+  "pokemonId": 25,
+  "name": "Sword & Shield Promos",
+  "imageName": "25_Pikachu_jpn_swshp_105",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+      "🇯🇵",
+      "🇰🇷"
+    ],
+  "year": 2019,
+  "artist": "2020 Pikachu Project",
+  "region": "asian"
+},
+  {
     "pokemonId": 26,
     "name": "Intro Pack: Bulbasaur Deck",
     "imageName": "26_Raichu_jpn_ipb_3",
