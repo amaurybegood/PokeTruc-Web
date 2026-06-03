@@ -2859,6 +2859,70 @@
   "artist": "2020 Pikachu Project",
   "region": "asian"
 },
+{
+  "pokemonId": 25,
+  "name": "World Championships 2023 Yokohama Deck: Pikachu",
+  "imageName": "25_Pikachu_jpn_wcs23_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2023,
+  "artist": "kantaro"
+},{
+  "pokemonId": 25,
+  "name": "Ash vs Team Rocket Deck Kit",
+  "imageName": "25_Pikachu_jpn_smd_5",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+      "🇯🇵",
+      "🇰🇷"
+    ],
+  "year": 2017,
+  "artist": "Nakano Satoshi",
+  "region": "asian"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_200",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+      "🇯🇵",
+      "🇰🇷"
+    ],
+  "year": 2016,
+  "artist": "Naoki Saito",
+  "region": "asian"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_227",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+      "🇯🇵",
+      "🇰🇷"
+    ],
+  "year": 2016,
+  "artist": "Naoki Saito",
+  "region": "asian"
+},{
+  "pokemonId": 25,
+  "name": "Sun & Moon Promos",
+  "imageName": "25_Pikachu_jpn_smp_249",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+      "🇯🇵",
+      "🇰🇷"
+    ],
+  "year": 2016,
+  "artist": "Naoki Saito",
+  "region": "asian"
+},
   {
     "pokemonId": 26,
     "name": "Intro Pack: Bulbasaur Deck",
