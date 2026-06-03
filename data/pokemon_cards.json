@@ -2958,6 +2958,20 @@
   "year": 2016,
   "artist": "Naoki Saito",
   "region": "asian"
+},{
+  "pokemonId": 25,
+  "name": "Pikachu 001/SM-P",
+  "imageName": "25_Pikachu_001SM_P",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(SM-P_Promo_1)",
+  "languages": [
+      "🇰🇷",
+      "🇮🇩",
+      "🇹🇭"
+    ],
+  "year": 2016,
+  "artist": "Sanosuke Sakuma",
+  "region": "asian"
 },
   {
     "pokemonId": 26,

@@ -92,7 +92,7 @@
     "lastmod": "2026-06-01"
   },
   "/pokemon/pikachu/": {
-    "hash": "55313ccb6102b832935195416374e6406a560ac5f23d123345254f72b5073d70",
+    "hash": "fe80f87c53077f28e6cc205640c83c2fe2b8ac8df12a2a80653a45de96322f30",
     "lastmod": "2026-06-03"
   },
   "/pokemon/raichu/": {
@@ -652,7 +652,7 @@
     "lastmod": "2026-06-01"
   },
   "/fr/pokemon/pikachu/": {
-    "hash": "c3f077de4e2451ed1169d8ed29bdf2b5694e9514c54321fb756e61c0505e9554",
+    "hash": "3d84d7fcd5715e9fd4d4e462a502bffe6aef0f387cefcea6d8d9c51003586c22",
     "lastmod": "2026-06-03"
   },
   "/fr/pokemon/raichu/": {
@@ -1212,7 +1212,7 @@
     "lastmod": "2026-06-01"
   },
   "/ja/pokemon/pikachu/": {
-    "hash": "985306f61244205458fd73724d2b5914a53fec77b69481220bdeb9978ccf2b97",
+    "hash": "fcc525a574e48d632a280fd92a6401186522c515fa16e23749a756bd070f02aa",
     "lastmod": "2026-06-03"
   },
   "/ja/pokemon/raichu/": {
@@ -1772,7 +1772,7 @@
     "lastmod": "2026-06-01"
   },
   "/ko/pokemon/pikachu/": {
-    "hash": "065d6d4aa5024362c6d7747e007186ef6408320fdb1aa79efd5c8b2e9536a856",
+    "hash": "be9d5364f1caa3d02c9e3ea84ee5c9f1b22baf7b000887673feb1e63ef01bfbb",
     "lastmod": "2026-06-03"
   },
   "/ko/pokemon/raichu/": {
@@ -2332,7 +2332,7 @@
     "lastmod": "2026-06-01"
   },
   "/zh/pokemon/pikachu/": {
-    "hash": "d6151212353354849fa183b7fd87f898f9896d9ae351ad91619a099829c8a7f9",
+    "hash": "5d21c64116e54dbe11a3b99d58902058ea9df30bf63996c92d1a788512d996c7",
     "lastmod": "2026-06-03"
   },
   "/zh/pokemon/raichu/": {
@@ -2800,23 +2800,23 @@
     "lastmod": "2026-06-01"
   },
   "/": {
-    "hash": "60c2d6d6ac2108290bf1ca487b531ed9841731a48a158e6f7ff254778995181f",
+    "hash": "0c6a844e93f84e88993cc3810d0acc5aac2d9756651b5287bc3adf49799efff3",
     "lastmod": "2026-06-03"
   },
   "/fr/": {
-    "hash": "8faba2428873af201c0470fbdf3eaeab9eedf1f2e729083a71d83442edf1e4e4",
+    "hash": "85fb04f9e7fc97b48425be14dc42c8667708c54cddb94f061f4af4047fc3932b",
     "lastmod": "2026-06-03"
   },
   "/ja/": {
-    "hash": "317a817200f3e1658d85733657fb26af3a397687be38069d00f2a54b3d675553",
+    "hash": "f57ff0b36db3e3468415ac0430b934b147534eaba1ce50bfcbe21965e39ba874",
     "lastmod": "2026-06-03"
   },
   "/ko/": {
-    "hash": "d638bfc77124803b320c6781f4bb78738778ff4420f47d64b742583591ca98c0",
+    "hash": "6925b53c71df2aa410261686613abdba1bff456d0f76cfaa25421061c8dac44a",
     "lastmod": "2026-06-03"
   },
   "/zh/": {
-    "hash": "455c7c121ee83cf04c633da24b811a462f4ec8955ed7b2e7b4232ba20dbc8e02",
+    "hash": "5bdb224e0a71ec87134a44e82cd04a58e084fe3fd6c9a51929d2f906a49f146c",
     "lastmod": "2026-06-03"
   },
   "/info/": {
