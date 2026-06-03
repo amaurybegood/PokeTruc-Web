@@ -300,8 +300,8 @@
     "lastmod": "2026-06-01"
   },
   "/pokemon/slowbro/": {
-    "hash": "f66fbfb9c440f9279306329057df45c5ef5d86a63df0adf26194a0a9291ce160",
-    "lastmod": "2026-06-01"
+    "hash": "a015345eebb9152c69d97a947280aded773ad95da63a7587de3ebee7c5d01cb4",
+    "lastmod": "2026-06-03"
   },
   "/pokemon/magnemite/": {
     "hash": "a3fe1e7e475fa5a32e70475f1984507f8bc3d1579128b3de1ffd448e6ef8d333",
@@ -860,8 +860,8 @@
     "lastmod": "2026-06-01"
   },
   "/fr/pokemon/slowbro/": {
-    "hash": "addd230b150291b3106ffa0b987d4a3e9b5e817bc38ae67d49ebbd6eb0b2889b",
-    "lastmod": "2026-06-01"
+    "hash": "d8c235563f2ced1fdea4419b1540f842ac90ef31f7da98542a149adf4d5f57dd",
+    "lastmod": "2026-06-03"
   },
   "/fr/pokemon/magnemite/": {
     "hash": "20019872b81d2091daf35b411b0046ba3f46bbd74b3f61928b5721e0c01bee3c",
@@ -1420,8 +1420,8 @@
     "lastmod": "2026-06-01"
   },
   "/ja/pokemon/slowbro/": {
-    "hash": "f50c3e25ce88ca9f6d52b7699f025c1585302e700a5734fb36b0ce1715f85bba",
-    "lastmod": "2026-06-01"
+    "hash": "9639cf469f87590d3be1f9650051e2df88b68cd112383a9167efd72d0ed9c39a",
+    "lastmod": "2026-06-03"
   },
   "/ja/pokemon/magnemite/": {
     "hash": "ab6ad80cb2abf02f5cfdaaeac55f80970e95c786aaeee77b24a99bbab1417220",
@@ -1980,8 +1980,8 @@
     "lastmod": "2026-06-01"
   },
   "/ko/pokemon/slowbro/": {
-    "hash": "0c4729b3531804328eaeb95dc8ebad43affeefc899b6d3bbb75a74dd7b17bc0b",
-    "lastmod": "2026-06-01"
+    "hash": "78078abf25482be5d059fcf844604d778ee05cd395de5387dbc10cd071730154",
+    "lastmod": "2026-06-03"
   },
   "/ko/pokemon/magnemite/": {
     "hash": "68ae207d8321927c8a077e295c276aa4dbcc6d2f72649870c8860afcaabd3522",
@@ -2540,8 +2540,8 @@
     "lastmod": "2026-06-01"
   },
   "/zh/pokemon/slowbro/": {
-    "hash": "095ce5c1e28f60808468c20beaa1a8b7b9c25d2781799ec6ef91c7ab0d592ad5",
-    "lastmod": "2026-06-01"
+    "hash": "8a7cdb5d8278c04482c1f0fe753a8f57a7a2401b0b9f24afe859ac8559ab2f6f",
+    "lastmod": "2026-06-03"
   },
   "/zh/pokemon/magnemite/": {
     "hash": "9a1c50ad3779990b6445d41be1bb3efa7cd00bcf16c26a6690404cf2ceefd5a9",
@@ -2800,23 +2800,23 @@
     "lastmod": "2026-06-01"
   },
   "/": {
-    "hash": "0c6a844e93f84e88993cc3810d0acc5aac2d9756651b5287bc3adf49799efff3",
+    "hash": "5ee877a51ce318d6775cfc352a43a4d80d076bedf82fb7e005c8a57ffd21ab69",
     "lastmod": "2026-06-03"
   },
   "/fr/": {
-    "hash": "85fb04f9e7fc97b48425be14dc42c8667708c54cddb94f061f4af4047fc3932b",
+    "hash": "649decb6b1af589bd54c6006dff1f42174b3fd9b1d874b59ddc20cffa50c118e",
     "lastmod": "2026-06-03"
   },
   "/ja/": {
-    "hash": "f57ff0b36db3e3468415ac0430b934b147534eaba1ce50bfcbe21965e39ba874",
+    "hash": "d0949703824c66295f8910cb9d4b8d5c1e1c1dd9573f2d4a0a392a99fcbc04a9",
     "lastmod": "2026-06-03"
   },
   "/ko/": {
-    "hash": "6925b53c71df2aa410261686613abdba1bff456d0f76cfaa25421061c8dac44a",
+    "hash": "cefb4a7ce6e992c36baf58f71189ac1945ec84ff6704e69eb59460f8babb8ed1",
     "lastmod": "2026-06-03"
   },
   "/zh/": {
-    "hash": "5bdb224e0a71ec87134a44e82cd04a58e084fe3fd6c9a51929d2f906a49f146c",
+    "hash": "6a9a875fda639c0759cb646d374fe83092ed5d55b04b0dacdf6d9f60d2acd4af",
     "lastmod": "2026-06-03"
   },
   "/info/": {

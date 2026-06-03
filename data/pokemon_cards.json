@@ -4472,6 +4472,18 @@
     "artist": "5ban Graphics"
   },
   {
+  "pokemonId": 80,
+  "name": "Gallant Galaxy: Brave",
+  "imageName": "80_Slowbro_scn_cs5b_40",
+  "rarity": "Uncommon",
+  "description": "",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2024,
+  "artist": "Mousho"
+},
+  {
     "pokemonId": 81,
     "name": "Vending Machine Expansion Sheet 2: Red",
     "imageName": "81_Magnemite_jpn_vses2_14",
