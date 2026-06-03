@@ -512,6 +512,20 @@
     "artist": "LINNE"
   },
   {
+  "pokemonId": 6,
+  "name": "Sword & Shield Promos",
+  "imageName": "6_Charizard_jpn_swshp_143",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵",
+    "🇨🇳"
+  ],
+  "year": 2019,
+  "artist": "Jiro Sasumo",
+  "region": "asian"
+},
+  {
     "pokemonId": 7,
     "name": "My First Battle: Squirtle Deck",
     "imageName": "7_Squirtle_mfbs_1",
