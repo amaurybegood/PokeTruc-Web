@@ -83,8 +83,19 @@
   }
 }
 
+/* Country-flag emoji font. Windows' Segoe UI Emoji has no flag glyphs, so
+   🇯🇵 🇨🇳 🇰🇷 … render as letter pairs (JP, CN, KR). This self-hosted Twemoji
+   subset renders real flags on every platform. unicode-range limits it to the
+   regional-indicator block, so it's only ever used for flags. */
+@font-face {
+  font-family: "Twemoji Country Flags";
+  src: url("/fonts/TwemojiCountryFlags.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+1F1E6-1F1FF;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Twemoji Country Flags", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -468,6 +479,162 @@ main {
   gap: 12px;
 }
 
+/* Generation section title: spans the full grid width to separate gens. */
+.gen-heading {
+  grid-column: 1 / -1;
+  margin: 24px 0 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  scroll-margin-top: 16px;
+}
+
+.gen-heading:first-child {
+  margin-top: 0;
+}
+
+/* Jump-to-generation shortcut chips (sits above the grid). */
+.gen-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.gen-nav:empty {
+  display: none;
+}
+
+.gen-nav-chip {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.gen-nav-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.gen-nav-chip:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Floating "back to top" button (injected by backtotop.js on every page). */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s, border-color 0.15s, color 0.15s;
+  z-index: 90;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* News block (home page): curated latest real-world exclusive releases. */
+.news-section {
+  max-width: 760px;
+  margin: 0 auto 24px;
+}
+
+.news-heading {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 240px));
+  justify-content: center;
+  gap: 12px;
+}
+
+.news-card {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+a.news-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.news-card img {
+  width: 56px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  border-radius: 6px;
+}
+
+.news-card-info {
+  min-width: 0;
+}
+
+.news-card-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.news-card-meta {
+  margin-top: 2px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.news-card-note {
+  margin-top: 4px;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--text-secondary);
+}
+
 .pokemon-card {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -657,13 +824,19 @@ main {
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--border);
-  transition: transform 0.15s;
+  transition: transform 0.15s, box-shadow 0.4s;
   display: flex;
   flex-direction: column;
+  scroll-margin-top: 16px;
 }
 
 .card-item:hover {
   transform: scale(1.03);
+}
+
+/* Deep-link highlight (added briefly by pokemon.js when arriving via #anchor). */
+.card-item.card-flash {
+  box-shadow: 0 0 0 3px var(--accent);
 }
 
 .card-item img {

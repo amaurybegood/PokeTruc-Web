@@ -512,19 +512,19 @@
     "artist": "LINNE"
   },
   {
-  "pokemonId": 6,
-  "name": "Sword & Shield Promos",
-  "imageName": "6_Charizard_jpn_swshp_143",
-  "rarity": "Promo",
-  "description": "",
-  "languages": [
-    "🇯🇵",
-    "🇨🇳"
-  ],
-  "year": 2019,
-  "artist": "Jiro Sasumo",
-  "region": "asian"
-},
+    "pokemonId": 6,
+    "name": "Sword & Shield Promos",
+    "imageName": "6_Charizard_jpn_swshp_143",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵",
+      "🇨🇳"
+    ],
+    "year": 2019,
+    "artist": "Jiro Sasumo",
+    "region": "asian"
+  },
   {
     "pokemonId": 7,
     "name": "My First Battle: Squirtle Deck",
@@ -2182,8 +2182,7 @@
     ],
     "year": 2016,
     "artist": "Sanosuke Sakuma",
-  "region": "asian"
-
+    "region": "asian"
   },
   {
     "pokemonId": 25,
@@ -2197,8 +2196,7 @@
     ],
     "year": 2016,
     "artist": "Sanosuke Sakuma",
-  "region": "asian"
-
+    "region": "asian"
   },
   {
     "pokemonId": 25,
@@ -2212,8 +2210,7 @@
     ],
     "year": 2016,
     "artist": "Sanosuke Sakuma",
-  "region": "asian"
-
+    "region": "asian"
   },
   {
     "pokemonId": 25,
@@ -2227,8 +2224,7 @@
     ],
     "year": 2016,
     "artist": "Sanosuke Sakuma",
-  "region": "asian"
-
+    "region": "asian"
   },
   {
     "pokemonId": 25,
@@ -2242,8 +2238,7 @@
     ],
     "year": 2016,
     "artist": "Sanosuke Sakuma",
-  "region": "asian"
-
+    "region": "asian"
   },
   {
     "pokemonId": 25,
@@ -2257,8 +2252,7 @@
     ],
     "year": 2016,
     "artist": "Sanosuke Sakuma",
-  "region": "asian"
-
+    "region": "asian"
   },
   {
     "pokemonId": 25,
@@ -2272,8 +2266,7 @@
     ],
     "year": 2016,
     "artist": "Sanosuke Sakuma",
-  "region": "asian"
-
+    "region": "asian"
   },
   {
     "pokemonId": 25,
@@ -2869,98 +2862,103 @@
     "artist": "aspara"
   },
   {
-  "pokemonId": 25,
-  "name": "Sword & Shield Promos",
-  "imageName": "25_Pikachu_jpn_swshp_105",
-  "rarity": "Promo",
-  "description": "",
-  "languages": [
+    "pokemonId": 25,
+    "name": "Sword & Shield Promos",
+    "imageName": "25_Pikachu_jpn_swshp_105",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
       "🇯🇵",
       "🇰🇷"
     ],
-  "year": 2019,
-  "artist": "2020 Pikachu Project",
-  "region": "asian"
-},
-{
-  "pokemonId": 25,
-  "name": "World Championships 2023 Yokohama Deck: Pikachu",
-  "imageName": "25_Pikachu_jpn_wcs23_1",
-  "rarity": "No Rarity",
-  "description": "",
-  "languages": [
-    "🇯🇵"
-  ],
-  "year": 2023,
-  "artist": "kantaro"
-},{
-  "pokemonId": 25,
-  "name": "Ash vs Team Rocket Deck Kit",
-  "imageName": "25_Pikachu_jpn_smd_5",
-  "rarity": "No Rarity",
-  "description": "",
-  "languages": [
+    "year": 2019,
+    "artist": "2020 Pikachu Project",
+    "region": "asian"
+  },
+  {
+    "pokemonId": 25,
+    "name": "World Championships 2023 Yokohama Deck: Pikachu",
+    "imageName": "25_Pikachu_jpn_wcs23_1",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2023,
+    "artist": "kantaro"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Ash vs Team Rocket Deck Kit",
+    "imageName": "25_Pikachu_jpn_smd_5",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
       "🇯🇵",
       "🇨🇳",
       "🇰🇷"
     ],
-  "year": 2017,
-  "artist": "Nakano Satoshi",
-  "region": "asian"
-},{
-  "pokemonId": 25,
-  "name": "Sun & Moon Promos",
-  "imageName": "25_Pikachu_jpn_smp_200",
-  "rarity": "Promo",
-  "description": "",
-  "languages": [
+    "year": 2017,
+    "artist": "Nakano Satoshi",
+    "region": "asian"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Sun & Moon Promos",
+    "imageName": "25_Pikachu_jpn_smp_200",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
       "🇯🇵",
       "🇰🇷"
     ],
-  "year": 2016,
-  "artist": "Naoki Saito",
-  "region": "asian"
-},{
-  "pokemonId": 25,
-  "name": "Sun & Moon Promos",
-  "imageName": "25_Pikachu_jpn_smp_227",
-  "rarity": "Promo",
-  "description": "",
-  "languages": [
+    "year": 2016,
+    "artist": "Naoki Saito",
+    "region": "asian"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Sun & Moon Promos",
+    "imageName": "25_Pikachu_jpn_smp_227",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
       "🇯🇵",
       "🇰🇷"
     ],
-  "year": 2016,
-  "artist": "Naoki Saito",
-  "region": "asian"
-},{
-  "pokemonId": 25,
-  "name": "Sun & Moon Promos",
-  "imageName": "25_Pikachu_jpn_smp_249",
-  "rarity": "Promo",
-  "description": "",
-  "languages": [
+    "year": 2016,
+    "artist": "Naoki Saito",
+    "region": "asian"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Sun & Moon Promos",
+    "imageName": "25_Pikachu_jpn_smp_249",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
       "🇯🇵",
       "🇰🇷"
     ],
-  "year": 2016,
-  "artist": "Naoki Saito",
-  "region": "asian"
-},{
-  "pokemonId": 25,
-  "name": "Pikachu 001/SM-P",
-  "imageName": "25_Pikachu_001SM_P",
-  "rarity": "Promo",
-  "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(SM-P_Promo_1)",
-  "languages": [
+    "year": 2016,
+    "artist": "Naoki Saito",
+    "region": "asian"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Pikachu 001/SM-P",
+    "imageName": "25_Pikachu_001SM_P",
+    "rarity": "Promo",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(SM-P_Promo_1)",
+    "languages": [
       "🇰🇷",
       "🇮🇩",
       "🇹🇭"
     ],
-  "year": 2016,
-  "artist": "Sanosuke Sakuma",
-  "region": "asian"
-},
+    "year": 2016,
+    "artist": "Sanosuke Sakuma",
+    "region": "asian"
+  },
   {
     "pokemonId": 26,
     "name": "Intro Pack: Bulbasaur Deck",
@@ -4460,17 +4458,17 @@
     "artist": "5ban Graphics"
   },
   {
-  "pokemonId": 80,
-  "name": "Gallant Galaxy: Brave",
-  "imageName": "80_Slowbro_scn_cs5b_40",
-  "rarity": "Uncommon",
-  "description": "",
-  "languages": [
-    "🇨🇳"
-  ],
-  "year": 2024,
-  "artist": "Mousho"
-},
+    "pokemonId": 80,
+    "name": "Gallant Galaxy: Brave",
+    "imageName": "80_Slowbro_scn_cs5b_40",
+    "rarity": "Uncommon",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2024,
+    "artist": "Mousho"
+  },
   {
     "pokemonId": 81,
     "name": "Vending Machine Expansion Sheet 2: Red",
@@ -6797,18 +6795,6 @@
     ],
     "year": 1996,
     "artist": "Shin-ichi Yoshida"
-  },
-  {
-    "pokemonId": 150,
-    "name": "Unnumbered Promos",
-    "imageName": "150_Mewtwo_jpn_unp_41",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 1996,
-    "artist": "Ken Sugimori"
   },
   {
     "pokemonId": 150,

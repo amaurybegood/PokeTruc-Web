@@ -1961,5 +1961,31 @@
     "imageName": "mew",
     "generation": 1,
     "researchStatus": "done"
+  },
+  {
+    "id": 172,
+    "name": {
+      "en": "Pichu",
+      "fr": "Pichu",
+      "jp": "ピチュー",
+      "ko": "피츄",
+      "zh": "皮丘"
+    },
+    "imageName": "pichu",
+    "generation": 2,
+    "researchStatus": "coming_soon"
+  },
+  {
+    "id": 494,
+    "name": {
+      "en": "Victini",
+      "fr": "Victini",
+      "jp": "ビクティニ",
+      "ko": "비크티니",
+      "zh": "比克提尼"
+    },
+    "imageName": "victini",
+    "generation": 5,
+    "researchStatus": "coming_soon"
   }
 ]

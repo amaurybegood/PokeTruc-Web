@@ -7,7 +7,7 @@
   <meta name="description" content="Pokémon TCG illustrations / artworks released in only one language or region — Japanese, English, Chinese, Western-only, Asian-only and more. Free, fan-made, ad-free.">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=25">
+  <link rel="preload" as="style" href="/style.css?v=31">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
@@ -35,11 +35,11 @@
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/">
   <link rel="icon" type="image/png" href="/logo.png">
   <link rel="apple-touch-icon" href="/logo.png">
-  <link rel="stylesheet" href="/style.css?v=25">
+  <link rel="stylesheet" href="/style.css?v=31">
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://poketruc.com/#creator","name":"Begooderrr","url":"https://www.reddit.com/user/Begooderrr/","sameAs":["https://www.reddit.com/user/Begooderrr/"]},{"@context":"https://schema.org","@type":"WebSite","@id":"https://poketruc.com/#website","url":"https://poketruc.com/","name":"PokéTruc","description":"Pokémon TCG illustrations / artworks released in only one language or region — Japanese, English, Chinese, Western-only, Asian-only and more. Free, fan-made, ad-free.","inLanguage":["en","fr","ja","ko","zh-Hans"],"author":{"@id":"https://poketruc.com/#creator"},"creator":{"@id":"https://poketruc.com/#creator"}},{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://poketruc.com/#collection","url":"https://poketruc.com/","name":"PokéTruc — Unique Pokémon TCG Card Illustrations","description":"Pokémon TCG illustrations / artworks released in only one language or region — Japanese, English, Chinese, Western-only, Asian-only and more. Free, fan-made, ad-free.","inLanguage":"en","isPartOf":{"@id":"https://poketruc.com/#website"},"about":{"@type":"Thing","name":"Pokémon Trading Card Game","description":"Pokémon TCG illustrations / artworks released in only one language or region — Japanese, English, Chinese, Western-only, Asian-only and more. Free, fan-made, ad-free."}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/"}]}]}</script>
   <noscript><style>
-    #search, .search-row, #lang-filter, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #gen-nav, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -52,6 +52,7 @@
     <p class="site-tagline">Pokémon TCG illustrations / artworks released in only one language or one region</p>
     <nav class="site-nav">
       <a href="/" aria-current="page">Pokédex</a>
+      <a href="/trainers/">Trainers</a>
       <a href="/info/">Info</a>
       <details class="lang-picker">
         <summary class="lang-picker-toggle" aria-label="Language"><span class="lang-picker-code">EN</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
@@ -65,7 +66,29 @@
     <h1 class="page-title visually-hidden">Pokémon TCG illustrations / artworks released in only one language or one region</h1>
 
     <section class="home-summary">
-      <p class="home-stats-text">PokéTruc has catalogued 573 exclusive Pokémon TCG card illustrations across 140 Generation 1 Pokémon, spanning 1996 to 2026. The collection includes 427 Japanese-exclusive cards, 46 Western-exclusive cards, 44 Chinese-exclusive cards, 27 English-exclusive cards, 14 Asian-exclusive cards, 4 Indonesian-exclusive cards, 3 Korean-exclusive cards, 2 German-exclusive cards, 2 Spanish-exclusive cards, 1 French-exclusive card, 1 Italian-exclusive card, 1 Portuguese-exclusive card and 1 Polish-exclusive card.</p>
+      <p class="home-stats-text">PokéTruc has catalogued 572 exclusive Pokémon TCG card illustrations across 140 Generation 1 Pokémon, spanning 1996 to 2026. The collection includes 426 Japanese-exclusive cards, 46 Western-exclusive cards, 44 Chinese-exclusive cards, 27 English-exclusive cards, 14 Asian-exclusive cards, 4 Indonesian-exclusive cards, 3 Korean-exclusive cards, 2 German-exclusive cards, 2 Spanish-exclusive cards, 1 French-exclusive card, 1 Italian-exclusive card, 1 Portuguese-exclusive card and 1 Polish-exclusive card.</p>
+    </section>
+
+    <section class="news-section" aria-label="Latest exclusive cards released">
+      <h2 class="news-heading">Latest exclusive cards released</h2>
+      <div class="news-grid">
+      <a class="news-card" href="/pokemon/magikarp/#129_Magikarp_kor_Promo_2026_Festival">
+        <img src="/cards/129_Magikarp_kor_Promo_2026_Festival.avif" alt="Magikarp" loading="lazy">
+        <div class="news-card-info">
+          <div class="news-card-name">Magikarp</div>
+          <div class="news-card-meta">🇰🇷 · 2026 · Pokémon Mega Festa 2026</div>
+          <div class="news-card-note">Promo 040/M-P distribuée au Pokémon Mega Festa 2026. (Image provisoire — à remplacer par le vrai scan.)</div>
+        </div>
+      </a>
+      <a class="news-card" href="/trainers/#carmine_csv8c_255">
+        <img src="/cards/carmine_csv8c_255.avif" alt="Carmine" loading="lazy">
+        <div class="news-card-info">
+          <div class="news-card-name">Carmine</div>
+          <div class="news-card-meta">🇨🇳 · 2026 · Brilliant Illusions</div>
+          <div class="news-card-note">Supporter SAR exclusive au marché chinois (CSV8C 255/207).</div>
+        </div>
+      </a>
+      </div>
     </section>
 
     <div class="search-row">
@@ -73,6 +96,8 @@
     </div>
 
     <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="Filter by exclusivity category"></div>
+
+    <div id="gen-nav" class="gen-nav" role="toolbar" aria-label="Jump to a generation"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
@@ -83,7 +108,7 @@
   </main>
 
   <section class="seo-about">
-    <p>Some Pokémon TCG cards feature artwork that was only ever printed in a single language; others were only ever released in a single region. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. A Call of Legends or My First Battle card that shipped across Western markets (English, German, French, Italian, Spanish) but never reached Japan. PokéTruc catalogs these language- and region-exclusive cards across all 151 Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every classic — pulling artwork from Japanese Vending Machine expansion sheets, Black &amp; White promos, DPt-P promos, McDonald's promos, Western-only trainer kits, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, exclusivity and year — fully free, ad-free, and built by a fan.</p>
+    <p>Some Pokémon TCG cards feature artwork that was only ever printed in a single language; others were only ever released in a single region. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. A Call of Legends or My First Battle card that shipped across Western markets (English, German, French, Italian, Spanish) but never reached Japan. PokéTruc catalogs these language- and region-exclusive cards across the classic Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every favourite — plus select Pokémon from later generations added on request, pulling artwork from Japanese Vending Machine expansion sheets, Black &amp; White promos, DPt-P promos, McDonald's promos, Western-only trainer kits, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, exclusivity and year — fully free, ad-free, and built by a fan.</p>
   </section>
 
   <nav class="seo-pokedex" aria-label="Browse all Pokémon with exclusive cards">
@@ -227,7 +252,7 @@
       <a href="/pokemon/dratini/" class="seo-pokedex-link" data-pokemon-id="147"><span class="seo-pokedex-num">#147</span><span class="seo-pokedex-name">Dratini</span><span class="seo-pokedex-count">2</span></a>
       <a href="/pokemon/dragonair/" class="seo-pokedex-link" data-pokemon-id="148"><span class="seo-pokedex-num">#148</span><span class="seo-pokedex-name">Dragonair</span><span class="seo-pokedex-count">2</span></a>
       <a href="/pokemon/dragonite/" class="seo-pokedex-link" data-pokemon-id="149"><span class="seo-pokedex-num">#149</span><span class="seo-pokedex-name">Dragonite</span><span class="seo-pokedex-count">4</span></a>
-      <a href="/pokemon/mewtwo/" class="seo-pokedex-link" data-pokemon-id="150"><span class="seo-pokedex-num">#150</span><span class="seo-pokedex-name">Mewtwo</span><span class="seo-pokedex-count">9</span></a>
+      <a href="/pokemon/mewtwo/" class="seo-pokedex-link" data-pokemon-id="150"><span class="seo-pokedex-num">#150</span><span class="seo-pokedex-name">Mewtwo</span><span class="seo-pokedex-count">8</span></a>
       <a href="/pokemon/mew/" class="seo-pokedex-link" data-pokemon-id="151"><span class="seo-pokedex-num">#151</span><span class="seo-pokedex-name">Mew</span><span class="seo-pokedex-count">11</span></a>
     </div>
   </nav>
@@ -237,8 +262,9 @@
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script src="/i18n.js?v=15"></script>
-  <script src="/theme.js?v=15"></script>
-  <script src="/app.js?v=15"></script>
+  <script src="/i18n.js?v=19"></script>
+  <script src="/theme.js?v=19"></script>
+  <script src="/backtotop.js?v=19"></script>
+  <script src="/app.js?v=19"></script>
 </body>
 </html>

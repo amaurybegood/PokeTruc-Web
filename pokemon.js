@@ -24,4 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('fullscreen').classList.add('hidden');
     }
   });
+
+  // Deep-link: when arriving with #<imageName> (e.g. from the home News block),
+  // scroll to that card and flash a highlight ring.
+  const hash = decodeURIComponent(location.hash.slice(1));
+  if (hash) {
+    const target = document.getElementById(hash);
+    if (target && target.classList.contains('card-item')) {
+      requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        target.classList.add('card-flash');
+        setTimeout(() => target.classList.remove('card-flash'), 2000);
+      });
+    }
+  }
 });

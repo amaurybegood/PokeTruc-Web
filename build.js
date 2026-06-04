@@ -10,6 +10,17 @@ const crypto = require('crypto');
 
 const pokemons = JSON.parse(fs.readFileSync('data/pokemons.json', 'utf8'));
 const cards    = JSON.parse(fs.readFileSync('data/pokemon_cards.json', 'utf8'));
+// Trainer cards live in their own flat catalogue (no pokemonId). Optional file.
+const trainerCards = (() => {
+  try { return JSON.parse(fs.readFileSync('data/trainer_cards.json', 'utf8')); }
+  catch { return []; }
+})();
+// Hand-curated "latest real-world exclusive releases" shown on the home page.
+// Independent from the catalogue — entries need not exist in the site. Optional file.
+const news = (() => {
+  try { return JSON.parse(fs.readFileSync('data/news.json', 'utf8')); }
+  catch { return []; }
+})();
 
 const BASE_URL = 'https://poketruc.com';
 const TODAY    = new Date().toISOString().split('T')[0];
@@ -46,8 +57,8 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 25;
-const JS_V  = 15;
+const CSS_V = 31;
+const JS_V  = 19;
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
 
@@ -131,12 +142,14 @@ const LANG = {
     info: 'Info',
     searchPlaceholder: 'Search a Pokémon...',
     langFilterAria: 'Filter by exclusivity category',
+    genNavAria: 'Jump to a generation',
     skipToContent: 'Skip to main content',
     indexTitle: 'PokéTruc — Unique Pokémon TCG Card Illustrations',
     indexDescription: 'Pokémon TCG illustrations / artworks released in only one language or region — Japanese, English, Chinese, Western-only, Asian-only and more. Free, fan-made, ad-free.',
     indexH1: 'Pokémon TCG illustrations / artworks released in only one language or one region',
-    seoAbout: "Some Pokémon TCG cards feature artwork that was only ever printed in a single language; others were only ever released in a single region. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. A Call of Legends or My First Battle card that shipped across Western markets (English, German, French, Italian, Spanish) but never reached Japan. PokéTruc catalogs these language- and region-exclusive cards across all 151 Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every classic — pulling artwork from Japanese Vending Machine expansion sheets, Black & White promos, DPt-P promos, McDonald's promos, Western-only trainer kits, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, exclusivity and year — fully free, ad-free, and built by a fan.",
+    seoAbout: "Some Pokémon TCG cards feature artwork that was only ever printed in a single language; others were only ever released in a single region. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. A Call of Legends or My First Battle card that shipped across Western markets (English, German, French, Italian, Spanish) but never reached Japan. PokéTruc catalogs these language- and region-exclusive cards across the classic Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every favourite — plus select Pokémon from later generations added on request, pulling artwork from Japanese Vending Machine expansion sheets, Black & White promos, DPt-P promos, McDonald's promos, Western-only trainer kits, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, exclusivity and year — fully free, ad-free, and built by a fan.",
     seoPokedexHeading: 'Browse all Pokémon with exclusive cards',
+    newsHeading: 'Latest exclusive cards released',
     infoTitle: 'PokéTruc — About',
     infoDescription: 'About PokéTruc: a fan-made catalog of Pokémon TCG cards with unique artwork exclusive to one language. Free, ad-free.',
     infoH1: 'About PokéTruc',
@@ -197,6 +210,12 @@ const LANG = {
     footerCopyright: '© 2026 - 3590 PokéTruc — Fan-made, not affiliated with Nintendo / The Pokémon Company.',
     langSwitcherLabel: 'Language',
     themeToggleLabel: 'Toggle dark mode',
+    trainers: 'Trainers',
+    trainersTitle: 'PokéTruc — Exclusive Trainer Card Illustrations',
+    trainersDescription: 'Pokémon TCG Trainer card illustrations released in only one language or one region — Japanese, English, Western-only and more. Free, fan-made, ad-free.',
+    trainersH1: 'Trainer card illustrations released in only one language or one region',
+    trainersIntro: (n) => `${n} exclusive Trainer card ${n === 1 ? 'illustration' : 'illustrations'}`,
+    trainersEmpty: 'No Trainer cards yet — check back soon.',
   },
   fr: {
     siteName: 'PokéTruc',
@@ -205,12 +224,14 @@ const LANG = {
     info: 'Info',
     searchPlaceholder: 'Rechercher un Pokémon...',
     langFilterAria: "Filtrer par catégorie d'exclusivité",
+    genNavAria: 'Aller à une génération',
     skipToContent: 'Aller au contenu',
     indexTitle: 'PokéTruc — Illustrations exclusives de cartes Pokémon TCG',
     indexDescription: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou région (japonais, anglais, chinois, occident, asie). Gratuit, sans pub, fait par un fan.",
     indexH1: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région",
-    seoAbout: "Certaines cartes Pokémon TCG n'existent qu'en une seule langue ; d'autres ne sont sorties que dans une seule région. Une promo japonaise distribuée avec un magazine de timbres en 1996, jamais sortie en anglais. Une carte McDonald's Pokémon-e disponible uniquement au Japon en 2002. Une exclusivité du marché chinois sur un set récent. Une carte d'un set L'appel des légendes ou My First Battle distribuée en occident (anglais, allemand, français, italien, espagnol) mais jamais sortie au Japon. PokéTruc recense ces cartes en exclusivité linguistique ou régionale pour les 151 Pokémon de la Génération 1 — Bulbizarre, Dracaufeu, Pikachu et tous les autres — en piochant dans les feuilles Vending Machine japonaises, les promos Black & White, les promos DPt-P, les promos McDonald's, les decks d'initiation occidentaux et les sorties exclusives au marché chinois, illustrées par des artistes comme Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii et bien d'autres. L'objectif : permettre aux collectionneurs de découvrir des illustrations rares qu'ils n'ont peut-être jamais vues, classées par Pokémon, set, exclusivité et année — entièrement gratuit, sans publicité, créé par un fan.",
+    seoAbout: "Certaines cartes Pokémon TCG n'existent qu'en une seule langue ; d'autres ne sont sorties que dans une seule région. Une promo japonaise distribuée avec un magazine de timbres en 1996, jamais sortie en anglais. Une carte McDonald's Pokémon-e disponible uniquement au Japon en 2002. Une exclusivité du marché chinois sur un set récent. Une carte d'un set L'appel des légendes ou My First Battle distribuée en occident (anglais, allemand, français, italien, espagnol) mais jamais sortie au Japon. PokéTruc recense ces cartes en exclusivité linguistique ou régionale pour les Pokémon de la Génération 1 — Bulbizarre, Dracaufeu, Pikachu et tous les autres — ainsi que des Pokémon d'autres générations ajoutés à la demande, en piochant dans les feuilles Vending Machine japonaises, les promos Black & White, les promos DPt-P, les promos McDonald's, les decks d'initiation occidentaux et les sorties exclusives au marché chinois, illustrées par des artistes comme Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii et bien d'autres. L'objectif : permettre aux collectionneurs de découvrir des illustrations rares qu'ils n'ont peut-être jamais vues, classées par Pokémon, set, exclusivité et année — entièrement gratuit, sans publicité, créé par un fan.",
     seoPokedexHeading: 'Tous les Pokémon avec des cartes exclusives',
+    newsHeading: 'Dernières cartes exclusives sorties',
     infoTitle: 'PokéTruc — À propos',
     infoDescription: 'À propos de PokéTruc : un catalogue créé par un fan, recensant les cartes Pokémon TCG aux illustrations exclusives à une seule langue. Gratuit, sans publicité.',
     infoH1: 'À propos de PokéTruc',
@@ -272,6 +293,12 @@ const LANG = {
     footerCopyright: '© 2026 - 3590 PokéTruc — Site fan, non affilié à Nintendo / The Pokémon Company.',
     langSwitcherLabel: 'Langue',
     themeToggleLabel: 'Basculer le mode sombre',
+    trainers: 'Dresseurs',
+    trainersTitle: 'PokéTruc — Illustrations exclusives de cartes Dresseur',
+    trainersDescription: "Illustrations de cartes Dresseur Pokémon TCG n'existant que dans une seule langue ou une seule région (japonais, anglais, occident…). Gratuit, sans pub, fait par un fan.",
+    trainersH1: "Illustrations de cartes Dresseur n'existant que dans une seule langue ou une seule région",
+    trainersIntro: (n) => `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes Dresseur`,
+    trainersEmpty: 'Aucune carte Dresseur pour le moment — revenez bientôt.',
   },
   ja: {
     siteName: 'PokéTruc',
@@ -280,12 +307,14 @@ const LANG = {
     info: '情報',
     searchPlaceholder: 'ポケモンをさがす',
     langFilterAria: '限定カテゴリで絞り込む',
+    genNavAria: '世代へジャンプ',
     skipToContent: 'メインコンテンツへスキップ',
     indexTitle: 'PokéTruc — 言語・地域限定のポケモンTCGカードイラスト',
     indexDescription: '1つの言語（日本語・英語・中国語・韓国語）または1つの地域（欧米・アジア）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。',
     indexH1: '1つの言語または1つの地域にしか存在しないポケモンTCGのイラスト / アートワーク',
-    seoAbout: 'ポケモンTCGには、特定の言語でしか印刷されなかった限定イラストのカードや、特定の地域でしか発売されなかったカードが数多く存在します。1996年に切手雑誌の付録として配布された日本限定プロモ、2002年に日本でのみ配布されたマクドナルドのポケモン-e、最新セットの中国市場限定カード、欧米向けにのみ展開された Call of Legends や My First Battle のような日本未発売のセットなど。PokéTrucでは、フシギダネ、リザードン、ピカチュウをはじめとする第1世代の151匹すべてについて、こうした言語限定・地域限定カードを収録しています。Vending Machine拡張シート、Black & Whiteプロモ、DPt-Pプロモ、マクドナルドプロモ、欧米限定のトレーナーキット、中国限定セットなど幅広く対象とし、Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Moriiといった著名イラストレーターの作品も含まれます。ポケモン別・セット別・限定カテゴリ別・年代別に整理されたPokéTrucで、まだ見たことのない希少なイラストを見つけてください。完全無料・広告なし・ファン制作です。',
+    seoAbout: 'ポケモンTCGには、特定の言語でしか印刷されなかった限定イラストのカードや、特定の地域でしか発売されなかったカードが数多く存在します。1996年に切手雑誌の付録として配布された日本限定プロモ、2002年に日本でのみ配布されたマクドナルドのポケモン-e、最新セットの中国市場限定カード、欧米向けにのみ展開された Call of Legends や My First Battle のような日本未発売のセットなど。PokéTrucでは、フシギダネ、リザードン、ピカチュウをはじめとする第1世代のポケモン、さらにリクエストに応じて追加された他世代のポケモンについて、こうした言語限定・地域限定カードを収録しています。Vending Machine拡張シート、Black & Whiteプロモ、DPt-Pプロモ、マクドナルドプロモ、欧米限定のトレーナーキット、中国限定セットなど幅広く対象とし、Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Moriiといった著名イラストレーターの作品も含まれます。ポケモン別・セット別・限定カテゴリ別・年代別に整理されたPokéTrucで、まだ見たことのない希少なイラストを見つけてください。完全無料・広告なし・ファン制作です。',
     seoPokedexHeading: '限定カードがあるポケモンをすべて見る',
+    newsHeading: '最新の限定カード',
     infoTitle: 'PokéTruc — このサイトについて',
     infoDescription: 'PokéTrucについて：1つの言語にしか存在しないポケモンTCGカードの限定イラストを集めたファン制作のカタログです。無料・広告なし。',
     infoH1: 'PokéTrucについて',
@@ -346,6 +375,12 @@ const LANG = {
     footerCopyright: '© 2026 - 3590 PokéTruc — ファン制作、任天堂／株式会社ポケモンとは無関係です。',
     langSwitcherLabel: '言語',
     themeToggleLabel: 'ダークモードを切り替え',
+    trainers: 'トレーナー',
+    trainersTitle: 'PokéTruc — 言語・地域限定のトレーナーズカードイラスト',
+    trainersDescription: '1つの言語または1つの地域にしか存在しないポケモンTCGのトレーナーズカードイラスト。完全無料・広告なし・ファン制作。',
+    trainersH1: '1つの言語または1つの地域にしか存在しないトレーナーズカードのイラスト',
+    trainersIntro: (n) => `${n}枚の限定トレーナーズカードイラスト`,
+    trainersEmpty: 'トレーナーズカードはまだありません。またご覧ください。',
   },
   ko: {
     siteName: 'PokéTruc',
@@ -354,12 +389,14 @@ const LANG = {
     info: '정보',
     searchPlaceholder: '포켓몬 검색',
     langFilterAria: '한정 카테고리로 필터링',
+    genNavAria: '세대로 이동',
     skipToContent: '본문으로 건너뛰기',
     indexTitle: 'PokéTruc — 언어·지역 한정 포켓몬 TCG 카드 일러스트',
     indexDescription: '한 가지 언어(일본어, 영어, 중국어, 한국어) 또는 한 지역(서양·아시아)에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.',
     indexH1: '한 가지 언어 또는 한 지역에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
-    seoAbout: '포켓몬 TCG에는 단 하나의 언어로만 인쇄된 한정 일러스트 카드, 또는 단 하나의 지역에서만 출시된 카드가 다수 존재합니다. 1996년 우표 잡지 부록으로 배포된 일본 한정 프로모, 2002년 일본에서만 배포된 맥도날드 포켓몬-e 카드, 최신 세트의 중국 시장 한정 카드, 일본에서는 출시되지 않은 서양 한정 세트인 Call of Legends나 My First Battle 등이 대표적입니다. PokéTruc은 이상해씨, 리자몽, 피카츄를 비롯한 1세대 151마리 전부에 대해 이러한 언어·지역 한정 카드를 정리합니다. 일본 자판기 익스팬션 시트, Black & White 프로모, DPt-P 프로모, 맥도날드 프로모, 서양 한정 트레이너 키트, 중국 한정 세트까지 폭넓게 다루며 Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii 등 유명 일러스트레이터의 작품도 포함됩니다. 포켓몬·세트·한정 카테고리·연도별로 정리된 PokéTruc에서 한 번도 보지 못한 희귀 일러스트를 찾아보세요. 완전 무료, 광고 없음, 팬 제작.',
+    seoAbout: '포켓몬 TCG에는 단 하나의 언어로만 인쇄된 한정 일러스트 카드, 또는 단 하나의 지역에서만 출시된 카드가 다수 존재합니다. 1996년 우표 잡지 부록으로 배포된 일본 한정 프로모, 2002년 일본에서만 배포된 맥도날드 포켓몬-e 카드, 최신 세트의 중국 시장 한정 카드, 일본에서는 출시되지 않은 서양 한정 세트인 Call of Legends나 My First Battle 등이 대표적입니다. PokéTruc은 이상해씨, 리자몽, 피카츄를 비롯한 1세대 포켓몬, 그리고 요청에 따라 추가된 다른 세대의 포켓몬에 대해 이러한 언어·지역 한정 카드를 정리합니다. 일본 자판기 익스팬션 시트, Black & White 프로모, DPt-P 프로모, 맥도날드 프로모, 서양 한정 트레이너 키트, 중국 한정 세트까지 폭넓게 다루며 Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii 등 유명 일러스트레이터의 작품도 포함됩니다. 포켓몬·세트·한정 카테고리·연도별로 정리된 PokéTruc에서 한 번도 보지 못한 희귀 일러스트를 찾아보세요. 완전 무료, 광고 없음, 팬 제작.',
     seoPokedexHeading: '한정 카드가 있는 모든 포켓몬 둘러보기',
+    newsHeading: '최신 한정 카드',
     infoTitle: 'PokéTruc — 사이트 소개',
     infoDescription: 'PokéTruc 소개: 하나의 언어로만 발매된 포켓몬 TCG 카드의 한정 일러스트를 모은 팬 제작 카탈로그입니다. 무료, 광고 없음.',
     infoH1: 'PokéTruc 소개',
@@ -420,6 +457,12 @@ const LANG = {
     footerCopyright: '© 2026 - 3590 PokéTruc — 팬 제작, Nintendo / The Pokémon Company와 무관합니다.',
     langSwitcherLabel: '언어',
     themeToggleLabel: '다크 모드 전환',
+    trainers: '트레이너',
+    trainersTitle: 'PokéTruc — 언어·지역 한정 트레이너 카드 일러스트',
+    trainersDescription: '한 가지 언어 또는 한 지역에서만 존재하는 포켓몬 TCG 트레이너 카드 일러스트. 무료, 광고 없음, 팬 제작.',
+    trainersH1: '한 가지 언어 또는 한 지역에서만 존재하는 트레이너 카드 일러스트',
+    trainersIntro: (n) => `${n}장의 한정 트레이너 카드 일러스트`,
+    trainersEmpty: '아직 트레이너 카드가 없습니다. 곧 다시 확인해 주세요.',
   },
   zh: {
     siteName: 'PokéTruc',
@@ -428,12 +471,14 @@ const LANG = {
     info: '信息',
     searchPlaceholder: '搜索宝可梦',
     langFilterAria: '按独占类别筛选',
+    genNavAria: '跳转到世代',
     skipToContent: '跳到主要内容',
     indexTitle: 'PokéTruc — 语言·地区独占的宝可梦 TCG 卡牌插画',
     indexDescription: '仅在一种语言（日文、英文、中文或韩文）或一个地区（西方·亚洲）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。',
     indexH1: '仅在一种语言或一个地区中发行的宝可梦 TCG 插画 / 美术图',
-    seoAbout: '宝可梦 TCG 中有许多卡牌的插画仅以单一语言印刷发行，也有许多卡牌仅在单一地区发行。1996 年作为邮票杂志附录发行的日本限定促销卡，2002 年仅在日本麦当劳发行的宝可梦-e 卡，最新卡组中仅在中国市场推出的独占卡牌，以及只在西方地区发行（英文、德文、法文、意大利文、西班牙文）但从未在日本发行的 Call of Legends 或 My First Battle 等卡组。PokéTruc 收录了妙蛙种子、喷火龙、皮卡丘等第一世代全 151 只宝可梦的此类语言·地区独占卡牌，涵盖日本贩卖机扩展卡板、Black & White 促销卡、DPt-P 促销卡、麦当劳促销卡、西方限定训练家组以及中国独占卡组，作品由 Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Morii 等知名插画师绘制。按宝可梦、卡组、独占类别和年份分类整理，让您能够找到从未见过的稀有插画。完全免费、无广告、由粉丝制作。',
+    seoAbout: '宝可梦 TCG 中有许多卡牌的插画仅以单一语言印刷发行，也有许多卡牌仅在单一地区发行。1996 年作为邮票杂志附录发行的日本限定促销卡，2002 年仅在日本麦当劳发行的宝可梦-e 卡，最新卡组中仅在中国市场推出的独占卡牌，以及只在西方地区发行（英文、德文、法文、意大利文、西班牙文）但从未在日本发行的 Call of Legends 或 My First Battle 等卡组。PokéTruc 收录了妙蛙种子、喷火龙、皮卡丘等第一世代宝可梦，以及应玩家请求添加的其他世代宝可梦的此类语言·地区独占卡牌，涵盖日本贩卖机扩展卡板、Black & White 促销卡、DPt-P 促销卡、麦当劳促销卡、西方限定训练家组以及中国独占卡组，作品由 Ken Sugimori、Mitsuhiro Arita、Sumiyoshi Kizuki、Yuka Morii 等知名插画师绘制。按宝可梦、卡组、独占类别和年份分类整理，让您能够找到从未见过的稀有插画。完全免费、无广告、由粉丝制作。',
     seoPokedexHeading: '查看所有拥有独占卡牌的宝可梦',
+    newsHeading: '最新独占卡牌',
     infoTitle: 'PokéTruc — 关于本站',
     infoDescription: '关于 PokéTruc：一份由粉丝制作的目录，收录仅在单一语言中发行的宝可梦 TCG 独占卡牌插画。免费、无广告。',
     infoH1: '关于 PokéTruc',
@@ -494,6 +539,12 @@ const LANG = {
     footerCopyright: '© 2026 - 3590 PokéTruc — 粉丝制作，与任天堂／株式会社宝可梦无关。',
     langSwitcherLabel: '语言',
     themeToggleLabel: '切换深色模式',
+    trainers: '训练家',
+    trainersTitle: 'PokéTruc — 语言·地区独占的训练家卡牌插画',
+    trainersDescription: '仅在一种语言或一个地区中发行的宝可梦 TCG 训练家卡牌插画。免费、无广告、由粉丝制作。',
+    trainersH1: '仅在一种语言或一个地区中发行的训练家卡牌插画',
+    trainersIntro: (n) => `${n} 张独占训练家卡牌插画`,
+    trainersEmpty: '暂时还没有训练家卡牌，敬请期待。',
   },
 };
 
@@ -698,10 +749,12 @@ function langPathPrefix(lang) { return lang === 'en' ? '/' : `/${lang}/`; }
 function urlForRoot(lang)     { return BASE_URL + langPathPrefix(lang); }
 function urlForInfo(lang)     { return BASE_URL + langPathPrefix(lang) + 'info/'; }
 function urlForPokemon(lang, slug) { return BASE_URL + langPathPrefix(lang) + 'pokemon/' + slug + '/'; }
+function urlForTrainers(lang)  { return BASE_URL + langPathPrefix(lang) + 'trainers/'; }
 
 // Path-style helpers for inter-page navigation within a language tree (root-relative).
 function pathRoot(lang)     { return langPathPrefix(lang); }
 function pathInfo(lang)     { return langPathPrefix(lang) + 'info/'; }
+function pathTrainers(lang) { return langPathPrefix(lang) + 'trainers/'; }
 // Legacy path kept for redirect stubs at the old /info.html locations.
 function legacyInfoPath(lang) { return langPathPrefix(lang) + 'info.html'; }
 function legacyInfoFile(lang) { return lang === 'en' ? 'info.html' : `${lang}/info.html`; }
@@ -761,15 +814,17 @@ ${jsonLd ? `  <script type="application/ld+json">${jsonLd}</script>` : ''}`;
 // IMPORTANT: no <h1> here — H1 lives in the page-specific main content.
 function headerBlock(lang, currentPath, kind) {
   const L = LANG[lang];
-  const dexActive  = (kind === 'index') ? ' aria-current="page"' : '';
-  const infoActive = (kind === 'info')  ? ' aria-current="page"' : '';
+  const dexActive      = (kind === 'index')    ? ' aria-current="page"' : '';
+  const trainersActive = (kind === 'trainers') ? ' aria-current="page"' : '';
+  const infoActive     = (kind === 'info')     ? ' aria-current="page"' : '';
 
   // Build language-switcher links: switch to the SAME page kind in target lang.
   // currentPath: '' (index), 'info', or { slug: '<slug>' } (pokemon detail).
   function altPathFor(targetLang) {
-    if (kind === 'index')   return pathRoot(targetLang);
-    if (kind === 'info')    return pathInfo(targetLang);
-    if (kind === 'pokemon') return pathPokemon(targetLang, currentPath.slug);
+    if (kind === 'index')    return pathRoot(targetLang);
+    if (kind === 'info')     return pathInfo(targetLang);
+    if (kind === 'trainers') return pathTrainers(targetLang);
+    if (kind === 'pokemon')  return pathPokemon(targetLang, currentPath.slug);
     return pathRoot(targetLang);
   }
 
@@ -788,6 +843,7 @@ function headerBlock(lang, currentPath, kind) {
     <p class="site-tagline">${escapeHtml(L.tagline)}</p>
     <nav class="site-nav">
       <a href="${pathRoot(lang)}"${dexActive}>${escapeHtml(L.pokedex)}</a>
+      <a href="${pathTrainers(lang)}"${trainersActive}>${escapeHtml(L.trainers)}</a>
       <a href="${pathInfo(lang)}"${infoActive}>${escapeHtml(L.info)}</a>
       <details class="lang-picker">
         <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}"><span class="lang-picker-code">${TOGGLE_CODE[lang]}</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
@@ -807,7 +863,8 @@ function footerBlock(lang) {
 function scriptTags() {
   return `  <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script src="/i18n.js?v=${JS_V}"></script>
-  <script src="/theme.js?v=${JS_V}"></script>`;
+  <script src="/theme.js?v=${JS_V}"></script>
+  <script src="/backtotop.js?v=${JS_V}"></script>`;
 }
 
 // -----------------------------------------------------------------------------
@@ -850,7 +907,7 @@ function cardAltText(lang, card, localizedName) {
 function renderCard(card, pokemon, L, lang, localizedName) {
   const alt = cardAltText(lang, card, localizedName);
   return `
-        <div class="card-item" data-img="/cards/${card.imageName}.avif">
+        <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
           <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy">
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.name)}</div>
@@ -899,6 +956,73 @@ function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
         </summary>
         <div class="cards-grid">
           ${cs.map(c => renderCard(c, pokemon, L, lang, localizedName)).join('')}
+        </div>
+      </details>`;
+  }).join('');
+
+  return `
+    <section class="cards-section">
+      ${sectionTitle}
+      ${groupsHTML}
+    </section>`;
+}
+
+// --- Trainer cards (flat gallery, grouped by exclusivity) --------------------
+// Trainer cards have no pokemonId; they carry a `title` (what the card depicts)
+// instead of being named by a Pokémon. Everything else mirrors a Pokémon card.
+
+function renderTrainerCard(card, L, lang) {
+  const alt = cardAltText(lang, card, card.title);
+  return `
+        <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
+          <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy">
+          <div class="card-info">
+            <div class="card-name">${escapeHtml(card.title)}</div>
+            <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
+            ${card.name ? `<div class="card-artist">${escapeHtml(card.name)}</div>` : ''}
+            ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
+            ${card.description ? `<details class="card-description">
+              <summary class="card-description-toggle">${escapeHtml(L.descriptionToggle)}</summary>
+              <div class="card-description-body">${linkifyDescription(card.description, L)}</div>
+            </details>` : ''}
+          </div>
+        </div>`;
+}
+
+function buildTrainersSectionHTML(items, L, lang) {
+  const count = items.length;
+  const groups = groupBy(items, exclusivityKey);
+  const orderedFlags = [
+    ...LANG_INFO.map(l => l.flag).filter(f => groups.has(f)),
+    ...[...groups.keys()].filter(f => !LANG_INFO.some(l => l.flag === f)),
+  ].sort((a, b) => groups.get(b).length - groups.get(a).length);
+  const headingByFlag = Object.fromEntries(LANG_INFO.map(l => [l.flag, L[l.key]]));
+
+  const sectionTitle = `<p class="cards-section-title">${L.trainersIntro(count)}</p>`;
+
+  if (orderedFlags.length <= 1) {
+    const onlyFlag = orderedFlags[0];
+    const cs = (onlyFlag ? groups.get(onlyFlag) : items).slice().sort((a, b) => a.year - b.year);
+    return `
+    <section class="cards-section">
+      ${sectionTitle}
+      <div class="cards-grid">
+        ${cs.map(c => renderTrainerCard(c, L, lang)).join('')}
+      </div>
+    </section>`;
+  }
+
+  const groupsHTML = orderedFlags.map(flag => {
+    const cs = groups.get(flag).slice().sort((a, b) => a.year - b.year);
+    const heading = headingByFlag[flag] || 'Other-exclusive cards';
+    return `
+      <details class="cards-lang-group" open>
+        <summary class="cards-lang-summary">
+          <h2 class="cards-lang-title">${flag} ${escapeHtml(heading)} (${cs.length})</h2>
+          <span class="cards-lang-caret" aria-hidden="true">▾</span>
+        </summary>
+        <div class="cards-grid">
+          ${cs.map(c => renderTrainerCard(c, L, lang)).join('')}
         </div>
       </details>`;
   }).join('');
@@ -1093,6 +1217,45 @@ ${scriptTags()}
 }
 
 // -----------------------------------------------------------------------------
+// News block (home page) — hand-curated latest real-world exclusive releases.
+// -----------------------------------------------------------------------------
+
+function renderNewsItem(item, L) {
+  const imgSrc = item.image || (item.imageName ? `/cards/${item.imageName}.avif` : '');
+  const flags = Array.isArray(item.languages) ? item.languages.join(' ') : '';
+  const metaBits = [flags, item.year, item.set].filter(Boolean)
+    .map(b => escapeHtml(String(b))).join(' · ');
+  const inner = `
+        ${imgSrc ? `<img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(item.title || '')}" loading="lazy">` : ''}
+        <div class="news-card-info">
+          <div class="news-card-name">${escapeHtml(item.title || '')}</div>
+          ${metaBits ? `<div class="news-card-meta">${metaBits}</div>` : ''}
+          ${item.note ? `<div class="news-card-note">${escapeHtml(item.note)}</div>` : ''}
+        </div>`;
+
+  if (item.link) {
+    const external = /^https?:\/\//.test(item.link);
+    const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
+    return `      <a class="news-card" href="${escapeHtml(item.link)}"${attrs}>${inner}
+      </a>`;
+  }
+  return `      <div class="news-card">${inner}
+      </div>`;
+}
+
+function buildNewsHTML(lang) {
+  if (!news.length) return '';
+  const L = LANG[lang];
+  return `
+    <section class="news-section" aria-label="${escapeHtml(L.newsHeading)}">
+      <h2 class="news-heading">${escapeHtml(L.newsHeading)}</h2>
+      <div class="news-grid">
+${news.map(item => renderNewsItem(item, L)).join('\n')}
+      </div>
+    </section>`;
+}
+
+// -----------------------------------------------------------------------------
 // Index page (per language)
 // -----------------------------------------------------------------------------
 
@@ -1154,6 +1317,7 @@ function indexPageHTML(lang, pokemonsWithCards) {
   });
 
   const homeStatsSentence = buildHomeStatsSentence(lang);
+  const newsHTML = buildNewsHTML(lang);
 
   // Static SEO grid: one <a> per Pokémon with a detail page. Names localised.
   const seoLinks = pokemonsWithCards.map(p => {
@@ -1168,7 +1332,7 @@ function indexPageHTML(lang, pokemonsWithCards) {
 <head>
 ${head}
   <noscript><style>
-    #search, .search-row, #lang-filter, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #gen-nav, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -1183,12 +1347,15 @@ ${headerBlock(lang, '', 'index')}
     <section class="home-summary">
       <p class="home-stats-text">${homeStatsSentence}</p>
     </section>
+${newsHTML}
 
     <div class="search-row">
       <input type="search" id="search" placeholder="${escapeHtml(L.searchPlaceholder)}" aria-label="${escapeHtml(L.searchPlaceholder)}" autocomplete="off">
     </div>
 
     <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="${escapeHtml(L.langFilterAria)}"></div>
+
+    <div id="gen-nav" class="gen-nav" role="toolbar" aria-label="${escapeHtml(L.genNavAria)}"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
@@ -1319,6 +1486,74 @@ ${scriptTags()}
 }
 
 // -----------------------------------------------------------------------------
+// Trainers page (flat gallery, per language)
+// -----------------------------------------------------------------------------
+
+function trainersPageHTML(lang) {
+  const L = LANG[lang];
+  const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForTrainers(l)]));
+  const canonical  = urlsByLang[lang];
+
+  const breadcrumbList = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": L.pokedex,  "item": urlForRoot(lang) },
+      { "@type": "ListItem", "position": 2, "name": L.trainers, "item": canonical },
+    ],
+  };
+  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [breadcrumbList] });
+
+  const head = headBlock({
+    lang,
+    title: L.trainersTitle,
+    description: L.trainersDescription,
+    canonical,
+    urlsByLang,
+    jsonLd,
+    twitterCard: 'summary',
+  });
+
+  const sectionsHTML = trainerCards.length
+    ? buildTrainersSectionHTML(trainerCards, L, lang)
+    : `
+    <section class="cards-section">
+      <p class="cards-section-title">${escapeHtml(L.trainersEmpty)}</p>
+    </section>`;
+
+  return `<!DOCTYPE html>
+<html lang="${HTML_LANG[lang]}">
+<head>
+${head}
+</head>
+<body data-lang-prefix="${langPathPrefix(lang)}">
+<a href="#main-content" class="skip-link">${escapeHtml(L.skipToContent)}</a>
+
+${headerBlock(lang, '', 'trainers')}
+
+  <main id="main-content" class="pokemon-page">
+    <h1 class="page-title">${escapeHtml(L.trainersH1)}</h1>
+${sectionsHTML}
+    <nav class="pokemon-pager" aria-label="${escapeHtml(L.pokedex)}">
+      <a class="pokemon-nav-up" href="${pathRoot(lang)}">${escapeHtml(L.upToPokedex)}</a>
+    </nav>
+  </main>
+
+${footerBlock(lang)}
+
+  <!-- Fullscreen -->
+  <div id="fullscreen" class="fullscreen hidden">
+    <div class="fullscreen-backdrop"></div>
+    <img id="fullscreen-img" src="" alt="">
+  </div>
+
+${scriptTags()}
+  <script src="/pokemon.js?v=${JS_V}"></script>
+</body>
+</html>`;
+}
+
+// -----------------------------------------------------------------------------
 // Generation driver
 // -----------------------------------------------------------------------------
 
@@ -1384,6 +1619,14 @@ for (const lang of LANGS) {
   fs.writeFileSync(legacyInfoFile(lang), redirectHTML, 'utf8');
 }
 
+// 3b) Trainers page per language at /trainers/index.html
+for (const lang of LANGS) {
+  const trainersDir = lang === 'en' ? 'trainers' : `${lang}/trainers`;
+  ensureDir(trainersDir);
+  recordWrite(`${trainersDir}/index.html`, trainersPageHTML(lang), pathTrainers(lang));
+  pageCount++;
+}
+
 // 4) Sitemap with hreflang annotations. <lastmod> per URL comes from the
 //    per-page hash tracker so it only changes when the rendered HTML changes.
 const sitemapUrls = [];
@@ -1412,6 +1655,11 @@ ${alt}
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForInfo(l)]));
   for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathInfo(lang), { priority: '0.7', changefreq: 'monthly' }));
 }
+// Trainers page
+{
+  const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForTrainers(l)]));
+  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathTrainers(lang), { priority: '0.7', changefreq: 'monthly' }));
+}
 // Pokémon pages
 for (const p of pokemonsWithCards) {
   const slug = slugify(p.name.en);
@@ -1439,24 +1687,34 @@ fs.writeFileSync('sitemap.xml', sitemap, 'utf8');
   const years = cards.map(c => c.year);
   const minY = Math.min(...years), maxY = Math.max(...years);
 
+  // Generations actually present in the catalogue (no longer hard-coded to Gen 1).
+  const gens = [...new Set(pokemonsWithCards.map(p => p.generation).filter(Boolean))].sort((a, b) => a - b);
+  const genLabel = gens.length === 0 ? 'multiple generations'
+    : gens.length === 1 ? `Generation ${gens[0]}`
+    : `Generations ${gens.join(', ')}`;
+
   const pokemonLines = pokemonsWithCards.map(p => {
     const n = cardsFor(p.id).length;
     const slug = slugify(p.name.en);
     return `- [${p.name.en}](${urlForPokemon('en', slug)}): ${n} exclusive card${n > 1 ? 's' : ''}`;
   }).join('\n');
 
+  const trainersLine = trainerCards.length
+    ? `\n- [Trainers](${urlForTrainers('en')}): flat gallery of ${trainerCards.length} language- and region-exclusive Trainer card illustrations, grouped by exclusivity category.`
+    : `\n- [Trainers](${urlForTrainers('en')}): gallery of language- and region-exclusive Trainer card illustrations, grouped by exclusivity category.`;
+
   const llms = `# PokéTruc
 
-> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists ${cards.length} such cards across ${pokemonsWithCards.length} Generation 1 Pokémon, published from ${minY} to ${maxY}.
+> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists ${cards.length} such cards across ${pokemonsWithCards.length} Pokémon (${genLabel}), published from ${minY} to ${maxY}.
 
 The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: ${langBreakdown}. Created by Begooderrr (${REDDIT_BEGOODERRR_URL}); source code at ${GITHUB_REPO_URL}.
 
 ## Main pages
 
-- [Pokédex (home)](${urlForRoot('en')}): searchable grid of all Generation 1 Pokémon, filterable by exclusivity category.
+- [Pokédex (home)](${urlForRoot('en')}): searchable grid of all catalogued Pokémon, filterable by exclusivity category.${trainersLine}
 - [Info / About](${urlForInfo('en')}): what the project is, plus credits and sources.
 
-## Pokémon (Generation 1)
+## Pokémon (${genLabel})
 
 ${pokemonLines}
 
