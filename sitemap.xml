@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://poketruc.com/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -603,7 +603,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/pokemon/blastoise/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/blastoise/"/>
@@ -615,7 +615,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/blastoise/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/blastoise/"/>
@@ -627,7 +627,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/blastoise/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/blastoise/"/>
@@ -639,7 +639,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/blastoise/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/blastoise/"/>
@@ -651,7 +651,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/blastoise/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/blastoise/"/>

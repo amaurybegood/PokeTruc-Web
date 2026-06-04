@@ -717,18 +717,6 @@
   },
   {
     "pokemonId": 9,
-    "name": "Miracle Crystal",
-    "imageName": "9_Blastoise_jpn_pcg8_49",
-    "rarity": "Rare Holo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2006,
-    "artist": ""
-  },
-  {
-    "pokemonId": 9,
     "name": "Overshadowed Radiance",
     "imageName": "9_Blastoise_scn_cs55_14",
     "rarity": "Rare",

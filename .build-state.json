@@ -32,8 +32,8 @@
     "lastmod": "2026-06-01"
   },
   "/pokemon/blastoise/": {
-    "hash": "1fe2076c367db056f6b725ed26af81f4419ff89f373f872cf099ca623b1fa2e4",
-    "lastmod": "2026-06-01"
+    "hash": "32b7376192999312e7d812863f78e608c16bb4d81b78c142c3dbf0ce932d6e92",
+    "lastmod": "2026-06-04"
   },
   "/pokemon/caterpie/": {
     "hash": "c1c7b49ef34421b520cb3359982d67cf4bb69baf1b468916709491ed1e0c7236",
@@ -592,8 +592,8 @@
     "lastmod": "2026-06-01"
   },
   "/fr/pokemon/blastoise/": {
-    "hash": "85d8cab08ab29a1098049fe23bcd39ba54f34123de3e17d16995e69eb94f4386",
-    "lastmod": "2026-06-01"
+    "hash": "09fa9a3f33fa89a64161b5df6441e1fb2ea9d8da34d3ee5cf5dc24be44ed3a07",
+    "lastmod": "2026-06-04"
   },
   "/fr/pokemon/caterpie/": {
     "hash": "1015b6adccbe1751216a04143af0708478ec4081749b91242ba7f9ebef07ddd7",
@@ -1152,8 +1152,8 @@
     "lastmod": "2026-06-01"
   },
   "/ja/pokemon/blastoise/": {
-    "hash": "b46618ec1e45e748e27b259e5e4b5953505ccf7949318d8a05e3da3170ac5ccf",
-    "lastmod": "2026-06-01"
+    "hash": "ab6f00f3c976535537eb8638ed28030ef8054924d3f31301051428b17279a665",
+    "lastmod": "2026-06-04"
   },
   "/ja/pokemon/caterpie/": {
     "hash": "071bae171b8c98e03df8ed4735b9336e28d25c91e011ccc4d51148f11cbaf429",
@@ -1712,8 +1712,8 @@
     "lastmod": "2026-06-01"
   },
   "/ko/pokemon/blastoise/": {
-    "hash": "314a8d40f963a291c0bd479a4dfe28eb2bf1164291e5d5426e3b35954feee56e",
-    "lastmod": "2026-06-01"
+    "hash": "1cb2ffa8ec398f6ad5b7503678d51a8a2da899a854743baf28551dca26c425d3",
+    "lastmod": "2026-06-04"
   },
   "/ko/pokemon/caterpie/": {
     "hash": "df4f74b57a8c1ee332c5ab6b9c1da8c40c54424e6f24b900e9984cad7cb115c7",
@@ -2272,8 +2272,8 @@
     "lastmod": "2026-06-01"
   },
   "/zh/pokemon/blastoise/": {
-    "hash": "4b37911d0cb50cd4f2a3b2e6c21aed56b20a35bb12794016125d7fb2d66e634b",
-    "lastmod": "2026-06-01"
+    "hash": "525deca6b045ce52e39170ac5c539bfcf0bf4c5c7d421a4f0a291c7508c30518",
+    "lastmod": "2026-06-04"
   },
   "/zh/pokemon/caterpie/": {
     "hash": "6deefcd19cbb3d4d868f0270d34bde904f87307c4a3b836d65b7446cd8ef6c8c",
@@ -2800,24 +2800,24 @@
     "lastmod": "2026-06-01"
   },
   "/": {
-    "hash": "5ee877a51ce318d6775cfc352a43a4d80d076bedf82fb7e005c8a57ffd21ab69",
-    "lastmod": "2026-06-03"
+    "hash": "616912e96ec557f09a6be3ee6d4b71292d818ac435ec2b5e4a60e62367b8e48a",
+    "lastmod": "2026-06-04"
   },
   "/fr/": {
-    "hash": "649decb6b1af589bd54c6006dff1f42174b3fd9b1d874b59ddc20cffa50c118e",
-    "lastmod": "2026-06-03"
+    "hash": "4851b69e79b4df0fb5cae5a5e8838bd2d73563a11f42141c1b78027367aacbca",
+    "lastmod": "2026-06-04"
   },
   "/ja/": {
-    "hash": "d0949703824c66295f8910cb9d4b8d5c1e1c1dd9573f2d4a0a392a99fcbc04a9",
-    "lastmod": "2026-06-03"
+    "hash": "9310cfcd782bb2a9d5e6b9342bce246c3b28d95711c70bc4c1599f7899ad0919",
+    "lastmod": "2026-06-04"
   },
   "/ko/": {
-    "hash": "cefb4a7ce6e992c36baf58f71189ac1945ec84ff6704e69eb59460f8babb8ed1",
-    "lastmod": "2026-06-03"
+    "hash": "d51d2bb2f55a3b80fb15697adf0e46c177836c42c518d182e414acb4870c30f7",
+    "lastmod": "2026-06-04"
   },
   "/zh/": {
-    "hash": "6a9a875fda639c0759cb646d374fe83092ed5d55b04b0dacdf6d9f60d2acd4af",
-    "lastmod": "2026-06-03"
+    "hash": "aadd4e837780563005e0af3a6cb85341f657210df9303c732ace76b90583e2a1",
+    "lastmod": "2026-06-04"
   },
   "/info/": {
     "hash": "b269d00257b5a5debb5f7ff0ab142ba872d08b4d9bafaa4a4a64d82e77a62b39",
