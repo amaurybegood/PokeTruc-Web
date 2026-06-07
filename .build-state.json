@@ -352,8 +352,8 @@
     "lastmod": "2026-06-04"
   },
   "/pokemon/gengar/": {
-    "hash": "62539a53d78172050286440db54473148178eec5d271ccec7195c45766059b4d",
-    "lastmod": "2026-06-04"
+    "hash": "897718960daec30520a5ef2b5823db601d531c399bd6ed7b6c036aa25e094fd4",
+    "lastmod": "2026-06-07"
   },
   "/pokemon/onix/": {
     "hash": "8567f0b7b4d7c0b32d451155c00a299191df05623848e38d2883d65bb826886a",
@@ -912,8 +912,8 @@
     "lastmod": "2026-06-04"
   },
   "/fr/pokemon/gengar/": {
-    "hash": "fb7a8d741154239845dfdbb02555a5b7aa3feaaae77191772fd0e79b4cd9c303",
-    "lastmod": "2026-06-04"
+    "hash": "1cbea43c931b702ef5c3a5b5fe067e2a0e84098d13945b96ff067534ec9b4493",
+    "lastmod": "2026-06-07"
   },
   "/fr/pokemon/onix/": {
     "hash": "201e8c2bd01fbc15848c3cfad3c9b6c06ed3dd080cd83538cb7f05537ef31350",
@@ -1472,8 +1472,8 @@
     "lastmod": "2026-06-04"
   },
   "/ja/pokemon/gengar/": {
-    "hash": "833b118ed2f95007b8af7f7224bcae6fa63cbcf7e2b3eb97cf450967c149f862",
-    "lastmod": "2026-06-04"
+    "hash": "3f1097a941d5f5bf93dea61c31ad6167ad56c5d1692ad639bb71798a986872dd",
+    "lastmod": "2026-06-07"
   },
   "/ja/pokemon/onix/": {
     "hash": "2577cb70490e624e1392636549ae0fdefb91f119541d0da19e962c98859d78a8",
@@ -2032,8 +2032,8 @@
     "lastmod": "2026-06-04"
   },
   "/ko/pokemon/gengar/": {
-    "hash": "dcde586b24e3c4aff4b99de4d20c071aaabb42575817d5cebdae1650109157c0",
-    "lastmod": "2026-06-04"
+    "hash": "77dc15cf85a4741eb65ab8b9684ee20778619eb54d6f1ecf9ba69913702e2f80",
+    "lastmod": "2026-06-07"
   },
   "/ko/pokemon/onix/": {
     "hash": "7d573e17e54669e7861da8b28b9a21f8f2c1d9172069f542c1c05b4f2952f7ab",
@@ -2592,8 +2592,8 @@
     "lastmod": "2026-06-04"
   },
   "/zh/pokemon/gengar/": {
-    "hash": "8f1221b2a702c0336192932ccc3bc9e820acff5e0ccc78b65f079cd4cff80afa",
-    "lastmod": "2026-06-04"
+    "hash": "20087e5738117b9b82f77748330d0f0dec5b1495f7363f425d73b803ccfa147e",
+    "lastmod": "2026-06-07"
   },
   "/zh/pokemon/onix/": {
     "hash": "e2c15949d80c8a2381749f58eb6052d65b25ad555d6ca609c224120d435e8f5e",
@@ -2800,24 +2800,24 @@
     "lastmod": "2026-06-04"
   },
   "/": {
-    "hash": "ddc9e1b7a9b420699637557acc4a251260519dd2d538e321c92e1f089e3f44d6",
-    "lastmod": "2026-06-04"
+    "hash": "56adb23234e604a6fe165e7142a8cf1b23613134ee16d93e6f0792e958a2afd9",
+    "lastmod": "2026-06-07"
   },
   "/fr/": {
-    "hash": "e3d8745a30bc5e5b4164eb9df6b94e1e364f152fe1026274edc563464f1080ff",
-    "lastmod": "2026-06-04"
+    "hash": "e22f8e0c22bd565c454ff8fd41edb7b4198f8d0aef7192fd87297092104a1d0e",
+    "lastmod": "2026-06-07"
   },
   "/ja/": {
-    "hash": "3f9dbb34f8895c55a327b642efd55841f52681459c90f1f1600ed6232507c275",
-    "lastmod": "2026-06-04"
+    "hash": "c7e1fa4c9262915adc3df0714690c05b7ff668bdc819092a7f0680143df2f104",
+    "lastmod": "2026-06-07"
   },
   "/ko/": {
-    "hash": "e4c90d0b927ade998a7a0fced5a60c2b38e124657f9bdae9c1beadabd6cf968b",
-    "lastmod": "2026-06-04"
+    "hash": "ed4e59ee85ec77726eac6bcebb33d5f45c1a0703caa5d53cf6e9df3ae9925194",
+    "lastmod": "2026-06-07"
   },
   "/zh/": {
-    "hash": "40d28332243887e34f7fae31d6972962b7f3dbb648bfbeb83bf3319eb370a22c",
-    "lastmod": "2026-06-04"
+    "hash": "a3669f014bb9abe61df4e7fe3d6f403a8fd16cb882d76f03e96052d198ed2d41",
+    "lastmod": "2026-06-07"
   },
   "/info/": {
     "hash": "ad6486ae2e84b5ab45edc90de023bbb7738f58438b111bfc669bd72c95db83ac",

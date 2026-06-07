@@ -4762,10 +4762,15 @@
     "rarity": "Promo",
     "description": "",
     "languages": [
-      "🇬🇧"
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
     ],
     "year": 2025,
-    "artist": "Ultimateinudog"
+    "artist": "Ultimateinudog",
+    "region": "western"
   },
   {
     "pokemonId": 95,
