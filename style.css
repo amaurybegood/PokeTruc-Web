@@ -95,10 +95,19 @@
 }
 
 body {
-  font-family: "Twemoji Country Flags", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
+}
+
+/* The flag webfont is only used when the browser doesn't render flag emoji
+   natively (class set in <head> by the canvas detection). Mac/iOS render flags
+   natively, so we keep the font off there — using it triggers a WebKit bug where
+   the emoji glyph's color bleeds onto the following text (red/yellow text that
+   ignores light/dark mode). */
+.flags-need-font body {
+  font-family: "Twemoji Country Flags", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 /* Header */

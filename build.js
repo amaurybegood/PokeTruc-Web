@@ -57,7 +57,7 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 31;
+const CSS_V = 32;
 const JS_V  = 19;
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
@@ -778,6 +778,7 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
   const d = escapeHtml(description);
   return `  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function(){try{var c=document.createElement('canvas');c.width=c.height=16;var x=c.getContext('2d');x.textBaseline='top';x.font='16px sans-serif';x.fillText('\u{1F1E8}\u{1F1E6}',0,0);var d=x.getImageData(0,0,16,16).data,k=false;for(var i=0;i<d.length;i+=4){if(d[i]>150&&d[i+1]<100&&d[i+2]<100&&d[i+3]>0){k=true;break;}}if(!k)document.documentElement.classList.add('flags-need-font');}catch(e){document.documentElement.classList.add('flags-need-font');}})();</script>
   <title>${t}</title>
   <meta name="description" content="${d}">
   <meta name="robots" content="index, follow">
