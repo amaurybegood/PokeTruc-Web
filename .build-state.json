@@ -560,7 +560,7 @@
     "lastmod": "2026-06-09"
   },
   "/pokemon/sylveon/": {
-    "hash": "40e8e12b0d5aee3e842f3c5f76330f9b647c4134180ccacb499bd3e802f9f078",
+    "hash": "21fcbc9d833ff514de5a3987403d740ac4b897e2f6bf4b2c8c94f33c633e0ceb",
     "lastmod": "2026-06-09"
   },
   "/fr/pokemon/bulbasaur/": {
@@ -1124,7 +1124,7 @@
     "lastmod": "2026-06-09"
   },
   "/fr/pokemon/sylveon/": {
-    "hash": "258565145b5075fa8827598386355de8dc3bb6ebcd19050eeeb8774542808b05",
+    "hash": "2e260ccff30a55c73dee2f485e2bc567400506644f87f1564d7857a02a772025",
     "lastmod": "2026-06-09"
   },
   "/ja/pokemon/bulbasaur/": {
@@ -1688,7 +1688,7 @@
     "lastmod": "2026-06-09"
   },
   "/ja/pokemon/sylveon/": {
-    "hash": "6050e30c5d7ae8c322233c185fed2371e19657ef265336f6b68ae947084378db",
+    "hash": "727678c8795e91ad8af1ca657381874561b977834f0108c290a0aed91dab6766",
     "lastmod": "2026-06-09"
   },
   "/ko/pokemon/bulbasaur/": {
@@ -2252,7 +2252,7 @@
     "lastmod": "2026-06-09"
   },
   "/ko/pokemon/sylveon/": {
-    "hash": "b3d01a452ca0fefb21538df7266ea5bbd0f41209b3497ab231f0be0299fa6fb8",
+    "hash": "9ccc965f608f1d747ce9dca45480001dbfce837c6547696ae69e37357c134996",
     "lastmod": "2026-06-09"
   },
   "/zh/pokemon/bulbasaur/": {
@@ -2816,27 +2816,27 @@
     "lastmod": "2026-06-09"
   },
   "/zh/pokemon/sylveon/": {
-    "hash": "896261b84af09e326e832082d11afa9107e30494f7177bfd182cdc31420583fc",
+    "hash": "f5028b1ce511595bc191d58e5df67f26042a810803077ac4835896bb40a5ecc4",
     "lastmod": "2026-06-09"
   },
   "/": {
-    "hash": "1c09c1e994b84f6f4f6d32ebd38d336a7972239f2ca8100b5f4d68d9e4d62c5e",
+    "hash": "6fe8336bb80245ce0607c3e7fe88eea46d4b9d4b6c638d7deb1db16e462df723",
     "lastmod": "2026-06-09"
   },
   "/fr/": {
-    "hash": "b35a99d2592ff3d69e3465a3c9c8a09a29857b3c8497a3353a271c9fdc38d11a",
+    "hash": "4ebbabba968468549494f74335dd3e752f81de7eb95f2eb8277561d20ab42f93",
     "lastmod": "2026-06-09"
   },
   "/ja/": {
-    "hash": "7979ceb8af96bd6dd791ba411c0b8ca2404a2bc29c9260693ea4f9cac4af1054",
+    "hash": "d9dcf2ee1190894f8255daf3f1b72b85518649bf855085555a2602cfd977e56d",
     "lastmod": "2026-06-09"
   },
   "/ko/": {
-    "hash": "a0aff27c73672fba97e33bc939acd25b11091b077fd38b00ef2dadb0fefb119f",
+    "hash": "297b601f0b16901947f8b57a74346389b780e034c3a0f953867559ed2723ccae",
     "lastmod": "2026-06-09"
   },
   "/zh/": {
-    "hash": "32906f580f54aacdfa3949747a91dd58b926b8f09d772e33e2e9b5171f2cf50c",
+    "hash": "a7e198d36bcb19bad5af10f4311425e5b250ee4698da487439013b6416dc046f",
     "lastmod": "2026-06-09"
   },
   "/info/": {
