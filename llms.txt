@@ -1,8 +1,8 @@
 # PokéTruc
 
-> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists 584 such cards across 149 Pokémon (Generations 1, 2, 3, 6), published from 1996 to 2026.
+> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists 585 such cards across 149 Pokémon (Generations 1, 2, 3, 6), published from 1996 to 2026.
 
-The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: 435 Japanese-exclusive, 47 Western-exclusive, 46 Chinese-exclusive, 26 English-exclusive, 15 Asian-exclusive, 4 Indonesian-exclusive, 3 Korean-exclusive, 2 German-exclusive, 2 Spanish-exclusive, 1 French-exclusive, 1 Italian-exclusive, 1 Portuguese-exclusive, 1 Polish-exclusive. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: 436 Japanese-exclusive, 47 Western-exclusive, 46 Chinese-exclusive, 26 English-exclusive, 15 Asian-exclusive, 4 Indonesian-exclusive, 3 Korean-exclusive, 2 German-exclusive, 2 Spanish-exclusive, 1 French-exclusive, 1 Italian-exclusive, 1 Portuguese-exclusive, 1 Polish-exclusive. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
 
 ## Main pages
 
@@ -128,7 +128,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Electabuzz](https://poketruc.com/pokemon/electabuzz/): 5 exclusive cards
 - [Magmar](https://poketruc.com/pokemon/magmar/): 6 exclusive cards
 - [Pinsir](https://poketruc.com/pokemon/pinsir/): 2 exclusive cards
-- [Tauros](https://poketruc.com/pokemon/tauros/): 4 exclusive cards
+- [Tauros](https://poketruc.com/pokemon/tauros/): 5 exclusive cards
 - [Magikarp](https://poketruc.com/pokemon/magikarp/): 6 exclusive cards
 - [Gyarados](https://poketruc.com/pokemon/gyarados/): 8 exclusive cards
 - [Lapras](https://poketruc.com/pokemon/lapras/): 5 exclusive cards
