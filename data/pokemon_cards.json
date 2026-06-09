@@ -7142,5 +7142,28 @@
     ],
     "year": 2015,
     "artist": "Phanpy"
-  }
+  },
+  {
+  "pokemonId": 700,
+  "name": "Gem Pack Vol. 2",
+  "imageName": "700_Sylveon_scn_cbb2_915",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2025,
+  "artist": "HYOGONOSUKE"
+},{
+  "pokemonId": 700,
+  "name": "Terastal Gathering",
+  "imageName": "700_Sylveon_scn_csv95_234",
+  "rarity": "No Rarity",
+  "description": "https://www.pokebeach.com/2026/05/exclusive-sylveon-ex-and-multiple-eeveelution-products-to-release-for-chinas-blooming-legends-set",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2026,
+  "artist": "rika"
+}
 ]

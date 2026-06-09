@@ -556,7 +556,11 @@
     "lastmod": "2026-06-09"
   },
   "/pokemon/mew/": {
-    "hash": "47b59189d65dbdf94a184852af5291f5dcfd00ba1f8fe9d9fb9fbfe5a2bf8468",
+    "hash": "0fcef0b329242e325964784de754a82cbf30954f9e0334566560a21eefbfb76b",
+    "lastmod": "2026-06-09"
+  },
+  "/pokemon/sylveon/": {
+    "hash": "40e8e12b0d5aee3e842f3c5f76330f9b647c4134180ccacb499bd3e802f9f078",
     "lastmod": "2026-06-09"
   },
   "/fr/pokemon/bulbasaur/": {
@@ -1116,7 +1120,11 @@
     "lastmod": "2026-06-09"
   },
   "/fr/pokemon/mew/": {
-    "hash": "5470fc41a8c18288e5f927b5e833cb5a9ba412b149c16aa8c1db41c22c04818c",
+    "hash": "8c9d3747e5850aa84e2d056b336f89dc3d45720d0871772cfbb5320a8c26eb56",
+    "lastmod": "2026-06-09"
+  },
+  "/fr/pokemon/sylveon/": {
+    "hash": "258565145b5075fa8827598386355de8dc3bb6ebcd19050eeeb8774542808b05",
     "lastmod": "2026-06-09"
   },
   "/ja/pokemon/bulbasaur/": {
@@ -1676,7 +1684,11 @@
     "lastmod": "2026-06-09"
   },
   "/ja/pokemon/mew/": {
-    "hash": "65a35b8f5406be02539877a12cc4b4080e3f217236b2bbe1f933bc86b129e25e",
+    "hash": "3fa484cf644d213e1562fa64e652e7809d89ebefee6913fb38b15bee71998b20",
+    "lastmod": "2026-06-09"
+  },
+  "/ja/pokemon/sylveon/": {
+    "hash": "6050e30c5d7ae8c322233c185fed2371e19657ef265336f6b68ae947084378db",
     "lastmod": "2026-06-09"
   },
   "/ko/pokemon/bulbasaur/": {
@@ -2236,7 +2248,11 @@
     "lastmod": "2026-06-09"
   },
   "/ko/pokemon/mew/": {
-    "hash": "e0a5c7cc250b0634be86dc602cf55d5824aa8846a0aa3e53d1dfbf0557e779a3",
+    "hash": "41b3d0ceb13e041d248846d16a1caeb5210cd2505cb4d136b6af32892aa733d2",
+    "lastmod": "2026-06-09"
+  },
+  "/ko/pokemon/sylveon/": {
+    "hash": "b3d01a452ca0fefb21538df7266ea5bbd0f41209b3497ab231f0be0299fa6fb8",
     "lastmod": "2026-06-09"
   },
   "/zh/pokemon/bulbasaur/": {
@@ -2796,27 +2812,31 @@
     "lastmod": "2026-06-09"
   },
   "/zh/pokemon/mew/": {
-    "hash": "0eef83cce8e4b72249f120387f08fcc0ef9ff8e7132e24777f6611d0f65786cd",
+    "hash": "15a613ad55755d257740b237fd786f906f78ef6e7e291f6973d64be0be8a9d93",
+    "lastmod": "2026-06-09"
+  },
+  "/zh/pokemon/sylveon/": {
+    "hash": "896261b84af09e326e832082d11afa9107e30494f7177bfd182cdc31420583fc",
     "lastmod": "2026-06-09"
   },
   "/": {
-    "hash": "830321659afa5d7a2cd314c7f7b9b95f814e920acb7df9129a78d37db5a07f2e",
+    "hash": "ce891a6cab35cd384f9b3f1ab932c4b1d492e848d255c8dc80e2333c25f78dfc",
     "lastmod": "2026-06-09"
   },
   "/fr/": {
-    "hash": "2e8a9ac61328d6e93cb4b2de0be01fcb5323c9726ac1bd8a61461e588b0dbb55",
+    "hash": "a9fed01094aee11269db455fa771b287d95ae31d5fc4569512aac377f545cf3d",
     "lastmod": "2026-06-09"
   },
   "/ja/": {
-    "hash": "392fac82ff6b28c563b9eefaa68d90895f01974480ded977de179109cb780422",
+    "hash": "fee6792dcb851ed1c1a45262b70184a731dbe5a103a62ec09d684fe6b1639e02",
     "lastmod": "2026-06-09"
   },
   "/ko/": {
-    "hash": "e8697db1a586ae79282f951db18da8fe06ec90e1f22ac3bfb93cd2c335945b09",
+    "hash": "2bc08e2e45d5424afac954437eb2cd73ec985812d33b83cca4f8038781b00682",
     "lastmod": "2026-06-09"
   },
   "/zh/": {
-    "hash": "4da0c957016437f6802445dd9a980a5d9251e2ae925e25d024334d7244a56f37",
+    "hash": "195e6cfcb52c3f2ea3e71a5b573bf95da250a7a5a11e7569e6ca3a3ca8fde638",
     "lastmod": "2026-06-09"
   },
   "/info/": {

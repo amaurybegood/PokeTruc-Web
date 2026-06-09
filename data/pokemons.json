@@ -1987,5 +1987,18 @@
     "imageName": "victini",
     "generation": 5,
     "researchStatus": "coming_soon"
+  },
+  {
+    "id": 700,
+    "name": {
+      "en": "Sylveon",
+      "fr": "Nymphali",
+      "jp": "ニンフィア",
+      "ko": "님피아",
+      "zh": "仙子伊布"
+    },
+    "imageName": "sylveon",
+    "generation": 6,
+    "researchStatus": "done"
   }
 ]
