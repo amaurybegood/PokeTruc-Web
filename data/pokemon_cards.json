@@ -7144,6 +7144,95 @@
     "artist": "Phanpy"
   },
   {
+  "pokemonId": 244,
+  "name": "PokéPark Premium File: Blue Sheet",
+  "imageName": "244_Entei_jpn_pkpb_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2005,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 250,
+  "name": "PokéPark Premium File: Blue Sheet",
+  "imageName": "250_Ho-oh_jpn_pkpb_2",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2005,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 245,
+  "name": "PokéPark Premium File: Blue Sheet",
+  "imageName": "245_Suicune_jpn_pkpb_3",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2005,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 382,
+  "name": "PokéPark Premium File: Blue Sheet",
+  "imageName": "382_Kyogre_jpn_pkpb_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2005,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 243,
+  "name": "PokéPark Premium File: Blue Sheet",
+  "imageName": "243_Raikou_jpn_pkpb_5",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2005,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 249,
+  "name": "PokéPark Premium File: Blue Sheet",
+  "imageName": "249_Lugia_jpn_pkpb_6",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2005,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 383,
+  "name": "PokéPark Premium File: Blue Sheet",
+  "imageName": "383_Groudon_jpn_pkpb_7",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2005,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 384,
+  "name": "PokéPark Premium File: Blue Sheet",
+  "imageName": "384_Rayquaza_jpn_pkpb_9",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2005,
+  "artist": "Kouki Saitou"
+},
+  {
   "pokemonId": 700,
   "name": "Gem Pack Vol. 2",
   "imageName": "700_Sylveon_scn_cbb2_915",

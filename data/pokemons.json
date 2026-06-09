@@ -1976,6 +1976,110 @@
     "researchStatus": "coming_soon"
   },
   {
+    "id": 243,
+    "name": {
+      "en": "Raikou",
+      "fr": "Raikou",
+      "jp": "ライコウ",
+      "ko": "라이코",
+      "zh": "雷公"
+    },
+    "imageName": "raikou",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 244,
+    "name": {
+      "en": "Entei",
+      "fr": "Entei",
+      "jp": "エンテイ",
+      "ko": "앤테이",
+      "zh": "炎帝"
+    },
+    "imageName": "entei",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 245,
+    "name": {
+      "en": "Suicune",
+      "fr": "Suicune",
+      "jp": "スイクン",
+      "ko": "스이쿤",
+      "zh": "水君"
+    },
+    "imageName": "suicune",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 249,
+    "name": {
+      "en": "Lugia",
+      "fr": "Lugia",
+      "jp": "ルギア",
+      "ko": "루기아",
+      "zh": "洛奇亚"
+    },
+    "imageName": "lugia",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 250,
+    "name": {
+      "en": "Ho-Oh",
+      "fr": "Ho-Oh",
+      "jp": "ホウオウ",
+      "ko": "칠색조",
+      "zh": "凤王"
+    },
+    "imageName": "ho-oh",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 382,
+    "name": {
+      "en": "Kyogre",
+      "fr": "Kyogre",
+      "jp": "カイオーガ",
+      "ko": "가이오가",
+      "zh": "盖欧卡"
+    },
+    "imageName": "kyogre",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 383,
+    "name": {
+      "en": "Groudon",
+      "fr": "Groudon",
+      "jp": "グラードン",
+      "ko": "그란돈",
+      "zh": "固拉多"
+    },
+    "imageName": "groudon",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 384,
+    "name": {
+      "en": "Rayquaza",
+      "fr": "Rayquaza",
+      "jp": "レックウザ",
+      "ko": "레쿠쟈",
+      "zh": "烈空坐"
+    },
+    "imageName": "rayquaza",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 494,
     "name": {
       "en": "Victini",
