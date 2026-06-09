@@ -34,5 +34,16 @@
     "year": 2026,
     "note": "Chinese-exclusive Supporter card (丹瑜)",
     "link": "/trainers/#carmine_csv8c_255"
-  }
+  },{
+  "pokemonId": 700,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "700_Sylveon_jpn_svp_70",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2022,
+  "artist": "YU NAGABA"
+}
 ]
