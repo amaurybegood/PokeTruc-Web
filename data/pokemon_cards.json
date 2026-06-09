@@ -3001,6 +3001,21 @@
     "region": "western"
   },
   {
+  "pokemonId": 25,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "25_Pikachu_jpn_svp_98",
+  "rarity": "Promo",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Detective_Pikachu_(SV-P_Promo_98)",
+    "languages": [
+      "🇯🇵",
+      "🇨🇳",
+      "🇰🇷"
+    ],
+  "year": 2022,
+  "artist": "MINAMINAMI Take",
+  "region": "asian"
+},
+  {
     "pokemonId": 26,
     "name": "Pokémon VS",
     "imageName": "26_Raichu_jpn_versus1_27",
