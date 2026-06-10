@@ -22,6 +22,34 @@ const news = (() => {
   catch { return []; }
 })();
 
+// Fail fast on malformed data: a typo in a JSON file should break the build
+// loudly instead of silently dropping content from the site.
+(function validateData() {
+  const fail = (file, msg, entry) => {
+    throw new Error(`${file}: ${msg} — ${JSON.stringify(entry).slice(0, 150)}`);
+  };
+  const pokemonIds = new Set();
+  pokemons.forEach(p => {
+    if (typeof p.id !== 'number') fail('pokemons.json', 'id must be a number', p);
+    if (!p.name || !p.name.en)    fail('pokemons.json', 'missing name.en', p);
+    if (!p.imageName)             fail('pokemons.json', 'missing imageName', p);
+    pokemonIds.add(p.id);
+  });
+  cards.forEach(c => {
+    if (!c.imageName)               fail('pokemon_cards.json', 'missing imageName', c);
+    if (!Array.isArray(c.languages)) fail('pokemon_cards.json', 'languages must be an array', c);
+    if (!c.name)                    fail('pokemon_cards.json', 'missing name', c);
+    if (!pokemonIds.has(c.pokemonId)) fail('pokemon_cards.json', `unknown pokemonId ${c.pokemonId}`, c);
+    if (!fs.existsSync(`cards/${c.imageName}.avif`)) fail('pokemon_cards.json', `image not found: cards/${c.imageName}.avif`, c);
+  });
+  trainerCards.forEach(c => {
+    if (!c.imageName)               fail('trainer_cards.json', 'missing imageName', c);
+    if (!Array.isArray(c.languages)) fail('trainer_cards.json', 'languages must be an array', c);
+    if (!c.title)                   fail('trainer_cards.json', 'missing title', c);
+    if (!fs.existsSync(`cards/${c.imageName}.avif`)) fail('trainer_cards.json', `image not found: cards/${c.imageName}.avif`, c);
+  });
+})();
+
 const BASE_URL = 'https://poketruc.com';
 const TODAY    = new Date().toISOString().split('T')[0];
 
@@ -57,8 +85,32 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 32;
-const JS_V  = 19;
+const CSS_V = 33;
+const JS_V  = 20;
+
+// Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
+// Emitted as width/height attributes so browsers reserve space before the
+// image loads (prevents layout shift).
+const imageSizeCache = new Map();
+function imageSize(relPath) {
+  if (imageSizeCache.has(relPath)) return imageSizeCache.get(relPath);
+  let size = null;
+  try {
+    const buf = fs.readFileSync(relPath);
+    if (relPath.endsWith('.avif')) {
+      const idx = buf.indexOf('ispe');
+      if (idx >= 0) size = { w: buf.readUInt32BE(idx + 8), h: buf.readUInt32BE(idx + 12) };
+    } else if (relPath.endsWith('.png')) {
+      size = { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+    }
+  } catch {}
+  imageSizeCache.set(relPath, size);
+  return size;
+}
+function imgSizeAttrs(relPath) {
+  const s = imageSize(relPath);
+  return s ? ` width="${s.w}" height="${s.h}"` : '';
+}
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
 
@@ -771,7 +823,7 @@ function hreflangBlock(urlsByLang) {
 }
 
 // Common <head> head block (everything between <meta charset> and </head>).
-function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, ogImage, twitterCard }) {
+function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, ogImage, twitterCard, preloadImage }) {
   const og = ogImage || `${BASE_URL}/logo.png`;
   const twCard = twitterCard || 'summary_large_image';
   const t = escapeHtml(title);
@@ -784,7 +836,8 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
   <meta name="robots" content="index, follow">
 
   <link rel="preload" as="style" href="/style.css?v=${CSS_V}">
-  <link rel="preload" as="image" href="/logo.webp" type="image/webp">
+  <link rel="preload" as="image" href="/logo.webp" type="image/webp">${preloadImage ? `
+  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">` : ''}
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
 
@@ -861,8 +914,30 @@ function footerBlock(lang) {
   </footer>`;
 }
 
+// Short content hash of the data files, exposed as window.DATA_V so client-side
+// fetches of /data/*.json get a cache-busting query string that changes exactly
+// when the data changes (GitHub Pages caches everything for 10 minutes).
+const DATA_V = crypto.createHash('sha256')
+  .update(fs.readFileSync('data/pokemons.json'))
+  .update(fs.readFileSync('data/pokemon_cards.json'))
+  .digest('hex').slice(0, 8);
+
+// Fullscreen card viewer (accessible dialog). pokemon.js manages focus,
+// Escape and the dynamic alt text.
+const CLOSE_LABEL = { en: 'Close', fr: 'Fermer', ja: '閉じる', ko: '닫기', zh: '关闭' };
+
+function fullscreenBlock(lang) {
+  return `  <!-- Fullscreen -->
+  <div id="fullscreen" class="fullscreen hidden" role="dialog" aria-modal="true">
+    <div class="fullscreen-backdrop"></div>
+    <button type="button" id="fullscreen-close" class="fullscreen-close" aria-label="${CLOSE_LABEL[lang]}">✕</button>
+    <img id="fullscreen-img" src="" alt="">
+  </div>`;
+}
+
 function scriptTags() {
   return `  <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script>window.DATA_V='${DATA_V}';</script>
   <script src="/i18n.js?v=${JS_V}"></script>
   <script src="/theme.js?v=${JS_V}"></script>
   <script src="/backtotop.js?v=${JS_V}"></script>`;
@@ -905,11 +980,16 @@ function cardAltText(lang, card, localizedName) {
   return `${localizedName} — ${card.name} (${adj}${year}) ${suffix}${artistPart}`;
 }
 
-function renderCard(card, pokemon, L, lang, localizedName) {
+function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
   const alt = cardAltText(lang, card, localizedName);
+  // First card on the page is the LCP candidate: fetch it eagerly with high
+  // priority; everything below the fold stays lazy.
+  const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
   return `
         <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
-          <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy">
+          <button type="button" class="card-zoom">
+            <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}"${loadAttrs} decoding="async"${imgSizeAttrs(`cards/${card.imageName}.avif`)}>
+          </button>
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.name)}</div>
             <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
@@ -941,12 +1021,12 @@ function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
     <section class="cards-section">
       ${sectionTitle}
       <div class="cards-grid">
-        ${cs.map(c => renderCard(c, pokemon, L, lang, localizedName)).join('')}
+        ${cs.map((c, i) => renderCard(c, pokemon, L, lang, localizedName, i === 0)).join('')}
       </div>
     </section>`;
   }
 
-  const groupsHTML = orderedFlags.map(flag => {
+  const groupsHTML = orderedFlags.map((flag, gi) => {
     const cs = groups.get(flag).slice().sort((a, b) => a.year - b.year);
     const heading = headingByFlag[flag] || 'Other-exclusive cards';
     return `
@@ -956,7 +1036,7 @@ function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
           <span class="cards-lang-caret" aria-hidden="true">▾</span>
         </summary>
         <div class="cards-grid">
-          ${cs.map(c => renderCard(c, pokemon, L, lang, localizedName)).join('')}
+          ${cs.map((c, i) => renderCard(c, pokemon, L, lang, localizedName, gi === 0 && i === 0)).join('')}
         </div>
       </details>`;
   }).join('');
@@ -968,15 +1048,32 @@ function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
     </section>`;
 }
 
+// First card as rendered (largest exclusivity group, earliest year). It's the
+// LCP candidate on detail pages, so the <head> preloads it. Mirrors the
+// ordering in buildCardsSectionHTML / buildTrainersSectionHTML.
+function firstDisplayedCard(items) {
+  if (!items.length) return null;
+  const groups = groupBy(items, exclusivityKey);
+  const orderedFlags = [
+    ...LANG_INFO.map(l => l.flag).filter(f => groups.has(f)),
+    ...[...groups.keys()].filter(f => !LANG_INFO.some(l => l.flag === f)),
+  ].sort((a, b) => groups.get(b).length - groups.get(a).length);
+  const first = orderedFlags.length ? groups.get(orderedFlags[0]) : items;
+  return first.slice().sort((a, b) => a.year - b.year)[0];
+}
+
 // --- Trainer cards (flat gallery, grouped by exclusivity) --------------------
 // Trainer cards have no pokemonId; they carry a `title` (what the card depicts)
 // instead of being named by a Pokémon. Everything else mirrors a Pokémon card.
 
-function renderTrainerCard(card, L, lang) {
+function renderTrainerCard(card, L, lang, eager = false) {
   const alt = cardAltText(lang, card, card.title);
+  const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
   return `
         <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
-          <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy">
+          <button type="button" class="card-zoom">
+            <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}"${loadAttrs} decoding="async"${imgSizeAttrs(`cards/${card.imageName}.avif`)}>
+          </button>
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.title)}</div>
             <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
@@ -1008,12 +1105,12 @@ function buildTrainersSectionHTML(items, L, lang) {
     <section class="cards-section">
       ${sectionTitle}
       <div class="cards-grid">
-        ${cs.map(c => renderTrainerCard(c, L, lang)).join('')}
+        ${cs.map((c, i) => renderTrainerCard(c, L, lang, i === 0)).join('')}
       </div>
     </section>`;
   }
 
-  const groupsHTML = orderedFlags.map(flag => {
+  const groupsHTML = orderedFlags.map((flag, gi) => {
     const cs = groups.get(flag).slice().sort((a, b) => a.year - b.year);
     const heading = headingByFlag[flag] || 'Other-exclusive cards';
     return `
@@ -1023,7 +1120,7 @@ function buildTrainersSectionHTML(items, L, lang) {
           <span class="cards-lang-caret" aria-hidden="true">▾</span>
         </summary>
         <div class="cards-grid">
-          ${cs.map(c => renderTrainerCard(c, L, lang)).join('')}
+          ${cs.map((c, i) => renderTrainerCard(c, L, lang, gi === 0 && i === 0)).join('')}
         </div>
       </details>`;
   }).join('');
@@ -1075,7 +1172,6 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
   const canonical  = urlsByLang[lang];
 
   const breadcrumbList = {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": L.pokedex, "item": urlForRoot(lang) },
@@ -1083,7 +1179,6 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
     ],
   };
   const collectionPage = {
-    "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": `${canonical}#collection`,
     "name": L.detailTitle(localizedName, count).replace(' | PokéTruc', ''),
@@ -1102,7 +1197,6 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
   // Per-card structured data: each card → VisualArtwork, wrapped in an ItemList
   // so Google can index individual cards (e.g. "Bulbasaur Sumiyoshi Kizuki 1998").
   const itemList = {
-    "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": `${canonical}#cards`,
     "name": `${localizedName} — ${L.cardsSection(count)}`,
@@ -1140,6 +1234,7 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
 
   const ogImage = `${BASE_URL}/monsters/${pokemon.imageName}.png`;
 
+  const firstCard = firstDisplayedCard(pkCards);
   const head = headBlock({
     lang,
     title,
@@ -1149,6 +1244,7 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
     jsonLd,
     ogImage,
     twitterCard: 'summary',
+    preloadImage: firstCard ? `/cards/${firstCard.imageName}.avif` : undefined,
   });
 
   // <link rel="prev/next"> for crawl chain
@@ -1205,11 +1301,7 @@ ${setsArtistsHTML}
 
 ${footerBlock(lang)}
 
-  <!-- Fullscreen -->
-  <div id="fullscreen" class="fullscreen hidden">
-    <div class="fullscreen-backdrop"></div>
-    <img id="fullscreen-img" src="" alt="">
-  </div>
+${fullscreenBlock(lang)}
 
 ${scriptTags()}
   <script src="/pokemon.js?v=${JS_V}"></script>
@@ -1223,11 +1315,12 @@ ${scriptTags()}
 
 function renderNewsItem(item, L) {
   const imgSrc = item.image || (item.imageName ? `/cards/${item.imageName}.avif` : '');
+  const sizeAttrs = item.imageName && !item.image ? imgSizeAttrs(`cards/${item.imageName}.avif`) : '';
   const flags = Array.isArray(item.languages) ? item.languages.join(' ') : '';
   const metaBits = [flags, item.year, item.set].filter(Boolean)
     .map(b => escapeHtml(String(b))).join(' · ');
   const inner = `
-        ${imgSrc ? `<img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(item.title || '')}" loading="lazy">` : ''}
+        ${imgSrc ? `<img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(item.title || '')}" loading="lazy" decoding="async"${sizeAttrs}>` : ''}
         <div class="news-card-info">
           <div class="news-card-name">${escapeHtml(item.title || '')}</div>
           ${metaBits ? `<div class="news-card-meta">${metaBits}</div>` : ''}
@@ -1273,7 +1366,6 @@ function indexPageHTML(lang, pokemonsWithCards) {
     "sameAs": [REDDIT_BEGOODERRR_URL],
   };
   const websiteSchema = {
-    "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${BASE_URL}/#website`,
     "url": `${BASE_URL}/`,
@@ -1284,7 +1376,6 @@ function indexPageHTML(lang, pokemonsWithCards) {
     "creator": { "@id": `${BASE_URL}/#creator` },
   };
   const collectionPage = {
-    "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": `${canonical}#collection`,
     "url": canonical,
@@ -1299,7 +1390,6 @@ function indexPageHTML(lang, pokemonsWithCards) {
     },
   };
   const breadcrumbList = {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": L.pokedex, "item": urlForRoot(lang) },
@@ -1361,6 +1451,7 @@ ${newsHTML}
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
     </div>
+    <p id="grid-status" class="visually-hidden" role="status"></p>
     <div id="pokemon-grid"></div>
 
     <p class="noscript-fallback">${escapeHtml(L.noscript)}</p>
@@ -1395,7 +1486,6 @@ function infoPageHTML(lang) {
   const canonical  = urlsByLang[lang];
 
   const breadcrumbList = {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": L.pokedex, "item": urlForRoot(lang) },
@@ -1496,7 +1586,6 @@ function trainersPageHTML(lang) {
   const canonical  = urlsByLang[lang];
 
   const breadcrumbList = {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": L.pokedex,  "item": urlForRoot(lang) },
@@ -1505,6 +1594,7 @@ function trainersPageHTML(lang) {
   };
   const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [breadcrumbList] });
 
+  const firstCard = firstDisplayedCard(trainerCards);
   const head = headBlock({
     lang,
     title: L.trainersTitle,
@@ -1513,6 +1603,7 @@ function trainersPageHTML(lang) {
     urlsByLang,
     jsonLd,
     twitterCard: 'summary',
+    preloadImage: firstCard ? `/cards/${firstCard.imageName}.avif` : undefined,
   });
 
   const sectionsHTML = trainerCards.length
@@ -1542,11 +1633,7 @@ ${sectionsHTML}
 
 ${footerBlock(lang)}
 
-  <!-- Fullscreen -->
-  <div id="fullscreen" class="fullscreen hidden">
-    <div class="fullscreen-backdrop"></div>
-    <img id="fullscreen-img" src="" alt="">
-  </div>
+${fullscreenBlock(lang)}
 
 ${scriptTags()}
   <script src="/pokemon.js?v=${JS_V}"></script>

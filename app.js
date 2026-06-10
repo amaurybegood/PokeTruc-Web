@@ -52,9 +52,12 @@ function activeFlag() {
 async function loadData() {
   const loader = document.getElementById('loader');
   try {
+    // window.DATA_V is a content hash injected at build time; it busts the
+    // GitHub Pages cache (10 min) exactly when the data files change.
+    const v = window.DATA_V ? `?v=${window.DATA_V}` : '';
     const [pkRes, cardRes] = await Promise.all([
-      fetch('/data/pokemons.json'),
-      fetch('/data/pokemon_cards.json'),
+      fetch(`/data/pokemons.json${v}`),
+      fetch(`/data/pokemon_cards.json${v}`),
     ]);
     if (!pkRes.ok || !cardRes.ok) throw new Error('HTTP ' + (pkRes.status || cardRes.status));
     pokemons = (await pkRes.json()).sort((a, b) => a.id - b.id);
@@ -130,8 +133,11 @@ function createTile(pokemon, flag, prefix) {
   const pkCards = cardsFor(pokemon.id, flag);
   const hasCards = pkCards.length > 0;
 
-  const div = document.createElement('div');
+  // Tiles with cards are real links: keyboard-operable and middle-clickable
+  // for free; tiles without cards stay inert divs.
+  const div = document.createElement(hasCards ? 'a' : 'div');
   div.className = 'pokemon-card' + (hasCards ? '' : ' no-cards');
+  if (hasCards) div.href = `${prefix}pokemon/${slugify(pokemon.name.en)}/`;
 
   const badgeClass = pokemon.researchStatus === 'in_progress' ? 'badge wip'
     : pokemon.researchStatus === 'coming_soon' ? 'badge coming-soon'
@@ -145,7 +151,7 @@ function createTile(pokemon, flag, prefix) {
 
   div.innerHTML = `
     <span class="pokemon-number">#${pokemon.id}</span>
-    <img src="/monsters/${pokemon.imageName}.png" alt="${pokemonName(pokemon)}" loading="lazy">
+    <img src="/monsters/${pokemon.imageName}.png" alt="${pokemonName(pokemon)}" loading="lazy" decoding="async" width="72" height="72">
     <div class="name">${pokemonName(pokemon)}</div>
     <span class="${badgeClass}">${badgeLabel}</span>
   `;
@@ -157,9 +163,6 @@ function createTile(pokemon, flag, prefix) {
         img.src = `/cards/${card.imageName}.avif`;
       });
     }, { once: true });
-    div.addEventListener('click', () => {
-      window.location.href = `${prefix}pokemon/${slugify(pokemon.name.en)}/`;
-    });
   }
 
   return div;
@@ -188,9 +191,19 @@ function renderGenNav(gens) {
   });
 }
 
+// Announce filter/search results to screen readers (role="status" element).
+function announceResults(count) {
+  const status = document.getElementById('grid-status');
+  if (!status) return;
+  status.textContent = count === 0
+    ? t('no.pokemon')
+    : t('results.count').replace('{n}', count);
+}
+
 function renderGrid(list) {
   const grid = document.getElementById('pokemon-grid');
   grid.innerHTML = '';
+  announceResults(list.length);
 
   if (list.length === 0) {
     grid.innerHTML = `<p id="empty-state">${t('no.pokemon')}</p>`;

@@ -1,0 +1,13 @@
+{
+  "name": "poketruc-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site generator for poketruc.com — exclusive Pokémon TCG card illustrations",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.js"
+  }
+}

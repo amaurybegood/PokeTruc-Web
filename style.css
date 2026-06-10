@@ -617,6 +617,7 @@ a.news-card:hover {
 
 .news-card img {
   width: 56px;
+  height: auto;
   flex-shrink: 0;
   align-self: flex-start;
   border-radius: 6px;
@@ -657,6 +658,9 @@ a.news-card:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Tiles with cards are real <a> elements (keyboard + middle-click). */
+  color: inherit;
+  text-decoration: none;
   justify-content: center;
 }
 
@@ -707,16 +711,22 @@ a.news-card:hover {
 
 .pokemon-card .badge.wip {
   background: #f0a500;
+  color: #1d1d1f; /* white on #f0a500 fails WCAG AA */
 }
 
 .pokemon-card .badge.coming-soon {
-  background: #aaa;
+  background: #6e6e73; /* #aaa failed WCAG AA with white text */
 }
 
 .pokemon-card .badge.no-card {
   background: transparent;
   border: 1px solid var(--border);
   color: var(--text-secondary);
+}
+
+.pokemon-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .pokemon-card.no-cards {
@@ -848,8 +858,25 @@ a.news-card:hover {
   box-shadow: 0 0 0 3px var(--accent);
 }
 
+/* The card image sits inside a real <button> so keyboard users can open the
+   fullscreen viewer (Enter/Space). */
+.card-zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.card-zoom:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .card-item img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -1003,6 +1030,31 @@ a.news-card:hover {
   max-height: 90vh;
   object-fit: contain;
   border-radius: 12px;
+}
+
+.fullscreen-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.fullscreen-close:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.fullscreen-close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 /* Empty state */
