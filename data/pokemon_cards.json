@@ -7488,5 +7488,49 @@
   ],
   "year": 2004,
   "artist": "Kouki Saitou"
+},{
+  "pokemonId": 196,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "196_Espeon_jpn_svp_66",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2022,
+  "artist": "YU NAGABA"
+},{
+  "pokemonId": 197,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "197_Umbreon_jpn_svp_67",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2022,
+  "artist": "YU NAGABA"
+},{
+  "pokemonId": 470,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "470_Leafeon_jpn_svp_68",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2022,
+  "artist": "YU NAGABA"
+},{
+  "pokemonId": 471,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "471_Glaceon_jpn_svp_69",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2022,
+  "artist": "YU NAGABA"
 }
 ]

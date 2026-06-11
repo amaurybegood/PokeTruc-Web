@@ -1976,6 +1976,32 @@
     "researchStatus": "coming_soon"
   },
   {
+    "id": 196,
+    "name": {
+      "en": "Espeon",
+      "fr": "Mentali",
+      "jp": "エーフィ",
+      "ko": "에브이",
+      "zh": "太阳伊布"
+    },
+    "imageName": "espeon",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 197,
+    "name": {
+      "en": "Umbreon",
+      "fr": "Noctali",
+      "jp": "ブラッキー",
+      "ko": "블래키",
+      "zh": "月亮伊布"
+    },
+    "imageName": "umbreon",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 243,
     "name": {
       "en": "Raikou",
@@ -2180,6 +2206,32 @@
       "zh": "小卡比兽"
     },
     "imageName": "munchlax",
+    "generation": 4,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 470,
+    "name": {
+      "en": "Leafeon",
+      "fr": "Phyllali",
+      "jp": "リーフィア",
+      "ko": "리피아",
+      "zh": "叶伊布"
+    },
+    "imageName": "leafeon",
+    "generation": 4,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 471,
+    "name": {
+      "en": "Glaceon",
+      "fr": "Givrali",
+      "jp": "グレイシア",
+      "ko": "글레이시아",
+      "zh": "冰伊布"
+    },
+    "imageName": "glaceon",
     "generation": 4,
     "researchStatus": "in_progress"
   },
