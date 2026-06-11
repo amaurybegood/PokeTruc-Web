@@ -2197,6 +2197,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 400,
+    "name": {
+      "en": "Bibarel",
+      "fr": "Castorno",
+      "jp": "ビーダル",
+      "ko": "비버통",
+      "zh": "大尾狸"
+    },
+    "imageName": "bibarel",
+    "generation": 4,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 446,
     "name": {
       "en": "Munchlax",

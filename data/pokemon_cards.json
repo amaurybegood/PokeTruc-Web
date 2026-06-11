@@ -7565,5 +7565,16 @@
   ],
   "year": 2025,
   "artist": "HYOGONOSUKE"
+},{
+  "pokemonId": 400,
+  "name": "Gallant Galaxy: Brave",
+  "imageName": "400_Bibarel_scn_cs5b_112",
+  "rarity": "Common",
+  "description": "",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2024,
+  "artist": "sowsow"
 }
 ]
