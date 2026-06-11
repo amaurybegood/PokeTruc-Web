@@ -7444,5 +7444,49 @@
   ],
   "year": 2004,
   "artist": "Kanako Eo"
+},{
+  "pokemonId": 249,
+  "name": "PCG-P Promos",
+  "imageName": "249_Lugia_jpn_pcgp_38",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2004,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 245,
+  "name": "PCG-P Promos",
+  "imageName": "245_Suicune_jpn_pcgp_39",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2004,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 384,
+  "name": "PCG-P Promos",
+  "imageName": "384_Rayquaza_jpn_pcgp_41",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2004,
+  "artist": "Kouki Saitou"
+},{
+  "pokemonId": 383,
+  "name": "PCG-P Promos",
+  "imageName": "383_Groudon_jpn_pcgp_42",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2004,
+  "artist": "Kouki Saitou"
 }
 ]
