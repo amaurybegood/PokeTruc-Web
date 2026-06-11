@@ -2210,6 +2210,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 448,
+    "name": {
+      "en": "Lucario",
+      "fr": "Lucario",
+      "jp": "ルカリオ",
+      "ko": "루카리오",
+      "zh": "路卡利欧"
+    },
+    "imageName": "lucario",
+    "generation": 4,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 470,
     "name": {
       "en": "Leafeon",

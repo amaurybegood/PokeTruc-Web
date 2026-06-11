@@ -7532,5 +7532,16 @@
   ],
   "year": 2022,
   "artist": "YU NAGABA"
+},{
+  "pokemonId": 448,
+  "name": "PCG-P Promos",
+  "imageName": "448_Lucario_jpn_pcgp_93",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2004,
+  "artist": "©2005 Pikachu Project"
 }
 ]
