@@ -2041,6 +2041,84 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 251,
+    "name": {
+      "en": "Celebi",
+      "fr": "Celebi",
+      "jp": "セレビィ",
+      "ko": "세레비",
+      "zh": "时拉比"
+    },
+    "imageName": "celebi",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 255,
+    "name": {
+      "en": "Torchic",
+      "fr": "Poussifeu",
+      "jp": "アチャモ",
+      "ko": "아차모",
+      "zh": "火稚鸡"
+    },
+    "imageName": "torchic",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 258,
+    "name": {
+      "en": "Mudkip",
+      "fr": "Gobou",
+      "jp": "ミズゴロウ",
+      "ko": "물짱이",
+      "zh": "水跃鱼"
+    },
+    "imageName": "mudkip",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 293,
+    "name": {
+      "en": "Whismur",
+      "fr": "Chuchmur",
+      "jp": "ゴニョニョ",
+      "ko": "소곤룡",
+      "zh": "咕妞妞"
+    },
+    "imageName": "whismur",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 380,
+    "name": {
+      "en": "Latias",
+      "fr": "Latias",
+      "jp": "ラティアス",
+      "ko": "라티아스",
+      "zh": "拉帝亚斯"
+    },
+    "imageName": "latias",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 381,
+    "name": {
+      "en": "Latios",
+      "fr": "Latios",
+      "jp": "ラティオス",
+      "ko": "라티오스",
+      "zh": "拉帝欧斯"
+    },
+    "imageName": "latios",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 382,
     "name": {
       "en": "Kyogre",
@@ -2077,6 +2155,32 @@
     },
     "imageName": "rayquaza",
     "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 385,
+    "name": {
+      "en": "Jirachi",
+      "fr": "Jirachi",
+      "jp": "ジラーチ",
+      "ko": "지라치",
+      "zh": "基拉祈"
+    },
+    "imageName": "jirachi",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 446,
+    "name": {
+      "en": "Munchlax",
+      "fr": "Goinfrex",
+      "jp": "ゴンベ",
+      "ko": "먹고자",
+      "zh": "小卡比兽"
+    },
+    "imageName": "munchlax",
+    "generation": 4,
     "researchStatus": "in_progress"
   },
   {

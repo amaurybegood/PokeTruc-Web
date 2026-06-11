@@ -1,8 +1,8 @@
 # PokéTruc
 
-> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists 585 such cards across 149 Pokémon (Generations 1, 2, 3, 6), published from 1996 to 2026.
+> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists 593 such cards across 157 Pokémon (Generations 1, 2, 3, 4, 6), published from 1996 to 2026.
 
-The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: 436 Japanese-exclusive, 47 Western-exclusive, 46 Chinese-exclusive, 26 English-exclusive, 15 Asian-exclusive, 4 Indonesian-exclusive, 3 Korean-exclusive, 2 German-exclusive, 2 Spanish-exclusive, 1 French-exclusive, 1 Italian-exclusive, 1 Portuguese-exclusive, 1 Polish-exclusive. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: 444 Japanese-exclusive, 47 Western-exclusive, 46 Chinese-exclusive, 26 English-exclusive, 15 Asian-exclusive, 4 Indonesian-exclusive, 3 Korean-exclusive, 2 German-exclusive, 2 Spanish-exclusive, 1 French-exclusive, 1 Italian-exclusive, 1 Portuguese-exclusive, 1 Polish-exclusive. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
 
 ## Main pages
 
@@ -10,7 +10,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Trainers](https://poketruc.com/trainers/): flat gallery of 2 language- and region-exclusive Trainer card illustrations, grouped by exclusivity category.
 - [Info / About](https://poketruc.com/info/): what the project is, plus credits and sources.
 
-## Pokémon (Generations 1, 2, 3, 6)
+## Pokémon (Generations 1, 2, 3, 4, 6)
 
 - [Bulbasaur](https://poketruc.com/pokemon/bulbasaur/): 9 exclusive cards
 - [Ivysaur](https://poketruc.com/pokemon/ivysaur/): 4 exclusive cards
@@ -157,9 +157,17 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Suicune](https://poketruc.com/pokemon/suicune/): 1 exclusive card
 - [Lugia](https://poketruc.com/pokemon/lugia/): 1 exclusive card
 - [Ho-Oh](https://poketruc.com/pokemon/ho-oh/): 1 exclusive card
+- [Celebi](https://poketruc.com/pokemon/celebi/): 1 exclusive card
+- [Torchic](https://poketruc.com/pokemon/torchic/): 1 exclusive card
+- [Mudkip](https://poketruc.com/pokemon/mudkip/): 1 exclusive card
+- [Whismur](https://poketruc.com/pokemon/whismur/): 1 exclusive card
+- [Latias](https://poketruc.com/pokemon/latias/): 1 exclusive card
+- [Latios](https://poketruc.com/pokemon/latios/): 1 exclusive card
 - [Kyogre](https://poketruc.com/pokemon/kyogre/): 1 exclusive card
 - [Groudon](https://poketruc.com/pokemon/groudon/): 1 exclusive card
 - [Rayquaza](https://poketruc.com/pokemon/rayquaza/): 1 exclusive card
+- [Jirachi](https://poketruc.com/pokemon/jirachi/): 1 exclusive card
+- [Munchlax](https://poketruc.com/pokemon/munchlax/): 1 exclusive card
 - [Sylveon](https://poketruc.com/pokemon/sylveon/): 3 exclusive cards
 
 ## Optional
