@@ -7543,5 +7543,27 @@
   ],
   "year": 2004,
   "artist": "©2005 Pikachu Project"
+},{
+  "pokemonId": 197,
+  "name": "Gem Pack Vol. 2",
+  "imageName": "197_Umbreon_scn_cbb2_615",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2025,
+  "artist": "HYOGONOSUKE"
+},{
+  "pokemonId": 470,
+  "name": "Gem Pack Vol. 2",
+  "imageName": "470_Leafeon_scn_cbb2_715",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2025,
+  "artist": "HYOGONOSUKE"
 }
 ]
