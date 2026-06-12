@@ -1718,18 +1718,23 @@ for (const lang of LANGS) {
 // 4) Sitemap with hreflang annotations. <lastmod> per URL comes from the
 //    per-page hash tracker so it only changes when the rendered HTML changes.
 const sitemapUrls = [];
-function sitemapEntry(urlsByLang, lang, urlKey, { priority, changefreq }) {
+function sitemapEntry(urlsByLang, lang, urlKey, { priority, changefreq, images = [] }) {
   const alt = LANGS.map(l =>
     `    <xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${urlsByLang[l]}"/>`
   ).join('\n');
   const lastmod = newState[urlKey]?.lastmod || TODAY;
+  // Google's image sitemap extension only reads <image:loc>; the other
+  // sub-tags (caption, title…) were deprecated in 2022 and are ignored.
+  const imgs = images.map(u =>
+    `    <image:image><image:loc>${u}</image:loc></image:image>`
+  ).join('\n');
   return `  <url>
     <loc>${urlsByLang[lang]}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
 ${alt}
-    <xhtml:link rel="alternate" hreflang="x-default" href="${urlsByLang.en}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${urlsByLang.en}"/>${imgs ? '\n' + imgs : ''}
   </url>`;
 }
 
@@ -1746,18 +1751,21 @@ ${alt}
 // Trainers page
 {
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForTrainers(l)]));
-  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathTrainers(lang), { priority: '0.7', changefreq: 'monthly' }));
+  const images = trainerCards.map(c => `${BASE_URL}/cards/${c.imageName}.avif`);
+  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathTrainers(lang), { priority: '0.7', changefreq: 'monthly', images }));
 }
 // Pokémon pages
 for (const p of pokemonsWithCards) {
   const slug = slugify(p.name.en);
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForPokemon(l, slug)]));
-  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathPokemon(lang, slug), { priority: '0.8', changefreq: 'monthly' }));
+  const images = cardsFor(p.id).map(c => `${BASE_URL}/cards/${c.imageName}.avif`);
+  for (const lang of LANGS) sitemapUrls.push(sitemapEntry(urlsByLang, lang, pathPokemon(lang, slug), { priority: '0.8', changefreq: 'monthly', images }));
 }
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${sitemapUrls.join('\n')}
 </urlset>`;
 
