@@ -7576,5 +7576,38 @@
   ],
   "year": 2024,
   "artist": "sowsow"
+},{
+  "pokemonId": 992,
+  "name": "Iron Hands ex - Arcane Truth (csv6 152)",
+  "imageName": "992_Iron Hands_scn_csv6_152",
+  "rarity": "No Rarity",
+  "description": "https://www.pokebeach.com/2026/04/exclusive-lisias-appeal-to-release-in-chinese-starry-crystal-set",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2025,
+  "artist": "Tonji Matsuno"
+},{
+  "pokemonId": 925,
+  "name": "Maushold ex - Bonus Round (csv4 158)",
+  "imageName": "925_Maushold_scn_csv4_158",
+  "rarity": "No Rarity",
+  "description": "https://www.pokebeach.com/2026/04/exclusive-lisias-appeal-to-release-in-chinese-starry-crystal-set",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2025,
+  "artist": "Yoshimi Miyoshi"
+},{
+  "pokemonId": 1000,
+  "name": "Gholdengo ex - Bonus Round (csv4 162)",
+  "imageName": "1000_Gholdengo_scn_csv4_162",
+  "rarity": "Hyper Rare",
+  "description": "https://www.pokebeach.com/2026/04/exclusive-lisias-appeal-to-release-in-chinese-starry-crystal-set",
+  "languages": [
+    "🇨🇳"
+  ],
+  "year": 2025,
+  "artist": "5ban Graphics"
 }
 ]

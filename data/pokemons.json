@@ -2286,5 +2286,44 @@
     "imageName": "sylveon",
     "generation": 6,
     "researchStatus": "in_progress"
+  },
+  {
+    "id": 925,
+    "name": {
+      "en": "Maushold",
+      "fr": "Famignol",
+      "jp": "イッカネズミ",
+      "ko": "파밀리쥐",
+      "zh": "一家鼠"
+    },
+    "imageName": "maushold",
+    "generation": 9,
+    "researchStatus": "done"
+  },
+  {
+    "id": 992,
+    "name": {
+      "en": "Iron Hands",
+      "fr": "Paume-de-Fer",
+      "jp": "テツノカイナ",
+      "ko": "무쇠손",
+      "zh": "铁臂膀"
+    },
+    "imageName": "iron-hands",
+    "generation": 9,
+    "researchStatus": "done"
+  },
+  {
+    "id": 1000,
+    "name": {
+      "en": "Gholdengo",
+      "fr": "Gromago",
+      "jp": "サーフゴー",
+      "ko": "타부자고",
+      "zh": "赛富豪"
+    },
+    "imageName": "gholdengo",
+    "generation": 9,
+    "researchStatus": "done"
   }
 ]
