@@ -2298,7 +2298,7 @@
     },
     "imageName": "maushold",
     "generation": 9,
-    "researchStatus": "done"
+    "researchStatus": "in_progress"
   },
   {
     "id": 992,
@@ -2311,7 +2311,7 @@
     },
     "imageName": "iron-hands",
     "generation": 9,
-    "researchStatus": "done"
+    "researchStatus": "in_progress"
   },
   {
     "id": 1000,
@@ -2324,6 +2324,6 @@
     },
     "imageName": "gholdengo",
     "generation": 9,
-    "researchStatus": "done"
+    "researchStatus": "in_progress"
   }
 ]
