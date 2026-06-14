@@ -1,5 +1,15 @@
 [
   {
+    "title": "Larry (CSV5 157)",
+    "name": "Fiery Black Crystal",
+    "imageName": "larry_csv5_157",
+    "rarity": "SAR",
+    "description": "https://www.pokebeach.com/2025/07/exclusive-larry-and-defiance-band-releasing-in-chinese-fiery-black-crystal-set",
+    "languages": ["🇨🇳"],
+    "year": 2025,
+    "artist": "Karya"
+  },
+  {
     "title": "Lisia's Appeal (CSV9C 257)",
     "name": "Stellar Crystal",
     "imageName": "lisia_scn_csv9_257",
@@ -10,7 +20,7 @@
     "artist": "Atsuko Nishida"
   },  
   {
-    "title": "Carmine",
+    "title": "Carmine (CSC8C 255)",
     "name": "Brilliant Illusions",
     "imageName": "carmine_csv8c_255",
     "rarity": "SAR",
