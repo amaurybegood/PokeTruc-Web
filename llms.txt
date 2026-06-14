@@ -7,7 +7,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 ## Main pages
 
 - [Pokédex (home)](https://poketruc.com/): searchable grid of all catalogued Pokémon, filterable by exclusivity category.
-- [Trainers](https://poketruc.com/trainers/): flat gallery of 3 language- and region-exclusive Trainer card illustrations, grouped by exclusivity category.
+- [Trainers](https://poketruc.com/trainers/): flat gallery of 4 language- and region-exclusive Trainer card illustrations, grouped by exclusivity category.
 - [Info / About](https://poketruc.com/info/): what the project is, plus credits and sources.
 
 ## Pokémon (Generations 1, 2, 3, 4, 6, 9)
