@@ -7712,5 +7712,79 @@
   "year": 2011,
   "artist": "kawayoo",
   "region": "western"
+},{
+  "pokemonId": 494,
+  "name": "Black & White Unnumbered Promos",
+  "imageName": "494_Victini_jpn_bwpunp_13",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2010,
+  "artist": "Naoki Saito"
+},{
+  "pokemonId": 494,
+  "name": "Black & White Promos",
+  "imageName": "494_Victini_jpn_bwp_234",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2010,
+  "artist": "Sanosuke Sakuma"
+},{
+  "pokemonId": 494,
+  "name": "Everyone's Exciting Battle",
+  "imageName": "494_Victini_jpn_wak_8",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2012,
+  "artist": "sui"
+},{
+  "pokemonId": 494,
+  "name": "XY Promos",
+  "imageName": "494_Victini_jpn_xyp_248",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2013,
+  "artist": "TOKIYA"
+},{
+  "pokemonId": 494,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "494_Victini_scn_svp_114",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+      "🇮🇩",
+      "🇨🇳",
+      "🇰🇷",
+      "🇹🇭"
+    ],
+  "year": 2024,
+  "artist": "Saya Tsuruta",
+  "region": "asian"
+},{
+  "pokemonId": 494,
+  "name": "Scarlet & Violet Promos",
+  "imageName": "494_Victini_scn_svp_113",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+      "🇮🇩",
+      "🇨🇳",
+      "🇰🇷",
+      "🇹🇭"
+    ],
+  "year": 2024,
+  "artist": "Saki Hayashiro",
+  "region": "asian"
 }
 ]
