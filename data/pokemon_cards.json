@@ -7609,5 +7609,108 @@
   ],
   "year": 2025,
   "artist": "5ban Graphics"
+},{
+  "pokemonId": 158,
+  "name": "Intro Pack Neo: Totodile Half Deck",
+  "imageName": "158_Totodile_jpn_ipt_21",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2001,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 158,
+  "name": "McDonald's Pokémon-e Minimum Pack",
+  "imageName": "158_Totodile_jpn_mcdemp_8",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2002,
+  "artist": "Hajime Kusajima"
+},{
+  "pokemonId": 158,
+  "name": "Movie Commemoration Random Pack",
+  "imageName": "158_Totodile_jpn_mcrp_6",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2009,
+  "artist": "2009 Pikachu Project"
+},{
+  "pokemonId": 159,
+  "name": "Intro Pack Neo: Totodile Half Deck",
+  "imageName": "159_Croconaw_jpn_ipt_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2001,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 159,
+  "name": "T Promos",
+  "imageName": "159_Croconaw_jpn_tpr_9",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2002,
+  "artist": "Mitsuhiro Arita"
+},{
+  "pokemonId": 159,
+  "name": "Call of Legends",
+  "imageName": "159_Croconaw_col1_41",
+  "rarity": "Uncommon",
+  "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+  "year": 2011,
+  "artist": "kawayoo",
+  "region": "western"
+},{
+  "pokemonId": 160,
+  "name": "HeartGold & SoulSilver Promos",
+  "imageName": "160_Feraligatr_hsp_HGSS07",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+  "year": 2010,
+  "artist": "Kent Kanetsuna",
+  "region": "western"
+},{
+  "pokemonId": 160,
+  "name": "Call of Legends",
+  "imageName": "160_Feraligatr_col1_25",
+  "rarity": "Rare",
+  "description": "",
+  "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+  "year": 2011,
+  "artist": "kawayoo",
+  "region": "western"
 }
 ]

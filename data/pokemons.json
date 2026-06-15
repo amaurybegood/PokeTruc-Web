@@ -1963,6 +1963,45 @@
     "researchStatus": "done"
   },
   {
+    "id": 158,
+    "name": {
+      "en": "Totodile",
+      "fr": "Kaiminus",
+      "jp": "ワニノコ",
+      "ko": "리아코",
+      "zh": "小锯鳄"
+    },
+    "imageName": "totodile",
+    "generation": 2,
+    "researchStatus": "done"
+  },
+  {
+    "id": 159,
+    "name": {
+      "en": "Croconaw",
+      "fr": "Crocrodil",
+      "jp": "アリゲイツ",
+      "ko": "엘리게이",
+      "zh": "蓝鳄"
+    },
+    "imageName": "croconaw",
+    "generation": 2,
+    "researchStatus": "done"
+  },
+  {
+    "id": 160,
+    "name": {
+      "en": "Feraligatr",
+      "fr": "Aligatueur",
+      "jp": "オーダイル",
+      "ko": "장크로다일",
+      "zh": "大力鳄"
+    },
+    "imageName": "feraligatr",
+    "generation": 2,
+    "researchStatus": "done"
+  },
+  {
     "id": 172,
     "name": {
       "en": "Pichu",
