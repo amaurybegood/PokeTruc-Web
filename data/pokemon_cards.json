@@ -7813,5 +7813,27 @@
   "year": 2011,
   "artist": "Ryo Ueda",
   "region": "western"
+},{
+  "pokemonId": 258,
+  "name": "ADV-P Promos",
+  "imageName": "258_Mudkip_jpn_advp_38",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2003,
+  "artist": "©2003 Pikachu Project"
+},{
+  "pokemonId": 258,
+  "name": "XY Unnumbered Promos",
+  "imageName": "258_Mudkip_jpn_xypunp_79",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2013,
+  "artist": "Daisuke Ochiai"
 }
 ]
