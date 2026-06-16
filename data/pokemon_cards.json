@@ -7786,5 +7786,32 @@
   "year": 2024,
   "artist": "Saki Hayashiro",
   "region": "asian"
+},{
+  "pokemonId": 383,
+  "name": "PLAY Promos",
+  "imageName": "383_Groudon_jpn_playp_20",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2003,
+  "artist": "Masakazu Fukuda"
+},{
+  "pokemonId": 383,
+  "name": "Call of Legends",
+  "imageName": "383_Groudon_col1_6",
+  "rarity": "Rare Holo",
+  "description": "",
+  "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+  "year": 2011,
+  "artist": "Ryo Ueda",
+  "region": "western"
 }
 ]
