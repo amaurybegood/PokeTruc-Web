@@ -7835,5 +7835,192 @@
   ],
   "year": 2013,
   "artist": "Daisuke Ochiai"
+},{
+  "pokemonId": 172,
+  "name": "Unnumbered Promos",
+  "imageName": "172_Pichu_jpn_unp_292k",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 1996,
+  "artist": "Shizuka Kusakabe"
+},{
+  "pokemonId": 172,
+  "name": "Unnumbered Promos",
+  "imageName": "172_Pichu_jpn_unp_292j",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 1996,
+  "artist": "Mahiro Shinozaki"
+},{
+  "pokemonId": 172,
+  "name": "Unnumbered Promos",
+  "imageName": "172_Pichu_jpn_unp_292h",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 1996,
+  "artist": "Keita Mizuno"
+},{
+  "pokemonId": 172,
+  "name": "Unnumbered Promos",
+  "imageName": "172_Pichu_jpn_unp_292c",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 1996,
+  "artist": "Taisei Fujita"
+},{
+  "pokemonId": 172,
+  "name": "Unnumbered Promos",
+  "imageName": "172_Pichu_jpn_unp_292b",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 1996,
+  "artist": "Haruka Uekura"
+},{
+  "pokemonId": 172,
+  "name": "Unnumbered Promos",
+  "imageName": "172_Pichu_jpn_unp_292a",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 1996,
+  "artist": "Shunsuke Takemori"
+},{
+  "pokemonId": 172,
+  "name": "Intro Pack Neo: Totodile Side Deck",
+  "imageName": "172_Pichu_jpn_iptsd_2",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2001,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 172,
+  "name": "P Promos",
+  "imageName": "172_Pichu_jpn_ppr_45",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2001,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 172,
+  "name": "P Promos",
+  "imageName": "172_Pichu_jpn_ppr_32",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2001,
+  "artist": "Atsuko Nishida"
+},{
+  "pokemonId": 172,
+  "name": "P Promos",
+  "imageName": "172_Pichu_jpn_ppr_28",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2001,
+  "artist": "Sayuri Ichiishi"
+},{
+  "pokemonId": 172,
+  "name": "Rampardos the Attacker",
+  "imageName": "172_Pichu_jpn_rta_1",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2007,
+  "artist": "Yuka Morii"
+},{
+  "pokemonId": 172,
+  "name": "DPt-P Promos",
+  "imageName": "172_Pichu_jpn_plp_42",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2008,
+  "artist": "Gosho Aoyama"
+},{
+  "pokemonId": 172,
+  "name": "DPt-P Promos",
+  "imageName": "172_Pichu_jpn_plp_38",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2008,
+  "artist": "Kanako Eo"
+},{
+  "pokemonId": 172,
+  "name": "Movie Commemoration Random Pack",
+  "imageName": "172_Pichu_jpn_mcrp_11",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2009,
+  "artist": "Yoichi Kotabe"
+},{
+  "pokemonId": 172,
+  "name": "Movie Commemoration Random Pack",
+  "imageName": "172_Pichu_jpn_mcrp_10",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2009,
+  "artist": "Takahiro Yamashita"
+},{
+  "pokemonId": 172,
+  "name": "Movie Commemoration Random Pack",
+  "imageName": "172_Pichu_jpn_mcrp_9",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2009,
+  "artist": "Miho Asada"
+},{
+  "pokemonId": 172,
+  "name": "Sword & Shield Promos",
+  "imageName": "172_Pichu_jpn_swshp_214",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2019,
+  "artist": "Akira Komayama"
 }
 ]
