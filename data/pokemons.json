@@ -2327,6 +2327,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 719,
+    "name": {
+      "en": "Diancie",
+      "fr": "Diancie",
+      "jp": "ディアンシー",
+      "ko": "디안시",
+      "zh": "蒂安希"
+    },
+    "imageName": "diancie",
+    "generation": 6,
+    "researchStatus": "done"
+  },
+  {
     "id": 925,
     "name": {
       "en": "Maushold",

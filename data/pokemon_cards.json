@@ -8022,5 +8022,16 @@
   ],
   "year": 2019,
   "artist": "Akira Komayama"
+},{
+  "pokemonId": 719,
+  "name": "XY Promos",
+  "imageName": "719_Diancie_jpn_xyp_54",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2013,
+  "artist": "5ban Graphics"
 }
 ]
