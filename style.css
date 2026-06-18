@@ -275,8 +275,14 @@ header .subtitle {
   line-height: 1.4;
 }
 
+/* Trainers page title is a full sentence — slightly smaller than short titles */
+.pokemon-page .page-title {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 600px) {
   .page-title { font-size: 1.15rem; }
+  .pokemon-page .page-title { font-size: 1rem; }
 }
 
 .theme-toggle {

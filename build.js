@@ -85,7 +85,7 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 33;
+const CSS_V = 34;
 const JS_V  = 20;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
