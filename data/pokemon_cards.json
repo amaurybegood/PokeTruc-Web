@@ -8033,5 +8033,61 @@
   ],
   "year": 2013,
   "artist": "5ban Graphics"
+},
+{
+  "pokemonId": 352,
+  "name": "P Promos",
+  "imageName": "352_Kecleon_jpn_ppr_1",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2001,
+  "artist": "Ken Sugimori"
+},{
+  "pokemonId": 352,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "352_Kecleon_aac_11",
+  "rarity": "No Rarity",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Illustration_contests#Pokémon_Art_Academy_Competition",
+  "languages": [
+    "🇫🇷"
+  ],
+  "year": 2015,
+  "artist": "Scarlett*"
+},{
+  "pokemonId": 655,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "655_Delphox_aac_12",
+  "rarity": "No Rarity",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Illustration_contests#Pokémon_Art_Academy_Competition",
+  "languages": [
+    "🇬🇧"
+  ],
+  "year": 2015,
+  "artist": "Peegeray"
+},{
+  "pokemonId": 382,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "382_Kyogre_aac_7",
+  "rarity": "No Rarity",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Illustration_contests#Pokémon_Art_Academy_Competition",
+  "languages": [
+    "🇬🇧"
+  ],
+  "year": 2015,
+  "artist": "Mireil"
+},{
+  "pokemonId": 465,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "465_Tangrowth_aac_8",
+  "rarity": "No Rarity",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Illustration_contests#Pokémon_Art_Academy_Competition",
+  "languages": [
+    "🇬🇧"
+  ],
+  "year": 2015,
+  "artist": "Gosha"
 }
 ]

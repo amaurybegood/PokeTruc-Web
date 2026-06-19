@@ -2158,6 +2158,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 352,
+    "name": {
+      "en": "Kecleon",
+      "fr": "Kecleon",
+      "jp": "カクレオン",
+      "ko": "켈리몬",
+      "zh": "变隐龙"
+    },
+    "imageName": "kecleon",
+    "generation": 3,
+    "researchStatus": "done"
+  },
+  {
     "id": 380,
     "name": {
       "en": "Latias",
@@ -2275,6 +2288,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 465,
+    "name": {
+      "en": "Tangrowth",
+      "fr": "Bouldeneu",
+      "jp": "モジャンボ",
+      "ko": "덩쿠림보",
+      "zh": "巨蔓藤"
+    },
+    "imageName": "tangrowth",
+    "generation": 4,
+    "researchStatus": "done"
+  },
+  {
     "id": 470,
     "name": {
       "en": "Leafeon",
@@ -2311,6 +2337,19 @@
     },
     "imageName": "victini",
     "generation": 5,
+    "researchStatus": "done"
+  },
+  {
+    "id": 655,
+    "name": {
+      "en": "Delphox",
+      "fr": "Goupelin",
+      "jp": "マフォクシー",
+      "ko": "마폭시",
+      "zh": "妖火红狐"
+    },
+    "imageName": "delphox",
+    "generation": 6,
     "researchStatus": "done"
   },
   {
