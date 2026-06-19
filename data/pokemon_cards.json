@@ -8089,5 +8089,29 @@
   ],
   "year": 2015,
   "artist": "Gosha"
+},{
+  "pokemonId": 650,
+  "name": "Pokémon Art Academy Competition",
+  "imageName": "650_Chespin_aac_9",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇬🇧"
+  ],
+  "year": 2015,
+  "artist": "Gabi"
+},{
+  "pokemonId": 650,
+  "name": "Sun & Moon Promos",
+  "imageName": "650_Chespin_jpn_smp_260",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+    "🇯🇵",
+    "🇨🇳"
+  ],
+  "year": 2016,
+  "artist": "Saya Tsuruta",
+  "region": "asian"
 }
 ]

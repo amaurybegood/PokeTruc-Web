@@ -2340,6 +2340,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 650,
+    "name": {
+      "en": "Chespin",
+      "fr": "Marisson",
+      "jp": "ハリマロン",
+      "ko": "도치마론",
+      "zh": "哈力栗"
+    },
+    "imageName": "chespin",
+    "generation": 6,
+    "researchStatus": "done"
+  },
+  {
     "id": 655,
     "name": {
       "en": "Delphox",
