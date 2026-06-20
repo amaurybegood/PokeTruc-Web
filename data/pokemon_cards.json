@@ -7222,17 +7222,6 @@
   "year": 2005,
   "artist": "Kouki Saitou"
 },{
-  "pokemonId": 383,
-  "name": "PokéPark Premium File: Blue Sheet",
-  "imageName": "383_Groudon_jpn_pkpb_7",
-  "rarity": "No Rarity",
-  "description": "",
-  "languages": [
-    "🇯🇵"
-  ],
-  "year": 2005,
-  "artist": "Kouki Saitou"
-},{
   "pokemonId": 384,
   "name": "PokéPark Premium File: Blue Sheet",
   "imageName": "384_Rayquaza_jpn_pkpb_9",
@@ -8113,5 +8102,49 @@
   "year": 2016,
   "artist": "Saya Tsuruta",
   "region": "asian"
+},{
+  "pokemonId": 258,
+  "name": "Poké Card Creator Pack",
+  "imageName": "258_Mudkip_pccp_4",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇬🇧"
+  ],
+  "year": 2004,
+  "artist": "Rowan Laidlaw"
+},{
+  "pokemonId": 465,
+  "name": "Everyone's Exciting Battle",
+  "imageName": "465_Tangrowth_jpn_wak_2",
+  "rarity": "No Rarity",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2012,
+  "artist": "Midori Harada"
+},{
+  "pokemonId": 258,
+  "name": "Poké Card Creator Pack",
+  "imageName": "258_Mudkip_pccp_4",
+  "rarity": "No Rarity",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Mudkip_(Creator_Contest_4)",
+  "languages": [
+    "🇬🇧"
+  ],
+  "year": 2004,
+  "artist": "Rowan Laidlaw"
+},{
+  "pokemonId": 465,
+  "name": "Everyone's Exciting Battle",
+  "imageName": "465_Tangrowth_jpn_wak_2",
+  "rarity": "No Rarity",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Tangrowth_(Everyone%27s_Exciting_Battle_2)",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2012,
+  "artist": "Midori Harada"
 }
 ]
