@@ -8107,28 +8107,6 @@
   "name": "Poké Card Creator Pack",
   "imageName": "258_Mudkip_pccp_4",
   "rarity": "No Rarity",
-  "description": "",
-  "languages": [
-    "🇬🇧"
-  ],
-  "year": 2004,
-  "artist": "Rowan Laidlaw"
-},{
-  "pokemonId": 465,
-  "name": "Everyone's Exciting Battle",
-  "imageName": "465_Tangrowth_jpn_wak_2",
-  "rarity": "No Rarity",
-  "description": "",
-  "languages": [
-    "🇯🇵"
-  ],
-  "year": 2012,
-  "artist": "Midori Harada"
-},{
-  "pokemonId": 258,
-  "name": "Poké Card Creator Pack",
-  "imageName": "258_Mudkip_pccp_4",
-  "rarity": "No Rarity",
   "description": "https://bulbapedia.bulbagarden.net/wiki/Mudkip_(Creator_Contest_4)",
   "languages": [
     "🇬🇧"
