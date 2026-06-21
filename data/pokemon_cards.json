@@ -8126,7 +8126,7 @@
   "artist": "Hironobu Yoshida"
 },{
   "pokemonId": 245,
-  "name": "Nintendo Promos",
+  "name": "Nintendo Black Star Promos",
   "imageName": "245_Suicune_np_30",
   "rarity": "Promo",
   "description": "",
@@ -8139,6 +8139,7 @@
       "🇵🇹"
     ],
   "year": 2003,
-  "artist": "Atsuko Nishida"
+  "artist": "Atsuko Nishida",
+  "region": "western"
 }
 ]
