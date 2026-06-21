@@ -7178,17 +7178,6 @@
   "year": 2005,
   "artist": "Kouki Saitou"
 },{
-  "pokemonId": 245,
-  "name": "PokéPark Premium File: Blue Sheet",
-  "imageName": "245_Suicune_jpn_pkpb_3",
-  "rarity": "No Rarity",
-  "description": "",
-  "languages": [
-    "🇯🇵"
-  ],
-  "year": 2005,
-  "artist": "Kouki Saitou"
-},{
   "pokemonId": 382,
   "name": "PokéPark Premium File: Blue Sheet",
   "imageName": "382_Kyogre_jpn_pkpb_4",
@@ -8124,5 +8113,32 @@
   ],
   "year": 2012,
   "artist": "Midori Harada"
+},{
+  "pokemonId": 245,
+  "name": "Pokémon VS",
+  "imageName": "245_Suicune_jpn_versus1_96",
+  "rarity": "Rare Holo",
+  "description": "",
+  "languages": [
+    "🇯🇵"
+  ],
+  "year": 2001,
+  "artist": "Hironobu Yoshida"
+},{
+  "pokemonId": 245,
+  "name": "Nintendo Promos",
+  "imageName": "245_Suicune_np_30",
+  "rarity": "Promo",
+  "description": "",
+  "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸",
+      "🇵🇹"
+    ],
+  "year": 2003,
+  "artist": "Atsuko Nishida"
 }
 ]
