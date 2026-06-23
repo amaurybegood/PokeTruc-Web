@@ -2392,6 +2392,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 906,
+    "name": {
+      "en": "Sprigatito",
+      "fr": "Poussacha",
+      "jp": "ニャオハ",
+      "ko": "나오하",
+      "zh": "新叶喵"
+    },
+    "imageName": "sprigatito",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 925,
     "name": {
       "en": "Maushold",

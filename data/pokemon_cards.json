@@ -8141,5 +8141,17 @@
   "year": 2003,
   "artist": "Atsuko Nishida",
   "region": "western"
-}
+},
+  {
+    "pokemonId": 906,
+    "name": "Gem Pack Vol. 1",
+    "imageName": "906_Sprigatito_scn_cbb1_109",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2025,
+    "artist": "Yasuda Shuhei"
+  }
 ]
