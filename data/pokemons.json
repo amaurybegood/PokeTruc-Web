@@ -2340,6 +2340,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 609,
+    "name": {
+      "en": "Chandelure",
+      "fr": "Lugulabre",
+      "jp": "シャンデラ",
+      "ko": "샹델라",
+      "zh": "水晶灯火灵"
+    },
+    "imageName": "chandelure",
+    "generation": 5,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 650,
     "name": {
       "en": "Chespin",
@@ -2405,6 +2418,71 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 907,
+    "name": {
+      "en": "Floragato",
+      "fr": "Matourgeon",
+      "jp": "ニャローテ",
+      "ko": "나로테",
+      "zh": "蒂蕾喵"
+    },
+    "imageName": "floragato",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 909,
+    "name": {
+      "en": "Fuecoco",
+      "fr": "Chochodile",
+      "jp": "ホゲータ",
+      "ko": "뜨아거",
+      "zh": "呆火鳄"
+    },
+    "imageName": "fuecoco",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 910,
+    "name": {
+      "en": "Crocalor",
+      "fr": "Crocogril",
+      "jp": "アチゲータ",
+      "ko": "악뜨거",
+      "zh": "炙烫鳄"
+    },
+    "imageName": "crocalor",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 912,
+    "name": {
+      "en": "Quaxly",
+      "fr": "Coiffeton",
+      "jp": "クワッス",
+      "ko": "꾸왁스",
+      "zh": "润水鸭"
+    },
+    "imageName": "quaxly",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 913,
+    "name": {
+      "en": "Quaxwell",
+      "fr": "Canarbello",
+      "jp": "ウェルカモ",
+      "ko": "아꾸왁",
+      "zh": "涌跃鸭"
+    },
+    "imageName": "quaxwell",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 925,
     "name": {
       "en": "Maushold",
@@ -2414,6 +2492,19 @@
       "zh": "一家鼠"
     },
     "imageName": "maushold",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 937,
+    "name": {
+      "en": "Ceruledge",
+      "fr": "Malvalame",
+      "jp": "ソウブレイズ",
+      "ko": "파라블레이즈",
+      "zh": "苍炎刃鬼"
+    },
+    "imageName": "ceruledge",
     "generation": 9,
     "researchStatus": "in_progress"
   },

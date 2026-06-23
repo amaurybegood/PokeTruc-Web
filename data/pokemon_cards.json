@@ -8153,5 +8153,89 @@
     ],
     "year": 2025,
     "artist": "Yasuda Shuhei"
+  },
+  {
+    "pokemonId": 909,
+    "name": "Gem Pack Vol. 1",
+    "imageName": "909_Fuecoco_scn_cbb1_309",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2025,
+    "artist": "Ito Kyoko"
+  },
+  {
+    "pokemonId": 912,
+    "name": "Gem Pack Vol. 1",
+    "imageName": "912_Quaxly_scn_cbb1_509",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2025,
+    "artist": "Yamazaki Rei"
+  },
+  {
+    "pokemonId": 609,
+    "name": "Gem Pack Vol. 3",
+    "imageName": "609_Chandelure_scn_cbb3_1107",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2025,
+    "artist": "satoma"
+  },
+  {
+    "pokemonId": 937,
+    "name": "Gem Pack Vol. 3",
+    "imageName": "937_Ceruledge_scn_cbb3_1507",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2025,
+    "artist": "kodama"
+  },
+  {
+    "pokemonId": 913,
+    "name": "Gem Pack Vol. 5",
+    "imageName": "913_Quaxwell_scn_cbb5_2407",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2026,
+    "artist": "Rei Yamazaki"
+  },
+  {
+    "pokemonId": 910,
+    "name": "Gem Pack Vol. 5",
+    "imageName": "910_Crocalor_scn_cbb5_2307",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2026,
+    "artist": "Kouki Yanagihara"
+  },
+  {
+    "pokemonId": 907,
+    "name": "Gem Pack Vol. 5",
+    "imageName": "907_Floragato_scn_cbb5_2207",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2026,
+    "artist": "Lyu YiFei"
   }
 ]
