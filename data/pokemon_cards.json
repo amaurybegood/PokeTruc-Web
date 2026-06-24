@@ -8237,5 +8237,53 @@
     ],
     "year": 2026,
     "artist": "Lyu YiFei"
+  },
+  {
+    "pokemonId": 908,
+    "name": "Scarlet & Violet Promos",
+    "imageName": "908_Meowscarada_scn_svp_38",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2024,
+    "artist": "PLANETA Yamashita"
+  },
+  {
+    "pokemonId": 282,
+    "name": "Battle Party: Shared Dream — King Reward Pack",
+    "imageName": "282_Gardevoir_scn_csve1p_17",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2025,
+    "artist": "PLANETA Tsuji"
+  },
+  {
+    "pokemonId": 1008,
+    "name": "Scarlet & Violet Promos",
+    "imageName": "1008_Miraidon_scn_svp_11",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2024,
+    "artist": "PLANETA Tsuji"
+  },
+  {
+    "pokemonId": 212,
+    "name": "Scarlet & Violet Promos",
+    "imageName": "212_Scizor_jpn_svp_210",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2022,
+    "artist": "PLANETA Tsuji"
   }
 ]

@@ -2041,6 +2041,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 212,
+    "name": {
+      "en": "Scizor",
+      "fr": "Cizayox",
+      "jp": "ハッサム",
+      "ko": "핫삼",
+      "zh": "巨钳螳螂"
+    },
+    "imageName": "scizor",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 243,
     "name": {
       "en": "Raikou",
@@ -2143,6 +2156,19 @@
     "imageName": "mudkip",
     "generation": 3,
     "researchStatus": "done"
+  },
+  {
+    "id": 282,
+    "name": {
+      "en": "Gardevoir",
+      "fr": "Gardevoir",
+      "jp": "サーナイト",
+      "ko": "가디안",
+      "zh": "沙奈朵"
+    },
+    "imageName": "gardevoir",
+    "generation": 3,
+    "researchStatus": "in_progress"
   },
   {
     "id": 293,
@@ -2431,6 +2457,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 908,
+    "name": {
+      "en": "Meowscarada",
+      "fr": "Miascarade",
+      "jp": "マスカーニャ",
+      "ko": "마스카나",
+      "zh": "魔幻假面喵"
+    },
+    "imageName": "meowscarada",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 909,
     "name": {
       "en": "Fuecoco",
@@ -2531,6 +2570,19 @@
       "zh": "赛富豪"
     },
     "imageName": "gholdengo",
+    "generation": 9,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 1008,
+    "name": {
+      "en": "Miraidon",
+      "fr": "Miraidon",
+      "jp": "ミライドン",
+      "ko": "미라이돈",
+      "zh": "密勒顿"
+    },
+    "imageName": "miraidon",
     "generation": 9,
     "researchStatus": "in_progress"
   }

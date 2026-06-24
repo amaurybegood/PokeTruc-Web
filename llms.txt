@@ -1,8 +1,8 @@
 # PokéTruc
 
-> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists 668 such cards across 184 Pokémon (Generations 1, 2, 3, 4, 5, 6, 9), published from 1996 to 2026.
+> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists 672 such cards across 188 Pokémon (Generations 1, 2, 3, 4, 5, 6, 9), published from 1996 to 2026.
 
-The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: 491 Japanese-exclusive, 60 Chinese-exclusive, 52 Western-exclusive, 31 English-exclusive, 18 Asian-exclusive, 4 Indonesian-exclusive, 3 Korean-exclusive, 2 German-exclusive, 2 Spanish-exclusive, 2 French-exclusive, 1 Italian-exclusive, 1 Portuguese-exclusive, 1 Polish-exclusive. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: 492 Japanese-exclusive, 63 Chinese-exclusive, 52 Western-exclusive, 31 English-exclusive, 18 Asian-exclusive, 4 Indonesian-exclusive, 3 Korean-exclusive, 2 German-exclusive, 2 Spanish-exclusive, 2 French-exclusive, 1 Italian-exclusive, 1 Portuguese-exclusive, 1 Polish-exclusive. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
 
 ## Main pages
 
@@ -158,6 +158,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Pichu](https://poketruc.com/pokemon/pichu/): 17 exclusive cards
 - [Espeon](https://poketruc.com/pokemon/espeon/): 1 exclusive card
 - [Umbreon](https://poketruc.com/pokemon/umbreon/): 2 exclusive cards
+- [Scizor](https://poketruc.com/pokemon/scizor/): 1 exclusive card
 - [Raikou](https://poketruc.com/pokemon/raikou/): 1 exclusive card
 - [Entei](https://poketruc.com/pokemon/entei/): 1 exclusive card
 - [Suicune](https://poketruc.com/pokemon/suicune/): 3 exclusive cards
@@ -166,6 +167,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Celebi](https://poketruc.com/pokemon/celebi/): 2 exclusive cards
 - [Torchic](https://poketruc.com/pokemon/torchic/): 2 exclusive cards
 - [Mudkip](https://poketruc.com/pokemon/mudkip/): 5 exclusive cards
+- [Gardevoir](https://poketruc.com/pokemon/gardevoir/): 1 exclusive card
 - [Whismur](https://poketruc.com/pokemon/whismur/): 2 exclusive cards
 - [Kecleon](https://poketruc.com/pokemon/kecleon/): 2 exclusive cards
 - [Latias](https://poketruc.com/pokemon/latias/): 1 exclusive card
@@ -188,6 +190,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Diancie](https://poketruc.com/pokemon/diancie/): 1 exclusive card
 - [Sprigatito](https://poketruc.com/pokemon/sprigatito/): 1 exclusive card
 - [Floragato](https://poketruc.com/pokemon/floragato/): 1 exclusive card
+- [Meowscarada](https://poketruc.com/pokemon/meowscarada/): 1 exclusive card
 - [Fuecoco](https://poketruc.com/pokemon/fuecoco/): 1 exclusive card
 - [Crocalor](https://poketruc.com/pokemon/crocalor/): 1 exclusive card
 - [Quaxly](https://poketruc.com/pokemon/quaxly/): 1 exclusive card
@@ -196,6 +199,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Ceruledge](https://poketruc.com/pokemon/ceruledge/): 1 exclusive card
 - [Iron Hands](https://poketruc.com/pokemon/iron-hands/): 1 exclusive card
 - [Gholdengo](https://poketruc.com/pokemon/gholdengo/): 1 exclusive card
+- [Miraidon](https://poketruc.com/pokemon/miraidon/): 1 exclusive card
 
 ## Optional
 
