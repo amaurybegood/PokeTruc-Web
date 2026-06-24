@@ -19,9 +19,21 @@ function exclusivityKey(card) {
 }
 
 let pokemons = [];
+let pokemonById = new Map();
 let cards = [];
 let searchQuery = '';
 let langFilter = '';
+let viewMode = 'pokemon'; // 'pokemon' | 'cards'
+
+// Minimal HTML escaper for the few card fields rendered into innerHTML below.
+// Mirrors build.js escapeHtml() for the subset of fields the card view shows.
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
 
 function slugify(name) {
   return name
@@ -34,14 +46,18 @@ function slugify(name) {
 }
 
 function readURLFilter() {
-  const param = new URL(window.location).searchParams.get('lang');
+  const params = new URL(window.location).searchParams;
+  const param = params.get('lang');
   if (param && ISO_TO_FLAG[param]) langFilter = param;
+  if (params.get('view') === 'cards') viewMode = 'cards';
 }
 
 function syncURL() {
   const url = new URL(window.location);
   if (langFilter) url.searchParams.set('lang', langFilter);
   else url.searchParams.delete('lang');
+  if (viewMode === 'cards') url.searchParams.set('view', 'cards');
+  else url.searchParams.delete('view');
   history.replaceState(null, '', url);
 }
 
@@ -61,10 +77,12 @@ async function loadData() {
     ]);
     if (!pkRes.ok || !cardRes.ok) throw new Error('HTTP ' + (pkRes.status || cardRes.status));
     pokemons = (await pkRes.json()).sort((a, b) => a.id - b.id);
+    pokemonById = new Map(pokemons.map(p => [p.id, p]));
     cards = await cardRes.json();
     loader.classList.add('hidden');
     readURLFilter();
     renderLangFilter();
+    renderViewToggle();
     applyFilter();
   } catch (e) {
     console.error('Data load failed:', e);
@@ -126,6 +144,42 @@ function updateLangFilterActive() {
     const active = chip.dataset.iso === langFilter;
     chip.classList.toggle('active', active);
     chip.setAttribute('aria-pressed', String(active));
+  });
+}
+
+// Segmented toggle: switch the grid between Pokémon tiles and a flat card view.
+function renderViewToggle() {
+  const container = document.getElementById('view-toggle');
+  if (!container) return;
+
+  const modes = [
+    { mode: 'pokemon', label: t('view.pokemon') },
+    { mode: 'cards', label: t('view.cards') },
+  ];
+  container.innerHTML = modes.map(m =>
+    `<button type="button" class="view-toggle-btn" data-mode="${m.mode}">${m.label}</button>`
+  ).join('');
+
+  container.querySelectorAll('.view-toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (viewMode === btn.dataset.mode) return;
+      viewMode = btn.dataset.mode;
+      syncURL();
+      updateViewToggleActive();
+      applyFilter();
+    });
+  });
+
+  updateViewToggleActive();
+}
+
+function updateViewToggleActive() {
+  const container = document.getElementById('view-toggle');
+  if (!container) return;
+  container.querySelectorAll('.view-toggle-btn').forEach(btn => {
+    const active = btn.dataset.mode === viewMode;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
   });
 }
 
@@ -192,16 +246,20 @@ function renderGenNav(gens) {
 }
 
 // Announce filter/search results to screen readers (role="status" element).
-function announceResults(count) {
+function announceResults(count, kind = 'pokemon') {
   const status = document.getElementById('grid-status');
   if (!status) return;
-  status.textContent = count === 0
-    ? t('no.pokemon')
-    : t('results.count').replace('{n}', count);
+  if (count === 0) {
+    status.textContent = kind === 'cards' ? t('no.cards') : t('no.pokemon');
+  } else {
+    const key = kind === 'cards' ? 'results.cards' : 'results.count';
+    status.textContent = t(key).replace('{n}', count);
+  }
 }
 
 function renderGrid(list) {
   const grid = document.getElementById('pokemon-grid');
+  grid.className = ''; // drop card-view layout if returning from the card view
   grid.innerHTML = '';
   announceResults(list.length);
 
@@ -242,18 +300,70 @@ function renderGrid(list) {
   renderGenNav(rendered);
 }
 
+// Client-side card tile. Mirrors the structure of build.js renderCard() (same
+// .card-item / data-img / id so the fullscreen viewer and CSS work unchanged),
+// but adds the Pokémon name line since the card view mixes all species, and
+// drops the build-only rich alt text + description.
+function renderCardClient(card) {
+  const p = pokemonById.get(card.pokemonId);
+  const pName = p ? pokemonName(p) : '';
+  const year = card.year ? ` (${card.year})` : '';
+  const alt = `${pName} — ${card.name}${year}`;
+  return `
+    <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
+      <button type="button" class="card-zoom">
+        <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">
+      </button>
+      <div class="card-info">
+        ${pName ? `<div class="card-pokemon-name">${escapeHtml(pName)}</div>` : ''}
+        <div class="card-name">${escapeHtml(card.name)}</div>
+        <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
+        ${card.artist ? `<div class="card-artist">${escapeHtml(t('card.artist'))}: ${escapeHtml(card.artist)}</div>` : ''}
+      </div>
+    </div>`;
+}
+
+// Flat card view: every card matching the current language filter + search,
+// across all species, sorted by Pokédex number then year.
+function renderCardGrid(list) {
+  const grid = document.getElementById('pokemon-grid');
+  grid.className = 'card-view';
+  announceResults(list.length, 'cards');
+  renderGenNav([]); // no generation sections in the card view
+
+  if (list.length === 0) {
+    grid.innerHTML = `<p id="empty-state">${t('no.cards')}</p>`;
+    return;
+  }
+
+  grid.innerHTML = list.map(renderCardClient).join('');
+}
+
 function applyFilter() {
   const normalize = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const q = normalize(searchQuery);
   const flag = activeFlag();
-  let filtered = pokemons;
-  if (flag) filtered = filtered.filter(p => cards.some(c => c.pokemonId === p.id && exclusivityKey(c) === flag));
-  if (q) filtered = filtered.filter(p =>
+
+  const pokemonMatches = p =>
     normalize(p.name.en).includes(q)
     || normalize(p.name.fr).includes(q)
     || normalize(pokemonName(p)).includes(q)
-    || String(p.id).includes(q)
-  );
+    || String(p.id).includes(q);
+
+  if (viewMode === 'cards') {
+    let list = cards.filter(c => !flag || exclusivityKey(c) === flag);
+    if (q) list = list.filter(c => {
+      const p = pokemonById.get(c.pokemonId);
+      return p && pokemonMatches(p);
+    });
+    list = list.slice().sort((a, b) => a.pokemonId - b.pokemonId || (a.year || 0) - (b.year || 0));
+    renderCardGrid(list);
+    return;
+  }
+
+  let filtered = pokemons;
+  if (flag) filtered = filtered.filter(p => cards.some(c => c.pokemonId === p.id && exclusivityKey(c) === flag));
+  if (q) filtered = filtered.filter(pokemonMatches);
   renderGrid(filtered);
 }
 
@@ -261,5 +371,50 @@ document.getElementById('search').addEventListener('input', e => {
   searchQuery = e.target.value;
   applyFilter();
 });
+
+// Fullscreen card viewer for the card view. The overlay markup (#fullscreen) is
+// shared with the detail pages; here we drive it via event delegation because
+// the cards are re-rendered on every filter change. Mirrors pokemon.js.
+(function initCardViewer() {
+  const overlay  = document.getElementById('fullscreen');
+  const fsImg    = document.getElementById('fullscreen-img');
+  const closeBtn = document.getElementById('fullscreen-close');
+  const grid     = document.getElementById('pokemon-grid');
+  if (!overlay || !fsImg || !closeBtn || !grid) return;
+  let opener = null;
+
+  function openViewer(item) {
+    const thumb = item.querySelector('img');
+    fsImg.src = item.dataset.img;
+    fsImg.alt = thumb ? thumb.alt : '';
+    overlay.classList.remove('hidden');
+    opener = item.querySelector('.card-zoom') || item;
+    closeBtn.focus();
+  }
+
+  function closeViewer() {
+    if (overlay.classList.contains('hidden')) return;
+    overlay.classList.add('hidden');
+    fsImg.src = '';
+    fsImg.alt = '';
+    if (opener) { opener.focus(); opener = null; }
+  }
+
+  grid.addEventListener('click', e => {
+    const item = e.target.closest('.card-item');
+    if (item) openViewer(item);
+  });
+
+  overlay.querySelector('.fullscreen-backdrop').addEventListener('click', closeViewer);
+  closeBtn.addEventListener('click', closeViewer);
+
+  // Keep Tab on the close button so focus can't escape behind the overlay.
+  overlay.addEventListener('keydown', e => {
+    if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); }
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeViewer();
+  });
+})();
 
 loadData();

@@ -85,7 +85,7 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 34;
+const CSS_V = 35;
 const JS_V  = 20;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
@@ -195,6 +195,7 @@ const LANG = {
     searchPlaceholder: 'Search a Pokémon...',
     langFilterAria: 'Filter by exclusivity category',
     genNavAria: 'Jump to a generation',
+    viewToggleAria: 'Choose display: Pokémon or cards',
     skipToContent: 'Skip to main content',
     indexTitle: 'PokéTruc — Language-Exclusive Pokémon TCG Card Illustrations',
     indexDescription: 'Pokémon TCG illustrations / artworks released in only one language or region — Japanese, English, Chinese, Western-only, Asian-only and more. Free, fan-made, ad-free.',
@@ -277,6 +278,7 @@ const LANG = {
     searchPlaceholder: 'Rechercher un Pokémon...',
     langFilterAria: "Filtrer par catégorie d'exclusivité",
     genNavAria: 'Aller à une génération',
+    viewToggleAria: 'Choisir l\'affichage : Pokémon ou cartes',
     skipToContent: 'Aller au contenu',
     indexTitle: 'PokéTruc — Illustrations de cartes Pokémon TCG exclusives à une langue',
     indexDescription: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou région (japonais, anglais, chinois, occident, asie). Gratuit, sans pub, fait par un fan.",
@@ -360,6 +362,7 @@ const LANG = {
     searchPlaceholder: 'ポケモンをさがす',
     langFilterAria: '限定カテゴリで絞り込む',
     genNavAria: '世代へジャンプ',
+    viewToggleAria: '表示を選択：ポケモンまたはカード',
     skipToContent: 'メインコンテンツへスキップ',
     indexTitle: 'PokéTruc — 言語・地域限定のポケモンTCGカードイラスト',
     indexDescription: '1つの言語（日本語・英語・中国語・韓国語）または1つの地域（欧米・アジア）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。',
@@ -442,6 +445,7 @@ const LANG = {
     searchPlaceholder: '포켓몬 검색',
     langFilterAria: '한정 카테고리로 필터링',
     genNavAria: '세대로 이동',
+    viewToggleAria: '표시 선택: 포켓몬 또는 카드',
     skipToContent: '본문으로 건너뛰기',
     indexTitle: 'PokéTruc — 언어·지역 한정 포켓몬 TCG 카드 일러스트',
     indexDescription: '한 가지 언어(일본어, 영어, 중국어, 한국어) 또는 한 지역(서양·아시아)에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.',
@@ -524,6 +528,7 @@ const LANG = {
     searchPlaceholder: '搜索宝可梦',
     langFilterAria: '按独占类别筛选',
     genNavAria: '跳转到世代',
+    viewToggleAria: '选择显示方式：宝可梦或卡片',
     skipToContent: '跳到主要内容',
     indexTitle: 'PokéTruc — 语言·地区独占的宝可梦 TCG 卡牌插画',
     indexDescription: '仅在一种语言（日文、英文、中文或韩文）或一个地区（西方·亚洲）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。',
@@ -922,8 +927,9 @@ const DATA_V = crypto.createHash('sha256')
   .update(fs.readFileSync('data/pokemon_cards.json'))
   .digest('hex').slice(0, 8);
 
-// Fullscreen card viewer (accessible dialog). pokemon.js manages focus,
-// Escape and the dynamic alt text.
+// Fullscreen card viewer (accessible dialog). On detail pages pokemon.js
+// manages focus, Escape and the dynamic alt text; on the index page app.js
+// drives the same overlay for the dynamically-rendered card view.
 const CLOSE_LABEL = { en: 'Close', fr: 'Fermer', ja: '閉じる', ko: '닫기', zh: '关闭' };
 
 function fullscreenBlock(lang) {
@@ -1423,7 +1429,7 @@ function indexPageHTML(lang, pokemonsWithCards) {
 <head>
 ${head}
   <noscript><style>
-    #search, .search-row, #lang-filter, #gen-nav, #loader, #pokemon-grid { display: none !important; }
+    #search, .search-row, #lang-filter, #view-toggle, #gen-nav, #loader, #pokemon-grid { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
@@ -1445,6 +1451,8 @@ ${newsHTML}
     </div>
 
     <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="${escapeHtml(L.langFilterAria)}"></div>
+
+    <div id="view-toggle" class="view-toggle" role="group" aria-label="${escapeHtml(L.viewToggleAria)}"></div>
 
     <div id="gen-nav" class="gen-nav" role="toolbar" aria-label="${escapeHtml(L.genNavAria)}"></div>
 
@@ -1469,6 +1477,8 @@ ${seoLinks}
   </nav>
 
 ${footerBlock(lang)}
+
+${fullscreenBlock(lang)}
 
 ${scriptTags()}
   <script src="/app.js?v=${JS_V}"></script>
