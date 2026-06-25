@@ -8285,5 +8285,16 @@
     ],
     "year": 2022,
     "artist": "PLANETA Tsuji"
+  },{
+    "pokemonId": 807,
+    "name": "Zeraora (SM-P 126) Team Up",
+    "imageName": "807_Zeraora_SMPromo126",
+    "rarity": "Promo",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(Team_Up_52)",
+    "languages": [
+      "🇰🇷"
+    ],
+    "year": 2018,
+    "artist": "kodama"
   }
 ]

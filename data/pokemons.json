@@ -2431,6 +2431,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 807,
+    "name": {
+      "en": "Zeraora",
+      "fr": "Zeraora",
+      "jp": "ゼラオラ",
+      "ko": "제라오라",
+      "zh": "捷拉奥拉"
+    },
+    "imageName": "zeraora",
+    "generation": 7,
+    "researchStatus": "done"
+  },
+  {
     "id": 906,
     "name": {
       "en": "Sprigatito",
