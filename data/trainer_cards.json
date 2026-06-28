@@ -48,5 +48,15 @@
     "languages": ["🇨🇳"],
     "year": 2026,
     "artist": "OKACHEKE"
+  },
+    {
+    "title": "Brock's Scouting (CSC10C 276)",
+    "name": "Chasing Glory Together",
+    "imageName": "brock_csv10c_276",
+    "rarity": "SAR",
+    "description": "https://www.pokebeach.com/2026/06/chasing-glory-together-set-revealed-for-china-featuring-exclusive-brocks-scouting",
+    "languages": ["🇨🇳"],
+    "year": 2026,
+    "artist": "Alsushi Furusawa"
   }
 ]

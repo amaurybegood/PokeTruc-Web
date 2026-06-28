@@ -3780,24 +3780,24 @@
     "lastmod": "2026-06-25"
   },
   "/": {
-    "hash": "1efde3c6a64b4ab29344c6f831b034129ce356b169a0782d072ba9e090e1527d",
-    "lastmod": "2026-06-25"
+    "hash": "db360c0fade0941dbd87a05f297c4c2a4b4e8d4f2758ac52380510ddd3ce1928",
+    "lastmod": "2026-06-28"
   },
   "/fr/": {
-    "hash": "51c06125778c8d6e94469c162dabb38202002686ee48005d083223757ced6b58",
-    "lastmod": "2026-06-25"
+    "hash": "bc08c264dc5941a6240647633953741abac5d330d0edf5e66c8e8bcdcc09f0d0",
+    "lastmod": "2026-06-28"
   },
   "/ja/": {
-    "hash": "41642070241ac255074767d2f9952480c03174a1eabcd60e54b63eb9f5665476",
-    "lastmod": "2026-06-25"
+    "hash": "f6aa5fd0866c99ca242d9af24a679cb47b2d9c714573a7170cf4411cc11e9d30",
+    "lastmod": "2026-06-28"
   },
   "/ko/": {
-    "hash": "3eceb475a15e8dcff45ab6ffbfa943653910d959b9144345d15aaa036fe337ea",
-    "lastmod": "2026-06-25"
+    "hash": "8b8c4b5de6cdff736ccd3f82fb2898be833319cc21569224dc2c788466043005",
+    "lastmod": "2026-06-28"
   },
   "/zh/": {
-    "hash": "45fc062f5618de97414c514121abd11681b32a236f1c0c2926a8ef057b92bc02",
-    "lastmod": "2026-06-25"
+    "hash": "394e00d716401c74211ea7b2378acc13e1d37b5ecc8ac07602714fe99ba6ac41",
+    "lastmod": "2026-06-28"
   },
   "/info/": {
     "hash": "c8f7e5c34d84ae8e8333f0aeefd3f92debb4c3bf617672257041c1c9d2af9df3",
@@ -3820,23 +3820,23 @@
     "lastmod": "2026-06-25"
   },
   "/trainers/": {
-    "hash": "4b5e260f305cef558850e73ef588e2ed1f0f9143f0c09ab2642971e644932cbb",
-    "lastmod": "2026-06-25"
+    "hash": "d137e22d22f1322e55c339db440c86ab5b8d3f9e5540f459b3057aeea4a80ce5",
+    "lastmod": "2026-06-28"
   },
   "/fr/trainers/": {
-    "hash": "2869f49d104dd4e21350e11d41d1e410a4bc8a14afe81946bfec4c9e77b2543a",
-    "lastmod": "2026-06-25"
+    "hash": "1a216e9fc3344ebad8714662e0ee0632c442429416ed91cccc7532549122a404",
+    "lastmod": "2026-06-28"
   },
   "/ja/trainers/": {
-    "hash": "0ac049ef752416649cc01deed111eae08dc35da973d87b4c2a294068a7be26d5",
-    "lastmod": "2026-06-25"
+    "hash": "8a25f684687120624b936931b2bd8f64c8a53b001e917910e4fce9cc32340194",
+    "lastmod": "2026-06-28"
   },
   "/ko/trainers/": {
-    "hash": "374f137c6ff126d1d8aeeb1b5744b5b2f6a2f6f760bfe8cc6899ce68a665973b",
-    "lastmod": "2026-06-25"
+    "hash": "9d76b3ec59aa785267a6fd6bd2cbaec6ce20170025cb094c81de6a9c5f7f354b",
+    "lastmod": "2026-06-28"
   },
   "/zh/trainers/": {
-    "hash": "985fe00e7ecaae28351786a437c68d1ebb2deaf437d23510492a084cfdbd5627",
-    "lastmod": "2026-06-25"
+    "hash": "9f52960a8659f00e6a41e3a2835b293b1198eab671c1aba84b5ed1c0bfba494b",
+    "lastmod": "2026-06-28"
   }
 }

@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://poketruc.com/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -16,7 +16,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -40,7 +40,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -52,7 +52,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -124,7 +124,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/trainers/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/trainers/"/>
@@ -138,10 +138,11 @@
     <image:image><image:loc>https://poketruc.com/cards/ciphermaniacs_csv7_245.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/lisia_scn_csv9_257.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/carmine_csv8c_255.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/brock_csv10c_276.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/trainers/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/trainers/"/>
@@ -155,10 +156,11 @@
     <image:image><image:loc>https://poketruc.com/cards/ciphermaniacs_csv7_245.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/lisia_scn_csv9_257.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/carmine_csv8c_255.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/brock_csv10c_276.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/ja/trainers/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/trainers/"/>
@@ -172,10 +174,11 @@
     <image:image><image:loc>https://poketruc.com/cards/ciphermaniacs_csv7_245.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/lisia_scn_csv9_257.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/carmine_csv8c_255.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/brock_csv10c_276.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/ko/trainers/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/trainers/"/>
@@ -189,10 +192,11 @@
     <image:image><image:loc>https://poketruc.com/cards/ciphermaniacs_csv7_245.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/lisia_scn_csv9_257.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/carmine_csv8c_255.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/brock_csv10c_276.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/zh/trainers/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/trainers/"/>
@@ -206,6 +210,7 @@
     <image:image><image:loc>https://poketruc.com/cards/ciphermaniacs_csv7_245.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/lisia_scn_csv9_257.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/carmine_csv8c_255.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/brock_csv10c_276.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/pokemon/bulbasaur/</loc>
