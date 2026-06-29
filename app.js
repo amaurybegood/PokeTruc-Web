@@ -3,11 +3,11 @@
 
 const FLAG_TO_ISO = {
   '🇯🇵': 'ja', '🇬🇧': 'en', '🇨🇳': 'zh', '🇰🇷': 'ko', '🇩🇪': 'de',
-  '🇪🇸': 'es', '🇫🇷': 'fr', '🇮🇹': 'it', '🇵🇹': 'pt', '🇵🇱': 'pl', '🇮🇩': 'id',
+  '🇪🇸': 'es', '🇫🇷': 'fr', '🇮🇹': 'it', '🇵🇹': 'pt', '🇵🇱': 'pl', '🇮🇩': 'id', '🇷🇺': 'ru',
   '🌍': 'west', '🏯': 'asia',
 };
 const ISO_TO_FLAG = Object.fromEntries(Object.entries(FLAG_TO_ISO).map(([f, i]) => [i, f]));
-const FLAG_ORDER = ['🇯🇵', '🇬🇧', '🇨🇳', '🇰🇷', '🇩🇪', '🇪🇸', '🇫🇷', '🇮🇹', '🇵🇹', '🇵🇱', '🇮🇩', '🌍', '🏯'];
+const FLAG_ORDER = ['🇯🇵', '🇬🇧', '🇨🇳', '🇰🇷', '🇩🇪', '🇪🇸', '🇫🇷', '🇮🇹', '🇵🇹', '🇵🇱', '🇮🇩', '🇷🇺', '🌍', '🏯'];
 
 // Mirror of build.js exclusivityKey(). Region (if stored) wins; otherwise the
 // card is keyed by its single language flag.
@@ -350,11 +350,16 @@ function applyFilter() {
     || normalize(pokemonName(p)).includes(q)
     || String(p.id).includes(q);
 
+  // Cards also match on set name and artist (both shown in the card view).
+  const cardMatches = c =>
+    normalize(c.name).includes(q)
+    || (c.artist && normalize(c.artist).includes(q));
+
   if (viewMode === 'cards') {
     let list = cards.filter(c => !flag || exclusivityKey(c) === flag);
     if (q) list = list.filter(c => {
       const p = pokemonById.get(c.pokemonId);
-      return p && pokemonMatches(p);
+      return (p && pokemonMatches(p)) || cardMatches(c);
     });
     list = list.slice().sort((a, b) => a.pokemonId - b.pokemonId || (a.year || 0) - (b.year || 0));
     renderCardGrid(list);
@@ -363,7 +368,7 @@ function applyFilter() {
 
   let filtered = pokemons;
   if (flag) filtered = filtered.filter(p => cards.some(c => c.pokemonId === p.id && exclusivityKey(c) === flag));
-  if (q) filtered = filtered.filter(pokemonMatches);
+  if (q) filtered = filtered.filter(p => pokemonMatches(p) || cards.some(c => c.pokemonId === p.id && cardMatches(c)));
   renderGrid(filtered);
 }
 

@@ -86,7 +86,7 @@ function recordWrite(filePath, content, urlKey) {
 }
 
 const CSS_V = 35;
-const JS_V  = 20;
+const JS_V  = 21;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the
@@ -124,7 +124,7 @@ const HREFLANG = HTML_LANG;
 const NAME_FIELD = { en: 'en', fr: 'fr', ja: 'jp', ko: 'ko', zh: 'zh' };
 
 // Exclusivity categories, in the order they should appear on the page.
-// First the 11 single-language categories (a card with languages=[flag]),
+// First the single-language categories (a card with languages=[flag]),
 // then the 2 macro region categories (Western / Asian multi-language).
 const LANG_INFO = [
   { flag: '🇯🇵', key: 'langJapaneseHeading'   },
@@ -138,16 +138,17 @@ const LANG_INFO = [
   { flag: '🇵🇹', key: 'langPortugueseHeading' },
   { flag: '🇵🇱', key: 'langPolishHeading'     },
   { flag: '🇮🇩', key: 'langIndonesianHeading' },
+  { flag: '🇷🇺', key: 'langRussianHeading'    },
   { flag: '🌍', key: 'langWesternHeading'     },
   { flag: '🏯', key: 'langAsianHeading'       },
 ];
 
 const STATS_LANG_LABEL = {
-  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German',      '🇪🇸': 'Spanish',     '🇫🇷': 'French',      '🇮🇹': 'Italian',      '🇵🇹': 'Portuguese',     '🇵🇱': 'Polish',       '🇮🇩': 'Indonesian',     '🌍': 'Western',         '🏯': 'Asian'           },
-  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande',   '🇪🇸': 'espagnole',   '🇫🇷': 'française',   '🇮🇹': 'italienne',    '🇵🇹': 'portugaise',     '🇵🇱': 'polonaise',    '🇮🇩': 'indonésienne',   '🌍': 'occidentale',     '🏯': 'asiatique'       },
-  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇮🇩': 'インドネシア語限定', '🌍': '欧米限定',        '🏯': 'アジア限定'       },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정',  '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정',  '🇮🇩': '인도네시아어 한정', '🌍': '서양 한정',       '🏯': '아시아 한정'      },
-  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占',    '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占',     '🇮🇹': '意大利文独占',  '🇵🇹': '葡萄牙文独占',   '🇵🇱': '波兰文独占',    '🇮🇩': '印尼文独占',     '🌍': '西方独占',        '🏯': '亚洲独占'        },
+  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German',      '🇪🇸': 'Spanish',     '🇫🇷': 'French',      '🇮🇹': 'Italian',      '🇵🇹': 'Portuguese',     '🇵🇱': 'Polish',       '🇮🇩': 'Indonesian',     '🇷🇺': 'Russian',        '🌍': 'Western',         '🏯': 'Asian'           },
+  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande',   '🇪🇸': 'espagnole',   '🇫🇷': 'française',   '🇮🇹': 'italienne',    '🇵🇹': 'portugaise',     '🇵🇱': 'polonaise',    '🇮🇩': 'indonésienne',   '🇷🇺': 'russe',          '🌍': 'occidentale',     '🏯': 'asiatique'       },
+  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇮🇩': 'インドネシア語限定', '🇷🇺': 'ロシア語限定',   '🌍': '欧米限定',        '🏯': 'アジア限定'       },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정',  '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정',  '🇮🇩': '인도네시아어 한정', '🇷🇺': '러시아어 한정',  '🌍': '서양 한정',       '🏯': '아시아 한정'      },
+  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占',    '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占',     '🇮🇹': '意大利文独占',  '🇵🇹': '葡萄牙文独占',   '🇵🇱': '波兰文独占',    '🇮🇩': '印尼文独占',     '🇷🇺': '俄文独占',       '🌍': '西方独占',        '🏯': '亚洲独占'        },
 };
 
 // ISO language code for each flag emoji used on a card. Used by JSON-LD
@@ -164,6 +165,7 @@ const FLAG_TO_ISO = {
   '🇵🇹': 'pt',
   '🇵🇱': 'pl',
   '🇮🇩': 'id',
+  '🇷🇺': 'ru',
 };
 
 // Exclusivity key for grouping / filtering. Cards released in a single
@@ -192,7 +194,7 @@ const LANG = {
     tagline: 'Pokémon TCG illustrations / artworks released in only one language or one region',
     pokedex: 'Pokédex',
     info: 'Info',
-    searchPlaceholder: 'Search a Pokémon...',
+    searchPlaceholder: 'Search a Pokémon, set or artist...',
     langFilterAria: 'Filter by exclusivity category',
     genNavAria: 'Jump to a generation',
     viewToggleAria: 'Choose display: Pokémon or cards',
@@ -247,6 +249,7 @@ const LANG = {
     langPortugueseHeading: 'Portuguese-exclusive cards',
     langPolishHeading:     'Polish-exclusive cards',
     langIndonesianHeading: 'Indonesian-exclusive cards',
+    langRussianHeading:    'Russian-exclusive cards',
     langWesternHeading:    'Western-exclusive cards',
     langAsianHeading:      'Asian-exclusive cards',
     cardsSection: (n) => `${n} exclusive TCG card ${n === 1 ? 'illustration' : 'illustrations'}`,
@@ -275,7 +278,7 @@ const LANG = {
     tagline: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région",
     pokedex: 'Pokédex',
     info: 'Info',
-    searchPlaceholder: 'Rechercher un Pokémon...',
+    searchPlaceholder: 'Rechercher un Pokémon, set ou artiste...',
     langFilterAria: "Filtrer par catégorie d'exclusivité",
     genNavAria: 'Aller à une génération',
     viewToggleAria: 'Choisir l\'affichage : Pokémon ou cartes',
@@ -330,6 +333,7 @@ const LANG = {
     langPortugueseHeading: 'Cartes exclusives portugaises',
     langPolishHeading:     'Cartes exclusives polonaises',
     langIndonesianHeading: 'Cartes exclusives indonésiennes',
+    langRussianHeading:    'Cartes exclusives russes',
     langWesternHeading:    'Cartes exclusives occidentales',
     langAsianHeading:      'Cartes exclusives asiatiques',
     cardsSection: (n) => `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG`,
@@ -359,7 +363,7 @@ const LANG = {
     tagline: '1つの言語または1つの地域にしか存在しないポケモンTCGのイラスト / アートワーク',
     pokedex: '図鑑',
     info: '情報',
-    searchPlaceholder: 'ポケモンをさがす',
+    searchPlaceholder: 'ポケモン・セット・イラストレーターを検索',
     langFilterAria: '限定カテゴリで絞り込む',
     genNavAria: '世代へジャンプ',
     viewToggleAria: '表示を選択：ポケモンまたはカード',
@@ -414,6 +418,7 @@ const LANG = {
     langPortugueseHeading: 'ポルトガル語限定カード',
     langPolishHeading:     'ポーランド語限定カード',
     langIndonesianHeading: 'インドネシア語限定カード',
+    langRussianHeading:    'ロシア語限定カード',
     langWesternHeading:    '欧米限定カード',
     langAsianHeading:      'アジア限定カード',
     cardsSection: (n) => `${n}枚の限定TCGカードイラスト`,
@@ -442,7 +447,7 @@ const LANG = {
     tagline: '한 가지 언어 또는 한 지역에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
     pokedex: '도감',
     info: '정보',
-    searchPlaceholder: '포켓몬 검색',
+    searchPlaceholder: '포켓몬, 세트, 일러스트레이터 검색',
     langFilterAria: '한정 카테고리로 필터링',
     genNavAria: '세대로 이동',
     viewToggleAria: '표시 선택: 포켓몬 또는 카드',
@@ -497,6 +502,7 @@ const LANG = {
     langPortugueseHeading: '포르투갈어 한정 카드',
     langPolishHeading:     '폴란드어 한정 카드',
     langIndonesianHeading: '인도네시아어 한정 카드',
+    langRussianHeading:    '러시아어 한정 카드',
     langWesternHeading:    '서양 한정 카드',
     langAsianHeading:      '아시아 한정 카드',
     cardsSection: (n) => `${n}장의 한정 TCG 카드 일러스트`,
@@ -525,7 +531,7 @@ const LANG = {
     tagline: '仅在一种语言或一个地区中发行的宝可梦 TCG 插画 / 美术图',
     pokedex: '图鉴',
     info: '信息',
-    searchPlaceholder: '搜索宝可梦',
+    searchPlaceholder: '搜索宝可梦、卡组或插画师',
     langFilterAria: '按独占类别筛选',
     genNavAria: '跳转到世代',
     viewToggleAria: '选择显示方式：宝可梦或卡片',
@@ -580,6 +586,7 @@ const LANG = {
     langPortugueseHeading: '葡萄牙文独占卡牌',
     langPolishHeading:     '波兰文独占卡牌',
     langIndonesianHeading: '印尼文独占卡牌',
+    langRussianHeading:    '俄文独占卡牌',
     langWesternHeading:    '西方独占卡牌',
     langAsianHeading:      '亚洲独占卡牌',
     cardsSection: (n) => `${n} 张独占 TCG 卡牌插画`,
@@ -812,8 +819,7 @@ function urlForTrainers(lang)  { return BASE_URL + langPathPrefix(lang) + 'train
 function pathRoot(lang)     { return langPathPrefix(lang); }
 function pathInfo(lang)     { return langPathPrefix(lang) + 'info/'; }
 function pathTrainers(lang) { return langPathPrefix(lang) + 'trainers/'; }
-// Legacy path kept for redirect stubs at the old /info.html locations.
-function legacyInfoPath(lang) { return langPathPrefix(lang) + 'info.html'; }
+// Legacy file path kept for redirect stubs at the old /info.html locations.
 function legacyInfoFile(lang) { return lang === 'en' ? 'info.html' : `${lang}/info.html`; }
 function pathPokemon(lang, slug) { return langPathPrefix(lang) + 'pokemon/' + slug + '/'; }
 
@@ -887,9 +893,9 @@ function headerBlock(lang, currentPath, kind) {
     return pathRoot(targetLang);
   }
 
-  const TOGGLE_CODE = { en: 'EN', fr: 'FR', ja: 'JA', ko: 'KO', zh: 'ZH' };
+  const LANG_LABEL = { en: 'EN', fr: 'FR', ja: '日本語', ko: '한국어', zh: '中文' };
   const langItems = LANGS.map(l => {
-    const label = l === 'en' ? 'EN' : l === 'fr' ? 'FR' : l === 'ja' ? '日本語' : l === 'ko' ? '한국어' : '中文';
+    const label = LANG_LABEL[l];
     const isCurrent = (l === lang);
     const ariaCurrent = isCurrent ? ' aria-current="true"' : '';
     const activeClass = isCurrent ? ' active' : '';
@@ -905,7 +911,7 @@ function headerBlock(lang, currentPath, kind) {
       <a href="${pathTrainers(lang)}"${trainersActive}>${escapeHtml(L.trainers)}</a>
       <a href="${pathInfo(lang)}"${infoActive}>${escapeHtml(L.info)}</a>
       <details class="lang-picker">
-        <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}"><span class="lang-picker-code">${TOGGLE_CODE[lang]}</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
+        <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}"><span class="lang-picker-code">${lang.toUpperCase()}</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
         <ul class="lang-picker-menu" role="menu">${langItems}</ul>
       </details>
       <button class="theme-toggle" id="theme-toggle" aria-label="${escapeHtml(L.themeToggleLabel)}"></button>
@@ -955,11 +961,11 @@ function scriptTags() {
 
 // Card-language adjective per UI language, used in image alt-text.
 const CARD_LANG_ADJ = {
-  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇩🇪': 'German-exclusive', '🇪🇸': 'Spanish-exclusive', '🇫🇷': 'French-exclusive', '🇮🇹': 'Italian-exclusive', '🇵🇹': 'Portuguese-exclusive', '🇵🇱': 'Polish-exclusive', '🌍': 'Western-exclusive', '🏯': 'Asian-exclusive' },
-  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇩🇪': 'exclusivité allemande', '🇪🇸': 'exclusivité espagnole', '🇫🇷': 'exclusivité française', '🇮🇹': 'exclusivité italienne', '🇵🇹': 'exclusivité portugaise', '🇵🇱': 'exclusivité polonaise', '🌍': 'exclusivité occidentale', '🏯': 'exclusivité asiatique' },
-  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🌍': '欧米限定', '🏯': 'アジア限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정', '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정', '🌍': '서양 한정', '🏯': '아시아 한정' },
-  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇩🇪': '德文独占', '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占', '🇮🇹': '意大利文独占', '🇵🇹': '葡萄牙文独占', '🇵🇱': '波兰文独占', '🌍': '西方独占', '🏯': '亚洲独占' },
+  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇩🇪': 'German-exclusive', '🇪🇸': 'Spanish-exclusive', '🇫🇷': 'French-exclusive', '🇮🇹': 'Italian-exclusive', '🇵🇹': 'Portuguese-exclusive', '🇵🇱': 'Polish-exclusive', '🇷🇺': 'Russian-exclusive', '🌍': 'Western-exclusive', '🏯': 'Asian-exclusive' },
+  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇩🇪': 'exclusivité allemande', '🇪🇸': 'exclusivité espagnole', '🇫🇷': 'exclusivité française', '🇮🇹': 'exclusivité italienne', '🇵🇹': 'exclusivité portugaise', '🇵🇱': 'exclusivité polonaise', '🇷🇺': 'exclusivité russe', '🌍': 'exclusivité occidentale', '🏯': 'exclusivité asiatique' },
+  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇷🇺': 'ロシア語限定', '🌍': '欧米限定', '🏯': 'アジア限定' },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정', '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정', '🇷🇺': '러시아어 한정', '🌍': '서양 한정', '🏯': '아시아 한정' },
+  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇩🇪': '德文独占', '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占', '🇮🇹': '意大利文独占', '🇵🇹': '葡萄牙文独占', '🇵🇱': '波兰文独占', '🇷🇺': '俄文独占', '🌍': '西方独占', '🏯': '亚洲独占' },
 };
 
 const CARD_ALT_SUFFIX = {
@@ -1008,26 +1014,34 @@ function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
         </div>`;
 }
 
-function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
-  const count = pkCards.length;
-  const groups = groupBy(pkCards, exclusivityKey);
-  // Sort sections by card count (desc); LANG_INFO order (then unknown) breaks ties (stable sort).
-  const orderedFlags = [
+// Order exclusivity groups: known LANG_INFO flags first (then any unknown
+// flag), re-sorted by group size desc — stable sort keeps the LANG_INFO order
+// as the tie-breaker.
+function orderExclusivityFlags(groups) {
+  return [
     ...LANG_INFO.map(l => l.flag).filter(f => groups.has(f)),
     ...[...groups.keys()].filter(f => !LANG_INFO.some(l => l.flag === f)),
   ].sort((a, b) => groups.get(b).length - groups.get(a).length);
+}
+
+// Shared layout for the card sections (per-Pokémon detail + trainers gallery):
+// one flat grid when there's a single exclusivity group, otherwise one open
+// <details> per group. `intro` is the localised count line; `renderItem(card,
+// eager)` renders a single card (the first card overall is the eager LCP one).
+function buildCardSectionHTML(items, L, intro, renderItem) {
+  const groups = groupBy(items, exclusivityKey);
+  const orderedFlags = orderExclusivityFlags(groups);
   const headingByFlag = Object.fromEntries(LANG_INFO.map(l => [l.flag, L[l.key]]));
+  const sectionTitle = `<p class="cards-section-title">${intro}</p>`;
 
-  const sectionTitle = `<p class="cards-section-title">${L.cardsSection(count)}</p>`;
-
-  if (orderedFlags.length === 1) {
+  if (orderedFlags.length <= 1) {
     const onlyFlag = orderedFlags[0];
-    const cs = groups.get(onlyFlag).slice().sort((a, b) => a.year - b.year);
+    const cs = (onlyFlag ? groups.get(onlyFlag) : items).slice().sort((a, b) => a.year - b.year);
     return `
     <section class="cards-section">
       ${sectionTitle}
       <div class="cards-grid">
-        ${cs.map((c, i) => renderCard(c, pokemon, L, lang, localizedName, i === 0)).join('')}
+        ${cs.map((c, i) => renderItem(c, i === 0)).join('')}
       </div>
     </section>`;
   }
@@ -1042,7 +1056,7 @@ function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
           <span class="cards-lang-caret" aria-hidden="true">▾</span>
         </summary>
         <div class="cards-grid">
-          ${cs.map((c, i) => renderCard(c, pokemon, L, lang, localizedName, gi === 0 && i === 0)).join('')}
+          ${cs.map((c, i) => renderItem(c, gi === 0 && i === 0)).join('')}
         </div>
       </details>`;
   }).join('');
@@ -1054,16 +1068,18 @@ function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
     </section>`;
 }
 
+function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
+  return buildCardSectionHTML(pkCards, L, L.cardsSection(pkCards.length),
+    (c, eager) => renderCard(c, pokemon, L, lang, localizedName, eager));
+}
+
 // First card as rendered (largest exclusivity group, earliest year). It's the
 // LCP candidate on detail pages, so the <head> preloads it. Mirrors the
 // ordering in buildCardsSectionHTML / buildTrainersSectionHTML.
 function firstDisplayedCard(items) {
   if (!items.length) return null;
   const groups = groupBy(items, exclusivityKey);
-  const orderedFlags = [
-    ...LANG_INFO.map(l => l.flag).filter(f => groups.has(f)),
-    ...[...groups.keys()].filter(f => !LANG_INFO.some(l => l.flag === f)),
-  ].sort((a, b) => groups.get(b).length - groups.get(a).length);
+  const orderedFlags = orderExclusivityFlags(groups);
   const first = orderedFlags.length ? groups.get(orderedFlags[0]) : items;
   return first.slice().sort((a, b) => a.year - b.year)[0];
 }
@@ -1094,48 +1110,8 @@ function renderTrainerCard(card, L, lang, eager = false) {
 }
 
 function buildTrainersSectionHTML(items, L, lang) {
-  const count = items.length;
-  const groups = groupBy(items, exclusivityKey);
-  const orderedFlags = [
-    ...LANG_INFO.map(l => l.flag).filter(f => groups.has(f)),
-    ...[...groups.keys()].filter(f => !LANG_INFO.some(l => l.flag === f)),
-  ].sort((a, b) => groups.get(b).length - groups.get(a).length);
-  const headingByFlag = Object.fromEntries(LANG_INFO.map(l => [l.flag, L[l.key]]));
-
-  const sectionTitle = `<p class="cards-section-title">${L.trainersIntro(count)}</p>`;
-
-  if (orderedFlags.length <= 1) {
-    const onlyFlag = orderedFlags[0];
-    const cs = (onlyFlag ? groups.get(onlyFlag) : items).slice().sort((a, b) => a.year - b.year);
-    return `
-    <section class="cards-section">
-      ${sectionTitle}
-      <div class="cards-grid">
-        ${cs.map((c, i) => renderTrainerCard(c, L, lang, i === 0)).join('')}
-      </div>
-    </section>`;
-  }
-
-  const groupsHTML = orderedFlags.map((flag, gi) => {
-    const cs = groups.get(flag).slice().sort((a, b) => a.year - b.year);
-    const heading = headingByFlag[flag] || 'Other-exclusive cards';
-    return `
-      <details class="cards-lang-group" open>
-        <summary class="cards-lang-summary">
-          <h2 class="cards-lang-title">${flag} ${escapeHtml(heading)} (${cs.length})</h2>
-          <span class="cards-lang-caret" aria-hidden="true">▾</span>
-        </summary>
-        <div class="cards-grid">
-          ${cs.map((c, i) => renderTrainerCard(c, L, lang, gi === 0 && i === 0)).join('')}
-        </div>
-      </details>`;
-  }).join('');
-
-  return `
-    <section class="cards-section">
-      ${sectionTitle}
-      ${groupsHTML}
-    </section>`;
+  return buildCardSectionHTML(items, L, L.trainersIntro(items.length),
+    (c, eager) => renderTrainerCard(c, L, lang, eager));
 }
 
 function buildSetsAndArtistsHTML(pkCards, L) {

@@ -2402,18 +2402,6 @@
   },
   {
     "pokemonId": 25,
-    "name": "Start Deck 100 CoroCoro Comic Version",
-    "imageName": "25_Pikachu_jpn_sN_1",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2022,
-    "artist": "You Iribi"
-  },
-  {
-    "pokemonId": 25,
     "name": "Scarlet & Violet Promos",
     "imageName": "25_Pikachu_jpn_svp_289",
     "rarity": "Promo",
