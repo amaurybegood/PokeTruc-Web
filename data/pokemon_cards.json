@@ -8296,5 +8296,62 @@
     ],
     "year": 2019,
     "artist": "Mitsuhiro Arita"
+  },{
+    "pokemonId": 666,
+    "name": "Vivillon Japanese Elegant Pattern (XY 17)",
+    "imageName": "666_XY_17_Elegant_Japanese",
+    "rarity": "Promo",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2014,
+    "artist": "5ban Graphics"
+  },{
+    "pokemonId": 666,
+    "name": "Vivillon English High Plains Pattern (XY 17)",
+    "imageName": "666_XY_17_High_Plains_English",
+    "rarity": "Promo",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
+    "languages": [
+      "🇬🇧"
+    ],
+    "year": 2014,
+    "artist": "5ban Graphics"
+  },{
+    "pokemonId": 666,
+    "name": "Vivillon Italian/Spanish Marine Pattern (XY 17)",
+    "imageName": "666_XY_17_Marine_Italian_Spanish",
+    "rarity": "Promo",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
+    "languages": [
+      "🇮🇹",
+      "🇪🇸"
+    ],
+    "year": 2014,
+    "artist": "5ban Graphics",
+  "region": "western"
+  },{
+    "pokemonId": 666,
+    "name": "Vivillon Portuguese Savanna Pattern (XY 17)",
+    "imageName": "666_XY_17_Savanna_Portuguese",
+    "rarity": "Promo",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
+    "languages": [
+      "🇵🇹"
+    ],
+    "year": 2014,
+    "artist": "5ban Graphics"
+  },{
+    "pokemonId": 666,
+    "name": "Vivillon Russian Icy Snow Pattern (XY 17)",
+    "imageName": "666_XY_17_Snow_Russian",
+    "rarity": "Promo",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
+    "languages": [
+      "🇷🇺"
+    ],
+    "year": 2014,
+    "artist": "5ban Graphics"
   }
 ]

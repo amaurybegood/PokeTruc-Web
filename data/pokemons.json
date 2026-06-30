@@ -2405,6 +2405,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 666,
+    "name": {
+      "en": "Vivillon",
+      "fr": "Prismillon",
+      "jp": "ビビヨン",
+      "ko": "비비용",
+      "zh": "彩粉蝶"
+    },
+    "imageName": "vivillon",
+    "generation": 6,
+    "researchStatus": "done"
+  },
+  {
     "id": 700,
     "name": {
       "en": "Sylveon",
