@@ -1116,10 +1116,10 @@
   },
   {
     "pokemonId": 25,
-    "name": "Sword & Shield Promos",
+    "name": "Pikachu Promo 227/S-P Stamp Box, Sword & Shield Promos",
     "imageName": "25_Pikachu_jpn_swshp_227",
     "rarity": "Promo",
-    "description": "",
+    "description": "The illustration pays homage to the 17th century nikuhitsu-ga, a painting in the ukiyo-e art style, Beauty Looking Back by Hishikawa Moronobu. The image was first used on Japanese stamps issued in 1948. https://bulbapedia.bulbagarden.net/wiki/Pikachu_(S-P_Promo_227)",
     "languages": [
       "🇯🇵"
     ],
@@ -8284,5 +8284,17 @@
     ],
     "year": 2018,
     "artist": "kodama"
+  },
+  {
+    "pokemonId": 845,
+    "name": "Cramorant Promo 226/S-P Stamp Box, Sword & Shield Promos",
+    "imageName": "845_Cramorant_jpn_swshp_226",
+    "rarity": "Promo",
+    "description": "The illustration pays homage to the 19th century ukiyo-e Wild Geese Flying under the Full Moon by Utagawa Hiroshige. The image was first used on Japanese stamps issued in 1949. https://bulbapedia.bulbagarden.net/wiki/Cramorant_(S-P_Promo_226)",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2019,
+    "artist": "Mitsuhiro Arita"
   }
 ]

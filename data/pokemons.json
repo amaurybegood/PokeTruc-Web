@@ -2444,6 +2444,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 845,
+    "name": {
+      "en": "Cramorant",
+      "fr": "Nigosier",
+      "jp": "ウッウ",
+      "ko": "윽우지",
+      "zh": "古月鸟"
+    },
+    "imageName": "cramorant",
+    "generation": 8,
+    "researchStatus": "done"
+  },
+  {
     "id": 906,
     "name": {
       "en": "Sprigatito",
