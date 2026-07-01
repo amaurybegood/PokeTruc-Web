@@ -8389,5 +8389,17 @@
     ],
     "year": 2007,
     "artist": "Midori Harada"
+  },
+  {
+    "pokemonId": 445,
+    "name": "Diamond & Pearl Promos",
+    "imageName": "445_Garchomp_jpn_dpp_58",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2006,
+    "artist": "Ryo Ueda"
   }
 ]

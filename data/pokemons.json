@@ -2314,6 +2314,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 445,
+    "name": {
+      "en": "Garchomp",
+      "fr": "Carchacrok",
+      "jp": "ガブリアス",
+      "ko": "한카리아스",
+      "zh": "烈咬陆鲨"
+    },
+    "imageName": "garchomp",
+    "generation": 4,
+    "researchStatus": "done"
+  },
+  {
     "id": 446,
     "name": {
       "en": "Munchlax",
