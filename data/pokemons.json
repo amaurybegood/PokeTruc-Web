@@ -2041,6 +2041,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 206,
+    "name": {
+      "en": "Dunsparce",
+      "fr": "Insolourdo",
+      "jp": "ノコッチ",
+      "ko": "노고치",
+      "zh": "土龙弟弟"
+    },
+    "imageName": "dunsparce",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 212,
     "name": {
       "en": "Scizor",
@@ -2050,6 +2063,19 @@
       "zh": "巨钳螳螂"
     },
     "imageName": "scizor",
+    "generation": 2,
+    "researchStatus": "in_progress"
+  },
+  {
+    "id": 213,
+    "name": {
+      "en": "Shuckle",
+      "fr": "Caratroc",
+      "jp": "ツボツボ",
+      "ko": "단단지",
+      "zh": "壶壶"
+    },
+    "imageName": "shuckle",
     "generation": 2,
     "researchStatus": "in_progress"
   },

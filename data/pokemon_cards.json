@@ -8353,5 +8353,41 @@
     ],
     "year": 2014,
     "artist": "5ban Graphics"
+  },
+  {
+    "pokemonId": 213,
+    "name": "Pokémon VS",
+    "imageName": "213_Shuckle_jpn_versus1_67",
+    "rarity": "Common",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Tomokazu Komiya"
+  },
+  {
+    "pokemonId": 206,
+    "name": "Unnumbered Promos",
+    "imageName": "206_Dunsparce_jpn_unp_171",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 1996,
+    "artist": "Atsuko Nishida"
+  },
+  {
+    "pokemonId": 206,
+    "name": "Rampardos the Attacker",
+    "imageName": "206_Dunsparce_jpn_rta_7",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Midori Harada"
   }
 ]
