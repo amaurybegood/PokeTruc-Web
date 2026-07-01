@@ -374,22 +374,15 @@
     "rarity": "Promo",
     "description": "",
     "languages": [
-      "🇬🇧"
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
     ],
     "year": 2023,
-    "artist": "takuyoa"
-  },
-  {
-    "pokemonId": 6,
-    "name": "Battle Academy 2020: Charizard Deck",
-    "imageName": "6_Charizard_ba20c_60",
-    "rarity": "Rare Holo GX",
-    "description": "",
-    "languages": [
-      "🇬🇧"
-    ],
-    "year": 2020,
-    "artist": "aky CG Works"
+    "artist": "takuyoa",
+    "region": "western"
   },
   {
     "pokemonId": 6,
@@ -410,10 +403,15 @@
     "rarity": "Promo",
     "description": "",
     "languages": [
-      "🇬🇧"
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
     ],
     "year": 2016,
-    "artist": "Anesaki Dynamic"
+    "artist": "Anesaki Dynamic",
+    "region": "western"
   },
   {
     "pokemonId": 6,
