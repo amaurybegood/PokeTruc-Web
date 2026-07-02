@@ -40,11 +40,13 @@ node add-pokemon.js 494 --status coming_soon
 
 It downloads the sprite into `monsters/` and inserts a sorted entry into
 `data/pokemons.json`. Then add that Pokémon's cards to `data/pokemon_cards.json`
-(`pokemonId` = its dex number) with the images in `cards/`, and run `node build.js`.
+(`pokemonId` = its dex number) with the images in `cards/`, run
+`python make-thumbs.py` (generates the grid thumbnails in `cards/thumbs/` —
+the build fails if one is missing), and run `node build.js`.
 
 > Sprites come from PokéAPI's **Pokémon HOME** renders, normalised to a 256×256
-> transparent PNG (needs Python + Pillow; without it the native-size sprite is
-> kept). To re-pull **every** sprite from one source — e.g. after deciding on a
+> transparent PNG plus a `.webp` derivative the site serves (needs Python +
+> Pillow; without it the native-size sprite is kept). To re-pull **every** sprite from one source — e.g. after deciding on a
 > consistent style — run `python refresh-sprites.py` (defaults to `home`;
 > `--source official-artwork` / `--size 0` also available).
 

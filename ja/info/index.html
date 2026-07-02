@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>(function(){try{var c=document.createElement('canvas');c.width=c.height=16;var x=c.getContext('2d');x.textBaseline='top';x.font='16px sans-serif';x.fillText('🇨🇦',0,0);var d=x.getImageData(0,0,16,16).data,k=false;for(var i=0;i<d.length;i+=4){if(d[i]>150&&d[i+1]<100&&d[i+2]<100&&d[i+3]>0){k=true;break;}}if(!k)document.documentElement.classList.add('flags-need-font');}catch(e){document.documentElement.classList.add('flags-need-font');}})();</script>
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
   <title>PokéTruc — このサイトについて</title>
   <meta name="description" content="PokéTrucについて：1つの言語にしか存在しないポケモンTCGカードの限定イラストを集めたファン制作のカタログです。無料・広告なし。">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=35">
+  <link rel="preload" as="style" href="/style.css?v=36">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
@@ -36,9 +37,9 @@
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/info/">
   <link rel="icon" type="image/png" href="/logo.png">
   <link rel="apple-touch-icon" href="/logo.png">
-  <link rel="stylesheet" href="/style.css?v=35">
+  <link rel="stylesheet" href="/style.css?v=36">
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"図鑑","item":"https://poketruc.com/ja/"},{"@type":"ListItem","position":2,"name":"情報","item":"https://poketruc.com/ja/info/"}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"図鑑","item":"https://poketruc.com/ja/"},{"@type":"ListItem","position":2,"name":"情報","item":"https://poketruc.com/ja/info/"}]},{"@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"言語限定のポケモンカードとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"イラストが一つの言語でしか印刷されなかったポケモンTCGのカードです。例えば日本の雑誌付録として配布されたプロモや、中国市場限定セットのカードなどです。"}},{"@type":"Question","name":"なぜ日本語でしか存在しないカードがあるのですか？","acceptedAnswer":{"@type":"Answer","text":"日本では雑誌、自動販売機、店舗やイベントに関連した多くのプロモカードが配布されます。その多くは他の市場で再版されなかったため、そのイラストは日本語のカードにしか存在しません。"}},{"@type":"Question","name":"「欧米限定」「アジア限定」とはどういう意味ですか？","acceptedAnswer":{"@type":"Answer","text":"欧米限定カードは欧米の言語（英語・ドイツ語・フランス語・イタリア語・スペイン語など）で発売され、日本やアジアでは未発売のカードです（例：Call of Legends）。アジア限定はその逆で、アジアの言語でのみ発売されたカードです。"}},{"@type":"Question","name":"PokéTrucには何枚の限定カードが収録されていますか？","acceptedAnswer":{"@type":"Answer","text":"現在、194匹のポケモンにわたる681枚の言語・地域限定カードイラスト（1996年〜2026年発行）を収録しています。新しい限定カードの発売や発見に応じて更新されます。"}},{"@type":"Question","name":"PokéTrucは公式サイトですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。PokéTrucは非公式のファンメイドサイトで、無料・広告なしで運営されています。ポケモンおよびポケモンのキャラクター名は任天堂・クリーチャーズ・ゲームフリークの商標です。"}},{"@type":"Question","name":"誤りの修正や、カード・ポケモンの追加を手伝うことはできますか？","acceptedAnswer":{"@type":"Answer","text":"はい、ご協力は大歓迎です。誤りを見つけた場合や、収録されていない限定カードをご存じの場合、追加してほしいポケモンがある場合は、Reddit（u/Begooderrr）、メール（poketruc@icloud.com）、またはGitHubプロジェクトのissueでご連絡ください。詳しくは下記のお問い合わせ・ソースコードのセクションをご覧ください。"}}]}]}</script>
 </head>
 <body data-lang-prefix="/ja/">
 <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
@@ -53,7 +54,7 @@
       <a href="/ja/info/" aria-current="page">情報</a>
       <details class="lang-picker">
         <summary class="lang-picker-toggle" aria-label="言語"><span class="lang-picker-code">JA</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
-        <ul class="lang-picker-menu" role="menu"><li role="none"><a href="/info/" hreflang="en" role="menuitem" class="lang-link">EN</a></li><li role="none"><a href="/fr/info/" hreflang="fr" role="menuitem" class="lang-link">FR</a></li><li role="none"><a href="/ja/info/" hreflang="ja" role="menuitem" class="lang-link active" aria-current="true">日本語</a></li><li role="none"><a href="/ko/info/" hreflang="ko" role="menuitem" class="lang-link">한국어</a></li><li role="none"><a href="/zh/info/" hreflang="zh-Hans" role="menuitem" class="lang-link">中文</a></li></ul>
+        <ul class="lang-picker-menu"><li><a href="/info/" hreflang="en" class="lang-link">EN</a></li><li><a href="/fr/info/" hreflang="fr" class="lang-link">FR</a></li><li><a href="/ja/info/" hreflang="ja" class="lang-link active" aria-current="true">日本語</a></li><li><a href="/ko/info/" hreflang="ko" class="lang-link">한국어</a></li><li><a href="/zh/info/" hreflang="zh-Hans" class="lang-link">中文</a></li></ul>
       </details>
       <button class="theme-toggle" id="theme-toggle" aria-label="ダークモードを切り替え"></button>
     </nav>
@@ -70,6 +71,24 @@
         <p>完全無料、広告なしです。</p>
         <p>注意を払っていますが、一部の情報が不正確な場合があります。エラーを見つけた場合やフィードバックをお送りいただける場合は、メールでご連絡ください。</p>
         <p>それでは :)</p>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h2>よくある質問</h2>
+      <div>
+        <h3 class="faq-q">言語限定のポケモンカードとは何ですか？</h3>
+        <p>イラストが一つの言語でしか印刷されなかったポケモンTCGのカードです。例えば日本の雑誌付録として配布されたプロモや、中国市場限定セットのカードなどです。</p>
+        <h3 class="faq-q">なぜ日本語でしか存在しないカードがあるのですか？</h3>
+        <p>日本では雑誌、自動販売機、店舗やイベントに関連した多くのプロモカードが配布されます。その多くは他の市場で再版されなかったため、そのイラストは日本語のカードにしか存在しません。</p>
+        <h3 class="faq-q">「欧米限定」「アジア限定」とはどういう意味ですか？</h3>
+        <p>欧米限定カードは欧米の言語（英語・ドイツ語・フランス語・イタリア語・スペイン語など）で発売され、日本やアジアでは未発売のカードです（例：Call of Legends）。アジア限定はその逆で、アジアの言語でのみ発売されたカードです。</p>
+        <h3 class="faq-q">PokéTrucには何枚の限定カードが収録されていますか？</h3>
+        <p>現在、194匹のポケモンにわたる681枚の言語・地域限定カードイラスト（1996年〜2026年発行）を収録しています。新しい限定カードの発売や発見に応じて更新されます。</p>
+        <h3 class="faq-q">PokéTrucは公式サイトですか？</h3>
+        <p>いいえ。PokéTrucは非公式のファンメイドサイトで、無料・広告なしで運営されています。ポケモンおよびポケモンのキャラクター名は任天堂・クリーチャーズ・ゲームフリークの商標です。</p>
+        <h3 class="faq-q">誤りの修正や、カード・ポケモンの追加を手伝うことはできますか？</h3>
+        <p>はい、ご協力は大歓迎です。誤りを見つけた場合や、収録されていない限定カードをご存じの場合、追加してほしいポケモンがある場合は、Reddit（u/Begooderrr）、メール（poketruc@icloud.com）、またはGitHubプロジェクトのissueでご連絡ください。詳しくは下記のお問い合わせ・ソースコードのセクションをご覧ください。</p>
       </div>
     </div>
 
@@ -107,8 +126,9 @@
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script>window.DATA_V='20491d29';</script>
-  <script src="/i18n.js?v=21"></script>
-  <script src="/theme.js?v=21"></script>
-  <script src="/backtotop.js?v=21"></script>
+  <script src="/i18n.js?v=22"></script>
+  <script src="/theme.js?v=22"></script>
+  <script src="/viewer.js?v=22"></script>
+  <script src="/backtotop.js?v=22"></script>
 </body>
 </html>

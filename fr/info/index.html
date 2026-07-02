@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>(function(){try{var c=document.createElement('canvas');c.width=c.height=16;var x=c.getContext('2d');x.textBaseline='top';x.font='16px sans-serif';x.fillText('🇨🇦',0,0);var d=x.getImageData(0,0,16,16).data,k=false;for(var i=0;i<d.length;i+=4){if(d[i]>150&&d[i+1]<100&&d[i+2]<100&&d[i+3]>0){k=true;break;}}if(!k)document.documentElement.classList.add('flags-need-font');}catch(e){document.documentElement.classList.add('flags-need-font');}})();</script>
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
   <title>PokéTruc — À propos</title>
   <meta name="description" content="À propos de PokéTruc : un catalogue créé par un fan, recensant les cartes Pokémon TCG aux illustrations exclusives à une seule langue. Gratuit, sans publicité.">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=35">
+  <link rel="preload" as="style" href="/style.css?v=36">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
@@ -36,9 +37,9 @@
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/info/">
   <link rel="icon" type="image/png" href="/logo.png">
   <link rel="apple-touch-icon" href="/logo.png">
-  <link rel="stylesheet" href="/style.css?v=35">
+  <link rel="stylesheet" href="/style.css?v=36">
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/fr/"},{"@type":"ListItem","position":2,"name":"Info","item":"https://poketruc.com/fr/info/"}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/fr/"},{"@type":"ListItem","position":2,"name":"Info","item":"https://poketruc.com/fr/info/"}]},{"@type":"FAQPage","inLanguage":"fr","mainEntity":[{"@type":"Question","name":"Qu'est-ce qu'une carte Pokémon exclusive à une langue ?","acceptedAnswer":{"@type":"Answer","text":"Une carte du JCC Pokémon dont l'illustration n'a été imprimée que dans une seule langue. Par exemple une promo distribuée uniquement dans des magazines japonais, ou une carte d'un set du marché chinois jamais sortie ailleurs."}},{"@type":"Question","name":"Pourquoi certaines cartes Pokémon n'existent-elles qu'en japonais ?","acceptedAnswer":{"@type":"Answer","text":"Le Japon reçoit de nombreuses cartes promotionnelles liées à des magazines, distributeurs automatiques, boutiques et événements locaux. Beaucoup de ces promos n'ont jamais été rééditées pour d'autres marchés : leur illustration n'existe que sur la carte japonaise."}},{"@type":"Question","name":"Que signifient « exclusivité occidentale » et « exclusivité asiatique » ?","acceptedAnswer":{"@type":"Answer","text":"Une carte en exclusivité occidentale est sortie dans des langues occidentales (anglais, allemand, français, italien, espagnol…) mais jamais au Japon ni en Asie — par exemple le set L'appel des légendes. Une exclusivité asiatique, c'est l'inverse : sortie dans une ou plusieurs langues asiatiques mais jamais en occident."}},{"@type":"Question","name":"Combien de cartes exclusives PokéTruc recense-t-il ?","acceptedAnswer":{"@type":"Answer","text":"PokéTruc recense actuellement 681 illustrations de cartes exclusives à une langue ou une région, réparties sur 194 Pokémon, publiées de 1996 à 2026. Le catalogue est mis à jour au fil des sorties et découvertes."}},{"@type":"Question","name":"PokéTruc est-il un site officiel Pokémon ?","acceptedAnswer":{"@type":"Answer","text":"Non. PokéTruc est un catalogue non officiel, fait par un fan, gratuit et sans publicité. Pokémon et les noms des personnages Pokémon sont des marques de Nintendo, Creatures Inc. et GAME FREAK inc."}},{"@type":"Question","name":"Puis-je aider à corriger une erreur ou ajouter des cartes ou des Pokémon manquants ?","acceptedAnswer":{"@type":"Answer","text":"Oui, toute aide est la bienvenue. Si vous repérez une erreur, connaissez une carte exclusive absente du catalogue ou souhaitez qu'un Pokémon soit ajouté, contactez-moi sur Reddit (u/Begooderrr), par e-mail (poketruc@icloud.com) ou en ouvrant une issue sur le projet GitHub — voir les sections Contact et Code source ci-dessous."}}]}]}</script>
 </head>
 <body data-lang-prefix="/fr/">
 <a href="#main-content" class="skip-link">Aller au contenu</a>
@@ -53,7 +54,7 @@
       <a href="/fr/info/" aria-current="page">Info</a>
       <details class="lang-picker">
         <summary class="lang-picker-toggle" aria-label="Langue"><span class="lang-picker-code">FR</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
-        <ul class="lang-picker-menu" role="menu"><li role="none"><a href="/info/" hreflang="en" role="menuitem" class="lang-link">EN</a></li><li role="none"><a href="/fr/info/" hreflang="fr" role="menuitem" class="lang-link active" aria-current="true">FR</a></li><li role="none"><a href="/ja/info/" hreflang="ja" role="menuitem" class="lang-link">日本語</a></li><li role="none"><a href="/ko/info/" hreflang="ko" role="menuitem" class="lang-link">한국어</a></li><li role="none"><a href="/zh/info/" hreflang="zh-Hans" role="menuitem" class="lang-link">中文</a></li></ul>
+        <ul class="lang-picker-menu"><li><a href="/info/" hreflang="en" class="lang-link">EN</a></li><li><a href="/fr/info/" hreflang="fr" class="lang-link active" aria-current="true">FR</a></li><li><a href="/ja/info/" hreflang="ja" class="lang-link">日本語</a></li><li><a href="/ko/info/" hreflang="ko" class="lang-link">한국어</a></li><li><a href="/zh/info/" hreflang="zh-Hans" class="lang-link">中文</a></li></ul>
       </details>
       <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode sombre"></button>
     </nav>
@@ -70,6 +71,24 @@
         <p>Il est entièrement gratuit et sans publicité.</p>
         <p>Malgré le soin apporté, certaines informations peuvent être inexactes. N'hésitez pas à me contacter par e-mail si vous constatez une erreur ou souhaitez faire un retour.</p>
         <p>Voilà, voilà :)</p>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h2>Questions fréquentes</h2>
+      <div>
+        <h3 class="faq-q">Qu'est-ce qu'une carte Pokémon exclusive à une langue ?</h3>
+        <p>Une carte du JCC Pokémon dont l'illustration n'a été imprimée que dans une seule langue. Par exemple une promo distribuée uniquement dans des magazines japonais, ou une carte d'un set du marché chinois jamais sortie ailleurs.</p>
+        <h3 class="faq-q">Pourquoi certaines cartes Pokémon n'existent-elles qu'en japonais ?</h3>
+        <p>Le Japon reçoit de nombreuses cartes promotionnelles liées à des magazines, distributeurs automatiques, boutiques et événements locaux. Beaucoup de ces promos n'ont jamais été rééditées pour d'autres marchés : leur illustration n'existe que sur la carte japonaise.</p>
+        <h3 class="faq-q">Que signifient « exclusivité occidentale » et « exclusivité asiatique » ?</h3>
+        <p>Une carte en exclusivité occidentale est sortie dans des langues occidentales (anglais, allemand, français, italien, espagnol…) mais jamais au Japon ni en Asie — par exemple le set L'appel des légendes. Une exclusivité asiatique, c'est l'inverse : sortie dans une ou plusieurs langues asiatiques mais jamais en occident.</p>
+        <h3 class="faq-q">Combien de cartes exclusives PokéTruc recense-t-il ?</h3>
+        <p>PokéTruc recense actuellement 681 illustrations de cartes exclusives à une langue ou une région, réparties sur 194 Pokémon, publiées de 1996 à 2026. Le catalogue est mis à jour au fil des sorties et découvertes.</p>
+        <h3 class="faq-q">PokéTruc est-il un site officiel Pokémon ?</h3>
+        <p>Non. PokéTruc est un catalogue non officiel, fait par un fan, gratuit et sans publicité. Pokémon et les noms des personnages Pokémon sont des marques de Nintendo, Creatures Inc. et GAME FREAK inc.</p>
+        <h3 class="faq-q">Puis-je aider à corriger une erreur ou ajouter des cartes ou des Pokémon manquants ?</h3>
+        <p>Oui, toute aide est la bienvenue. Si vous repérez une erreur, connaissez une carte exclusive absente du catalogue ou souhaitez qu'un Pokémon soit ajouté, contactez-moi sur Reddit (u/Begooderrr), par e-mail (poketruc@icloud.com) ou en ouvrant une issue sur le projet GitHub — voir les sections Contact et Code source ci-dessous.</p>
       </div>
     </div>
 
@@ -107,8 +126,9 @@
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script>window.DATA_V='20491d29';</script>
-  <script src="/i18n.js?v=21"></script>
-  <script src="/theme.js?v=21"></script>
-  <script src="/backtotop.js?v=21"></script>
+  <script src="/i18n.js?v=22"></script>
+  <script src="/theme.js?v=22"></script>
+  <script src="/viewer.js?v=22"></script>
+  <script src="/backtotop.js?v=22"></script>
 </body>
 </html>

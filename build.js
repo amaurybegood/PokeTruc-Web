@@ -5,7 +5,6 @@
 // language, and a sitemap.xml that declares every alternate.
 
 const fs = require('fs');
-const path = require('path');
 const crypto = require('crypto');
 
 const pokemons = JSON.parse(fs.readFileSync('data/pokemons.json', 'utf8'));
@@ -48,6 +47,17 @@ const news = (() => {
     if (!c.title)                   fail('trainer_cards.json', 'missing title', c);
     if (!fs.existsSync(`cards/${c.imageName}.avif`)) fail('trainer_cards.json', `image not found: cards/${c.imageName}.avif`, c);
   });
+  news.forEach(n => {
+    if (!n.title) fail('news.json', 'missing title', n);
+    if (n.imageName && !fs.existsSync(`cards/${n.imageName}.avif`)) fail('news.json', `image not found: cards/${n.imageName}.avif`, n);
+  });
+  // Grid thumbnails are required (the client grid points at them blindly).
+  const missingThumbs = [...cards, ...trainerCards]
+    .map(c => c.imageName)
+    .filter(n => !fs.existsSync(`cards/thumbs/${n}.avif`));
+  if (missingThumbs.length) {
+    throw new Error(`missing ${missingThumbs.length} card thumbnail(s) (e.g. cards/thumbs/${missingThumbs[0]}.avif) — run: python make-thumbs.py`);
+  }
 })();
 
 const BASE_URL = 'https://poketruc.com';
@@ -85,8 +95,8 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 35;
-const JS_V  = 21;
+const CSS_V = 36;
+const JS_V  = 22;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the
@@ -110,6 +120,29 @@ function imageSize(relPath) {
 function imgSizeAttrs(relPath) {
   const s = imageSize(relPath);
   return s ? ` width="${s.w}" height="${s.h}"` : '';
+}
+
+// src/srcset/sizes/width/height for a card image shown in a grid. Grids render
+// cards at ~140-250px CSS, so the 480px thumb (make-thumbs.py) covers every
+// density; the original stays in srcset for wide picks and in the fullscreen
+// viewer. Cards no wider than the thumb cap just use the original.
+function cardSrcAttrs(imageName, sizes) {
+  const full = `cards/${imageName}.avif`;
+  const thumb = `cards/thumbs/${imageName}.avif`;
+  const fullSize = imageSize(full);
+  const thumbSize = imageSize(thumb);
+  if (!thumbSize || !fullSize || thumbSize.w >= fullSize.w) {
+    return `src="/${full}"${imgSizeAttrs(full)}`;
+  }
+  return `src="/${thumb}" srcset="/${thumb} ${thumbSize.w}w, /${full} ${fullSize.w}w" sizes="${sizes}"${imgSizeAttrs(full)}`;
+}
+const GRID_SIZES = '(max-width: 600px) 40vw, 200px';
+
+// LCP preload target for the first grid card: what the srcset actually picks.
+function cardPreloadHref(imageName) {
+  return imageSize(`cards/thumbs/${imageName}.avif`)
+    ? `/cards/thumbs/${imageName}.avif`
+    : `/cards/${imageName}.avif`;
 }
 
 const LANGS = ['en', 'fr', 'ja', 'ko', 'zh'];
@@ -725,7 +758,7 @@ const STATS_BUILDERS = {
 };
 
 // Build the aggregate "PokéTruc has catalogued N illustrations across the whole
-// Gen 1 collection..." sentence shown on the home page (no artist mention).
+// collection..." sentence shown on the home page (no artist mention).
 const HOME_STATS_BUILDERS = {
   en: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const wordP = count === 1 ? 'illustration' : 'illustrations';
@@ -735,7 +768,7 @@ const HOME_STATS_BUILDERS = {
       return `${n} ${STATS_LANG_LABEL.en[l.flag]}-exclusive ${n === 1 ? 'card' : 'cards'}`;
     });
     const langSentence = langParts.length ? `The collection includes ${joinListLang(langParts, 'en')}.` : '';
-    return `PokéTruc has catalogued ${count} exclusive Pokémon TCG card ${wordP} across ${pokemonCount} Generation 1 Pokémon, ${yearPart}. ${langSentence}`;
+    return `PokéTruc has catalogued ${count} exclusive Pokémon TCG card ${wordP} across ${pokemonCount} Pokémon, ${yearPart}. ${langSentence}`;
   },
   fr: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const s = count > 1 ? 's' : '';
@@ -746,25 +779,25 @@ const HOME_STATS_BUILDERS = {
       return `${n} carte${sn} ${STATS_LANG_LABEL.fr[l.flag]}${sn}`;
     });
     const langSentence = langParts.length ? `La collection comprend ${joinListLang(langParts, 'fr')}.` : '';
-    return `PokéTruc recense ${count} illustration${s} de carte${s} TCG Pokémon exclusive${s} à une seule langue ou région, réparties sur ${pokemonCount} Pokémon de la première génération, ${yearPart}. ${langSentence}`;
+    return `PokéTruc recense ${count} illustration${s} de carte${s} TCG Pokémon exclusive${s} à une seule langue ou région, réparties sur ${pokemonCount} Pokémon, ${yearPart}. ${langSentence}`;
   },
   ja: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY}年発行` : `${minY}年から${maxY}年`;
     const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${STATS_LANG_LABEL.ja[l.flag]}${byLang[l.flag]}枚`);
     const langSentence = langParts.length ? `内訳は${joinListLang(langParts, 'ja')}です。` : '';
-    return `PokéTrucでは、第1世代の${pokemonCount}匹のポケモンを対象に、限定TCGカードイラスト${count}枚（${yearPart}）を収録しています。${langSentence}`;
+    return `PokéTrucでは、${pokemonCount}匹のポケモンを対象に、限定TCGカードイラスト${count}枚（${yearPart}）を収録しています。${langSentence}`;
   },
   ko: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY}년 발행` : `${minY}년부터 ${maxY}년까지`;
     const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${STATS_LANG_LABEL.ko[l.flag]} ${byLang[l.flag]}장`);
     const langSentence = langParts.length ? `포함 내역: ${joinListLang(langParts, 'ko')}.` : '';
-    return `PokéTruc에는 1세대 ${pokemonCount}마리 포켓몬의 한정 TCG 카드 일러스트 ${count}장(${yearPart})이 수록되어 있습니다. ${langSentence}`;
+    return `PokéTruc에는 ${pokemonCount}마리 포켓몬의 한정 TCG 카드 일러스트 ${count}장(${yearPart})이 수록되어 있습니다. ${langSentence}`;
   },
   zh: ({ count, minY, maxY, byLang, pokemonCount }) => {
     const yearPart = (minY === maxY) ? `${minY} 年发行` : `${minY}–${maxY} 年`;
     const langParts = LANG_INFO.filter(l => byLang[l.flag]).sort((a, b) => byLang[b.flag] - byLang[a.flag]).map(l => `${byLang[l.flag]} 张${STATS_LANG_LABEL.zh[l.flag]}`);
     const langSentence = langParts.length ? `包括${joinListLang(langParts, 'zh')}。` : '';
-    return `PokéTruc 收录了第一世代 ${pokemonCount} 只宝可梦的 ${count} 张独占 TCG 卡牌插画（${yearPart}）。${langSentence}`;
+    return `PokéTruc 收录了 ${pokemonCount} 只宝可梦的 ${count} 张独占 TCG 卡牌插画（${yearPart}）。${langSentence}`;
   },
 };
 
@@ -842,6 +875,7 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
   return `  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>(function(){try{var c=document.createElement('canvas');c.width=c.height=16;var x=c.getContext('2d');x.textBaseline='top';x.font='16px sans-serif';x.fillText('\u{1F1E8}\u{1F1E6}',0,0);var d=x.getImageData(0,0,16,16).data,k=false;for(var i=0;i<d.length;i+=4){if(d[i]>150&&d[i+1]<100&&d[i+2]<100&&d[i+3]>0){k=true;break;}}if(!k)document.documentElement.classList.add('flags-need-font');}catch(e){document.documentElement.classList.add('flags-need-font');}})();</script>
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
   <title>${t}</title>
   <meta name="description" content="${d}">
   <meta name="robots" content="index, follow">
@@ -899,7 +933,7 @@ function headerBlock(lang, currentPath, kind) {
     const isCurrent = (l === lang);
     const ariaCurrent = isCurrent ? ' aria-current="true"' : '';
     const activeClass = isCurrent ? ' active' : '';
-    return `<li role="none"><a href="${altPathFor(l)}" hreflang="${HREFLANG[l]}" role="menuitem" class="lang-link${activeClass}"${ariaCurrent}>${label}</a></li>`;
+    return `<li><a href="${altPathFor(l)}" hreflang="${HREFLANG[l]}" class="lang-link${activeClass}"${ariaCurrent}>${label}</a></li>`;
   }).join('');
 
   return `  <header>
@@ -912,7 +946,7 @@ function headerBlock(lang, currentPath, kind) {
       <a href="${pathInfo(lang)}"${infoActive}>${escapeHtml(L.info)}</a>
       <details class="lang-picker">
         <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}"><span class="lang-picker-code">${lang.toUpperCase()}</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
-        <ul class="lang-picker-menu" role="menu">${langItems}</ul>
+        <ul class="lang-picker-menu">${langItems}</ul>
       </details>
       <button class="theme-toggle" id="theme-toggle" aria-label="${escapeHtml(L.themeToggleLabel)}"></button>
     </nav>
@@ -933,14 +967,15 @@ const DATA_V = crypto.createHash('sha256')
   .update(fs.readFileSync('data/pokemon_cards.json'))
   .digest('hex').slice(0, 8);
 
-// Fullscreen card viewer (accessible dialog). On detail pages pokemon.js
-// manages focus, Escape and the dynamic alt text; on the index page app.js
-// drives the same overlay for the dynamically-rendered card view.
+// Fullscreen card viewer (accessible dialog). viewer.js holds the shared
+// focus/Escape/alt logic; pokemon.js (detail + trainers) and app.js (index)
+// initialise it with their own delegation root.
 const CLOSE_LABEL = { en: 'Close', fr: 'Fermer', ja: '閉じる', ko: '닫기', zh: '关闭' };
+const FULLSCREEN_LABEL = { en: 'Card image in fullscreen', fr: 'Image de la carte en plein écran', ja: 'カード画像の全画面表示', ko: '카드 이미지 전체 화면', zh: '卡牌图片全屏显示' };
 
 function fullscreenBlock(lang) {
   return `  <!-- Fullscreen -->
-  <div id="fullscreen" class="fullscreen hidden" role="dialog" aria-modal="true">
+  <div id="fullscreen" class="fullscreen hidden" role="dialog" aria-modal="true" aria-label="${FULLSCREEN_LABEL[lang]}">
     <div class="fullscreen-backdrop"></div>
     <button type="button" id="fullscreen-close" class="fullscreen-close" aria-label="${CLOSE_LABEL[lang]}">✕</button>
     <img id="fullscreen-img" src="" alt="">
@@ -952,6 +987,7 @@ function scriptTags() {
   <script>window.DATA_V='${DATA_V}';</script>
   <script src="/i18n.js?v=${JS_V}"></script>
   <script src="/theme.js?v=${JS_V}"></script>
+  <script src="/viewer.js?v=${JS_V}"></script>
   <script src="/backtotop.js?v=${JS_V}"></script>`;
 }
 
@@ -961,11 +997,11 @@ function scriptTags() {
 
 // Card-language adjective per UI language, used in image alt-text.
 const CARD_LANG_ADJ = {
-  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇩🇪': 'German-exclusive', '🇪🇸': 'Spanish-exclusive', '🇫🇷': 'French-exclusive', '🇮🇹': 'Italian-exclusive', '🇵🇹': 'Portuguese-exclusive', '🇵🇱': 'Polish-exclusive', '🇷🇺': 'Russian-exclusive', '🌍': 'Western-exclusive', '🏯': 'Asian-exclusive' },
-  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇩🇪': 'exclusivité allemande', '🇪🇸': 'exclusivité espagnole', '🇫🇷': 'exclusivité française', '🇮🇹': 'exclusivité italienne', '🇵🇹': 'exclusivité portugaise', '🇵🇱': 'exclusivité polonaise', '🇷🇺': 'exclusivité russe', '🌍': 'exclusivité occidentale', '🏯': 'exclusivité asiatique' },
-  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇷🇺': 'ロシア語限定', '🌍': '欧米限定', '🏯': 'アジア限定' },
-  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정', '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정', '🇷🇺': '러시아어 한정', '🌍': '서양 한정', '🏯': '아시아 한정' },
-  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇩🇪': '德文独占', '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占', '🇮🇹': '意大利文独占', '🇵🇹': '葡萄牙文独占', '🇵🇱': '波兰文独占', '🇷🇺': '俄文独占', '🌍': '西方独占', '🏯': '亚洲独占' },
+  en: { '🇯🇵': 'Japanese-exclusive', '🇬🇧': 'English-exclusive', '🇨🇳': 'Chinese-exclusive', '🇰🇷': 'Korean-exclusive', '🇮🇩': 'Indonesian-exclusive', '🇩🇪': 'German-exclusive', '🇪🇸': 'Spanish-exclusive', '🇫🇷': 'French-exclusive', '🇮🇹': 'Italian-exclusive', '🇵🇹': 'Portuguese-exclusive', '🇵🇱': 'Polish-exclusive', '🇷🇺': 'Russian-exclusive', '🌍': 'Western-exclusive', '🏯': 'Asian-exclusive' },
+  fr: { '🇯🇵': 'exclusivité japonaise', '🇬🇧': 'exclusivité anglaise', '🇨🇳': 'exclusivité chinoise', '🇰🇷': 'exclusivité coréenne', '🇮🇩': 'exclusivité indonésienne', '🇩🇪': 'exclusivité allemande', '🇪🇸': 'exclusivité espagnole', '🇫🇷': 'exclusivité française', '🇮🇹': 'exclusivité italienne', '🇵🇹': 'exclusivité portugaise', '🇵🇱': 'exclusivité polonaise', '🇷🇺': 'exclusivité russe', '🌍': 'exclusivité occidentale', '🏯': 'exclusivité asiatique' },
+  ja: { '🇯🇵': '日本限定', '🇬🇧': '英語限定', '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇮🇩': 'インドネシア語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇷🇺': 'ロシア語限定', '🌍': '欧米限定', '🏯': 'アジア限定' },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇮🇩': '인도네시아어 한정', '🇩🇪': '독일어 한정', '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정', '🇷🇺': '러시아어 한정', '🌍': '서양 한정', '🏯': '아시아 한정' },
+  zh: { '🇯🇵': '日文独占', '🇬🇧': '英文独占', '🇨🇳': '中文独占', '🇰🇷': '韩文独占', '🇮🇩': '印尼文独占', '🇩🇪': '德文独占', '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占', '🇮🇹': '意大利文独占', '🇵🇹': '葡萄牙文独占', '🇵🇱': '波兰文独占', '🇷🇺': '俄文独占', '🌍': '西方独占', '🏯': '亚洲独占' },
 };
 
 const CARD_ALT_SUFFIX = {
@@ -1000,7 +1036,7 @@ function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
   return `
         <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
           <button type="button" class="card-zoom">
-            <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}"${loadAttrs} decoding="async"${imgSizeAttrs(`cards/${card.imageName}.avif`)}>
+            <img ${cardSrcAttrs(card.imageName, GRID_SIZES)} alt="${escapeHtml(alt)}"${loadAttrs} decoding="async">
           </button>
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.name)}</div>
@@ -1094,12 +1130,12 @@ function renderTrainerCard(card, L, lang, eager = false) {
   return `
         <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
           <button type="button" class="card-zoom">
-            <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}"${loadAttrs} decoding="async"${imgSizeAttrs(`cards/${card.imageName}.avif`)}>
+            <img ${cardSrcAttrs(card.imageName, GRID_SIZES)} alt="${escapeHtml(alt)}"${loadAttrs} decoding="async">
           </button>
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.title)}</div>
             <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
-            ${card.name ? `<div class="card-artist">${escapeHtml(card.name)}</div>` : ''}
+            ${card.name ? `<div class="card-set">${escapeHtml(card.name)}</div>` : ''}
             ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
             ${card.description ? `<details class="card-description">
               <summary class="card-description-toggle">${escapeHtml(L.descriptionToggle)}</summary>
@@ -1187,21 +1223,18 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
     "isPartOf": { "@id": `${canonical}#collection` },
     "itemListElement": pkCards.map((card, i) => {
       const isos = card.languages.map(f => FLAG_TO_ISO[f]).filter(Boolean);
+      // Slim per-card entity: name/image/date/creator/language is all Google
+      // reads for a catalog page — the verbose graph tripled page weight.
       const artwork = {
         "@type": "VisualArtwork",
         "@id": `${BASE_URL}/cards/${card.imageName}`,
         "name": `${localizedName} — ${card.name}${card.year ? ` (${card.year})` : ''}`,
         "image": `${BASE_URL}/cards/${card.imageName}.avif`,
-        "url": canonical,
-        "artform": "Trading card",
-        "about": { "@type": "Thing", "name": localizedName },
-        "isPartOf": { "@type": "CreativeWorkSeries", "name": card.name },
       };
       if (card.year)        artwork.datePublished = String(card.year);
       if (isos.length === 1) artwork.inLanguage = isos[0];
       else if (isos.length > 1) artwork.inLanguage = isos;
       if (card.artist)   artwork.creator = { "@type": "Person", "name": card.artist };
-      if (card.rarity)   artwork.additionalType = card.rarity;
       return { "@type": "ListItem", "position": i + 1, "item": artwork };
     }),
   };
@@ -1226,7 +1259,7 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
     jsonLd,
     ogImage,
     twitterCard: 'summary',
-    preloadImage: firstCard ? `/cards/${firstCard.imageName}.avif` : undefined,
+    preloadImage: firstCard ? cardPreloadHref(firstCard.imageName) : undefined,
   });
 
   // <link rel="prev/next"> for crawl chain
@@ -1259,7 +1292,7 @@ ${headerBlock(lang, { slug }, 'pokemon')}
 
   <main id="main-content" class="pokemon-page">
     <div class="pokemon-hero">
-      <img src="/monsters/${pokemon.imageName}.png"
+      <img src="/monsters/${pokemon.imageName}.webp"
            alt="${escapeHtml(localizedName)}"
            class="pokemon-sprite"
            width="96" height="96">
@@ -1295,14 +1328,19 @@ ${scriptTags()}
 // News block (home page) — hand-curated latest real-world exclusive releases.
 // -----------------------------------------------------------------------------
 
-function renderNewsItem(item, L) {
-  const imgSrc = item.image || (item.imageName ? `/cards/${item.imageName}.avif` : '');
-  const sizeAttrs = item.imageName && !item.image ? imgSizeAttrs(`cards/${item.imageName}.avif`) : '';
+function renderNewsItem(item, L, eager = false) {
+  // Local card images get the thumbnail srcset (shown at 56px CSS); external
+  // `image` URLs are used as-is.
+  const srcAttrs = item.image ? `src="${escapeHtml(item.image)}"`
+    : item.imageName ? cardSrcAttrs(item.imageName, '56px')
+    : '';
   const flags = Array.isArray(item.languages) ? item.languages.join(' ') : '';
   const metaBits = [flags, item.year, item.set].filter(Boolean)
     .map(b => escapeHtml(String(b))).join(' · ');
+  // First news card is likely the LCP element — load it eagerly.
+  const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
   const inner = `
-        ${imgSrc ? `<img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(item.title || '')}" loading="lazy" decoding="async"${sizeAttrs}>` : ''}
+        ${srcAttrs ? `<img ${srcAttrs} alt="${escapeHtml(item.title || '')}"${loadAttrs} decoding="async">` : ''}
         <div class="news-card-info">
           <div class="news-card-name">${escapeHtml(item.title || '')}</div>
           ${metaBits ? `<div class="news-card-meta">${metaBits}</div>` : ''}
@@ -1326,7 +1364,7 @@ function buildNewsHTML(lang) {
     <section class="news-section" aria-label="${escapeHtml(L.newsHeading)}">
       <h2 class="news-heading">${escapeHtml(L.newsHeading)}</h2>
       <div class="news-grid">
-${news.map(item => renderNewsItem(item, L)).join('\n')}
+${news.map((item, i) => renderNewsItem(item, L, i === 0)).join('\n')}
       </div>
     </section>`;
 }
@@ -1426,11 +1464,11 @@ ${newsHTML}
       <input type="search" id="search" placeholder="${escapeHtml(L.searchPlaceholder)}" aria-label="${escapeHtml(L.searchPlaceholder)}" autocomplete="off">
     </div>
 
-    <div id="lang-filter" class="lang-filter" role="toolbar" aria-label="${escapeHtml(L.langFilterAria)}"></div>
+    <div id="lang-filter" class="lang-filter" role="group" aria-label="${escapeHtml(L.langFilterAria)}"></div>
 
     <div id="view-toggle" class="view-toggle" role="group" aria-label="${escapeHtml(L.viewToggleAria)}"></div>
 
-    <div id="gen-nav" class="gen-nav" role="toolbar" aria-label="${escapeHtml(L.genNavAria)}"></div>
+    <div id="gen-nav" class="gen-nav" role="group" aria-label="${escapeHtml(L.genNavAria)}"></div>
 
     <div id="loader" class="loader">
       <div class="loader-spinner"></div>
@@ -1466,6 +1504,90 @@ ${scriptTags()}
 // Info page (per language)
 // -----------------------------------------------------------------------------
 
+// FAQ shown on the Info page and emitted as FAQPage JSON-LD. Question-shaped
+// headings + short factual answers: the format Google FAQ rich results and AI
+// engine citations both consume. Counts are computed from the live catalogue.
+const FAQ_HEADING = { en: 'FAQ', fr: 'Questions fréquentes', ja: 'よくある質問', ko: '자주 묻는 질문', zh: '常见问题' };
+function faqItems(lang) {
+  const n = cards.length;
+  const m = new Set(cards.map(c => c.pokemonId)).size;
+  const years = cards.map(c => c.year);
+  const minY = Math.min(...years), maxY = Math.max(...years);
+  const FAQ = {
+    en: [
+      ['What is a language-exclusive Pokémon card?',
+       'A Pokémon TCG card whose illustration was only ever printed in a single language. For example, a promo distributed only in Japanese magazines, or a card from a Chinese-market set that was never released in any other language.'],
+      ['Why do some Pokémon cards only exist in Japanese?',
+       'Japan gets many promotional cards tied to local magazines, vending machines, stores and events. Many of these promos were never reprinted for other markets, so their artwork exists only on the Japanese card.'],
+      ['What do Western-exclusive and Asian-exclusive mean?',
+       'A Western-exclusive card was released in Western languages (English, German, French, Italian, Spanish…) but never in Japan or Asia — for example the Call of Legends set. An Asian-exclusive card is the reverse: released in one or more Asian languages but never in the West.'],
+      [`How many exclusive cards does PokéTruc catalogue?`,
+       `PokéTruc currently catalogues ${n} language- and region-exclusive card illustrations across ${m} Pokémon, published from ${minY} to ${maxY}. The catalogue is updated as new exclusive cards are released or discovered.`],
+      ['Is PokéTruc an official Pokémon website?',
+       'No. PokéTruc is an unofficial, fan-made, free and ad-free catalogue. Pokémon and Pokémon character names are trademarks of Nintendo, Creatures Inc. and GAME FREAK inc.'],
+      ['Can I help correct a mistake or add missing cards or Pokémon?',
+       'Yes, contributions are very welcome. If you spot an error, know of an exclusive card that is missing, or want a Pokémon added to the catalogue, get in touch on Reddit (u/Begooderrr), by email (poketruc@icloud.com) or by opening an issue on the GitHub project — see the Contact and Source code sections below.'],
+    ],
+    fr: [
+      ['Qu\'est-ce qu\'une carte Pokémon exclusive à une langue ?',
+       'Une carte du JCC Pokémon dont l\'illustration n\'a été imprimée que dans une seule langue. Par exemple une promo distribuée uniquement dans des magazines japonais, ou une carte d\'un set du marché chinois jamais sortie ailleurs.'],
+      ['Pourquoi certaines cartes Pokémon n\'existent-elles qu\'en japonais ?',
+       'Le Japon reçoit de nombreuses cartes promotionnelles liées à des magazines, distributeurs automatiques, boutiques et événements locaux. Beaucoup de ces promos n\'ont jamais été rééditées pour d\'autres marchés : leur illustration n\'existe que sur la carte japonaise.'],
+      ['Que signifient « exclusivité occidentale » et « exclusivité asiatique » ?',
+       'Une carte en exclusivité occidentale est sortie dans des langues occidentales (anglais, allemand, français, italien, espagnol…) mais jamais au Japon ni en Asie — par exemple le set L\'appel des légendes. Une exclusivité asiatique, c\'est l\'inverse : sortie dans une ou plusieurs langues asiatiques mais jamais en occident.'],
+      ['Combien de cartes exclusives PokéTruc recense-t-il ?',
+       `PokéTruc recense actuellement ${n} illustrations de cartes exclusives à une langue ou une région, réparties sur ${m} Pokémon, publiées de ${minY} à ${maxY}. Le catalogue est mis à jour au fil des sorties et découvertes.`],
+      ['PokéTruc est-il un site officiel Pokémon ?',
+       'Non. PokéTruc est un catalogue non officiel, fait par un fan, gratuit et sans publicité. Pokémon et les noms des personnages Pokémon sont des marques de Nintendo, Creatures Inc. et GAME FREAK inc.'],
+      ['Puis-je aider à corriger une erreur ou ajouter des cartes ou des Pokémon manquants ?',
+       'Oui, toute aide est la bienvenue. Si vous repérez une erreur, connaissez une carte exclusive absente du catalogue ou souhaitez qu\'un Pokémon soit ajouté, contactez-moi sur Reddit (u/Begooderrr), par e-mail (poketruc@icloud.com) ou en ouvrant une issue sur le projet GitHub — voir les sections Contact et Code source ci-dessous.'],
+    ],
+    ja: [
+      ['言語限定のポケモンカードとは何ですか？',
+       'イラストが一つの言語でしか印刷されなかったポケモンTCGのカードです。例えば日本の雑誌付録として配布されたプロモや、中国市場限定セットのカードなどです。'],
+      ['なぜ日本語でしか存在しないカードがあるのですか？',
+       '日本では雑誌、自動販売機、店舗やイベントに関連した多くのプロモカードが配布されます。その多くは他の市場で再版されなかったため、そのイラストは日本語のカードにしか存在しません。'],
+      ['「欧米限定」「アジア限定」とはどういう意味ですか？',
+       '欧米限定カードは欧米の言語（英語・ドイツ語・フランス語・イタリア語・スペイン語など）で発売され、日本やアジアでは未発売のカードです（例：Call of Legends）。アジア限定はその逆で、アジアの言語でのみ発売されたカードです。'],
+      ['PokéTrucには何枚の限定カードが収録されていますか？',
+       `現在、${m}匹のポケモンにわたる${n}枚の言語・地域限定カードイラスト（${minY}年〜${maxY}年発行）を収録しています。新しい限定カードの発売や発見に応じて更新されます。`],
+      ['PokéTrucは公式サイトですか？',
+       'いいえ。PokéTrucは非公式のファンメイドサイトで、無料・広告なしで運営されています。ポケモンおよびポケモンのキャラクター名は任天堂・クリーチャーズ・ゲームフリークの商標です。'],
+      ['誤りの修正や、カード・ポケモンの追加を手伝うことはできますか？',
+       'はい、ご協力は大歓迎です。誤りを見つけた場合や、収録されていない限定カードをご存じの場合、追加してほしいポケモンがある場合は、Reddit（u/Begooderrr）、メール（poketruc@icloud.com）、またはGitHubプロジェクトのissueでご連絡ください。詳しくは下記のお問い合わせ・ソースコードのセクションをご覧ください。'],
+    ],
+    ko: [
+      ['언어 한정 포켓몬 카드란 무엇인가요?',
+       '일러스트가 단 하나의 언어로만 인쇄된 포켓몬 TCG 카드입니다. 예를 들어 일본 잡지 부록으로만 배포된 프로모 카드나, 다른 언어로는 출시되지 않은 중국 시장 한정 세트의 카드가 있습니다.'],
+      ['왜 일본어로만 존재하는 카드가 있나요?',
+       '일본에서는 잡지, 자판기, 매장, 이벤트와 연계된 프로모 카드가 많이 배포됩니다. 이 중 상당수는 다른 시장에서 재판되지 않아 그 일러스트는 일본어 카드에만 존재합니다.'],
+      ['서양 한정과 아시아 한정은 무슨 뜻인가요?',
+       '서양 한정 카드는 서양 언어(영어·독일어·프랑스어·이탈리아어·스페인어 등)로 출시되었지만 일본이나 아시아에서는 출시되지 않은 카드입니다(예: Call of Legends). 아시아 한정은 그 반대로, 아시아 언어로만 출시된 카드입니다.'],
+      ['PokéTruc에는 몇 장의 한정 카드가 수록되어 있나요?',
+       `현재 ${m}마리 포켓몬에 걸쳐 ${n}장의 언어·지역 한정 카드 일러스트(${minY}년~${maxY}년 발행)를 수록하고 있습니다. 새로운 한정 카드의 출시와 발견에 따라 업데이트됩니다.`],
+      ['PokéTruc은 공식 사이트인가요?',
+       '아니요. PokéTruc은 비공식 팬 사이트로, 무료이며 광고가 없습니다. 포켓몬 및 포켓몬 캐릭터 이름은 Nintendo, Creatures Inc., GAME FREAK inc.의 상표입니다.'],
+      ['오류 수정이나 카드·포켓몬 추가를 도울 수 있나요?',
+       '네, 어떤 도움이든 환영합니다. 오류를 발견했거나, 수록되지 않은 한정 카드를 알고 있거나, 추가되었으면 하는 포켓몬이 있다면 Reddit(u/Begooderrr), 이메일(poketruc@icloud.com) 또는 GitHub 프로젝트의 issue로 연락해 주세요. 자세한 내용은 아래의 연락처 및 소스 코드 섹션을 참고하세요.'],
+    ],
+    zh: [
+      ['什么是语言独占的宝可梦卡牌？',
+       '指插画仅以单一语言印刷过的宝可梦TCG卡牌。例如仅随日本杂志发放的促销卡，或从未以其他语言发行的中国市场独占卡组中的卡牌。'],
+      ['为什么有些卡牌只有日文版？',
+       '日本有大量与杂志、自动贩卖机、店铺和活动相关的促销卡牌。其中许多从未在其他市场再版，因此这些插画只存在于日文卡牌上。'],
+      ['「西方独占」和「亚洲独占」是什么意思？',
+       '西方独占卡牌以西方语言（英语、德语、法语、意大利语、西班牙语等）发行，但从未在日本或亚洲发行，例如 Call of Legends 卡组。亚洲独占则相反：仅以一种或多种亚洲语言发行。'],
+      ['PokéTruc 收录了多少张独占卡牌？',
+       `目前收录了 ${m} 只宝可梦的 ${n} 张语言·地区独占卡牌插画（${minY}–${maxY} 年发行）。目录会随着新独占卡牌的发行和发现而更新。`],
+      ['PokéTruc 是官方网站吗？',
+       '不是。PokéTruc 是非官方的粉丝网站，免费且无广告。宝可梦及宝可梦角色名称是任天堂、Creatures Inc. 和 GAME FREAK inc. 的商标。'],
+      ['我可以帮忙纠正错误或添加缺失的卡牌、宝可梦吗？',
+       '当然可以，非常欢迎任何帮助。如果您发现错误、知道目录中缺失的独占卡牌，或希望添加某只宝可梦，请通过 Reddit（u/Begooderrr）、电子邮件（poketruc@icloud.com）或在 GitHub 项目上提交 issue 与我联系——详见下方的联系方式和源代码部分。'],
+    ],
+  };
+  return FAQ[lang];
+}
+
 function infoPageHTML(lang) {
   const L = LANG[lang];
   const urlsByLang = Object.fromEntries(LANGS.map(l => [l, urlForInfo(l)]));
@@ -1478,7 +1600,17 @@ function infoPageHTML(lang) {
       { "@type": "ListItem", "position": 2, "name": L.info,    "item": canonical },
     ],
   };
-  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [breadcrumbList] });
+  const faq = faqItems(lang);
+  const faqPage = {
+    "@type": "FAQPage",
+    "inLanguage": HTML_LANG[lang],
+    "mainEntity": faq.map(([q, a]) => ({
+      "@type": "Question",
+      "name": q,
+      "acceptedAnswer": { "@type": "Answer", "text": a },
+    })),
+  };
+  const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [breadcrumbList, faqPage] });
 
   const head = headBlock({
     lang,
@@ -1525,6 +1657,14 @@ ${headerBlock(lang, '', 'info')}
       <h2>${escapeHtml(L.aboutHeading)}</h2>
       <div>
         ${aboutHTML}
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h2>${escapeHtml(FAQ_HEADING[lang])}</h2>
+      <div>
+        ${faq.map(([q, a]) => `<h3 class="faq-q">${escapeHtml(q)}</h3>
+        <p>${escapeHtml(a)}</p>`).join('\n        ')}
       </div>
     </div>
 
@@ -1589,7 +1729,7 @@ function trainersPageHTML(lang) {
     urlsByLang,
     jsonLd,
     twitterCard: 'summary',
-    preloadImage: firstCard ? `/cards/${firstCard.imageName}.avif` : undefined,
+    preloadImage: firstCard ? cardPreloadHref(firstCard.imageName) : undefined,
   });
 
   const sectionsHTML = trainerCards.length
@@ -1711,7 +1851,9 @@ function sitemapEntry(urlsByLang, lang, urlKey, { priority, changefreq, images =
   const lastmod = newState[urlKey]?.lastmod || TODAY;
   // Google's image sitemap extension only reads <image:loc>; the other
   // sub-tags (caption, title…) were deprecated in 2022 and are ignored.
-  const imgs = images.map(u =>
+  // Emitted only on the en (x-default) entry — same images on all 5 language
+  // URLs would just repeat the same discovery signal and 3× the file size.
+  const imgs = (lang === 'en' ? images : []).map(u =>
     `    <image:image><image:loc>${u}</image:loc></image:image>`
   ).join('\n');
   return `  <url>

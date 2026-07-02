@@ -205,16 +205,17 @@ function createTile(pokemon, flag, prefix) {
 
   div.innerHTML = `
     <span class="pokemon-number">#${pokemon.id}</span>
-    <img src="/monsters/${pokemon.imageName}.png" alt="${pokemonName(pokemon)}" loading="lazy" decoding="async" width="72" height="72">
+    <img src="/monsters/${pokemon.imageName}.webp" alt="${pokemonName(pokemon)}" loading="lazy" decoding="async" width="72" height="72">
     <div class="name">${pokemonName(pokemon)}</div>
     <span class="${badgeClass}">${badgeLabel}</span>
   `;
 
   if (hasCards) {
+    // Prefetch the thumbs: that's what the detail-page grid renders.
     div.addEventListener('pointerenter', () => {
       pkCards.forEach(card => {
         const img = new Image();
-        img.src = `/cards/${card.imageName}.avif`;
+        img.src = `/cards/thumbs/${card.imageName}.avif`;
       });
     }, { once: true });
   }
@@ -312,7 +313,7 @@ function renderCardClient(card) {
   return `
     <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
       <button type="button" class="card-zoom">
-        <img src="/cards/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">
+        <img src="/cards/thumbs/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">
       </button>
       <div class="card-info">
         ${pName ? `<div class="card-pokemon-name">${escapeHtml(pName)}</div>` : ''}
@@ -377,49 +378,8 @@ document.getElementById('search').addEventListener('input', e => {
   applyFilter();
 });
 
-// Fullscreen card viewer for the card view. The overlay markup (#fullscreen) is
-// shared with the detail pages; here we drive it via event delegation because
-// the cards are re-rendered on every filter change. Mirrors pokemon.js.
-(function initCardViewer() {
-  const overlay  = document.getElementById('fullscreen');
-  const fsImg    = document.getElementById('fullscreen-img');
-  const closeBtn = document.getElementById('fullscreen-close');
-  const grid     = document.getElementById('pokemon-grid');
-  if (!overlay || !fsImg || !closeBtn || !grid) return;
-  let opener = null;
-
-  function openViewer(item) {
-    const thumb = item.querySelector('img');
-    fsImg.src = item.dataset.img;
-    fsImg.alt = thumb ? thumb.alt : '';
-    overlay.classList.remove('hidden');
-    opener = item.querySelector('.card-zoom') || item;
-    closeBtn.focus();
-  }
-
-  function closeViewer() {
-    if (overlay.classList.contains('hidden')) return;
-    overlay.classList.add('hidden');
-    fsImg.src = '';
-    fsImg.alt = '';
-    if (opener) { opener.focus(); opener = null; }
-  }
-
-  grid.addEventListener('click', e => {
-    const item = e.target.closest('.card-item');
-    if (item) openViewer(item);
-  });
-
-  overlay.querySelector('.fullscreen-backdrop').addEventListener('click', closeViewer);
-  closeBtn.addEventListener('click', closeViewer);
-
-  // Keep Tab on the close button so focus can't escape behind the overlay.
-  overlay.addEventListener('keydown', e => {
-    if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); }
-  });
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeViewer();
-  });
-})();
+// Fullscreen card viewer for the card view (shared logic in viewer.js).
+// Delegated from the grid because cards are re-rendered on every filter change.
+initCardViewer(document.getElementById('pokemon-grid'));
 
 loadData();

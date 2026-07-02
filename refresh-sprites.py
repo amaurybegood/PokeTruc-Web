@@ -87,6 +87,8 @@ for p in pokemons:
             canvas.paste(im, ((SIZE - im.width) // 2, (SIZE - im.height) // 2), im)
             im = canvas
         im.save(f"monsters/{name}.png")
+        # The site serves the .webp; the PNG stays as og:image + source.
+        im.save(f"monsters/{name}.webp", quality=90, method=6)
         ok += 1
         print(f"  [ok]   #{pid:>4} {name}")
     except Exception as e:

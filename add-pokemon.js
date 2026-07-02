@@ -121,7 +121,8 @@ async function main() {
   console.log(`✓ Sprite saved → ${spritePath} (${(buf.length / 1024).toFixed(0)} KB)`);
 
   // Normalise to a square transparent SPRITE_SIZE canvas (matches the other
-  // sprites) via Python/Pillow. Graceful: if Python/Pillow is missing the
+  // sprites) via Python/Pillow, and emit the .webp the site serves (the PNG
+  // stays as og:image + source). Graceful: if Python/Pillow is missing the
   // native-size artwork is kept and we just warn.
   try {
     const py = `from PIL import Image
@@ -129,10 +130,11 @@ im = Image.open(r'${spritePath}').convert('RGBA')
 im.thumbnail((${SPRITE_SIZE}, ${SPRITE_SIZE}), Image.LANCZOS)
 c = Image.new('RGBA', (${SPRITE_SIZE}, ${SPRITE_SIZE}), (0, 0, 0, 0))
 c.paste(im, ((${SPRITE_SIZE} - im.width) // 2, (${SPRITE_SIZE} - im.height) // 2), im)
-c.save(r'${spritePath}')`;
+c.save(r'${spritePath}')
+c.save(r'${spritePath.replace(/\.png$/, '.webp')}', quality=90, method=6)`;
     execFileSync('python', ['-c', py], { stdio: 'ignore' });
     const kb = (fs.statSync(spritePath).size / 1024).toFixed(0);
-    console.log(`✓ Sprite resized to ${SPRITE_SIZE}×${SPRITE_SIZE} (${kb} KB)`);
+    console.log(`✓ Sprite resized to ${SPRITE_SIZE}×${SPRITE_SIZE} (${kb} KB) + .webp`);
   } catch {
     console.warn(`⚠ Could not resize (Python/Pillow missing?) — sprite kept at native size. Run: python refresh-sprites.py`);
   }

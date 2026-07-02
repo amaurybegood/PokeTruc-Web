@@ -512,6 +512,12 @@ button:focus-visible,
   line-height: 1.6;
 }
 
+.info-card .faq-q {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 12px 0 2px;
+}
+
 .info-card.disclaimer p {
   font-size: 0.8rem;
 }
@@ -812,97 +818,6 @@ a.news-card:hover {
 }
 
 
-/* Modal */
-.modal {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.modal.hidden {
-  display: none;
-}
-
-@keyframes slideUp {
-  from { transform: translateY(100%); }
-  to   { transform: translateY(0); }
-}
-
-@keyframes slideDown {
-  from { transform: translateY(0); }
-  to   { transform: translateY(100%); }
-}
-
-.modal-content.closing {
-  animation: slideDown 0.3s cubic-bezier(0.32, 0.72, 0, 1);
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-.modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  animation: fadeIn 0.25s ease;
-}
-
-.modal-content {
-  position: relative;
-  z-index: 1;
-  background: var(--bg);
-  border-radius: var(--radius) var(--radius) 0 0;
-  width: 100%;
-  max-width: 700px;
-  max-height: 85vh;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding: 32px 24px 48px;
-  animation: slideUp 0.3s cubic-bezier(0.32, 0.72, 0, 1);
-}
-
-.modal-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: var(--card-bg);
-  border: none;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  color: var(--text-secondary);
-}
-
-.modal-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.modal-header img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-}
-
-.modal-header h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.modal-header .card-count {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-}
-
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -972,6 +887,12 @@ a.news-card:hover {
   margin-top: 2px;
   white-space: normal;
   word-break: break-word;
+}
+
+.card-item .card-set {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
 }
 
 .card-item .card-artist {
@@ -1422,4 +1343,18 @@ footer {
   .pokemon-nav-up { order: -1; flex-basis: 100%; text-align: center; }
   footer { margin-top: 12px; padding: 16px; }
   .seo-pokedex-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+
+/* WCAG 44px touch targets on touch devices only — desktop keeps the compact chips. */
+@media (pointer: coarse) {
+  .lang-filter-chip,
+  .gen-nav-chip,
+  .view-toggle-btn,
+  .theme-toggle,
+  .lang-picker-toggle {
+    min-height: 44px;
+  }
+  .theme-toggle {
+    min-width: 44px;
+  }
 }
