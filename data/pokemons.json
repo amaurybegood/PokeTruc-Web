@@ -2327,6 +2327,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 399,
+    "name": {
+      "en": "Bidoof",
+      "fr": "Keunotor",
+      "jp": "ビッパ",
+      "ko": "비버니",
+      "zh": "大牙狸"
+    },
+    "imageName": "bidoof",
+    "generation": 4,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 400,
     "name": {
       "en": "Bibarel",

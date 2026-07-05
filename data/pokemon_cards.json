@@ -8447,5 +8447,17 @@
     ],
     "year": 2012,
     "artist": "Akira Komayama"
+  },
+  {
+    "pokemonId": 399,
+    "name": "Special Delivery Bidoof - Sword & Shield Promos",
+    "imageName": "399_Bidoof_swshp_SWSH177",
+    "rarity": "Promo",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Special_Delivery_Bidoof_(SWSH_Promo_177)",
+    "languages": [
+      "🇬🇧"
+    ],
+    "year": 2020,
+    "artist": "The Pokémon Company Art Team"
   }
 ]
