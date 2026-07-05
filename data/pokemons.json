@@ -2158,6 +2158,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 252,
+    "name": {
+      "en": "Treecko",
+      "fr": "Arcko",
+      "jp": "キモリ",
+      "ko": "나무지기",
+      "zh": "木守宫"
+    },
+    "imageName": "treecko",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 255,
     "name": {
       "en": "Torchic",
@@ -2182,6 +2195,19 @@
     "imageName": "mudkip",
     "generation": 3,
     "researchStatus": "done"
+  },
+  {
+    "id": 265,
+    "name": {
+      "en": "Wurmple",
+      "fr": "Chenipotte",
+      "jp": "ケムッソ",
+      "ko": "개무소",
+      "zh": "刺尾虫"
+    },
+    "imageName": "wurmple",
+    "generation": 3,
+    "researchStatus": "in_progress"
   },
   {
     "id": 282,

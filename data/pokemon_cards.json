@@ -2595,7 +2595,7 @@
     "name": "Poké Card Creator Pack",
     "imageName": "25_Pikachu_pccp_5",
     "rarity": "No Rarity",
-    "description": "",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Poké_Card_Creator_Pack_(TCG)",
     "languages": [
       "🇬🇧"
     ],
@@ -8082,7 +8082,7 @@
   "name": "Poké Card Creator Pack",
   "imageName": "258_Mudkip_pccp_4",
   "rarity": "No Rarity",
-  "description": "https://bulbapedia.bulbagarden.net/wiki/Mudkip_(Creator_Contest_4)",
+  "description": "https://bulbapedia.bulbagarden.net/wiki/Poké_Card_Creator_Pack_(TCG)",
   "languages": [
     "🇬🇧"
   ],
@@ -8399,5 +8399,41 @@
     ],
     "year": 2006,
     "artist": "Ryo Ueda"
+  },
+  {
+    "pokemonId": 255,
+    "name": "Poké Card Creator Pack",
+    "imageName": "255_Torchic_pccp_3",
+    "rarity": "No Rarity",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Poké_Card_Creator_Pack_(TCG)",
+    "languages": [
+      "🇬🇧"
+    ],
+    "year": 2004,
+    "artist": "May Do"
+  },
+  {
+    "pokemonId": 265,
+    "name": "Poké Card Creator Pack",
+    "imageName": "265_Wurmple_pccp_2",
+    "rarity": "No Rarity",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Poké_Card_Creator_Pack_(TCG)",
+    "languages": [
+      "🇬🇧"
+    ],
+    "year": 2004,
+    "artist": "Katie Gross"
+  },
+  {
+    "pokemonId": 252,
+    "name": "Poké Card Creator Pack",
+    "imageName": "252_Treecko_pccp_1",
+    "rarity": "No Rarity",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Poké_Card_Creator_Pack_(TCG)",
+    "languages": [
+      "🇬🇧"
+    ],
+    "year": 2004,
+    "artist": "Mark Kraus"
   }
 ]
