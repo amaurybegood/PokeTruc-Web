@@ -8435,5 +8435,17 @@
     ],
     "year": 2004,
     "artist": "Mark Kraus"
+  },
+  {
+    "pokemonId": 467,
+    "name": "Dragon Blade",
+    "imageName": "467_Magmortar_jpn_bw5d_8",
+    "rarity": "Uncommon",
+    "description": "https://bulbapedia.bulbagarden.net/wiki/Magmortar_(Dragons_Exalted_21)",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2012,
+    "artist": "Akira Komayama"
   }
 ]

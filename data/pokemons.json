@@ -2392,6 +2392,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 467,
+    "name": {
+      "en": "Magmortar",
+      "fr": "Maganon",
+      "jp": "ブーバーン",
+      "ko": "마그마번",
+      "zh": "鸭嘴炎兽"
+    },
+    "imageName": "magmortar",
+    "generation": 4,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 470,
     "name": {
       "en": "Leafeon",
