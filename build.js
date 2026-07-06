@@ -984,6 +984,7 @@ function fullscreenBlock(lang) {
 
 function scriptTags() {
   return `  <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f7f7d1c9-87f5-4b52-8f20-b6110f143513"></script>
   <script>window.DATA_V='${DATA_V}';</script>
   <script src="/i18n.js?v=${JS_V}"></script>
   <script src="/theme.js?v=${JS_V}"></script>
