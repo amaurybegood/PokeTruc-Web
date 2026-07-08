@@ -95,7 +95,7 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 36;
+const CSS_V = 38;
 const JS_V  = 22;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
@@ -881,7 +881,8 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
   <meta name="robots" content="index, follow">
 
   <link rel="preload" as="style" href="/style.css?v=${CSS_V}">
-  <link rel="preload" as="image" href="/logo.webp" type="image/webp">${preloadImage ? `
+  <link rel="preload" as="image" href="/logo.webp" type="image/webp">
+  <link rel="preload" as="image" href="/logo-title.webp" type="image/webp">${preloadImage ? `
   <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">` : ''}
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
@@ -938,7 +939,7 @@ function headerBlock(lang, currentPath, kind) {
 
   return `  <header>
     <a href="${pathRoot(lang)}" class="logo-link"><img src="/logo.webp" alt="${escapeHtml(L.siteName)}" class="site-logo" width="80" height="80"></a>
-    <p class="site-name">${escapeHtml(L.siteName)}</p>
+    <img src="/logo-title.webp" alt="${escapeHtml(L.siteName)}" class="site-title" width="703" height="174" fetchpriority="high" decoding="sync">
     <p class="site-tagline">${escapeHtml(L.tagline)}</p>
     <nav class="site-nav">
       <a href="${pathRoot(lang)}"${dexActive}>${escapeHtml(L.pokedex)}</a>

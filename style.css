@@ -128,15 +128,18 @@ header {
   margin-bottom: 12px;
 }
 
-header h1,
-header .site-name {
+header h1 {
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
 
-header .site-name {
-  margin: 0;
+.site-title {
+  display: block;
+  margin: 0 auto;
+  height: 58px; /* ≈ même présence visuelle que l'ancien texte 2.4rem */
+  width: auto;
+  color: transparent; /* masque le flash du texte alt pendant le chargement */
 }
 
 header .site-tagline {
