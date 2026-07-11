@@ -21,9 +21,11 @@
     "title": "Lisia's Appeal (CSV9C 257)",
     "set": "Stellar Crystal",
     "imageName": "lisia_scn_csv9_257",
-    "languages": ["🇨🇳"],
+    "languages": [
+        "🇨🇳",
+        "🇹🇭"],
     "year": 2026,
-    "note": "Chinese-exclusive Supporter card (丹瑜)",
+    "note": "Chinese & Thai exclusive Supporter card (丹瑜)",
     "link": "/trainers/#lisia_scn_csv9_257"
   },
   {
