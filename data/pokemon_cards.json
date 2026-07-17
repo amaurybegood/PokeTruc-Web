@@ -8459,5 +8459,17 @@
     ],
     "year": 2020,
     "artist": "The Pokémon Company Art Team"
+  },
+    {
+    "pokemonId": 840,
+    "name": "Applin (CBB6C 1907)",
+    "imageName": "840_Applin_cn_cbb6c_1907",
+    "rarity": "",
+    "description": "https://www.pokebeach.com/2026/07/gem-pack-vol-6-to-release-in-china-featuring-apple-pokemon",
+    "languages": [
+      "🇨🇳"
+    ],
+    "year": 2026,
+    "artist": "Jiro Sasumo"
   }
 ]

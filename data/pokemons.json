@@ -2548,6 +2548,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 840,
+    "name": {
+      "en": "Applin",
+      "fr": "Verpom",
+      "jp": "カジッチュ",
+      "ko": "과사삭벌레",
+      "zh": "啃果虫"
+    },
+    "imageName": "applin",
+    "generation": 8,
+    "researchStatus": "done"
+  },
+  {
     "id": 845,
     "name": {
       "en": "Cramorant",
