@@ -132,11 +132,14 @@ c = Image.new('RGBA', (${SPRITE_SIZE}, ${SPRITE_SIZE}), (0, 0, 0, 0))
 c.paste(im, ((${SPRITE_SIZE} - im.width) // 2, (${SPRITE_SIZE} - im.height) // 2), im)
 c.save(r'${spritePath}')
 c.save(r'${spritePath.replace(/\.png$/, '.webp')}', quality=90, method=6)`;
-    execFileSync('python', ['-c', py], { stdio: 'ignore' });
+    execFileSync('python', ['-c', py], { stdio: ['ignore', 'ignore', 'pipe'] });
     const kb = (fs.statSync(spritePath).size / 1024).toFixed(0);
     console.log(`✓ Sprite resized to ${SPRITE_SIZE}×${SPRITE_SIZE} (${kb} KB) + .webp`);
-  } catch {
-    console.warn(`⚠ Could not resize (Python/Pillow missing?) — sprite kept at native size. Run: python refresh-sprites.py`);
+  } catch (e) {
+    // Surface the real cause: a silent failure here is why a Pokémon can end up
+    // with only a native-size .png and no .webp (which the site serves).
+    const detail = (e.stderr && e.stderr.toString().trim()) || e.message;
+    console.warn(`⚠ Could not resize / emit .webp — sprite kept at native size, NO .webp created.\n  Cause: ${detail}\n  Fix: install Python 3 + Pillow, then run: python refresh-sprites.py`);
   }
 
   // Upsert into pokemons.json, kept sorted by id (idempotent on re-run).

@@ -301,10 +301,24 @@ function renderGrid(list) {
   renderGenNav(rendered);
 }
 
+// Mirror of build.js linkifyDescription(): turn bare URLs in a note into a
+// labelled "source ↗" link, keeping any trailing punctuation outside the anchor.
+function linkifyDescription(text) {
+  const escaped = escapeHtml(text);
+  const linkText = escapeHtml(t('card.source'));
+  const ariaLabel = escapeHtml(`${t('card.source')} (${t('card.newtab')})`);
+  return escaped.replace(/https?:\/\/[^\s]+/g, (match) => {
+    const trailMatch = match.match(/[.,;:!?]+$/);
+    const trail = trailMatch ? trailMatch[0] : '';
+    const url = trail ? match.slice(0, -trail.length) : match;
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${ariaLabel}">${linkText}<span aria-hidden="true"> ↗</span></a>${trail}`;
+  });
+}
+
 // Client-side card tile. Mirrors the structure of build.js renderCard() (same
 // .card-item / data-img / id so the fullscreen viewer and CSS work unchanged),
 // but adds the Pokémon name line since the card view mixes all species, and
-// drops the build-only rich alt text + description.
+// drops the build-only rich alt text.
 function renderCardClient(card) {
   const p = pokemonById.get(card.pokemonId);
   const pName = p ? pokemonName(p) : '';
@@ -320,6 +334,10 @@ function renderCardClient(card) {
         <div class="card-name">${escapeHtml(card.name)}</div>
         <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
         ${card.artist ? `<div class="card-artist">${escapeHtml(t('card.artist'))}: ${escapeHtml(card.artist)}</div>` : ''}
+        ${card.description ? `<details class="card-description">
+          <summary class="card-description-toggle">${escapeHtml(t('card.note'))}</summary>
+          <div class="card-description-body">${linkifyDescription(card.description)}</div>
+        </details>` : ''}
       </div>
     </div>`;
 }
