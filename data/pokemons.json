@@ -2327,6 +2327,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 386,
+    "name": {
+      "en": "Deoxys",
+      "fr": "Deoxys",
+      "jp": "デオキシス",
+      "ko": "테오키스",
+      "zh": "代欧奇希斯"
+    },
+    "imageName": "deoxys",
+    "generation": 3,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 399,
     "name": {
       "en": "Bidoof",

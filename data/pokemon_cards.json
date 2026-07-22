@@ -8471,5 +8471,17 @@
     ],
     "year": 2026,
     "artist": "Jiro Sasumo"
+  },
+  {
+    "pokemonId": 386,
+    "name": "Unnumbered Promos",
+    "imageName": "386_Deoxys_jpn_unp_232",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 1996,
+    "artist": "Nakaoka"
   }
 ]
