@@ -9,6 +9,7 @@ function initCardViewer(root) {
   let opener = null; // element to give focus back to when the viewer closes
 
   function openViewer(item) {
+    window.umami?.track('card-view', { card: item.id });
     const thumb = item.querySelector('img');
     fsImg.src = item.dataset.img;
     fsImg.alt = thumb ? thumb.alt : '';

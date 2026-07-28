@@ -547,7 +547,7 @@ button:focus-visible,
 main {
   max-width: 1224px;
   margin: 0 auto;
-  padding: 0 24px 64px;
+  padding: 0 24px 24px;
 }
 
 #pokemon-grid {
@@ -732,7 +732,7 @@ a.news-card:hover {
   text-align: center;
   cursor: pointer;
   border: 1px solid var(--border);
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
   position: relative;
   aspect-ratio: 1;
   display: flex;
@@ -747,6 +747,7 @@ a.news-card:hover {
 .pokemon-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow);
+  border-color: var(--accent);
 }
 
 .pokemon-number {
@@ -818,6 +819,7 @@ a.news-card:hover {
   transform: none;
   box-shadow: none;
   cursor: default;
+  border-color: var(--border);
 }
 
 
@@ -832,7 +834,7 @@ a.news-card:hover {
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--border);
-  transition: transform 0.15s, box-shadow 0.4s;
+  transition: transform 0.15s, box-shadow 0.4s, border-color 0.15s;
   display: flex;
   flex-direction: column;
   scroll-margin-top: 16px;
@@ -840,6 +842,7 @@ a.news-card:hover {
 
 .card-item:hover {
   transform: scale(1.03);
+  border-color: var(--accent);
 }
 
 /* Deep-link highlight (added briefly by pokemon.js when arriving via #anchor). */
@@ -1061,10 +1064,10 @@ a.news-card:hover {
 }
 
 .seo-about {
-  max-width: 800px;
+  max-width: 1224px; /* same column as main, so the text lines up with the grid */
   margin: 24px auto 0;
   padding: 0 24px;
-  text-align: center;
+  text-align: left;
   font-size: 0.85rem;
   color: var(--text-secondary);
   line-height: 1.6;
@@ -1236,6 +1239,15 @@ footer {
   line-height: 1.6;
 }
 
+.pokemon-meta .meta-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pokemon-meta .meta-list a:hover {
+  text-decoration: underline;
+}
+
 /* Pokemon page prev/next pager */
 .pokemon-pager {
   display: flex;
@@ -1274,7 +1286,7 @@ footer {
 
 /* SEO Pokédex index — static link list on the home page */
 .seo-pokedex {
-  max-width: 1200px;
+  max-width: 1224px;
   margin: 32px auto 0;
   padding: 0 24px;
 }

@@ -95,8 +95,8 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 38;
-const JS_V  = 22;
+const CSS_V = 41;
+const JS_V  = 24;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the
@@ -268,6 +268,7 @@ const LANG = {
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets featured',
     artistsHeading: 'Artists',
+    relatedHeading: 'Related Pokémon',
     artistPrefix: 'Artist',
     sourceLinkText: 'source',
     descriptionToggle: 'Note',
@@ -352,6 +353,7 @@ const LANG = {
     upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets présentés',
     artistsHeading: 'Artistes',
+    relatedHeading: 'Pokémon liés',
     artistPrefix: 'Artiste',
     sourceLinkText: 'source',
     descriptionToggle: 'Note',
@@ -437,6 +439,7 @@ const LANG = {
     upToPokedex:   '↑ 図鑑',
     setsHeading: '収録セット',
     artistsHeading: 'イラストレーター',
+    relatedHeading: '関連ポケモン',
     artistPrefix: 'イラストレーター',
     sourceLinkText: '出典',
     descriptionToggle: 'メモ',
@@ -521,6 +524,7 @@ const LANG = {
     upToPokedex:   '↑ 도감',
     setsHeading: '수록 세트',
     artistsHeading: '일러스트레이터',
+    relatedHeading: '관련 포켓몬',
     artistPrefix: '일러스트레이터',
     sourceLinkText: '출처',
     descriptionToggle: '메모',
@@ -605,6 +609,7 @@ const LANG = {
     upToPokedex:   '↑ 图鉴',
     setsHeading: '收录的卡组',
     artistsHeading: '插画师',
+    relatedHeading: '相关宝可梦',
     artistPrefix: '插画师',
     sourceLinkText: '来源',
     descriptionToggle: '备注',
@@ -1152,7 +1157,33 @@ function buildTrainersSectionHTML(items, L, lang) {
     (c, eager) => renderTrainerCard(c, L, lang, eager));
 }
 
-function buildSetsAndArtistsHTML(pkCards, L) {
+// Lateral links for search visitors. The pager only offers alphabetical
+// neighbours, which say nothing about the content, so a Google landing page
+// gives no reason to click through (1.5 pages/visit in July 2026). Same
+// illustrator first — artist queries are the best-converting non-brand cluster
+// in Search Console — then same exclusivity, closest Pokédex number.
+const RELATED_LIMIT = 6;
+
+function relatedPokemonIds(pokemon, pkCards) {
+  const out = [];
+  const seen = new Set([pokemon.id]);
+  const push = id => { if (!seen.has(id)) { seen.add(id); out.push(id); } };
+
+  const artists = new Set(pkCards.map(c => c.artist).filter(Boolean));
+  for (const c of cards) if (artists.has(c.artist)) push(c.pokemonId);
+
+  if (out.length < RELATED_LIMIT) {
+    const flags = new Set(pkCards.map(exclusivityKey).filter(Boolean));
+    const sameExclusivity = cards
+      .filter(c => flags.has(exclusivityKey(c)))
+      .map(c => c.pokemonId)
+      .sort((a, b) => Math.abs(a - pokemon.id) - Math.abs(b - pokemon.id));
+    for (const id of sameExclusivity) push(id);
+  }
+  return out.slice(0, RELATED_LIMIT);
+}
+
+function buildSetsAndArtistsHTML(pkCards, L, lang, pokemon) {
   const setsSeen = new Map();
   const artistsSeen = new Map();
   for (const c of pkCards) {
@@ -1162,23 +1193,41 @@ function buildSetsAndArtistsHTML(pkCards, L) {
   const setsList = [...setsSeen.keys()];
   const artistsList = [...artistsSeen.keys()].sort((a, b) => artistsSeen.get(b) - artistsSeen.get(a));
 
+  // The search box already matches on set name and artist (app.js), so a
+  // pre-filled search is the whole "browse by set/illustrator" feature — no extra pages needed.
+  const searchLink = a =>
+    `<a href="${pathRoot(lang)}?q=${encodeURIComponent(a)}&amp;view=cards">${escapeHtml(a)}</a>`;
+
+  const relatedList = relatedPokemonIds(pokemon, pkCards)
+    .map(id => pokemonsWithCards.find(p => p.id === id))
+    .filter(Boolean);
+
   const setsHTML = setsList.length > 0
     ? `<div class="meta-block">
         <h3 class="meta-title">${escapeHtml(L.setsHeading)} (${setsList.length})</h3>
-        <p class="meta-list">${setsList.map(escapeHtml).join(' · ')}</p>
+        <p class="meta-list">${setsList.map(searchLink).join(' · ')}</p>
       </div>`
     : '';
   const artistsHTML = artistsList.length > 0
     ? `<div class="meta-block">
         <h3 class="meta-title">${escapeHtml(L.artistsHeading)} (${artistsList.length})</h3>
-        <p class="meta-list">${artistsList.map(escapeHtml).join(' · ')}</p>
+        <p class="meta-list">${artistsList.map(searchLink).join(' · ')}</p>
       </div>`
     : '';
-  if (!setsHTML && !artistsHTML) return '';
+  const relatedHTML = relatedList.length > 0
+    ? `<div class="meta-block">
+        <h3 class="meta-title">${escapeHtml(L.relatedHeading)}</h3>
+        <p class="meta-list">${relatedList.map(p =>
+          `<a href="${pathPokemon(lang, slugify(p.name.en))}">${escapeHtml(p.name[NAME_FIELD[lang]] || p.name.en)}</a>`
+        ).join(' · ')}</p>
+      </div>`
+    : '';
+  if (!setsHTML && !artistsHTML && !relatedHTML) return '';
   return `
     <aside class="pokemon-meta">
       ${setsHTML}
       ${artistsHTML}
+      ${relatedHTML}
     </aside>`;
 }
 
@@ -1271,7 +1320,7 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
   const navLinks = prevLinks.join('\n');
 
   const cardsSectionHTML = buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName);
-  const setsArtistsHTML  = buildSetsAndArtistsHTML(pkCards, L);
+  const setsArtistsHTML  = buildSetsAndArtistsHTML(pkCards, L, lang, pokemon);
   const statsSentence    = buildStatsSentence(lang, pokemon, pkCards);
 
   const prevHTML = prev
@@ -1776,6 +1825,20 @@ ${scriptTags()}
 const pokemonsWithCards = pokemons
   .filter(p => cardsFor(p.id).length > 0)
   .sort((a, b) => a.id - b.id);
+
+// Related-links invariants, checked on every build: never self-link, never
+// exceed the limit, never point at a Pokémon that has no page. The fallback
+// also guarantees a non-empty list even for cards with no artist credited.
+for (const p of pokemonsWithCards) {
+  const bad = msg => { throw new Error(`related links (${p.name.en}): ${msg}`); };
+  const ids = relatedPokemonIds(p, cardsFor(p.id));
+  if (ids.length === 0 || ids.length > RELATED_LIMIT) bad(`${ids.length} links`);
+  if (ids.includes(p.id)) bad('self-link');
+  if (new Set(ids).size !== ids.length) bad('duplicate');
+  for (const id of ids) {
+    if (!pokemonsWithCards.some(o => o.id === id)) bad(`no page for id ${id}`);
+  }
+}
 
 function langDir(lang) { return lang === 'en' ? '' : lang + '/'; }
 

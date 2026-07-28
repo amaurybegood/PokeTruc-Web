@@ -50,6 +50,13 @@ function readURLFilter() {
   const param = params.get('lang');
   if (param && ISO_TO_FLAG[param]) langFilter = param;
   if (params.get('view') === 'cards') viewMode = 'cards';
+  // ?q= lets detail pages link into a pre-filled search (artist names).
+  const q = params.get('q');
+  if (q) {
+    searchQuery = q;
+    const input = document.getElementById('search');
+    if (input) input.value = q;
+  }
 }
 
 function syncURL() {
@@ -128,6 +135,7 @@ function renderLangFilter() {
     chip.addEventListener('click', () => {
       const iso = chip.dataset.iso;
       langFilter = (langFilter === iso) ? '' : iso;
+      if (langFilter) window.umami?.track('lang-filter', { iso });
       syncURL();
       updateLangFilterActive();
       applyFilter();
