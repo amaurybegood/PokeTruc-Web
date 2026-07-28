@@ -8483,5 +8483,17 @@
     ],
     "year": 1996,
     "artist": "Nakaoka"
+  },
+  {
+    "pokemonId": 25,
+    "name": "Pokémon Art Academy Competition",
+    "imageName": "25_Pikachu_jpn_aac_10",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2015,
+    "artist": "Ginga"
   }
 ]
