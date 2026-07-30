@@ -9,7 +9,7 @@
     btn.className = 'back-to-top';
     btn.setAttribute('aria-label', typeof t === 'function' ? t('back.to.top') : 'Back to top');
     btn.textContent = '↑';
-    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: typeof scrollBehavior === 'function' ? scrollBehavior() : 'smooth' }));
     document.body.appendChild(btn);
 
     const toggle = () => btn.classList.toggle('visible', window.scrollY > 400);

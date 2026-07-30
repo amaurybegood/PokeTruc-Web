@@ -159,6 +159,26 @@ function t(key) {
   return translations[lang]?.[key] ?? translations.en[key] ?? key;
 }
 
+// Mirror of build.js STATS_LANG_LABEL: accessible name for each flag emoji
+// used by the exclusivity filter chips and card language badges.
+const FLAG_LABELS = {
+  en: { '🇯🇵': 'Japanese',   '🇬🇧': 'English',   '🇨🇳': 'Chinese',   '🇰🇷': 'Korean',    '🇩🇪': 'German',      '🇪🇸': 'Spanish',     '🇫🇷': 'French',      '🇮🇹': 'Italian',      '🇵🇹': 'Portuguese',     '🇵🇱': 'Polish',       '🇮🇩': 'Indonesian',     '🇷🇺': 'Russian',        '🌍': 'Western',         '🏯': 'Asian'           },
+  fr: { '🇯🇵': 'japonaise',  '🇬🇧': 'anglaise',  '🇨🇳': 'chinoise',  '🇰🇷': 'coréenne',  '🇩🇪': 'allemande',   '🇪🇸': 'espagnole',   '🇫🇷': 'française',   '🇮🇹': 'italienne',    '🇵🇹': 'portugaise',     '🇵🇱': 'polonaise',    '🇮🇩': 'indonésienne',   '🇷🇺': 'russe',          '🌍': 'occidentale',     '🏯': 'asiatique'       },
+  ja: { '🇯🇵': '日本限定',    '🇬🇧': '英語限定',  '🇨🇳': '中国語限定', '🇰🇷': '韓国語限定', '🇩🇪': 'ドイツ語限定', '🇪🇸': 'スペイン語限定', '🇫🇷': 'フランス語限定', '🇮🇹': 'イタリア語限定', '🇵🇹': 'ポルトガル語限定', '🇵🇱': 'ポーランド語限定', '🇮🇩': 'インドネシア語限定', '🇷🇺': 'ロシア語限定',   '🌍': '欧米限定',        '🏯': 'アジア限定'       },
+  ko: { '🇯🇵': '일본어 한정', '🇬🇧': '영어 한정', '🇨🇳': '중국어 한정', '🇰🇷': '한국어 한정', '🇩🇪': '독일어 한정',  '🇪🇸': '스페인어 한정', '🇫🇷': '프랑스어 한정', '🇮🇹': '이탈리아어 한정', '🇵🇹': '포르투갈어 한정', '🇵🇱': '폴란드어 한정',  '🇮🇩': '인도네시아어 한정', '🇷🇺': '러시아어 한정',  '🌍': '서양 한정',       '🏯': '아시아 한정'      },
+  zh: { '🇯🇵': '日文独占',    '🇬🇧': '英文独占',  '🇨🇳': '中文独占',  '🇰🇷': '韩文独占',   '🇩🇪': '德文独占',    '🇪🇸': '西班牙文独占', '🇫🇷': '法文独占',     '🇮🇹': '意大利文独占',  '🇵🇹': '葡萄牙文独占',   '🇵🇱': '波兰文独占',    '🇮🇩': '印尼文独占',     '🇷🇺': '俄文独占',       '🌍': '西方独占',        '🏯': '亚洲独占'        },
+};
+
+function flagLabel(flag) {
+  return FLAG_LABELS[lang]?.[flag] ?? FLAG_LABELS.en[flag] ?? flag;
+}
+
+// Scroll behavior for JS-driven scrolling: honour prefers-reduced-motion,
+// which the CSS scroll-behavior kill-switch can't reach from JS calls.
+function scrollBehavior() {
+  return matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+}
+
 // Region name per generation (index = generation number; 0 unused). Used in the
 // Pokédex generation headings and the jump-to-generation shortcut.
 const REGION_NAMES = {

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const target = document.getElementById(hash);
     if (target && target.classList.contains('card-item')) {
       requestAnimationFrame(() => {
-        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        target.scrollIntoView({ behavior: scrollBehavior(), block: 'center' });
         target.classList.add('card-flash');
         setTimeout(() => target.classList.remove('card-flash'), CARD_FLASH_MS);
       });

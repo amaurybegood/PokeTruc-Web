@@ -95,8 +95,8 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 41;
-const JS_V  = 24;
+const CSS_V = 42;
+const JS_V  = 25;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the
@@ -1035,6 +1035,13 @@ function cardAltText(lang, card, localizedName) {
   return `${localizedName} — ${card.name} (${adj}${year}) ${suffix}${artistPart}`;
 }
 
+// Language badge: flag emoji hidden from screen readers, localised language
+// names (STATS_LANG_LABEL) as visually-hidden text instead.
+function langBadge(card, lang) {
+  const names = card.languages.map(f => STATS_LANG_LABEL[lang]?.[f] ?? STATS_LANG_LABEL.en[f] ?? f).join(', ');
+  return `<span class="lang-badge"><span aria-hidden="true">${card.languages.join(' ')}</span><span class="visually-hidden">${escapeHtml(names)}</span></span>`;
+}
+
 function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
   const alt = cardAltText(lang, card, localizedName);
   // First card on the page is the LCP candidate: fetch it eagerly with high
@@ -1047,7 +1054,7 @@ function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
           </button>
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.name)}</div>
-            <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
+            <div class="card-meta">${langBadge(card, lang)} ${card.year} · ${escapeHtml(card.rarity)}</div>
             ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
             ${card.description ? `<details class="card-description">
               <summary class="card-description-toggle">${escapeHtml(L.descriptionToggle)}</summary>
@@ -1141,7 +1148,7 @@ function renderTrainerCard(card, L, lang, eager = false) {
           </button>
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.title)}</div>
-            <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
+            <div class="card-meta">${langBadge(card, lang)} ${card.year} · ${escapeHtml(card.rarity)}</div>
             ${card.name ? `<div class="card-set">${escapeHtml(card.name)}</div>` : ''}
             ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
             ${card.description ? `<details class="card-description">

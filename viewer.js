@@ -8,12 +8,21 @@ function initCardViewer(root) {
   if (!overlay || !fsImg || !closeBtn || !root) return;
   let opener = null; // element to give focus back to when the viewer closes
 
+  // Hide the rest of the page from keyboard and screen readers while the
+  // dialog is open. The overlay is a direct child of <body>.
+  function setPageInert(on) {
+    for (const el of document.body.children) {
+      if (el !== overlay) el.inert = on;
+    }
+  }
+
   function openViewer(item) {
     window.umami?.track('card-view', { card: item.id });
     const thumb = item.querySelector('img');
     fsImg.src = item.dataset.img;
     fsImg.alt = thumb ? thumb.alt : '';
     overlay.classList.remove('hidden');
+    setPageInert(true);
     opener = item.querySelector('.card-zoom') || item;
     closeBtn.focus();
   }
@@ -23,13 +32,16 @@ function initCardViewer(root) {
     overlay.classList.add('hidden');
     fsImg.src = '';
     fsImg.alt = '';
+    setPageInert(false);
     if (opener) { opener.focus(); opener = null; }
   }
 
   root.addEventListener('click', e => {
-    // Let the <details> description toggle without opening the viewer.
-    if (e.target.closest('.card-description')) return;
-    const item = e.target.closest('.card-item');
+    // Only the zoom button opens the viewer — same target for mouse and
+    // keyboard; clicks on the card's text metadata do nothing.
+    const zoom = e.target.closest('.card-zoom');
+    if (!zoom) return;
+    const item = zoom.closest('.card-item');
     if (item) openViewer(item);
   });
 

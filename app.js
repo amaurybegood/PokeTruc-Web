@@ -96,7 +96,7 @@ async function loadData() {
     loader.innerHTML = `
       <div role="alert" style="text-align:center;padding:24px;">
         <p style="color:var(--text);margin-bottom:16px;font-weight:500;">${t('load.error')}</p>
-        <button type="button" id="retry-load" style="padding:8px 18px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;cursor:pointer;font-size:0.9rem;font-weight:500;">${t('retry')}</button>
+        <button type="button" id="retry-load" style="padding:8px 18px;border:1px solid var(--accent-fill);background:var(--accent-fill);color:var(--accent-contrast);border-radius:999px;cursor:pointer;font-size:0.9rem;font-weight:500;">${t('retry')}</button>
       </div>`;
     const btn = document.getElementById('retry-load');
     if (btn) btn.addEventListener('click', () => {
@@ -125,7 +125,7 @@ function renderLangFilter() {
     `<button type="button" class="lang-filter-chip" data-iso="">${t('filter.all')} <span class="lang-filter-count">${total}</span></button>`,
     ...flags.map(f => {
       const iso = FLAG_TO_ISO[f];
-      return `<button type="button" class="lang-filter-chip" data-iso="${iso}"><span class="lang-filter-flag">${f}</span> <span class="lang-filter-count">${counts[f]}</span></button>`;
+      return `<button type="button" class="lang-filter-chip" data-iso="${iso}"><span class="lang-filter-flag" aria-hidden="true">${f}</span><span class="visually-hidden">${escapeHtml(flagLabel(f))}</span> <span class="lang-filter-count">${counts[f]}</span></button>`;
     }),
   ];
 
@@ -248,7 +248,7 @@ function renderGenNav(gens) {
     btn.className = 'gen-nav-chip';
     btn.textContent = (gen && regionName(gen)) || genLabel(gen);
     btn.addEventListener('click', () => {
-      document.getElementById('gen-' + gen)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById('gen-' + gen)?.scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
     });
     nav.appendChild(btn);
   });
@@ -340,7 +340,7 @@ function renderCardClient(card) {
       <div class="card-info">
         ${pName ? `<div class="card-pokemon-name">${escapeHtml(pName)}</div>` : ''}
         <div class="card-name">${escapeHtml(card.name)}</div>
-        <div class="card-meta"><span class="lang-badge">${card.languages.join(' ')}</span> ${card.year} · ${escapeHtml(card.rarity)}</div>
+        <div class="card-meta"><span class="lang-badge"><span aria-hidden="true">${card.languages.join(' ')}</span><span class="visually-hidden">${escapeHtml(card.languages.map(flagLabel).join(', '))}</span></span> ${card.year} · ${escapeHtml(card.rarity)}</div>
         ${card.artist ? `<div class="card-artist">${escapeHtml(t('card.artist'))}: ${escapeHtml(card.artist)}</div>` : ''}
         ${card.description ? `<details class="card-description">
           <summary class="card-description-toggle">${escapeHtml(t('card.note'))}</summary>
