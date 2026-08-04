@@ -8495,5 +8495,22 @@
     ],
     "year": 2015,
     "artist": "Ginga"
+  },
+  {
+    "pokemonId": 6,
+    "name": "Diamond & Pearl Promos",
+    "imageName": "6_Charizard_dpp_DP45",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+    "year": 2007,
+    "artist": "Wataru Kawahara",
+    "region": "western"
   }
 ]
