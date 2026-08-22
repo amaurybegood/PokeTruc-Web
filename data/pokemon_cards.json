@@ -8526,5 +8526,41 @@
     "year": 2019,
     "artist": "5ban Graphics",
     "region": "asian"
+  },
+  {
+    "pokemonId": 196,
+    "name": "Pokémon VS",
+    "imageName": "196_Espeon_jpn_versus1_76",
+    "rarity": "Common",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 196,
+    "name": "Theater Limited VS Pack",
+    "imageName": "196_Espeon_jpn_tlvs_7",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2002,
+    "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 196,
+    "name": "Pokémon VS",
+    "imageName": "196_Espeon_jpn_versus1_56",
+    "rarity": "Common",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Asuka Iwashita"
   }
 ]
