@@ -8512,5 +8512,19 @@
     "year": 2007,
     "artist": "Wataru Kawahara",
     "region": "western"
+  },
+  {
+    "pokemonId": 386,
+    "name": "Tag All Stars",
+    "imageName": "386_Deoxys_jpn_sm12a_212",
+    "rarity": "Rainbow Rare",
+    "description": "",
+    "languages": [
+      "🇯🇵",
+      "🇨🇳"
+    ],
+    "year": 2019,
+    "artist": "5ban Graphics",
+    "region": "asian"
   }
 ]
