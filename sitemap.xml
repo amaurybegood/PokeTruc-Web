@@ -9502,6 +9502,10 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/umbreon/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/umbreon/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/umbreon/"/>
+    <image:image><image:loc>https://poketruc.com/cards/197_Umbreon_jpn_ppr_25.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/197_Umbreon_jpn_versus1_91.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/197_Umbreon_col1_22.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/197_Umbreon_jpn_sm12a_215.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/197_Umbreon_jpn_svp_67.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/197_Umbreon_scn_cbb2_615.avif</image:loc></image:image>
   </url>

@@ -2025,7 +2025,7 @@
     },
     "imageName": "espeon",
     "generation": 2,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 197,
@@ -2038,7 +2038,7 @@
     },
     "imageName": "umbreon",
     "generation": 2,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 206,

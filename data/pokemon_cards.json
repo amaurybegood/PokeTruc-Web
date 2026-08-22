@@ -8562,5 +8562,60 @@
     ],
     "year": 2001,
     "artist": "Asuka Iwashita"
+  },
+  {
+    "pokemonId": 197,
+    "name": "Call of Legends",
+    "imageName": "197_Umbreon_col1_22",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸",
+      "🇬🇧",
+      "🇩🇪"
+    ],
+    "year": 2011,
+    "artist": "Mitsuhiro Arita",
+    "region": "western"
+  },
+  {
+    "pokemonId": 197,
+    "name": "P Promos",
+    "imageName": "197_Umbreon_jpn_ppr_25",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Mitsuhiro Arita"
+  },
+  {
+    "pokemonId": 197,
+    "name": "Pokémon VS",
+    "imageName": "197_Umbreon_jpn_versus1_91",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Hajime Kusajima"
+  },
+  {
+    "pokemonId": 197,
+    "name": "Tag All Stars",
+    "imageName": "197_Umbreon_jpn_sm12a_215",
+    "rarity": "Rainbow Rare",
+    "description": "",
+    "languages": [
+      "🇯🇵",
+      "🇨🇳"
+    ],
+    "year": 2019,
+    "artist": "5ban Graphics",
+    "region": "asian"
   }
 ]
