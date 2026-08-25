@@ -8617,5 +8617,29 @@
     "year": 2019,
     "artist": "5ban Graphics",
     "region": "asian"
+  },
+  {
+    "pokemonId": 212,
+    "name": "Pokémon VS",
+    "imageName": "212_Scizor_jpn_versus1_13",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Kyoko Umemoto"
+  },
+  {
+    "pokemonId": 212,
+    "name": "P Promos",
+    "imageName": "212_Scizor_jpn_ppr_37",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Hisao Nakamura"
   }
 ]
