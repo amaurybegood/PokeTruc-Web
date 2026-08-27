@@ -2090,7 +2090,7 @@
     },
     "imageName": "raikou",
     "generation": 2,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 244,
@@ -2103,7 +2103,7 @@
     },
     "imageName": "entei",
     "generation": 2,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 245,

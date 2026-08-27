@@ -8641,5 +8641,85 @@
     ],
     "year": 2001,
     "artist": "Hisao Nakamura"
+  },
+  {
+    "pokemonId": 243,
+    "name": "Pokémon VS",
+    "imageName": "243_Raikou_jpn_versus1_94",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Hironobu Yoshida"
+  },
+  {
+    "pokemonId": 244,
+    "name": "Shining Legends",
+    "imageName": "244_Entei_sm35_10a",
+    "rarity": "Holo Rare GX",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷"
+    ],
+    "year": 2017,
+    "artist": "5ban Graphics",
+    "region": "western"
+  },
+  {
+    "pokemonId": 244,
+    "name": "Sun & Moon Promos",
+    "imageName": "244_Entei_smp_SM219",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇪🇸",
+      "🇮🇹"
+    ],
+    "year": 2016,
+    "artist": "Ryuta Fuse",
+    "region": "western"
+  },
+  {
+    "pokemonId": 244,
+    "name": "Pokémon VS",
+    "imageName": "244_Entei_jpn_versus1_95",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Hironobu Yoshida"
+  },
+  {
+    "pokemonId": 244,
+    "name": "P Promos",
+    "imageName": "244_Entei_jpn_ppr_43",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Midori Harada"
+  },
+  {
+    "pokemonId": 244,
+    "name": "10th Movie Commemoration Set",
+    "imageName": "244_Entei_jpn_mcs10_3",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Kagemaru Himeno"
   }
 ]
