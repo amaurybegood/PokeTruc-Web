@@ -8721,5 +8721,87 @@
     ],
     "year": 2007,
     "artist": "Kagemaru Himeno"
+  },
+  {
+    "pokemonId": 249,
+    "name": "Black & White Promos",
+    "imageName": "249_Lugia_bwp_BW83",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+    "year": 2011,
+    "artist": "Toyste Beach",
+    "region": "western"
+  },
+  {
+    "pokemonId": 249,
+    "name": "Call of Legends",
+    "imageName": "249_Lugia_col1_15",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+    "year": 2011,
+    "artist": "Ryo Ueda",
+    "region": "western"
+  },
+  {
+    "pokemonId": 249,
+    "name": "P Promos",
+    "imageName": "249_Lugia_jpn_ppr_47",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Midori Harada"
+  },
+  {
+    "pokemonId": 249,
+    "name": "10th Movie Commemoration Set",
+    "imageName": "249_Lugia_jpn_mcs10_2",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Masakazu Fukuda"
+  },
+  {
+    "pokemonId": 249,
+    "name": "PLAY Promos",
+    "imageName": "249_Lugia_jpn_playp_31",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Suwama Chiaki"
+  },
+  {
+    "pokemonId": 249,
+    "name": "Unnumbered Promos",
+    "imageName": "249_Lugia_jpn_unp_181",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 1996,
+    "artist": "Ken Sugimori"
   }
 ]

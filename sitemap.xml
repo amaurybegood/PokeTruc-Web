@@ -9945,8 +9945,14 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/lugia/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/lugia/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/lugia/"/>
+    <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_unp_181.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_ppr_47.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_playp_31.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_pcgp_38.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_pkpb_6.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_mcs10_2.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/249_Lugia_bwp_BW83.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/249_Lugia_col1_15.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/lugia/</loc>
