@@ -908,10 +908,16 @@ a.news-card:hover {
 
 .card-item .card-set,
 .card-item .card-traits,
-.card-item .card-release {
+.card-item .card-release,
+.card-item .card-prices {
   font-size: 0.68rem;
   color: var(--text-secondary);
   margin-top: 2px;
+}
+
+.card-item .card-prices a {
+  color: inherit;
+  text-decoration: underline dotted;
 }
 
 .card-item .card-artist {

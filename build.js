@@ -1054,7 +1054,30 @@ function cardDetailLines(card, lang) {
     ? new Intl.DateTimeFormat(lang, { dateStyle: 'long' }).format(new Date(card.releaseDate)) : '';
   const releaseLine = card.releaseProduct
     ? `<div class="card-release">${escapeHtml(card.releaseProduct)}${date ? ` — ${escapeHtml(date)}` : ''}</div>` : '';
-  return setLine + traitsLine + releaseLine;
+  return setLine + traitsLine + releaseLine + cardPriceLine(card, lang);
+}
+
+// Ligne de prix (enrich_prices.py) : Cardmarket EUR, TCGplayer USD, eBay USD,
+// chaque montant lié à la fiche marketplace ; marché + date du relevé en tooltip.
+function cardPriceLine(card, lang) {
+  const prices = card.prices || {};
+  const priceDate = card.pricesDate
+    ? new Intl.DateTimeFormat(lang, { dateStyle: 'long' }).format(new Date(card.pricesDate)) : '';
+  const parts = [
+    ['cardmarket', 'Cardmarket', 'EUR', '💶'],
+    ['tcgplayer', 'TCGplayer', 'USD', '💵'],
+    ['ebay', 'eBay', 'USD', 'eBay'],
+  ].map(([key, name, currency, label]) => {
+    const p = prices[key];
+    if (!p || p.price == null) return '';
+    const amount = new Intl.NumberFormat(lang, { style: 'currency', currency }).format(p.price);
+    const title = escapeHtml(priceDate ? `${name} — ${priceDate}` : name);
+    const text = `${label} ${escapeHtml(amount)}`;
+    return p.url
+      ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener" title="${title}">${text}</a>`
+      : `<span title="${title}">${text}</span>`;
+  }).filter(Boolean);
+  return parts.length ? `<div class="card-prices">${parts.join(' · ')}</div>` : '';
 }
 
 function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
