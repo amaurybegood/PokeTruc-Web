@@ -906,7 +906,9 @@ a.news-card:hover {
   word-break: break-word;
 }
 
-.card-item .card-set {
+.card-item .card-set,
+.card-item .card-traits,
+.card-item .card-release {
   font-size: 0.68rem;
   color: var(--text-secondary);
   margin-top: 2px;

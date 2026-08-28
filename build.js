@@ -1042,6 +1042,21 @@ function langBadge(card, lang) {
   return `<span class="lang-badge"><span aria-hidden="true">${card.languages.join(' ')}</span><span class="visually-hidden">${escapeHtml(names)}</span></span>`;
 }
 
+// Extra lines from the DexTCG enrichment (enrich_cards.py) — every field is
+// optional, older/manual entries may carry none of them.
+function cardDetailLines(card, lang) {
+  const setLine = card.setNumber
+    ? `<div class="card-set">${escapeHtml(card.setNumber)}${card.series ? ` · ${escapeHtml(card.series)}` : ''}</div>` : '';
+  const traits = [card.energyType, card.stage, (card.variants || []).join(', ')].filter(Boolean);
+  const traitsLine = traits.length
+    ? `<div class="card-traits">${escapeHtml(traits.join(' · '))}</div>` : '';
+  const date = card.releaseDate
+    ? new Intl.DateTimeFormat(lang, { dateStyle: 'long' }).format(new Date(card.releaseDate)) : '';
+  const releaseLine = card.releaseProduct
+    ? `<div class="card-release">${escapeHtml(card.releaseProduct)}${date ? ` — ${escapeHtml(date)}` : ''}</div>` : '';
+  return setLine + traitsLine + releaseLine;
+}
+
 function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
   const alt = cardAltText(lang, card, localizedName);
   // First card on the page is the LCP candidate: fetch it eagerly with high
@@ -1054,6 +1069,7 @@ function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
           </button>
           <div class="card-info">
             <div class="card-name">${escapeHtml(card.name)}</div>
+            ${cardDetailLines(card, lang)}
             <div class="card-meta">${langBadge(card, lang)} ${card.year} · ${escapeHtml(card.rarity)}</div>
             ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
             ${card.description ? `<details class="card-description">

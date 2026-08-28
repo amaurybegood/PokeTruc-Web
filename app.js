@@ -327,6 +327,21 @@ function linkifyDescription(text) {
 // .card-item / data-img / id so the fullscreen viewer and CSS work unchanged),
 // but adds the Pokémon name line since the card view mixes all species, and
 // drops the build-only rich alt text.
+// Mirror of build.js cardDetailLines(): optional lines from the DexTCG
+// enrichment (set number, type/stage/variants, release product + date).
+function cardDetailLines(card) {
+  const setLine = card.setNumber
+    ? `<div class="card-set">${escapeHtml(card.setNumber)}${card.series ? ` · ${escapeHtml(card.series)}` : ''}</div>` : '';
+  const traits = [card.energyType, card.stage, (card.variants || []).join(', ')].filter(Boolean);
+  const traitsLine = traits.length
+    ? `<div class="card-traits">${escapeHtml(traits.join(' · '))}</div>` : '';
+  const date = card.releaseDate
+    ? new Intl.DateTimeFormat(lang, { dateStyle: 'long' }).format(new Date(card.releaseDate)) : '';
+  const releaseLine = card.releaseProduct
+    ? `<div class="card-release">${escapeHtml(card.releaseProduct)}${date ? ` — ${escapeHtml(date)}` : ''}</div>` : '';
+  return setLine + traitsLine + releaseLine;
+}
+
 function renderCardClient(card) {
   const p = pokemonById.get(card.pokemonId);
   const pName = p ? pokemonName(p) : '';
@@ -340,6 +355,7 @@ function renderCardClient(card) {
       <div class="card-info">
         ${pName ? `<div class="card-pokemon-name">${escapeHtml(pName)}</div>` : ''}
         <div class="card-name">${escapeHtml(card.name)}</div>
+        ${cardDetailLines(card)}
         <div class="card-meta"><span class="lang-badge"><span aria-hidden="true">${card.languages.join(' ')}</span><span class="visually-hidden">${escapeHtml(card.languages.map(flagLabel).join(', '))}</span></span> ${card.year} · ${escapeHtml(card.rarity)}</div>
         ${card.artist ? `<div class="card-artist">${escapeHtml(t('card.artist'))}: ${escapeHtml(card.artist)}</div>` : ''}
         ${card.description ? `<details class="card-description">
