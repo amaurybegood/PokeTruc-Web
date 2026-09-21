@@ -20061,5 +20061,65 @@
       }
     },
     "pricesDate": "2026-08-28"
+  },
+  {
+    "pokemonId": 382,
+    "name": "PLAY Promos",
+    "imageName": "382_Kyogre_jpn_playp_19",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Hajime Kusajima",
+    "setNumber": "PLAYP 19",
+    "series": "Miscellaneous Collections",
+    "releaseDate": "2003-01-02",
+    "energyType": "Water",
+    "stage": "basic",
+    "variants": [
+      "Cosmos Holo"
+    ]
+  },
+  {
+    "pokemonId": 384,
+    "name": "PLAY Promos",
+    "imageName": "384_Rayquaza_jpn_playp_21",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "PLAYP 21",
+    "series": "Miscellaneous Collections",
+    "releaseDate": "2003-01-02",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Cosmos Holo"
+    ]
+  },
+  {
+    "pokemonId": 384,
+    "name": "XY Promos",
+    "imageName": "384_Rayquaza_jpn_xyp_232",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2013,
+    "artist": "Kouki Saitou",
+    "setNumber": "XYP 232",
+    "series": "XY",
+    "releaseDate": "2013-11-08",
+    "energyType": "Dragon",
+    "stage": "basic",
+    "variants": [
+      "Pokémon Center"
+    ]
   }
 ]

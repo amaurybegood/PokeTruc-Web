@@ -10693,6 +10693,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/kyogre/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/kyogre/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/kyogre/"/>
+    <image:image><image:loc>https://poketruc.com/cards/382_Kyogre_jpn_playp_19.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/382_Kyogre_jpn_pkpb_4.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/382_Kyogre_aac_7.avif</image:loc></image:image>
   </url>
@@ -10818,8 +10819,10 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/pokemon/rayquaza/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/rayquaza/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/rayquaza/"/>
+    <image:image><image:loc>https://poketruc.com/cards/384_Rayquaza_jpn_playp_21.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/384_Rayquaza_jpn_pcgp_41.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/384_Rayquaza_jpn_pkpb_9.avif</image:loc></image:image>
+    <image:image><image:loc>https://poketruc.com/cards/384_Rayquaza_jpn_xyp_232.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/rayquaza/</loc>
