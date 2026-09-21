@@ -983,34 +983,6 @@
   },
   {
     "pokemonId": 6,
-    "name": "Start Deck 100 Battle Collection",
-    "imageName": "6_Charizard_jpn_mc_766",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2025,
-    "artist": "aky CG Works",
-    "setNumber": "MC 766",
-    "series": "MEGA",
-    "releaseProduct": "Deck No. 001",
-    "releaseDate": "2025-12-19",
-    "energyType": "Fire",
-    "stage": "stage2",
-    "variants": [
-      "Holo"
-    ],
-    "prices": {
-      "ebay": {
-        "price": 3799,
-        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Japanese+Start+Deck+100+Battle+Collection+Mega+Charizard+Y+ex+766&LH_Complete=1&LH_Sold=1"
-      }
-    },
-    "pricesDate": "2026-08-28"
-  },
-  {
-    "pokemonId": 6,
     "name": "Charizard VSTAR vs Rayquaza VMAX Special Deck Set",
     "imageName": "6_Charizard_jpn_sO2_2",
     "rarity": "No Rarity",
