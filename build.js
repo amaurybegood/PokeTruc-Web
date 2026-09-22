@@ -86,7 +86,10 @@ let unchangedCount = 0;
 
 function recordWrite(filePath, content, urlKey) {
   fs.writeFileSync(filePath, content, 'utf8');
-  const hash = crypto.createHash('sha256').update(content).digest('hex');
+  // Ignore cache-busting tokens (?v=, DATA_V): they change on every data or
+  // asset bump and would otherwise mark all 1000+ pages as modified at once.
+  const stable = content.replace(/\?v=[0-9a-f]+/g, '').replace(/DATA_V='[0-9a-f]+'/, '');
+  const hash = crypto.createHash('sha256').update(stable).digest('hex');
   const prev = prevState[urlKey];
   const same = prev && prev.hash === hash;
   const lastmod = same ? prev.lastmod : TODAY;
@@ -95,7 +98,7 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 42;
+const CSS_V = 43;
 const JS_V  = 25;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
@@ -137,6 +140,16 @@ function cardSrcAttrs(imageName, sizes) {
   return `src="/${thumb}" srcset="/${thumb} ${thumbSize.w}w, /${full} ${fullSize.w}w" sizes="${sizes}"${imgSizeAttrs(full)}`;
 }
 const GRID_SIZES = '(max-width: 600px) 40vw, 200px';
+
+// News cards render at 56px CSS; a 200px thumb (make-thumbs.py, from
+// news.json) covers 3x displays. Falls back to the grid thumb if missing.
+function newsSrcAttrs(imageName) {
+  const candidates = [`cards/thumbs/news/${imageName}.avif`, `cards/thumbs/${imageName}.avif`, `cards/${imageName}.avif`]
+    .map(p => ({ p, s: imageSize(p) })).filter(c => c.s)
+    .filter((c, i, a) => a.findIndex(o => o.s.w === c.s.w) === i); // small cards: un-resized copies share a width
+  const srcset = candidates.map(c => `/${c.p} ${c.s.w}w`).join(', ');
+  return `src="/${candidates[0].p}" srcset="${srcset}" sizes="56px"${imgSizeAttrs(`cards/${imageName}.avif`)}`;
+}
 
 // LCP preload target for the first grid card: what the srcset actually picks.
 function cardPreloadHref(imageName) {
@@ -887,7 +900,7 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
 
   <link rel="preload" as="style" href="/style.css?v=${CSS_V}">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
-  <link rel="preload" as="image" href="/logo-title.webp" type="image/webp">${preloadImage ? `
+  <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="275px" type="image/webp">${preloadImage ? `
   <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">` : ''}
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
@@ -908,8 +921,8 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
 
   <link rel="canonical" href="${canonical}">
 ${hreflangBlock(urlsByLang)}
-  <link rel="icon" type="image/png" href="/logo.png">
-  <link rel="apple-touch-icon" href="/logo.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/style.css?v=${CSS_V}">
 
 ${jsonLd ? `  <script type="application/ld+json">${jsonLd}</script>` : ''}`;
@@ -944,14 +957,14 @@ function headerBlock(lang, currentPath, kind) {
 
   return `  <header>
     <a href="${pathRoot(lang)}" class="logo-link"><img src="/logo.webp" alt="${escapeHtml(L.siteName)}" class="site-logo" width="80" height="80"></a>
-    <img src="/logo-title.webp" alt="${escapeHtml(L.siteName)}" class="site-title" width="703" height="174" fetchpriority="high" decoding="sync">
+    <img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="275px" alt="${escapeHtml(L.siteName)}" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync">
     <p class="site-tagline">${escapeHtml(L.tagline)}</p>
     <nav class="site-nav">
       <a href="${pathRoot(lang)}"${dexActive}>${escapeHtml(L.pokedex)}</a>
       <a href="${pathTrainers(lang)}"${trainersActive}>${escapeHtml(L.trainers)}</a>
       <a href="${pathInfo(lang)}"${infoActive}>${escapeHtml(L.info)}</a>
       <details class="lang-picker">
-        <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}"><span class="lang-picker-code">${lang.toUpperCase()}</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
+        <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}: ${lang.toUpperCase()}"><span class="lang-picker-code">${lang.toUpperCase()}</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
         <ul class="lang-picker-menu">${langItems}</ul>
       </details>
       <button class="theme-toggle" id="theme-toggle" aria-label="${escapeHtml(L.themeToggleLabel)}"></button>
@@ -1429,7 +1442,7 @@ function renderNewsItem(item, L, eager = false) {
   // Local card images get the thumbnail srcset (shown at 56px CSS); external
   // `image` URLs are used as-is.
   const srcAttrs = item.image ? `src="${escapeHtml(item.image)}"`
-    : item.imageName ? cardSrcAttrs(item.imageName, '56px')
+    : item.imageName ? newsSrcAttrs(item.imageName)
     : '';
   const flags = Array.isArray(item.languages) ? item.languages.join(' ') : '';
   const metaBits = [flags, item.year, item.set].filter(Boolean)

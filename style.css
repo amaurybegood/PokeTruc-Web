@@ -387,7 +387,7 @@ header .subtitle {
 }
 
 .lang-filter-chip.active .lang-filter-count {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--accent-contrast); /* rgba .85 gave 3.8:1 on --accent-fill; solid passes AA */
 }
 
 .lang-filter-flag {
@@ -766,8 +766,7 @@ a.news-card:hover {
   top: 6px;
   left: 8px;
   font-size: 0.6rem;
-  color: var(--text-secondary);
-  opacity: 0.6;
+  color: var(--text-secondary); /* no opacity: .6 dropped contrast to 2.7:1 */
 }
 
 .pokemon-card img {
@@ -788,8 +787,8 @@ a.news-card:hover {
   position: absolute;
   top: 6px;
   right: 6px;
-  background: var(--accent);
-  color: #fff;
+  background: var(--accent-fill); /* --accent (#409cff dark) gave 2.8:1 with white text */
+  color: var(--accent-contrast);
   font-size: 0.6rem;
   font-weight: 700;
   border-radius: 999px;
@@ -822,8 +821,12 @@ a.news-card:hover {
   outline-offset: 2px;
 }
 
-.pokemon-card.no-cards {
-  opacity: 0.45;
+.pokemon-card.no-cards img {
+  opacity: 0.45; /* dim the artwork only; text stays AA-readable */
+}
+
+.pokemon-card.no-cards .name {
+  color: var(--text-secondary);
 }
 
 .pokemon-card.no-cards:hover {

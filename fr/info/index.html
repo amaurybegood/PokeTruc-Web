@@ -9,9 +9,9 @@
   <meta name="description" content="À propos de PokéTruc : un catalogue créé par un fan, recensant les cartes Pokémon TCG aux illustrations exclusives à une seule langue. Gratuit, sans publicité.">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=42">
+  <link rel="preload" as="style" href="/style.css?v=43">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
-  <link rel="preload" as="image" href="/logo-title.webp" type="image/webp">
+  <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="275px" type="image/webp">
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
 
@@ -36,9 +36,9 @@
   <link rel="alternate" hreflang="ko" href="https://poketruc.com/ko/info/">
   <link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/info/">
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/info/">
-  <link rel="icon" type="image/png" href="/logo.png">
-  <link rel="apple-touch-icon" href="/logo.png">
-  <link rel="stylesheet" href="/style.css?v=42">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/style.css?v=43">
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/fr/"},{"@type":"ListItem","position":2,"name":"Info","item":"https://poketruc.com/fr/info/"}]},{"@type":"FAQPage","inLanguage":"fr","mainEntity":[{"@type":"Question","name":"Qu'est-ce qu'une carte Pokémon exclusive à une langue ?","acceptedAnswer":{"@type":"Answer","text":"Une carte du JCC Pokémon dont l'illustration n'a été imprimée que dans une seule langue. Par exemple une promo distribuée uniquement dans des magazines japonais, ou une carte d'un set du marché chinois jamais sortie ailleurs."}},{"@type":"Question","name":"Pourquoi certaines cartes Pokémon n'existent-elles qu'en japonais ?","acceptedAnswer":{"@type":"Answer","text":"Le Japon reçoit de nombreuses cartes promotionnelles liées à des magazines, distributeurs automatiques, boutiques et événements locaux. Beaucoup de ces promos n'ont jamais été rééditées pour d'autres marchés : leur illustration n'existe que sur la carte japonaise."}},{"@type":"Question","name":"Que signifient « exclusivité occidentale » et « exclusivité asiatique » ?","acceptedAnswer":{"@type":"Answer","text":"Une carte en exclusivité occidentale est sortie dans des langues occidentales (anglais, allemand, français, italien, espagnol…) mais jamais au Japon ni en Asie — par exemple le set L'appel des légendes. Une exclusivité asiatique, c'est l'inverse : sortie dans une ou plusieurs langues asiatiques mais jamais en occident."}},{"@type":"Question","name":"Combien de cartes exclusives PokéTruc recense-t-il ?","acceptedAnswer":{"@type":"Answer","text":"PokéTruc recense actuellement 714 illustrations de cartes exclusives à une langue ou une région, réparties sur 200 Pokémon, publiées de 1996 à 2026. Le catalogue est mis à jour au fil des sorties et découvertes."}},{"@type":"Question","name":"PokéTruc est-il un site officiel Pokémon ?","acceptedAnswer":{"@type":"Answer","text":"Non. PokéTruc est un catalogue non officiel, fait par un fan, gratuit et sans publicité. Pokémon et les noms des personnages Pokémon sont des marques de Nintendo, Creatures Inc. et GAME FREAK inc."}},{"@type":"Question","name":"Puis-je aider à corriger une erreur ou ajouter des cartes ou des Pokémon manquants ?","acceptedAnswer":{"@type":"Answer","text":"Oui, toute aide est la bienvenue. Si vous repérez une erreur, connaissez une carte exclusive absente du catalogue ou souhaitez qu'un Pokémon soit ajouté, contactez-moi sur Reddit (u/Begooderrr), par e-mail (poketruc@icloud.com) ou en ouvrant une issue sur le projet GitHub — voir les sections Contact et Code source ci-dessous."}}]}]}</script>
 </head>
@@ -47,14 +47,14 @@
 
   <header>
     <a href="/fr/" class="logo-link"><img src="/logo.webp" alt="PokéTruc" class="site-logo" width="80" height="80"></a>
-    <img src="/logo-title.webp" alt="PokéTruc" class="site-title" width="703" height="174" fetchpriority="high" decoding="sync">
+    <img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="275px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync">
     <p class="site-tagline">Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région</p>
     <nav class="site-nav">
       <a href="/fr/">Pokédex</a>
       <a href="/fr/trainers/">Dresseurs</a>
       <a href="/fr/info/" aria-current="page">Info</a>
       <details class="lang-picker">
-        <summary class="lang-picker-toggle" aria-label="Langue"><span class="lang-picker-code">FR</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
+        <summary class="lang-picker-toggle" aria-label="Langue: FR"><span class="lang-picker-code">FR</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
         <ul class="lang-picker-menu"><li><a href="/info/" hreflang="en" class="lang-link">EN</a></li><li><a href="/fr/info/" hreflang="fr" class="lang-link active" aria-current="true">FR</a></li><li><a href="/ja/info/" hreflang="ja" class="lang-link">日本語</a></li><li><a href="/ko/info/" hreflang="ko" class="lang-link">한국어</a></li><li><a href="/zh/info/" hreflang="zh-Hans" class="lang-link">中文</a></li></ul>
       </details>
       <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode sombre"></button>

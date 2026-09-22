@@ -10,6 +10,7 @@
 # Usage:
 #   python make-thumbs.py
 
+import json
 import os
 import sys
 from PIL import Image
@@ -26,19 +27,31 @@ MAX_W = 480
 os.makedirs(THUMBS, exist_ok=True)
 
 made = skipped = 0
-for f in sorted(os.listdir(CARDS)):
-    if not f.endswith(".avif"):
-        continue
+def thumb(f, dst_dir, max_w):
+    global made, skipped
     src = os.path.join(CARDS, f)
-    dst = os.path.join(THUMBS, f)
+    dst = os.path.join(dst_dir, f)
     if os.path.exists(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
         skipped += 1
-        continue
+        return
     im = Image.open(src)
-    if im.width > MAX_W:
-        im = im.resize((MAX_W, round(im.height * MAX_W / im.width)), Image.LANCZOS)
+    if im.width > max_w:
+        im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
     im.save(dst, quality=60)
     made += 1
-    print(f"  [ok] {f} ({im.width}x{im.height})")
+    print(f"  [ok] {dst} ({im.width}x{im.height})")
+
+for f in sorted(os.listdir(CARDS)):
+    if f.endswith(".avif"):
+        thumb(f, THUMBS, MAX_W)
+
+# Home "latest cards" block shows cards at 56px CSS: a 200px thumb covers 3x.
+# Only the cards listed in data/news.json get one (cards/thumbs/news/).
+NEWS_THUMBS = os.path.join(THUMBS, "news")
+os.makedirs(NEWS_THUMBS, exist_ok=True)
+with open(os.path.join("data", "news.json"), encoding="utf-8") as fh:
+    for n in json.load(fh):
+        if n.get("imageName"):
+            thumb(n["imageName"] + ".avif", NEWS_THUMBS, 200)
 
 print(f"\nDone: {made} generated, {skipped} up to date")
