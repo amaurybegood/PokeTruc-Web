@@ -3,44 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PokéTruc — 404</title>
+  <script>(function(){var m=location.pathname.match(/^\/(fr|ja|ko|zh)\//);if(m)location.replace('/'+m[1]+'/404.html');})();</script>
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <title>PokéTruc — Page not found</title>
   <meta name="robots" content="noindex,follow">
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="stylesheet" href="/style.css?v=38">
-  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="stylesheet" href="/style.css?v=59">
 </head>
-<body>
-  <header>
-    <a href="/" id="home-link"><img src="/logo.webp" alt="PokéTruc" class="site-logo" width="80" height="80"></a>
-    <img src="/logo-title.webp" alt="PokéTruc" class="site-title" width="703" height="174" fetchpriority="high" decoding="sync">
-  </header>
+<body data-lang-prefix="/">
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <main style="text-align:center;padding:64px 24px;">
-    <p style="font-size:4rem;margin-bottom:16px;">404</p>
-    <p id="msg" style="color:var(--text-secondary);margin-bottom:32px;">This page doesn't exist.</p>
-    <a href="/" id="back-link" style="color:var(--accent);text-decoration:none;font-weight:500;">← Back to Pokédex</a>
+  <header class="site-header">
+    <a href="/" class="logo-link"><img src="/logo.webp" alt="" class="site-logo" width="40" height="40"><img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="142px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync"></a>
+    <form class="site-search" id="site-search" role="search" action="/" method="get" aria-label="Search">
+      <div class="search-bar">
+        <label class="site-search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span class="visually-hidden">Search</span>
+          <input type="search" id="search" name="q" placeholder="Search a Pokémon, set or artist" autocomplete="off" enterkeyhint="search" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+          <button type="button" class="search-clear" id="search-clear" aria-label="Clear search" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+          <kbd class="kbd-hint" aria-hidden="true">/</kbd>
+        </label>
+        <button type="button" class="search-cancel" id="search-cancel">Cancel</button>
+      </div>
+      <div class="search-panel" id="search-panel" hidden>
+        <div class="search-results" id="search-results" role="listbox"></div>
+        <p class="visually-hidden" id="search-status" role="status"></p>
+        <div class="search-foot"></div>
+      </div>
+    </form>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Pokédex</a>
+      <a href="/trainers/">Trainers</a>
+      <a href="/info/">Info</a>
+    </nav>
+    <div class="header-tools">
+      <details class="lang-picker">
+        <summary class="lang-picker-toggle" aria-label="Language: EN">EN</summary>
+        <ul class="lang-picker-menu"><li><a href="/" hreflang="en" class="lang-link active" aria-current="true">EN</a></li><li><a href="/fr/" hreflang="fr" class="lang-link">FR</a></li><li><a href="/ja/" hreflang="ja" class="lang-link">日本語</a></li><li><a href="/ko/" hreflang="ko" class="lang-link">한국어</a></li><li><a href="/zh/" hreflang="zh-Hans" class="lang-link">中文</a></li></ul>
+      </details>
+      <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg></button>
+    </div>
+    <div class="header-mobile">
+      <button type="button" class="icon-btn" id="search-toggle" aria-expanded="false" aria-controls="site-search" aria-label="Open search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <button type="button" class="icon-btn" id="menu-open" aria-haspopup="dialog" aria-controls="site-menu" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <dialog class="site-menu" id="site-menu" aria-label="Main">
+      <div class="site-menu-head">
+        <a href="/" class="logo-link"><img src="/logo.webp" alt="" class="site-logo" width="40" height="40"><img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="142px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync"></a>
+        <button type="button" class="site-menu-close" id="menu-close" aria-label="Close menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <nav class="site-menu-nav" aria-label="Main">
+        <a href="/"><span>Pokédex</span><span class="site-menu-count">200 Pokémon</span></a>
+        <a href="/?view=cards"><span>All cards</span><span class="site-menu-count">714</span></a>
+        <a href="/trainers/"><span>Trainers</span><span class="site-menu-count">6</span></a>
+        <a href="/info/"><span>Info</span></a>
+      </nav>
+      <section class="site-menu-section">
+        <h2 class="menu-eyebrow">Language</h2>
+        <div class="menu-langs"><a href="/" hreflang="en" lang="en" aria-current="true">English</a><a href="/fr/" hreflang="fr" lang="fr">Français</a><a href="/ja/" hreflang="ja" lang="ja">日本語</a><a href="/ko/" hreflang="ko" lang="ko">한국어</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a></div>
+      </section>
+      <fieldset class="site-menu-section">
+        <legend class="menu-eyebrow">Theme</legend>
+        <div class="theme-seg"><label><input type="radio" name="theme-choice" value="light">Light</label><label><input type="radio" name="theme-choice" value="dark">Dark</label><label><input type="radio" name="theme-choice" value="auto">System</label></div>
+      </fieldset>
+      <p class="site-menu-note">© 2026 - 3590 PokéTruc. Fan-made and ad-free. Not affiliated with Nintendo, Creatures Inc., GAME FREAK or The Pokémon Company. No personal data collected.</p>
+    </dialog>
+  </header>
+  <div class="search-scrim" id="search-scrim" hidden></div>
+
+  <main id="main-content" class="nf wrap">
+    <div class="nf-art">
+      <img src="/logo.webp" alt="" width="200" height="200">
+      <span class="nf-sticker">Error 404</span>
+    </div>
+    <div class="nf-copy">
+      <h1>This page isn’t in the catalogue.</h1>
+      <p>The link may be outdated, or the card was moved. Try a search, or head back to the Pokédex.</p>
+      <form class="nf-search" role="search" action="/" method="get">
+        <label class="site-search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span class="visually-hidden">Search</span>
+          <input type="search" name="q" placeholder="Search a Pokémon, set or artist" autocomplete="off" enterkeyhint="search">
+        </label>
+      </form>
+      <div class="nf-ctas">
+        <a class="btn btn-solid" href="/">Back to Pokédex</a>
+        <a class="btn btn-outline" href="/trainers/">Trainer cards</a>
+      </div>
+    </div>
   </main>
 
-  <script>
-    (function () {
-      var langs = {
-        fr: { html: 'fr',      msg: "Cette page n'existe pas.",       back: '← Retour au Pokédex', home: '/fr/' },
-        ja: { html: 'ja',      msg: 'このページは存在しません。',        back: '← 図鑑に戻る',         home: '/ja/' },
-        ko: { html: 'ko',      msg: '이 페이지는 존재하지 않습니다.',     back: '← 도감으로 돌아가기',   home: '/ko/' },
-        zh: { html: 'zh-Hans', msg: '此页面不存在。',                  back: '← 返回图鉴',            home: '/zh/' }
-      };
-      var m = location.pathname.match(/^\/(fr|ja|ko|zh)(\/|$)/);
-      if (!m) return;
-      var L = langs[m[1]];
-      document.documentElement.lang = L.html;
-      document.getElementById('msg').textContent = L.msg;
-      var back = document.getElementById('back-link');
-      back.textContent = L.back;
-      back.href = L.home;
-      document.getElementById('home-link').href = L.home;
-    })();
-  </script>
-  <script src="/i18n.js?v=22"></script>
-  <script src="/theme.js?v=22"></script>
+  <footer class="site-footer">
+    <div class="footer-note">
+      <img src="/logo.webp" alt="" width="28" height="28" loading="lazy">
+      <p>© 2026 - 3590 PokéTruc. Fan-made and ad-free. Not affiliated with Nintendo, Creatures Inc., GAME FREAK or The Pokémon Company. No personal data collected.</p>
+    </div>
+    <nav class="footer-langs" aria-label="Languages">
+      <a href="/" hreflang="en" lang="en" aria-current="true">English</a>
+      <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+      <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+      <a href="/ko/" hreflang="ko" lang="ko">한국어</a>
+      <a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+    </nav>
+  </footer>
+
+  <script src="/i18n.js?v=35"></script>
+  <script src="/theme.js?v=35"></script>
+  <script src="/viewer.js?v=35"></script>
+  <script src="/search.js?v=35"></script>
 </body>
 </html>

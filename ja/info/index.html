@@ -9,9 +9,9 @@
   <meta name="description" content="PokéTrucについて：1つの言語にしか存在しないポケモンTCGカードの限定イラストを集めたファン制作のカタログです。無料・広告なし。">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=43">
+  <link rel="preload" as="style" href="/style.css?v=59">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
-  <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="275px" type="image/webp">
+  <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="142px" type="image/webp">
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
 
@@ -38,99 +38,203 @@
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/info/">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/style.css?v=43">
+  <link rel="stylesheet" href="/style.css?v=59">
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"図鑑","item":"https://poketruc.com/ja/"},{"@type":"ListItem","position":2,"name":"情報","item":"https://poketruc.com/ja/info/"}]},{"@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"言語限定のポケモンカードとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"イラストが一つの言語でしか印刷されなかったポケモンTCGのカードです。例えば日本の雑誌付録として配布されたプロモや、中国市場限定セットのカードなどです。"}},{"@type":"Question","name":"なぜ日本語でしか存在しないカードがあるのですか？","acceptedAnswer":{"@type":"Answer","text":"日本では雑誌、自動販売機、店舗やイベントに関連した多くのプロモカードが配布されます。その多くは他の市場で再版されなかったため、そのイラストは日本語のカードにしか存在しません。"}},{"@type":"Question","name":"「欧米限定」「アジア限定」とはどういう意味ですか？","acceptedAnswer":{"@type":"Answer","text":"欧米限定カードは欧米の言語（英語・ドイツ語・フランス語・イタリア語・スペイン語など）で発売され、日本やアジアでは未発売のカードです（例：Call of Legends）。アジア限定はその逆で、アジアの言語でのみ発売されたカードです。"}},{"@type":"Question","name":"PokéTrucには何枚の限定カードが収録されていますか？","acceptedAnswer":{"@type":"Answer","text":"現在、200匹のポケモンにわたる714枚の言語・地域限定カードイラスト（1996年〜2026年発行）を収録しています。新しい限定カードの発売や発見に応じて更新されます。"}},{"@type":"Question","name":"PokéTrucは公式サイトですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。PokéTrucは非公式のファンメイドサイトで、無料・広告なしで運営されています。ポケモンおよびポケモンのキャラクター名は任天堂・クリーチャーズ・ゲームフリークの商標です。"}},{"@type":"Question","name":"誤りの修正や、カード・ポケモンの追加を手伝うことはできますか？","acceptedAnswer":{"@type":"Answer","text":"はい、ご協力は大歓迎です。誤りを見つけた場合や、収録されていない限定カードをご存じの場合、追加してほしいポケモンがある場合は、Reddit（u/Begooderrr）、メール（poketruc@icloud.com）、またはGitHubプロジェクトのissueでご連絡ください。詳しくは下記のお問い合わせ・ソースコードのセクションをご覧ください。"}}]}]}</script>
 </head>
 <body data-lang-prefix="/ja/">
 <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
 
-  <header>
-    <a href="/ja/" class="logo-link"><img src="/logo.webp" alt="PokéTruc" class="site-logo" width="80" height="80"></a>
-    <img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="275px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync">
-    <p class="site-tagline">1つの言語または1つの地域にしか存在しないポケモンTCGのイラスト / アートワーク</p>
-    <nav class="site-nav">
+  <header class="site-header">
+    <a href="/ja/" class="logo-link"><img src="/logo.webp" alt="" class="site-logo" width="40" height="40"><img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="142px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync"></a>
+    <form class="site-search" id="site-search" role="search" action="/ja/" method="get" aria-label="検索">
+      <div class="search-bar">
+        <label class="site-search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span class="visually-hidden">検索</span>
+          <input type="search" id="search" name="q" placeholder="ポケモン・セット・イラストレーターを検索" autocomplete="off" enterkeyhint="search" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+          <button type="button" class="search-clear" id="search-clear" aria-label="検索をクリア" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+          <kbd class="kbd-hint" aria-hidden="true">/</kbd>
+        </label>
+        <button type="button" class="search-cancel" id="search-cancel">キャンセル</button>
+      </div>
+      <div class="search-panel" id="search-panel" hidden>
+        <div class="search-results" id="search-results" role="listbox"></div>
+        <p class="visually-hidden" id="search-status" role="status"></p>
+        <div class="search-foot"></div>
+      </div>
+    </form>
+    <nav class="site-nav" aria-label="メイン">
       <a href="/ja/">図鑑</a>
       <a href="/ja/trainers/">トレーナー</a>
       <a href="/ja/info/" aria-current="page">情報</a>
+    </nav>
+    <div class="header-tools">
       <details class="lang-picker">
-        <summary class="lang-picker-toggle" aria-label="言語: JA"><span class="lang-picker-code">JA</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
+        <summary class="lang-picker-toggle" aria-label="言語: JA">日本語</summary>
         <ul class="lang-picker-menu"><li><a href="/info/" hreflang="en" class="lang-link">EN</a></li><li><a href="/fr/info/" hreflang="fr" class="lang-link">FR</a></li><li><a href="/ja/info/" hreflang="ja" class="lang-link active" aria-current="true">日本語</a></li><li><a href="/ko/info/" hreflang="ko" class="lang-link">한국어</a></li><li><a href="/zh/info/" hreflang="zh-Hans" class="lang-link">中文</a></li></ul>
       </details>
-      <button class="theme-toggle" id="theme-toggle" aria-label="ダークモードを切り替え"></button>
-    </nav>
+      <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="ダークモードを切り替え"><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg></button>
+    </div>
+    <div class="header-mobile">
+      <button type="button" class="icon-btn" id="search-toggle" aria-expanded="false" aria-controls="site-search" aria-label="検索を開く"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <button type="button" class="icon-btn" id="menu-open" aria-haspopup="dialog" aria-controls="site-menu" aria-label="メニューを開く"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <dialog class="site-menu" id="site-menu" aria-label="メイン">
+      <div class="site-menu-head">
+        <a href="/ja/" class="logo-link"><img src="/logo.webp" alt="" class="site-logo" width="40" height="40"><img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="142px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync"></a>
+        <button type="button" class="site-menu-close" id="menu-close" aria-label="メニューを閉じる"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <nav class="site-menu-nav" aria-label="メイン">
+        <a href="/ja/"><span>図鑑</span><span class="site-menu-count">200匹</span></a>
+        <a href="/ja/?view=cards"><span>すべてのカード</span><span class="site-menu-count">714</span></a>
+        <a href="/ja/trainers/"><span>トレーナー</span><span class="site-menu-count">6</span></a>
+        <a href="/ja/info/" aria-current="page"><span>情報</span></a>
+      </nav>
+      <section class="site-menu-section">
+        <h2 class="menu-eyebrow">言語</h2>
+        <div class="menu-langs"><a href="/info/" hreflang="en" lang="en">English</a><a href="/fr/info/" hreflang="fr" lang="fr">Français</a><a href="/ja/info/" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="/ko/info/" hreflang="ko" lang="ko">한국어</a><a href="/zh/info/" hreflang="zh-Hans" lang="zh-Hans">中文</a></div>
+      </section>
+      <fieldset class="site-menu-section">
+        <legend class="menu-eyebrow">テーマ</legend>
+        <div class="theme-seg"><label><input type="radio" name="theme-choice" value="light">ライト</label><label><input type="radio" name="theme-choice" value="dark">ダーク</label><label><input type="radio" name="theme-choice" value="auto">システム</label></div>
+      </fieldset>
+      <p class="site-menu-note">© 2026 - 3590 PokéTruc。広告なしのファン制作サイトです。任天堂、クリーチャーズ、ゲームフリーク、株式会社ポケモンとは無関係です。個人データは収集していません。</p>
+    </dialog>
   </header>
+  <div class="search-scrim" id="search-scrim" hidden></div>
 
-  <main id="main-content" class="info-page">
-    <h1 class="page-title">PokéTrucについて</h1>
+  <main id="main-content" class="info-page wrap">
+    <nav class="info-toc" aria-label="このページの内容">
+      <p class="eyebrow">このページの内容</p>
+      <a href="#about" aria-current="true">このアプリについて</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#credits">クレジット</a>
+      <a href="#source">ソースコード</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
 
-    <div class="info-card">
-      <h2>このアプリについて</h2>
-      <div>
+    <div class="info-body">
+      <div class="info-head">
+        <img src="/logo.webp" alt="" width="104" height="104">
+        <div>
+          <p class="eyebrow">無料 · 広告なし · ファン制作</p>
+          <h1>PokéTrucについて</h1>
+        </div>
+      </div>
+
+      <section id="about" class="info-about" aria-labelledby="about-title">
+        <h2 id="about-title">このアプリについて</h2>
         <p>このサイトは楽しみのために、また学習目的で開発しました（開発者ではないので、私には少し挑戦です）。そのため、とてもシンプルで基本的な作りになっています。</p>
         <p>その目的は、独自のイラストを持つすべてのポケモンTCGカードをリストアップすることです。「独自」とは、1つの言語（日本語、英語、中国語、またはその他）でのみ入手可能なもの、または1つの地域でのみ発売されたもの（例：欧米限定の Call of Legends や My First Battle のような日本未発売セット）を意味します。これが私がコレクションしたいカードの種類です。</p>
         <p>完全無料、広告なしです。</p>
         <p>注意を払っていますが、一部の情報が不正確な場合があります。エラーを見つけた場合やフィードバックをお送りいただける場合は、メールでご連絡ください。</p>
         <p>それでは :)</p>
-      </div>
-    </div>
+      </section>
 
-    <div class="info-card">
-      <h2>よくある質問</h2>
-      <div>
-        <h3 class="faq-q">言語限定のポケモンカードとは何ですか？</h3>
-        <p>イラストが一つの言語でしか印刷されなかったポケモンTCGのカードです。例えば日本の雑誌付録として配布されたプロモや、中国市場限定セットのカードなどです。</p>
-        <h3 class="faq-q">なぜ日本語でしか存在しないカードがあるのですか？</h3>
-        <p>日本では雑誌、自動販売機、店舗やイベントに関連した多くのプロモカードが配布されます。その多くは他の市場で再版されなかったため、そのイラストは日本語のカードにしか存在しません。</p>
-        <h3 class="faq-q">「欧米限定」「アジア限定」とはどういう意味ですか？</h3>
-        <p>欧米限定カードは欧米の言語（英語・ドイツ語・フランス語・イタリア語・スペイン語など）で発売され、日本やアジアでは未発売のカードです（例：Call of Legends）。アジア限定はその逆で、アジアの言語でのみ発売されたカードです。</p>
-        <h3 class="faq-q">PokéTrucには何枚の限定カードが収録されていますか？</h3>
-        <p>現在、200匹のポケモンにわたる714枚の言語・地域限定カードイラスト（1996年〜2026年発行）を収録しています。新しい限定カードの発売や発見に応じて更新されます。</p>
-        <h3 class="faq-q">PokéTrucは公式サイトですか？</h3>
-        <p>いいえ。PokéTrucは非公式のファンメイドサイトで、無料・広告なしで運営されています。ポケモンおよびポケモンのキャラクター名は任天堂・クリーチャーズ・ゲームフリークの商標です。</p>
-        <h3 class="faq-q">誤りの修正や、カード・ポケモンの追加を手伝うことはできますか？</h3>
-        <p>はい、ご協力は大歓迎です。誤りを見つけた場合や、収録されていない限定カードをご存じの場合、追加してほしいポケモンがある場合は、Reddit（u/Begooderrr）、メール（poketruc@icloud.com）、またはGitHubプロジェクトのissueでご連絡ください。詳しくは下記のお問い合わせ・ソースコードのセクションをご覧ください。</p>
-      </div>
-    </div>
+      <section id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">よくある質問</h2>
+        <div class="faq">
+        <details open>
+          <summary>言語限定のポケモンカードとは何ですか？<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p>イラストが一つの言語でしか印刷されなかったポケモンTCGのカードです。例えば日本の雑誌付録として配布されたプロモや、中国市場限定セットのカードなどです。</p>
+        </details>
+        <details>
+          <summary>なぜ日本語でしか存在しないカードがあるのですか？<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p>日本では雑誌、自動販売機、店舗やイベントに関連した多くのプロモカードが配布されます。その多くは他の市場で再版されなかったため、そのイラストは日本語のカードにしか存在しません。</p>
+        </details>
+        <details>
+          <summary>「欧米限定」「アジア限定」とはどういう意味ですか？<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p>欧米限定カードは欧米の言語（英語・ドイツ語・フランス語・イタリア語・スペイン語など）で発売され、日本やアジアでは未発売のカードです（例：Call of Legends）。アジア限定はその逆で、アジアの言語でのみ発売されたカードです。</p>
+        </details>
+        <details>
+          <summary>PokéTrucには何枚の限定カードが収録されていますか？<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p>現在、200匹のポケモンにわたる714枚の言語・地域限定カードイラスト（1996年〜2026年発行）を収録しています。新しい限定カードの発売や発見に応じて更新されます。</p>
+        </details>
+        <details>
+          <summary>PokéTrucは公式サイトですか？<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p>いいえ。PokéTrucは非公式のファンメイドサイトで、無料・広告なしで運営されています。ポケモンおよびポケモンのキャラクター名は任天堂・クリーチャーズ・ゲームフリークの商標です。</p>
+        </details>
+        <details>
+          <summary>誤りの修正や、カード・ポケモンの追加を手伝うことはできますか？<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <p>はい、ご協力は大歓迎です。誤りを見つけた場合や、収録されていない限定カードをご存じの場合、追加してほしいポケモンがある場合は、Reddit（u/Begooderrr）、メール（poketruc@icloud.com）、またはGitHubプロジェクトのissueでご連絡ください。詳しくは下記のお問い合わせ・ソースコードのセクションをご覧ください。</p>
+        </details>
+        </div>
+      </section>
 
-    <div class="info-card">
-      <h2>クレジット</h2>
-      <div>
-        <p>1つの言語にしか存在しないカードを見つける際にご協力いただいたRedditユーザー <a href="https://www.reddit.com/user/TwentyFour7/" class="info-link" target="_blank" rel="noopener noreferrer">u/TwentyFour7<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (新しいタブで開く)</span></a> さんと<a href="https://www.reddit.com/user/Quuador/" class="info-link" target="_blank" rel="noopener noreferrer">u/Quuador<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (新しいタブで開く)</span></a> さんに心より感謝いたします。</p>
+      <div class="info-cards">
+        <section id="credits" class="info-card" aria-labelledby="credits-title">
+          <h2 id="credits-title">クレジット</h2>
+          <p>1つの言語にしか存在しないカードを見つける際にご協力いただいたRedditユーザー <a href="https://www.reddit.com/user/TwentyFour7/" target="_blank" rel="noopener noreferrer">u/TwentyFour7<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (新しいタブで開く)</span></a> さんと<a href="https://www.reddit.com/user/Quuador/" target="_blank" rel="noopener noreferrer">u/Quuador<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (新しいタブで開く)</span></a> さんに心より感謝いたします。</p>
+        </section>
+        <section id="source" class="info-card" aria-labelledby="source-title">
+          <h2 id="source-title">ソースコード</h2>
+          <p>このサイトのソースコードはGitHubで公開されています.</p>
+          <a class="mono" href="https://github.com/amaurybegood/PokeTruc-Web" target="_blank" rel="noopener">github.com/amaurybegood/PokeTruc-Web<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (新しいタブで開く)</span></a>
+        </section>
       </div>
-    </div>
 
-    <div class="info-card">
-      <h2>ソースコード</h2>
-      <div>
-        <p>このサイトのソースコードはGitHubで公開されています：<a href="https://github.com/amaurybegood/PokeTruc-Web" class="info-link" target="_blank" rel="noopener">github.com/amaurybegood/PokeTruc-Web<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (新しいタブで開く)</span></a></p>
-      </div>
-    </div>
+      <section id="contact" class="info-contact" aria-labelledby="contact-title">
+        <div>
+          <h2 id="contact-title">誤りや未収録のカードを見つけましたか？</h2>
+          <p>修正や追加は大歓迎です。どの世代のポケモンでも構いません。</p>
+        </div>
+        <div class="info-contact-links">
+          <a class="info-contact-mail" href="mailto:poketruc@icloud.com?subject=Support%20%E2%80%93%20PokéTruc%20Web"><span><span class="visually-hidden">メール： </span>poketruc@icloud.com</span><span aria-hidden="true">→</span></a>
+          <a class="info-contact-reddit" href="https://www.reddit.com/user/Begooderrr/" target="_blank" rel="noopener"><span>Reddit · u/Begooderrr<span class="visually-hidden"> (新しいタブで開く)</span></span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
 
-    <div class="info-card">
-      <h2>お問い合わせ</h2>
-      <a href="mailto:poketruc@icloud.com?subject=Support%20%E2%80%93%20PokéTruc%20Web" class="info-link">メール： poketruc@icloud.com</a>
-      <a href="https://www.reddit.com/user/Begooderrr/" class="info-link" target="_blank" rel="noopener">Reddit： u/Begooderrr<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (新しいタブで開く)</span></a>
-    </div>
-
-    <div class="info-card disclaimer">
-      <div>
-        <p>このサイトは非公式のファン制作サイトです。ポケモンおよびポケモンキャラクター名はNintendo / Creatures Inc. / GAME FREAK inc.の商標です。</p>
-        <p>このサイトは個人情報を収集せず、ユーザーアカウントも不要です。いかなる情報もデバイス外に送信・保存されません。</p>
-      </div>
+      <p class="info-privacy">このサイトは非公式のファン制作サイトです。ポケモンおよびポケモンキャラクター名はNintendo / Creatures Inc. / GAME FREAK inc.の商標です。 このサイトは個人情報を収集せず、ユーザーアカウントも不要です。いかなる情報もデバイス外に送信・保存されません。</p>
     </div>
   </main>
 
-  <footer>
-    <p>© 2026 - 3590 PokéTruc — ファン制作、任天堂／株式会社ポケモンとは無関係です。</p>
+  <footer class="site-footer">
+    <div class="footer-note">
+      <img src="/logo.webp" alt="" width="28" height="28" loading="lazy">
+      <p>© 2026 - 3590 PokéTruc。広告なしのファン制作サイトです。任天堂、クリーチャーズ、ゲームフリーク、株式会社ポケモンとは無関係です。個人データは収集していません。</p>
+    </div>
+    <nav class="footer-langs" aria-label="言語">
+      <a href="/info/" hreflang="en" lang="en">English</a>
+      <a href="/fr/info/" hreflang="fr" lang="fr">Français</a>
+      <a href="/ja/info/" hreflang="ja" lang="ja" aria-current="true">日本語</a>
+      <a href="/ko/info/" hreflang="ko" lang="ko">한국어</a>
+      <a href="/zh/info/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+    </nav>
   </footer>
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="f7f7d1c9-87f5-4b52-8f20-b6110f143513"></script>
-  <script>window.DATA_V='00c5ee63';</script>
-  <script src="/i18n.js?v=25"></script>
-  <script src="/theme.js?v=25"></script>
-  <script src="/viewer.js?v=25"></script>
-  <script src="/backtotop.js?v=25"></script>
+  <script>window.DATA_V='83a6df41';</script>
+  <script src="/i18n.js?v=35"></script>
+  <script src="/theme.js?v=35"></script>
+  <script src="/viewer.js?v=35"></script>
+  <script src="/search.js?v=35"></script>
+  <script src="/backtotop.js?v=35"></script>
+  <script>
+    // "On this page": mark the last section whose top passed 30% of the
+    // viewport (the first one when two share a row; the last at page bottom;
+    // the one just clicked while it is on screen).
+    (function () {
+      var links = [].slice.call(document.querySelectorAll('.info-toc a'));
+      var secs = links.map(function (a) { return document.querySelector(a.hash); });
+      function spy() {
+        var cur = 0, best = -Infinity;
+        secs.forEach(function (s, i) {
+          var top = s.getBoundingClientRect().top;
+          if (top < innerHeight * 0.3 && top > best + 1) { best = top; cur = i; }
+        });
+        if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) cur = secs.length - 1;
+        // A clicked entry stays current while its section is on screen.
+        var p = secs.indexOf(document.querySelector(location.hash || null));
+        if (p >= 0) { var r = secs[p].getBoundingClientRect(); if (r.top > -10 && r.top < innerHeight * 0.6) cur = p; }
+        links.forEach(function (a, i) {
+          if (i === cur) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+        });
+      }
+      addEventListener('scroll', spy, { passive: true });
+      spy();
+    })();
+  </script>
 </body>
 </html>

@@ -21,6 +21,13 @@ const news = (() => {
   catch { return []; }
 })();
 
+// Home hero: the 3 fanned card images, front card first (then left, right).
+// Hand-edited like news.json. Optional file.
+const hero = (() => {
+  try { return JSON.parse(fs.readFileSync('data/hero.json', 'utf8')); }
+  catch { return { cards: [] }; }
+})();
+
 // Fail fast on malformed data: a typo in a JSON file should break the build
 // loudly instead of silently dropping content from the site.
 (function validateData() {
@@ -60,6 +67,20 @@ const news = (() => {
   }
 })();
 
+for (const name of hero.cards || []) {
+  if (![...cards, ...trainerCards].some(c => c.imageName === name)) {
+    throw new Error(`data/hero.json: unknown card imageName "${name}"`);
+  }
+}
+
+// Trainer titles carry the card number: "Rika (CSV4 159)" → cardName "Rika",
+// setNumber "CSV4 159" (an explicit setNumber in the JSON wins).
+for (const c of trainerCards) {
+  const m = c.title.match(/^(.*?)\s*\(([^)]+)\)\s*$/);
+  c.cardName = m ? m[1] : c.title;
+  if (m && !c.setNumber) c.setNumber = m[2];
+}
+
 const BASE_URL = 'https://poketruc.com';
 const TODAY    = new Date().toISOString().split('T')[0];
 
@@ -98,8 +119,8 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 43;
-const JS_V  = 25;
+const CSS_V = 59;
+const JS_V  = 35;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the
@@ -140,16 +161,6 @@ function cardSrcAttrs(imageName, sizes) {
   return `src="/${thumb}" srcset="/${thumb} ${thumbSize.w}w, /${full} ${fullSize.w}w" sizes="${sizes}"${imgSizeAttrs(full)}`;
 }
 const GRID_SIZES = '(max-width: 600px) 40vw, 200px';
-
-// News cards render at 56px CSS; a 200px thumb (make-thumbs.py, from
-// news.json) covers 3x displays. Falls back to the grid thumb if missing.
-function newsSrcAttrs(imageName) {
-  const candidates = [`cards/thumbs/news/${imageName}.avif`, `cards/thumbs/${imageName}.avif`, `cards/${imageName}.avif`]
-    .map(p => ({ p, s: imageSize(p) })).filter(c => c.s)
-    .filter((c, i, a) => a.findIndex(o => o.s.w === c.s.w) === i); // small cards: un-resized copies share a width
-  const srcset = candidates.map(c => `/${c.p} ${c.s.w}w`).join(', ');
-  return `src="/${candidates[0].p}" srcset="${srcset}" sizes="56px"${imgSizeAttrs(`cards/${imageName}.avif`)}`;
-}
 
 // LCP preload target for the first grid card: what the srcset actually picks.
 function cardPreloadHref(imageName) {
@@ -224,6 +235,64 @@ function exclusivityKey(card) {
   return null;
 }
 
+// Short exclusivity tag shown on cards ("JP ONLY", "CN · TH"…). The long form
+// is the existing lang*Heading key. ja/ko/zh reuse STATS_LANG_LABEL, which is
+// already short there (日本限定…). Consumed by the redesigned card UI.
+const FLAG_CODE = {
+  '🇯🇵': 'JP', '🇬🇧': 'EN', '🇨🇳': 'CN', '🇰🇷': 'KR', '🇩🇪': 'DE', '🇪🇸': 'ES', '🇫🇷': 'FR',
+  '🇮🇹': 'IT', '🇵🇹': 'PT', '🇵🇱': 'PL', '🇮🇩': 'ID', '🇷🇺': 'RU', '🇹🇭': 'TH', '🇹🇼': 'TW',
+};
+const EXCL_TAG_REGION = {
+  en: { '🌍': 'WESTERN',  '🏯': 'ASIA' },
+  fr: { '🌍': 'OCCIDENT', '🏯': 'ASIE' },
+};
+function exclusivityTag(card, lang) {
+  const key = exclusivityKey(card);
+  // A multi-language card with few, known languages reads better as codes
+  // (news entries have no `region`, so their key can be null).
+  if ((key === '🏯' || key === null) && card.languages.length <= 3 && card.languages.every(f => FLAG_CODE[f])) {
+    return card.languages.map(f => FLAG_CODE[f]).join(' · ');
+  }
+  if (lang === 'en' || lang === 'fr') {
+    if (EXCL_TAG_REGION[lang][key]) return EXCL_TAG_REGION[lang][key];
+    return lang === 'en' ? `${FLAG_CODE[key]} ONLY` : `EXCLU ${FLAG_CODE[key]}`;
+  }
+  return STATS_LANG_LABEL[lang][key];
+}
+
+// Year shown on cards: the release date's year when known, else the set year.
+function cardYear(card) {
+  return card.releaseDate ? Number(card.releaseDate.slice(0, 4)) : card.year;
+}
+
+// Default card order everywhere (grids, preload, "Oldest first"): release date,
+// else set year. Mirrors SORTS.oldest in app.js / pokemon.js.
+function byRelease(a, b) {
+  return (a.releaseDate || String(a.year)).localeCompare(b.releaseDate || String(b.year));
+}
+
+// Mirrors of i18n.js CHIP_LABELS / REGION_NAMES, for the build-time Pokémon
+// page (distribution legend, jump chips, breadcrumb).
+const CHIP_LABELS = {
+  en: { '🇯🇵': 'Japan',  '🇬🇧': 'English', '🇨🇳': 'China', '🇰🇷': 'Korea', '🇩🇪': 'German',   '🇪🇸': 'Spanish',   '🇫🇷': 'French',   '🇮🇹': 'Italian',   '🇵🇹': 'Portuguese', '🇵🇱': 'Polish',   '🇮🇩': 'Indonesia', '🇷🇺': 'Russian', '🌍': 'Western',  '🏯': 'Asia' },
+  fr: { '🇯🇵': 'Japon',  '🇬🇧': 'Anglais', '🇨🇳': 'Chine', '🇰🇷': 'Corée', '🇩🇪': 'Allemand', '🇪🇸': 'Espagnol',  '🇫🇷': 'Français', '🇮🇹': 'Italien',   '🇵🇹': 'Portugais',  '🇵🇱': 'Polonais', '🇮🇩': 'Indonésie', '🇷🇺': 'Russe',   '🌍': 'Occident', '🏯': 'Asie' },
+  ja: { '🇯🇵': '日本',   '🇬🇧': '英語',    '🇨🇳': '中国',  '🇰🇷': '韓国',  '🇩🇪': 'ドイツ語', '🇪🇸': 'スペイン語', '🇫🇷': 'フランス語', '🇮🇹': 'イタリア語', '🇵🇹': 'ポルトガル語', '🇵🇱': 'ポーランド語', '🇮🇩': 'インドネシア', '🇷🇺': 'ロシア語', '🌍': '欧米', '🏯': 'アジア' },
+  ko: { '🇯🇵': '일본',   '🇬🇧': '영어',    '🇨🇳': '중국',  '🇰🇷': '한국',  '🇩🇪': '독일어',   '🇪🇸': '스페인어',   '🇫🇷': '프랑스어',  '🇮🇹': '이탈리아어', '🇵🇹': '포르투갈어',  '🇵🇱': '폴란드어',  '🇮🇩': '인도네시아', '🇷🇺': '러시아어', '🌍': '서양', '🏯': '아시아' },
+  zh: { '🇯🇵': '日本',   '🇬🇧': '英文',    '🇨🇳': '中国',  '🇰🇷': '韩国',  '🇩🇪': '德文',     '🇪🇸': '西班牙文',   '🇫🇷': '法文',     '🇮🇹': '意大利文',   '🇵🇹': '葡萄牙文',    '🇵🇱': '波兰文',    '🇮🇩': '印尼',      '🇷🇺': '俄文',    '🌍': '西方', '🏯': '亚洲' },
+};
+const REGION_NAMES = {
+  en: ['', 'Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unova', 'Kalos', 'Alola', 'Galar', 'Paldea'],
+  fr: ['', 'Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unys',  'Kalos', 'Alola', 'Galar', 'Paldea'],
+  ja: ['', 'カントー', 'ジョウト', 'ホウエン', 'シンオウ', 'イッシュ', 'カロス', 'アローラ', 'ガラル', 'パルデア'],
+  ko: ['', '관동', '성도', '호연', '신오', '하나', '칼로스', '알로라', '가라르', '팔데아'],
+  zh: ['', '关都', '城都', '丰缘', '神奥', '合众', '卡洛斯', '阿罗拉', '伽勒尔', '帕底亚'],
+};
+
+// Anchor id of an exclusivity group on the Pokémon page ("group-jp").
+function groupSlug(flag) {
+  return 'group-' + (flag === '🌍' ? 'western' : flag === '🏯' ? 'asian' : (FLAG_CODE[flag] || 'other').toLowerCase());
+}
+
 const JOIN_RULES = {
   en: { sep: ', ', last: ' and ' },
   fr: { sep: ', ', last: ' et '  },
@@ -240,7 +309,7 @@ const LANG = {
     tagline: 'Pokémon TCG illustrations / artworks released in only one language or one region',
     pokedex: 'Pokédex',
     info: 'Info',
-    searchPlaceholder: 'Search a Pokémon, set or artist...',
+    searchPlaceholder: 'Search a Pokémon, set or artist',
     langFilterAria: 'Filter by exclusivity category',
     genNavAria: 'Jump to a generation',
     viewToggleAria: 'Choose display: Pokémon or cards',
@@ -250,7 +319,7 @@ const LANG = {
     indexH1: 'Pokémon TCG illustrations / artworks released in only one language or one region',
     seoAbout: "Some Pokémon TCG cards feature artwork that was only ever printed in a single language; others were only ever released in a single region. A Japanese promo from a 1996 stamp magazine never released in English. A McDonald's Pokémon-e card distributed only in Japan in 2002. A Chinese-market exclusive from a recent set. A Call of Legends or My First Battle card that shipped across Western markets (English, German, French, Italian, Spanish) but never reached Japan. PokéTruc catalogs these language- and region-exclusive cards across the classic Generation 1 Pokémon — Bulbasaur, Charizard, Pikachu and every favourite — plus select Pokémon from later generations added on request, pulling artwork from Japanese Vending Machine expansion sheets, Black & White promos, DPt-P promos, McDonald's promos, Western-only trainer kits, and Chinese-exclusive releases by artists such as Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii and many others. The goal is simple: help collectors discover the rare illustrations they may have never seen, organised by Pokémon, set, exclusivity and year — fully free, ad-free, and built by a fan.",
     seoPokedexHeading: 'Browse all Pokémon with exclusive cards',
-    newsHeading: 'Latest exclusive cards released',
+    newsHeading: 'Latest exclusive releases',
     infoTitle: 'PokéTruc — About',
     infoDescription: 'About PokéTruc: a fan-made catalog of Pokémon TCG cards with unique artwork exclusive to one language. Free, ad-free.',
     infoH1: 'About PokéTruc',
@@ -276,15 +345,10 @@ const LANG = {
     sourceCodeHeading: 'Source code',
     sourceCodeBefore: 'The source code of this site is open source on GitHub: ',
     emailLabel: 'Email:',
-    redditLabel: 'Reddit:',
     opensInNewTab: 'opens in new tab',
-    upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets featured',
     artistsHeading: 'Artists',
     relatedHeading: 'Related Pokémon',
-    artistPrefix: 'Artist',
-    sourceLinkText: 'source',
-    descriptionToggle: 'Note',
     langJapaneseHeading:   'Japanese-exclusive cards',
     langEnglishHeading:    'English-exclusive cards',
     langChineseHeading:    'Chinese-exclusive cards',
@@ -307,25 +371,81 @@ const LANG = {
       `${n} exclusive TCG card ${n === 1 ? 'illustration' : 'illustrations'} for ${name}. Unique artwork only released in one language or region.`,
     schemaDetailDescription: (name, id) =>
       `Exclusive Pokémon TCG card illustrations for ${name} (#${pad(id)}). Unique artwork only released in one language or region.`,
-    nextLabel: (id, name) => `#${pad(id)} ${name} →`,
-    prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: 'JavaScript is required for the live Pokédex grid above. You can still browse every Pokémon below.',
-    footerCopyright: '© 2026 - 3590 PokéTruc — Fan-made, not affiliated with Nintendo / The Pokémon Company.',
+    footerCopyright: '© 2026 - 3590 PokéTruc. Fan-made and ad-free. Not affiliated with Nintendo, Creatures Inc., GAME FREAK or The Pokémon Company. No personal data collected.',
     langSwitcherLabel: 'Language',
     themeToggleLabel: 'Toggle dark mode',
+    searchLabel: 'Search',
+    searchOpen: 'Open search',
+    menuOpen: 'Open menu',
+    menuClose: 'Close menu',
+    mainNavAria: 'Main',
+    langNavAria: 'Languages',
+    allCards: 'All cards',
+    menuLanguage: 'Language',
+    menuTheme: 'Theme',
+    themeLight: 'Light',
+    themeDark: 'Dark',
+    themeSystem: 'System',
+    pokemonCount: (n) => `${n} Pokémon`,
+    heroEyebrow: 'Language- & region-exclusive Pokémon TCG art',
+    heroH1: 'The card illustrations most collectors have never seen.',
+    heroLead: 'Artwork printed in a single language or released in a single region: Japanese-only promos, Chinese-market exclusives, Western-only sets. Catalogued by Pokémon, set and artist.',
+    statIllustrations: 'exclusive illustrations',
+    statPokemon: 'Pokémon covered',
+    ctaBrowse: 'Browse the Pokédex',
+    ctaTrainers: 'Trainer cards',
+    newsSeeAll: 'See all cards',
+    browseHeading: 'Browse the catalogue',
+    viewByPokemon: 'By Pokémon',
+    exclusiveTo: 'Exclusive to',
+    hideEmpty: 'Hide Pokémon without cards',
+    regionLabel: 'Region',
+    sortLabel: 'Sort',
+    sortNewest: 'Newest first',
+    sortOldest: 'Oldest first',
+    sortDex: 'Pokédex number',
+    sortArtist: 'Artist',
+    aboutCatalogue: 'About the catalogue',
+    statYears: (n) => `${n} years of releases`,
     trainers: 'Trainers',
     trainersTitle: 'PokéTruc — Exclusive Trainer Card Illustrations',
     trainersDescription: 'Pokémon TCG Trainer card illustrations released in only one language or one region — Japanese, English, Western-only and more. Free, fan-made, ad-free.',
-    trainersH1: 'Trainer card illustrations released in only one language or one region',
-    trainersIntro: (n) => `${n} exclusive Trainer card ${n === 1 ? 'illustration' : 'illustrations'}`,
     trainersEmpty: 'No Trainer cards yet — check back soon.',
+    breadcrumbAria: 'Breadcrumb',
+    genLine: (n) => `Generation ${n}`,
+    prevPokemon: (id, name) => `Previous: ${name}, #${pad(id)}`,
+    nextPokemon: (id, name) => `Next: ${name}, #${pad(id)}`,
+    pkSummary: ({ count, years, artists }) =>
+      `<strong>${count}</strong> exclusive ${count === 1 ? 'illustration' : 'illustrations'} · <strong>${years}</strong>` +
+      (artists.length > 3 ? ` · <strong>${artists.length}</strong> artists<span class="pk-summary-more">, including ${joinListLang(artists.slice(0, 3), 'en')}</span>`
+        : artists.length ? ` · ${joinListLang(artists, 'en')}` : ''),
+    distributionAria: (parts) => `Distribution: ${parts.join(', ')}`,
+    otherGroup: 'Other',
+    jumpAria: 'Jump to group',
+    sortPrice: 'Market price',
+    filterAll: "All",
+    sortName: "Name",
+    trainersEyebrow: "Trainer · Supporter · Stadium",
+    trainersLead: "Trainer illustrations released in only one language or one region. Not tied to a Pokémon, so they live in their own gallery.",
+    onThisPage: "On this page",
+    infoEyebrow: "Free · ad-free · fan-made",
+    contactPitch: "Spotted a mistake or a missing card?",
+    contactLead: "Corrections and additions are very welcome, including Pokémon from any generation.",
+    notFoundTitle: "PokéTruc — Page not found",
+    notFoundH1: "This page isn’t in the catalogue.",
+    notFoundText: "The link may be outdated, or the card was moved. Try a search, or head back to the Pokédex.",
+    backToPokedex: "Back to Pokédex",
+    errorSticker: "Error 404",
+    searchClear: "Clear search",
+    searchCancel: "Cancel",
   },
   fr: {
     siteName: 'PokéTruc',
     tagline: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région",
     pokedex: 'Pokédex',
     info: 'Info',
-    searchPlaceholder: 'Rechercher un Pokémon, set ou artiste...',
+    searchPlaceholder: 'Rechercher un Pokémon, un set ou un artiste',
     langFilterAria: "Filtrer par catégorie d'exclusivité",
     genNavAria: 'Aller à une génération',
     viewToggleAria: 'Choisir l\'affichage : Pokémon ou cartes',
@@ -335,7 +455,7 @@ const LANG = {
     indexH1: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région",
     seoAbout: "Certaines cartes Pokémon TCG n'existent qu'en une seule langue ; d'autres ne sont sorties que dans une seule région. Une promo japonaise distribuée avec un magazine de timbres en 1996, jamais sortie en anglais. Une carte McDonald's Pokémon-e disponible uniquement au Japon en 2002. Une exclusivité du marché chinois sur un set récent. Une carte d'un set L'appel des légendes ou My First Battle distribuée en occident (anglais, allemand, français, italien, espagnol) mais jamais sortie au Japon. PokéTruc recense ces cartes en exclusivité linguistique ou régionale pour les Pokémon de la Génération 1 — Bulbizarre, Dracaufeu, Pikachu et tous les autres — ainsi que des Pokémon d'autres générations ajoutés à la demande, en piochant dans les feuilles Vending Machine japonaises, les promos Black & White, les promos DPt-P, les promos McDonald's, les decks d'initiation occidentaux et les sorties exclusives au marché chinois, illustrées par des artistes comme Ken Sugimori, Mitsuhiro Arita, Sumiyoshi Kizuki, Yuka Morii et bien d'autres. L'objectif : permettre aux collectionneurs de découvrir des illustrations rares qu'ils n'ont peut-être jamais vues, classées par Pokémon, set, exclusivité et année — entièrement gratuit, sans publicité, créé par un fan.",
     seoPokedexHeading: 'Tous les Pokémon avec des cartes exclusives',
-    newsHeading: 'Dernières cartes exclusives sorties',
+    newsHeading: 'Dernières sorties exclusives',
     infoTitle: 'PokéTruc — À propos',
     infoDescription: 'À propos de PokéTruc : un catalogue créé par un fan, recensant les cartes Pokémon TCG aux illustrations exclusives à une seule langue. Gratuit, sans publicité.',
     infoH1: 'À propos de PokéTruc',
@@ -361,15 +481,10 @@ const LANG = {
     sourceCodeHeading: 'Code source',
     sourceCodeBefore: 'Le code source de ce site est ouvert sur GitHub : ',
     emailLabel: 'E-mail :',
-    redditLabel: 'Reddit :',
     opensInNewTab: 'ouvre dans un nouvel onglet',
-    upToPokedex:   '↑ Pokédex',
     setsHeading: 'Sets présentés',
     artistsHeading: 'Artistes',
     relatedHeading: 'Pokémon liés',
-    artistPrefix: 'Artiste',
-    sourceLinkText: 'source',
-    descriptionToggle: 'Note',
     langJapaneseHeading:   'Cartes exclusives japonaises',
     langEnglishHeading:    'Cartes exclusives anglaises',
     langChineseHeading:    'Cartes exclusives chinoises',
@@ -393,18 +508,74 @@ const LANG = {
       `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes TCG pour ${name}. Artwork unique disponible dans une seule langue ou région.`,
     schemaDetailDescription: (name, id) =>
       `Illustrations exclusives de cartes Pokémon TCG pour ${name} (#${pad(id)}). Artwork unique disponible dans une seule langue ou région.`,
-    nextLabel: (id, name) => `#${pad(id)} ${name} →`,
-    prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: "JavaScript est nécessaire pour la grille dynamique du Pokédex. Vous pouvez tout de même parcourir tous les Pokémon ci-dessous.",
-    footerCopyright: '© 2026 - 3590 PokéTruc — Site fan, non affilié à Nintendo / The Pokémon Company.',
+    footerCopyright: '© 2026 - 3590 PokéTruc. Site fan, sans publicité. Non affilié à Nintendo, Creatures Inc., GAME FREAK ou The Pokémon Company. Aucune donnée personnelle collectée.',
     langSwitcherLabel: 'Langue',
     themeToggleLabel: 'Basculer le mode sombre',
+    searchLabel: 'Rechercher',
+    searchOpen: 'Ouvrir la recherche',
+    menuOpen: 'Ouvrir le menu',
+    menuClose: 'Fermer le menu',
+    mainNavAria: 'Principal',
+    langNavAria: 'Langues',
+    allCards: 'Toutes les cartes',
+    menuLanguage: 'Langue',
+    menuTheme: 'Thème',
+    themeLight: 'Clair',
+    themeDark: 'Sombre',
+    themeSystem: 'Système',
+    pokemonCount: (n) => `${n} Pokémon`,
+    heroEyebrow: 'Illustrations Pokémon TCG exclusives à une langue ou une région',
+    heroH1: 'Les illustrations que la plupart des collectionneurs n\'ont jamais vues.',
+    heroLead: 'Des illustrations imprimées dans une seule langue ou sorties dans une seule région : promos réservées au Japon, exclusivités du marché chinois, sets uniquement occidentaux. Classées par Pokémon, set et artiste.',
+    statIllustrations: 'illustrations exclusives',
+    statPokemon: 'Pokémon recensés',
+    ctaBrowse: 'Parcourir le Pokédex',
+    ctaTrainers: 'Cartes Dresseur',
+    newsSeeAll: 'Voir toutes les cartes',
+    browseHeading: 'Parcourir le catalogue',
+    viewByPokemon: 'Par Pokémon',
+    exclusiveTo: 'Exclusivité',
+    hideEmpty: 'Masquer les Pokémon sans carte',
+    regionLabel: 'Région',
+    sortLabel: 'Trier',
+    sortNewest: 'Plus récentes',
+    sortOldest: 'Plus anciennes',
+    sortDex: 'Numéro de Pokédex',
+    sortArtist: 'Artiste',
+    aboutCatalogue: 'À propos du catalogue',
+    statYears: (n) => `${n} ans de sorties`,
     trainers: 'Dresseurs',
     trainersTitle: 'PokéTruc — Illustrations exclusives de cartes Dresseur',
     trainersDescription: "Illustrations de cartes Dresseur Pokémon TCG n'existant que dans une seule langue ou une seule région (japonais, anglais, occident…). Gratuit, sans pub, fait par un fan.",
-    trainersH1: "Illustrations de cartes Dresseur n'existant que dans une seule langue ou une seule région",
-    trainersIntro: (n) => `${n} illustration${n > 1 ? 's' : ''} exclusive${n > 1 ? 's' : ''} de cartes Dresseur`,
     trainersEmpty: 'Aucune carte Dresseur pour le moment — revenez bientôt.',
+    breadcrumbAria: "Fil d'Ariane",
+    genLine: (n) => `Génération ${n}`,
+    prevPokemon: (id, name) => `Précédent : ${name}, #${pad(id)}`,
+    nextPokemon: (id, name) => `Suivant : ${name}, #${pad(id)}`,
+    pkSummary: ({ count, years, artists }) =>
+      `<strong>${count}</strong> illustration${count > 1 ? 's' : ''} exclusive${count > 1 ? 's' : ''} · <strong>${years}</strong>` +
+      (artists.length > 3 ? ` · <strong>${artists.length}</strong> artistes<span class="pk-summary-more">, dont ${joinListLang(artists.slice(0, 3), 'fr')}</span>`
+        : artists.length ? ` · ${joinListLang(artists, 'fr')}` : ''),
+    distributionAria: (parts) => `Répartition : ${parts.join(', ')}`,
+    otherGroup: 'Autres',
+    jumpAria: 'Aller à un groupe',
+    sortPrice: 'Prix du marché',
+    filterAll: "Tous",
+    sortName: "Nom",
+    trainersEyebrow: "Dresseur · Supporter · Stade",
+    trainersLead: "Des illustrations de cartes Dresseur sorties dans une seule langue ou une seule région. Elles ne sont liées à aucun Pokémon, elles ont donc leur propre galerie.",
+    onThisPage: "Sur cette page",
+    infoEyebrow: "Gratuit · sans pub · fait par un fan",
+    contactPitch: "Une erreur ou une carte manquante ?",
+    contactLead: "Les corrections et ajouts sont les bienvenus, y compris des Pokémon de n’importe quelle génération.",
+    notFoundTitle: "PokéTruc — Page introuvable",
+    notFoundH1: "Cette page n’est pas dans le catalogue.",
+    notFoundText: "Le lien est peut-être périmé, ou la carte a été déplacée. Essayez une recherche, ou revenez au Pokédex.",
+    backToPokedex: "Retour au Pokédex",
+    errorSticker: "Erreur 404",
+    searchClear: "Effacer la recherche",
+    searchCancel: "Annuler",
   },
   ja: {
     siteName: 'PokéTruc',
@@ -447,15 +618,10 @@ const LANG = {
     sourceCodeHeading: 'ソースコード',
     sourceCodeBefore: 'このサイトのソースコードはGitHubで公開されています：',
     emailLabel: 'メール：',
-    redditLabel: 'Reddit：',
     opensInNewTab: '新しいタブで開く',
-    upToPokedex:   '↑ 図鑑',
     setsHeading: '収録セット',
     artistsHeading: 'イラストレーター',
     relatedHeading: '関連ポケモン',
-    artistPrefix: 'イラストレーター',
-    sourceLinkText: '出典',
-    descriptionToggle: 'メモ',
     langJapaneseHeading:   '日本限定カード',
     langEnglishHeading:    '英語限定カード',
     langChineseHeading:    '中国語限定カード',
@@ -478,18 +644,74 @@ const LANG = {
       `${name}の限定TCGカードイラスト${n}枚。1つの言語または地域でのみ発行された独自イラストを掲載しています。`,
     schemaDetailDescription: (name, id) =>
       `${name}（#${pad(id)}）の限定ポケモンTCGカードイラスト。1つの言語または地域でのみ発行された独自イラストです。`,
-    nextLabel: (id, name) => `#${pad(id)} ${name} →`,
-    prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: 'JavaScriptが無効です。動的なポケモン一覧は表示されませんが、下のリストからすべてのポケモンを閲覧できます。',
-    footerCopyright: '© 2026 - 3590 PokéTruc — ファン制作、任天堂／株式会社ポケモンとは無関係です。',
+    footerCopyright: '© 2026 - 3590 PokéTruc。広告なしのファン制作サイトです。任天堂、クリーチャーズ、ゲームフリーク、株式会社ポケモンとは無関係です。個人データは収集していません。',
     langSwitcherLabel: '言語',
     themeToggleLabel: 'ダークモードを切り替え',
+    searchLabel: '検索',
+    searchOpen: '検索を開く',
+    menuOpen: 'メニューを開く',
+    menuClose: 'メニューを閉じる',
+    mainNavAria: 'メイン',
+    langNavAria: '言語',
+    allCards: 'すべてのカード',
+    menuLanguage: '言語',
+    menuTheme: 'テーマ',
+    themeLight: 'ライト',
+    themeDark: 'ダーク',
+    themeSystem: 'システム',
+    pokemonCount: (n) => `${n}匹`,
+    heroEyebrow: '言語・地域限定のポケモンTCGイラスト',
+    heroH1: '多くのコレクターがまだ見たことのないカードイラスト。',
+    heroLead: '1つの言語でのみ印刷された、または1つの地域でのみ発売されたイラスト。日本限定プロモ、中国市場限定カード、欧米限定セットなどを、ポケモン・セット・イラストレーター別に収録しています。',
+    statIllustrations: '限定イラスト',
+    statPokemon: '収録ポケモン',
+    ctaBrowse: '図鑑を見る',
+    ctaTrainers: 'トレーナーズカード',
+    newsSeeAll: 'すべてのカードを見る',
+    browseHeading: 'カタログを見る',
+    viewByPokemon: 'ポケモン別',
+    exclusiveTo: '限定先',
+    hideEmpty: 'カードのないポケモンを隠す',
+    regionLabel: '地方',
+    sortLabel: '並び替え',
+    sortNewest: '新しい順',
+    sortOldest: '古い順',
+    sortDex: '図鑑番号順',
+    sortArtist: 'イラストレーター',
+    aboutCatalogue: 'カタログについて',
+    statYears: (n) => `${n}年分のリリース`,
     trainers: 'トレーナー',
     trainersTitle: 'PokéTruc — 言語・地域限定のトレーナーズカードイラスト',
     trainersDescription: '1つの言語または1つの地域にしか存在しないポケモンTCGのトレーナーズカードイラスト。完全無料・広告なし・ファン制作。',
-    trainersH1: '1つの言語または1つの地域にしか存在しないトレーナーズカードのイラスト',
-    trainersIntro: (n) => `${n}枚の限定トレーナーズカードイラスト`,
     trainersEmpty: 'トレーナーズカードはまだありません。またご覧ください。',
+    breadcrumbAria: 'パンくずリスト',
+    genLine: (n) => `第${n}世代`,
+    prevPokemon: (id, name) => `前へ：${name}（#${pad(id)}）`,
+    nextPokemon: (id, name) => `次へ：${name}（#${pad(id)}）`,
+    pkSummary: ({ count, years, artists }) =>
+      `限定イラスト<strong>${count}</strong>枚 · <strong>${years}</strong>` +
+      (artists.length > 3 ? ` · イラストレーター<strong>${artists.length}</strong>名<span class="pk-summary-more">（${joinListLang(artists.slice(0, 3), 'ja')}など）</span>`
+        : artists.length ? ` · ${joinListLang(artists, 'ja')}` : ''),
+    distributionAria: (parts) => `内訳：${parts.join('、')}`,
+    otherGroup: 'その他',
+    jumpAria: 'グループへ移動',
+    sortPrice: '相場価格',
+    filterAll: "すべて",
+    sortName: "名前順",
+    trainersEyebrow: "トレーナー · サポート · スタジアム",
+    trainersLead: "1つの言語または1つの地域でのみ発売されたトレーナーズのイラスト。特定のポケモンに属さないため、専用のギャラリーにまとめています。",
+    onThisPage: "このページの内容",
+    infoEyebrow: "無料 · 広告なし · ファン制作",
+    contactPitch: "誤りや未収録のカードを見つけましたか？",
+    contactLead: "修正や追加は大歓迎です。どの世代のポケモンでも構いません。",
+    notFoundTitle: "PokéTruc — ページが見つかりません",
+    notFoundH1: "このページはカタログにありません。",
+    notFoundText: "リンクが古いか、カードが移動した可能性があります。検索するか、図鑑に戻ってください。",
+    backToPokedex: "図鑑に戻る",
+    errorSticker: "エラー 404",
+    searchClear: "検索をクリア",
+    searchCancel: "キャンセル",
   },
   ko: {
     siteName: 'PokéTruc',
@@ -532,15 +754,10 @@ const LANG = {
     sourceCodeHeading: '소스 코드',
     sourceCodeBefore: '이 사이트의 소스 코드는 GitHub에 공개되어 있습니다: ',
     emailLabel: '이메일:',
-    redditLabel: 'Reddit:',
     opensInNewTab: '새 탭에서 열기',
-    upToPokedex:   '↑ 도감',
     setsHeading: '수록 세트',
     artistsHeading: '일러스트레이터',
     relatedHeading: '관련 포켓몬',
-    artistPrefix: '일러스트레이터',
-    sourceLinkText: '출처',
-    descriptionToggle: '메모',
     langJapaneseHeading:   '일본어 한정 카드',
     langEnglishHeading:    '영어 한정 카드',
     langChineseHeading:    '중국어 한정 카드',
@@ -563,18 +780,74 @@ const LANG = {
       `${name}의 한정 TCG 카드 일러스트 ${n}장. 한 가지 언어 또는 한 지역으로만 발매된 독점 일러스트입니다.`,
     schemaDetailDescription: (name, id) =>
       `${name}(#${pad(id)})의 한정 포켓몬 TCG 카드 일러스트. 한 가지 언어 또는 한 지역으로만 발매된 독점 일러스트입니다.`,
-    nextLabel: (id, name) => `#${pad(id)} ${name} →`,
-    prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: 'JavaScript가 비활성화되어 있어 동적 포켓몬 그리드는 표시되지 않습니다. 아래 목록에서 모든 포켓몬을 확인할 수 있습니다.',
-    footerCopyright: '© 2026 - 3590 PokéTruc — 팬 제작, Nintendo / The Pokémon Company와 무관합니다.',
+    footerCopyright: '© 2026 - 3590 PokéTruc. 광고 없는 팬 제작 사이트입니다. Nintendo, Creatures Inc., GAME FREAK, The Pokémon Company와 무관합니다. 개인 데이터를 수집하지 않습니다.',
     langSwitcherLabel: '언어',
     themeToggleLabel: '다크 모드 전환',
+    searchLabel: '검색',
+    searchOpen: '검색 열기',
+    menuOpen: '메뉴 열기',
+    menuClose: '메뉴 닫기',
+    mainNavAria: '주 메뉴',
+    langNavAria: '언어',
+    allCards: '모든 카드',
+    menuLanguage: '언어',
+    menuTheme: '테마',
+    themeLight: '라이트',
+    themeDark: '다크',
+    themeSystem: '시스템',
+    pokemonCount: (n) => `포켓몬 ${n}마리`,
+    heroEyebrow: '언어·지역 한정 포켓몬 TCG 일러스트',
+    heroH1: '대부분의 수집가가 본 적 없는 카드 일러스트.',
+    heroLead: '한 가지 언어로만 인쇄되었거나 한 지역에서만 출시된 일러스트. 일본 한정 프로모, 중국 시장 한정 카드, 서양 한정 세트를 포켓몬·세트·일러스트레이터별로 정리했습니다.',
+    statIllustrations: '한정 일러스트',
+    statPokemon: '수록 포켓몬',
+    ctaBrowse: '도감 둘러보기',
+    ctaTrainers: '트레이너스 카드',
+    newsSeeAll: '모든 카드 보기',
+    browseHeading: '카탈로그 둘러보기',
+    viewByPokemon: '포켓몬별',
+    exclusiveTo: '한정 지역',
+    hideEmpty: '카드 없는 포켓몬 숨기기',
+    regionLabel: '지방',
+    sortLabel: '정렬',
+    sortNewest: '최신순',
+    sortOldest: '오래된 순',
+    sortDex: '도감 번호순',
+    sortArtist: '일러스트레이터',
+    aboutCatalogue: '카탈로그 소개',
+    statYears: (n) => `${n}년간의 발매`,
     trainers: '트레이너',
     trainersTitle: 'PokéTruc — 언어·지역 한정 트레이너 카드 일러스트',
     trainersDescription: '한 가지 언어 또는 한 지역에서만 존재하는 포켓몬 TCG 트레이너 카드 일러스트. 무료, 광고 없음, 팬 제작.',
-    trainersH1: '한 가지 언어 또는 한 지역에서만 존재하는 트레이너 카드 일러스트',
-    trainersIntro: (n) => `${n}장의 한정 트레이너 카드 일러스트`,
     trainersEmpty: '아직 트레이너 카드가 없습니다. 곧 다시 확인해 주세요.',
+    breadcrumbAria: '이동 경로',
+    genLine: (n) => `${n}세대`,
+    prevPokemon: (id, name) => `이전: ${name}, #${pad(id)}`,
+    nextPokemon: (id, name) => `다음: ${name}, #${pad(id)}`,
+    pkSummary: ({ count, years, artists }) =>
+      `한정 일러스트 <strong>${count}</strong>장 · <strong>${years}</strong>` +
+      (artists.length > 3 ? ` · 일러스트레이터 <strong>${artists.length}</strong>명<span class="pk-summary-more"> (${joinListLang(artists.slice(0, 3), 'ko')} 등)</span>`
+        : artists.length ? ` · ${joinListLang(artists, 'ko')}` : ''),
+    distributionAria: (parts) => `분포: ${parts.join(', ')}`,
+    otherGroup: '기타',
+    jumpAria: '그룹으로 이동',
+    sortPrice: '시세',
+    filterAll: "전체",
+    sortName: "이름순",
+    trainersEyebrow: "트레이너 · 서포트 · 스타디움",
+    trainersLead: "한 가지 언어 또는 한 지역에서만 출시된 트레이너스 카드 일러스트. 특정 포켓몬에 속하지 않아 별도 갤러리에 모았습니다.",
+    onThisPage: "이 페이지의 내용",
+    infoEyebrow: "무료 · 광고 없음 · 팬 제작",
+    contactPitch: "오류나 누락된 카드를 발견하셨나요?",
+    contactLead: "수정과 추가는 언제나 환영합니다. 어느 세대의 포켓몬이든 좋습니다.",
+    notFoundTitle: "PokéTruc — 페이지를 찾을 수 없음",
+    notFoundH1: "이 페이지는 카탈로그에 없습니다.",
+    notFoundText: "링크가 오래되었거나 카드가 이동되었을 수 있습니다. 검색하거나 도감으로 돌아가세요.",
+    backToPokedex: "도감으로 돌아가기",
+    errorSticker: "오류 404",
+    searchClear: "검색어 지우기",
+    searchCancel: "취소",
   },
   zh: {
     siteName: 'PokéTruc',
@@ -617,15 +890,10 @@ const LANG = {
     sourceCodeHeading: '源代码',
     sourceCodeBefore: '本站源代码已在 GitHub 上开源：',
     emailLabel: '邮箱：',
-    redditLabel: 'Reddit：',
     opensInNewTab: '在新标签页中打开',
-    upToPokedex:   '↑ 图鉴',
     setsHeading: '收录的卡组',
     artistsHeading: '插画师',
     relatedHeading: '相关宝可梦',
-    artistPrefix: '插画师',
-    sourceLinkText: '来源',
-    descriptionToggle: '备注',
     langJapaneseHeading:   '日文独占卡牌',
     langEnglishHeading:    '英文独占卡牌',
     langChineseHeading:    '中文独占卡牌',
@@ -648,18 +916,74 @@ const LANG = {
       `${name}的 ${n} 张独占 TCG 卡牌插画。仅在单一语言或单一地区发行的独家插画。`,
     schemaDetailDescription: (name, id) =>
       `${name}（#${pad(id)}）的独占宝可梦 TCG 卡牌插画。仅在单一语言或单一地区发行的独家插画。`,
-    nextLabel: (id, name) => `#${pad(id)} ${name} →`,
-    prevLabel: (id, name) => `← #${pad(id)} ${name}`,
     noscript: '您的浏览器已禁用 JavaScript，无法显示动态宝可梦网格。您仍可在下方浏览所有宝可梦。',
-    footerCopyright: '© 2026 - 3590 PokéTruc — 粉丝制作，与任天堂／株式会社宝可梦无关。',
+    footerCopyright: '© 2026 - 3590 PokéTruc。无广告的粉丝制作网站，与任天堂、Creatures Inc.、GAME FREAK 及株式会社宝可梦无关。不收集任何个人数据。',
     langSwitcherLabel: '语言',
     themeToggleLabel: '切换深色模式',
+    searchLabel: '搜索',
+    searchOpen: '打开搜索',
+    menuOpen: '打开菜单',
+    menuClose: '关闭菜单',
+    mainNavAria: '主导航',
+    langNavAria: '语言',
+    allCards: '全部卡牌',
+    menuLanguage: '语言',
+    menuTheme: '主题',
+    themeLight: '浅色',
+    themeDark: '深色',
+    themeSystem: '跟随系统',
+    pokemonCount: (n) => `${n} 只宝可梦`,
+    heroEyebrow: '语言及地区独占的宝可梦 TCG 插画',
+    heroH1: '大多数收藏家从未见过的卡牌插画。',
+    heroLead: '仅以单一语言印刷或仅在单一地区发行的插画：日本限定促销卡、中国市场独占卡、西方限定卡组。按宝可梦、卡组和插画师分类整理。',
+    statIllustrations: '独占插画',
+    statPokemon: '收录宝可梦',
+    ctaBrowse: '浏览图鉴',
+    ctaTrainers: '训练家卡',
+    newsSeeAll: '查看全部卡牌',
+    browseHeading: '浏览目录',
+    viewByPokemon: '按宝可梦',
+    exclusiveTo: '独占范围',
+    hideEmpty: '隐藏无卡牌的宝可梦',
+    regionLabel: '地区',
+    sortLabel: '排序',
+    sortNewest: '最新优先',
+    sortOldest: '最早优先',
+    sortDex: '图鉴编号',
+    sortArtist: '插画师',
+    aboutCatalogue: '关于目录',
+    statYears: (n) => `跨越 ${n} 年`,
     trainers: '训练家',
     trainersTitle: 'PokéTruc — 语言·地区独占的训练家卡牌插画',
     trainersDescription: '仅在一种语言或一个地区中发行的宝可梦 TCG 训练家卡牌插画。免费、无广告、由粉丝制作。',
-    trainersH1: '仅在一种语言或一个地区中发行的训练家卡牌插画',
-    trainersIntro: (n) => `${n} 张独占训练家卡牌插画`,
     trainersEmpty: '暂时还没有训练家卡牌，敬请期待。',
+    breadcrumbAria: '导航路径',
+    genLine: (n) => `第 ${n} 世代`,
+    prevPokemon: (id, name) => `上一个：${name}（#${pad(id)}）`,
+    nextPokemon: (id, name) => `下一个：${name}（#${pad(id)}）`,
+    pkSummary: ({ count, years, artists }) =>
+      `<strong>${count}</strong> 张独占插画 · <strong>${years}</strong>` +
+      (artists.length > 3 ? ` · <strong>${artists.length}</strong> 位插画师<span class="pk-summary-more">，包括 ${joinListLang(artists.slice(0, 3), 'zh')} 等</span>`
+        : artists.length ? ` · ${joinListLang(artists, 'zh')}` : ''),
+    distributionAria: (parts) => `分布：${parts.join('、')}`,
+    otherGroup: '其他',
+    jumpAria: '跳转到分组',
+    sortPrice: '市场价格',
+    filterAll: "全部",
+    sortName: "名称",
+    trainersEyebrow: "训练家 · 支援者 · 竞技场",
+    trainersLead: "仅以单一语言或在单一地区发行的训练家卡插画。它们不属于任何宝可梦，因此单独成库。",
+    onThisPage: "本页内容",
+    infoEyebrow: "免费 · 无广告 · 粉丝制作",
+    contactPitch: "发现错误或缺失的卡牌？",
+    contactLead: "非常欢迎纠正和补充，任何世代的宝可梦都可以。",
+    notFoundTitle: "PokéTruc — 找不到页面",
+    notFoundH1: "目录中没有这个页面。",
+    notFoundText: "链接可能已过期，或卡牌已被移动。试试搜索，或返回图鉴。",
+    backToPokedex: "返回图鉴",
+    errorSticker: "错误 404",
+    searchClear: "清除搜索",
+    searchCancel: "取消",
   },
 };
 
@@ -681,18 +1005,6 @@ function escapeHtml(s) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
-}
-
-function linkifyDescription(text, L) {
-  const escaped = escapeHtml(text);
-  const linkText = escapeHtml(L.sourceLinkText);
-  const ariaLabel = escapeHtml(`${L.sourceLinkText} (${L.opensInNewTab})`);
-  return escaped.replace(/https?:\/\/[^\s]+/g, (match) => {
-    const trailMatch = match.match(/[.,;:!?]+$/);
-    const trail = trailMatch ? trailMatch[0] : '';
-    const url = trail ? match.slice(0, -trail.length) : match;
-    return `<a href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${ariaLabel}">${linkText}<span aria-hidden="true"> ↗</span></a>${trail}`;
-  });
 }
 
 function cardsFor(pokemonId) {
@@ -819,7 +1131,8 @@ const HOME_STATS_BUILDERS = {
   },
 };
 
-function buildHomeStatsSentence(lang) {
+// Catalogue-wide numbers: home stats sentence and hero stats.
+function homeStats() {
   const count = cards.length;
   const years = cards.map(c => c.year);
   const minY = Math.min(...years);
@@ -830,8 +1143,11 @@ function buildHomeStatsSentence(lang) {
   for (const l of LANG_INFO) if (byLangRaw[l.flag]) byLang[l.flag] = byLangRaw[l.flag];
 
   const pokemonCount = new Set(cards.map(c => c.pokemonId)).size;
+  return { count, minY, maxY, byLang, pokemonCount };
+}
 
-  return HOME_STATS_BUILDERS[lang]({ count, minY, maxY, byLang, pokemonCount });
+function buildHomeStatsSentence(lang) {
+  return HOME_STATS_BUILDERS[lang](homeStats());
 }
 
 function buildStatsSentence(lang, pokemon, pkCards) {
@@ -900,7 +1216,7 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
 
   <link rel="preload" as="style" href="/style.css?v=${CSS_V}">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
-  <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="275px" type="image/webp">${preloadImage ? `
+  <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="142px" type="image/webp">${preloadImage ? `
   <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">` : ''}
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
@@ -928,53 +1244,118 @@ ${hreflangBlock(urlsByLang)}
 ${jsonLd ? `  <script type="application/ld+json">${jsonLd}</script>` : ''}`;
 }
 
-// Site header (logo + brand wordmark + nav + language switcher).
+// Same page in another language. currentPath: '' (index/info/trainers) or
+// { slug } (pokemon detail).
+function altPath(kind, currentPath, targetLang) {
+  if (kind === 'info')     return pathInfo(targetLang);
+  if (kind === 'trainers') return pathTrainers(targetLang);
+  if (kind === 'pokemon')  return pathPokemon(targetLang, currentPath.slug);
+  return pathRoot(targetLang);
+}
+
+const LANG_CODE_LABEL = { en: 'EN', fr: 'FR', ja: '日本語', ko: '한국어', zh: '中文' };
+const LANG_NATIVE_NAME = { en: 'English', fr: 'Français', ja: '日本語', ko: '한국어', zh: '中文' };
+
+const ICON_SEARCH = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>';
+const ICON_MENU   = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+const ICON_CLOSE  = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+const ICON_MOON   = '<svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>';
+const ICON_SUN    = '<svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>';
+
+function brandLink(lang, L) {
+  return `<a href="${pathRoot(lang)}" class="logo-link"><img src="/logo.webp" alt="" class="site-logo" width="40" height="40"><img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="142px" alt="${escapeHtml(L.siteName)}" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync"></a>`;
+}
+
+// Site header: logo · search · nav · language · theme (desktop); logo ·
+// search button · menu button (mobile, < 860px) + the full-screen menu dialog.
 // IMPORTANT: no <h1> here — H1 lives in the page-specific main content.
 function headerBlock(lang, currentPath, kind) {
   const L = LANG[lang];
-  const dexActive      = (kind === 'index')    ? ' aria-current="page"' : '';
-  const trainersActive = (kind === 'trainers') ? ' aria-current="page"' : '';
-  const infoActive     = (kind === 'info')     ? ' aria-current="page"' : '';
+  const current = (k) => ((kind === 'pokemon' ? 'index' : kind) === k) ? ' aria-current="page"' : '';
 
-  // Build language-switcher links: switch to the SAME page kind in target lang.
-  // currentPath: '' (index), 'info', or { slug: '<slug>' } (pokemon detail).
-  function altPathFor(targetLang) {
-    if (kind === 'index')    return pathRoot(targetLang);
-    if (kind === 'info')     return pathInfo(targetLang);
-    if (kind === 'trainers') return pathTrainers(targetLang);
-    if (kind === 'pokemon')  return pathPokemon(targetLang, currentPath.slug);
-    return pathRoot(targetLang);
-  }
-
-  const LANG_LABEL = { en: 'EN', fr: 'FR', ja: '日本語', ko: '한국어', zh: '中文' };
   const langItems = LANGS.map(l => {
-    const label = LANG_LABEL[l];
     const isCurrent = (l === lang);
-    const ariaCurrent = isCurrent ? ' aria-current="true"' : '';
-    const activeClass = isCurrent ? ' active' : '';
-    return `<li><a href="${altPathFor(l)}" hreflang="${HREFLANG[l]}" class="lang-link${activeClass}"${ariaCurrent}>${label}</a></li>`;
+    return `<li><a href="${altPath(kind, currentPath, l)}" hreflang="${HREFLANG[l]}" class="lang-link${isCurrent ? ' active' : ''}"${isCurrent ? ' aria-current="true"' : ''}>${LANG_CODE_LABEL[l]}</a></li>`;
   }).join('');
+  const menuLangs = LANGS.map(l =>
+    `<a href="${altPath(kind, currentPath, l)}" hreflang="${HREFLANG[l]}" lang="${HTML_LANG[l]}"${l === lang ? ' aria-current="true"' : ''}>${LANG_NATIVE_NAME[l]}</a>`
+  ).join('');
+  const themeRadio = (value, label) =>
+    `<label><input type="radio" name="theme-choice" value="${value}">${escapeHtml(label)}</label>`;
 
-  return `  <header>
-    <a href="${pathRoot(lang)}" class="logo-link"><img src="/logo.webp" alt="${escapeHtml(L.siteName)}" class="site-logo" width="80" height="80"></a>
-    <img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="275px" alt="${escapeHtml(L.siteName)}" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync">
-    <p class="site-tagline">${escapeHtml(L.tagline)}</p>
-    <nav class="site-nav">
-      <a href="${pathRoot(lang)}"${dexActive}>${escapeHtml(L.pokedex)}</a>
-      <a href="${pathTrainers(lang)}"${trainersActive}>${escapeHtml(L.trainers)}</a>
-      <a href="${pathInfo(lang)}"${infoActive}>${escapeHtml(L.info)}</a>
+  return `  <header class="site-header">
+    ${brandLink(lang, L)}
+    <form class="site-search" id="site-search" role="search" action="${pathRoot(lang)}" method="get" aria-label="${escapeHtml(L.searchLabel)}">
+      <div class="search-bar">
+        <label class="site-search-field">
+          ${ICON_SEARCH}
+          <span class="visually-hidden">${escapeHtml(L.searchLabel)}</span>
+          <input type="search" id="search" name="q" placeholder="${escapeHtml(L.searchPlaceholder)}" autocomplete="off" enterkeyhint="search" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+          <button type="button" class="search-clear" id="search-clear" aria-label="${escapeHtml(L.searchClear)}" hidden>${ICON_CLOSE}</button>
+          <kbd class="kbd-hint" aria-hidden="true">/</kbd>
+        </label>
+        <button type="button" class="search-cancel" id="search-cancel">${escapeHtml(L.searchCancel)}</button>
+      </div>
+      <div class="search-panel" id="search-panel" hidden>
+        <div class="search-results" id="search-results" role="listbox"></div>
+        <p class="visually-hidden" id="search-status" role="status"></p>
+        <div class="search-foot"></div>
+      </div>
+    </form>
+    <nav class="site-nav" aria-label="${escapeHtml(L.mainNavAria)}">
+      <a href="${pathRoot(lang)}"${current('index')}>${escapeHtml(L.pokedex)}</a>
+      <a href="${pathTrainers(lang)}"${current('trainers')}>${escapeHtml(L.trainers)}</a>
+      <a href="${pathInfo(lang)}"${current('info')}>${escapeHtml(L.info)}</a>
+    </nav>
+    <div class="header-tools">
       <details class="lang-picker">
-        <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}: ${lang.toUpperCase()}"><span class="lang-picker-code">${lang.toUpperCase()}</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
+        <summary class="lang-picker-toggle" aria-label="${escapeHtml(L.langSwitcherLabel)}: ${lang.toUpperCase()}">${LANG_CODE_LABEL[lang]}</summary>
         <ul class="lang-picker-menu">${langItems}</ul>
       </details>
-      <button class="theme-toggle" id="theme-toggle" aria-label="${escapeHtml(L.themeToggleLabel)}"></button>
-    </nav>
-  </header>`;
+      <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="${escapeHtml(L.themeToggleLabel)}">${ICON_MOON}${ICON_SUN}</button>
+    </div>
+    <div class="header-mobile">
+      <button type="button" class="icon-btn" id="search-toggle" aria-expanded="false" aria-controls="site-search" aria-label="${escapeHtml(L.searchOpen)}">${ICON_SEARCH}</button>
+      <button type="button" class="icon-btn" id="menu-open" aria-haspopup="dialog" aria-controls="site-menu" aria-label="${escapeHtml(L.menuOpen)}">${ICON_MENU}</button>
+    </div>
+    <dialog class="site-menu" id="site-menu" aria-label="${escapeHtml(L.mainNavAria)}">
+      <div class="site-menu-head">
+        ${brandLink(lang, L)}
+        <button type="button" class="site-menu-close" id="menu-close" aria-label="${escapeHtml(L.menuClose)}">${ICON_CLOSE}</button>
+      </div>
+      <nav class="site-menu-nav" aria-label="${escapeHtml(L.mainNavAria)}">
+        <a href="${pathRoot(lang)}"${current('index')}><span>${escapeHtml(L.pokedex)}</span><span class="site-menu-count">${escapeHtml(L.pokemonCount(pokemonsWithCards.length))}</span></a>
+        <a href="${pathRoot(lang)}?view=cards"><span>${escapeHtml(L.allCards)}</span><span class="site-menu-count">${cards.length}</span></a>
+        <a href="${pathTrainers(lang)}"${current('trainers')}><span>${escapeHtml(L.trainers)}</span><span class="site-menu-count">${trainerCards.length}</span></a>
+        <a href="${pathInfo(lang)}"${current('info')}><span>${escapeHtml(L.info)}</span></a>
+      </nav>
+      <section class="site-menu-section">
+        <h2 class="menu-eyebrow">${escapeHtml(L.menuLanguage)}</h2>
+        <div class="menu-langs">${menuLangs}</div>
+      </section>
+      <fieldset class="site-menu-section">
+        <legend class="menu-eyebrow">${escapeHtml(L.menuTheme)}</legend>
+        <div class="theme-seg">${themeRadio('light', L.themeLight)}${themeRadio('dark', L.themeDark)}${themeRadio('auto', L.themeSystem)}</div>
+      </fieldset>
+      <p class="site-menu-note">${escapeHtml(L.footerCopyright)}</p>
+    </dialog>
+  </header>
+  <div class="search-scrim" id="search-scrim" hidden></div>`;
 }
 
-function footerBlock(lang) {
-  return `  <footer>
-    <p>${escapeHtml(LANG[lang].footerCopyright)}</p>
+function footerBlock(lang, currentPath, kind) {
+  const L = LANG[lang];
+  const langLinks = LANGS.map(l =>
+    `<a href="${altPath(kind, currentPath, l)}" hreflang="${HREFLANG[l]}" lang="${HTML_LANG[l]}"${l === lang ? ' aria-current="true"' : ''}>${LANG_NATIVE_NAME[l]}</a>`
+  ).join('\n      ');
+  return `  <footer class="site-footer">
+    <div class="footer-note">
+      <img src="/logo.webp" alt="" width="28" height="28" loading="lazy">
+      <p>${escapeHtml(L.footerCopyright)}</p>
+    </div>
+    <nav class="footer-langs" aria-label="${escapeHtml(L.langNavAria)}">
+      ${langLinks}
+    </nav>
   </footer>`;
 }
 
@@ -984,21 +1365,21 @@ function footerBlock(lang) {
 const DATA_V = crypto.createHash('sha256')
   .update(fs.readFileSync('data/pokemons.json'))
   .update(fs.readFileSync('data/pokemon_cards.json'))
+  .update(fs.existsSync('data/trainer_cards.json') ? fs.readFileSync('data/trainer_cards.json') : '')
   .digest('hex').slice(0, 8);
 
-// Fullscreen card viewer (accessible dialog). viewer.js holds the shared
-// focus/Escape/alt logic; pokemon.js (detail + trainers) and app.js (index)
-// initialise it with their own delegation root.
-const CLOSE_LABEL = { en: 'Close', fr: 'Fermer', ja: '閉じる', ko: '닫기', zh: '关闭' };
-const FULLSCREEN_LABEL = { en: 'Card image in fullscreen', fr: 'Image de la carte en plein écran', ja: 'カード画像の全画面表示', ko: '카드 이미지 전체 화면', zh: '卡牌图片全屏显示' };
+// Card viewer + mobile card details sheet: native modal <dialog>s filled by
+// viewer.js (labels come from i18n.js, content from the page's card data).
+function fullscreenBlock() {
+  return `  <dialog id="viewer" class="viewer"></dialog>
+  <dialog id="card-sheet" class="sheet"></dialog>`;
+}
 
-function fullscreenBlock(lang) {
-  return `  <!-- Fullscreen -->
-  <div id="fullscreen" class="fullscreen hidden" role="dialog" aria-modal="true" aria-label="${FULLSCREEN_LABEL[lang]}">
-    <div class="fullscreen-backdrop"></div>
-    <button type="button" id="fullscreen-close" class="fullscreen-close" aria-label="${CLOSE_LABEL[lang]}">✕</button>
-    <img id="fullscreen-img" src="" alt="">
-  </div>`;
+// Card fields read by the panel / sheet / viewer (viewer.js), embedded once per
+// page instead of repeating the metadata under every card.
+function cardsDataScript(list) {
+  const data = list.map(({ pokemonId, ...c }) => c);
+  return `  <script type="application/json" id="cards-data">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`;
 }
 
 function scriptTags() {
@@ -1008,6 +1389,7 @@ function scriptTags() {
   <script src="/i18n.js?v=${JS_V}"></script>
   <script src="/theme.js?v=${JS_V}"></script>
   <script src="/viewer.js?v=${JS_V}"></script>
+  <script src="/search.js?v=${JS_V}"></script>
   <script src="/backtotop.js?v=${JS_V}"></script>`;
 }
 
@@ -1048,72 +1430,26 @@ function cardAltText(lang, card, localizedName) {
   return `${localizedName} — ${card.name} (${adj}${year}) ${suffix}${artistPart}`;
 }
 
-// Language badge: flag emoji hidden from screen readers, localised language
-// names (STATS_LANG_LABEL) as visually-hidden text instead.
-function langBadge(card, lang) {
-  const names = card.languages.map(f => STATS_LANG_LABEL[lang]?.[f] ?? STATS_LANG_LABEL.en[f] ?? f).join(', ');
-  return `<span class="lang-badge"><span aria-hidden="true">${card.languages.join(' ')}</span><span class="visually-hidden">${escapeHtml(names)}</span></span>`;
-}
-
-// Extra lines from the DexTCG enrichment (enrich_cards.py) — every field is
-// optional, older/manual entries may carry none of them.
-function cardDetailLines(card, lang) {
-  const setLine = card.setNumber
-    ? `<div class="card-set">${escapeHtml(card.setNumber)}${card.series ? ` · ${escapeHtml(card.series)}` : ''}</div>` : '';
-  const traits = [card.energyType, card.stage, (card.variants || []).join(', ')].filter(Boolean);
-  const traitsLine = traits.length
-    ? `<div class="card-traits">${escapeHtml(traits.join(' · '))}</div>` : '';
-  const date = card.releaseDate
-    ? new Intl.DateTimeFormat(lang, { dateStyle: 'long' }).format(new Date(card.releaseDate)) : '';
-  const releaseLine = card.releaseProduct
-    ? `<div class="card-release">${escapeHtml(card.releaseProduct)}${date ? ` — ${escapeHtml(date)}` : ''}</div>` : '';
-  return setLine + traitsLine + releaseLine + cardPriceLine(card, lang);
-}
-
-// Ligne de prix (enrich_prices.py) : Cardmarket EUR, TCGplayer USD, eBay USD,
-// chaque montant lié à la fiche marketplace ; marché + date du relevé en tooltip.
-function cardPriceLine(card, lang) {
-  const prices = card.prices || {};
-  const priceDate = card.pricesDate
-    ? new Intl.DateTimeFormat(lang, { dateStyle: 'long' }).format(new Date(card.pricesDate)) : '';
-  const parts = [
-    ['cardmarket', 'Cardmarket', 'EUR', '💶'],
-    ['tcgplayer', 'TCGplayer', 'USD', '💵'],
-    ['ebay', 'eBay', 'USD', 'eBay'],
-  ].map(([key, name, currency, label]) => {
-    const p = prices[key];
-    if (!p || p.price == null) return '';
-    const amount = new Intl.NumberFormat(lang, { style: 'currency', currency }).format(p.price);
-    const title = escapeHtml(priceDate ? `${name} — ${priceDate}` : name);
-    const text = `${label} ${escapeHtml(amount)}`;
-    return p.url
-      ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener" title="${title}">${text}</a>`
-      : `<span title="${title}">${text}</span>`;
-  }).filter(Boolean);
-  return parts.length ? `<div class="card-prices">${parts.join(' · ')}</div>` : '';
-}
-
+// Pokémon page card: image + 3-line caption (DESIGN_HANDOFF §3). The link
+// targets the card's own anchor, so it works without JS; pokemon.js turns the
+// click into the detail panel (desktop) or sheet (mobile).
 function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
   const alt = cardAltText(lang, card, localizedName);
   // First card on the page is the LCP candidate: fetch it eagerly with high
   // priority; everything below the fold stays lazy.
   const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
+  const code = [card.setNumber, cardYear(card)].filter(Boolean).join(' · ');
   return `
-        <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
-          <button type="button" class="card-zoom">
-            <img ${cardSrcAttrs(card.imageName, GRID_SIZES)} alt="${escapeHtml(alt)}"${loadAttrs} decoding="async">
-          </button>
-          <div class="card-info">
-            <div class="card-name">${escapeHtml(card.name)}</div>
-            ${cardDetailLines(card, lang)}
-            <div class="card-meta">${langBadge(card, lang)} ${card.year} · ${escapeHtml(card.rarity)}</div>
-            ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
-            ${card.description ? `<details class="card-description">
-              <summary class="card-description-toggle">${escapeHtml(L.descriptionToggle)}</summary>
-              <div class="card-description-body">${linkifyDescription(card.description, L)}</div>
-            </details>` : ''}
-          </div>
-        </div>`;
+          <div class="card-item" id="${card.imageName}">
+            <a class="card-open" href="#${card.imageName}">
+              <img ${cardSrcAttrs(card.imageName, GRID_SIZES)} alt="${escapeHtml(alt)}"${loadAttrs} decoding="async">
+              <span class="card-cap">
+                <span class="card-cap-title">${escapeHtml(card.releaseProduct || card.name)}</span>
+                ${code ? `<span class="card-cap-code">${escapeHtml(code)}</span>` : ''}
+                ${card.artist ? `<span class="card-cap-artist">${escapeHtml(card.artist)}</span>` : ''}
+              </span>
+            </a>
+          </div>`;
 }
 
 // Order exclusivity groups: known LANG_INFO flags first (then any unknown
@@ -1126,94 +1462,66 @@ function orderExclusivityFlags(groups) {
   ].sort((a, b) => groups.get(b).length - groups.get(a).length);
 }
 
-// Shared layout for the card sections (per-Pokémon detail + trainers gallery):
-// one flat grid when there's a single exclusivity group, otherwise one open
-// <details> per group. `intro` is the localised count line; `renderItem(card,
-// eager)` renders a single card (the first card overall is the eager LCP one).
-function buildCardSectionHTML(items, L, intro, renderItem) {
+// Exclusivity groups of a card list, largest first, each sorted by release.
+function exclusivityGroups(items) {
   const groups = groupBy(items, exclusivityKey);
-  const orderedFlags = orderExclusivityFlags(groups);
-  const headingByFlag = Object.fromEntries(LANG_INFO.map(l => [l.flag, L[l.key]]));
-  const sectionTitle = `<p class="cards-section-title">${intro}</p>`;
+  return orderExclusivityFlags(groups).map(flag => ({ flag, cards: groups.get(flag).slice().sort(byRelease) }));
+}
 
-  if (orderedFlags.length <= 1) {
-    const onlyFlag = orderedFlags[0];
-    const cs = (onlyFlag ? groups.get(onlyFlag) : items).slice().sort((a, b) => a.year - b.year);
-    return `
-    <section class="cards-section">
-      ${sectionTitle}
-      <div class="cards-grid">
-        ${cs.map((c, i) => renderItem(c, i === 0)).join('')}
-      </div>
-    </section>`;
-  }
+const DIST_SLOTS = 5;    // distribution bar: top groups, the rest is "Other"
+const ICON_CHEVRON = '<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
 
-  const groupsHTML = orderedFlags.map((flag, gi) => {
-    const cs = groups.get(flag).slice().sort((a, b) => a.year - b.year);
-    const heading = headingByFlag[flag] || 'Other-exclusive cards';
-    return `
-      <details class="cards-lang-group" open>
-        <summary class="cards-lang-summary">
-          <h2 class="cards-lang-title">${flag} ${escapeHtml(heading)} (${cs.length})</h2>
-          <span class="cards-lang-caret" aria-hidden="true">▾</span>
-        </summary>
-        <div class="cards-grid">
-          ${cs.map((c, i) => renderItem(c, gi === 0 && i === 0)).join('')}
-        </div>
-      </details>`;
-  }).join('');
+const groupShortLabel = (flag, L, lang) => CHIP_LABELS[lang][flag] || L.otherGroup;
 
+// Stacked bar by exclusivity group (largest first, beyond the top 5 → "Other").
+function distributionHTML(groups, L, lang) {
+  const parts = groups.slice(0, DIST_SLOTS).map(g => [groupShortLabel(g.flag, L, lang), g.cards.length]);
+  const rest = groups.slice(DIST_SLOTS).reduce((n, g) => n + g.cards.length, 0);
+  if (rest) parts.push([L.otherGroup, rest]);
   return `
-    <section class="cards-section">
-      ${sectionTitle}
-      ${groupsHTML}
-    </section>`;
-}
-
-function buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName) {
-  return buildCardSectionHTML(pkCards, L, L.cardsSection(pkCards.length),
-    (c, eager) => renderCard(c, pokemon, L, lang, localizedName, eager));
-}
-
-// First card as rendered (largest exclusivity group, earliest year). It's the
-// LCP candidate on detail pages, so the <head> preloads it. Mirrors the
-// ordering in buildCardsSectionHTML / buildTrainersSectionHTML.
-function firstDisplayedCard(items) {
-  if (!items.length) return null;
-  const groups = groupBy(items, exclusivityKey);
-  const orderedFlags = orderExclusivityFlags(groups);
-  const first = orderedFlags.length ? groups.get(orderedFlags[0]) : items;
-  return first.slice().sort((a, b) => a.year - b.year)[0];
-}
-
-// --- Trainer cards (flat gallery, grouped by exclusivity) --------------------
-// Trainer cards have no pokemonId; they carry a `title` (what the card depicts)
-// instead of being named by a Pokémon. Everything else mirrors a Pokémon card.
-
-function renderTrainerCard(card, L, lang, eager = false) {
-  const alt = cardAltText(lang, card, card.title);
-  const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
-  return `
-        <div class="card-item" id="${card.imageName}" data-img="/cards/${card.imageName}.avif">
-          <button type="button" class="card-zoom">
-            <img ${cardSrcAttrs(card.imageName, GRID_SIZES)} alt="${escapeHtml(alt)}"${loadAttrs} decoding="async">
-          </button>
-          <div class="card-info">
-            <div class="card-name">${escapeHtml(card.title)}</div>
-            <div class="card-meta">${langBadge(card, lang)} ${card.year} · ${escapeHtml(card.rarity)}</div>
-            ${card.name ? `<div class="card-set">${escapeHtml(card.name)}</div>` : ''}
-            ${card.artist ? `<div class="card-artist">${escapeHtml(L.artistPrefix)}: ${escapeHtml(card.artist)}</div>` : ''}
-            ${card.description ? `<details class="card-description">
-              <summary class="card-description-toggle">${escapeHtml(L.descriptionToggle)}</summary>
-              <div class="card-description-body">${linkifyDescription(card.description, L)}</div>
-            </details>` : ''}
-          </div>
+        <div class="dist">
+          <div class="dist-bar" role="img" aria-label="${escapeHtml(L.distributionAria(parts.map(([l, n]) => `${l} ${n}`)))}">${parts.map(([, n]) => `<span style="flex-grow:${n}"></span>`).join('')}</div>
+          <ul class="dist-legend" aria-hidden="true">${parts.map(([l, n]) => `<li>${escapeHtml(l)} <span class="mono">${n}</span></li>`).join('')}</ul>
         </div>`;
 }
 
-function buildTrainersSectionHTML(items, L, lang) {
-  return buildCardSectionHTML(items, L, L.trainersIntro(items.length),
-    (c, eager) => renderTrainerCard(c, L, lang, eager));
+// Sticky toolbar (jump chips + sort) and the group sections, all open and
+// collapsible (pokemon.js).
+function pokemonGroupsHTML(groups, pokemon, L, lang, localizedName) {
+  const headingByFlag = Object.fromEntries(LANG_INFO.map(l => [l.flag, L[l.key]]));
+  const sortOptions = [['oldest', L.sortOldest], ['newest', L.sortNewest], ['artist', L.sortArtist], ['price', L.sortPrice]]
+    .map(([v, label]) => `<option value="${v}">${escapeHtml(label)}</option>`).join('');
+  const chips = groups.length > 1 ? `
+      <nav class="jump-chips" aria-label="${escapeHtml(L.jumpAria)}">${groups.map((g, i) =>
+        `<a class="chip" href="#${groupSlug(g.flag)}"${i === 0 ? ' aria-current="true"' : ''}>${escapeHtml(groupShortLabel(g.flag, L, lang))} <span class="chip-count">${g.cards.length}</span></a>`).join('')}</nav>` : '';
+  const total = groups.reduce((n, g) => n + g.cards.length, 0);
+  const toolbar = total > 1 ? `
+    <div class="pk-toolbar wrap">${chips}
+      <label class="sort-field">${escapeHtml(L.sortLabel)}
+        <select id="pk-sort">${sortOptions}</select>
+      </label>
+    </div>` : '';
+
+  // Every group starts open (owner's call) and can be collapsed.
+  const sections = groups.map(({ flag, cards: cs }, gi) => {
+    const id = groupSlug(flag);
+    return `
+      <section class="card-group" id="${id}">
+        <h2 class="group-head"><button type="button" class="group-toggle" aria-expanded="true" aria-controls="${id}-body"><span class="group-title">${escapeHtml(headingByFlag[flag] || 'Other-exclusive cards')}</span> <span class="group-count">${cs.length}</span>${ICON_CHEVRON}</button></h2>
+        <div class="group-body" id="${id}-body">
+          <div class="cards-grid">${cs.map((c, i) => renderCard(c, pokemon, L, lang, localizedName, gi === 0 && i === 0)).join('')}
+          </div>
+        </div>
+      </section>`;
+  }).join('');
+
+  return { toolbar, sections };
+}
+
+// First card as rendered (largest exclusivity group, earliest release). It's
+// the LCP candidate on detail pages, so the <head> preloads it.
+function firstDisplayedCard(items) {
+  return items.length ? exclusivityGroups(items)[0].cards[0] : null;
 }
 
 // Lateral links for search visitors. The pager only offers alphabetical
@@ -1281,9 +1589,11 @@ function buildSetsAndArtistsHTML(pkCards, L, lang, pokemon) {
         ).join(' · ')}</p>
       </div>`
     : '';
-  if (!setsHTML && !artistsHTML && !relatedHTML) return '';
+  // The long stats sentence stays in the HTML for search engines; the hero
+  // shows the short summary line and the distribution bar instead.
   return `
-    <aside class="pokemon-meta">
+    <aside class="pokemon-meta wrap">
+      <p class="pokemon-stats-text">${buildStatsSentence(lang, pokemon, pkCards)}</p>
       ${setsHTML}
       ${artistsHTML}
       ${relatedHTML}
@@ -1378,56 +1688,83 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
   if (next) prevLinks.push(`  <link rel="next" href="${urlForPokemon(lang, slugify(next.name.en))}">`);
   const navLinks = prevLinks.join('\n');
 
-  const cardsSectionHTML = buildCardsSectionHTML(pokemon, pkCards, L, lang, localizedName);
-  const setsArtistsHTML  = buildSetsAndArtistsHTML(pkCards, L, lang, pokemon);
-  const statsSentence    = buildStatsSentence(lang, pokemon, pkCards);
+  const groups = exclusivityGroups(pkCards);
+  const { toolbar, sections } = pokemonGroupsHTML(groups, pokemon, L, lang, localizedName);
+  const setsArtistsHTML = buildSetsAndArtistsHTML(pkCards, L, lang, pokemon);
 
-  const prevHTML = prev
-    ? `<a class="pokemon-nav-prev" href="${pathPokemon(lang, slugify(prev.name.en))}" rel="prev">${escapeHtml(L.prevLabel(prev.id, prev.name[NAME_FIELD[lang]] || prev.name.en))}</a>`
-    : `<span class="pokemon-nav-prev pokemon-nav-disabled" aria-hidden="true"></span>`;
-  const nextHTML = next
-    ? `<a class="pokemon-nav-next" href="${pathPokemon(lang, slugify(next.name.en))}" rel="next">${escapeHtml(L.nextLabel(next.id, next.name[NAME_FIELD[lang]] || next.name.en))}</a>`
-    : `<span class="pokemon-nav-next pokemon-nav-disabled" aria-hidden="true"></span>`;
+  const years = pkCards.map(c => c.year);
+  const minY = Math.min(...years), maxY = Math.max(...years);
+  const artistCounts = pkCards.reduce((a, c) => { if (c.artist) a[c.artist] = (a[c.artist] || 0) + 1; return a; }, {});
+  const summary = L.pkSummary({
+    count,
+    years: minY === maxY ? `${minY}` : `${minY}–${maxY}`,
+    artists: Object.keys(artistCounts).sort((a, b) => artistCounts[b] - artistCounts[a]).map(escapeHtml),
+  });
+
+  const gen = pokemon.generation;
+  const region = REGION_NAMES[lang][gen] || '';
+  const regionHref = `${pathRoot(lang)}?gen=${gen}#browse`;
+  const eyebrow = [`#${pad(pokemon.id)}`, gen && L.genLine(gen), region].filter(Boolean).join(' · ');
+  const pokemonNav = (p, rel) => {
+    if (!p) return '';
+    const name = escapeHtml(p.name[NAME_FIELD[lang]] || p.name.en);
+    const aria = escapeHtml((rel === 'prev' ? L.prevPokemon : L.nextPokemon)(p.id, p.name[NAME_FIELD[lang]] || p.name.en));
+    return rel === 'prev'
+      ? `<a href="${pathPokemon(lang, slugify(p.name.en))}" rel="prev" aria-label="${aria}"><span aria-hidden="true">←</span> <span class="mono"><span class="pk-hash">#</span>${pad(p.id)}</span> <span class="pk-pager-name">${name}</span></a>`
+      : `<a href="${pathPokemon(lang, slugify(p.name.en))}" rel="next" aria-label="${aria}"><span class="pk-pager-name">${name}</span> <span class="mono"><span class="pk-hash">#</span>${pad(p.id)}</span> <span aria-hidden="true">→</span></a>`;
+  };
 
   return `<!DOCTYPE html>
 <html lang="${HTML_LANG[lang]}">
 <head>
 ${head}
 ${navLinks}
+  <noscript><style>
+    .group-body[hidden] { display: block !important; }
+    .pk-toolbar, .group-chevron { display: none !important; }
+  </style></noscript>
 </head>
 <body data-lang-prefix="${langPathPrefix(lang)}">
 <a href="#main-content" class="skip-link">${escapeHtml(L.skipToContent)}</a>
 
 ${headerBlock(lang, { slug }, 'pokemon')}
 
-  <main id="main-content" class="pokemon-page">
-    <div class="pokemon-hero">
-      <img src="/monsters/${pokemon.imageName}.webp"
-           alt="${escapeHtml(localizedName)}"
-           class="pokemon-sprite"
-           width="96" height="96">
-      <div class="pokemon-hero-info">
-        <span class="pokemon-hero-number">#${pad(pokemon.id)}</span>
-        <h1 class="pokemon-detail-name">${escapeHtml(localizedName)}</h1>
-      </div>
+  <main id="main-content" class="pk-page">
+    <div class="pk-topbar wrap">
+      <nav class="crumbs" aria-label="${escapeHtml(L.breadcrumbAria)}">
+        <a href="${pathRoot(lang)}">${escapeHtml(L.pokedex)}</a>${region ? `<span aria-hidden="true">/</span>
+        <a href="${regionHref}">${escapeHtml(region)}</a>` : ''}<span aria-hidden="true">/</span>
+        <span aria-current="page">${escapeHtml(localizedName)}</span>
+      </nav>
+      <a class="crumbs-back" href="${region ? regionHref : pathRoot(lang)}"><span aria-hidden="true">←</span> ${escapeHtml(region || L.pokedex)}</a>
+      <nav class="pk-pager" aria-label="${escapeHtml(L.pokedex)}">
+        ${pokemonNav(prev, 'prev')}
+        ${pokemonNav(next, 'next')}
+      </nav>
     </div>
 
-    <section class="pokemon-summary">
-      <p class="pokemon-stats-text">${statsSentence}</p>
+    <section class="pk-hero wrap">
+      <div class="pk-disc"><img src="/monsters/${pokemon.imageName}.webp" alt="${escapeHtml(localizedName)}" width="256" height="256"></div>
+      <div class="pk-hero-copy">
+        <p class="eyebrow">${escapeHtml(eyebrow)}</p>
+        <h1 class="pk-name">${escapeHtml(localizedName)}</h1>
+        <p class="pk-summary">${summary}</p>${groups.length > 1 ? distributionHTML(groups, L, lang) : ''}
+      </div>
     </section>
-${cardsSectionHTML}
+${toolbar}
+    <div class="pk-content wrap">
+      <div class="pk-groups">${sections}
+      </div>
+      <aside id="card-panel" class="card-panel" hidden></aside>
+    </div>
 ${setsArtistsHTML}
-    <nav class="pokemon-pager" aria-label="${escapeHtml(L.pokedex)}">
-      ${prevHTML}
-      <a class="pokemon-nav-up" href="${pathRoot(lang)}">${escapeHtml(L.upToPokedex)}</a>
-      ${nextHTML}
-    </nav>
   </main>
 
-${footerBlock(lang)}
+${footerBlock(lang, { slug }, 'pokemon')}
 
-${fullscreenBlock(lang)}
+${fullscreenBlock()}
 
+${cardsDataScript(pkCards)}
 ${scriptTags()}
   <script src="/pokemon.js?v=${JS_V}"></script>
 </body>
@@ -1438,32 +1775,46 @@ ${scriptTags()}
 // News block (home page) — hand-curated latest real-world exclusive releases.
 // -----------------------------------------------------------------------------
 
-function renderNewsItem(item, L, eager = false) {
-  // Local card images get the thumbnail srcset (shown at 56px CSS); external
-  // `image` URLs are used as-is.
+const cardByImage = new Map([...cards, ...trainerCards].map(c => [c.imageName, c]));
+
+// Localised link to a catalogue card: its Pokémon page (or Trainers) + #anchor.
+function cardLink(lang, card) {
+  const p = card.pokemonId && pokemons.find(x => x.id === card.pokemonId);
+  return (p ? pathPokemon(lang, slugify(p.name.en)) : pathTrainers(lang)) + '#' + card.imageName;
+}
+
+function cardDisplayName(lang, card) {
+  const p = card.pokemonId && pokemons.find(x => x.id === card.pokemonId);
+  return p ? (p.name[NAME_FIELD[lang]] || p.name.en) : (card.title || '').replace(/\s*\([^)]*\)\s*$/, '');
+}
+
+const NEWS_SIZES = '(max-width: 859px) 148px, 200px';
+
+function renderNewsItem(item, lang, eager = false) {
+  // A catalogue card gives the exact tag (its `region`); otherwise the flags.
+  const card = cardByImage.get(item.imageName);
+  const tag = exclusivityTag(card || { languages: item.languages || [] }, lang);
   const srcAttrs = item.image ? `src="${escapeHtml(item.image)}"`
-    : item.imageName ? newsSrcAttrs(item.imageName)
+    : item.imageName ? cardSrcAttrs(item.imageName, NEWS_SIZES)
     : '';
-  const flags = Array.isArray(item.languages) ? item.languages.join(' ') : '';
-  const metaBits = [flags, item.year, item.set].filter(Boolean)
-    .map(b => escapeHtml(String(b))).join(' · ');
-  // First news card is likely the LCP element — load it eagerly.
+  const setLine = [item.set, item.year].filter(Boolean).map(String).join(' · ');
+  // First news card may be the mobile LCP element — load it eagerly.
   const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
   const inner = `
         ${srcAttrs ? `<img ${srcAttrs} alt="${escapeHtml(item.title || '')}"${loadAttrs} decoding="async">` : ''}
-        <div class="news-card-info">
-          <div class="news-card-name">${escapeHtml(item.title || '')}</div>
-          ${metaBits ? `<div class="news-card-meta">${metaBits}</div>` : ''}
-          ${item.note ? `<div class="news-card-note">${escapeHtml(item.note)}</div>` : ''}
-        </div>`;
+        <span class="news-title">${escapeHtml(item.title || '')}</span>
+        <span class="news-meta"><span class="tag">${escapeHtml(tag)}</span>${item.code ? `<span class="news-code">${escapeHtml(item.code)}</span>` : ''}</span>
+        ${setLine ? `<span class="news-set">${escapeHtml(setLine)}</span>` : ''}`;
 
   if (item.link) {
     const external = /^https?:\/\//.test(item.link);
+    // Site-relative links are written for the English tree; localise them.
+    const href = external ? item.link : langPathPrefix(lang) + item.link.replace(/^\//, '');
     const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
-    return `      <a class="news-card" href="${escapeHtml(item.link)}"${attrs}>${inner}
+    return `      <a class="news-item" href="${escapeHtml(href)}"${attrs}>${inner}
       </a>`;
   }
-  return `      <div class="news-card">${inner}
+  return `      <div class="news-item">${inner}
       </div>`;
 }
 
@@ -1471,10 +1822,101 @@ function buildNewsHTML(lang) {
   if (!news.length) return '';
   const L = LANG[lang];
   return `
-    <section class="news-section" aria-label="${escapeHtml(L.newsHeading)}">
-      <h2 class="news-heading">${escapeHtml(L.newsHeading)}</h2>
+    <section class="news wrap" aria-labelledby="news-title">
+      <div class="section-head">
+        <h2 id="news-title">${escapeHtml(L.newsHeading)}</h2>
+        <a href="${pathRoot(lang)}?view=cards">${escapeHtml(L.newsSeeAll)}</a>
+      </div>
       <div class="news-grid">
-${news.map((item, i) => renderNewsItem(item, L, i === 0)).join('\n')}
+${news.map((item, i) => renderNewsItem(item, lang, i === 0)).join('\n')}
+      </div>
+    </section>`;
+}
+
+// Picks 3 random Pokémon cards for the hero on every visit. Runs inline right
+// after the panel, before first paint, so there is no flash; the data/hero.json
+// cards stay in the HTML for no-JS visitors and crawlers. Compact pool:
+// p = [slug, localized name] per Pokémon, c = [imageName, p index, year, tag].
+function heroShuffleScript(lang) {
+  const withCards = pokemonsWithCards;
+  const index = new Map(withCards.map((p, i) => [p.id, i]));
+  const pool = {
+    p: withCards.map(p => [slugify(p.name.en), p.name[NAME_FIELD[lang]] || p.name.en]),
+    c: cards.map(c => [c.imageName, index.get(c.pokemonId), cardYear(c), exclusivityTag(c, lang)]),
+  };
+  return `
+      <script>(function () {
+        var d = ${JSON.stringify(pool).replace(/</g, '\\u003c')};
+        var panel = document.currentScript.previousElementSibling;
+        var pick = [];
+        while (pick.length < 3 && pick.length < d.c.length) {
+          var c = d.c[Math.floor(Math.random() * d.c.length)];
+          if (pick.indexOf(c) < 0) pick.push(c);
+        }
+        var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
+        var who = function (c) { return d.p[c[1]][1]; };
+        var prefix = document.body.dataset.langPrefix || '/';
+        ['hero-card-front', 'hero-card-left', 'hero-card-right'].forEach(function (cls, i) {
+          var link = panel.querySelector('.' + cls), c = pick[i];
+          if (!link || !c) return;
+          var img = link.querySelector('img');
+          link.href = prefix + 'pokemon/' + d.p[c[1]][0] + '/#' + c[0];
+          img.removeAttribute('srcset');
+          img.removeAttribute('sizes');
+          img.src = '/cards/thumbs/' + c[0] + '.avif';
+          img.alt = who(c) + ', ' + c[2];
+        });
+        // pick = [front, left, right]; the caption reads left to right.
+        var names = [pick[1], pick[0], pick[2]].filter(Boolean).map(who).filter(function (n, i, a) { return a.indexOf(n) === i; }).join(' · ');
+        var sameTag = pick.every(function (c) { return c[3] === pick[0][3]; });
+        panel.querySelector('.hero-caption').innerHTML = '<span>' + esc(names) + '</span>'
+          + (sameTag ? '<span class="tag">' + esc(pick[0][3]) + '</span>' : '');
+      })();</script>`;
+}
+
+// Home hero: pitch, catalogue stats, and the 3 fanned cards from data/hero.json.
+function buildHeroHTML(lang) {
+  const L = LANG[lang];
+  const { count, minY, maxY, pokemonCount } = homeStats();
+  const heroCards = (hero.cards || []).map(n => cardByImage.get(n)).filter(Boolean);
+
+  let panel = '';
+  if (heroCards.length) {
+    const [front] = heroCards;
+    // Caption reads left to right: left card, front card, right card.
+    const names = [...new Set([heroCards[1], heroCards[0], heroCards[2]].filter(Boolean).map(c => cardDisplayName(lang, c)))].join(' · ');
+    // One tag only when all 3 cards share an exclusivity group.
+    const keys = new Set(heroCards.map(exclusivityKey));
+    const tag = keys.size === 1 ? `<span class="tag">${escapeHtml(exclusivityTag(front, lang))}</span>` : '';
+    // Each card links to its own page.
+    const img = (c, cls, i) => `<a class="hero-card ${cls}" href="${cardLink(lang, c)}"><img ${cardSrcAttrs(c.imageName, i ? '190px' : '210px')} alt="${escapeHtml(`${cardDisplayName(lang, c)}, ${c.releaseProduct || c.name}, ${cardYear(c)}`)}"${i ? ' loading="lazy"' : ' fetchpriority="high"'} decoding="async"></a>`;
+    // Side cards first so the front card paints on top.
+    const sides = heroCards.slice(1, 3).map((c, i) => img(c, i ? 'hero-card-right' : 'hero-card-left', i + 1)).join('\n        ');
+    panel = `
+      <div class="hero-panel">
+        ${sides}
+        ${img(front, 'hero-card-front', 0)}
+        <span class="hero-caption"><span>${escapeHtml(names)}</span>${tag}</span>
+      </div>${heroShuffleScript(lang)}`;
+  }
+
+  return `
+    <section class="home-hero wrap">
+      <div class="hero-copy">
+        <!-- The eyebrow sits inside the H1 so the heading keeps the keywords. -->
+        <h1 class="hero-title"><span class="eyebrow">${escapeHtml(L.heroEyebrow)}</span><span class="visually-hidden"> — </span>${escapeHtml(L.heroH1)}</h1>
+        <p class="hero-lead">${escapeHtml(L.heroLead)}</p>
+      </div>${panel}
+      <div class="hero-meta">
+        <dl class="hero-stats">
+          <div><dt>${escapeHtml(L.statIllustrations)}</dt><dd>${count}</dd></div>
+          <div><dt>${escapeHtml(L.statPokemon)}</dt><dd>${pokemonCount}</dd></div>
+          <div class="hero-stat-years"><dt>${escapeHtml(L.statYears(maxY - minY))}</dt><dd>${minY}–${maxY}</dd></div>
+        </dl>
+        <div class="hero-ctas">
+          <a class="btn btn-solid" href="#browse">${escapeHtml(L.ctaBrowse)}</a>
+          <a class="btn btn-outline" href="${pathTrainers(lang)}">${escapeHtml(L.ctaTrainers)}</a>
+        </div>
       </div>
     </section>`;
 }
@@ -1538,7 +1980,6 @@ function indexPageHTML(lang, pokemonsWithCards) {
   });
 
   const homeStatsSentence = buildHomeStatsSentence(lang);
-  const newsHTML = buildNewsHTML(lang);
 
   // Static SEO grid: one <a> per Pokémon with a detail page. Names localised.
   const seoLinks = pokemonsWithCards.map(p => {
@@ -1548,61 +1989,83 @@ function indexPageHTML(lang, pokemonsWithCards) {
     return `      <a href="${pathPokemon(lang, slug)}" class="seo-pokedex-link" data-pokemon-id="${p.id}"><span class="seo-pokedex-num">#${pad(p.id)}</span><span class="seo-pokedex-name">${escapeHtml(displayName)}</span><span class="seo-pokedex-count">${cardCount}</span></a>`;
   }).join('\n');
 
+  const sortOptions = [['newest', L.sortNewest], ['oldest', L.sortOldest], ['dex', L.sortDex], ['artist', L.sortArtist]]
+    .map(([v, label]) => `<option value="${v}">${escapeHtml(label)}</option>`).join('');
+
   return `<!DOCTYPE html>
 <html lang="${HTML_LANG[lang]}">
 <head>
 ${head}
   <noscript><style>
-    #search, .search-row, #lang-filter, #view-toggle, #gen-nav, #loader, #pokemon-grid { display: none !important; }
+    .site-search, .view-seg, .browse-filters, #gen-nav, #loader, #pokemon-grid, #load-more-wrap { display: none !important; }
     .noscript-fallback { display: block !important; }
   </style></noscript>
 </head>
 <body data-lang-prefix="${langPathPrefix(lang)}">
+<script>(function(s,c){if(/[?&]view=cards\\b/.test(s))c.add('view-cards');if(/[?&]q=[^&]/.test(s))c.add('searching');})(location.search,document.body.classList);</script>
 <a href="#main-content" class="skip-link">${escapeHtml(L.skipToContent)}</a>
 
 ${headerBlock(lang, '', 'index')}
 
-  <main id="main-content">
-    <h1 class="page-title visually-hidden">${escapeHtml(L.indexH1)}</h1>
+  <main id="main-content" class="home">
+${buildHeroHTML(lang)}
+${buildNewsHTML(lang)}
 
-    <section class="home-summary">
-      <p class="home-stats-text">${homeStatsSentence}</p>
+    <section id="browse" class="browse" aria-labelledby="browse-title">
+      <div class="wrap">
+        <div class="browse-head">
+          <div class="browse-heading">
+            <h2 id="browse-title" data-pokemon="${escapeHtml(L.browseHeading)}" data-cards="${escapeHtml(L.allCards)}">${escapeHtml(L.browseHeading)}</h2>
+            <span id="browse-count" class="browse-count"></span>
+          </div>
+          <nav class="seg view-seg" aria-label="${escapeHtml(L.viewToggleAria)}">
+            <a href="${pathRoot(lang)}" data-mode="pokemon" aria-current="page">${escapeHtml(L.viewByPokemon)}</a>
+            <a href="${pathRoot(lang)}?view=cards" data-mode="cards">${escapeHtml(L.allCards)}</a>
+          </nav>
+        </div>
+
+        <div class="browse-filters">
+          <span class="filter-label" id="excl-label">${escapeHtml(L.exclusiveTo)}</span>
+          <div id="lang-filter" class="chips" role="group" aria-labelledby="excl-label"></div>
+          <label class="hide-empty"><input type="checkbox" id="hide-empty" checked> ${escapeHtml(L.hideEmpty)}</label>
+          <label class="sort-field">${escapeHtml(L.sortLabel)}
+            <select id="card-sort">${sortOptions}</select>
+          </label>
+        </div>
+
+        <nav id="gen-nav" class="region-nav" aria-label="${escapeHtml(L.regionLabel)}"></nav>
+
+        <div id="loader" class="loader">
+          <div class="loader-spinner"></div>
+        </div>
+        <p id="grid-status" class="visually-hidden" role="status"></p>
+        <div id="pokemon-grid"></div>
+        <div id="load-more-wrap" class="load-more" hidden>
+          <button type="button" id="load-more" class="btn btn-outline"></button>
+          <span id="load-status"></span>
+        </div>
+
+        <p class="noscript-fallback">${escapeHtml(L.noscript)}</p>
+      </div>
     </section>
-${newsHTML}
 
-    <div class="search-row">
-      <input type="search" id="search" placeholder="${escapeHtml(L.searchPlaceholder)}" aria-label="${escapeHtml(L.searchPlaceholder)}" autocomplete="off">
-    </div>
+    <section class="home-about wrap" aria-labelledby="about-title">
+      <h2 id="about-title">${escapeHtml(L.aboutCatalogue)}</h2>
+      <p>${homeStatsSentence} <a href="${pathInfo(lang)}">${escapeHtml(L.infoH1)}</a></p>
+      <p>${escapeHtml(L.seoAbout)}</p>
+    </section>
 
-    <div id="lang-filter" class="lang-filter" role="group" aria-label="${escapeHtml(L.langFilterAria)}"></div>
-
-    <div id="view-toggle" class="view-toggle" role="group" aria-label="${escapeHtml(L.viewToggleAria)}"></div>
-
-    <div id="gen-nav" class="gen-nav" role="group" aria-label="${escapeHtml(L.genNavAria)}"></div>
-
-    <div id="loader" class="loader">
-      <div class="loader-spinner"></div>
-    </div>
-    <p id="grid-status" class="visually-hidden" role="status"></p>
-    <div id="pokemon-grid"></div>
-
-    <p class="noscript-fallback">${escapeHtml(L.noscript)}</p>
+    <nav class="seo-pokedex wrap" aria-label="${escapeHtml(L.seoPokedexHeading)}">
+      <h2 class="seo-pokedex-title">${escapeHtml(L.seoPokedexHeading)}</h2>
+      <div class="seo-pokedex-grid">
+${seoLinks}
+      </div>
+    </nav>
   </main>
 
-  <section class="seo-about">
-    <p>${escapeHtml(L.seoAbout)}</p>
-  </section>
+${footerBlock(lang, '', 'index')}
 
-  <nav class="seo-pokedex" aria-label="${escapeHtml(L.seoPokedexHeading)}">
-    <h2 class="seo-pokedex-title">${escapeHtml(L.seoPokedexHeading)}</h2>
-    <div class="seo-pokedex-grid">
-${seoLinks}
-    </div>
-  </nav>
-
-${footerBlock(lang)}
-
-${fullscreenBlock(lang)}
+${fullscreenBlock()}
 
 ${scriptTags()}
   <script src="/app.js?v=${JS_V}"></script>
@@ -1732,23 +2195,17 @@ function infoPageHTML(lang) {
     twitterCard: 'summary',
   });
 
-  const aboutHTML = L.aboutBody.map(p => `<p>${escapeHtml(p)}</p>`).join('\n        ');
-  const disclaimerHTML = L.disclaimerBody.map(p => `<p>${escapeHtml(p)}</p>`).join('\n        ');
   // Visible ↗ icon + screen-reader-only label appended inside every outbound
   // link, so both sighted and assistive-tech users know it opens a new tab.
   const extSuffix = `<span class="ext-icon" aria-hidden="true">↗</span><span class="visually-hidden"> (${escapeHtml(L.opensInNewTab)})</span>`;
   const creditsHTML =
     `<p>${escapeHtml(L.creditsBefore)}` +
-    `<a href="${REDDIT_TWENTYFOUR7_URL}" class="info-link" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText)}${extSuffix}</a>` +
+    `<a href="${REDDIT_TWENTYFOUR7_URL}" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText)}${extSuffix}</a>` +
     `${escapeHtml(L.creditsBetween)}` +
-    `<a href="${REDDIT_QUUADOR_URL}" class="info-link" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText2)}${extSuffix}</a>` +
+    `<a href="${REDDIT_QUUADOR_URL}" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText2)}${extSuffix}</a>` +
     `${escapeHtml(L.creditsAfter)}</p>`;
-  // Author backlinks intentionally use rel="noopener" (no "noreferrer") so the
-  // Referer header is preserved — keeps GitHub/Reddit referral analytics honest
-  // and avoids weakening the SEO signal on outbound links to the author profile.
-  const sourceCodeHTML =
-    `<p>${escapeHtml(L.sourceCodeBefore)}` +
-    `<a href="${GITHUB_REPO_URL}" class="info-link" target="_blank" rel="noopener">github.com/amaurybegood/PokeTruc-Web${extSuffix}</a></p>`;
+
+  const toc = [['about', L.aboutHeading], ['faq', FAQ_HEADING[lang]], ['credits', L.creditsHeading], ['source', L.sourceCodeHeading], ['contact', L.contactHeading]];
 
   return `<!DOCTYPE html>
 <html lang="${HTML_LANG[lang]}">
@@ -1760,61 +2217,124 @@ ${head}
 
 ${headerBlock(lang, '', 'info')}
 
-  <main id="main-content" class="info-page">
-    <h1 class="page-title">${escapeHtml(L.infoH1)}</h1>
+  <main id="main-content" class="info-page wrap">
+    <nav class="info-toc" aria-label="${escapeHtml(L.onThisPage)}">
+      <p class="eyebrow">${escapeHtml(L.onThisPage)}</p>
+      ${toc.map(([id, label], i) => `<a href="#${id}"${i === 0 ? ' aria-current="true"' : ''}>${escapeHtml(label)}</a>`).join('\n      ')}
+    </nav>
 
-    <div class="info-card">
-      <h2>${escapeHtml(L.aboutHeading)}</h2>
-      <div>
-        ${aboutHTML}
+    <div class="info-body">
+      <div class="info-head">
+        <img src="/logo.webp" alt="" width="104" height="104">
+        <div>
+          <p class="eyebrow">${escapeHtml(L.infoEyebrow)}</p>
+          <h1>${escapeHtml(L.infoH1)}</h1>
+        </div>
       </div>
-    </div>
 
-    <div class="info-card">
-      <h2>${escapeHtml(FAQ_HEADING[lang])}</h2>
-      <div>
-        ${faq.map(([q, a]) => `<h3 class="faq-q">${escapeHtml(q)}</h3>
-        <p>${escapeHtml(a)}</p>`).join('\n        ')}
+      <section id="about" class="info-about" aria-labelledby="about-title">
+        <h2 id="about-title">${escapeHtml(L.aboutHeading)}</h2>
+        ${L.aboutBody.map(p => `<p>${escapeHtml(p)}</p>`).join('\n        ')}
+      </section>
+
+      <section id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">${escapeHtml(FAQ_HEADING[lang])}</h2>
+        <div class="faq">
+        ${faq.map(([q, a], i) => `<details${i === 0 ? ' open' : ''}>
+          <summary>${escapeHtml(q)}${ICON_CHEVRON}</summary>
+          <p>${escapeHtml(a)}</p>
+        </details>`).join('\n        ')}
+        </div>
+      </section>
+
+      <div class="info-cards">
+        <section id="credits" class="info-card" aria-labelledby="credits-title">
+          <h2 id="credits-title">${escapeHtml(L.creditsHeading)}</h2>
+          ${creditsHTML}
+        </section>
+        <section id="source" class="info-card" aria-labelledby="source-title">
+          <h2 id="source-title">${escapeHtml(L.sourceCodeHeading)}</h2>
+          <p>${escapeHtml(L.sourceCodeBefore.replace(/\s*[:：]\s*$/, '.'))}</p>
+          <a class="mono" href="${GITHUB_REPO_URL}" target="_blank" rel="noopener">github.com/amaurybegood/PokeTruc-Web${extSuffix}</a>
+        </section>
       </div>
-    </div>
 
-    <div class="info-card">
-      <h2>${escapeHtml(L.creditsHeading)}</h2>
-      <div>
-        ${creditsHTML}
-      </div>
-    </div>
+      <section id="contact" class="info-contact" aria-labelledby="contact-title">
+        <div>
+          <h2 id="contact-title">${escapeHtml(L.contactPitch)}</h2>
+          <p>${escapeHtml(L.contactLead)}</p>
+        </div>
+        <div class="info-contact-links">
+          <a class="info-contact-mail" href="mailto:poketruc@icloud.com?subject=Support%20%E2%80%93%20PokéTruc%20Web"><span><span class="visually-hidden">${escapeHtml(L.emailLabel)} </span>poketruc@icloud.com</span><span aria-hidden="true">→</span></a>
+          <a class="info-contact-reddit" href="${REDDIT_BEGOODERRR_URL}" target="_blank" rel="noopener"><span>Reddit · u/Begooderrr<span class="visually-hidden"> (${escapeHtml(L.opensInNewTab)})</span></span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
 
-    <div class="info-card">
-      <h2>${escapeHtml(L.sourceCodeHeading)}</h2>
-      <div>
-        ${sourceCodeHTML}
-      </div>
-    </div>
-
-    <div class="info-card">
-      <h2>${escapeHtml(L.contactHeading)}</h2>
-      <a href="mailto:poketruc@icloud.com?subject=Support%20%E2%80%93%20PokéTruc%20Web" class="info-link">${escapeHtml(L.emailLabel)} poketruc@icloud.com</a>
-      <a href="${REDDIT_BEGOODERRR_URL}" class="info-link" target="_blank" rel="noopener">${escapeHtml(L.redditLabel)} u/Begooderrr${extSuffix}</a>
-    </div>
-
-    <div class="info-card disclaimer">
-      <div>
-        ${disclaimerHTML}
-      </div>
+      <p class="info-privacy">${L.disclaimerBody.map(escapeHtml).join(' ')}</p>
     </div>
   </main>
 
-${footerBlock(lang)}
+${footerBlock(lang, '', 'info')}
 
 ${scriptTags()}
+  <script>
+    // "On this page": mark the last section whose top passed 30% of the
+    // viewport (the first one when two share a row; the last at page bottom;
+    // the one just clicked while it is on screen).
+    (function () {
+      var links = [].slice.call(document.querySelectorAll('.info-toc a'));
+      var secs = links.map(function (a) { return document.querySelector(a.hash); });
+      function spy() {
+        var cur = 0, best = -Infinity;
+        secs.forEach(function (s, i) {
+          var top = s.getBoundingClientRect().top;
+          if (top < innerHeight * 0.3 && top > best + 1) { best = top; cur = i; }
+        });
+        if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) cur = secs.length - 1;
+        // A clicked entry stays current while its section is on screen.
+        var p = secs.indexOf(document.querySelector(location.hash || null));
+        if (p >= 0) { var r = secs[p].getBoundingClientRect(); if (r.top > -10 && r.top < innerHeight * 0.6) cur = p; }
+        links.forEach(function (a, i) {
+          if (i === cur) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+        });
+      }
+      addEventListener('scroll', spy, { passive: true });
+      spy();
+    })();
+  </script>
 </body>
 </html>`;
 }
 
 // -----------------------------------------------------------------------------
-// Trainers page (flat gallery, per language)
+// Trainers page (gallery grouped by exclusivity, per language)
 // -----------------------------------------------------------------------------
+
+// Trainer card: same link-to-anchor pattern as the Pokémon page; pokemon.js
+// opens the viewer. Desktop caption: title, tag + code · rarity, set · year,
+// artist. Mobile swaps the middle lines for code · year.
+function renderTrainerCard(card, lang, eager = false) {
+  const alt = cardAltText(lang, card, card.cardName);
+  const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
+  const join = (...xs) => escapeHtml(xs.filter(Boolean).join(' · '));
+  return `
+          <div class="card-item" id="${card.imageName}">
+            <a class="card-open" href="#${card.imageName}">
+              <img ${cardSrcAttrs(card.imageName, TRAINER_SIZES)} alt="${escapeHtml(alt)}"${loadAttrs} decoding="async">
+              <span class="card-cap">
+                <span class="tr-card-title">${escapeHtml(card.cardName)}</span>
+                <span class="tr-card-meta"><span class="tag">${escapeHtml(exclusivityTag(card, lang))}</span><span class="card-cap-code">${join(card.setNumber, card.rarity)}</span></span>
+                <span class="card-cap-code tr-card-mobile">${join(card.setNumber, cardYear(card))}</span>
+                <span class="card-cap-artist tr-card-set">${join(card.name, cardYear(card))}</span>
+                ${card.artist ? `<span class="card-cap-artist">${escapeHtml(card.artist)}</span>` : ''}
+              </span>
+            </a>
+          </div>`;
+}
+const TRAINER_SIZES = '(max-width: 859px) 45vw, 240px';
+
+// Trainers default to newest first (DESIGN_HANDOFF 4.8).
+const byReleaseDesc = (a, b) => byRelease(b, a);
 
 function trainersPageHTML(lang) {
   const L = LANG[lang];
@@ -1830,7 +2350,8 @@ function trainersPageHTML(lang) {
   };
   const jsonLd = JSON.stringify({ "@context": "https://schema.org", "@graph": [breadcrumbList] });
 
-  const firstCard = firstDisplayedCard(trainerCards);
+  const groups = exclusivityGroups(trainerCards).map(g => ({ ...g, cards: g.cards.slice().sort(byReleaseDesc) }));
+  const firstCard = groups.length ? groups[0].cards[0] : null;
   const head = headBlock({
     lang,
     title: L.trainersTitle,
@@ -1842,35 +2363,60 @@ function trainersPageHTML(lang) {
     preloadImage: firstCard ? cardPreloadHref(firstCard.imageName) : undefined,
   });
 
-  const sectionsHTML = trainerCards.length
-    ? buildTrainersSectionHTML(trainerCards, L, lang)
-    : `
-    <section class="cards-section">
-      <p class="cards-section-title">${escapeHtml(L.trainersEmpty)}</p>
-    </section>`;
+  const headingByFlag = Object.fromEntries(LANG_INFO.map(l => [l.flag, L[l.key]]));
+  const chip = (id, label, n, on) => `<button type="button" class="chip" data-group="${id}" aria-pressed="${on}">${escapeHtml(label)} <span class="chip-count">${n}</span></button>`;
+  const sortOptions = [['newest', L.sortNewest], ['oldest', L.sortOldest], ['name', L.sortName]]
+    .map(([v, label]) => `<option value="${v}">${escapeHtml(label)}</option>`).join('');
+  const filters = trainerCards.length > 1 ? `
+    <div class="tr-filters wrap">${groups.length > 1 ? `
+      <span class="filter-label" id="tr-excl">${escapeHtml(L.exclusiveTo)}</span>
+      <div class="chips" role="group" aria-labelledby="tr-excl">
+        ${[chip('', L.filterAll, trainerCards.length, true), ...groups.map(g => chip(groupSlug(g.flag), groupShortLabel(g.flag, L, lang), g.cards.length, false))].join('\n        ')}
+      </div>` : ''}
+      <label class="sort-field">${escapeHtml(L.sortLabel)}
+        <select id="tr-sort">${sortOptions}</select>
+      </label>
+    </div>` : '';
+
+  const sectionsHTML = groups.length ? groups.map(({ flag, cards: cs }, gi) => `
+    <section class="tr-group wrap" id="${groupSlug(flag)}" aria-labelledby="${groupSlug(flag)}-title">
+      <div class="tr-group-head">
+        <h2 id="${groupSlug(flag)}-title">${escapeHtml(headingByFlag[flag] || 'Other-exclusive cards')}</h2>
+        <span class="mono">${cs.length}</span>
+      </div>
+      <div class="cards-grid tr-grid">${cs.map((c, i) => renderTrainerCard(c, lang, gi === 0 && i === 0)).join('')}
+      </div>
+    </section>`).join('') : `
+    <p class="tr-empty wrap">${escapeHtml(L.trainersEmpty)}</p>`;
 
   return `<!DOCTYPE html>
 <html lang="${HTML_LANG[lang]}">
 <head>
 ${head}
+  <noscript><style>.tr-filters { display: none !important; }</style></noscript>
 </head>
 <body data-lang-prefix="${langPathPrefix(lang)}">
 <a href="#main-content" class="skip-link">${escapeHtml(L.skipToContent)}</a>
 
 ${headerBlock(lang, '', 'trainers')}
 
-  <main id="main-content" class="pokemon-page">
-    <h1 class="page-title">${escapeHtml(L.trainersH1)}</h1>
+  <main id="main-content" class="tr-page">
+    <section class="tr-hero wrap">
+      <div class="tr-hero-copy">
+        <h1><span class="eyebrow">${escapeHtml(L.trainersEyebrow)}</span><span class="visually-hidden"> — </span>${escapeHtml(L.ctaTrainers)}</h1>
+        <p class="tr-lead">${escapeHtml(L.trainersLead)}</p>
+      </div>
+      <p class="tr-count"><strong>${trainerCards.length}</strong> <span>${escapeHtml(L.statIllustrations)}</span></p>
+    </section>
+${filters}
 ${sectionsHTML}
-    <nav class="pokemon-pager" aria-label="${escapeHtml(L.pokedex)}">
-      <a class="pokemon-nav-up" href="${pathRoot(lang)}">${escapeHtml(L.upToPokedex)}</a>
-    </nav>
   </main>
 
-${footerBlock(lang)}
+${footerBlock(lang, '', 'trainers')}
 
-${fullscreenBlock(lang)}
+${fullscreenBlock()}
 
+${cardsDataScript(trainerCards)}
 ${scriptTags()}
   <script src="/pokemon.js?v=${JS_V}"></script>
 </body>
@@ -1878,8 +2424,73 @@ ${scriptTags()}
 }
 
 // -----------------------------------------------------------------------------
+// 404 page. GitHub Pages serves /404.html for every missing URL: it sends
+// /fr/… (ja, ko, zh) visitors to that language's copy at /fr/404.html.
+// -----------------------------------------------------------------------------
+
+function notFoundPageHTML(lang) {
+  const L = LANG[lang];
+  const redirect = lang === 'en' ? `
+  <script>(function(){var m=location.pathname.match(/^\\/(fr|ja|ko|zh)\\//);if(m)location.replace('/'+m[1]+'/404.html');})();</script>` : '';
+  return `<!DOCTYPE html>
+<html lang="${HTML_LANG[lang]}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">${redirect}
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <title>${escapeHtml(L.notFoundTitle)}</title>
+  <meta name="robots" content="noindex,follow">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/style.css?v=${CSS_V}">
+</head>
+<body data-lang-prefix="${langPathPrefix(lang)}">
+<a href="#main-content" class="skip-link">${escapeHtml(L.skipToContent)}</a>
+
+${headerBlock(lang, '', 'notfound')}
+
+  <main id="main-content" class="nf wrap">
+    <div class="nf-art">
+      <img src="/logo.webp" alt="" width="200" height="200">
+      <span class="nf-sticker">${escapeHtml(L.errorSticker)}</span>
+    </div>
+    <div class="nf-copy">
+      <h1>${escapeHtml(L.notFoundH1)}</h1>
+      <p>${escapeHtml(L.notFoundText)}</p>
+      <form class="nf-search" role="search" action="${pathRoot(lang)}" method="get">
+        <label class="site-search-field">
+          ${ICON_SEARCH}
+          <span class="visually-hidden">${escapeHtml(L.searchLabel)}</span>
+          <input type="search" name="q" placeholder="${escapeHtml(L.searchPlaceholder)}" autocomplete="off" enterkeyhint="search">
+        </label>
+      </form>
+      <div class="nf-ctas">
+        <a class="btn btn-solid" href="${pathRoot(lang)}">${escapeHtml(L.backToPokedex)}</a>
+        <a class="btn btn-outline" href="${pathTrainers(lang)}">${escapeHtml(L.ctaTrainers)}</a>
+      </div>
+    </div>
+  </main>
+
+${footerBlock(lang, '', 'notfound')}
+
+  <script src="/i18n.js?v=${JS_V}"></script>
+  <script src="/theme.js?v=${JS_V}"></script>
+  <script src="/viewer.js?v=${JS_V}"></script>
+  <script src="/search.js?v=${JS_V}"></script>
+</body>
+</html>`;
+}
+
+// -----------------------------------------------------------------------------
 // Generation driver
 // -----------------------------------------------------------------------------
+
+for (const c of [...cards, ...trainerCards]) {
+  for (const l of LANGS) {
+    if (!exclusivityTag(c, l) || /undefined/.test(exclusivityTag(c, l))) {
+      throw new Error(`No exclusivity tag for ${c.imageName} (${l}): add its flag to FLAG_CODE / STATS_LANG_LABEL`);
+    }
+  }
+}
 
 const pokemonsWithCards = pokemons
   .filter(p => cardsFor(p.id).length > 0)
@@ -1963,6 +2574,11 @@ for (const lang of LANGS) {
   ensureDir(trainersDir);
   recordWrite(`${trainersDir}/index.html`, trainersPageHTML(lang), pathTrainers(lang));
   pageCount++;
+}
+
+// 3c) 404 pages: /404.html (en, served by GitHub Pages) + /<lang>/404.html.
+for (const lang of LANGS) {
+  fs.writeFileSync(lang === 'en' ? '404.html' : `${lang}/404.html`, notFoundPageHTML(lang), 'utf8');
 }
 
 // 4) Sitemap with hreflang annotations. <lastmod> per URL comes from the

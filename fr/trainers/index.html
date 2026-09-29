@@ -9,10 +9,10 @@
   <meta name="description" content="Illustrations de cartes Dresseur Pokémon TCG n'existant que dans une seule langue ou une seule région (japonais, anglais, occident…). Gratuit, sans pub, fait par un fan.">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=43">
+  <link rel="preload" as="style" href="/style.css?v=59">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
-  <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="275px" type="image/webp">
-  <link rel="preload" as="image" href="/cards/thumbs/rika_csv4_159.avif" fetchpriority="high">
+  <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="142px" type="image/webp">
+  <link rel="preload" as="image" href="/cards/thumbs/carmine_csv8c_255.avif" fetchpriority="high">
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
 
@@ -39,167 +39,210 @@
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/trainers/">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/style.css?v=43">
+  <link rel="stylesheet" href="/style.css?v=59">
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/fr/"},{"@type":"ListItem","position":2,"name":"Dresseurs","item":"https://poketruc.com/fr/trainers/"}]}]}</script>
+  <noscript><style>.tr-filters { display: none !important; }</style></noscript>
 </head>
 <body data-lang-prefix="/fr/">
 <a href="#main-content" class="skip-link">Aller au contenu</a>
 
-  <header>
-    <a href="/fr/" class="logo-link"><img src="/logo.webp" alt="PokéTruc" class="site-logo" width="80" height="80"></a>
-    <img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="275px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync">
-    <p class="site-tagline">Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région</p>
-    <nav class="site-nav">
+  <header class="site-header">
+    <a href="/fr/" class="logo-link"><img src="/logo.webp" alt="" class="site-logo" width="40" height="40"><img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="142px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync"></a>
+    <form class="site-search" id="site-search" role="search" action="/fr/" method="get" aria-label="Rechercher">
+      <div class="search-bar">
+        <label class="site-search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span class="visually-hidden">Rechercher</span>
+          <input type="search" id="search" name="q" placeholder="Rechercher un Pokémon, un set ou un artiste" autocomplete="off" enterkeyhint="search" role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list">
+          <button type="button" class="search-clear" id="search-clear" aria-label="Effacer la recherche" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+          <kbd class="kbd-hint" aria-hidden="true">/</kbd>
+        </label>
+        <button type="button" class="search-cancel" id="search-cancel">Annuler</button>
+      </div>
+      <div class="search-panel" id="search-panel" hidden>
+        <div class="search-results" id="search-results" role="listbox"></div>
+        <p class="visually-hidden" id="search-status" role="status"></p>
+        <div class="search-foot"></div>
+      </div>
+    </form>
+    <nav class="site-nav" aria-label="Principal">
       <a href="/fr/">Pokédex</a>
       <a href="/fr/trainers/" aria-current="page">Dresseurs</a>
       <a href="/fr/info/">Info</a>
+    </nav>
+    <div class="header-tools">
       <details class="lang-picker">
-        <summary class="lang-picker-toggle" aria-label="Langue: FR"><span class="lang-picker-code">FR</span><span class="lang-picker-caret" aria-hidden="true">▾</span></summary>
+        <summary class="lang-picker-toggle" aria-label="Langue: FR">FR</summary>
         <ul class="lang-picker-menu"><li><a href="/trainers/" hreflang="en" class="lang-link">EN</a></li><li><a href="/fr/trainers/" hreflang="fr" class="lang-link active" aria-current="true">FR</a></li><li><a href="/ja/trainers/" hreflang="ja" class="lang-link">日本語</a></li><li><a href="/ko/trainers/" hreflang="ko" class="lang-link">한국어</a></li><li><a href="/zh/trainers/" hreflang="zh-Hans" class="lang-link">中文</a></li></ul>
       </details>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode sombre"></button>
-    </nav>
+      <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Basculer le mode sombre"><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg></button>
+    </div>
+    <div class="header-mobile">
+      <button type="button" class="icon-btn" id="search-toggle" aria-expanded="false" aria-controls="site-search" aria-label="Ouvrir la recherche"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <button type="button" class="icon-btn" id="menu-open" aria-haspopup="dialog" aria-controls="site-menu" aria-label="Ouvrir le menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <dialog class="site-menu" id="site-menu" aria-label="Principal">
+      <div class="site-menu-head">
+        <a href="/fr/" class="logo-link"><img src="/logo.webp" alt="" class="site-logo" width="40" height="40"><img src="/logo-title-960.webp" srcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" sizes="142px" alt="PokéTruc" class="site-title" width="960" height="203" fetchpriority="high" decoding="sync"></a>
+        <button type="button" class="site-menu-close" id="menu-close" aria-label="Fermer le menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <nav class="site-menu-nav" aria-label="Principal">
+        <a href="/fr/"><span>Pokédex</span><span class="site-menu-count">200 Pokémon</span></a>
+        <a href="/fr/?view=cards"><span>Toutes les cartes</span><span class="site-menu-count">714</span></a>
+        <a href="/fr/trainers/" aria-current="page"><span>Dresseurs</span><span class="site-menu-count">6</span></a>
+        <a href="/fr/info/"><span>Info</span></a>
+      </nav>
+      <section class="site-menu-section">
+        <h2 class="menu-eyebrow">Langue</h2>
+        <div class="menu-langs"><a href="/trainers/" hreflang="en" lang="en">English</a><a href="/fr/trainers/" hreflang="fr" lang="fr" aria-current="true">Français</a><a href="/ja/trainers/" hreflang="ja" lang="ja">日本語</a><a href="/ko/trainers/" hreflang="ko" lang="ko">한국어</a><a href="/zh/trainers/" hreflang="zh-Hans" lang="zh-Hans">中文</a></div>
+      </section>
+      <fieldset class="site-menu-section">
+        <legend class="menu-eyebrow">Thème</legend>
+        <div class="theme-seg"><label><input type="radio" name="theme-choice" value="light">Clair</label><label><input type="radio" name="theme-choice" value="dark">Sombre</label><label><input type="radio" name="theme-choice" value="auto">Système</label></div>
+      </fieldset>
+      <p class="site-menu-note">© 2026 - 3590 PokéTruc. Site fan, sans publicité. Non affilié à Nintendo, Creatures Inc., GAME FREAK ou The Pokémon Company. Aucune donnée personnelle collectée.</p>
+    </dialog>
   </header>
+  <div class="search-scrim" id="search-scrim" hidden></div>
 
-  <main id="main-content" class="pokemon-page">
-    <h1 class="page-title">Illustrations de cartes Dresseur n'existant que dans une seule langue ou une seule région</h1>
-
-    <section class="cards-section">
-      <p class="cards-section-title">6 illustrations exclusives de cartes Dresseur</p>
-      
-      <details class="cards-lang-group" open>
-        <summary class="cards-lang-summary">
-          <h2 class="cards-lang-title">🇨🇳 Cartes exclusives chinoises (5)</h2>
-          <span class="cards-lang-caret" aria-hidden="true">▾</span>
-        </summary>
-        <div class="cards-grid">
-          
-        <div class="card-item" id="rika_csv4_159" data-img="/cards/rika_csv4_159.avif">
-          <button type="button" class="card-zoom">
-            <img src="/cards/thumbs/rika_csv4_159.avif" srcset="/cards/thumbs/rika_csv4_159.avif 480w, /cards/rika_csv4_159.avif 868w" sizes="(max-width: 600px) 40vw, 200px" width="868" height="1212" alt="Rika (CSV4 159) — Bonus Round (exclusivité chinoise, 2025) carte Pokémon TCG par Kantaro" fetchpriority="high" decoding="async">
-          </button>
-          <div class="card-info">
-            <div class="card-name">Rika (CSV4 159)</div>
-            <div class="card-meta"><span class="lang-badge"><span aria-hidden="true">🇨🇳</span><span class="visually-hidden">chinoise</span></span> 2025 · SAR</div>
-            <div class="card-set">Bonus Round</div>
-            <div class="card-artist">Artiste: Kantaro</div>
-            <details class="card-description">
-              <summary class="card-description-toggle">Note</summary>
-              <div class="card-description-body"><a href="https://www.pokebeach.com/2025/06/exclusive-maushold-ex-gholdengo-ex-and-rika-secret-rares-in-chinese-bonus-turn-set" target="_blank" rel="noopener noreferrer" aria-label="source (ouvre dans un nouvel onglet)">source<span aria-hidden="true"> ↗</span></a></div>
-            </details>
-          </div>
-        </div>
-        <div class="card-item" id="larry_csv5_157" data-img="/cards/larry_csv5_157.avif">
-          <button type="button" class="card-zoom">
-            <img src="/cards/larry_csv5_157.avif" width="419" height="581" alt="Larry (CSV5 157) — Fiery Black Crystal (exclusivité chinoise, 2025) carte Pokémon TCG par Karya" loading="lazy" decoding="async">
-          </button>
-          <div class="card-info">
-            <div class="card-name">Larry (CSV5 157)</div>
-            <div class="card-meta"><span class="lang-badge"><span aria-hidden="true">🇨🇳</span><span class="visually-hidden">chinoise</span></span> 2025 · SAR</div>
-            <div class="card-set">Fiery Black Crystal</div>
-            <div class="card-artist">Artiste: Karya</div>
-            <details class="card-description">
-              <summary class="card-description-toggle">Note</summary>
-              <div class="card-description-body"><a href="https://www.pokebeach.com/2025/07/exclusive-larry-and-defiance-band-releasing-in-chinese-fiery-black-crystal-set" target="_blank" rel="noopener noreferrer" aria-label="source (ouvre dans un nouvel onglet)">source<span aria-hidden="true"> ↗</span></a></div>
-            </details>
-          </div>
-        </div>
-        <div class="card-item" id="ciphermaniacs_csv7_245" data-img="/cards/ciphermaniacs_csv7_245.avif">
-          <button type="button" class="card-zoom">
-            <img src="/cards/thumbs/ciphermaniacs_csv7_245.avif" srcset="/cards/thumbs/ciphermaniacs_csv7_245.avif 480w, /cards/ciphermaniacs_csv7_245.avif 733w" sizes="(max-width: 600px) 40vw, 200px" width="733" height="1024" alt="Ciphermaniacs (CSV7 245) — Blade Awakenings (exclusivité chinoise, 2025) carte Pokémon TCG par Taira Akitsu" loading="lazy" decoding="async">
-          </button>
-          <div class="card-info">
-            <div class="card-name">Ciphermaniacs (CSV7 245)</div>
-            <div class="card-meta"><span class="lang-badge"><span aria-hidden="true">🇨🇳</span><span class="visually-hidden">chinoise</span></span> 2025 · SAR</div>
-            <div class="card-set">Blade Awakenings</div>
-            <div class="card-artist">Artiste: Taira Akitsu</div>
-            <details class="card-description">
-              <summary class="card-description-toggle">Note</summary>
-              <div class="card-description-body"><a href="https://www.pokebeach.com/2025/12/blade-awakened-set-revealed-for-china-featuring-exclusive-ciphermaniacs-codebreaking-coin-collection-and-reverse-holos" target="_blank" rel="noopener noreferrer" aria-label="source (ouvre dans un nouvel onglet)">source<span aria-hidden="true"> ↗</span></a></div>
-            </details>
-          </div>
-        </div>
-        <div class="card-item" id="carmine_csv8c_255" data-img="/cards/carmine_csv8c_255.avif">
-          <button type="button" class="card-zoom">
-            <img src="/cards/thumbs/carmine_csv8c_255.avif" srcset="/cards/thumbs/carmine_csv8c_255.avif 480w, /cards/carmine_csv8c_255.avif 733w" sizes="(max-width: 600px) 40vw, 200px" width="733" height="1002" alt="Carmine (CSV8C 255) — Brilliant Illusions (exclusivité chinoise, 2026) carte Pokémon TCG par OKACHEKE" loading="lazy" decoding="async">
-          </button>
-          <div class="card-info">
-            <div class="card-name">Carmine (CSV8C 255)</div>
-            <div class="card-meta"><span class="lang-badge"><span aria-hidden="true">🇨🇳</span><span class="visually-hidden">chinoise</span></span> 2026 · SAR</div>
-            <div class="card-set">Brilliant Illusions</div>
-            <div class="card-artist">Artiste: OKACHEKE</div>
-            <details class="card-description">
-              <summary class="card-description-toggle">Note</summary>
-              <div class="card-description-body">Chinese-exclusive Supporter card (丹瑜) — Brilliant Illusions (CSV8C), 255/207. <a href="https://www.pokebeach.com/2026/02/brilliant-illusions-set-revealed-for-china-featuring-exclusive-carmine-coin-collections-and-reverse-holos" target="_blank" rel="noopener noreferrer" aria-label="source (ouvre dans un nouvel onglet)">source<span aria-hidden="true"> ↗</span></a></div>
-            </details>
-          </div>
-        </div>
-        <div class="card-item" id="brock_csv10c_276" data-img="/cards/brock_csv10c_276.avif">
-          <button type="button" class="card-zoom">
-            <img src="/cards/thumbs/brock_csv10c_276.avif" srcset="/cards/thumbs/brock_csv10c_276.avif 480w, /cards/brock_csv10c_276.avif 863w" sizes="(max-width: 600px) 40vw, 200px" width="863" height="1212" alt="Brock's Scouting (CSV10C 276) — Chasing Glory Together (exclusivité chinoise, 2026) carte Pokémon TCG par Alsushi Furusawa" loading="lazy" decoding="async">
-          </button>
-          <div class="card-info">
-            <div class="card-name">Brock's Scouting (CSV10C 276)</div>
-            <div class="card-meta"><span class="lang-badge"><span aria-hidden="true">🇨🇳</span><span class="visually-hidden">chinoise</span></span> 2026 · SAR</div>
-            <div class="card-set">Chasing Glory Together</div>
-            <div class="card-artist">Artiste: Alsushi Furusawa</div>
-            <details class="card-description">
-              <summary class="card-description-toggle">Note</summary>
-              <div class="card-description-body"><a href="https://www.pokebeach.com/2026/06/chasing-glory-together-set-revealed-for-china-featuring-exclusive-brocks-scouting" target="_blank" rel="noopener noreferrer" aria-label="source (ouvre dans un nouvel onglet)">source<span aria-hidden="true"> ↗</span></a></div>
-            </details>
-          </div>
-        </div>
-        </div>
-      </details>
-      <details class="cards-lang-group" open>
-        <summary class="cards-lang-summary">
-          <h2 class="cards-lang-title">🏯 Cartes exclusives asiatiques (1)</h2>
-          <span class="cards-lang-caret" aria-hidden="true">▾</span>
-        </summary>
-        <div class="cards-grid">
-          
-        <div class="card-item" id="lisia_scn_csv9_257" data-img="/cards/lisia_scn_csv9_257.avif">
-          <button type="button" class="card-zoom">
-            <img src="/cards/thumbs/lisia_scn_csv9_257.avif" srcset="/cards/thumbs/lisia_scn_csv9_257.avif 480w, /cards/lisia_scn_csv9_257.avif 869w" sizes="(max-width: 600px) 40vw, 200px" width="869" height="1211" alt="Lisia's Appeal (CSV9C 257) — Stellar Crystal (exclusivité asiatique, 2026) carte Pokémon TCG par Atsuko Nishida" loading="lazy" decoding="async">
-          </button>
-          <div class="card-info">
-            <div class="card-name">Lisia's Appeal (CSV9C 257)</div>
-            <div class="card-meta"><span class="lang-badge"><span aria-hidden="true">🇨🇳 🇹🇭</span><span class="visually-hidden">chinoise, 🇹🇭</span></span> 2026 · SAR</div>
-            <div class="card-set">Stellar Crystal</div>
-            <div class="card-artist">Artiste: Atsuko Nishida</div>
-            <details class="card-description">
-              <summary class="card-description-toggle">Note</summary>
-              <div class="card-description-body"><a href="https://www.pokebeach.com/2026/04/exclusive-lisias-appeal-to-release-in-chinese-starry-crystal-set" target="_blank" rel="noopener noreferrer" aria-label="source (ouvre dans un nouvel onglet)">source<span aria-hidden="true"> ↗</span></a></div>
-            </details>
-          </div>
-        </div>
-        </div>
-      </details>
+  <main id="main-content" class="tr-page">
+    <section class="tr-hero wrap">
+      <div class="tr-hero-copy">
+        <h1><span class="eyebrow">Dresseur · Supporter · Stade</span><span class="visually-hidden"> — </span>Cartes Dresseur</h1>
+        <p class="tr-lead">Des illustrations de cartes Dresseur sorties dans une seule langue ou une seule région. Elles ne sont liées à aucun Pokémon, elles ont donc leur propre galerie.</p>
+      </div>
+      <p class="tr-count"><strong>6</strong> <span>illustrations exclusives</span></p>
     </section>
-    <nav class="pokemon-pager" aria-label="Pokédex">
-      <a class="pokemon-nav-up" href="/fr/">↑ Pokédex</a>
-    </nav>
+
+    <div class="tr-filters wrap">
+      <span class="filter-label" id="tr-excl">Exclusivité</span>
+      <div class="chips" role="group" aria-labelledby="tr-excl">
+        <button type="button" class="chip" data-group="" aria-pressed="true">Tous <span class="chip-count">6</span></button>
+        <button type="button" class="chip" data-group="group-cn" aria-pressed="false">Chine <span class="chip-count">5</span></button>
+        <button type="button" class="chip" data-group="group-asian" aria-pressed="false">Asie <span class="chip-count">1</span></button>
+      </div>
+      <label class="sort-field">Trier
+        <select id="tr-sort"><option value="newest">Plus récentes</option><option value="oldest">Plus anciennes</option><option value="name">Nom</option></select>
+      </label>
+    </div>
+
+    <section class="tr-group wrap" id="group-cn" aria-labelledby="group-cn-title">
+      <div class="tr-group-head">
+        <h2 id="group-cn-title">Cartes exclusives chinoises</h2>
+        <span class="mono">5</span>
+      </div>
+      <div class="cards-grid tr-grid">
+          <div class="card-item" id="carmine_csv8c_255">
+            <a class="card-open" href="#carmine_csv8c_255">
+              <img src="/cards/thumbs/carmine_csv8c_255.avif" srcset="/cards/thumbs/carmine_csv8c_255.avif 480w, /cards/carmine_csv8c_255.avif 733w" sizes="(max-width: 859px) 45vw, 240px" width="733" height="1002" alt="Carmine — Brilliant Illusions (exclusivité chinoise, 2026) carte Pokémon TCG par OKACHEKE" fetchpriority="high" decoding="async">
+              <span class="card-cap">
+                <span class="tr-card-title">Carmine</span>
+                <span class="tr-card-meta"><span class="tag">EXCLU CN</span><span class="card-cap-code">CSV8C 255 · SAR</span></span>
+                <span class="card-cap-code tr-card-mobile">CSV8C 255 · 2026</span>
+                <span class="card-cap-artist tr-card-set">Brilliant Illusions · 2026</span>
+                <span class="card-cap-artist">OKACHEKE</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-item" id="brock_csv10c_276">
+            <a class="card-open" href="#brock_csv10c_276">
+              <img src="/cards/thumbs/brock_csv10c_276.avif" srcset="/cards/thumbs/brock_csv10c_276.avif 480w, /cards/brock_csv10c_276.avif 863w" sizes="(max-width: 859px) 45vw, 240px" width="863" height="1212" alt="Brock's Scouting — Chasing Glory Together (exclusivité chinoise, 2026) carte Pokémon TCG par Alsushi Furusawa" loading="lazy" decoding="async">
+              <span class="card-cap">
+                <span class="tr-card-title">Brock's Scouting</span>
+                <span class="tr-card-meta"><span class="tag">EXCLU CN</span><span class="card-cap-code">CSV10C 276 · SAR</span></span>
+                <span class="card-cap-code tr-card-mobile">CSV10C 276 · 2026</span>
+                <span class="card-cap-artist tr-card-set">Chasing Glory Together · 2026</span>
+                <span class="card-cap-artist">Alsushi Furusawa</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-item" id="rika_csv4_159">
+            <a class="card-open" href="#rika_csv4_159">
+              <img src="/cards/thumbs/rika_csv4_159.avif" srcset="/cards/thumbs/rika_csv4_159.avif 480w, /cards/rika_csv4_159.avif 868w" sizes="(max-width: 859px) 45vw, 240px" width="868" height="1212" alt="Rika — Bonus Round (exclusivité chinoise, 2025) carte Pokémon TCG par Kantaro" loading="lazy" decoding="async">
+              <span class="card-cap">
+                <span class="tr-card-title">Rika</span>
+                <span class="tr-card-meta"><span class="tag">EXCLU CN</span><span class="card-cap-code">CSV4 159 · SAR</span></span>
+                <span class="card-cap-code tr-card-mobile">CSV4 159 · 2025</span>
+                <span class="card-cap-artist tr-card-set">Bonus Round · 2025</span>
+                <span class="card-cap-artist">Kantaro</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-item" id="larry_csv5_157">
+            <a class="card-open" href="#larry_csv5_157">
+              <img src="/cards/larry_csv5_157.avif" width="419" height="581" alt="Larry — Fiery Black Crystal (exclusivité chinoise, 2025) carte Pokémon TCG par Karya" loading="lazy" decoding="async">
+              <span class="card-cap">
+                <span class="tr-card-title">Larry</span>
+                <span class="tr-card-meta"><span class="tag">EXCLU CN</span><span class="card-cap-code">CSV5 157 · SAR</span></span>
+                <span class="card-cap-code tr-card-mobile">CSV5 157 · 2025</span>
+                <span class="card-cap-artist tr-card-set">Fiery Black Crystal · 2025</span>
+                <span class="card-cap-artist">Karya</span>
+              </span>
+            </a>
+          </div>
+          <div class="card-item" id="ciphermaniacs_csv7_245">
+            <a class="card-open" href="#ciphermaniacs_csv7_245">
+              <img src="/cards/thumbs/ciphermaniacs_csv7_245.avif" srcset="/cards/thumbs/ciphermaniacs_csv7_245.avif 480w, /cards/ciphermaniacs_csv7_245.avif 733w" sizes="(max-width: 859px) 45vw, 240px" width="733" height="1024" alt="Ciphermaniacs — Blade Awakenings (exclusivité chinoise, 2025) carte Pokémon TCG par Taira Akitsu" loading="lazy" decoding="async">
+              <span class="card-cap">
+                <span class="tr-card-title">Ciphermaniacs</span>
+                <span class="tr-card-meta"><span class="tag">EXCLU CN</span><span class="card-cap-code">CSV7 245 · SAR</span></span>
+                <span class="card-cap-code tr-card-mobile">CSV7 245 · 2025</span>
+                <span class="card-cap-artist tr-card-set">Blade Awakenings · 2025</span>
+                <span class="card-cap-artist">Taira Akitsu</span>
+              </span>
+            </a>
+          </div>
+      </div>
+    </section>
+    <section class="tr-group wrap" id="group-asian" aria-labelledby="group-asian-title">
+      <div class="tr-group-head">
+        <h2 id="group-asian-title">Cartes exclusives asiatiques</h2>
+        <span class="mono">1</span>
+      </div>
+      <div class="cards-grid tr-grid">
+          <div class="card-item" id="lisia_scn_csv9_257">
+            <a class="card-open" href="#lisia_scn_csv9_257">
+              <img src="/cards/thumbs/lisia_scn_csv9_257.avif" srcset="/cards/thumbs/lisia_scn_csv9_257.avif 480w, /cards/lisia_scn_csv9_257.avif 869w" sizes="(max-width: 859px) 45vw, 240px" width="869" height="1211" alt="Lisia's Appeal — Stellar Crystal (exclusivité asiatique, 2026) carte Pokémon TCG par Atsuko Nishida" loading="lazy" decoding="async">
+              <span class="card-cap">
+                <span class="tr-card-title">Lisia's Appeal</span>
+                <span class="tr-card-meta"><span class="tag">CN · TH</span><span class="card-cap-code">CSV9C 257 · SAR</span></span>
+                <span class="card-cap-code tr-card-mobile">CSV9C 257 · 2026</span>
+                <span class="card-cap-artist tr-card-set">Stellar Crystal · 2026</span>
+                <span class="card-cap-artist">Atsuko Nishida</span>
+              </span>
+            </a>
+          </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2026 - 3590 PokéTruc — Site fan, non affilié à Nintendo / The Pokémon Company.</p>
+  <footer class="site-footer">
+    <div class="footer-note">
+      <img src="/logo.webp" alt="" width="28" height="28" loading="lazy">
+      <p>© 2026 - 3590 PokéTruc. Site fan, sans publicité. Non affilié à Nintendo, Creatures Inc., GAME FREAK ou The Pokémon Company. Aucune donnée personnelle collectée.</p>
+    </div>
+    <nav class="footer-langs" aria-label="Langues">
+      <a href="/trainers/" hreflang="en" lang="en">English</a>
+      <a href="/fr/trainers/" hreflang="fr" lang="fr" aria-current="true">Français</a>
+      <a href="/ja/trainers/" hreflang="ja" lang="ja">日本語</a>
+      <a href="/ko/trainers/" hreflang="ko" lang="ko">한국어</a>
+      <a href="/zh/trainers/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+    </nav>
   </footer>
 
-  <!-- Fullscreen -->
-  <div id="fullscreen" class="fullscreen hidden" role="dialog" aria-modal="true" aria-label="Image de la carte en plein écran">
-    <div class="fullscreen-backdrop"></div>
-    <button type="button" id="fullscreen-close" class="fullscreen-close" aria-label="Fermer">✕</button>
-    <img id="fullscreen-img" src="" alt="">
-  </div>
+  <dialog id="viewer" class="viewer"></dialog>
+  <dialog id="card-sheet" class="sheet"></dialog>
 
+  <script type="application/json" id="cards-data">[{"title":"Rika (CSV4 159)","name":"Bonus Round","imageName":"rika_csv4_159","rarity":"SAR","description":"https://www.pokebeach.com/2025/06/exclusive-maushold-ex-gholdengo-ex-and-rika-secret-rares-in-chinese-bonus-turn-set","languages":["🇨🇳"],"year":2025,"artist":"Kantaro","cardName":"Rika","setNumber":"CSV4 159"},{"title":"Larry (CSV5 157)","name":"Fiery Black Crystal","imageName":"larry_csv5_157","rarity":"SAR","description":"https://www.pokebeach.com/2025/07/exclusive-larry-and-defiance-band-releasing-in-chinese-fiery-black-crystal-set","languages":["🇨🇳"],"year":2025,"artist":"Karya","cardName":"Larry","setNumber":"CSV5 157"},{"title":"Ciphermaniacs (CSV7 245)","name":"Blade Awakenings","imageName":"ciphermaniacs_csv7_245","rarity":"SAR","description":"https://www.pokebeach.com/2025/12/blade-awakened-set-revealed-for-china-featuring-exclusive-ciphermaniacs-codebreaking-coin-collection-and-reverse-holos","languages":["🇨🇳"],"year":2025,"artist":"Taira Akitsu","cardName":"Ciphermaniacs","setNumber":"CSV7 245"},{"title":"Lisia's Appeal (CSV9C 257)","name":"Stellar Crystal","imageName":"lisia_scn_csv9_257","rarity":"SAR","description":"https://www.pokebeach.com/2026/04/exclusive-lisias-appeal-to-release-in-chinese-starry-crystal-set","languages":["🇨🇳","🇹🇭"],"year":2026,"artist":"Atsuko Nishida","region":"asian","cardName":"Lisia's Appeal","setNumber":"CSV9C 257"},{"title":"Carmine (CSV8C 255)","name":"Brilliant Illusions","imageName":"carmine_csv8c_255","rarity":"SAR","description":"Chinese-exclusive Supporter card (丹瑜) — Brilliant Illusions (CSV8C), 255/207. https://www.pokebeach.com/2026/02/brilliant-illusions-set-revealed-for-china-featuring-exclusive-carmine-coin-collections-and-reverse-holos","languages":["🇨🇳"],"year":2026,"artist":"OKACHEKE","cardName":"Carmine","setNumber":"CSV8C 255"},{"title":"Brock's Scouting (CSV10C 276)","name":"Chasing Glory Together","imageName":"brock_csv10c_276","rarity":"SAR","description":"https://www.pokebeach.com/2026/06/chasing-glory-together-set-revealed-for-china-featuring-exclusive-brocks-scouting","languages":["🇨🇳"],"year":2026,"artist":"Alsushi Furusawa","cardName":"Brock's Scouting","setNumber":"CSV10C 276"}]</script>
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="f7f7d1c9-87f5-4b52-8f20-b6110f143513"></script>
-  <script>window.DATA_V='00c5ee63';</script>
-  <script src="/i18n.js?v=25"></script>
-  <script src="/theme.js?v=25"></script>
-  <script src="/viewer.js?v=25"></script>
-  <script src="/backtotop.js?v=25"></script>
-  <script src="/pokemon.js?v=25"></script>
+  <script>window.DATA_V='83a6df41';</script>
+  <script src="/i18n.js?v=35"></script>
+  <script src="/theme.js?v=35"></script>
+  <script src="/viewer.js?v=35"></script>
+  <script src="/search.js?v=35"></script>
+  <script src="/backtotop.js?v=35"></script>
+  <script src="/pokemon.js?v=35"></script>
 </body>
 </html>

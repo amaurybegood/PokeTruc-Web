@@ -54,7 +54,9 @@ the build fails if one is missing), and run `node build.js`.
 
 Trainer cards are not tied to a Pokémon, so they live in their own flat gallery at
 `/trainers/`. Add entries to `data/trainer_cards.json` (images in `cards/`), then
-run `node build.js`:
+run `node build.js`. Put the card number in parentheses at the end of `title`
+(`"Rika (CSV4 159)"`): the build splits it into the name and the number shown
+on the card, unless the entry has its own `setNumber`.
 
 ```json
 {
@@ -83,22 +85,37 @@ Edit the file and run `node build.js`:
 ```json
 [
   {
-    "title": "Carmine",
+    "title": "Carmine SAR",
+    "code": "CSV8C 255/207",
     "set": "Brilliant Illusions",
     "imageName": "carmine_csv8c_255",
     "languages": ["🇨🇳"],
     "year": 2026,
-    "note": "Supporter SAR exclusive au marché chinois (CSV8C 255/207).",
-    "link": "/trainers/"
+    "link": "/trainers/#carmine_csv8c_255"
   }
 ]
 ```
 
-All fields are optional except `title`. `imageName` points to `cards/<name>.avif`
-(or use `"image": "https://…"` for an off-site image). `link` makes the item
-clickable — an internal path (`/trainers/`) or an external URL (opens in a new
-tab). `note` is a single free-text line (not translated). The block is hidden
-automatically when the file is empty (`[]`).
+All fields are optional except `title`. Put the set code in `code`, not in the
+title (they are shown on separate lines). `imageName` points to `cards/<name>.avif`
+(or use `"image": "https://…"` for an off-site image); when it's a catalogue card,
+its exclusivity tag (`CN ONLY`, `CN · TH`…) comes from the catalogue, otherwise
+from `languages`. `link` makes the item clickable — an internal path written for
+the English site (`/trainers/`, localised automatically on /fr/, /ja/…) or an
+external URL (opens in a new tab). `note` is kept for your own reference but is no
+longer displayed. The block is hidden automatically when the file is empty (`[]`).
+
+### Home page hero
+
+`data/hero.json` picks the 3 fanned cards on the yellow panel at the top of the
+home page, front card first, then the left and right ones:
+
+```json
+{ "cards": ["25_Pikachu_jpn_unp_207", "25_Pikachu_jpn_mcdemp_10", "25_Pikachu_jpn_vses3_42"] }
+```
+
+They must be catalogue cards (the build fails otherwise). The caption (Pokémon
+name + year range) and the tag are derived from them.
 
 **Deep-linking to a specific card.** Every card on a Pokémon page and on the
 Trainers page has an `id` equal to its `imageName`. So a `link` can point straight

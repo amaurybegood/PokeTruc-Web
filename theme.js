@@ -13,10 +13,15 @@ function applyTheme(theme) {
   else if (theme === 'light') root.setAttribute('data-theme', 'light');
   else root.removeAttribute('data-theme');
 
+  // Mobile menu: Light / Dark / System radios.
+  document.querySelectorAll('input[name="theme-choice"]').forEach((r) => {
+    r.checked = (r.value === theme);
+  });
+
   const btn = document.getElementById('theme-toggle');
   if (!btn) return;
-  btn.textContent = theme === 'dark' ? '☀️' : theme === 'light' ? '🌙' : '🌓';
-  // aria-label reflects current state (depends on i18n.js being loaded first).
+  // Icon (moon / sun) is switched in CSS from data-theme. aria-label reflects
+  // current state (depends on i18n.js being loaded first).
   const label = (typeof t === 'function')
     ? t('theme.' + theme)
     : ({ dark: 'Dark theme', light: 'Light theme', auto: 'Auto theme' })[theme];
@@ -36,6 +41,17 @@ function toggleTheme() {
 applyTheme(getTheme());
 const themeBtn = document.getElementById('theme-toggle');
 if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
+
+document.addEventListener('change', (e) => {
+  if (e.target.name !== 'theme-choice') return;
+  setTheme(e.target.value);
+  applyTheme(e.target.value);
+});
+
+// Mobile menu (native <dialog>: Esc, inert page and focus return come free).
+const siteMenu = document.getElementById('site-menu');
+document.getElementById('menu-open')?.addEventListener('click', () => siteMenu?.showModal());
+document.getElementById('menu-close')?.addEventListener('click', () => siteMenu?.close());
 
 document.addEventListener('click', (e) => {
   document.querySelectorAll('.lang-picker[open]').forEach((picker) => {
