@@ -468,7 +468,7 @@
     "lastmod": "2026-09-29"
   },
   "/pokemon/magikarp/": {
-    "hash": "d1c3f108a0a693bf14a344413cc554dfec712fbbac4a079033c642db8c762e7c",
+    "hash": "2df72a585d9967c0f937471efc770d29884c756fda4ebd7bf432619cfacba665",
     "lastmod": "2026-09-29"
   },
   "/pokemon/gyarados/": {
@@ -1268,7 +1268,7 @@
     "lastmod": "2026-09-29"
   },
   "/fr/pokemon/magikarp/": {
-    "hash": "3480700012cfc263d7e0685aa22ec89371be4439b1b49b547609e8d3baa2e514",
+    "hash": "3426a0c3205f280e9ae4bdd62eb6b44b66c80eb2be38b9bbd6210854e8f8ddab",
     "lastmod": "2026-09-29"
   },
   "/fr/pokemon/gyarados/": {
@@ -2068,7 +2068,7 @@
     "lastmod": "2026-09-29"
   },
   "/ja/pokemon/magikarp/": {
-    "hash": "d897f4955f2ec88950196b9eee5bd61563a52c9b079cf92b89509e2fe4169853",
+    "hash": "b8db050b25e2ab255f236ac6a1e63334dec8e31da35422d967c9f22e46f9cd13",
     "lastmod": "2026-09-29"
   },
   "/ja/pokemon/gyarados/": {
@@ -2868,7 +2868,7 @@
     "lastmod": "2026-09-29"
   },
   "/ko/pokemon/magikarp/": {
-    "hash": "2d2721dc9ad3e8760fa05d269078048739962f90c58949ca21ab6c9623fc5c1a",
+    "hash": "0716e31a86a661398dac766e5e6943712ceee666f7c7d1ff6477890672090544",
     "lastmod": "2026-09-29"
   },
   "/ko/pokemon/gyarados/": {
@@ -3668,7 +3668,7 @@
     "lastmod": "2026-09-29"
   },
   "/zh/pokemon/magikarp/": {
-    "hash": "fdd369a542c708714088b845c1c76eaacfbb9f5099e730de63f04cbb2f30c37c",
+    "hash": "0a404585c5528f7f264333b3b1351b7e75a210c9ad4b4d87fc6995f47f7044dc",
     "lastmod": "2026-09-29"
   },
   "/zh/pokemon/gyarados/": {
@@ -4000,23 +4000,23 @@
     "lastmod": "2026-09-29"
   },
   "/": {
-    "hash": "b777b56950cdba88b3879e956226652287e554d7cf267a09ffd4350edb45396f",
+    "hash": "d3e98e072922f248075a0b286b2975a24e267f9f60bbc94311c1b240973fa9d8",
     "lastmod": "2026-09-29"
   },
   "/fr/": {
-    "hash": "05daec830925d827e5b91a3c4286a50cec4fd6d641df18777f707cb68dd19224",
+    "hash": "c11ed6b9f0293e2572cae2cdfba758c60839c9e997a7ddc817e210472e23c888",
     "lastmod": "2026-09-29"
   },
   "/ja/": {
-    "hash": "1fcf3272739595b4e4f70a0e58e5d28047c832c312327bb63d5e20f4171e34bc",
+    "hash": "305076dc05b211204dbad0eb3c35470ac61265f0e79c5daa26c4fde40c588b15",
     "lastmod": "2026-09-29"
   },
   "/ko/": {
-    "hash": "ca49457e8004db9a92adfb785ddbc51cad3b418123637f3fa32b7465f7c3f0e3",
+    "hash": "b9d5e06b1f010a52f57f1f0f6b7c1a084e220e01da57a96aac65a998a70a3341",
     "lastmod": "2026-09-29"
   },
   "/zh/": {
-    "hash": "4f632cdc4d25dcff8cacfe0bf3c831de3751038ff84eb1a71615c705fb4d5e5d",
+    "hash": "4993c0608d01f1f3c14a4301ba87608064ec2012b3d903dd5ba29ee3950df72e",
     "lastmod": "2026-09-29"
   },
   "/info/": {
@@ -4040,23 +4040,23 @@
     "lastmod": "2026-09-29"
   },
   "/trainers/": {
-    "hash": "f09cff47e8b219f43fd02e4532fbc2d26d4699de8362fe662cb4109329776127",
+    "hash": "8b8a2a1284459e8c03e2330b578851e0117ac91d2623152495cb5fefa38af965",
     "lastmod": "2026-09-29"
   },
   "/fr/trainers/": {
-    "hash": "bfec0ca2a52d191c941e5b8f08337f07dfa464d1781b97b8b7896ee59dfe08b6",
+    "hash": "066dd75bad8fbbd7ffd6615d8db5428750ca46f0f11278d56bc555e8e22eefc9",
     "lastmod": "2026-09-29"
   },
   "/ja/trainers/": {
-    "hash": "cbbbe21c5cdc12f4e5597ce09417689320215bb09362169070527306e7f58677",
+    "hash": "3f337035d7903e448daf0468dcedb9f32caf2b8bb8e1a7044721d60b118e4889",
     "lastmod": "2026-09-29"
   },
   "/ko/trainers/": {
-    "hash": "b7cae35192ab80102419fb69d61e0d31cc76df7f6869ac54871855520f73acd4",
+    "hash": "b1ba3a116fe4218fdc62e1558339002ba661cdbca5e515e1717d668f11a22401",
     "lastmod": "2026-09-29"
   },
   "/zh/trainers/": {
-    "hash": "52d7ef53ab0c3baf10ed363664023bb1bea306065ad9038c4089ede89e921157",
+    "hash": "727686dfd20b9213cadf4f436b601f19c51ab34306cea59cf7cfee92894d35f3",
     "lastmod": "2026-09-29"
   }
 }

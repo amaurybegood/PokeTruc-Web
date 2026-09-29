@@ -1,6 +1,7 @@
 [
   {
-    "title": "Applin (CBB6C 1907)",
+    "title": "Applin",
+    "code": "CBB6C 1907",
     "set": "Gem pack 6",
     "imageName": "840_Applin_cn_cbb6c_1907",
     "languages": ["🇨🇳"],
@@ -9,7 +10,8 @@
     "link": "/pokemon/applin/#840_Applin_cn_cbb6c_1907"
   },
   {
-    "title": "Brock's Scouting (CSV10C 276)",
+    "title": "Brock's Scouting",
+    "code": "CSV10C 276",
     "set": "Chasing Glory Together",
     "imageName": "brock_csv10c_276",
     "languages": ["🇨🇳"],
@@ -18,7 +20,8 @@
     "link": "/trainers/#brock_csv10c_276"
   },
   {
-    "title": "Sylveon ex (CSV9.5 C 234)",
+    "title": "Sylveon ex",
+    "code": "CSV9.5C 234",
     "set": "Terastal Gathering",
     "imageName": "700_Sylveon_scn_csv95_234",
     "languages": ["🇨🇳"],
@@ -27,7 +30,8 @@
     "link": "/pokemon/sylveon/#700_Sylveon_scn_csv95_234"
   },
   {
-    "title": "Lisia's Appeal (CSV9C 257)",
+    "title": "Lisia's Appeal",
+    "code": "CSV9C 257",
     "set": "Stellar Crystal",
     "imageName": "lisia_scn_csv9_257",
     "languages": [
@@ -38,7 +42,8 @@
     "link": "/trainers/#lisia_scn_csv9_257"
   },
   {
-    "title": "Magikarp Promo 040/M-P Pokémon Mega Festa 2026",
+    "title": "Magikarp",
+    "code": "040/M-P",
     "set": "Pokémon Mega Festa 2026",
     "imageName": "129_Magikarp_kor_Promo_2026_Festival",
     "languages": ["🇰🇷"],
@@ -47,7 +52,8 @@
     "link": "/pokemon/magikarp/#129_Magikarp_kor_Promo_2026_Festival"
   },
   {
-    "title": "Carmine SAR (CSV8C 255/207)",
+    "title": "Carmine SAR",
+    "code": "CSV8C 255/207",
     "set": "Brilliant Illusions",
     "imageName": "carmine_csv8c_255",
     "languages": ["🇨🇳"],
