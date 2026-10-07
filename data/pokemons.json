@@ -2548,6 +2548,19 @@
     "researchStatus": "done"
   },
   {
+    "id": 777,
+    "name": {
+      "en": "Togedemaru",
+      "fr": "Togedemaru",
+      "jp": "トゲデマル",
+      "ko": "토게데마루",
+      "zh": "托戈德玛尔"
+    },
+    "imageName": "togedemaru",
+    "generation": 7,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 807,
     "name": {
       "en": "Zeraora",

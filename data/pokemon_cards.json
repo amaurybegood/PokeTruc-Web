@@ -20391,5 +20391,25 @@
       }
     },
     "pricesDate": "2026-09-21"
+  },
+  {
+    "pokemonId": 777,
+    "name": "Ash vs Team Rocket Deck Kit",
+    "imageName": "777_Togedemaru_jpn_smd_6",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2017,
+    "artist": "Yasuda Shuhei",
+    "setNumber": "SMD 6",
+    "series": "Sun & Moon",
+    "releaseDate": "2017-04-21",
+    "energyType": "Lightning",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ]
   }
 ]
