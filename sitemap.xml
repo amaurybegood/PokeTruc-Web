@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://poketruc.com/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -16,7 +16,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -40,7 +40,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -52,7 +52,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/"/>
@@ -9024,7 +9024,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/pokemon/mewtwo/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mewtwo/"/>
@@ -9044,7 +9044,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/mewtwo/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mewtwo/"/>
@@ -9056,7 +9056,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/mewtwo/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mewtwo/"/>
@@ -9068,7 +9068,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/mewtwo/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mewtwo/"/>
@@ -9080,7 +9080,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/mewtwo/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/mewtwo/"/>
@@ -10126,7 +10126,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/pokemon/treecko/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/treecko/"/>
@@ -10139,7 +10139,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/treecko/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/treecko/"/>
@@ -10151,7 +10151,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/treecko/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/treecko/"/>
@@ -10163,7 +10163,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/treecko/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/treecko/"/>
@@ -10175,7 +10175,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/treecko/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/treecko/"/>
@@ -10315,7 +10315,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/pokemon/wurmple/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/wurmple/"/>
@@ -10328,7 +10328,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/wurmple/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/wurmple/"/>
@@ -10340,7 +10340,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ja/pokemon/wurmple/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/wurmple/"/>
@@ -10352,7 +10352,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/ko/pokemon/wurmple/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/wurmple/"/>
@@ -10364,7 +10364,7 @@
   </url>
   <url>
     <loc>https://poketruc.com/zh/pokemon/wurmple/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://poketruc.com/pokemon/wurmple/"/>
