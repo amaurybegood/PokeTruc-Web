@@ -1,5 +1,35 @@
 [
   {
+    "title": "Misty's Psyduck",
+    "code": "CBB7C 0307",
+    "set": "Gem Pack Vol. 7",
+    "imageName": "54_Psyduck_scn_cbb7c_0307",
+    "languages": ["🇨🇳"],
+    "year": 2026,
+    "note": "Chinese-exclusive Illustration Rare",
+    "link": "/pokemon/psyduck/#54_Psyduck_scn_cbb7c_0307"
+  },
+  {
+    "title": "N's Plan",
+    "code": "CSV10.5C 173/086",
+    "set": "Black Bolt",
+    "imageName": "n_csv105c_173",
+    "languages": ["🇨🇳"],
+    "year": 2026,
+    "note": "Chinese-exclusive Supporter SAR",
+    "link": "/trainers/#n_csv105c_173"
+  },
+  {
+    "title": "Hilda",
+    "code": "CSV10.6C 173/086",
+    "set": "White Flare",
+    "imageName": "hilda_csv106c_173",
+    "languages": ["🇨🇳"],
+    "year": 2026,
+    "note": "Chinese-exclusive Supporter SAR",
+    "link": "/trainers/#hilda_csv106c_173"
+  },
+  {
     "title": "Applin",
     "code": "CBB6C 1907",
     "set": "Gem pack 6",
@@ -28,37 +58,5 @@
     "year": 2026,
     "note": "Chinese-exclusive card",
     "link": "/pokemon/sylveon/#700_Sylveon_scn_csv95_234"
-  },
-  {
-    "title": "Lisia's Appeal",
-    "code": "CSV9C 257",
-    "set": "Stellar Crystal",
-    "imageName": "lisia_scn_csv9_257",
-    "languages": [
-        "🇨🇳",
-        "🇹🇭"],
-    "year": 2026,
-    "note": "Chinese & Thai exclusive Supporter card (丹瑜)",
-    "link": "/trainers/#lisia_scn_csv9_257"
-  },
-  {
-    "title": "Magikarp",
-    "code": "040/M-P",
-    "set": "Pokémon Mega Festa 2026",
-    "imageName": "129_Magikarp_kor_Promo_2026_Festival",
-    "languages": ["🇰🇷"],
-    "year": 2026,
-    "note": "Korean-exclusive",
-    "link": "/pokemon/magikarp/#129_Magikarp_kor_Promo_2026_Festival"
-  },
-  {
-    "title": "Carmine SAR",
-    "code": "CSV8C 255/207",
-    "set": "Brilliant Illusions",
-    "imageName": "carmine_csv8c_255",
-    "languages": ["🇨🇳"],
-    "year": 2026,
-    "note": "Chinese-exclusive Supporter card (丹瑜)",
-    "link": "/trainers/#carmine_csv8c_255"
   }
 ]

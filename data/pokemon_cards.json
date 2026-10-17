@@ -8474,6 +8474,21 @@
     "pricesDate": "2026-09-21"
   },
   {
+    "pokemonId": 54,
+    "name": "Gem Pack Vol. 7",
+    "imageName": "54_Psyduck_scn_cbb7c_0307",
+    "rarity": "Illustration Rare",
+    "description": "https://www.pokebeach.com/2026/10/gem-pack-vol-7-to-release-in-china-featuring-exclusive-mistys-psyduck",
+    "languages": ["🇨🇳"],
+    "year": 2026,
+    "artist": "Cona Nitanda",
+    "setNumber": "CBB7C 0307",
+    "series": "Scarlet & Violet",
+    "releaseDate": "2026-11-06",
+    "energyType": "Water",
+    "stage": "basic"
+  },
+  {
     "pokemonId": 55,
     "name": "Vending Machine Expansion Sheet 3: Green",
     "imageName": "55_Golduck_jpn_vses3_13",
