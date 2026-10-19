@@ -15,6 +15,9 @@ function escapeHtml(s) {
 
 const MARKETS = [['cardmarket', 'Cardmarket', 'EUR'], ['tcgplayer', 'TCGplayer', 'USD'], ['ebay', 'eBay', 'USD']];
 const STRIP_SIZE = 11; // filmstrip thumbnails around the current card
+// Foil cards get a rainbow sheen in the viewer on top of the plain glare.
+// ponytail: name match on rarity + variants; add a `foil` field to the data if it misfires.
+const FOIL = /holo|cosmos|rainbow|radiant|secret|hyper|ultra|illustration rare|double rare|\bsar\b/i;
 
 const ICON = {
   close: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
@@ -151,7 +154,7 @@ function buildViewer(el) {
     <div class="vw-main">
       <div class="vw-stage">
         <button type="button" class="vw-round vw-nav" data-step="-1" aria-label="${escapeHtml(t('viewer.prev'))}">${ICON.prev}</button>
-        <img class="vw-img" alt="" width="480" height="671" draggable="false">
+        <div class="vw-holo"><img class="vw-img" alt="" width="480" height="671" draggable="false"></div>
         <button type="button" class="vw-round vw-nav" data-step="1" aria-label="${escapeHtml(t('viewer.next'))}">${ICON.next}</button>
       </div>
       <div class="vw-info"></div>
@@ -199,6 +202,33 @@ function buildViewer(el) {
     if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) showCard(vw.index + (dx < 0 ? 1 : -1));
   });
 
+  // Holo: with a mouse the card tilts toward the pointer and catches the light;
+  // every card that loads gets one sheen sweep (touch included).
+  const holo = el.querySelector('.vw-holo');
+  const still = matchMedia('(prefers-reduced-motion: reduce)');
+  holo.addEventListener('pointermove', e => {
+    if (e.pointerType !== 'mouse' || still.matches) return;
+    // Rotation keeps the centre in place, so the rect centre + untransformed size give a steady position.
+    const r = holo.getBoundingClientRect();
+    const x = Math.min(1, Math.max(0, 0.5 + (e.clientX - r.left - r.width / 2) / holo.offsetWidth));
+    const y = Math.min(1, Math.max(0, 0.5 + (e.clientY - r.top - r.height / 2) / holo.offsetHeight));
+    holo.style.setProperty('--rx', `${(x - 0.5) * 18}deg`);
+    holo.style.setProperty('--ry', `${(0.5 - y) * 18}deg`);
+    holo.style.setProperty('--mx', `${x * 100}%`);
+    holo.style.setProperty('--my', `${y * 100}%`);
+    holo.classList.add('is-lit');
+  });
+  holo.addEventListener('pointerleave', () => {
+    holo.classList.remove('is-lit');
+    ['--rx', '--ry', '--mx', '--my'].forEach(p => holo.style.removeProperty(p));
+  });
+  holo.querySelector('img').addEventListener('load', () => {
+    holo.classList.remove('is-sweep');
+    void holo.offsetWidth; // restart the animation
+    holo.classList.add('is-sweep');
+  });
+  holo.addEventListener('animationend', () => holo.classList.remove('is-sweep'));
+
   el.addEventListener('close', () => {
     el.querySelector('.vw-img').removeAttribute('src');
     vw.opts.onClose?.(vw.opts.list[vw.index]);
@@ -223,6 +253,7 @@ function showCard(i, fromStrip = false) {
   const img = el.querySelector('.vw-img');
   img.src = `/cards/${card.imageName}.avif`;
   img.alt = cardAlt(card, who);
+  img.parentElement.classList.toggle('is-foil', FOIL.test([card.rarity, ...(card.variants || [])].join(' ')));
   el.querySelectorAll('.vw-nav, .vw-strip').forEach(b => { b.hidden = n < 2; });
 
   const [price] = marketPrices(card);

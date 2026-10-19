@@ -892,7 +892,7 @@
   },
   {
     "pokemonId": 6,
-    "name": "Special Delivery Charizard - Sword & Shield Promos",
+    "name": "Sword & Shield Promos",
     "imageName": "6_Charizard_swshp_SWSH075",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Special_Delivery_Charizard_(SWSH_Promo_75)",
@@ -2561,7 +2561,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pikachu Promo 227/S-P Stamp Box, Sword & Shield Promos",
+    "name": "Sword & Shield Promos",
+    "releaseProduct": "Pokémon Stamp Box",
     "imageName": "25_Pikachu_jpn_swshp_227",
     "rarity": "Promo",
     "description": "The illustration pays homage to the 17th century nikuhitsu-ga, a painting in the ukiyo-e art style, Beauty Looking Back by Hishikawa Moronobu. The image was first used on Japanese stamps issued in 1948. https://bulbapedia.bulbagarden.net/wiki/Pikachu_(S-P_Promo_227)",
@@ -4831,7 +4832,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pretend Boss Pikachu, Sun & Moon Promos",
+    "name": "Sun & Moon Promos",
+    "releaseProduct": "Pretend Boss Pikachu",
     "imageName": "25_Pikachu_jpn_smp_197",
     "rarity": "Promo",
     "description": "",
@@ -4864,7 +4866,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pretend Boss Pikachu, Sun & Moon Promos",
+    "name": "Sun & Moon Promos",
+    "releaseProduct": "Pretend Boss Pikachu",
     "imageName": "25_Pikachu_jpn_smp_196",
     "rarity": "Promo",
     "description": "",
@@ -4897,7 +4900,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pretend Boss Pikachu, Sun & Moon Promos",
+    "name": "Sun & Moon Promos",
+    "releaseProduct": "Pretend Boss Pikachu",
     "imageName": "25_Pikachu_jpn_smp_195",
     "rarity": "Promo",
     "description": "",
@@ -4930,7 +4934,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pretend Boss Pikachu, Sun & Moon Promos",
+    "name": "Sun & Moon Promos",
+    "releaseProduct": "Pretend Boss Pikachu",
     "imageName": "25_Pikachu_jpn_smp_194",
     "rarity": "Promo",
     "description": "",
@@ -4963,7 +4968,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pretend Boss Pikachu, Sun & Moon Promos",
+    "name": "Sun & Moon Promos",
+    "releaseProduct": "Pretend Boss Pikachu",
     "imageName": "25_Pikachu_jpn_smp_193",
     "rarity": "Promo",
     "description": "",
@@ -4996,7 +5002,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pretend Boss Pikachu, Sun & Moon Promos",
+    "name": "Sun & Moon Promos",
+    "releaseProduct": "Pretend Boss Pikachu",
     "imageName": "25_Pikachu_jpn_smp_192",
     "rarity": "Promo",
     "description": "",
@@ -5029,7 +5036,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pretend Boss Pikachu, Sun & Moon Promos",
+    "name": "Sun & Moon Promos",
+    "releaseProduct": "Pretend Boss Pikachu",
     "imageName": "25_Pikachu_jpn_smp_191",
     "rarity": "Promo",
     "description": "",
@@ -5519,7 +5527,7 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pikachu Promo Mcdonald's 020/M-P 2025 MEGA Promos",
+    "name": "MEGA Promos",
     "imageName": "25_Pikachu_jpn_mp_20",
     "rarity": "Promo",
     "description": "",
@@ -6270,7 +6278,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 101)",
+    "name": "Scarlet & Violet Promos",
+    "releaseProduct": "Pikachu Wearing a Batik Shirt",
     "imageName": "25_SV-P_ID_101",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
@@ -6283,7 +6292,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 154)",
+    "name": "Scarlet & Violet Promos",
+    "releaseProduct": "Pikachu Wearing a Batik Shirt",
     "imageName": "25_SV-P_ID_154",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
@@ -6296,7 +6306,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 155)",
+    "name": "Scarlet & Violet Promos",
+    "releaseProduct": "Pikachu Wearing a Batik Shirt",
     "imageName": "25_SV-P_ID_155",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
@@ -6309,7 +6320,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pikachu Wearing a Batik Shirt (SV-P/ID 190)",
+    "name": "Scarlet & Violet Promos",
+    "releaseProduct": "Pikachu Wearing a Batik Shirt",
     "imageName": "25_SV-P_ID_190",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_Wearing_a_Batik_Shirt_(SV-P_Promo_101)",
@@ -6322,7 +6334,9 @@
   },
   {
     "pokemonId": 25,
-    "name": "Taipei's Pikachu (SV-P Promo 57)",
+    "name": "Scarlet & Violet Promos",
+    "setNumber": "SVP 57",
+    "releaseProduct": "Taipei's Pikachu",
     "imageName": "25_57_SV_P_Pokemon_Chinese_Promo",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Taipei's_Pikachu_(SV-P_Promo_57)",
@@ -6334,7 +6348,9 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pikachu #153/SV-P Pokemon Chinese Promo 5th Anniversary",
+    "name": "Scarlet & Violet Promos",
+    "setNumber": "SVP 153",
+    "releaseProduct": "5th Anniversary",
     "imageName": "25_153_SV_P_Pokemon_Chinese_Promo",
     "rarity": "Promo",
     "description": "",
@@ -6544,7 +6560,8 @@
   },
   {
     "pokemonId": 25,
-    "name": "Pikachu 001/SM-P",
+    "name": "Sun & Moon Promos",
+    "setNumber": "SMP 1",
     "imageName": "25_Pikachu_001SM_P",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(SM-P_Promo_1)",
@@ -6657,7 +6674,7 @@
   },
   {
     "pokemonId": 25,
-    "name": "Detective Pikachu (SV-P 098) - Scarlet & Violet Promos",
+    "name": "Scarlet & Violet Promos",
     "imageName": "25_Pikachu_jpn_svp_98",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Detective_Pikachu_(SV-P_Promo_98)",
@@ -13589,7 +13606,9 @@
   },
   {
     "pokemonId": 129,
-    "name": "Magikarp promo card (040/M-P), Pokémon Mega Festa 2026",
+    "name": "MEGA Promos",
+    "setNumber": "MP 40",
+    "releaseProduct": "Pokémon Mega Festa 2026",
     "imageName": "129_Magikarp_kor_Promo_2026_Festival",
     "rarity": "Promo",
     "description": "https://www.pokebeach.com/2026/05/pokemon-mega-festa-shut-down-in-korea-after-40000-crowd-turns-chaotic-over-magikarp-promo",
@@ -14043,7 +14062,8 @@
   },
   {
     "pokemonId": 132,
-    "name": "Ditto Korean (SV-P Promo 173)",
+    "name": "Scarlet & Violet Promos",
+    "setNumber": "SVP 173",
     "imageName": "132_Ditto_SVPromo173",
     "rarity": "Promo",
     "description": "This card was given out as part of the Ditto QR Stamp Rally during the Pokémon Town 2025 event held as part of the METAMONG PROJECT between April 25 and May 18, 2025, as long as stocks lasted. Attendees would receive this card for visiting at least one of the six locations announced for the rally, and would also receive Pokémon Town 2025 stickers depicting a banner similar to the illustration on this card for visiting all six locations. This card features the METAMONG PROJECT logo. https://bulbapedia.bulbagarden.net/wiki/Ditto_(SV-P_Promo_173)",
@@ -16527,7 +16547,8 @@
   },
   {
     "pokemonId": 151,
-    "name": "Mew CoroCoro Unnumbered Promos",
+    "name": "Unnumbered Promos",
+    "releaseProduct": "CoroCoro Comic",
     "imageName": "151_Mew_jpn_unp_190",
     "rarity": "Promo",
     "description": "In Japan, this card was available as an Unnumbered Promotional card on an insert in the May 2001 issue of CoroCoro Comic, released on April 15, 2001. https://bulbapedia.bulbagarden.net/wiki/Shining_Mew_(CoroCoro_promo)",
@@ -16772,7 +16793,7 @@
   },
   {
     "pokemonId": 700,
-    "name": "Yu Nagaba x Pokémon Card Game - Scarlet & Violet Promos",
+    "name": "Scarlet & Violet Promos",
     "imageName": "700_Sylveon_jpn_svp_70",
     "rarity": "Promo",
     "description": "",
@@ -17055,7 +17076,7 @@
   },
   {
     "pokemonId": 251,
-    "name": " PokéParkPCG-P Promos",
+    "name": "PokéPark PCG-P Promos",
     "imageName": "251_Celebi_jpn_pcgp_44",
     "rarity": "Promo",
     "description": "",
@@ -17562,7 +17583,7 @@
   },
   {
     "pokemonId": 992,
-    "name": "Iron Hands ex - Arcane Truth (csv6 152)",
+    "name": "Arcane Truth",
     "imageName": "992_Iron Hands_scn_csv6_152",
     "rarity": "No Rarity",
     "description": "https://www.pokebeach.com/2026/04/exclusive-lisias-appeal-to-release-in-chinese-starry-crystal-set",
@@ -17593,7 +17614,7 @@
   },
   {
     "pokemonId": 925,
-    "name": "Maushold ex - Bonus Round (csv4 158)",
+    "name": "Bonus Round",
     "imageName": "925_Maushold_scn_csv4_158",
     "rarity": "No Rarity",
     "description": "https://www.pokebeach.com/2025/06/exclusive-maushold-ex-gholdengo-ex-and-rika-secret-rares-in-chinese-bonus-turn-set",
@@ -17624,7 +17645,7 @@
   },
   {
     "pokemonId": 1000,
-    "name": "Gholdengo ex - Bonus Round (csv4 162)",
+    "name": "Bonus Round",
     "imageName": "1000_Gholdengo_scn_csv4_162",
     "rarity": "Hyper Rare",
     "description": "https://www.pokebeach.com/2025/06/exclusive-maushold-ex-gholdengo-ex-and-rika-secret-rares-in-chinese-bonus-turn-set",
@@ -19226,7 +19247,9 @@
   },
   {
     "pokemonId": 807,
-    "name": "Zeraora (SM-P 126) Team Up",
+    "name": "Sun & Moon Promos",
+    "setNumber": "SMP 126",
+    "releaseProduct": "Team Up",
     "imageName": "807_Zeraora_SMPromo126",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Zeraora_(Team_Up_52)",
@@ -19238,7 +19261,7 @@
   },
   {
     "pokemonId": 845,
-    "name": "Cramorant Promo 226/S-P Stamp Box, Sword & Shield Promos",
+    "name": "Sword & Shield Promos",
     "imageName": "845_Cramorant_jpn_swshp_226",
     "rarity": "Promo",
     "description": "The illustration pays homage to the 19th century ukiyo-e Wild Geese Flying under the Full Moon by Utagawa Hiroshige. The image was first used on Japanese stamps issued in 1949. https://bulbapedia.bulbagarden.net/wiki/Cramorant_(S-P_Promo_226)",
@@ -19270,7 +19293,9 @@
   },
   {
     "pokemonId": 666,
-    "name": "Vivillon Japanese Elegant Pattern (XY 17)",
+    "name": "XY",
+    "setNumber": "XY 17",
+    "releaseProduct": "Elegant Pattern",
     "imageName": "666_XY_17_Elegant_Japanese",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
@@ -19282,7 +19307,9 @@
   },
   {
     "pokemonId": 666,
-    "name": "Vivillon English High Plains Pattern (XY 17)",
+    "name": "XY",
+    "setNumber": "XY 17",
+    "releaseProduct": "High Plains Pattern",
     "imageName": "666_XY_17_High_Plains_English",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
@@ -19294,7 +19321,9 @@
   },
   {
     "pokemonId": 666,
-    "name": "Vivillon Italian/Spanish Marine Pattern (XY 17)",
+    "name": "XY",
+    "setNumber": "XY 17",
+    "releaseProduct": "Marine Pattern",
     "imageName": "666_XY_17_Marine_Italian_Spanish",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
@@ -19308,7 +19337,9 @@
   },
   {
     "pokemonId": 666,
-    "name": "Vivillon Portuguese Savanna Pattern (XY 17)",
+    "name": "XY",
+    "setNumber": "XY 17",
+    "releaseProduct": "Savanna Pattern",
     "imageName": "666_XY_17_Savanna_Portuguese",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
@@ -19320,7 +19351,9 @@
   },
   {
     "pokemonId": 666,
-    "name": "Vivillon Russian Icy Snow Pattern (XY 17)",
+    "name": "XY",
+    "setNumber": "XY 17",
+    "releaseProduct": "Icy Snow Pattern",
     "imageName": "666_XY_17_Snow_Russian",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Vivillon_(XY_17)",
@@ -19549,7 +19582,7 @@
   },
   {
     "pokemonId": 399,
-    "name": "Special Delivery Bidoof - Sword & Shield Promos",
+    "name": "Sword & Shield Promos",
     "imageName": "399_Bidoof_swshp_SWSH177",
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Special_Delivery_Bidoof_(SWSH_Promo_177)",
@@ -19581,7 +19614,7 @@
   },
   {
     "pokemonId": 840,
-    "name": "Applin (CBB6C 1907)",
+    "name": "Gem Pack Vol. 6",
     "imageName": "840_Applin_cn_cbb6c_1907",
     "rarity": "",
     "description": "https://www.pokebeach.com/2026/07/gem-pack-vol-6-to-release-in-china-featuring-apple-pokemon",
@@ -19590,7 +19623,7 @@
     ],
     "year": 2026,
     "artist": "Jiro Sasumo",
-    "setNumber": "CN_CBB6C 1907"
+    "setNumber": "CBB6C 1907"
   },
   {
     "pokemonId": 386,

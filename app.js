@@ -94,7 +94,7 @@ async function loadData() {
         <button type="button" id="retry-load" class="btn btn-solid">${t('retry')}</button>
       </div>`;
     document.getElementById('retry-load').addEventListener('click', () => {
-      loader.innerHTML = '<div class="loader-spinner" aria-label="Loading"></div>';
+      loader.innerHTML = '<div class="loader-spinner" aria-hidden="true"></div>';
       loadData();
     });
   }
@@ -111,14 +111,20 @@ function renderLangFilter() {
   for (const c of cards) { const k = exclusivityKey(c); counts[k] = (counts[k] || 0) + 1; }
   // Sort by card count (desc); FLAG_ORDER breaks ties (stable sort).
   const flags = FLAG_ORDER.filter(f => counts[f]).sort((a, b) => counts[b] - counts[a]);
+  // Single-language groups first, then the multi-language regions after a divider.
+  const REGIONS = ['🌍', '🏯'];
+  const langs = flags.filter(f => !REGIONS.includes(f));
+  const regions = flags.filter(f => REGIONS.includes(f));
 
   const chip = (iso, label, n) =>
     `<button type="button" class="chip" data-iso="${iso}">${label} <span class="chip-count">${n}</span></button>`;
+  const flagChip = f => chip(FLAG_TO_ISO[f],
+    `<span class="chip-flag" aria-hidden="true">${f}</span>${escapeHtml(chipLabel(f))}`, counts[f]);
   container.innerHTML = [
     chip('', escapeHtml(t('filter.all')), cards.length),
-    ...flags.map(f => chip(FLAG_TO_ISO[f],
-      `<span class="chip-flag" aria-hidden="true">${f}</span>${escapeHtml(chipLabel(f))}`,
-      counts[f])),
+    ...langs.map(flagChip),
+    regions.length ? '<span class="chip-sep" aria-hidden="true"></span>' : '',
+    ...regions.map(flagChip),
   ].join('');
 
   container.querySelectorAll('.chip[data-iso]').forEach(btn => {
@@ -237,7 +243,7 @@ function genSection(gen, members, flag, prefix) {
   section.className = 'gen-section';
   const range = GEN_RANGES[gen];
   section.innerHTML = `<div class="gen-head">
-      <h3 id="gen-${gen}">${escapeHtml(regionName(gen) ? `${genLabel(gen)} · ${regionName(gen)}` : genLabel(gen))}</h3>
+      <h3 id="gen-${gen}"${document.body.classList.contains('searching') ? ' role="heading" aria-level="2"' : ''}>${escapeHtml(regionName(gen) ? `${genLabel(gen)} · ${regionName(gen)}` : genLabel(gen))}</h3>
       ${range ? `<span class="gen-range">#${pad3(range[0])}–#${pad3(range[1])}</span>` : ''}
     </div>`;
   const tiles = document.createElement('div');
@@ -277,19 +283,19 @@ function renderCardClient(card) {
   const pName = p ? pokemonName(p) : '';
   const year = cardYear(card);
   const alt = `${pName} — ${card.name}${year ? ` (${year})` : ''}`;
-  const code = [card.setNumber, year].filter(Boolean).join(' · ');
+  const code = [card.setNumber, year].filter(Boolean).join('\u00a0·\u00a0');
   return `
     <div class="card-item card-tile" id="${card.imageName}">
       <button type="button" class="card-zoom">
         <img src="/cards/thumbs/${card.imageName}.avif" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="480" height="671">
       </button>
       <div class="card-tile-cap">
-        <div class="card-tile-top">
-          <span class="card-tile-name">${escapeHtml(pName)}</span>
+        <span class="card-tile-name">${escapeHtml(pName)}</span>
+        <span class="card-tile-meta">
           <span class="tag" aria-hidden="true">${escapeHtml(exclusivityTag(card))}</span>
           <span class="visually-hidden">${escapeHtml(flagLabel(exclusivityKey(card)))}</span>
-        </div>
-        ${code ? `<span class="card-tile-code">${escapeHtml(code)}</span>` : ''}
+          ${code ? `<span class="card-tile-code">${escapeHtml(code)}</span>` : ''}
+        </span>
         <span class="card-tile-set">${escapeHtml(card.name)}</span>
       </div>
     </div>`;
@@ -359,6 +365,10 @@ function applyFilter() {
   const flag = activeFlag();
   // A search turns the home page into a results page (hero and news hidden).
   document.body.classList.toggle('searching', !!q);
+  // Hero (and its h1) is hidden in these modes: the browse title stands in as the page heading.
+  const title = document.getElementById('browse-title');
+  if (q || viewMode === 'cards') { title.setAttribute('role', 'heading'); title.setAttribute('aria-level', '1'); }
+  else { title.removeAttribute('role'); title.removeAttribute('aria-level'); }
 
   const pokemonMatches = p =>
     normalize(p.name.en).includes(q)

@@ -66,3 +66,13 @@ document.addEventListener('keydown', (e) => {
   picker.open = false;
   picker.querySelector('summary')?.focus();
 });
+
+// Halloween, 15–31 Oct: Mimiqui replaces Ditto in the in-page logo (favicon and
+// og:image untouched). ?halloween=1 forces it on outside the season, ?halloween=0 off.
+(() => {
+  const now = new Date();
+  const param = new URLSearchParams(location.search).get('halloween');
+  const season = now.getMonth() === 9 && now.getDate() >= 15;
+  if (param === '0' || (!season && param !== '1')) return;
+  document.querySelectorAll('img[src="/logo.webp"]').forEach((img) => { img.src = '/logo-halloween.webp'; });
+})();

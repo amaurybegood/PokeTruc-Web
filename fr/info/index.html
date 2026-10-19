@@ -9,9 +9,10 @@
   <meta name="description" content="À propos de PokéTruc : un catalogue créé par un fan, recensant les cartes Pokémon TCG aux illustrations exclusives à une seule langue. Gratuit, sans publicité.">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=59">
+  <link rel="preload" as="style" href="/style.css?v=75">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
   <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="142px" type="image/webp">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage-grotesque-latin-800.woff2" crossorigin>
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
 
@@ -38,7 +39,7 @@
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/info/">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/style.css?v=59">
+  <link rel="stylesheet" href="/style.css?v=75">
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Pokédex","item":"https://poketruc.com/fr/"},{"@type":"ListItem","position":2,"name":"Info","item":"https://poketruc.com/fr/info/"}]},{"@type":"FAQPage","inLanguage":"fr","mainEntity":[{"@type":"Question","name":"Qu'est-ce qu'une carte Pokémon exclusive à une langue ?","acceptedAnswer":{"@type":"Answer","text":"Une carte du JCC Pokémon dont l'illustration n'a été imprimée que dans une seule langue. Par exemple une promo distribuée uniquement dans des magazines japonais, ou une carte d'un set du marché chinois jamais sortie ailleurs."}},{"@type":"Question","name":"Pourquoi certaines cartes Pokémon n'existent-elles qu'en japonais ?","acceptedAnswer":{"@type":"Answer","text":"Le Japon reçoit de nombreuses cartes promotionnelles liées à des magazines, distributeurs automatiques, boutiques et événements locaux. Beaucoup de ces promos n'ont jamais été rééditées pour d'autres marchés : leur illustration n'existe que sur la carte japonaise."}},{"@type":"Question","name":"Que signifient « exclusivité occidentale » et « exclusivité asiatique » ?","acceptedAnswer":{"@type":"Answer","text":"Une carte en exclusivité occidentale est sortie dans des langues occidentales (anglais, allemand, français, italien, espagnol…) mais jamais au Japon ni en Asie — par exemple le set L'appel des légendes. Une exclusivité asiatique, c'est l'inverse : sortie dans une ou plusieurs langues asiatiques mais jamais en occident."}},{"@type":"Question","name":"Combien de cartes exclusives PokéTruc recense-t-il ?","acceptedAnswer":{"@type":"Answer","text":"PokéTruc recense actuellement 716 illustrations de cartes exclusives à une langue ou une région, réparties sur 201 Pokémon, publiées de 1996 à 2026. Le catalogue est mis à jour au fil des sorties et découvertes."}},{"@type":"Question","name":"PokéTruc est-il un site officiel Pokémon ?","acceptedAnswer":{"@type":"Answer","text":"Non. PokéTruc est un catalogue non officiel, fait par un fan, gratuit et sans publicité. Pokémon et les noms des personnages Pokémon sont des marques de Nintendo, Creatures Inc. et GAME FREAK inc."}},{"@type":"Question","name":"Puis-je aider à corriger une erreur ou ajouter des cartes ou des Pokémon manquants ?","acceptedAnswer":{"@type":"Answer","text":"Oui, toute aide est la bienvenue. Si vous repérez une erreur, connaissez une carte exclusive absente du catalogue ou souhaitez qu'un Pokémon soit ajouté, contactez-moi sur Reddit (u/Begooderrr), par e-mail (poketruc@icloud.com) ou en ouvrant une issue sur le projet GitHub — voir les sections Contact et Code source ci-dessous."}}]}]}</script>
 </head>
@@ -123,8 +124,7 @@
         </div>
       </div>
 
-      <section id="about" class="info-about" aria-labelledby="about-title">
-        <h2 id="about-title">À propos</h2>
+      <section id="about" class="info-about">
         <p>Ce site est développé pour le fun, et aussi à des fins d'apprentissage (n'étant pas développeur, c'est un petit défi pour moi). C'est pour cela qu'il est très simple et basique.</p>
         <p>Son but est de répertorier toutes les cartes Pokémon TCG ayant des illustrations uniques. Par unique, j'entends qui n'est disponible que dans une seule langue (japonais, anglais, chinois ou autre) ou que dans une seule région (par exemple les sets occidentaux comme L'appel des légendes ou My First Battle, jamais sortis au Japon). C'est le genre de carte que j'aime bien collectionner.</p>
         <p>Il est entièrement gratuit et sans publicité.</p>
@@ -135,27 +135,27 @@
       <section id="faq" aria-labelledby="faq-title">
         <h2 id="faq-title">Questions fréquentes</h2>
         <div class="faq">
-        <details open>
+        <details id="faq-1" open>
           <summary>Qu'est-ce qu'une carte Pokémon exclusive à une langue ?<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
           <p>Une carte du JCC Pokémon dont l'illustration n'a été imprimée que dans une seule langue. Par exemple une promo distribuée uniquement dans des magazines japonais, ou une carte d'un set du marché chinois jamais sortie ailleurs.</p>
         </details>
-        <details>
+        <details id="faq-2">
           <summary>Pourquoi certaines cartes Pokémon n'existent-elles qu'en japonais ?<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
           <p>Le Japon reçoit de nombreuses cartes promotionnelles liées à des magazines, distributeurs automatiques, boutiques et événements locaux. Beaucoup de ces promos n'ont jamais été rééditées pour d'autres marchés : leur illustration n'existe que sur la carte japonaise.</p>
         </details>
-        <details>
+        <details id="faq-3">
           <summary>Que signifient « exclusivité occidentale » et « exclusivité asiatique » ?<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
           <p>Une carte en exclusivité occidentale est sortie dans des langues occidentales (anglais, allemand, français, italien, espagnol…) mais jamais au Japon ni en Asie — par exemple le set L'appel des légendes. Une exclusivité asiatique, c'est l'inverse : sortie dans une ou plusieurs langues asiatiques mais jamais en occident.</p>
         </details>
-        <details>
+        <details id="faq-4">
           <summary>Combien de cartes exclusives PokéTruc recense-t-il ?<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
           <p>PokéTruc recense actuellement 716 illustrations de cartes exclusives à une langue ou une région, réparties sur 201 Pokémon, publiées de 1996 à 2026. Le catalogue est mis à jour au fil des sorties et découvertes.</p>
         </details>
-        <details>
+        <details id="faq-5">
           <summary>PokéTruc est-il un site officiel Pokémon ?<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
           <p>Non. PokéTruc est un catalogue non officiel, fait par un fan, gratuit et sans publicité. Pokémon et les noms des personnages Pokémon sont des marques de Nintendo, Creatures Inc. et GAME FREAK inc.</p>
         </details>
-        <details>
+        <details id="faq-6">
           <summary>Puis-je aider à corriger une erreur ou ajouter des cartes ou des Pokémon manquants ?<svg class="group-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
           <p>Oui, toute aide est la bienvenue. Si vous repérez une erreur, connaissez une carte exclusive absente du catalogue ou souhaitez qu'un Pokémon soit ajouté, contactez-moi sur Reddit (u/Begooderrr), par e-mail (poketruc@icloud.com) ou en ouvrant une issue sur le projet GitHub — voir les sections Contact et Code source ci-dessous.</p>
         </details>
@@ -205,17 +205,22 @@
 
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="f7f7d1c9-87f5-4b52-8f20-b6110f143513"></script>
-  <script>window.DATA_V='14bc3197';</script>
-  <script src="/i18n.js?v=35"></script>
-  <script src="/theme.js?v=35"></script>
-  <script src="/viewer.js?v=35"></script>
-  <script src="/search.js?v=35"></script>
-  <script src="/backtotop.js?v=35"></script>
+  <script>window.DATA_V='6ebdc72b';</script>
+  <script src="/i18n.js?v=53"></script>
+  <script src="/theme.js?v=53"></script>
+  <script src="/viewer.js?v=53"></script>
+  <script src="/search.js?v=53"></script>
+  <script src="/backtotop.js?v=53"></script>
+  <script src="/snow.js?v=53"></script>
   <script>
     // "On this page": mark the last section whose top passed 30% of the
     // viewport (the first one when two share a row; the last at page bottom;
     // the one just clicked while it is on screen).
     (function () {
+      // #faq-N (the "?" next to the exclusivity filters) opens that question.
+      function openFaq() { var d = location.hash && document.querySelector(location.hash); if (d && d.tagName === 'DETAILS') d.open = true; }
+      openFaq();
+      addEventListener('hashchange', openFaq);
       var links = [].slice.call(document.querySelectorAll('.info-toc a'));
       var secs = links.map(function (a) { return document.querySelector(a.hash); });
       function spy() {

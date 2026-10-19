@@ -16,7 +16,7 @@
   const clearBtn = document.getElementById('search-clear');
   const toggle = document.getElementById('search-toggle');
   const MOBILE = matchMedia('(max-width: 859px)');
-  const LIMIT = { pokemon: 3, artist: 3, set: 3, card: 5 };
+  const LIMIT = { pokemon: 3, artist: 3, set: 3, card: 5, suggest: 3 };
   const prefix = langPathPrefix();
 
   const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -25,9 +25,19 @@
   const release = c => c.releaseDate || String(c.year);
   const span = (a, b) => (a === b ? `${a}` : `${a}–${b}`);
   const countCards = n => (n === 1 ? t('tile.card') : t('tile.cards').replace('{n}', n));
-  const initials = s => s.split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase();
   // A query is worth searching from 2 characters, or 1 non-Latin one (ピ, 皮…).
   const ready = q => q.length >= 2 || /[^\x00-\x7f]/.test(q);
+
+  // Edit distance for the "did you mean" fallback (~1000 short names, plain O(n·m) is fine).
+  const dist = (a, b) => {
+    let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+    for (let i = 1; i <= a.length; i++) {
+      const cur = [i];
+      for (let j = 1; j <= b.length; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      prev = cur;
+    }
+    return prev[b.length];
+  };
 
   let data = null;
   let loading = null;
@@ -58,7 +68,8 @@
           for (const c of all) {
             const k = c[key];
             if (!k) continue;
-            const a = map.get(k) || { name: k, n: 0, pokemon: new Set(), min: Infinity, max: -Infinity };
+            // `all` is newest first, so img is the artist's / set's latest card.
+            const a = map.get(k) || { name: k, n: 0, img: c.imageName, pokemon: new Set(), min: Infinity, max: -Infinity };
             a.n++;
             if (c.pokemon) a.pokemon.add(c.pokemon);
             a.min = Math.min(a.min, cardYear(c));
@@ -109,18 +120,24 @@
       ? `<div class="search-group" role="group" aria-labelledby="search-g-${key}"><p class="search-group-label" id="search-g-${key}">${escapeHtml(t('search.' + key))}</p>${items.slice(0, LIMIT[key]).map(row).join('')}</div>`
       : '';
 
+    const pokemonRow = p => {
+      // Matched through another language's name (FR "Triopikeur" for "pik"): show that name.
+      const alias = has(pokemonName(p)) ? '' : Object.values(p.name).find(has);
+      return opt(`${prefix}pokemon/${slug(p.name.en)}/`,
+      `<img class="search-sprite" src="/monsters/${p.imageName}.webp" alt="" width="44" height="44">
+      <span class="search-main"><span class="search-name">${mark(pokemonName(p), n)}</span>
+      <span class="search-meta">#${String(p.id).padStart(3, '0')} · ${alias ? `${mark(alias, n)} · ` : ''}${escapeHtml(countCards(p.n))}</span></span>`);
+    };
+
     list.setAttribute('aria-label', t('search.results').replace('{q}', q));
     list.innerHTML = [
-      group('pokemon', pokemon, p => opt(`${prefix}pokemon/${slug(p.name.en)}/`,
-        `<img class="search-sprite" src="/monsters/${p.imageName}.webp" alt="" width="44" height="44">
-        <span class="search-main"><span class="search-name">${mark(pokemonName(p), n)}</span>
-        <span class="search-meta">#${String(p.id).padStart(3, '0')} · ${escapeHtml(countCards(p.n))}</span></span>`)),
+      group('pokemon', pokemon, pokemonRow),
       group('artist', artists, a => opt(`${prefix}?q=${encodeURIComponent(a.name)}&amp;view=cards`,
-        `<span class="search-avatar" aria-hidden="true">${escapeHtml(initials(a.name))}</span>
+        `<img class="search-thumb" src="/cards/thumbs/${a.img}.avif" alt="" width="44" height="61">
         <span class="search-main"><span class="search-name">${mark(a.name, n)}</span>
         <span class="search-meta">${escapeHtml([countCards(a.n), a.pokemon.size && t('search.pokemonCount').replace('{n}', a.pokemon.size), span(a.min, a.max)].filter(Boolean).join(' · '))}</span></span>`)),
       group('set', sets, s => opt(`${prefix}?q=${encodeURIComponent(s.name)}&amp;view=cards`,
-        `<span class="search-avatar search-avatar-set" aria-hidden="true">${escapeHtml(initials(s.name))}</span>
+        `<img class="search-thumb" src="/cards/thumbs/${s.img}.avif" alt="" width="44" height="61">
         <span class="search-main"><span class="search-name">${mark(s.name, n)}</span>
         <span class="search-meta">${escapeHtml(`${countCards(s.n)} · ${span(s.min, s.max)}`)}</span></span>`)),
       group('card', cards, c => opt(c.href,
@@ -129,14 +146,31 @@
         <span class="search-sub">${mark(c.releaseProduct || c.name, n)}</span>
         <span class="search-code">${escapeHtml([c.setNumber, cardYear(c)].filter(Boolean).join(' · '))}</span></span>
         <span class="tag">${escapeHtml(exclusivityTag(c))}</span>`)),
-    ].join('') || `<p class="search-empty">${escapeHtml(t('search.none').replace('{q}', q))}</p>`;
+    ].join('') || emptyHTML(n, q, pokemonRow);
 
     const kbd = k => `<kbd>${k}</kbd>`;
-    foot.innerHTML = (cards.length ? `<a class="search-all" href="${all}">${escapeHtml(t('search.seeAll').replace('{n}', cards.length).replace('{q}', q))}</a>` : '<span></span>')
+    foot.innerHTML = (cards.length
+      ? `<a class="search-all" href="${all}">${escapeHtml(t('search.seeAll').replace('{n}', cards.length).replace('{q}', q))}</a>`
+      : `<a class="search-all" href="${prefix}?view=cards">${escapeHtml(t('search.browseAll'))}</a>`)
       + `<span class="search-keys" aria-hidden="true"><span>${kbd('↑↓')} ${escapeHtml(t('search.navigate'))}</span><span>${kbd('↵')} ${escapeHtml(t('search.open'))}</span><span>${kbd('Esc')} ${escapeHtml(t('search.close'))}</span></span>`;
     status.textContent = t('search.count').replace('{n}', i);
     active = -1;
     input.removeAttribute('aria-activedescendant');
+  }
+
+  // No match: say what can be searched and offer the closest Pokémon names (typos like "pikchu").
+  function emptyHTML(n, q, row) {
+    const max = Math.max(1, Math.floor(n.length / 3));
+    const near = data.pokemons
+      .map(p => ({ p, d: Math.min(...Object.values(p.name).map(name => dist(n, norm(name)))) }))
+      .filter(x => x.d <= max)
+      .sort((a, b) => a.d - b.d)
+      .slice(0, LIMIT.suggest)
+      .map(x => x.p);
+    const suggest = near.length
+      ? `<div class="search-group" role="group" aria-labelledby="search-g-suggest"><p class="search-group-label" id="search-g-suggest">${escapeHtml(t('search.suggest'))}</p>${near.map(row).join('')}</div>`
+      : '';
+    return `<p class="search-empty">${escapeHtml(t('search.none').replace('{q}', q))}<span class="search-hint">${escapeHtml(t('search.hint'))}</span></p>${suggest}`;
   }
 
   function open() {

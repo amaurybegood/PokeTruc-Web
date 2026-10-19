@@ -9,10 +9,11 @@
   <meta name="description" content="1つの言語または1つの地域にしか存在しないポケモンTCGのトレーナーズカードイラスト。完全無料・広告なし・ファン制作。">
   <meta name="robots" content="index, follow">
 
-  <link rel="preload" as="style" href="/style.css?v=59">
+  <link rel="preload" as="style" href="/style.css?v=75">
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
   <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="142px" type="image/webp">
   <link rel="preload" as="image" href="/cards/thumbs/carmine_csv8c_255.avif" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage-grotesque-latin-800.woff2" crossorigin>
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
 
@@ -39,7 +40,7 @@
   <link rel="alternate" hreflang="x-default" href="https://poketruc.com/trainers/">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="/style.css?v=59">
+  <link rel="stylesheet" href="/style.css?v=75">
 
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"図鑑","item":"https://poketruc.com/ja/"},{"@type":"ListItem","position":2,"name":"トレーナー","item":"https://poketruc.com/ja/trainers/"}]}]}</script>
   <noscript><style>.tr-filters { display: none !important; }</style></noscript>
@@ -116,11 +117,11 @@
     </section>
 
     <div class="tr-filters wrap">
-      <span class="filter-label" id="tr-excl">限定先</span>
+      <span class="filter-label"><span id="tr-excl">限定先</span><a class="filter-help" href="/ja/info/#faq-3" aria-label="これらの分類の意味" title="これらの分類の意味">?</a></span>
       <div class="chips" role="group" aria-labelledby="tr-excl">
         <button type="button" class="chip" data-group="" aria-pressed="true">すべて <span class="chip-count">8</span></button>
-        <button type="button" class="chip" data-group="group-cn" aria-pressed="false">中国 <span class="chip-count">7</span></button>
-        <button type="button" class="chip" data-group="group-asian" aria-pressed="false">アジア <span class="chip-count">1</span></button>
+        <button type="button" class="chip" data-group="group-cn" aria-pressed="false"><span class="chip-flag" aria-hidden="true">🇨🇳</span>中国 <span class="chip-count">7</span></button>
+        <button type="button" class="chip" data-group="group-asian" aria-pressed="false"><span class="chip-flag" aria-hidden="true">🏯</span>アジア <span class="chip-count">1</span></button>
       </div>
       <label class="sort-field">並び替え
         <select id="tr-sort"><option value="newest">新しい順</option><option value="oldest">古い順</option><option value="name">名前順</option></select>
@@ -138,9 +139,8 @@
               <img src="/cards/thumbs/carmine_csv8c_255.avif" srcset="/cards/thumbs/carmine_csv8c_255.avif 480w, /cards/carmine_csv8c_255.avif 733w" sizes="(max-width: 859px) 45vw, 240px" width="733" height="1002" alt="Carmine — Brilliant Illusions (中国語限定, 2026) ポケモンTCGカード（イラスト：OKACHEKE）" fetchpriority="high" decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">Carmine</span>
-                <span class="tr-card-meta"><span class="tag">中国語限定</span><span class="card-cap-code">CSV8C 255 · SAR</span></span>
-                <span class="card-cap-code tr-card-mobile">CSV8C 255 · 2026</span>
-                <span class="card-cap-artist tr-card-set">Brilliant Illusions · 2026</span>
+                <span class="card-cap-code">CSV8C 255 · 2026</span>
+                <span class="card-cap-artist">Brilliant Illusions</span>
                 <span class="card-cap-artist">OKACHEKE</span>
               </span>
             </a>
@@ -150,9 +150,8 @@
               <img src="/cards/thumbs/brock_csv10c_276.avif" srcset="/cards/thumbs/brock_csv10c_276.avif 480w, /cards/brock_csv10c_276.avif 863w" sizes="(max-width: 859px) 45vw, 240px" width="863" height="1212" alt="Brock's Scouting — Chasing Glory Together (中国語限定, 2026) ポケモンTCGカード（イラスト：Atsushi Furusawa）" loading="lazy" decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">Brock's Scouting</span>
-                <span class="tr-card-meta"><span class="tag">中国語限定</span><span class="card-cap-code">CSV10C 276 · SAR</span></span>
-                <span class="card-cap-code tr-card-mobile">CSV10C 276 · 2026</span>
-                <span class="card-cap-artist tr-card-set">Chasing Glory Together · 2026</span>
+                <span class="card-cap-code">CSV10C 276 · 2026</span>
+                <span class="card-cap-artist">Chasing Glory Together</span>
                 <span class="card-cap-artist">Atsushi Furusawa</span>
               </span>
             </a>
@@ -162,9 +161,8 @@
               <img src="/cards/thumbs/n_csv105c_173.avif" srcset="/cards/thumbs/n_csv105c_173.avif 480w, /cards/n_csv105c_173.avif 537w" sizes="(max-width: 859px) 45vw, 240px" width="537" height="753" alt="N's Plan — Black Bolt (中国語限定, 2026) ポケモンTCGカード（イラスト：Iwamoto05）" loading="lazy" decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">N's Plan</span>
-                <span class="tr-card-meta"><span class="tag">中国語限定</span><span class="card-cap-code">CSV10.5C 173 · SAR</span></span>
-                <span class="card-cap-code tr-card-mobile">CSV10.5C 173 · 2026</span>
-                <span class="card-cap-artist tr-card-set">Black Bolt · 2026</span>
+                <span class="card-cap-code">CSV10.5C 173 · 2026</span>
+                <span class="card-cap-artist">Black Bolt</span>
                 <span class="card-cap-artist">Iwamoto05</span>
               </span>
             </a>
@@ -174,9 +172,8 @@
               <img src="/cards/thumbs/hilda_csv106c_173.avif" srcset="/cards/thumbs/hilda_csv106c_173.avif 480w, /cards/hilda_csv106c_173.avif 534w" sizes="(max-width: 859px) 45vw, 240px" width="534" height="747" alt="Hilda — White Flare (中国語限定, 2026) ポケモンTCGカード（イラスト：Ligton）" loading="lazy" decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">Hilda</span>
-                <span class="tr-card-meta"><span class="tag">中国語限定</span><span class="card-cap-code">CSV10.6C 173 · SAR</span></span>
-                <span class="card-cap-code tr-card-mobile">CSV10.6C 173 · 2026</span>
-                <span class="card-cap-artist tr-card-set">White Flare · 2026</span>
+                <span class="card-cap-code">CSV10.6C 173 · 2026</span>
+                <span class="card-cap-artist">White Flare</span>
                 <span class="card-cap-artist">Ligton</span>
               </span>
             </a>
@@ -186,9 +183,8 @@
               <img src="/cards/thumbs/rika_csv4_159.avif" srcset="/cards/thumbs/rika_csv4_159.avif 480w, /cards/rika_csv4_159.avif 868w" sizes="(max-width: 859px) 45vw, 240px" width="868" height="1212" alt="Rika — Bonus Round (中国語限定, 2025) ポケモンTCGカード（イラスト：Kantaro）" loading="lazy" decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">Rika</span>
-                <span class="tr-card-meta"><span class="tag">中国語限定</span><span class="card-cap-code">CSV4 159 · SAR</span></span>
-                <span class="card-cap-code tr-card-mobile">CSV4 159 · 2025</span>
-                <span class="card-cap-artist tr-card-set">Bonus Round · 2025</span>
+                <span class="card-cap-code">CSV4 159 · 2025</span>
+                <span class="card-cap-artist">Bonus Round</span>
                 <span class="card-cap-artist">Kantaro</span>
               </span>
             </a>
@@ -198,9 +194,8 @@
               <img src="/cards/larry_csv5_157.avif" width="419" height="581" alt="Larry — Fiery Black Crystal (中国語限定, 2025) ポケモンTCGカード（イラスト：Karya）" loading="lazy" decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">Larry</span>
-                <span class="tr-card-meta"><span class="tag">中国語限定</span><span class="card-cap-code">CSV5 157 · SAR</span></span>
-                <span class="card-cap-code tr-card-mobile">CSV5 157 · 2025</span>
-                <span class="card-cap-artist tr-card-set">Fiery Black Crystal · 2025</span>
+                <span class="card-cap-code">CSV5 157 · 2025</span>
+                <span class="card-cap-artist">Fiery Black Crystal</span>
                 <span class="card-cap-artist">Karya</span>
               </span>
             </a>
@@ -210,9 +205,8 @@
               <img src="/cards/thumbs/ciphermaniacs_csv7_245.avif" srcset="/cards/thumbs/ciphermaniacs_csv7_245.avif 480w, /cards/ciphermaniacs_csv7_245.avif 733w" sizes="(max-width: 859px) 45vw, 240px" width="733" height="1024" alt="Ciphermaniacs — Blade Awakenings (中国語限定, 2025) ポケモンTCGカード（イラスト：Taira Akitsu）" loading="lazy" decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">Ciphermaniacs</span>
-                <span class="tr-card-meta"><span class="tag">中国語限定</span><span class="card-cap-code">CSV7 245 · SAR</span></span>
-                <span class="card-cap-code tr-card-mobile">CSV7 245 · 2025</span>
-                <span class="card-cap-artist tr-card-set">Blade Awakenings · 2025</span>
+                <span class="card-cap-code">CSV7 245 · 2025</span>
+                <span class="card-cap-artist">Blade Awakenings</span>
                 <span class="card-cap-artist">Taira Akitsu</span>
               </span>
             </a>
@@ -230,9 +224,8 @@
               <img src="/cards/thumbs/lisia_scn_csv9_257.avif" srcset="/cards/thumbs/lisia_scn_csv9_257.avif 480w, /cards/lisia_scn_csv9_257.avif 869w" sizes="(max-width: 859px) 45vw, 240px" width="869" height="1211" alt="Lisia's Appeal — Stellar Crystal (アジア限定, 2026) ポケモンTCGカード（イラスト：Atsuko Nishida）" loading="lazy" decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">Lisia's Appeal</span>
-                <span class="tr-card-meta"><span class="tag">CN · TH</span><span class="card-cap-code">CSV9C 257 · SAR</span></span>
-                <span class="card-cap-code tr-card-mobile">CSV9C 257 · 2026</span>
-                <span class="card-cap-artist tr-card-set">Stellar Crystal · 2026</span>
+                <span class="card-cap-code">CSV9C 257 · 2026</span>
+                <span class="card-cap-artist">Stellar Crystal</span>
                 <span class="card-cap-artist">Atsuko Nishida</span>
               </span>
             </a>
@@ -261,12 +254,13 @@
   <script type="application/json" id="cards-data">[{"title":"Rika (CSV4 159)","name":"Bonus Round","imageName":"rika_csv4_159","rarity":"SAR","description":"https://www.pokebeach.com/2025/06/exclusive-maushold-ex-gholdengo-ex-and-rika-secret-rares-in-chinese-bonus-turn-set","languages":["🇨🇳"],"year":2025,"artist":"Kantaro","cardName":"Rika","setNumber":"CSV4 159"},{"title":"Larry (CSV5 157)","name":"Fiery Black Crystal","imageName":"larry_csv5_157","rarity":"SAR","description":"https://www.pokebeach.com/2025/07/exclusive-larry-and-defiance-band-releasing-in-chinese-fiery-black-crystal-set","languages":["🇨🇳"],"year":2025,"artist":"Karya","cardName":"Larry","setNumber":"CSV5 157"},{"title":"Ciphermaniacs (CSV7 245)","name":"Blade Awakenings","imageName":"ciphermaniacs_csv7_245","rarity":"SAR","description":"https://www.pokebeach.com/2025/12/blade-awakened-set-revealed-for-china-featuring-exclusive-ciphermaniacs-codebreaking-coin-collection-and-reverse-holos","languages":["🇨🇳"],"year":2025,"artist":"Taira Akitsu","cardName":"Ciphermaniacs","setNumber":"CSV7 245"},{"title":"Lisia's Appeal (CSV9C 257)","name":"Stellar Crystal","imageName":"lisia_scn_csv9_257","rarity":"SAR","description":"https://www.pokebeach.com/2026/04/exclusive-lisias-appeal-to-release-in-chinese-starry-crystal-set","languages":["🇨🇳","🇹🇭"],"year":2026,"artist":"Atsuko Nishida","region":"asian","cardName":"Lisia's Appeal","setNumber":"CSV9C 257"},{"title":"Carmine (CSV8C 255)","name":"Brilliant Illusions","imageName":"carmine_csv8c_255","rarity":"SAR","description":"Chinese-exclusive Supporter card (丹瑜) — Brilliant Illusions (CSV8C), 255/207. https://www.pokebeach.com/2026/02/brilliant-illusions-set-revealed-for-china-featuring-exclusive-carmine-coin-collections-and-reverse-holos","languages":["🇨🇳"],"year":2026,"artist":"OKACHEKE","cardName":"Carmine","setNumber":"CSV8C 255"},{"title":"Brock's Scouting (CSV10C 276)","name":"Chasing Glory Together","imageName":"brock_csv10c_276","rarity":"SAR","description":"https://www.pokebeach.com/2026/06/chasing-glory-together-set-revealed-for-china-featuring-exclusive-brocks-scouting","languages":["🇨🇳"],"year":2026,"artist":"Atsushi Furusawa","cardName":"Brock's Scouting","setNumber":"CSV10C 276"},{"title":"N's Plan (CSV10.5C 173)","name":"Black Bolt","imageName":"n_csv105c_173","rarity":"SAR","description":"https://www.pokebeach.com/2026/10/exclusive-ns-plan-and-hilda-to-release-in-china-for-black-bolt-and-white-flare","languages":["🇨🇳"],"year":2026,"artist":"Iwamoto05","cardName":"N's Plan","setNumber":"CSV10.5C 173"},{"title":"Hilda (CSV10.6C 173)","name":"White Flare","imageName":"hilda_csv106c_173","rarity":"SAR","description":"https://www.pokebeach.com/2026/10/exclusive-ns-plan-and-hilda-to-release-in-china-for-black-bolt-and-white-flare","languages":["🇨🇳"],"year":2026,"artist":"Ligton","cardName":"Hilda","setNumber":"CSV10.6C 173"}]</script>
   <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="f7f7d1c9-87f5-4b52-8f20-b6110f143513"></script>
-  <script>window.DATA_V='14bc3197';</script>
-  <script src="/i18n.js?v=35"></script>
-  <script src="/theme.js?v=35"></script>
-  <script src="/viewer.js?v=35"></script>
-  <script src="/search.js?v=35"></script>
-  <script src="/backtotop.js?v=35"></script>
-  <script src="/pokemon.js?v=35"></script>
+  <script>window.DATA_V='6ebdc72b';</script>
+  <script src="/i18n.js?v=53"></script>
+  <script src="/theme.js?v=53"></script>
+  <script src="/viewer.js?v=53"></script>
+  <script src="/search.js?v=53"></script>
+  <script src="/backtotop.js?v=53"></script>
+  <script src="/snow.js?v=53"></script>
+  <script src="/pokemon.js?v=53"></script>
 </body>
 </html>

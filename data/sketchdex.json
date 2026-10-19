@@ -1,0 +1,850 @@
+{
+  "abra": {
+    "by": "Bode_6101",
+    "id": "414c3e7b-56ab-4e6a-9d5b-db46b392e110"
+  },
+  "aerodactyl": {
+    "by": "NeoHitmonlee886",
+    "id": "083f64cc-93b9-4477-ac83-a5f48b4ef824"
+  },
+  "alakazam": {
+    "by": "TLLanghamArt",
+    "id": "3f1671f8-c0fb-40cc-af5b-6b9e5e52f24b"
+  },
+  "applin": {
+    "by": "RapidDewgong477",
+    "id": "3f2d32c4-f359-4139-987f-8e204fd94096"
+  },
+  "arbok": {
+    "by": "wibba",
+    "id": "566d7810-d2f1-47cd-aca2-95a54a851cf1"
+  },
+  "arcanine": {
+    "by": "RioBlitzle",
+    "id": "325598c2-735b-414c-b5db-8ea534108364"
+  },
+  "articuno": {
+    "by": "karpngull",
+    "id": "640a4f63-4511-478e-a17d-31640bc32379"
+  },
+  "beedrill": {
+    "by": "WaveMarowak944",
+    "id": "daac0a2a-1c01-45b4-b64d-eb55de53e58a"
+  },
+  "bellsprout": {
+    "by": "NeonTangela533",
+    "id": "5394dd99-566c-48de-9192-fd1a51fbb8ae"
+  },
+  "bibarel": {
+    "by": "FoFo1300",
+    "id": "de0e3b41-82e8-45af-937b-7bafd4401aeb"
+  },
+  "bidoof": {
+    "by": "FoFo1300",
+    "id": "0f1bb7ec-3a26-453a-9ff5-f0856d223513"
+  },
+  "blastoise": {
+    "by": "FoFo1300",
+    "id": "cc3f1e82-086b-46b8-97d4-a559cb7b1e79"
+  },
+  "bulbasaur": {
+    "by": "PxMoss",
+    "id": "ec2fc7c1-41c7-47a1-b9dc-f20607891375"
+  },
+  "butterfree": {
+    "by": "pepgold",
+    "id": "c9de8303-2677-4179-8e4e-128faa81f224"
+  },
+  "caterpie": {
+    "by": "wibba",
+    "id": "813df21e-5e2d-4e11-8ad2-a84de341257d"
+  },
+  "celebi": {
+    "by": "TLLanghamArt",
+    "id": "cbacface-a1b6-48a1-90d1-eece787a2941"
+  },
+  "ceruledge": {
+    "by": "ShinyDelibird",
+    "id": "e1995ab1-c38b-4e52-8593-72ffacabcfaf"
+  },
+  "chandelure": {
+    "by": "FoFo1300",
+    "id": "748f141e-75c7-48c9-9a5f-c027058f1226"
+  },
+  "chansey": {
+    "by": "NeonTangela533",
+    "id": "36692ad9-ad4d-414e-be90-12472df530a0"
+  },
+  "charizard": {
+    "by": "Pokemandrew",
+    "id": "e57ec841-df7c-400c-8458-6c464091ad1f"
+  },
+  "charmander": {
+    "by": "pepgold",
+    "id": "b9978ae7-9d59-4a71-947c-b95520430325"
+  },
+  "charmeleon": {
+    "by": "RioBlitzle",
+    "id": "f9defee4-09f3-4733-952f-10171e70b454"
+  },
+  "chespin": {
+    "by": "Disxm",
+    "id": "f8951bdd-736d-4955-a022-6711e38ace78"
+  },
+  "clefable": {
+    "by": "FoFo1300",
+    "id": "94cef548-c0f5-4239-85d1-675e0e5388a6"
+  },
+  "clefairy": {
+    "by": "FoFo1300",
+    "id": "df1dd122-dacd-41db-9973-9be9b5f04c00"
+  },
+  "cloyster": {
+    "by": "Disxm",
+    "id": "51242056-522e-444b-badd-9a4352be82de"
+  },
+  "cramorant": {
+    "by": "LightBlastoise906",
+    "id": "fd763777-8c6b-4885-b343-7c5e78cffc8b"
+  },
+  "crocalor": {
+    "by": "Goodall90",
+    "id": "a693142b-38ad-4436-a947-fe2e8c771159"
+  },
+  "croconaw": {
+    "by": "zvveilous",
+    "id": "9b6e6cf2-a45b-45ae-94d4-24801c38127d"
+  },
+  "cubone": {
+    "by": "karpngull",
+    "id": "108c9bc8-4be2-4cf4-ad9a-a0a3f2e1bb9f"
+  },
+  "delphox": {
+    "by": "Bode_6101",
+    "id": "1e150085-f5fc-4e5c-966e-0ab756c0ac71"
+  },
+  "deoxys": {
+    "by": "FoFo1300",
+    "id": "573f7de1-eaf9-4644-9a85-b42f0b109f98"
+  },
+  "dewgong": {
+    "by": "TLLanghamArt",
+    "id": "980ce122-f288-4b89-b55d-7b7d4a1d1e5c"
+  },
+  "diancie": {
+    "by": "FierceArticuno488",
+    "id": "392c508a-a4fe-4856-96f6-40d30c5fb927"
+  },
+  "diglett": {
+    "by": "Stry",
+    "id": "82255054-e979-4c03-9db7-784ac717cb98"
+  },
+  "ditto": {
+    "by": "pepgold",
+    "id": "defe59c1-016b-4200-832f-c076ff3fb627"
+  },
+  "dodrio": {
+    "by": "FoFo1300",
+    "id": "1671a0db-6987-495e-b4ca-a53ad0e30e33"
+  },
+  "doduo": {
+    "by": "Pokemandrew",
+    "id": "6a62b560-99ba-4ecb-80c3-6e00897b0bbe"
+  },
+  "dragonair": {
+    "by": "NeonTangela533",
+    "id": "966be937-3170-4058-a370-d08907869638"
+  },
+  "dragonite": {
+    "by": "FoFo1300",
+    "id": "75373e64-06e3-40be-84f4-98ca2e65735d"
+  },
+  "dratini": {
+    "by": "zvveilous",
+    "id": "f933524e-652c-4e92-b288-39c6397ad1c8"
+  },
+  "drowzee": {
+    "by": "NeonTangela533",
+    "id": "e715f3a6-43dc-4240-9c20-cde2b64ffd7d"
+  },
+  "dugtrio": {
+    "by": "karpngull",
+    "id": "5f7cd634-7556-47bd-ab91-e62fc1b27d1c"
+  },
+  "dunsparce": {
+    "by": "Pokemandrew",
+    "id": "5feed4e4-1bb4-46ab-812b-12a782af3445"
+  },
+  "eevee": {
+    "by": "NeonTangela533",
+    "id": "50f5d52c-406e-4dc3-b8ac-9ecea3b0b9ab"
+  },
+  "ekans": {
+    "by": "WaveMarowak944",
+    "id": "ea7e79d9-384a-4557-a917-a18b7b69a49c"
+  },
+  "electabuzz": {
+    "by": "FoFo1300",
+    "id": "a34637dd-2de2-457e-83e8-e84b1e159a08"
+  },
+  "electrode": {
+    "by": "wibba",
+    "id": "641d8f86-47e2-414f-804a-698e50ba3ce0"
+  },
+  "entei": {
+    "by": "zvveilous",
+    "id": "0a981a1d-77a0-458a-882d-2989395ddd3b"
+  },
+  "espeon": {
+    "by": "Lala_fangs",
+    "id": "1aadac67-dc17-48ef-a84f-02bd3065949e"
+  },
+  "exeggcute": {
+    "by": "wibba",
+    "id": "146a642f-13f1-40d0-bf63-40bfc572edac"
+  },
+  "exeggutor": {
+    "by": "PokeQuils",
+    "id": "aad5199e-8257-4f95-a80d-88c64f3fecd5"
+  },
+  "farfetchd": {
+    "by": "TLLanghamArt",
+    "id": "eec6464c-657a-4859-b096-002a00586f73"
+  },
+  "fearow": {
+    "by": "Bode_6101",
+    "id": "4af785d4-f64a-4e64-a74e-343e0564235f"
+  },
+  "feraligatr": {
+    "by": "FoFo1300",
+    "id": "5909d043-e421-4a67-87b3-c2f7d50d9375"
+  },
+  "flareon": {
+    "by": "wibba",
+    "id": "e93aece7-948b-4029-9854-c5414eb00d4a"
+  },
+  "floragato": {
+    "by": "Goodall90",
+    "id": "7a42be36-3ce4-4b54-a2cc-d72df137ecf4"
+  },
+  "fuecoco": {
+    "by": "fluffwh0re",
+    "id": "244fe4e7-4bfc-4a38-b50c-594ba8cd03bf"
+  },
+  "garchomp": {
+    "by": "ThatAegislash",
+    "id": "65e88b22-9c0c-423b-91b2-0db7b1e384b4"
+  },
+  "gardevoir": {
+    "by": "Emmy",
+    "id": "4bbb36a2-df1d-4e14-92e0-f3b116b55e5d"
+  },
+  "gastly": {
+    "by": "NeonTangela533",
+    "id": "bb5c5b22-bafb-4db1-a059-891f06900011"
+  },
+  "gengar": {
+    "by": "ThatAegislash",
+    "id": "b0e08398-ad92-4601-be28-066d2ab447cc"
+  },
+  "geodude": {
+    "by": "pepgold",
+    "id": "09503298-afd2-4615-91dc-16b6c9288305"
+  },
+  "gholdengo": {
+    "by": "DarkScyther730",
+    "id": "9ae79ba4-0b07-45dd-9a6e-7775d54f6e64"
+  },
+  "glaceon": {
+    "by": "ScaryMonsters",
+    "id": "52cd9d63-a87d-4321-b2fd-d0a31d0f82f3"
+  },
+  "gloom": {
+    "by": "FoFo1300",
+    "id": "3b0706bd-75fc-4a47-84fc-c3ec5911701c"
+  },
+  "golbat": {
+    "by": "karpngull",
+    "id": "0d3c6d16-b492-4873-8ab7-17975d7b3d92"
+  },
+  "goldeen": {
+    "by": "karpngull",
+    "id": "f1839a48-7416-46f1-9622-e3b198d7a474"
+  },
+  "golduck": {
+    "by": "RioBlitzle",
+    "id": "f0819981-3bb2-4be0-b357-342a7f0054a2"
+  },
+  "golem": {
+    "by": "FoFo1300",
+    "id": "89d2f637-b1d4-4c30-84e1-db62ca5a53c6"
+  },
+  "graveler": {
+    "by": "RioBlitzle",
+    "id": "dc70f648-a83b-4bd2-b830-7f7cc7d1ace3"
+  },
+  "grimer": {
+    "by": "PokeQuils",
+    "id": "a7c098c7-491e-4eae-a992-98cd55f3dcb6"
+  },
+  "groudon": {
+    "by": "LuckyChansey883",
+    "id": "e201312b-e4f2-42b6-a493-879a207a51f5"
+  },
+  "growlithe": {
+    "by": "NeonTangela533",
+    "id": "4be41246-a22b-4ffc-a6bd-8d3165f0cefd"
+  },
+  "gyarados": {
+    "by": "karpngull",
+    "id": "df6dcb61-c789-4d3b-a1ac-ffe63e421f55"
+  },
+  "haunter": {
+    "by": "NeonTangela533",
+    "id": "d1cd885c-406d-411e-b072-b927f7bf1c07"
+  },
+  "hitmonchan": {
+    "by": "goliatchan2",
+    "id": "1ee3be02-3ba9-41f0-a89f-7b84e6263196"
+  },
+  "hitmonlee": {
+    "by": "FoFo1300",
+    "id": "7cf36b09-c769-4d6e-8d76-3d309004957e"
+  },
+  "ho-oh": {
+    "by": "coppytrap",
+    "id": "1376eef1-0323-49ec-a548-c15bcac79b88"
+  },
+  "horsea": {
+    "by": "Bode_6101",
+    "id": "f6697572-fa93-484b-af1e-e75b211a3e78"
+  },
+  "hypno": {
+    "by": "FoFo1300",
+    "id": "bf0571d5-6e32-4bf2-bbf4-f4022f48f0c9"
+  },
+  "iron-hands": {
+    "by": "aeonpee",
+    "id": "557dfda2-1319-46f0-8f3f-e503bfb3e5ff"
+  },
+  "ivysaur": {
+    "by": "MochaLakota",
+    "id": "efe30129-7964-494b-9c7a-63d23df17dcc"
+  },
+  "jigglypuff": {
+    "by": "WaveMarowak944",
+    "id": "3bfdcdba-f610-4105-921d-27f83f489ad3"
+  },
+  "jirachi": {
+    "by": "FoFo1300",
+    "id": "e6261d77-9e4b-470f-a192-3b9ece8cfd05"
+  },
+  "jolteon": {
+    "by": "wibba",
+    "id": "e7b21e8d-c262-497e-a5ff-fc90c979f0cf"
+  },
+  "jynx": {
+    "by": "FoFo1300",
+    "id": "3b27fdfb-8355-46e1-89c6-3c47348e876a"
+  },
+  "kabuto": {
+    "by": "FoFo1300",
+    "id": "54f9ad33-7529-40b8-80d1-1285de50234c"
+  },
+  "kabutops": {
+    "by": "NeoHitmonlee886",
+    "id": "08dddb90-d3dd-4afd-aa2d-7ad9fe8ac853"
+  },
+  "kadabra": {
+    "by": "Night",
+    "id": "1cc3301f-c307-428e-97c6-50bbfe72b045"
+  },
+  "kakuna": {
+    "by": "pepgold",
+    "id": "47e89edf-f758-4771-b098-f22cf244b9be"
+  },
+  "kangaskhan": {
+    "by": "FoFo1300",
+    "id": "1535ded5-63e2-4f31-ba14-18e4090c5976"
+  },
+  "kecleon": {
+    "by": "karpngull",
+    "id": "6da4930d-16f4-45e5-8ebb-d965337dbd5a"
+  },
+  "kingler": {
+    "by": "TLLanghamArt",
+    "id": "58e187ba-22f0-4c83-af62-7ba9b54b6984"
+  },
+  "koffing": {
+    "by": "FoFo1300",
+    "id": "4de5a3c0-e833-4720-bb61-9ba2c29fe8da"
+  },
+  "krabby": {
+    "by": "TLLanghamArt",
+    "id": "7790f173-3e5b-4c1f-bbc0-abfaaa258b7a"
+  },
+  "kyogre": {
+    "by": "ScaryMonsters",
+    "id": "ce09cb1b-eb88-4eae-ad72-91c354afe1e9"
+  },
+  "lapras": {
+    "by": "FoFo1300",
+    "id": "171fedfc-e931-4f4c-abb0-386218d2cb63"
+  },
+  "latias": {
+    "by": "Lala_fangs",
+    "id": "a4a7ceec-4c1c-41d1-b267-f3c3f49f312b"
+  },
+  "latios": {
+    "by": "coppytrap",
+    "id": "95a89765-5a9c-49cb-b8a7-0d0a182da510"
+  },
+  "leafeon": {
+    "by": "Garfield",
+    "id": "8c5ce7ab-1ec8-481d-ad61-111a701bddc6"
+  },
+  "lickitung": {
+    "by": "CosmicKangaskhan265",
+    "id": "309ff335-c699-4028-b9cf-50946ba802db"
+  },
+  "lucario": {
+    "by": "ThatAegislash",
+    "id": "5da92202-38b9-4e1e-9487-2f3406f009e2"
+  },
+  "lugia": {
+    "by": "AmberJigglypuff491",
+    "id": "021a975d-98c8-4c70-890c-78492858d9e0"
+  },
+  "machamp": {
+    "by": "FoFo1300",
+    "id": "8463122a-38d5-4c2a-95f4-bd38a4b01d47"
+  },
+  "machoke": {
+    "by": "nunn",
+    "id": "ce26295c-55ce-4d42-9bed-f24dfe07a0cf"
+  },
+  "machop": {
+    "by": "FoFo1300",
+    "id": "30deae08-ffe4-4f36-b217-b562444e0654"
+  },
+  "magikarp": {
+    "by": "PokeQuils",
+    "id": "3292af83-2c43-4352-a699-9afcb8f47398"
+  },
+  "magmar": {
+    "by": "Bode_6101",
+    "id": "e5fbdd31-0f85-4d6b-be04-ba16ae74d1e6"
+  },
+  "magmortar": {
+    "by": "FoFo1300",
+    "id": "339ac2d3-b745-4ff7-8c74-e8a63491e5ba"
+  },
+  "magnemite": {
+    "by": "Stry",
+    "id": "b1b18b18-a671-47ad-8bae-4fbff0bf661e"
+  },
+  "magneton": {
+    "by": "Bode_6101",
+    "id": "f9604f0f-e10c-4b89-bcb5-08c3fd36fd65"
+  },
+  "mankey": {
+    "by": "StarryParasect24",
+    "id": "05f40d07-087f-4125-bb82-6234f3aa2a07"
+  },
+  "marowak": {
+    "by": "FoFo1300",
+    "id": "370c33e0-596e-484c-9492-b0a4a9c789d0"
+  },
+  "maushold": {
+    "by": "fluffwh0re",
+    "id": "54e93770-0325-4347-832c-b30744bb4598"
+  },
+  "meowscarada": {
+    "by": "RapidRapidash195",
+    "id": "2de86194-649c-4cbd-b6b1-9f53c2549e20"
+  },
+  "meowth": {
+    "by": "karpngull",
+    "id": "c079140a-473e-4a4a-b96a-2edaf3592044"
+  },
+  "metapod": {
+    "by": "Pokemandrew",
+    "id": "1e713ad4-25f1-492a-b0b1-f53acbcd9722"
+  },
+  "mew": {
+    "by": "NeonTangela533",
+    "id": "db98d21f-2033-4592-af0a-910cdcc9df97"
+  },
+  "mewtwo": {
+    "by": "NeonTangela533",
+    "id": "1a917937-6b8f-4527-aaee-5bb2ec2e1658"
+  },
+  "miraidon": {
+    "by": "DeltaKingler885",
+    "id": "dab42d82-4ff2-471e-bac0-f9881aed1979"
+  },
+  "moltres": {
+    "by": "TLLanghamArt",
+    "id": "b25bc1de-c4ef-4de2-896f-9faa37d900e2"
+  },
+  "mr-mime": {
+    "by": "zvveilous",
+    "id": "89a17211-d22b-4265-b62e-40ca0e538e9b"
+  },
+  "mudkip": {
+    "by": "NeonTangela533",
+    "id": "e2e85ce7-3239-4f2a-bfc4-1042506b6e9f"
+  },
+  "muk": {
+    "by": "Disxm",
+    "id": "29940720-45f6-4b60-ab44-f0ec9e4058a9"
+  },
+  "munchlax": {
+    "by": "FoFo1300",
+    "id": "bf317acc-3e59-430e-9f57-a8c9ffc69cc7"
+  },
+  "nidoking": {
+    "by": "FoFo1300",
+    "id": "81cc1256-2269-409a-a16c-0d68a3c88119"
+  },
+  "nidoqueen": {
+    "by": "pepgold",
+    "id": "e5a2dd26-0339-4a74-b89c-b7a31bf7559e"
+  },
+  "nidoran-f": {
+    "by": "slugpup",
+    "id": "305e4621-534b-4075-9411-03c0be43ed4c"
+  },
+  "nidoran-m": {
+    "by": "PxMoss",
+    "id": "75cb3533-12b6-488b-b7b7-75e1a2bf35ed"
+  },
+  "nidorina": {
+    "by": "PxMoss",
+    "id": "1b95db51-5913-4ca1-8e9d-d8145105e863"
+  },
+  "nidorino": {
+    "by": "Sqrtl22",
+    "id": "9f3b9ef8-b616-4952-a516-9c80e68d069f"
+  },
+  "ninetales": {
+    "by": "Avany",
+    "id": "3c8acf91-5d3f-4e41-b617-26362540dd03"
+  },
+  "oddish": {
+    "by": "pepgold",
+    "id": "31e936cc-4ea0-4ced-aed6-2ab2f142c760"
+  },
+  "omanyte": {
+    "by": "Bode_6101",
+    "id": "690876d6-e0e0-4d1b-999c-d128b36c9527"
+  },
+  "omastar": {
+    "by": "zvveilous",
+    "id": "d10c59da-676a-4a9b-b96e-6726c8ce3cf0"
+  },
+  "onix": {
+    "by": "FoFo1300",
+    "id": "dcac3175-3930-469d-bbb7-b09c894bf759"
+  },
+  "paras": {
+    "by": "Pokemandrew",
+    "id": "22d09922-6ac7-4063-8800-e80c9810cbf9"
+  },
+  "parasect": {
+    "by": "Stry",
+    "id": "a5304ccb-c032-4eeb-b124-775a6e1a68d5"
+  },
+  "persian": {
+    "by": "TLLanghamArt",
+    "id": "39aceca4-4ffb-42c2-a914-feaa064c098f"
+  },
+  "pichu": {
+    "by": "Pokemandrew",
+    "id": "b564834c-64a8-406f-8192-407effa78116"
+  },
+  "pidgeot": {
+    "by": "FoFo1300",
+    "id": "b3b6efc4-4690-4dcb-bc31-900c48806f74"
+  },
+  "pidgeotto": {
+    "by": "RioBlitzle",
+    "id": "a8f9de1b-a29e-4d24-a681-b0956cb4fb13"
+  },
+  "pidgey": {
+    "by": "Bode_6101",
+    "id": "cdec3186-9f2c-4c48-926c-9acfa27ade07"
+  },
+  "pikachu": {
+    "by": "WaveMarowak944",
+    "id": "de6672b1-92a1-471d-bc09-dc6f33a8282e"
+  },
+  "pinsir": {
+    "by": "karpngull",
+    "id": "ebffccda-8c32-4e17-824e-733eb5b2e5dd"
+  },
+  "poliwag": {
+    "by": "Pokemandrew",
+    "id": "09e339af-b623-466e-90a5-138343483369"
+  },
+  "poliwhirl": {
+    "by": "Elekid",
+    "id": "61f9e090-af33-4107-acd5-9079d8537b6c"
+  },
+  "poliwrath": {
+    "by": "p_SAIDA_k",
+    "id": "def861a4-d010-43f6-b497-8503586c3354"
+  },
+  "ponyta": {
+    "by": "Pokemandrew",
+    "id": "d63f2a3d-8d56-4f2c-b4f7-250ee222ace4"
+  },
+  "porygon": {
+    "by": "FoFo1300",
+    "id": "722f0528-6191-4779-9a97-b3f3e7907369"
+  },
+  "primeape": {
+    "by": "FoFo1300",
+    "id": "2d0d64fd-8bf7-4403-ba1c-dab5351eaa49"
+  },
+  "psyduck": {
+    "by": "FoFo1300",
+    "id": "ef2f15ae-5f8a-4ea4-b1c0-e65472d731dd"
+  },
+  "quaxly": {
+    "by": "HappySnivy90",
+    "id": "37203599-b912-476e-805f-b2b3f13a7fae"
+  },
+  "quaxwell": {
+    "by": "Goodall90",
+    "id": "2ee7cee3-d291-4b21-9bf5-e4bf7af87ece"
+  },
+  "raichu": {
+    "by": "Pokemandrew",
+    "id": "c1e8fcf7-c458-4121-9eb5-454449495c8b"
+  },
+  "raikou": {
+    "by": "FoFo1300",
+    "id": "56205e5b-b6be-49d3-b154-c14fb1bb415a"
+  },
+  "rapidash": {
+    "by": "MagmoGoodra",
+    "id": "ecfd10fd-efbd-46f3-a0a9-1f912ca169cd"
+  },
+  "raticate": {
+    "by": "WaveMarowak944",
+    "id": "bbc864db-6ee9-4784-97ed-69eaa11e30a9"
+  },
+  "rattata": {
+    "by": "RioBlitzle",
+    "id": "e19db2e1-01c3-473d-96c4-09075732f886"
+  },
+  "rayquaza": {
+    "by": "FoFo1300",
+    "id": "5c304701-1775-4e3e-a3a5-197615d16553"
+  },
+  "rhydon": {
+    "by": "FoFo1300",
+    "id": "cec4c3c4-a37c-4c62-8e6d-6512038d0fc7"
+  },
+  "rhyhorn": {
+    "by": "DanoneDanone",
+    "id": "9468f955-8208-4f36-bc14-74b77533cfec"
+  },
+  "sandshrew": {
+    "by": "WaveMarowak944",
+    "id": "8ceec95b-d7a7-4f64-b71e-818afd7f7ea8"
+  },
+  "sandslash": {
+    "by": "karpngull",
+    "id": "cf1b82c7-2fba-4c00-b2b9-620d73f0a128"
+  },
+  "scizor": {
+    "by": "FoFo1300",
+    "id": "e2e24014-c566-432b-befb-79e6874aefe5"
+  },
+  "scyther": {
+    "by": "lurantis4ever",
+    "id": "9e818184-8a5f-4a77-9867-184a067f90da"
+  },
+  "seadra": {
+    "by": "TLLanghamArt",
+    "id": "674dce46-68e1-420c-8efc-80418eba798c"
+  },
+  "seaking": {
+    "by": "Bode_6101",
+    "id": "26b00cef-a7fb-4a8b-8acc-8d2b1fe09598"
+  },
+  "seel": {
+    "by": "KymWitch",
+    "id": "5891ad55-03e4-4150-ae5e-bfffe7797d4b"
+  },
+  "shellder": {
+    "by": "PokeQuils",
+    "id": "674e8cf7-7cc0-40a0-a813-a4d682f34219"
+  },
+  "shuckle": {
+    "by": "DragonSlowbro71",
+    "id": "4d7ba299-3e2f-45f6-a6f2-66d18421be6b"
+  },
+  "slowbro": {
+    "by": "TLLanghamArt",
+    "id": "2183d824-3a1a-4471-abf8-9b1552835b0a"
+  },
+  "slowpoke": {
+    "by": "lurantis4ever",
+    "id": "d25a2700-39a6-4dcc-a027-fcb86ec3f256"
+  },
+  "snorlax": {
+    "by": "Pokemandrew",
+    "id": "687c192e-0c40-41be-960d-eed9509f466c"
+  },
+  "spearow": {
+    "by": "AstralMachamp365",
+    "id": "3bb10efa-338c-47f3-9172-00c08455b0af"
+  },
+  "sprigatito": {
+    "by": "Narancia",
+    "id": "d6ab6548-a857-458c-ac8e-940f5e8235d2"
+  },
+  "squirtle": {
+    "by": "NeonTangela533",
+    "id": "9d4c7d83-e35c-444a-b053-4680e9939823"
+  },
+  "starmie": {
+    "by": "Justasodacan",
+    "id": "f9e226bf-affd-4157-9540-d3819f9d3eeb"
+  },
+  "staryu": {
+    "by": "pepgold",
+    "id": "fbbb46d2-39b6-4b06-915e-dccfedfcf9e0"
+  },
+  "suicune": {
+    "by": "FoFo1300",
+    "id": "d4a547c9-8efe-4136-9e63-3fcafbfae442"
+  },
+  "sylveon": {
+    "by": "Bode_6101",
+    "id": "0b1237f0-6255-4f1d-8c2d-387f7084f84a"
+  },
+  "tangela": {
+    "by": "pepgold",
+    "id": "c4f1280f-da46-4682-8756-49c1251e7470"
+  },
+  "tangrowth": {
+    "by": "FoFo1300",
+    "id": "dedde915-0132-4a3f-8818-22d3e191d360"
+  },
+  "tauros": {
+    "by": "TLLanghamArt",
+    "id": "4567f3c2-b0be-4d64-8d12-0f36cab1b342"
+  },
+  "tentacool": {
+    "by": "Pokemandrew",
+    "id": "6dd8af66-9117-48a7-b5f8-219bb229f5c5"
+  },
+  "tentacruel": {
+    "by": "RioBlitzle",
+    "id": "46db24e5-0bb6-4dbf-a1da-8281306f4109"
+  },
+  "togedemaru": {
+    "by": "Mystique_VA",
+    "id": "aebe97ce-3c58-406d-9920-c2d912aa3d7e"
+  },
+  "torchic": {
+    "by": "Pinkachu",
+    "id": "c45ddf51-6c61-4e3c-94dd-519cc6bb1907"
+  },
+  "totodile": {
+    "by": "Pokemandrew",
+    "id": "74b451b4-10dd-4e0b-a173-33292fe6c3ac"
+  },
+  "treecko": {
+    "by": "FoFo1300",
+    "id": "eaa6c417-6a83-48ec-ac05-0f0f5e12e317"
+  },
+  "umbreon": {
+    "by": "NeonTangela533",
+    "id": "3af40619-0f0d-41cc-b8a9-14790a541c0a"
+  },
+  "vaporeon": {
+    "by": "wibba",
+    "id": "73b2197f-3751-4f09-a48f-08ce31d63166"
+  },
+  "venomoth": {
+    "by": "StarryParasect24",
+    "id": "184e4eef-f1c6-49bc-bed8-47a367a08b98"
+  },
+  "venonat": {
+    "by": "Pokemandrew",
+    "id": "54aac817-2c23-425d-8617-de0a56cf2367"
+  },
+  "venusaur": {
+    "by": "FoFo1300",
+    "id": "0050bba3-c978-4077-9345-9714fe288759"
+  },
+  "victini": {
+    "by": "goliatchan2",
+    "id": "4d02f3cc-8f85-49ae-8105-b7cfa4a7fd8c"
+  },
+  "victreebel": {
+    "by": "NeonTangela533",
+    "id": "10ae9546-23ba-4eb6-b3ce-44acf1a75aec"
+  },
+  "vileplume": {
+    "by": "pepgold",
+    "id": "0ebfedf3-4d42-49de-9e66-d93d5a50d6a7"
+  },
+  "vivillon": {
+    "by": "DittoLuvah326",
+    "id": "dc04a4db-bf02-4f7e-a923-8a00711fc41c"
+  },
+  "voltorb": {
+    "by": "pepgold",
+    "id": "57ec292b-55b3-4373-9f79-7382ade4289c"
+  },
+  "vulpix": {
+    "by": "HotAppleKai",
+    "id": "dddced82-c3d6-4a86-bb69-96ba0c20b060"
+  },
+  "wartortle": {
+    "by": "Bode_6101",
+    "id": "a2d923e6-3f68-4562-a5e9-1df65796c0c9"
+  },
+  "weedle": {
+    "by": "Bubblegumartwork",
+    "id": "2551e3df-a7db-42a0-ae74-4df46e2070d6"
+  },
+  "weepinbell": {
+    "by": "RioBlitzle",
+    "id": "4cda8ac7-1ddf-413d-ae2b-ccfaf9c055ea"
+  },
+  "weezing": {
+    "by": "FoFo1300",
+    "id": "d659b482-f439-41bc-aee8-161059805a1a"
+  },
+  "whismur": {
+    "by": "FoFo1300",
+    "id": "4ffa630a-c958-4489-a2ca-331e3b093945"
+  },
+  "wigglytuff": {
+    "by": "WaveMarowak944",
+    "id": "b373fb2c-71cf-4bbe-b48a-1fe4db18d560"
+  },
+  "wurmple": {
+    "by": "FoFo1300",
+    "id": "4632ca5e-ea11-4c53-ae69-0aba6f3f3f2d"
+  },
+  "zapdos": {
+    "by": "TLLanghamArt",
+    "id": "68e13aa5-faee-44f5-a7aa-a51622e0977d"
+  },
+  "zeraora": {
+    "by": "ThunderMagneton289",
+    "id": "8325a496-73d0-4a4b-9d47-461b6041a3bf"
+  },
+  "zubat": {
+    "by": "KymWitch",
+    "id": "eb3f2181-4711-4da4-b787-d16715f4bfa1"
+  }
+}

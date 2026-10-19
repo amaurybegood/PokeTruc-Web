@@ -45,6 +45,8 @@ function selectCard(item, track = true) {
   panel.innerHTML = cardDetailsHTML(card, who, 'panel');
   panel.hidden = false;
   content.classList.add('has-panel');
+  // User-opened: move focus into the panel so keyboard and screen-reader users land on it.
+  if (track) panel.focus({ preventScroll: true });
 }
 
 function closePanel() {
@@ -80,6 +82,13 @@ function initPokemonPage() {
       toggle.setAttribute('aria-expanded', String(open));
       document.getElementById(toggle.getAttribute('aria-controls')).hidden = !open;
     }
+  });
+
+  // Esc closes the panel from anywhere, unless a dialog or the search owns the key.
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape' || panel.hidden || e.defaultPrevented) return;
+    if (document.querySelector('dialog[open]') || e.target.closest('input, select, textarea')) return;
+    closePanel();
   });
 
   panel.addEventListener('click', e => {

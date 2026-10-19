@@ -28,6 +28,13 @@ const hero = (() => {
   catch { return { cards: [] }; }
 })();
 
+// Sketchdex community drawings shown in place of the sprite on Pokémon pages,
+// keyed by imageName: { by, id }. Written by sketchdex.py --apply. Optional file.
+const sketches = (() => {
+  try { return JSON.parse(fs.readFileSync('data/sketchdex.json', 'utf8')); }
+  catch { return {}; }
+})();
+
 // Fail fast on malformed data: a typo in a JSON file should break the build
 // loudly instead of silently dropping content from the site.
 (function validateData() {
@@ -119,8 +126,8 @@ function recordWrite(filePath, content, urlKey) {
   return lastmod;
 }
 
-const CSS_V = 59;
-const JS_V  = 35;
+const CSS_V = 75;
+const JS_V  = 53;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the
@@ -314,6 +321,8 @@ const LANG = {
     genNavAria: 'Jump to a generation',
     viewToggleAria: 'Choose display: Pokémon or cards',
     skipToContent: 'Skip to main content',
+    sketchAlt: (name, by) => `${name}, drawn by ${by}`,
+    sketchCredit: (by) => `Drawing by <strong>${by}</strong> on Sketchdex`,
     indexTitle: 'PokéTruc — Language-Exclusive Pokémon TCG Card Illustrations',
     indexDescription: 'Pokémon TCG illustrations / artworks released in only one language or region — Japanese, English, Chinese, Western-only, Asian-only and more. Free, fan-made, ad-free.',
     indexH1: 'Pokémon TCG illustrations / artworks released in only one language or one region',
@@ -390,6 +399,7 @@ const LANG = {
     pokemonCount: (n) => `${n} Pokémon`,
     heroEyebrow: 'Language- & region-exclusive Pokémon TCG art',
     heroH1: 'The card illustrations most collectors have never seen.',
+    heroDeal: 'Deal new cards',
     heroLead: 'Artwork printed in a single language or released in a single region: Japanese-only promos, Chinese-market exclusives, Western-only sets. Catalogued by Pokémon, set and artist.',
     statIllustrations: 'exclusive illustrations',
     statPokemon: 'Pokémon covered',
@@ -399,6 +409,7 @@ const LANG = {
     browseHeading: 'Browse the catalogue',
     viewByPokemon: 'By Pokémon',
     exclusiveTo: 'Exclusive to',
+    exclusiveHelp: 'What do these groups mean?',
     hideEmpty: 'Hide Pokémon without cards',
     regionLabel: 'Region',
     sortLabel: 'Sort',
@@ -450,6 +461,8 @@ const LANG = {
     genNavAria: 'Aller à une génération',
     viewToggleAria: 'Choisir l\'affichage : Pokémon ou cartes',
     skipToContent: 'Aller au contenu',
+    sketchAlt: (name, by) => `${name}, dessiné par ${by}`,
+    sketchCredit: (by) => `Dessin de <strong>${by}</strong> sur Sketchdex`,
     indexTitle: 'PokéTruc — Illustrations de cartes Pokémon TCG exclusives à une langue',
     indexDescription: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou région (japonais, anglais, chinois, occident, asie). Gratuit, sans pub, fait par un fan.",
     indexH1: "Illustrations / artworks de cartes Pokémon TCG n'existant que dans une seule langue ou une seule région",
@@ -527,6 +540,7 @@ const LANG = {
     pokemonCount: (n) => `${n} Pokémon`,
     heroEyebrow: 'Illustrations Pokémon TCG exclusives à une langue ou une région',
     heroH1: 'Les illustrations que la plupart des collectionneurs n\'ont jamais vues.',
+    heroDeal: 'Redistribuer les cartes',
     heroLead: 'Des illustrations imprimées dans une seule langue ou sorties dans une seule région : promos réservées au Japon, exclusivités du marché chinois, sets uniquement occidentaux. Classées par Pokémon, set et artiste.',
     statIllustrations: 'illustrations exclusives',
     statPokemon: 'Pokémon recensés',
@@ -536,6 +550,7 @@ const LANG = {
     browseHeading: 'Parcourir le catalogue',
     viewByPokemon: 'Par Pokémon',
     exclusiveTo: 'Exclusivité',
+    exclusiveHelp: 'Que veulent dire ces groupes ?',
     hideEmpty: 'Masquer les Pokémon sans carte',
     regionLabel: 'Région',
     sortLabel: 'Trier',
@@ -587,6 +602,8 @@ const LANG = {
     genNavAria: '世代へジャンプ',
     viewToggleAria: '表示を選択：ポケモンまたはカード',
     skipToContent: 'メインコンテンツへスキップ',
+    sketchAlt: (name, by) => `${by}さんが描いた${name}`,
+    sketchCredit: (by) => `イラスト：<strong>${by}</strong>（Sketchdex）`,
     indexTitle: 'PokéTruc — 言語・地域限定のポケモンTCGカードイラスト',
     indexDescription: '1つの言語（日本語・英語・中国語・韓国語）または1つの地域（欧米・アジア）にしか存在しないポケモンTCGのイラスト／アートワーク。完全無料・広告なし・ファン制作。',
     indexH1: '1つの言語または1つの地域にしか存在しないポケモンTCGのイラスト / アートワーク',
@@ -663,6 +680,7 @@ const LANG = {
     pokemonCount: (n) => `${n}匹`,
     heroEyebrow: '言語・地域限定のポケモンTCGイラスト',
     heroH1: '多くのコレクターがまだ見たことのないカードイラスト。',
+    heroDeal: 'カードを配り直す',
     heroLead: '1つの言語でのみ印刷された、または1つの地域でのみ発売されたイラスト。日本限定プロモ、中国市場限定カード、欧米限定セットなどを、ポケモン・セット・イラストレーター別に収録しています。',
     statIllustrations: '限定イラスト',
     statPokemon: '収録ポケモン',
@@ -672,6 +690,7 @@ const LANG = {
     browseHeading: 'カタログを見る',
     viewByPokemon: 'ポケモン別',
     exclusiveTo: '限定先',
+    exclusiveHelp: 'これらの分類の意味',
     hideEmpty: 'カードのないポケモンを隠す',
     regionLabel: '地方',
     sortLabel: '並び替え',
@@ -723,6 +742,8 @@ const LANG = {
     genNavAria: '세대로 이동',
     viewToggleAria: '표시 선택: 포켓몬 또는 카드',
     skipToContent: '본문으로 건너뛰기',
+    sketchAlt: (name, by) => `${by}님이 그린 ${name}`,
+    sketchCredit: (by) => `그림: <strong>${by}</strong> (Sketchdex)`,
     indexTitle: 'PokéTruc — 언어·지역 한정 포켓몬 TCG 카드 일러스트',
     indexDescription: '한 가지 언어(일본어, 영어, 중국어, 한국어) 또는 한 지역(서양·아시아)에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크. 무료, 광고 없음, 팬 제작.',
     indexH1: '한 가지 언어 또는 한 지역에서만 존재하는 포켓몬 TCG 일러스트 / 아트워크',
@@ -799,6 +820,7 @@ const LANG = {
     pokemonCount: (n) => `포켓몬 ${n}마리`,
     heroEyebrow: '언어·지역 한정 포켓몬 TCG 일러스트',
     heroH1: '대부분의 수집가가 본 적 없는 카드 일러스트.',
+    heroDeal: '카드 다시 나누기',
     heroLead: '한 가지 언어로만 인쇄되었거나 한 지역에서만 출시된 일러스트. 일본 한정 프로모, 중국 시장 한정 카드, 서양 한정 세트를 포켓몬·세트·일러스트레이터별로 정리했습니다.',
     statIllustrations: '한정 일러스트',
     statPokemon: '수록 포켓몬',
@@ -808,6 +830,7 @@ const LANG = {
     browseHeading: '카탈로그 둘러보기',
     viewByPokemon: '포켓몬별',
     exclusiveTo: '한정 지역',
+    exclusiveHelp: '이 분류는 무슨 뜻인가요?',
     hideEmpty: '카드 없는 포켓몬 숨기기',
     regionLabel: '지방',
     sortLabel: '정렬',
@@ -859,6 +882,8 @@ const LANG = {
     genNavAria: '跳转到世代',
     viewToggleAria: '选择显示方式：宝可梦或卡片',
     skipToContent: '跳到主要内容',
+    sketchAlt: (name, by) => `${by}绘制的${name}`,
+    sketchCredit: (by) => `绘图：<strong>${by}</strong>（Sketchdex）`,
     indexTitle: 'PokéTruc — 语言·地区独占的宝可梦 TCG 卡牌插画',
     indexDescription: '仅在一种语言（日文、英文、中文或韩文）或一个地区（西方·亚洲）中发行的宝可梦 TCG 插画 / 美术图。免费、无广告、由粉丝制作。',
     indexH1: '仅在一种语言或一个地区中发行的宝可梦 TCG 插画 / 美术图',
@@ -935,6 +960,7 @@ const LANG = {
     pokemonCount: (n) => `${n} 只宝可梦`,
     heroEyebrow: '语言及地区独占的宝可梦 TCG 插画',
     heroH1: '大多数收藏家从未见过的卡牌插画。',
+    heroDeal: '重新发牌',
     heroLead: '仅以单一语言印刷或仅在单一地区发行的插画：日本限定促销卡、中国市场独占卡、西方限定卡组。按宝可梦、卡组和插画师分类整理。',
     statIllustrations: '独占插画',
     statPokemon: '收录宝可梦',
@@ -944,6 +970,7 @@ const LANG = {
     browseHeading: '浏览目录',
     viewByPokemon: '按宝可梦',
     exclusiveTo: '独占范围',
+    exclusiveHelp: '这些分类是什么意思？',
     hideEmpty: '隐藏无卡牌的宝可梦',
     regionLabel: '地区',
     sortLabel: '排序',
@@ -1218,6 +1245,7 @@ function headBlock({ lang, title, description, canonical, urlsByLang, jsonLd, og
   <link rel="preload" as="image" href="/logo.webp" type="image/webp">
   <link rel="preload" as="image" href="/logo-title-960.webp" imagesrcset="/logo-title-960.webp 960w, /logo-title.webp 1800w" imagesizes="142px" type="image/webp">${preloadImage ? `
   <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">` : ''}
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage-grotesque-latin-800.woff2" crossorigin>
   <link rel="dns-prefetch" href="//gc.zgo.at">
   <link rel="preconnect" href="//gc.zgo.at" crossorigin>
 
@@ -1390,7 +1418,8 @@ function scriptTags() {
   <script src="/theme.js?v=${JS_V}"></script>
   <script src="/viewer.js?v=${JS_V}"></script>
   <script src="/search.js?v=${JS_V}"></script>
-  <script src="/backtotop.js?v=${JS_V}"></script>`;
+  <script src="/backtotop.js?v=${JS_V}"></script>
+  <script src="/snow.js?v=${JS_V}"></script>`;
 }
 
 // -----------------------------------------------------------------------------
@@ -1426,7 +1455,7 @@ function cardAltText(lang, card, localizedName) {
   const adj = (CARD_LANG_ADJ[lang] || CARD_LANG_ADJ.en)[exclusivityKey(card)] || '';
   const artistPart = card.artist ? CARD_ALT_BY_ARTIST[lang](card.artist) : '';
   const suffix = CARD_ALT_SUFFIX[lang];
-  const year = card.year ? `, ${card.year}` : '';
+  const year = cardYear(card) ? `, ${cardYear(card)}` : '';
   return `${localizedName} — ${card.name} (${adj}${year}) ${suffix}${artistPart}`;
 }
 
@@ -1438,7 +1467,7 @@ function renderCard(card, pokemon, L, lang, localizedName, eager = false) {
   // First card on the page is the LCP candidate: fetch it eagerly with high
   // priority; everything below the fold stays lazy.
   const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
-  const code = [card.setNumber, cardYear(card)].filter(Boolean).join(' · ');
+  const code = [card.setNumber, cardYear(card)].filter(Boolean).join('\u00a0·\u00a0');
   return `
           <div class="card-item" id="${card.imageName}">
             <a class="card-open" href="#${card.imageName}">
@@ -1477,11 +1506,11 @@ const groupShortLabel = (flag, L, lang) => CHIP_LABELS[lang][flag] || L.otherGro
 function distributionHTML(groups, L, lang) {
   const parts = groups.slice(0, DIST_SLOTS).map(g => [groupShortLabel(g.flag, L, lang), g.cards.length]);
   const rest = groups.slice(DIST_SLOTS).reduce((n, g) => n + g.cards.length, 0);
-  if (rest) parts.push([L.otherGroup, rest]);
+  if (rest) parts.push([L.otherGroup, rest, groups.slice(DIST_SLOTS).map(g => `${groupShortLabel(g.flag, L, lang)} ${g.cards.length}`).join(' · ')]);
   return `
         <div class="dist">
           <div class="dist-bar" role="img" aria-label="${escapeHtml(L.distributionAria(parts.map(([l, n]) => `${l} ${n}`)))}">${parts.map(([, n]) => `<span style="flex-grow:${n}"></span>`).join('')}</div>
-          <ul class="dist-legend" aria-hidden="true">${parts.map(([l, n]) => `<li>${escapeHtml(l)} <span class="mono">${n}</span></li>`).join('')}</ul>
+          <ul class="dist-legend" aria-hidden="true">${parts.map(([l, n, detail]) => `<li${detail ? ` title="${escapeHtml(detail)}"` : ''}>${escapeHtml(l)} <span class="mono">${n}</span></li>`).join('')}</ul>
         </div>`;
 }
 
@@ -1648,10 +1677,10 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
       const artwork = {
         "@type": "VisualArtwork",
         "@id": `${BASE_URL}/cards/${card.imageName}`,
-        "name": `${localizedName} — ${card.name}${card.year ? ` (${card.year})` : ''}`,
+        "name": `${localizedName} — ${card.name}${cardYear(card) ? ` (${cardYear(card)})` : ''}`,
         "image": `${BASE_URL}/cards/${card.imageName}.avif`,
       };
-      if (card.year)        artwork.datePublished = String(card.year);
+      if (cardYear(card))    artwork.datePublished = String(cardYear(card));
       if (isos.length === 1) artwork.inLanguage = isos[0];
       else if (isos.length > 1) artwork.inLanguage = isos;
       if (card.artist)   artwork.creator = { "@type": "Person", "name": card.artist };
@@ -1668,6 +1697,9 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
   const description = L.detailDescription(localizedName, pokemon.id, count);
 
   const ogImage = `${BASE_URL}/monsters/${pokemon.imageName}.png`;
+  const sketch = sketches[pokemon.imageName];
+  // Image + credit line both link here; the image link stays out of the tab order.
+  const sketchUrl = `https://www.sketchdex.app/community?sort=popular&amp;pokemonId=${pokemon.id}`;
 
   const firstCard = firstDisplayedCard(pkCards);
   const head = headBlock({
@@ -1744,18 +1776,21 @@ ${headerBlock(lang, { slug }, 'pokemon')}
     </div>
 
     <section class="pk-hero wrap">
-      <div class="pk-disc"><img src="/monsters/${pokemon.imageName}.webp" alt="${escapeHtml(localizedName)}" width="256" height="256"></div>
+      <div class="pk-disc${sketch ? ' pk-disc--sketch' : ''}">${sketch
+        ? `<a href="${sketchUrl}" target="_blank" rel="noopener" tabindex="-1"><img src="/monsters/sketch/${pokemon.imageName}.webp" alt="${escapeHtml(L.sketchAlt(localizedName, sketch.by))}" width="256" height="256"></a>`
+        : `<img src="/monsters/${pokemon.imageName}.webp" alt="${escapeHtml(localizedName)}" width="256" height="256">`}</div>
       <div class="pk-hero-copy">
         <p class="eyebrow">${escapeHtml(eyebrow)}</p>
         <h1 class="pk-name">${escapeHtml(localizedName)}</h1>
-        <p class="pk-summary">${summary}</p>${groups.length > 1 ? distributionHTML(groups, L, lang) : ''}
+        <p class="pk-summary">${summary}</p>${sketch ? `
+        <p class="pk-credit"><a href="${sketchUrl}" target="_blank" rel="noopener">${L.sketchCredit(escapeHtml(sketch.by))} <span aria-hidden="true">↗</span></a></p>` : ''}${groups.length > 1 ? distributionHTML(groups, L, lang) : ''}
       </div>
     </section>
 ${toolbar}
     <div class="pk-content wrap">
       <div class="pk-groups">${sections}
       </div>
-      <aside id="card-panel" class="card-panel" hidden></aside>
+      <aside id="card-panel" class="card-panel" tabindex="-1" hidden></aside>
     </div>
 ${setsArtistsHTML}
   </main>
@@ -1797,14 +1832,14 @@ function renderNewsItem(item, lang, eager = false) {
   const srcAttrs = item.image ? `src="${escapeHtml(item.image)}"`
     : item.imageName ? cardSrcAttrs(item.imageName, NEWS_SIZES)
     : '';
-  const setLine = [item.set, item.year].filter(Boolean).map(String).join(' · ');
+  const code = [item.code, item.year].filter(Boolean).join('\u00a0·\u00a0');
   // First news card may be the mobile LCP element — load it eagerly.
   const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
   const inner = `
         ${srcAttrs ? `<img ${srcAttrs} alt="${escapeHtml(item.title || '')}"${loadAttrs} decoding="async">` : ''}
         <span class="news-title">${escapeHtml(item.title || '')}</span>
-        <span class="news-meta"><span class="tag">${escapeHtml(tag)}</span>${item.code ? `<span class="news-code">${escapeHtml(item.code)}</span>` : ''}</span>
-        ${setLine ? `<span class="news-set">${escapeHtml(setLine)}</span>` : ''}`;
+        <span class="news-meta"><span class="tag">${escapeHtml(tag)}</span>${code ? `<span class="news-code">${escapeHtml(code)}</span>` : ''}</span>
+        ${item.set ? `<span class="news-set">${escapeHtml(item.set)}</span>` : ''}`;
 
   if (item.link) {
     const external = /^https?:\/\//.test(item.link);
@@ -1844,33 +1879,89 @@ function heroShuffleScript(lang) {
     p: withCards.map(p => [slugify(p.name.en), p.name[NAME_FIELD[lang]] || p.name.en]),
     c: cards.map(c => [c.imageName, index.get(c.pokemonId), cardYear(c), exclusivityTag(c, lang)]),
   };
+  // The deal button only exists with JS: it draws 3 other cards, sends the
+  // shown ones down into the deck and deals the new ones back in.
+  const label = JSON.stringify(LANG[lang].heroDeal); // fixed UI string, no markup
   return `
       <script>(function () {
         var d = ${JSON.stringify(pool).replace(/</g, '\\u003c')};
         var panel = document.currentScript.previousElementSibling;
-        var pick = [];
-        while (pick.length < 3 && pick.length < d.c.length) {
-          var c = d.c[Math.floor(Math.random() * d.c.length)];
-          if (pick.indexOf(c) < 0) pick.push(c);
-        }
+        var CLS = ['hero-card-front', 'hero-card-left', 'hero-card-right'];
+        var ROT = [0, -9, 8]; // the CSS --rot of each slot
+        var DX = [0, 58, -58]; // % of a card width from its slot to the panel centre
+        var ORDER = [2, 0, 1]; // deal left, right, then front on top
+        var links = CLS.map(function (cls) { return panel.querySelector('.' + cls); });
+        var shown = [];
         var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
         var who = function (c) { return d.p[c[1]][1]; };
+        var thumb = function (c) { return '/cards/thumbs/' + c[0] + '.avif'; };
         var prefix = document.body.dataset.langPrefix || '/';
-        ['hero-card-front', 'hero-card-left', 'hero-card-right'].forEach(function (cls, i) {
-          var link = panel.querySelector('.' + cls), c = pick[i];
-          if (!link || !c) return;
-          var img = link.querySelector('img');
-          link.href = prefix + 'pokemon/' + d.p[c[1]][0] + '/#' + c[0];
-          img.removeAttribute('srcset');
-          img.removeAttribute('sizes');
-          img.src = '/cards/thumbs/' + c[0] + '.avif';
-          img.alt = who(c) + ', ' + c[2];
+        function pick() {
+          var p = [];
+          while (p.length < 3 && p.length < d.c.length) {
+            var c = d.c[Math.floor(Math.random() * d.c.length)];
+            if (p.indexOf(c) < 0 && (d.c.length < 6 || shown.indexOf(c) < 0)) p.push(c);
+          }
+          return p;
+        }
+        function show(p) {
+          shown = p;
+          links.forEach(function (link, i) {
+            var c = p[i];
+            if (!link || !c) return;
+            var img = link.querySelector('img');
+            link.href = prefix + 'pokemon/' + d.p[c[1]][0] + '/#' + c[0];
+            img.removeAttribute('srcset');
+            img.removeAttribute('sizes');
+            img.src = thumb(c);
+            img.alt = who(c) + ', ' + c[2];
+          });
+          // p = [front, left, right]; the caption reads left to right.
+          var names = [p[1], p[0], p[2]].filter(Boolean).map(who).filter(function (n, i, a) { return a.indexOf(n) === i; }).join(' · ');
+          var sameTag = p.every(function (c) { return c[3] === p[0][3]; });
+          panel.querySelector('.hero-caption').innerHTML = '<span>' + esc(names) + '</span>'
+            + (sameTag ? '<span class="tag">' + esc(p[0][3]) + '</span>' : '');
+        }
+        show(pick());
+        if (!links[0] || !links[0].animate || d.c.length < 6) return;
+
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'hero-deal';
+        btn.title = ${label};
+        btn.setAttribute('aria-label', ${label});
+        btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>';
+        panel.appendChild(btn);
+        panel.querySelector('.hero-caption').setAttribute('aria-live', 'polite');
+        var busy = false;
+        btn.addEventListener('click', function () {
+          if (busy) return;
+          busy = true;
+          window.umami && window.umami.track('hero-deal');
+          var p = pick();
+          var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+          var rest = function (i) { return 'rotate(' + ROT[i] + 'deg)'; };
+          var deck = function (i, r) { return 'translate(' + DX[i] + '%, 135%) rotate(' + r + 'deg)'; };
+          var ready = p.map(function (c) {
+            var im = new Image();
+            im.src = thumb(c);
+            return im.decode ? im.decode().catch(function () {}) : Promise.resolve();
+          });
+          var out = links.map(function (el, i) {
+            return el.animate(still ? [{ opacity: 1 }, { opacity: 0 }]
+              : [{ transform: rest(i) }, { transform: deck(i, ROT[i] / 3) }],
+              { duration: still ? 150 : 260, delay: still ? 0 : (2 - ORDER[i]) * 40, easing: 'cubic-bezier(0.5, 0, 0.75, 0)', fill: 'forwards' });
+          });
+          Promise.all(out.map(function (a) { return a.finished; }).concat(ready)).then(function () {
+            show(p);
+            return Promise.all(links.map(function (el, i) {
+              out[i].cancel();
+              return el.animate(still ? [{ opacity: 0 }, { opacity: 1 }]
+                : [{ transform: deck(i, ROT[i] * 2.5 - 6) }, { transform: rest(i) }],
+                { duration: still ? 200 : 560, delay: still ? 0 : ORDER[i] * 90, easing: 'cubic-bezier(0.16, 1, 0.3, 1)', fill: 'backwards' }).finished;
+            }));
+          }).then(function () { busy = false; }, function () { busy = false; });
         });
-        // pick = [front, left, right]; the caption reads left to right.
-        var names = [pick[1], pick[0], pick[2]].filter(Boolean).map(who).filter(function (n, i, a) { return a.indexOf(n) === i; }).join(' · ');
-        var sameTag = pick.every(function (c) { return c[3] === pick[0][3]; });
-        panel.querySelector('.hero-caption').innerHTML = '<span>' + esc(names) + '</span>'
-          + (sameTag ? '<span class="tag">' + esc(pick[0][3]) + '</span>' : '');
       })();</script>`;
 }
 
@@ -2025,7 +2116,7 @@ ${buildNewsHTML(lang)}
         </div>
 
         <div class="browse-filters">
-          <span class="filter-label" id="excl-label">${escapeHtml(L.exclusiveTo)}</span>
+          <span class="filter-label"><span id="excl-label">${escapeHtml(L.exclusiveTo)}</span><a class="filter-help" href="${pathRoot(lang)}info/#faq-3" aria-label="${escapeHtml(L.exclusiveHelp)}" title="${escapeHtml(L.exclusiveHelp)}">?</a></span>
           <div id="lang-filter" class="chips" role="group" aria-labelledby="excl-label"></div>
           <label class="hide-empty"><input type="checkbox" id="hide-empty" checked> ${escapeHtml(L.hideEmpty)}</label>
           <label class="sort-field">${escapeHtml(L.sortLabel)}
@@ -2036,7 +2127,7 @@ ${buildNewsHTML(lang)}
         <nav id="gen-nav" class="region-nav" aria-label="${escapeHtml(L.regionLabel)}"></nav>
 
         <div id="loader" class="loader">
-          <div class="loader-spinner"></div>
+          <div class="loader-spinner" aria-hidden="true"></div>
         </div>
         <p id="grid-status" class="visually-hidden" role="status"></p>
         <div id="pokemon-grid"></div>
@@ -2232,15 +2323,14 @@ ${headerBlock(lang, '', 'info')}
         </div>
       </div>
 
-      <section id="about" class="info-about" aria-labelledby="about-title">
-        <h2 id="about-title">${escapeHtml(L.aboutHeading)}</h2>
+      <section id="about" class="info-about">
         ${L.aboutBody.map(p => `<p>${escapeHtml(p)}</p>`).join('\n        ')}
       </section>
 
       <section id="faq" aria-labelledby="faq-title">
         <h2 id="faq-title">${escapeHtml(FAQ_HEADING[lang])}</h2>
         <div class="faq">
-        ${faq.map(([q, a], i) => `<details${i === 0 ? ' open' : ''}>
+        ${faq.map(([q, a], i) => `<details id="faq-${i + 1}"${i === 0 ? ' open' : ''}>
           <summary>${escapeHtml(q)}${ICON_CHEVRON}</summary>
           <p>${escapeHtml(a)}</p>
         </details>`).join('\n        ')}
@@ -2282,6 +2372,10 @@ ${scriptTags()}
     // viewport (the first one when two share a row; the last at page bottom;
     // the one just clicked while it is on screen).
     (function () {
+      // #faq-N (the "?" next to the exclusivity filters) opens that question.
+      function openFaq() { var d = location.hash && document.querySelector(location.hash); if (d && d.tagName === 'DETAILS') d.open = true; }
+      openFaq();
+      addEventListener('hashchange', openFaq);
       var links = [].slice.call(document.querySelectorAll('.info-toc a'));
       var secs = links.map(function (a) { return document.querySelector(a.hash); });
       function spy() {
@@ -2311,8 +2405,8 @@ ${scriptTags()}
 // -----------------------------------------------------------------------------
 
 // Trainer card: same link-to-anchor pattern as the Pokémon page; pokemon.js
-// opens the viewer. Desktop caption: title, tag + code · rarity, set · year,
-// artist. Mobile swaps the middle lines for code · year.
+// opens the viewer. Caption: title, code · year, set, artist (the group
+// heading already gives the exclusivity, the panel the rarity).
 function renderTrainerCard(card, lang, eager = false) {
   const alt = cardAltText(lang, card, card.cardName);
   const loadAttrs = eager ? ' fetchpriority="high"' : ' loading="lazy"';
@@ -2323,9 +2417,8 @@ function renderTrainerCard(card, lang, eager = false) {
               <img ${cardSrcAttrs(card.imageName, TRAINER_SIZES)} alt="${escapeHtml(alt)}"${loadAttrs} decoding="async">
               <span class="card-cap">
                 <span class="tr-card-title">${escapeHtml(card.cardName)}</span>
-                <span class="tr-card-meta"><span class="tag">${escapeHtml(exclusivityTag(card, lang))}</span><span class="card-cap-code">${join(card.setNumber, card.rarity)}</span></span>
-                <span class="card-cap-code tr-card-mobile">${join(card.setNumber, cardYear(card))}</span>
-                <span class="card-cap-artist tr-card-set">${join(card.name, cardYear(card))}</span>
+                <span class="card-cap-code">${join(card.setNumber, cardYear(card))}</span>
+                ${card.name ? `<span class="card-cap-artist">${escapeHtml(card.name)}</span>` : ''}
                 ${card.artist ? `<span class="card-cap-artist">${escapeHtml(card.artist)}</span>` : ''}
               </span>
             </a>
@@ -2364,14 +2457,14 @@ function trainersPageHTML(lang) {
   });
 
   const headingByFlag = Object.fromEntries(LANG_INFO.map(l => [l.flag, L[l.key]]));
-  const chip = (id, label, n, on) => `<button type="button" class="chip" data-group="${id}" aria-pressed="${on}">${escapeHtml(label)} <span class="chip-count">${n}</span></button>`;
+  const chip = (id, label, n, on, flag) => `<button type="button" class="chip" data-group="${id}" aria-pressed="${on}">${flag ? `<span class="chip-flag" aria-hidden="true">${flag}</span>` : ''}${escapeHtml(label)} <span class="chip-count">${n}</span></button>`;
   const sortOptions = [['newest', L.sortNewest], ['oldest', L.sortOldest], ['name', L.sortName]]
     .map(([v, label]) => `<option value="${v}">${escapeHtml(label)}</option>`).join('');
   const filters = trainerCards.length > 1 ? `
     <div class="tr-filters wrap">${groups.length > 1 ? `
-      <span class="filter-label" id="tr-excl">${escapeHtml(L.exclusiveTo)}</span>
+      <span class="filter-label"><span id="tr-excl">${escapeHtml(L.exclusiveTo)}</span><a class="filter-help" href="${pathRoot(lang)}info/#faq-3" aria-label="${escapeHtml(L.exclusiveHelp)}" title="${escapeHtml(L.exclusiveHelp)}">?</a></span>
       <div class="chips" role="group" aria-labelledby="tr-excl">
-        ${[chip('', L.filterAll, trainerCards.length, true), ...groups.map(g => chip(groupSlug(g.flag), groupShortLabel(g.flag, L, lang), g.cards.length, false))].join('\n        ')}
+        ${[chip('', L.filterAll, trainerCards.length, true), ...groups.map(g => chip(groupSlug(g.flag), groupShortLabel(g.flag, L, lang), g.cards.length, false, g.flag))].join('\n        ')}
       </div>` : ''}
       <label class="sort-field">${escapeHtml(L.sortLabel)}
         <select id="tr-sort">${sortOptions}</select>
