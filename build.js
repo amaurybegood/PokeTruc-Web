@@ -95,6 +95,7 @@ const TODAY    = new Date().toISOString().split('T')[0];
 // language-exclusive cards.
 const REDDIT_TWENTYFOUR7_URL = 'https://www.reddit.com/user/TwentyFour7/';
 const REDDIT_QUUADOR_URL     = 'https://www.reddit.com/user/Quuador/';
+const SKETCHDEX_URL          = 'https://www.sketchdex.app/';
 
 // Author profile + project repo. Surfaced on the Info page (Contact + Source
 // code sections) so the site has a couple of honest backlinks pointing out.
@@ -351,6 +352,8 @@ const LANG = {
     creditsBetween: ' and ',
     creditsLinkText2: 'u/Quuador',
     creditsAfter: ' for their precious help in finding cards that only exist in a single language.',
+    creditsSketchBefore: 'Thanks also to ',
+    creditsSketchAfter: ' and its community: the drawings on the Pokémon pages come from there, with its creator’s permission.',
     sourceCodeHeading: 'Source code',
     sourceCodeBefore: 'The source code of this site is open source on GitHub: ',
     emailLabel: 'Email:',
@@ -491,6 +494,8 @@ const LANG = {
     creditsBetween: ' et ',
     creditsLinkText2: 'u/Quuador',
     creditsAfter: ' pour leur aide précieuse à dénicher des cartes existant uniquement dans une seule langue.',
+    creditsSketchBefore: 'Merci aussi à ',
+    creditsSketchAfter: ' et à sa communauté : les dessins qui apparaissent sur les pages Pokémon viennent de là, avec l’accord de son créateur.',
     sourceCodeHeading: 'Code source',
     sourceCodeBefore: 'Le code source de ce site est ouvert sur GitHub : ',
     emailLabel: 'E-mail :',
@@ -632,6 +637,8 @@ const LANG = {
     creditsBetween: ' さんと',
     creditsLinkText2: 'u/Quuador',
     creditsAfter: ' さんに心より感謝いたします。',
+    creditsSketchBefore: 'ポケモンページのイラストは、制作者の許可を得て ',
+    creditsSketchAfter: ' とそのコミュニティからお借りしています。ありがとうございます。',
     sourceCodeHeading: 'ソースコード',
     sourceCodeBefore: 'このサイトのソースコードはGitHubで公開されています：',
     emailLabel: 'メール：',
@@ -772,6 +779,8 @@ const LANG = {
     creditsBetween: ' 님과 ',
     creditsLinkText2: 'u/Quuador',
     creditsAfter: ' 님께 진심으로 감사드립니다.',
+    creditsSketchBefore: '포켓몬 페이지의 그림은 제작자의 허락을 받아 ',
+    creditsSketchAfter: '와 그 커뮤니티에서 가져왔습니다. 감사합니다.',
     sourceCodeHeading: '소스 코드',
     sourceCodeBefore: '이 사이트의 소스 코드는 GitHub에 공개되어 있습니다: ',
     emailLabel: '이메일:',
@@ -912,6 +921,8 @@ const LANG = {
     creditsBetween: ' 和 ',
     creditsLinkText2: 'u/Quuador',
     creditsAfter: ' 协助寻找仅以单一语言发行的卡牌。',
+    creditsSketchBefore: '同样感谢 ',
+    creditsSketchAfter: ' 及其社区：宝可梦页面上的绘图均来自该网站，并已获得其创建者的许可。',
     sourceCodeHeading: '源代码',
     sourceCodeBefore: '本站源代码已在 GitHub 上开源：',
     emailLabel: '邮箱：',
@@ -2294,7 +2305,10 @@ function infoPageHTML(lang) {
     `<a href="${REDDIT_TWENTYFOUR7_URL}" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText)}${extSuffix}</a>` +
     `${escapeHtml(L.creditsBetween)}` +
     `<a href="${REDDIT_QUUADOR_URL}" target="_blank" rel="noopener noreferrer">${escapeHtml(L.creditsLinkText2)}${extSuffix}</a>` +
-    `${escapeHtml(L.creditsAfter)}</p>`;
+    `${escapeHtml(L.creditsAfter)}</p>` +
+    `<p>${escapeHtml(L.creditsSketchBefore)}` +
+    `<a href="${SKETCHDEX_URL}" target="_blank" rel="noopener">Sketchdex${extSuffix}</a>` +
+    `${escapeHtml(L.creditsSketchAfter)}</p>`;
 
   const toc = [['about', L.aboutHeading], ['faq', FAQ_HEADING[lang]], ['credits', L.creditsHeading], ['source', L.sourceCodeHeading], ['contact', L.contactHeading]];
 
