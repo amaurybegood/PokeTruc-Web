@@ -63,6 +63,7 @@ const translations = {
     'card.number': 'Number',
     'card.released': 'Released',
     'card.rarity': 'Rarity',
+    'card.languages': 'Languages',
     'card.type': 'Type',
     'card.market': 'Market',
     'card.asOf': 'as of {date}',
@@ -133,6 +134,7 @@ const translations = {
     'card.number': 'Numéro',
     'card.released': 'Sortie',
     'card.rarity': 'Rareté',
+    'card.languages': 'Langues',
     'card.type': 'Type',
     'card.market': 'Marché',
     'card.asOf': 'au {date}',
@@ -203,6 +205,7 @@ const translations = {
     'card.number': '番号',
     'card.released': '発売日',
     'card.rarity': 'レアリティ',
+    'card.languages': '言語',
     'card.type': 'タイプ',
     'card.market': '相場',
     'card.asOf': '{date}時点',
@@ -273,6 +276,7 @@ const translations = {
     'card.number': '번호',
     'card.released': '발매일',
     'card.rarity': '레어도',
+    'card.languages': '언어',
     'card.type': '타입',
     'card.market': '시세',
     'card.asOf': '{date} 기준',
@@ -343,6 +347,7 @@ const translations = {
     'card.number': '编号',
     'card.released': '发行日期',
     'card.rarity': '稀有度',
+    'card.languages': '语言',
     'card.type': '类型',
     'card.market': '市场价',
     'card.asOf': '截至 {date}',
@@ -427,7 +432,7 @@ function exclusivityKey(card) {
 
 const FLAG_CODE = {
   '🇯🇵': 'JP', '🇬🇧': 'EN', '🇨🇳': 'CN', '🇰🇷': 'KR', '🇩🇪': 'DE', '🇪🇸': 'ES', '🇫🇷': 'FR',
-  '🇮🇹': 'IT', '🇵🇹': 'PT', '🇵🇱': 'PL', '🇮🇩': 'ID', '🇷🇺': 'RU', '🇹🇭': 'TH', '🇹🇼': 'TW',
+  '🇮🇹': 'IT', '🇵🇹': 'PT', '🇵🇱': 'PL', '🇮🇩': 'ID', '🇷🇺': 'RU', '🇹🇭': 'TH', '🇹🇼': 'TW', '🇲🇾': 'MY',
 };
 const EXCL_TAG_REGION = {
   en: { '🌍': 'WESTERN',  '🏯': 'ASIA' },

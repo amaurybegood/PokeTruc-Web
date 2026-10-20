@@ -66,6 +66,8 @@ function cardFacts(card, { viewer = false } = {}) {
   if (card.artist) rows.push(['card.artist', `<a href="${langPathPrefix()}?q=${encodeURIComponent(card.artist)}&amp;view=cards">${escapeHtml(card.artist)}</a>`]);
   const rarity = [card.rarity, ...(card.variants || [])].filter(Boolean).join(' · ');
   if (rarity) rows.push(['card.rarity', escapeHtml(rarity)]);
+  // Region tags only say ASIA / WESTERN: spell the languages out here.
+  if (card.languages.length > 1) rows.push(['card.languages', escapeHtml(card.languages.map(f => FLAG_CODE[f] || f).join(' · '))]);
   if (viewer) {
     const type = [card.energyType, card.stage && t('stage.' + card.stage)].filter(Boolean).join(' · ');
     if (type) rows.push(['card.type', escapeHtml(type)]);

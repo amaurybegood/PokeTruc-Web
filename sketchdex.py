@@ -133,6 +133,8 @@ def apply(picks_path):
             canvas.paste(im, ((SIZE - im.width) // 2, (SIZE - im.height) // 2), im)
             canvas.save(out, quality=90, method=6)
             current[name] = {"by": pick["by"], "id": pick["id"]}
+            if "/api/daily/" in url:  # not on the community page: link to the artist's dailies
+                current[name]["link"] = f"https://www.sketchdex.app/users/{urllib.parse.quote(pick['by'])}/daily"
             print(f"  [ok]   {name} <- {pick['by']}")
         except Exception as e:
             print(f"  [FAIL] {name}: {e}")

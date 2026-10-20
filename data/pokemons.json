@@ -2340,6 +2340,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 393,
+    "name": {
+      "en": "Piplup",
+      "fr": "Tiplouf",
+      "jp": "ポッチャマ",
+      "ko": "팽도리",
+      "zh": "波加曼"
+    },
+    "imageName": "piplup",
+    "generation": 4,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 399,
     "name": {
       "en": "Bidoof",

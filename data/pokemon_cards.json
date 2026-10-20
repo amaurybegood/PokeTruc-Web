@@ -20459,5 +20459,40 @@
     "variants": [
       "Normal"
     ]
+  },
+  {
+    "pokemonId": 393,
+    "name": "Sword & Shield Promos",
+    "imageName": "393_Piplup_jpn_swshp_232",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵",
+      "🇨🇳",
+      "🇲🇾"
+    ],
+    "year": 2021,
+    "artist": "Saya Tsuruta",
+    "setNumber": "SWSHP 232",
+    "series": "Sword & Shield",
+    "releaseProduct": "Pokémon Center Purchase Campaign",
+    "releaseDate": "2021-09-20",
+    "energyType": "Water",
+    "stage": "basic",
+    "variants": [
+      "Pokémon Center"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 26.73,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Sword-Shield-Promos/Piplup"
+      },
+      "tcgplayer": {
+        "price": 19.66,
+        "url": "https://www.tcgplayer.com/product/597415"
+      }
+    },
+    "pricesDate": "2026-10-20",
+    "region": "asian"
   }
 ]

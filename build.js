@@ -29,7 +29,7 @@ const hero = (() => {
 })();
 
 // Sketchdex community drawings shown in place of the sprite on Pokémon pages,
-// keyed by imageName: { by, id }. Written by sketchdex.py --apply. Optional file.
+// keyed by imageName: { by, id, link? }. Written by sketchdex.py --apply. Optional file.
 const sketches = (() => {
   try { return JSON.parse(fs.readFileSync('data/sketchdex.json', 'utf8')); }
   catch { return {}; }
@@ -128,7 +128,7 @@ function recordWrite(filePath, content, urlKey) {
 }
 
 const CSS_V = 75;
-const JS_V  = 53;
+const JS_V  = 54;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the
@@ -248,7 +248,7 @@ function exclusivityKey(card) {
 // already short there (日本限定…). Consumed by the redesigned card UI.
 const FLAG_CODE = {
   '🇯🇵': 'JP', '🇬🇧': 'EN', '🇨🇳': 'CN', '🇰🇷': 'KR', '🇩🇪': 'DE', '🇪🇸': 'ES', '🇫🇷': 'FR',
-  '🇮🇹': 'IT', '🇵🇹': 'PT', '🇵🇱': 'PL', '🇮🇩': 'ID', '🇷🇺': 'RU', '🇹🇭': 'TH', '🇹🇼': 'TW',
+  '🇮🇹': 'IT', '🇵🇹': 'PT', '🇵🇱': 'PL', '🇮🇩': 'ID', '🇷🇺': 'RU', '🇹🇭': 'TH', '🇹🇼': 'TW', '🇲🇾': 'MY',
 };
 const EXCL_TAG_REGION = {
   en: { '🌍': 'WESTERN',  '🏯': 'ASIA' },
@@ -1710,7 +1710,8 @@ function detailPageHTML(lang, pokemon, pkCards, prev, next) {
   const ogImage = `${BASE_URL}/monsters/${pokemon.imageName}.png`;
   const sketch = sketches[pokemon.imageName];
   // Image + credit line both link here; the image link stays out of the tab order.
-  const sketchUrl = `https://www.sketchdex.app/community?sort=popular&amp;pokemonId=${pokemon.id}`;
+  // Daily-challenge drawings are not on the community page: they carry their own `link`.
+  const sketchUrl = sketch?.link ? escapeHtml(sketch.link) : `https://www.sketchdex.app/community?sort=popular&amp;pokemonId=${pokemon.id}`;
 
   const firstCard = firstDisplayedCard(pkCards);
   const head = headBlock({
