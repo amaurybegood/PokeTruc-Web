@@ -156,6 +156,32 @@
     status.textContent = t('search.count').replace('{n}', i);
     active = -1;
     input.removeAttribute('aria-activedescendant');
+    tagEvents(q);
+    clearTimeout(missTimer);
+    if (!pokemon.length && !artists.length && !sets.length && !cards.length) missTimer = setTimeout(() => trackMiss(q), MISS_DELAY);
+  }
+
+  // Umami: the tracker records clicks on [data-umami-event] links (Enter goes
+  // through .click() too) and waits for the request before navigating.
+  function tagEvents(q) {
+    const tag = (el, name, type) => Object.assign(el.dataset, { umamiEvent: name, umamiEventType: type, umamiEventQ: q });
+    for (const g of list.querySelectorAll('.search-group')) {
+      const type = g.getAttribute('aria-labelledby').replace('search-g-', '');
+      for (const o of g.querySelectorAll('[role="option"]')) tag(o, type === 'suggest' ? 'did-you-mean' : 'search-pick', type);
+    }
+    const all = foot.querySelector('.search-all');
+    if (all) tag(all, 'search-pick', list.querySelector('.search-empty') ? 'browse' : 'all');
+  }
+
+  // A query with no result, once the user stopped typing on it: tells which
+  // Pokémon people look for and the site does not have yet.
+  const MISS_DELAY = 1500;
+  const missed = new Set();
+  let missTimer = 0;
+  function trackMiss(q) {
+    if (input.value.trim() !== q || missed.has(norm(q))) return;
+    missed.add(norm(q));
+    window.umami?.track('search-miss', { q });
   }
 
   // No match: say what can be searched and offer the closest Pokémon names (typos like "pikchu").
@@ -190,7 +216,7 @@
   async function update() {
     const q = input.value.trim();
     clearBtn.hidden = !input.value;
-    if (!ready(q)) return close();
+    if (!ready(q)) { clearTimeout(missTimer); return close(); }
     await load();
     if (input.value.trim() !== q) return; // a newer keystroke took over
     render(q);

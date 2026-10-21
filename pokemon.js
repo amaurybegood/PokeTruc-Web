@@ -21,6 +21,7 @@ function openViewerAt(item) {
     index: Math.max(0, list.findIndex(c => c.imageName === item.id)),
     who: () => who,
     back: who,
+    from: 'full-size',
     group: groupLabel(item),
     // Keep the panel in step with the card the viewer ended on (re-rendering
     // it drops the focus the dialog just restored, so put it back).
@@ -156,6 +157,7 @@ function initTrainersPage() {
       who: c => c.cardName,
       back: document.querySelector('.tr-hero h1').textContent,
       group: item.closest('.tr-group').querySelector('h2').textContent,
+      from: 'trainers',
     });
   });
 

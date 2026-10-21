@@ -67,6 +67,25 @@ document.addEventListener('keydown', (e) => {
   picker.querySelector('summary')?.focus();
 });
 
+// Umami counts a pageview on every history.replaceState that changes the URL,
+// i.e. each home filter click or search keystroke (app.js syncURL). Keep only
+// the page load: every page is a real document, there is no client routing.
+let umamiPageviewSent = false;
+window.umamiBeforeSend = (type, payload) => {
+  if (type !== 'event' || payload.name) return payload;
+  if (umamiPageviewSent) return null;
+  umamiPageviewSent = true;
+  return payload;
+};
+
+// Umami: every link to another site (sources, marketplaces, Sketchdex, credits).
+// They all open in a new tab, so the request goes out before anything unloads.
+document.addEventListener('click', (e) => {
+  const a = e.target.closest?.('a[href^="http"]');
+  if (!a || a.host === location.host || a.dataset.umamiEvent) return;
+  window.umami?.track('outbound', { host: a.hostname.replace(/^www\./, ''), url: a.href });
+});
+
 // Halloween, 15–31 Oct: Mimiqui replaces Ditto in the in-page logo (favicon and
 // og:image untouched). ?halloween=1 forces it on outside the season, ?halloween=0 off.
 (() => {

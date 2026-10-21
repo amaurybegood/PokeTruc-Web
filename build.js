@@ -128,7 +128,7 @@ function recordWrite(filePath, content, urlKey) {
 }
 
 const CSS_V = 75;
-const JS_V  = 54;
+const JS_V  = 58;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the
@@ -1423,7 +1423,7 @@ function cardsDataScript(list) {
 
 function scriptTags() {
   return `  <script data-goatcounter="https://poketruc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="f7f7d1c9-87f5-4b52-8f20-b6110f143513"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f7f7d1c9-87f5-4b52-8f20-b6110f143513" data-before-send="umamiBeforeSend"></script>
   <script>window.DATA_V='${DATA_V}';</script>
   <script src="/i18n.js?v=${JS_V}"></script>
   <script src="/theme.js?v=${JS_V}"></script>
@@ -1602,8 +1602,9 @@ function buildSetsAndArtistsHTML(pkCards, L, lang, pokemon) {
 
   // The search box already matches on set name and artist (app.js), so a
   // pre-filled search is the whole "browse by set/illustrator" feature — no extra pages needed.
-  const searchLink = a =>
-    `<a href="${pathRoot(lang)}?q=${encodeURIComponent(a)}&amp;view=cards">${escapeHtml(a)}</a>`;
+  // data-umami-event*: click events recorded by the Umami tracker.
+  const searchLink = (event, prop) => a =>
+    `<a href="${pathRoot(lang)}?q=${encodeURIComponent(a)}&amp;view=cards" data-umami-event="${event}" data-umami-event-${prop}="${escapeHtml(a)}" data-umami-event-from="pokemon">${escapeHtml(a)}</a>`;
 
   const relatedList = relatedPokemonIds(pokemon, pkCards)
     .map(id => pokemonsWithCards.find(p => p.id === id))
@@ -1612,20 +1613,20 @@ function buildSetsAndArtistsHTML(pkCards, L, lang, pokemon) {
   const setsHTML = setsList.length > 0
     ? `<div class="meta-block">
         <h3 class="meta-title">${escapeHtml(L.setsHeading)} (${setsList.length})</h3>
-        <p class="meta-list">${setsList.map(searchLink).join(' · ')}</p>
+        <p class="meta-list">${setsList.map(searchLink('set-click', 'set')).join(' · ')}</p>
       </div>`
     : '';
   const artistsHTML = artistsList.length > 0
     ? `<div class="meta-block">
         <h3 class="meta-title">${escapeHtml(L.artistsHeading)} (${artistsList.length})</h3>
-        <p class="meta-list">${artistsList.map(searchLink).join(' · ')}</p>
+        <p class="meta-list">${artistsList.map(searchLink('artist-click', 'artist')).join(' · ')}</p>
       </div>`
     : '';
   const relatedHTML = relatedList.length > 0
     ? `<div class="meta-block">
         <h3 class="meta-title">${escapeHtml(L.relatedHeading)}</h3>
         <p class="meta-list">${relatedList.map(p =>
-          `<a href="${pathPokemon(lang, slugify(p.name.en))}">${escapeHtml(p.name[NAME_FIELD[lang]] || p.name.en)}</a>`
+          `<a href="${pathPokemon(lang, slugify(p.name.en))}" data-umami-event="related-pokemon" data-umami-event-from="${slugify(pokemon.name.en)}" data-umami-event-to="${slugify(p.name.en)}">${escapeHtml(p.name[NAME_FIELD[lang]] || p.name.en)}</a>`
         ).join(' · ')}</p>
       </div>`
     : '';

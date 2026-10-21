@@ -63,7 +63,7 @@ function cardFacts(card, { viewer = false } = {}) {
   const rows = [];
   if (card.setNumber) rows.push(['card.number', `<span class="mono">${escapeHtml(card.setNumber)}</span>`]);
   rows.push(['card.released', escapeHtml(card.releaseDate ? fmtDate(card.releaseDate) : card.year)]);
-  if (card.artist) rows.push(['card.artist', `<a href="${langPathPrefix()}?q=${encodeURIComponent(card.artist)}&amp;view=cards">${escapeHtml(card.artist)}</a>`]);
+  if (card.artist) rows.push(['card.artist', `<a href="${langPathPrefix()}?q=${encodeURIComponent(card.artist)}&amp;view=cards" data-umami-event="artist-click" data-umami-event-artist="${escapeHtml(card.artist)}" data-umami-event-from="card">${escapeHtml(card.artist)}</a>`]);
   const rarity = [card.rarity, ...(card.variants || [])].filter(Boolean).join(' · ');
   if (rarity) rows.push(['card.rarity', escapeHtml(rarity)]);
   // Region tags only say ASIA / WESTERN: spell the languages out here.
@@ -116,6 +116,7 @@ function cardDetailsHTML(card, who, variant) {
 
 // Copies the card's link and says so on the button for 2 s.
 function copyCardLink(btn, href) {
+  window.umami?.track('card-copy', { card: new URL(href).hash.slice(1), from: btn.closest('#viewer') ? 'viewer' : 'details' });
   navigator.clipboard?.writeText(href).then(() => {
     const label = btn.querySelector('span') || btn;
     const before = label.textContent;
@@ -141,7 +142,8 @@ function openCardSheet(card, opts) {
   sheet.showModal();
 }
 
-// Viewer. opts: { list, index, who(card), url(card), back, group, onClose(card) }.
+// Viewer. opts: { list, index, who(card), url(card), back, group, from, onClose(card) }.
+// from: what opened it, for the card-view event (full-size, cards, trainers).
 let vw = null; // { el, opts, index }
 
 function buildViewer(el) {
@@ -180,7 +182,10 @@ function buildViewer(el) {
     if (act === 'close') el.close();
     if (act === 'copy') copyCardLink(btn, cardHref(card, url));
     if (act === 'share') {
-      if (navigator.share) navigator.share({ url: cardHref(card, url), title: document.title }).catch(() => {});
+      if (navigator.share) {
+        window.umami?.track('card-share', { card: card.imageName });
+        navigator.share({ url: cardHref(card, url), title: document.title }).catch(() => {});
+      }
       else copyCardLink(btn, cardHref(card, url));
     }
     if (act === 'details') openCardSheet(card, { who: vw.opts.who?.(card), url });
@@ -232,6 +237,7 @@ function buildViewer(el) {
   holo.addEventListener('animationend', () => holo.classList.remove('is-sweep'));
 
   el.addEventListener('close', () => {
+    reportViewerDepth();
     el.querySelector('.vw-img').removeAttribute('src');
     vw.opts.onClose?.(vw.opts.list[vw.index]);
   });
@@ -244,6 +250,7 @@ function showCard(i, fromStrip = false) {
   const n = opts.list.length;
   vw.index = (i + n) % n;
   const card = opts.list[vw.index];
+  vw.seen?.add(card.imageName);
   const who = opts.who?.(card) || '';
   const pos = t('viewer.pos').replace('{i}', `<span class="mono">${vw.index + 1}</span>`).replace('{n}', n);
   const tag = escapeHtml(exclusivityTag(card));
@@ -285,12 +292,23 @@ function showCard(i, fromStrip = false) {
   [-1, 1].forEach(d => { if (n > 1) new Image().src = `/cards/${opts.list[(vw.index + d + n) % n].imageName}.avif`; });
 }
 
+// Umami: how many distinct cards were looked at in one viewer session (browsing
+// in the viewer makes no pageview). Sent on close, or when the page goes away
+// with the viewer still open.
+function reportViewerDepth() {
+  if (!vw?.seen) return;
+  window.umami?.track('viewer-close', { seen: vw.seen.size, total: vw.opts.list.length, from: vw.opts.from });
+  vw.seen = null;
+}
+addEventListener('pagehide', reportViewerDepth);
+
 function openCardViewer(opts) {
   const el = document.getElementById('viewer');
   if (!el || !opts.list.length) return;
   if (!vw) { vw = { el }; buildViewer(el); }
   vw.opts = opts;
-  window.umami?.track('card-view', { card: opts.list[opts.index].imageName });
+  window.umami?.track('card-view', { card: opts.list[opts.index].imageName, from: opts.from });
+  vw.seen = new Set();
   showCard(opts.index);
   el.showModal();
 }

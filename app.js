@@ -420,6 +420,7 @@ initCardViewer(grid, item => {
     who: c => (p(c) ? pokemonName(p(c)) : ''),
     url: c => (p(c) ? `${langPathPrefix()}pokemon/${slugify(p(c).name.en)}/` : ''),
     back: t('all.cards'),
+    from: 'cards',
     group: t('all.cards'),
   };
 });

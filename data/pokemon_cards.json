@@ -20494,5 +20494,163 @@
     },
     "pricesDate": "2026-10-20",
     "region": "asian"
+  },
+  {
+    "pokemonId": 393,
+    "name": "11th Movie Commemoration Set",
+    "imageName": "393_Piplup_jpn_mcs11_2",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2008,
+    "artist": "Kagemaru Himeno",
+    "setNumber": "MCS11 2",
+    "series": "Movie Commemorations",
+    "releaseDate": "2008-07-19",
+    "energyType": "Water",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 19.14,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/11th-Movie-Commemoration-Set/Piplup-Lv7-11M002"
+      },
+      "tcgplayer": {
+        "price": 39.38,
+        "url": "https://www.tcgplayer.com/product/613767"
+      }
+    },
+    "pricesDate": "2026-10-21"
+  },
+  {
+    "pokemonId": 393,
+    "name": "Movie Commemoration Random Pack",
+    "imageName": "393_Piplup_jpn_mcrp_7",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2009,
+    "artist": "2009 Pikachu Project",
+    "setNumber": "MCRP 7",
+    "series": "Movie Commemorations",
+    "releaseDate": "2009-07-18",
+    "energyType": "Water",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 54.35,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Movie-Commemoration-Random-Pack/Piplup-M-Lv39-MCRP007"
+      }
+    },
+    "pricesDate": "2026-10-21"
+  },
+  {
+    "pokemonId": 778,
+    "name": "Sun & Moon Promos",
+    "imageName": "778_Mimikyu_jpn_smp_289",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2016,
+    "artist": "Hasuno",
+    "setNumber": "SMP 289",
+    "series": "Sun & Moon",
+    "releaseDate": "2016-12-09",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 7877.08,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Sun-Moon-Promos/Mimikyu-SM-P289"
+      },
+      "tcgplayer": {
+        "price": 9799,
+        "url": "https://www.tcgplayer.com/product/598366"
+      }
+    },
+    "pricesDate": "2026-10-21"
+  },
+  {
+    "pokemonId": 778,
+    "name": "Ash vs Team Rocket Deck Kit",
+    "imageName": "778_Mimikyu_jpn_smd_10",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2017,
+    "artist": "Yasuda Shuhei",
+    "setNumber": "SMD 10",
+    "series": "Sun & Moon",
+    "releaseDate": "2017-04-21",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 335.87,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Ash-vs-Team-Rocket-Deck-Kit/Team-Rockets-Mimikyu-GX"
+      },
+      "tcgplayer": {
+        "price": 327.08,
+        "url": "https://www.tcgplayer.com/product/598639"
+      }
+    },
+    "pricesDate": "2026-10-21"
+  },
+  {
+    "pokemonId": 778,
+    "name": "Sword & Shield Promos",
+    "imageName": "778_Mimikyu_swshp_SWSH136",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇵🇹"
+    ],
+    "year": 2020,
+    "artist": "Hasuno",
+    "setNumber": "SWSHP SWSH136",
+    "series": "Sword & Shield",
+    "releaseProduct": "Celebrations Prime Collection",
+    "releaseDate": "2021-10-07",
+    "energyType": "Water",
+    "stage": "basic",
+    "variants": [
+      "25th Anniversary",
+      "Jumbo (25th Anniversary)"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 12.93,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/SWSH-Black-Star-Promos/Mimikyu-Delta-Species-V1-SWSH136"
+      },
+      "tcgplayer": {
+        "price": 13.92,
+        "url": "https://www.tcgplayer.com/product/251092"
+      }
+    },
+    "pricesDate": "2026-10-21",
+    "region": "western"
   }
 ]

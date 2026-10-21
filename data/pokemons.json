@@ -2350,7 +2350,7 @@
     },
     "imageName": "piplup",
     "generation": 4,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 399,
@@ -2572,6 +2572,19 @@
     "imageName": "togedemaru",
     "generation": 7,
     "researchStatus": "in_progress"
+  },
+  {
+    "id": 778,
+    "name": {
+      "en": "Mimikyu",
+      "fr": "Mimiqui",
+      "jp": "ミミッキュ",
+      "ko": "따라큐",
+      "zh": "谜拟丘"
+    },
+    "imageName": "mimikyu",
+    "generation": 7,
+    "researchStatus": "done"
   },
   {
     "id": 807,
