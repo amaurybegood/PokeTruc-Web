@@ -128,7 +128,7 @@ function recordWrite(filePath, content, urlKey) {
 }
 
 const CSS_V = 75;
-const JS_V  = 58;
+const JS_V  = 60;
 
 // Intrinsic image dimensions (AVIF ispe box / PNG IHDR), cached per file.
 // Emitted as width/height attributes so browsers reserve space before the

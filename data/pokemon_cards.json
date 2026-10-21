@@ -20652,5 +20652,26 @@
     },
     "pricesDate": "2026-10-21",
     "region": "western"
+  },
+  {
+    "pokemonId": 711,
+    "name": "XY Unnumbered Promos",
+    "imageName": "711_Gourgeist_jpn_xypunp_78",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2013,
+    "artist": "rina",
+    "setNumber": "XYPUNP 78",
+    "series": "XY",
+    "releaseProduct": "Pokémon Art Academy: Japanese \"Your Favorite Pokémon\" Competition",
+    "releaseDate": "2015-03-01",
+    "energyType": "Psychic",
+    "stage": "stage1",
+    "variants": [
+      "Normal"
+    ]
   }
 ]

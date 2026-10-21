@@ -86,12 +86,16 @@ document.addEventListener('click', (e) => {
   window.umami?.track('outbound', { host: a.hostname.replace(/^www\./, ''), url: a.href });
 });
 
-// Halloween, 15–31 Oct: Mimiqui replaces Ditto in the in-page logo (favicon and
-// og:image untouched). ?halloween=1 forces it on outside the season, ?halloween=0 off.
+// Seasonal in-page logo (favicon and og:image untouched): Halloween 15–31 Oct
+// (Mimiqui), Christmas 1 Dec – 6 Jan (Santa hat). ?halloween=1 / ?christmas=1
+// forces one on outside its season, =0 turns it off.
 (() => {
   const now = new Date();
-  const param = new URLSearchParams(location.search).get('halloween');
-  const season = now.getMonth() === 9 && now.getDate() >= 15;
-  if (param === '0' || (!season && param !== '1')) return;
-  document.querySelectorAll('img[src="/logo.webp"]').forEach((img) => { img.src = '/logo-halloween.webp'; });
+  const m = now.getMonth();
+  const d = now.getDate();
+  const params = new URLSearchParams(location.search);
+  const pick = [['halloween', m === 9 && d >= 15], ['christmas', m === 11 || (m === 0 && d <= 6)]]
+    .find(([name, season]) => params.get(name) === '1' || (season && params.get(name) !== '0'));
+  if (!pick) return;
+  document.querySelectorAll('img[src="/logo.webp"]').forEach((img) => { img.src = `/logo-${pick[0]}.webp`; });
 })();

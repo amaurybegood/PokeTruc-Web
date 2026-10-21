@@ -2548,6 +2548,19 @@
     "researchStatus": "in_progress"
   },
   {
+    "id": 711,
+    "name": {
+      "en": "Gourgeist",
+      "fr": "Banshitrouye",
+      "jp": "パンプジン",
+      "ko": "펌킨인",
+      "zh": "南瓜怪人"
+    },
+    "imageName": "gourgeist",
+    "generation": 6,
+    "researchStatus": "in_progress"
+  },
+  {
     "id": 719,
     "name": {
       "en": "Diancie",
