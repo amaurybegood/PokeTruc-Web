@@ -467,37 +467,6 @@
     "pricesDate": "2026-09-21"
   },
   {
-    "pokemonId": 3,
-    "name": "Primordial Arts: Overgrow",
-    "imageName": "3_Venusaur_scn_cs3a_161",
-    "rarity": "Rare Rainbow",
-    "description": "",
-    "languages": [
-      "🇨🇳"
-    ],
-    "year": 2023,
-    "artist": "",
-    "setNumber": "CS3A 161",
-    "series": "Sword & Shield",
-    "releaseDate": "2023-11-17",
-    "energyType": "Grass",
-    "stage": "basic",
-    "variants": [
-      "Holo"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 38.93,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Primordial-Arts-Overgrow/Venusaur-VMAX-V2-CS3aC161"
-      },
-      "ebay": {
-        "price": 39.66,
-        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Chinese+CS3aC+Venusaur+VMAX+161&LH_Complete=1&LH_Sold=1"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
     "pokemonId": 4,
     "name": "Unnumbered Promos",
     "imageName": "4_Charmander_jpn_unp_78g",
@@ -762,38 +731,6 @@
   },
   {
     "pokemonId": 5,
-    "name": "MEGA Promos",
-    "imageName": "5_Charmeleon_jpn_mp_45",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2025,
-    "artist": "Teeziro",
-    "setNumber": "MP 45",
-    "series": "MEGA",
-    "releaseProduct": "MEGA Pokémon Card Gym Promo Card Pack 2",
-    "releaseDate": "2025-11-01",
-    "energyType": "Fire",
-    "stage": "stage1",
-    "variants": [
-      "Pokémon TCG Gym"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 2.95,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/M-P-Promos/Charmeleon-M-P045"
-      },
-      "tcgplayer": {
-        "price": 0.48,
-        "url": "https://www.tcgplayer.com/product/684552"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 5,
     "name": "Gallant Galaxy: Charm",
     "imageName": "5_Charmeleon_scn_cs5a_2",
     "rarity": "Uncommon",
@@ -816,76 +753,6 @@
       "cardmarket": {
         "price": 2.58,
         "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Brave-Stars-Charm/Charmeleon-PKMSCHCS5aC-002"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 5,
-    "name": "Start Deck 100 Battle Collection",
-    "imageName": "5_Charmeleon_jpn_mc_84",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2025,
-    "artist": "Julie Hang",
-    "setNumber": "MC 84",
-    "series": "MEGA",
-    "releaseProduct": "Deck No. 001",
-    "releaseDate": "2025-12-19",
-    "energyType": "Fire",
-    "stage": "stage1",
-    "variants": [
-      "Normal",
-      "Reverse Holo"
-    ],
-    "prices": {
-      "tcgplayer": {
-        "price": 0.97,
-        "url": "https://www.tcgplayer.com/product/669811"
-      },
-      "ebay": {
-        "price": 1.61,
-        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Japanese+Start+Deck+100+Battle+Collection+Charmeleon+84&LH_Complete=1&LH_Sold=1"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 6,
-    "name": "Scarlet & Violet Promos",
-    "imageName": "6_Charizard_svp_56",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇬🇧",
-      "🇩🇪",
-      "🇫🇷",
-      "🇮🇹",
-      "🇪🇸"
-    ],
-    "year": 2023,
-    "artist": "takuyoa",
-    "region": "western",
-    "setNumber": "SVP 56",
-    "series": "Scarlet & Violet",
-    "releaseProduct": "Charizard ex Premium Collection",
-    "releaseDate": "2023-10-19",
-    "energyType": "Darkness",
-    "stage": "stage2",
-    "variants": [
-      "Holo"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 11.38,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/SV-Black-Star-Promos/Charizard-ex-V1-SVP056"
-      },
-      "tcgplayer": {
-        "price": 15.75,
-        "url": "https://www.tcgplayer.com/product/521697"
       }
     },
     "pricesDate": "2026-09-21"
@@ -956,66 +823,6 @@
       "tcgplayer": {
         "price": 99.48,
         "url": "https://www.tcgplayer.com/product/183966"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 6,
-    "name": "Start Deck 100 Battle Collection",
-    "imageName": "6_Charizard_jpn_mc_85",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2025,
-    "artist": "aky CG Works",
-    "setNumber": "MC 85",
-    "series": "MEGA",
-    "releaseProduct": "Deck No. 001",
-    "releaseDate": "2025-12-19",
-    "energyType": "Fire",
-    "stage": "stage2",
-    "variants": [
-      "Normal",
-      "Holo"
-    ],
-    "prices": {
-      "tcgplayer": {
-        "price": 50,
-        "url": "https://www.tcgplayer.com/product/669813"
-      },
-      "ebay": {
-        "price": 53.99,
-        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Japanese+Start+Deck+100+Battle+Collection+Mega+Charizard+Y+ex+85&LH_Complete=1&LH_Sold=1"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 6,
-    "name": "Charizard VSTAR vs Rayquaza VMAX Special Deck Set",
-    "imageName": "6_Charizard_jpn_sO2_2",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2022,
-    "artist": "5ban Graphics",
-    "setNumber": "SO2 2",
-    "series": "Sword & Shield",
-    "releaseDate": "2022-11-04",
-    "energyType": "Fire",
-    "stage": "basic",
-    "variants": [
-      "Holo"
-    ],
-    "prices": {
-      "tcgplayer": {
-        "price": 16.18,
-        "url": "https://www.tcgplayer.com/product/594017"
       }
     },
     "pricesDate": "2026-09-21"
@@ -7287,26 +7094,6 @@
   },
   {
     "pokemonId": 37,
-    "name": "Sword & Shield Promos",
-    "imageName": "37_Vulpix_scn_swshp_17",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇨🇳"
-    ],
-    "year": 2024,
-    "artist": "Taira Akitsu",
-    "setNumber": "SWSHP 17",
-    "series": "Sword & Shield",
-    "releaseDate": "2024-06-28",
-    "energyType": "Fire",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ]
-  },
-  {
-    "pokemonId": 37,
     "name": "Vending Machine Expansion Sheet 3: Green",
     "imageName": "37_Vulpix_jpn_vses3_9",
     "rarity": "Common",
@@ -8329,10 +8116,12 @@
     "rarity": "Promo",
     "description": "",
     "languages": [
+      "🇯🇵",
       "🇨🇳"
     ],
     "year": 2023,
     "artist": "kirisAki",
+    "region": "asian",
     "setNumber": "SMP 33",
     "series": "Sun & Moon",
     "releaseProduct": "Pokémon TCG Event Promo Pack A Vol. 2",
@@ -9682,33 +9471,6 @@
     "pricesDate": "2026-09-21"
   },
   {
-    "pokemonId": 74,
-    "name": "Trainer Battle Decks",
-    "imageName": "74_Geodude_jpn_smk_8",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2019,
-    "artist": "Ken Sugimori",
-    "setNumber": "SMK 8",
-    "series": "Sun & Moon",
-    "releaseDate": "2019-01-25",
-    "energyType": "Fighting",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ],
-    "prices": {
-      "tcgplayer": {
-        "price": 12.55,
-        "url": "https://www.tcgplayer.com/product/596576"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
     "pokemonId": 75,
     "name": "Vending Machine Expansion Sheet 2: Red",
     "imageName": "75_Graveler_jpn_vses2_23",
@@ -9838,10 +9600,13 @@
     "rarity": "Promo",
     "description": "",
     "languages": [
-      "🇯🇵"
+      "🇯🇵",
+      "🇨🇳",
+      "🇮🇩"
     ],
     "year": 2019,
     "artist": "Eri Yamaki",
+    "region": "asian",
     "setNumber": "SWSHP 310",
     "series": "Sword & Shield",
     "releaseProduct": "Pokémon Card Gym Promo Card Pack 12",
@@ -9859,37 +9624,6 @@
       "tcgplayer": {
         "price": 12.25,
         "url": "https://www.tcgplayer.com/product/597483"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 77,
-    "name": "Start Deck 100 Battle Collection",
-    "imageName": "77_Ponyta_jpn_mc_86",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2025,
-    "artist": "takashi shiraishi",
-    "setNumber": "MC 86",
-    "series": "MEGA",
-    "releaseDate": "2025-12-19",
-    "energyType": "Fire",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ],
-    "prices": {
-      "tcgplayer": {
-        "price": 0.25,
-        "url": "https://www.tcgplayer.com/product/669814"
-      },
-      "ebay": {
-        "price": 1.79,
-        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Japanese+Start+Deck+100+Battle+Collection+Ponyta+86&LH_Complete=1&LH_Sold=1"
       }
     },
     "pricesDate": "2026-09-21"
@@ -9920,26 +9654,6 @@
       }
     },
     "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 77,
-    "name": "Pokémon Card Game Battle Academy",
-    "imageName": "77_Ponyta_scn_csvs_7",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇨🇳"
-    ],
-    "year": 2026,
-    "artist": "Atsushi Furusawa",
-    "setNumber": "CSVS 7",
-    "series": "Scarlet & Violet",
-    "releaseDate": "2026-01-16",
-    "energyType": "Fire",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ]
   },
   {
     "pokemonId": 78,
@@ -10125,38 +9839,6 @@
   },
   {
     "pokemonId": 79,
-    "name": "MEGA Promos",
-    "imageName": "79_Slowpoke_jpn_mp_70",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2025,
-    "artist": "miki kudo",
-    "setNumber": "MP 70",
-    "series": "MEGA",
-    "releaseProduct": "MEGA Pokémon Card Gym Promo Card Pack 3",
-    "releaseDate": "2026-02-01",
-    "energyType": "Psychic",
-    "stage": "basic",
-    "variants": [
-      "Pokémon TCG Gym"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 7.91,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/M-P-Promos/Slowpoke-M-P070"
-      },
-      "tcgplayer": {
-        "price": 14.62,
-        "url": "https://www.tcgplayer.com/product/684573"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 79,
     "name": "Gallant Galaxy: Brave",
     "imageName": "79_Slowpoke_scn_cs5b_39",
     "rarity": "Common",
@@ -10269,38 +9951,6 @@
       "cardmarket": {
         "price": 122.19,
         "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/T-Promos/Slowbro"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 80,
-    "name": "MEGA Promos",
-    "imageName": "80_Slowbro_jpn_mp_71",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2025,
-    "artist": "5ban Graphics",
-    "setNumber": "MP 71",
-    "series": "MEGA",
-    "releaseProduct": "MEGA Pokémon Card Gym Promo Card Pack 3",
-    "releaseDate": "2026-02-01",
-    "energyType": "Psychic",
-    "stage": "stage1",
-    "variants": [
-      "Pokémon TCG Gym"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 9.8,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/M-P-Promos/Mega-Slowbro-ex-M-P071"
-      },
-      "tcgplayer": {
-        "price": 22.82,
-        "url": "https://www.tcgplayer.com/product/684574"
       }
     },
     "pricesDate": "2026-09-21"
@@ -13473,33 +13123,6 @@
     "pricesDate": "2026-09-21"
   },
   {
-    "pokemonId": 128,
-    "name": "PokéPark Premium File: Blue Sheet",
-    "imageName": "128_Tauros_jpn_pkpb_8",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2005,
-    "artist": "Kouki Saitou",
-    "setNumber": "PKPB 8",
-    "series": "Miscellaneous Collections",
-    "releaseDate": "2005-03-18",
-    "energyType": "Colorless",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 16.26,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PokePark-Blue/Tauros"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
     "pokemonId": 129,
     "name": "Unnumbered Promos",
     "imageName": "129_Magikarp_jpn_unp_78c",
@@ -13540,33 +13163,6 @@
     "variants": [
       "Normal"
     ]
-  },
-  {
-    "pokemonId": 129,
-    "name": "Gift Box DPt: Chimchar Half Deck",
-    "imageName": "129_Magikarp_jpn_gbchd_4",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2008,
-    "artist": "Masakazu Fukuda",
-    "setNumber": "GBCHD 4",
-    "series": "Diamond, Pearl and Platinum (DPt)",
-    "releaseDate": "2008-11-20",
-    "energyType": "Water",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 7.74,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Chimchar-DPt-Half-Deck/Magikarp-Lv9-PtCH004"
-      }
-    },
-    "pricesDate": "2026-09-21"
   },
   {
     "pokemonId": 129,
@@ -14309,37 +13905,6 @@
   {
     "pokemonId": 133,
     "name": "Sun & Moon Promos",
-    "imageName": "133_Eevee_jpn_smp_306",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2016,
-    "artist": "Kagemaru Himeno",
-    "setNumber": "SMP 306",
-    "series": "Sun & Moon",
-    "releaseDate": "2016-12-09",
-    "energyType": "Colorless",
-    "stage": "basic",
-    "variants": [
-      "Pokémon Card Friendly Shop"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 33.68,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Sun-Moon-Promos/Eevee-SM-P306"
-      },
-      "tcgplayer": {
-        "price": 29.44,
-        "url": "https://www.tcgplayer.com/product/598383"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 133,
-    "name": "Sun & Moon Promos",
     "imageName": "133_Eevee_jpn_smp_287",
     "rarity": "Promo",
     "description": "",
@@ -14643,33 +14208,6 @@
       "tcgplayer": {
         "price": 450,
         "url": "https://www.tcgplayer.com/product/598214"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 133,
-    "name": "Pokémon GO",
-    "imageName": "133_Eevee_jpn_s10b_55",
-    "rarity": "Radiant Rare",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2022,
-    "artist": "Souichirou Gunjima",
-    "setNumber": "S10B 55",
-    "series": "Sword & Shield",
-    "releaseDate": "2022-06-17",
-    "energyType": "Colorless",
-    "stage": "basic",
-    "variants": [
-      "Holo"
-    ],
-    "prices": {
-      "tcgplayer": {
-        "price": 18.14,
-        "url": "https://www.tcgplayer.com/product/576726"
       }
     },
     "pricesDate": "2026-09-21"
@@ -16214,10 +15752,14 @@
     "rarity": "Promo",
     "description": "https://bulbapedia.bulbagarden.net/wiki/Aerodactyl_(S-P_Promo_315)",
     "languages": [
-      "🇯🇵"
+      "🇯🇵",
+      "🇨🇳",
+      "🇹🇭",
+      "🇮🇩"
     ],
     "year": 2019,
     "artist": "Uta",
+    "region": "asian",
     "setNumber": "SWSHP 315"
   },
   {
@@ -16550,114 +16092,6 @@
     ],
     "year": 2015,
     "artist": "Phanpy"
-  },
-  {
-    "pokemonId": 244,
-    "name": "PokéPark Premium File: Blue Sheet",
-    "imageName": "244_Entei_jpn_pkpb_1",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2005,
-    "artist": "Kouki Saitou",
-    "setNumber": "PKPB 1",
-    "series": "Miscellaneous Collections",
-    "releaseDate": "2005-03-18",
-    "energyType": "Fire",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 34.31,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PokePark-Blue/Entei"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 250,
-    "name": "PokéPark Premium File: Blue Sheet",
-    "imageName": "250_Ho-oh_jpn_pkpb_2",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2005,
-    "artist": "Kouki Saitou",
-    "setNumber": "PKPB 2",
-    "series": "Miscellaneous Collections",
-    "releaseDate": "2005-03-18",
-    "energyType": "Fire",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 51.69,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PokePark-Blue/Ho-Oh-PPB002"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 243,
-    "name": "PokéPark Premium File: Blue Sheet",
-    "imageName": "243_Raikou_jpn_pkpb_5",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2005,
-    "artist": "Kouki Saitou",
-    "setNumber": "PKPB 5",
-    "series": "Miscellaneous Collections",
-    "releaseDate": "2005-03-18",
-    "energyType": "Lightning",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 38.51,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PokePark-Blue/Raikou"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 249,
-    "name": "PokéPark Premium File: Blue Sheet",
-    "imageName": "249_Lugia_jpn_pkpb_6",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2005,
-    "artist": "Kouki Saitou",
-    "setNumber": "PKPB 6",
-    "series": "Miscellaneous Collections",
-    "releaseDate": "2005-03-18",
-    "energyType": "Psychic",
-    "stage": "basic",
-    "variants": [
-      "Holo"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 100.48,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PokePark-Blue/Lugia"
-      }
-    },
-    "pricesDate": "2026-09-21"
   },
   {
     "pokemonId": 700,
@@ -18392,33 +17826,6 @@
       "cardmarket": {
         "price": 123.41,
         "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/DPt-Promos/Spiky-eared-Pichu-M-Lv30-DPt-P042"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 172,
-    "name": "DPt-P Promos",
-    "imageName": "172_Pichu_jpn_plp_38",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2008,
-    "artist": "Kanako Eo",
-    "setNumber": "PLP 38",
-    "series": "Diamond, Pearl and Platinum (DPt)",
-    "releaseDate": "2008-10-09",
-    "energyType": "Lightning",
-    "stage": "basic",
-    "variants": [
-      "Expansion Stamp"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 6665.4,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/DPt-Promos/Pichu-Lv9-DPt-P038"
       }
     },
     "pricesDate": "2026-09-21"

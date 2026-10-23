@@ -335,7 +335,6 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/venusaur/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/venusaur/"/>
     <image:image><image:loc>https://poketruc.com/cards/3_Venusaur_scn_cs3a_130.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/3_Venusaur_scn_cs3a_161.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/3_Venusaur_scn_cs5b_4.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/3_Venusaur_scn_cs5b_3.avif</image:loc></image:image>
   </url>
@@ -468,8 +467,6 @@
     <image:image><image:loc>https://poketruc.com/cards/5_Charmeleon_jpn_tpr_11.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/5_Charmeleon_mfbc_4.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/5_Charmeleon_scn_cs5a_2.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/5_Charmeleon_jpn_mp_45.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/5_Charmeleon_jpn_mc_84.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/charmeleon/</loc>
@@ -538,9 +535,6 @@
     <image:image><image:loc>https://poketruc.com/cards/6_Charizard_smp_SM158.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/6_Charizard_jpn_swshp_143.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/6_Charizard_swshp_SWSH075.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/6_Charizard_jpn_sO2_2.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/6_Charizard_svp_56.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/6_Charizard_jpn_mc_85.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/6_Charizard_scn_csve1_14.avif</image:loc></image:image>
   </url>
   <url>
@@ -2566,7 +2560,6 @@
     <image:image><image:loc>https://poketruc.com/cards/37_Vulpix_jpn_smp_146.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/37_Vulpix_jpn_smp_147.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/37_Vulpix_mfbc_5.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/37_Vulpix_scn_swshp_17.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/vulpix/</loc>
@@ -4680,7 +4673,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/geodude/"/>
     <image:image><image:loc>https://poketruc.com/cards/74_Geodude_jpn_vses1_23.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/74_Geodude_jpn_ipcsd_4.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/74_Geodude_jpn_smk_8.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/geodude/</loc>
@@ -4866,9 +4858,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/ponyta/"/>
     <image:image><image:loc>https://poketruc.com/cards/77_Ponyta_jpn_vses3_11.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/77_Ponyta_jpn_swshp_310.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/77_Ponyta_jpn_mc_86.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/77_Ponyta_scn_cbb4_107.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/77_Ponyta_scn_csvs_7.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/ponyta/</loc>
@@ -4996,7 +4986,6 @@
     <image:image><image:loc>https://poketruc.com/cards/79_Slowpoke_jpn_tpr_4.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/79_Slowpoke_jpn_mcdemp_14.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/79_Slowpoke_scn_cs5b_39.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/79_Slowpoke_jpn_mp_70.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/slowpoke/</loc>
@@ -5061,7 +5050,6 @@
     <image:image><image:loc>https://poketruc.com/cards/80_Slowbro_jpn_versus1_72.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/80_Slowbro_jpn_tpr_5.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/80_Slowbro_scn_cs5b_40.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/80_Slowbro_jpn_mp_71.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/slowbro/</loc>
@@ -7620,7 +7608,6 @@
     <image:image><image:loc>https://poketruc.com/cards/128_Tauros_jpn_vses3_34.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/128_Tauros_jpn_versus1_36.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/128_Tauros_jpn_pcgp_49.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/128_Tauros_jpn_pkpb_8.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/128_Tauros_jpn_smd_14.avif</image:loc></image:image>
   </url>
   <url>
@@ -7684,7 +7671,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/magikarp/"/>
     <image:image><image:loc>https://poketruc.com/cards/129_Magikarp_jpn_unp_78c.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/129_Magikarp_jpn_unp_63.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/129_Magikarp_jpn_gbchd_4.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/129_Magikarp_jpn_bwp_210.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/129_Magikarp_mfbs_7.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/129_Magikarp_kor_Promo_2026_Festival.avif</image:loc></image:image>
@@ -7951,7 +7937,6 @@
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_col1_56.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_399.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_371.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_306.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_287.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_247.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_144.avif</image:loc></image:image>
@@ -7962,7 +7947,6 @@
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_139.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_138.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_smp_137.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_s10b_55.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_jpn_svp_62.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_scn_cs5a_92.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/133_Eevee_scn_cbb2_115.avif</image:loc></image:image>
@@ -9374,7 +9358,6 @@
     <image:image><image:loc>https://poketruc.com/cards/172_Pichu_jpn_ppr_28.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/172_Pichu_jpn_rta_1.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/172_Pichu_jpn_plp_42.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/172_Pichu_jpn_plp_38.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/172_Pichu_jpn_mcrp_11.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/172_Pichu_jpn_mcrp_10.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/172_Pichu_jpn_mcrp_9.avif</image:loc></image:image>
@@ -9756,7 +9739,6 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/raikou/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/raikou/"/>
     <image:image><image:loc>https://poketruc.com/cards/243_Raikou_jpn_versus1_94.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/243_Raikou_jpn_pkpb_5.avif</image:loc></image:image>
   </url>
   <url>
     <loc>https://poketruc.com/fr/pokemon/raikou/</loc>
@@ -9819,7 +9801,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/entei/"/>
     <image:image><image:loc>https://poketruc.com/cards/244_Entei_jpn_versus1_95.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/244_Entei_jpn_ppr_43.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/244_Entei_jpn_pkpb_1.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/244_Entei_jpn_mcs10_3.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/244_Entei_smp_SM219.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/244_Entei_sm35_10a.avif</image:loc></image:image>
@@ -9950,7 +9931,6 @@
     <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_ppr_47.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_playp_31.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_pcgp_38.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_pkpb_6.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/249_Lugia_jpn_mcs10_2.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/249_Lugia_bwp_BW83.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/249_Lugia_col1_15.avif</image:loc></image:image>
@@ -10015,7 +9995,6 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://poketruc.com/zh/pokemon/ho-oh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://poketruc.com/pokemon/ho-oh/"/>
     <image:image><image:loc>https://poketruc.com/cards/250_Ho-Oh_jpn_playp_30.avif</image:loc></image:image>
-    <image:image><image:loc>https://poketruc.com/cards/250_Ho-oh_jpn_pkpb_2.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/250_Ho-Oh_col1_9.avif</image:loc></image:image>
     <image:image><image:loc>https://poketruc.com/cards/250_Ho-Oh_smp_SM57.avif</image:loc></image:image>
   </url>

@@ -1,8 +1,8 @@
 # PokéTruc
 
-> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists 787 such cards across 204 Pokémon (Generations 1, 2, 3, 4, 5, 6, 7, 8, 9), published from 1996 to 2026.
+> PokéTruc is a free, fan-made, ad-free catalogue of region- and language-exclusive Pokémon Trading Card Game (TCG) illustrations — cards whose artwork was only ever printed in a single language, or in a single region (Western-only or Asian-only). It lists 766 such cards across 204 Pokémon (Generations 1, 2, 3, 4, 5, 6, 7, 8, 9), published from 1996 to 2026.
 
-The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: 570 Japanese-exclusive, 77 Western-exclusive, 65 Chinese-exclusive, 35 English-exclusive, 21 Asian-exclusive, 4 Korean-exclusive, 4 Indonesian-exclusive, 2 German-exclusive, 2 Spanish-exclusive, 2 French-exclusive, 2 Portuguese-exclusive, 1 Italian-exclusive, 1 Polish-exclusive, 1 Russian-exclusive. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
+The site has 5 interface languages (English, French, Japanese, Korean, Chinese). Each Pokémon has its own page listing its exclusive cards grouped by exclusivity category, with year, artist, and a source link (e.g. Bulbapedia, PokeBeach) where available. Exclusivity breakdown: 551 Japanese-exclusive, 76 Western-exclusive, 61 Chinese-exclusive, 35 English-exclusive, 24 Asian-exclusive, 4 Korean-exclusive, 4 Indonesian-exclusive, 2 German-exclusive, 2 Spanish-exclusive, 2 French-exclusive, 2 Portuguese-exclusive, 1 Italian-exclusive, 1 Polish-exclusive, 1 Russian-exclusive. Created by Begooderrr (https://www.reddit.com/user/Begooderrr/); source code at https://github.com/amaurybegood/PokeTruc-Web.
 
 ## Main pages
 
@@ -14,10 +14,10 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 
 - [Bulbasaur](https://poketruc.com/pokemon/bulbasaur/): 9 exclusive cards
 - [Ivysaur](https://poketruc.com/pokemon/ivysaur/): 4 exclusive cards
-- [Venusaur](https://poketruc.com/pokemon/venusaur/): 4 exclusive cards
+- [Venusaur](https://poketruc.com/pokemon/venusaur/): 3 exclusive cards
 - [Charmander](https://poketruc.com/pokemon/charmander/): 7 exclusive cards
-- [Charmeleon](https://poketruc.com/pokemon/charmeleon/): 5 exclusive cards
-- [Charizard](https://poketruc.com/pokemon/charizard/): 12 exclusive cards
+- [Charmeleon](https://poketruc.com/pokemon/charmeleon/): 3 exclusive cards
+- [Charizard](https://poketruc.com/pokemon/charizard/): 9 exclusive cards
 - [Squirtle](https://poketruc.com/pokemon/squirtle/): 7 exclusive cards
 - [Wartortle](https://poketruc.com/pokemon/wartortle/): 5 exclusive cards
 - [Blastoise](https://poketruc.com/pokemon/blastoise/): 7 exclusive cards
@@ -47,7 +47,7 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Nidoking](https://poketruc.com/pokemon/nidoking/): 1 exclusive card
 - [Clefairy](https://poketruc.com/pokemon/clefairy/): 3 exclusive cards
 - [Clefable](https://poketruc.com/pokemon/clefable/): 2 exclusive cards
-- [Vulpix](https://poketruc.com/pokemon/vulpix/): 8 exclusive cards
+- [Vulpix](https://poketruc.com/pokemon/vulpix/): 7 exclusive cards
 - [Ninetales](https://poketruc.com/pokemon/ninetales/): 3 exclusive cards
 - [Jigglypuff](https://poketruc.com/pokemon/jigglypuff/): 1 exclusive card
 - [Wigglytuff](https://poketruc.com/pokemon/wigglytuff/): 2 exclusive cards
@@ -81,13 +81,13 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Bellsprout](https://poketruc.com/pokemon/bellsprout/): 1 exclusive card
 - [Weepinbell](https://poketruc.com/pokemon/weepinbell/): 1 exclusive card
 - [Tentacool](https://poketruc.com/pokemon/tentacool/): 1 exclusive card
-- [Geodude](https://poketruc.com/pokemon/geodude/): 3 exclusive cards
+- [Geodude](https://poketruc.com/pokemon/geodude/): 2 exclusive cards
 - [Graveler](https://poketruc.com/pokemon/graveler/): 2 exclusive cards
 - [Golem](https://poketruc.com/pokemon/golem/): 1 exclusive card
-- [Ponyta](https://poketruc.com/pokemon/ponyta/): 5 exclusive cards
+- [Ponyta](https://poketruc.com/pokemon/ponyta/): 3 exclusive cards
 - [Rapidash](https://poketruc.com/pokemon/rapidash/): 3 exclusive cards
-- [Slowpoke](https://poketruc.com/pokemon/slowpoke/): 5 exclusive cards
-- [Slowbro](https://poketruc.com/pokemon/slowbro/): 5 exclusive cards
+- [Slowpoke](https://poketruc.com/pokemon/slowpoke/): 4 exclusive cards
+- [Slowbro](https://poketruc.com/pokemon/slowbro/): 4 exclusive cards
 - [Magnemite](https://poketruc.com/pokemon/magnemite/): 2 exclusive cards
 - [Magneton](https://poketruc.com/pokemon/magneton/): 3 exclusive cards
 - [Farfetch'd](https://poketruc.com/pokemon/farfetchd/): 2 exclusive cards
@@ -128,12 +128,12 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Electabuzz](https://poketruc.com/pokemon/electabuzz/): 5 exclusive cards
 - [Magmar](https://poketruc.com/pokemon/magmar/): 6 exclusive cards
 - [Pinsir](https://poketruc.com/pokemon/pinsir/): 2 exclusive cards
-- [Tauros](https://poketruc.com/pokemon/tauros/): 5 exclusive cards
-- [Magikarp](https://poketruc.com/pokemon/magikarp/): 6 exclusive cards
+- [Tauros](https://poketruc.com/pokemon/tauros/): 4 exclusive cards
+- [Magikarp](https://poketruc.com/pokemon/magikarp/): 5 exclusive cards
 - [Gyarados](https://poketruc.com/pokemon/gyarados/): 8 exclusive cards
 - [Lapras](https://poketruc.com/pokemon/lapras/): 5 exclusive cards
 - [Ditto](https://poketruc.com/pokemon/ditto/): 2 exclusive cards
-- [Eevee](https://poketruc.com/pokemon/eevee/): 23 exclusive cards
+- [Eevee](https://poketruc.com/pokemon/eevee/): 21 exclusive cards
 - [Vaporeon](https://poketruc.com/pokemon/vaporeon/): 3 exclusive cards
 - [Jolteon](https://poketruc.com/pokemon/jolteon/): 5 exclusive cards
 - [Flareon](https://poketruc.com/pokemon/flareon/): 4 exclusive cards
@@ -155,17 +155,17 @@ The site has 5 interface languages (English, French, Japanese, Korean, Chinese).
 - [Totodile](https://poketruc.com/pokemon/totodile/): 3 exclusive cards
 - [Croconaw](https://poketruc.com/pokemon/croconaw/): 3 exclusive cards
 - [Feraligatr](https://poketruc.com/pokemon/feraligatr/): 2 exclusive cards
-- [Pichu](https://poketruc.com/pokemon/pichu/): 17 exclusive cards
+- [Pichu](https://poketruc.com/pokemon/pichu/): 16 exclusive cards
 - [Espeon](https://poketruc.com/pokemon/espeon/): 4 exclusive cards
 - [Umbreon](https://poketruc.com/pokemon/umbreon/): 6 exclusive cards
 - [Dunsparce](https://poketruc.com/pokemon/dunsparce/): 2 exclusive cards
 - [Scizor](https://poketruc.com/pokemon/scizor/): 3 exclusive cards
 - [Shuckle](https://poketruc.com/pokemon/shuckle/): 1 exclusive card
-- [Raikou](https://poketruc.com/pokemon/raikou/): 2 exclusive cards
-- [Entei](https://poketruc.com/pokemon/entei/): 6 exclusive cards
+- [Raikou](https://poketruc.com/pokemon/raikou/): 1 exclusive card
+- [Entei](https://poketruc.com/pokemon/entei/): 5 exclusive cards
 - [Suicune](https://poketruc.com/pokemon/suicune/): 3 exclusive cards
-- [Lugia](https://poketruc.com/pokemon/lugia/): 8 exclusive cards
-- [Ho-Oh](https://poketruc.com/pokemon/ho-oh/): 4 exclusive cards
+- [Lugia](https://poketruc.com/pokemon/lugia/): 7 exclusive cards
+- [Ho-Oh](https://poketruc.com/pokemon/ho-oh/): 3 exclusive cards
 - [Celebi](https://poketruc.com/pokemon/celebi/): 6 exclusive cards
 - [Treecko](https://poketruc.com/pokemon/treecko/): 3 exclusive cards
 - [Torchic](https://poketruc.com/pokemon/torchic/): 4 exclusive cards
