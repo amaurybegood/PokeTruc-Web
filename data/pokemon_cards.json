@@ -16154,26 +16154,6 @@
     "pricesDate": "2026-09-21"
   },
   {
-    "pokemonId": 150,
-    "name": "Black & White Unnumbered Promos",
-    "imageName": "150_Mewtwo_jpn_bwpunp_17",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2010,
-    "artist": "Hitoshi Ariga",
-    "setNumber": "BWPUNP 17",
-    "series": "Black & White",
-    "releaseDate": "2010-12-17",
-    "energyType": "Psychic",
-    "stage": "basic",
-    "variants": [
-      "Jumbo"
-    ]
-  },
-  {
     "pokemonId": 134,
     "name": "Call of Legends",
     "imageName": "134_Vaporeon_col1_52",
@@ -16626,33 +16606,6 @@
     "pricesDate": "2026-09-21"
   },
   {
-    "pokemonId": 382,
-    "name": "PokéPark Premium File: Blue Sheet",
-    "imageName": "382_Kyogre_jpn_pkpb_4",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2005,
-    "artist": "Kouki Saitou",
-    "setNumber": "PKPB 4",
-    "series": "Miscellaneous Collections",
-    "releaseDate": "2005-03-18",
-    "energyType": "Water",
-    "stage": "basic",
-    "variants": [
-      "Normal"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 18.9,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PokePark-Blue/Kyogre"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
     "pokemonId": 243,
     "name": "PokéPark Premium File: Blue Sheet",
     "imageName": "243_Raikou_jpn_pkpb_5",
@@ -16702,33 +16655,6 @@
       "cardmarket": {
         "price": 100.48,
         "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PokePark-Blue/Lugia"
-      }
-    },
-    "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 384,
-    "name": "PokéPark Premium File: Blue Sheet",
-    "imageName": "384_Rayquaza_jpn_pkpb_9",
-    "rarity": "No Rarity",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2005,
-    "artist": "Kouki Saitou",
-    "setNumber": "PKPB 9",
-    "series": "Miscellaneous Collections",
-    "releaseDate": "2005-03-18",
-    "energyType": "Colorless",
-    "stage": "basic",
-    "variants": [
-      "Holo"
-    ],
-    "prices": {
-      "cardmarket": {
-        "price": 118.38,
-        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PokePark-Blue/Rayquaza"
       }
     },
     "pricesDate": "2026-09-21"
@@ -17928,26 +17854,6 @@
       }
     },
     "pricesDate": "2026-09-21"
-  },
-  {
-    "pokemonId": 494,
-    "name": "Black & White Unnumbered Promos",
-    "imageName": "494_Victini_jpn_bwpunp_13",
-    "rarity": "Promo",
-    "description": "",
-    "languages": [
-      "🇯🇵"
-    ],
-    "year": 2010,
-    "artist": "Naoki Saito",
-    "setNumber": "BWPUNP 13",
-    "series": "Black & White",
-    "releaseDate": "2010-12-17",
-    "energyType": "Fire",
-    "stage": "basic",
-    "variants": [
-      "Jumbo"
-    ]
   },
   {
     "pokemonId": 494,
@@ -20672,6 +20578,2109 @@
     "stage": "stage1",
     "variants": [
       "Normal"
+    ]
+  },
+  {
+    "pokemonId": 470,
+    "name": "Call of Legends",
+    "imageName": "470_Leafeon_col1_13",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹"
+    ],
+    "year": 2011,
+    "artist": "match",
+    "setNumber": "COL1 13",
+    "series": "HeartGold & SoulSilver",
+    "releaseDate": "2011-02-09",
+    "energyType": "Grass",
+    "stage": "stage1",
+    "variants": [
+      "Holo",
+      "Reverse Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 34.15,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Call-of-Legends/Leafeon-CL13"
+      },
+      "tcgplayer": {
+        "price": 61.02,
+        "url": "https://www.tcgplayer.com/product/86681"
+      },
+      "ebay": {
+        "price": 22.15,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Call+of+Legends+Leafeon+13&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-22",
+    "region": "western"
+  },
+  {
+    "pokemonId": 382,
+    "name": "Sun & Moon Promos",
+    "imageName": "382_Kyogre_smp_SM129",
+    "rarity": "Promo",
+    "description": "Also released in Indonesian as Kyogre (SM-P/ID 115).",
+    "languages": [
+      "🇮🇩",
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+    "year": 2016,
+    "artist": "Anesaki Dynamic",
+    "setNumber": "SMP SM129",
+    "series": "Sun & Moon",
+    "releaseProduct": "Celestial Storm Prerelease / Celestial Storm Build & Battle Box",
+    "releaseDate": "2018-07-20",
+    "energyType": "Water",
+    "stage": "basic",
+    "variants": [
+      "Expansion Stamp",
+      "Expansion Stamp (Staff)"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 72.4,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/SM-Black-Star-Promos/Kyogre-SMSM129"
+      },
+      "tcgplayer": {
+        "price": 35.84,
+        "url": "https://www.tcgplayer.com/product/172930"
+      }
+    },
+    "pricesDate": "2026-10-22",
+    "region": "western"
+  },
+  {
+    "pokemonId": 382,
+    "name": "Call of Legends",
+    "imageName": "382_Kyogre_col1_12",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹"
+    ],
+    "year": 2011,
+    "artist": "Ryo Ueda",
+    "setNumber": "COL1 12",
+    "series": "HeartGold & SoulSilver",
+    "releaseDate": "2011-02-09",
+    "energyType": "Water",
+    "stage": "basic",
+    "variants": [
+      "Holo",
+      "Reverse Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 37.5,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Call-of-Legends/Kyogre-CL12?isReverseHolo=Y"
+      },
+      "tcgplayer": {
+        "price": 36.17,
+        "url": "https://www.tcgplayer.com/product/86550?Printing=Reverse+Holofoil"
+      },
+      "ebay": {
+        "price": 21.8,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Call+of+Legends+Kyogre+12&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-22",
+    "region": "western"
+  },
+  {
+    "pokemonId": 446,
+    "name": "PCG-P Promos",
+    "imageName": "446_Munchlax_jpn_pcgp_25",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Atsuko Nishida",
+    "setNumber": "PCGP 25",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseProduct": "Pokémon Festa 2004: Pokémon Daisuki Club Stage Event",
+    "releaseDate": "2004-09-30",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Cosmos Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 33.17,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/LaRousses-Munchlax-V2"
+      }
+    },
+    "pricesDate": "2026-10-22"
+  },
+  {
+    "pokemonId": 446,
+    "name": "PCG-P Promos",
+    "imageName": "446_Munchlax_jpn_pcgp_20",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Atsuko Nishida",
+    "setNumber": "PCGP 20",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-04-08",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 10.65,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/LaRousses-Munchlax-V1"
+      }
+    },
+    "pricesDate": "2026-10-22"
+  },
+  {
+    "pokemonId": 446,
+    "name": "Movie Commemoration VS Pack: Sky-Splitting Deoxys",
+    "imageName": "446_Munchlax_jpn_mcvs2_6",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Atsuko Nishida",
+    "setNumber": "MCVS2 6",
+    "series": "Movie Commemorations",
+    "releaseDate": "2004-07-17",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 3.11,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Movie-Commemoration-VS-Pack-Sky-Splitting-Deoxys/Kathryns-Surskit"
+      },
+      "tcgplayer": {
+        "price": 45,
+        "url": "https://www.tcgplayer.com/product/658366"
+      }
+    },
+    "pricesDate": "2026-10-22"
+  },
+  {
+    "pokemonId": 446,
+    "name": "Movie Commemoration VS Pack: Aura's Lucario",
+    "imageName": "446_Munchlax_jpn_mcvs3_8",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2005,
+    "artist": "Kouki Saitou",
+    "setNumber": "MCVS3 8",
+    "series": "Movie Commemorations",
+    "releaseDate": "2005-07-16",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 23.74,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Movie-Commemoration-VS-Pack-Auras-Lucario/Dark-Metal-Energy"
+      },
+      "tcgplayer": {
+        "price": 40.25,
+        "url": "https://www.tcgplayer.com/product/613818"
+      }
+    },
+    "pricesDate": "2026-10-22"
+  },
+  {
+    "pokemonId": 446,
+    "name": "PCG-P Promos",
+    "imageName": "446_Munchlax_jpn_pcgp_88",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Kagemaru Himeno",
+    "setNumber": "PCGP 88",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-04-08",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "McDonald's"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 34.19,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/Rotas-Munchlax"
+      }
+    },
+    "pricesDate": "2026-10-22"
+  },
+  {
+    "pokemonId": 384,
+    "name": "Call of Legends",
+    "imageName": "384_Rayquaza_col1_20",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇮🇹"
+    ],
+    "year": 2011,
+    "artist": "Ryo Ueda",
+    "setNumber": "COL1 20",
+    "series": "HeartGold & SoulSilver",
+    "releaseDate": "2011-02-09",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo",
+      "Reverse Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 244.56,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Call-of-Legends/Rayquaza-CL20?isReverseHolo=Y"
+      },
+      "tcgplayer": {
+        "price": 693.41,
+        "url": "https://www.tcgplayer.com/product/88628?Printing=Reverse+Holofoil"
+      },
+      "ebay": {
+        "price": 141.05,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Call+of+Legends+Rayquaza+20&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 384,
+    "name": "Black & White Promos",
+    "imageName": "384_Rayquaza_jpn_bwp_145",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2010,
+    "artist": "5ban Graphics",
+    "setNumber": "BWP 145",
+    "series": "Black & White",
+    "releaseDate": "2010-12-17",
+    "energyType": "Dragon",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 56030,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/BW-Promos/Rayquaza-EX"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 384,
+    "name": "Master Kit: Side Deck",
+    "imageName": "384_Rayquaza_jpn_mksd_3",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2005,
+    "artist": "Shin-ichi Yoshikawa",
+    "setNumber": "MKSD 3",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2005-07-15",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo",
+      "1st Edition"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 683.58,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Master-Kit/Rayquaza-ex-pcgL003S"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 384,
+    "name": "Gift Box Emerald: Rayquaza Half Deck",
+    "imageName": "384_Rayquaza_jpn_gbrhd_18",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Hikaru Koike",
+    "setNumber": "GBRHD 18",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-11-19",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 263.92,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Gift-Box-Emerald/Rayquaza-ex-pcgFR018"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 384,
+    "name": "Black & White Promos",
+    "imageName": "384_Rayquaza_jpn_bwp_144",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2010,
+    "artist": "5ban Graphics",
+    "setNumber": "BWP 144",
+    "series": "Black & White",
+    "releaseDate": "2010-12-17",
+    "energyType": "Dragon",
+    "stage": "basic",
+    "variants": [
+      "Game Stamp"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 490.82,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/BW-Promos/Rayquaza-V1-BW-P144"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 384,
+    "name": "Movie Commemoration VS Pack: Sky-Splitting Deoxys",
+    "imageName": "384_Rayquaza_jpn_mcvs2_3",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Hajime Kusajima",
+    "setNumber": "MCVS2 3",
+    "series": "Movie Commemorations",
+    "releaseDate": "2004-07-17",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 68.81,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Movie-Commemoration-VS-Pack-Sky-Splitting-Deoxys/Skys-Rayquaza"
+      },
+      "tcgplayer": {
+        "price": 100,
+        "url": "https://www.tcgplayer.com/product/658363"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 385,
+    "name": "Call of Legends",
+    "imageName": "385_Jirachi_col1_11",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹"
+    ],
+    "year": 2011,
+    "artist": "match",
+    "setNumber": "COL1 11",
+    "series": "HeartGold & SoulSilver",
+    "releaseDate": "2011-02-09",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Holo",
+      "Reverse Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 28.8,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Call-of-Legends/Jirachi-CL11"
+      },
+      "tcgplayer": {
+        "price": 38.21,
+        "url": "https://www.tcgplayer.com/product/86331"
+      },
+      "ebay": {
+        "price": 27.07,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Call+of+Legends+Jirachi+11&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 385,
+    "name": "Sun & Moon Promos",
+    "imageName": "385_Jirachi_jpn_smp_89",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2016,
+    "artist": "sui",
+    "setNumber": "SMP 89",
+    "series": "Sun & Moon",
+    "releaseDate": "2016-12-09",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Pokémon Center"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 107.44,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Sun-Moon-Promos/Jirachi-SM-P89"
+      },
+      "tcgplayer": {
+        "price": 280,
+        "url": "https://www.tcgplayer.com/product/598166"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 385,
+    "name": "Movie Commemoration VS Pack",
+    "imageName": "385_Jirachi_jpn_mcvs1_4",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Midori Harada",
+    "setNumber": "MCVS1 4",
+    "series": "Movie Commemorations",
+    "releaseDate": "2003-07-19",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 105.76,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Movie-Commemoration-VS-Pack/Forinas-Jirachi"
+      },
+      "tcgplayer": {
+        "price": 49.99,
+        "url": "https://www.tcgplayer.com/product/613828"
+      },
+      "ebay": {
+        "price": 34.97,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Japanese+Movie+Commemoration+VS+Pack+Forina's+Jirachi+4&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 385,
+    "name": "10th Movie Commemoration Set",
+    "imageName": "385_Jirachi_jpn_mcs10_7",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Kouki Saitou",
+    "setNumber": "MCS10 7",
+    "series": "Movie Commemorations",
+    "releaseDate": "2007-01-14",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 83.38,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/10th-Movie-Commemoration-Set/Seven-Nights-Jirachi"
+      },
+      "tcgplayer": {
+        "price": 64.08,
+        "url": "https://www.tcgplayer.com/product/613781"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 385,
+    "name": "PLAY Promos",
+    "imageName": "385_Jirachi_jpn_playp_32",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Suwama Chiaki",
+    "setNumber": "PLAYP 32",
+    "series": "Miscellaneous Collections",
+    "releaseDate": "2003-01-02",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Cosmos Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 365.96,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PLAY-Promos/Jirachi-ex"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 385,
+    "name": "PLAY Promos",
+    "imageName": "385_Jirachi_jpn_playp_14",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Kagemaru Himeno",
+    "setNumber": "PLAYP 14",
+    "series": "Miscellaneous Collections",
+    "releaseDate": "2003-01-02",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Cosmos Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 184.05,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PLAY-Promos/s-Jirachi"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 609,
+    "name": "Sun & Moon Promos",
+    "imageName": "609_Chandelure_jpn_smp_327",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2016,
+    "artist": "Anesaki Dynamic",
+    "setNumber": "SMP 327",
+    "series": "Sun & Moon",
+    "releaseDate": "2016-12-09",
+    "energyType": "Fire",
+    "stage": "stage2",
+    "variants": [
+      "Expansion Stamp"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 11.82,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Sun-Moon-Promos/Chandelure-SM-P327"
+      },
+      "tcgplayer": {
+        "price": 25,
+        "url": "https://www.tcgplayer.com/product/598404"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 251,
+    "name": "P Promos",
+    "imageName": "251_Celebi_jpn_ppr_7",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Hajime Kusajima",
+    "setNumber": "PPR 7",
+    "series": "Miscellaneous Collections",
+    "releaseProduct": "Pokémon Card Trainers Vol. 13",
+    "releaseDate": "2001-08-31",
+    "energyType": "Grass",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 87.65,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/P-Promos/Celebi-V2"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 251,
+    "name": "P Promos",
+    "imageName": "251_Celebi_jpn_ppr_42",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2001,
+    "artist": "Midori Harada",
+    "setNumber": "PPR 42",
+    "series": "Miscellaneous Collections",
+    "releaseProduct": "Pokémon Happy Adventure Rally 2002",
+    "releaseDate": "2002-08-02",
+    "energyType": "Grass",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 176.94,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/P-Promos/Celebi-V3"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 251,
+    "name": "10th Movie Commemoration Set",
+    "imageName": "251_Celebi_jpn_mcs10_4",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Midori Harada",
+    "setNumber": "MCS10 4",
+    "series": "Movie Commemorations",
+    "releaseDate": "2007-01-14",
+    "energyType": "Grass",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 133.27,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/10th-Movie-Commemoration-Set/Timeless-Celebi"
+      },
+      "tcgplayer": {
+        "price": 51.96,
+        "url": "https://www.tcgplayer.com/product/613778"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 251,
+    "name": "PLAY Promos",
+    "imageName": "251_Celebi_jpn_playp_12",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Kouki Saitou",
+    "setNumber": "PLAYP 12",
+    "series": "Miscellaneous Collections",
+    "releaseDate": "2003-01-02",
+    "energyType": "Grass",
+    "stage": "basic",
+    "variants": [
+      "Cosmos Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 244.43,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PLAY-Promos/s-Celebi"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 255,
+    "name": "ADV-P Promos",
+    "imageName": "255_Torchic_jpn_advp_37",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "©2003 Pikachu Project",
+    "setNumber": "ADVP 37",
+    "series": "Advanced (ADV)",
+    "releaseDate": "2003-01-31",
+    "energyType": "Fire",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 63.74,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/ADV-Promos/Mays-Torchic"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 250,
+    "name": "Call of Legends",
+    "imageName": "250_Ho-Oh_col1_9",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹"
+    ],
+    "year": 2011,
+    "artist": "Ryo Ueda",
+    "setNumber": "COL1 9",
+    "series": "HeartGold & SoulSilver",
+    "releaseDate": "2011-02-09",
+    "energyType": "Fire",
+    "stage": "basic",
+    "variants": [
+      "Holo",
+      "Reverse Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 48.08,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Call-of-Legends/Ho-Oh-CL9"
+      },
+      "tcgplayer": {
+        "price": 29.39,
+        "url": "https://www.tcgplayer.com/product/86126"
+      },
+      "ebay": {
+        "price": 22.09,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Call+of+Legends+Ho-Oh+%5BReverse+Holo%5D+9&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 250,
+    "name": "Sun & Moon Promos",
+    "imageName": "250_Ho-Oh_smp_SM57",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹"
+    ],
+    "year": 2016,
+    "artist": "5ban Graphics",
+    "setNumber": "SMP SM57",
+    "series": "Sun & Moon",
+    "releaseProduct": "Mysterious Powers Tin: Ho-Oh",
+    "releaseDate": "2017-10-04",
+    "energyType": "Fire",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 9.19,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/SM-Black-Star-Promos/Ho-Oh-GX-V1-SM57"
+      },
+      "tcgplayer": {
+        "price": 9.29,
+        "url": "https://www.tcgplayer.com/product/148424"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 250,
+    "name": "PLAY Promos",
+    "imageName": "250_Ho-Oh_jpn_playp_30",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Suwama Chiaki",
+    "setNumber": "PLAYP 30",
+    "series": "Miscellaneous Collections",
+    "releaseDate": "2003-01-02",
+    "energyType": "Fire",
+    "stage": "basic",
+    "variants": [
+      "Cosmos Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 371.55,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PLAY-Promos/Ho-Oh-ex"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 252,
+    "name": "ADV-P Promos",
+    "imageName": "252_Treecko_jpn_advp_36",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "©2003 Pikachu Project",
+    "setNumber": "ADVP 36",
+    "series": "Advanced (ADV)",
+    "releaseDate": "2003-01-31",
+    "energyType": "Grass",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 109.13,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/ADV-Promos/Ashs-Treecko"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 252,
+    "name": "PCG-P Promos",
+    "imageName": "252_Treecko_jpn_pcgp_37",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Yuka Morii",
+    "setNumber": "PCGP 37",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-04-08",
+    "energyType": "Grass",
+    "stage": "basic",
+    "variants": [
+      "Pokémon Center"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 158.13,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/Treecko-V1-PCG-P037"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 265,
+    "name": "XY Promos",
+    "imageName": "265_Wurmple_jpn_xyp_128",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2013,
+    "artist": "Naoyo Kimura",
+    "setNumber": "XYP 128",
+    "series": "XY",
+    "releaseDate": "2013-11-08",
+    "energyType": "Grass",
+    "stage": "basic",
+    "variants": [
+      "Pokémon TCG Gym"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 6.91,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/XY-Promos/Wurmple"
+      },
+      "tcgplayer": {
+        "price": 15,
+        "url": "https://www.tcgplayer.com/product/602033"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 282,
+    "name": "Sword & Shield Promos",
+    "imageName": "282_Gardevoir_swshp_SWSH105",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹"
+    ],
+    "year": 2020,
+    "artist": "5ban Graphics",
+    "setNumber": "SWSHP SWSH105",
+    "series": "Sword & Shield",
+    "releaseProduct": "Gardevoir V Battle Deck",
+    "releaseDate": "2021-05-06",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 2.68,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/SWSH-Black-Star-Promos/Gardevoir-V"
+      },
+      "tcgplayer": {
+        "price": 1.89,
+        "url": "https://www.tcgplayer.com/product/238545"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 282,
+    "name": "Sun & Moon Promos",
+    "imageName": "282_Gardevoir_jpn_smp_408",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2016,
+    "artist": "Yuu Nishida",
+    "setNumber": "SMP 408",
+    "series": "Sun & Moon",
+    "releaseDate": "2016-12-09",
+    "energyType": "Fairy",
+    "stage": "stage2",
+    "variants": [
+      "Illustration Contest"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 22.61,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Sun-Moon-Promos/Gardevoir-SM-P408"
+      },
+      "tcgplayer": {
+        "price": 39.45,
+        "url": "https://www.tcgplayer.com/product/647563"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 293,
+    "name": "T Promos",
+    "imageName": "293_Whismur_jpn_tpr_22",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2002,
+    "artist": "Tomoaki Imakuni",
+    "setNumber": "TPR 22",
+    "series": "Miscellaneous Collections",
+    "releaseProduct": "Pokémon Card Trainers Vol. 21",
+    "releaseDate": "2003-03-01",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 63.02,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/T-Promos/Imakunis-Whismur"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 380,
+    "name": "Theater Limited VS Pack",
+    "imageName": "380_Latias_jpn_tlvs_11",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2002,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "TLVS 11",
+    "series": "Movie Commemorations",
+    "releaseDate": "2002-07-13",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 983.74,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Theater-Limited-VS-Pack/Alto-Mares-Latias"
+      },
+      "tcgplayer": {
+        "price": 1499.99,
+        "url": "https://www.tcgplayer.com/product/613850"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 380,
+    "name": "Gift Box: Latias ex Half Deck",
+    "imageName": "380_Latias_jpn_gblaxhd_11",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Ryo Ueda",
+    "setNumber": "GBLAXHD 11",
+    "series": "Advanced (ADV)",
+    "releaseDate": "2003-11-18",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 235.48,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Gift-Box-Latias-ex/Latias-ex-advH011"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 380,
+    "name": "10th Movie Commemoration Set",
+    "imageName": "380_Latias_jpn_mcs10_5",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Kouki Saitou",
+    "setNumber": "MCS10 5",
+    "series": "Movie Commemorations",
+    "releaseDate": "2007-01-14",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 124.77,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/10th-Movie-Commemoration-Set/Alto-Mares-Latias"
+      },
+      "tcgplayer": {
+        "price": 57.46,
+        "url": "https://www.tcgplayer.com/product/613779"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 381,
+    "name": "Sun & Moon Promos",
+    "imageName": "381_Latios_smp_SM88",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+    "year": 2016,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "SMP SM88",
+    "series": "Sun & Moon",
+    "releaseProduct": "Shining Legends Collector Chest",
+    "releaseDate": "2017-11-17",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Cosmos Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 7.2,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/SM-Black-Star-Promos/Latios-SMSM88"
+      },
+      "tcgplayer": {
+        "price": 12.75,
+        "url": "https://www.tcgplayer.com/product/152607"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 381,
+    "name": "10th Movie Commemoration Set",
+    "imageName": "381_Latios_jpn_mcs10_6",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Kouki Saitou",
+    "setNumber": "MCS10 6",
+    "series": "Movie Commemorations",
+    "releaseDate": "2007-01-14",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 113.16,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/10th-Movie-Commemoration-Set/Alto-Mares-Latios"
+      },
+      "tcgplayer": {
+        "price": 59.5,
+        "url": "https://www.tcgplayer.com/product/613780"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 381,
+    "name": "Theater Limited VS Pack",
+    "imageName": "381_Latios_jpn_tlvs_12",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2002,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "TLVS 12",
+    "series": "Movie Commemorations",
+    "releaseDate": "2002-07-13",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 1412.11,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Theater-Limited-VS-Pack/Alto-Mares-Latios"
+      },
+      "tcgplayer": {
+        "price": 1499.99,
+        "url": "https://www.tcgplayer.com/product/613851"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 381,
+    "name": "Gift Box: Latios ex Half Deck",
+    "imageName": "381_Latios_jpn_gbloxhd_11",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2003,
+    "artist": "Ryo Ueda",
+    "setNumber": "GBLOXHD 11",
+    "series": "Advanced (ADV)",
+    "releaseDate": "2003-11-18",
+    "energyType": "Colorless",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 201.41,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Gift-Box-Latios-ex/Latios-ex-advI011"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 386,
+    "name": "Call of Legends",
+    "imageName": "386_Deoxys_col1_2",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹"
+    ],
+    "year": 2011,
+    "artist": "Ryo Ueda",
+    "setNumber": "COL1 2",
+    "series": "HeartGold & SoulSilver",
+    "releaseDate": "2011-02-09",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Holo",
+      "Reverse Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 27.2,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Call-of-Legends/Deoxys-CL2?isReverseHolo=Y"
+      },
+      "tcgplayer": {
+        "price": 51.38,
+        "url": "https://www.tcgplayer.com/product/84757"
+      },
+      "ebay": {
+        "price": 41.08,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Call+of+Legends+Deoxys+%5BReverse+Holo%5D+2&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 386,
+    "name": "Black & White Promos",
+    "imageName": "386_Deoxys_bwp_BW82",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+    "year": 2011,
+    "artist": "Eske Yoshinob",
+    "setNumber": "BWP BW82",
+    "series": "Black & White",
+    "releaseProduct": "Team Plasma Tin: Deoxys",
+    "releaseDate": "2013-09-10",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 27.59,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/BW-Black-Star-Promos/Deoxys-EX-BWBW82"
+      },
+      "tcgplayer": {
+        "price": 33.2,
+        "url": "https://www.tcgplayer.com/product/84776"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 386,
+    "name": "Gift Box Emerald: Deoxys Half Deck",
+    "imageName": "386_Deoxys_jpn_gbdhd_18",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "GBDHD 18",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-11-19",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 131.01,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Gift-Box-Emerald/Deoxys-ex-pcgFD018"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 386,
+    "name": "PCG-P Promos",
+    "imageName": "386_Deoxys_jpn_pcgp_18",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "K. Hoshiba",
+    "setNumber": "PCGP 18",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-04-08",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 33.1,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/Sky-Splitting-Deoxys"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 386,
+    "name": "Movie Commemoration VS Pack: Sky-Splitting Deoxys",
+    "imageName": "386_Deoxys_jpn_mcvs2_2",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Nakaoka",
+    "setNumber": "MCVS2 2",
+    "series": "Movie Commemorations",
+    "releaseDate": "2004-07-17",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 21.66,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Movie-Commemoration-VS-Pack-Sky-Splitting-Deoxys/Sids-Blastoise"
+      },
+      "tcgplayer": {
+        "price": 40,
+        "url": "https://www.tcgplayer.com/product/658362"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 386,
+    "name": "10th Movie Commemoration Set",
+    "imageName": "386_Deoxys_jpn_mcs10_8",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Midori Harada",
+    "setNumber": "MCS10 8",
+    "series": "Movie Commemorations",
+    "releaseDate": "2007-01-14",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 95.93,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/10th-Movie-Commemoration-Set/Visitor-Deoxys"
+      },
+      "tcgplayer": {
+        "price": 46.03,
+        "url": "https://www.tcgplayer.com/product/613782"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 386,
+    "name": "Movie Commemoration VS Pack: Sky-Splitting Deoxys",
+    "imageName": "386_Deoxys_jpn_mcvs2_1",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Nakaoka",
+    "setNumber": "MCVS2 1",
+    "series": "Movie Commemorations",
+    "releaseDate": "2004-07-17",
+    "energyType": "Psychic",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 160.48,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Movie-Commemoration-VS-Pack-Sky-Splitting-Deoxys/Sky-Splitting-Deoxys-V1"
+      },
+      "tcgplayer": {
+        "price": 149.99,
+        "url": "https://www.tcgplayer.com/product/658361"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "Sun & Moon Promos",
+    "imageName": "448_Lucario_smp_SM95",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸"
+    ],
+    "year": 2016,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "SMP SM95",
+    "series": "Sun & Moon",
+    "releaseProduct": "Ultra Prism Prerelease / Ultra Prism Prerelease Kit",
+    "releaseDate": "2018-01-20",
+    "energyType": "Fighting",
+    "stage": "stage1",
+    "variants": [
+      "Expansion Stamp",
+      "Expansion Stamp (Staff)"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 50.25,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/SM-Black-Star-Promos/Lucario-SM95"
+      },
+      "tcgplayer": {
+        "price": 38.93,
+        "url": "https://www.tcgplayer.com/product/158165"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 448,
+    "name": "Diamond & Pearl Trainer Kit: Lucario Half Deck",
+    "imageName": "448_Lucario_tk3b_3",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷"
+    ],
+    "year": 2007,
+    "artist": "Kent Kanetsuna",
+    "setNumber": "TK3B 3",
+    "series": "Trainer Kits",
+    "releaseDate": "2007-09-24",
+    "energyType": "Fighting",
+    "stage": "stage1",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 1.51,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/DP-Trainer-Kit/Lucario-Lv30-TK33-Gold"
+      },
+      "tcgplayer": {
+        "price": 11.5,
+        "url": "https://www.tcgplayer.com/product/86875"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 448,
+    "name": "Movie Commemoration VS Pack: Aura's Lucario",
+    "imageName": "448_Lucario_jpn_mcvs3_12",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2005,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "MCVS3 12",
+    "series": "Movie Commemorations",
+    "releaseDate": "2005-07-16",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 47.86,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Movie-Commemoration-VS-Pack-Auras-Lucario/Kidds-Weavile-V2"
+      },
+      "tcgplayer": {
+        "price": 47.64,
+        "url": "https://www.tcgplayer.com/product/613822"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "10th Movie Commemoration Set",
+    "imageName": "448_Lucario_jpn_mcs10_10",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2007,
+    "artist": "Kagemaru Himeno",
+    "setNumber": "MCS10 10",
+    "series": "Movie Commemorations",
+    "releaseDate": "2007-01-14",
+    "energyType": "Fighting",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 151.3,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/10th-Movie-Commemoration-Set/Wave-Guiding-Hero-Lucario"
+      },
+      "tcgplayer": {
+        "price": 35.6,
+        "url": "https://www.tcgplayer.com/product/613784"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "Gift Box Mew • Lucario: Lucario Quarter Deck",
+    "imageName": "448_Lucario_jpn_gblqd_6",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2005,
+    "artist": "Ryo Ueda",
+    "setNumber": "GBLQD 6",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2005-11-16",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 160.14,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Gift-Box-Mew-Lucario/Folklores-Lucario-ex"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "PCG-P Promos",
+    "imageName": "448_Lucario_jpn_pcgp_75",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Kouki Saitou",
+    "setNumber": "PCGP 75",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-04-08",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Meiji"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 14.07,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/Auras-Lucario-V1-PCG-P075"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "PCG-P Promos",
+    "imageName": "448_Lucario_jpn_pcgp_90",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Kouki Saitou",
+    "setNumber": "PCGP 90",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-04-08",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "McDonald's"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 13.13,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/Auras-Lucario-V3"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "Everyone's Exciting Battle",
+    "imageName": "448_Lucario_jpn_wak_27",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2012,
+    "artist": "Masakazu Fukuda",
+    "setNumber": "WAK 27",
+    "series": "Black & White",
+    "releaseProduct": "Everyone's Exciting Battle: Fighting Quarter Deck",
+    "releaseDate": "2012-11-16",
+    "energyType": "Fighting",
+    "stage": "stage1",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 112.63,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Everyones-Exciting-Battle/Lucario"
+      },
+      "tcgplayer": {
+        "price": 240,
+        "url": "https://www.tcgplayer.com/product/604763"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "PCG-P Promos",
+    "imageName": "448_Lucario_jpn_pcgp_79",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "PCGP 79",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-04-08",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 44.88,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/Auras-Lucario-V2"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "PCG-P Promos",
+    "imageName": "448_Lucario_jpn_pcgp_92",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2004,
+    "artist": "Kouki Saitou",
+    "setNumber": "PCGP 92",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2004-04-08",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 11.3,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/PCG-Promos/Auras-Lucario-V4"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "Black & White Promos",
+    "imageName": "448_Lucario_jpn_bwp_106",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2010,
+    "artist": "Naoki Saito",
+    "setNumber": "BWP 106",
+    "series": "Black & White",
+    "releaseDate": "2010-12-17",
+    "energyType": "Fighting",
+    "stage": "stage1",
+    "variants": [
+      "Expansion Stamp"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 153.44,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/BW-Promos/Lucario-V1"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "DPt-P Promos",
+    "imageName": "448_Lucario_jpn_plp_15",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2008,
+    "artist": "Mitsuhiro Arita",
+    "setNumber": "PLP 15",
+    "series": "Diamond, Pearl and Platinum (DPt)",
+    "releaseProduct": "Pokémon Sunday Campaign",
+    "releaseDate": "2009-01-17",
+    "energyType": "Fighting",
+    "stage": "stage1",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 34.39,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/DPt-Promos/Lucario-Lv29"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 448,
+    "name": "Master Kit: Side Deck",
+    "imageName": "448_Lucario_jpn_mksd_6",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2005,
+    "artist": "Ryo Ueda",
+    "setNumber": "MKSD 6",
+    "series": "Pokémon Card Game (PCG)",
+    "releaseDate": "2005-07-15",
+    "energyType": "Metal",
+    "stage": "basic",
+    "variants": [
+      "Holo",
+      "1st Edition"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 173.17,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Master-Kit/Auras-Lucario-ex-pcgL006S"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 467,
+    "name": "Call of Legends",
+    "imageName": "467_Magmortar_col1_16",
+    "rarity": "Holo Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹"
+    ],
+    "year": 2011,
+    "artist": "Hajime Kusajima",
+    "setNumber": "COL1 16",
+    "series": "HeartGold & SoulSilver",
+    "releaseProduct": "Recon Theme Deck",
+    "releaseDate": "2011-02-09",
+    "energyType": "Fire",
+    "stage": "stage1",
+    "variants": [
+      "Holo",
+      "Reverse Holo",
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 6.65,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Call-of-Legends/Magmortar-CL16"
+      },
+      "tcgplayer": {
+        "price": 8.7,
+        "url": "https://www.tcgplayer.com/product/87061?Printing=Reverse+Holofoil"
+      },
+      "ebay": {
+        "price": 3.54,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Call+of+Legends+Magmortar+%5BReverse+Holo%5D+16&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 467,
+    "name": "Dragons Exalted",
+    "imageName": "467_Magmortar_bw6_21",
+    "rarity": "Rare",
+    "description": "",
+    "languages": [
+      "🇬🇧",
+      "🇩🇪",
+      "🇫🇷",
+      "🇮🇹",
+      "🇪🇸",
+      "🇵🇹"
+    ],
+    "year": 2012,
+    "artist": "Akira Komayama",
+    "setNumber": "BW6 21",
+    "series": "Black & White",
+    "releaseDate": "2012-08-15",
+    "energyType": "Fire",
+    "stage": "stage1",
+    "variants": [
+      "Normal",
+      "Reverse Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 2.56,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Dragons-Exalted/Magmortar-DRX21"
+      },
+      "tcgplayer": {
+        "price": 1.35,
+        "url": "https://www.tcgplayer.com/product/87062"
+      },
+      "ebay": {
+        "price": 2.06,
+        "url": "https://www.ebay.com/sch/i.html?_nkw=Pokemon+Dragons+Exalted+Magmortar+21&LH_Complete=1&LH_Sold=1"
+      }
+    },
+    "pricesDate": "2026-10-23",
+    "region": "western"
+  },
+  {
+    "pokemonId": 467,
+    "name": "Everyone's Exciting Battle",
+    "imageName": "467_Magmortar_jpn_wak_7",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2012,
+    "artist": "sui",
+    "setNumber": "WAK 7",
+    "series": "Black & White",
+    "releaseProduct": "Everyone's Exciting Battle: Fire Quarter Deck",
+    "releaseDate": "2012-11-16",
+    "energyType": "Fire",
+    "stage": "stage1",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 10.8,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Everyones-Exciting-Battle/Magmortar"
+      },
+      "tcgplayer": {
+        "price": 15,
+        "url": "https://www.tcgplayer.com/product/604743"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 906,
+    "name": "Starter Set ex Deck Sprigatito & Meowscarada ex",
+    "imageName": "906_Sprigatito_jpn_mem_18",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2026,
+    "artist": "Jiro Sasumo",
+    "setNumber": "MEM 18",
+    "series": "MEGA",
+    "releaseDate": "2026-07-31",
+    "energyType": "Grass",
+    "stage": "basic",
+    "variants": [
+      "Holo"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 21.83,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/MEGA-Starter-Set-Sprigatito-Meowscarada-ex/Sprigatito-V2-mEM018"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 1008,
+    "name": "Starter Set ex Deck Eevee ex",
+    "imageName": "1008_Miraidon_jpn_mee_6",
+    "rarity": "No Rarity",
+    "description": "",
+    "languages": [
+      "🇯🇵"
+    ],
+    "year": 2026,
+    "artist": "Atsushi Furusawa",
+    "setNumber": "MEE 6",
+    "series": "MEGA",
+    "releaseDate": "2026-07-31",
+    "energyType": "Lightning",
+    "stage": "basic",
+    "variants": [
+      "Normal"
+    ],
+    "prices": {
+      "cardmarket": {
+        "price": 0.28,
+        "url": "https://www.cardmarket.com/en/Pokemon/Products/Singles/MEGA-Starter-Set-Eevee-ex/Miraidon-mEEv006"
+      }
+    },
+    "pricesDate": "2026-10-23"
+  },
+  {
+    "pokemonId": 467,
+    "name": "Mega Evolution Promos",
+    "imageName": "467_Magmortar_mep_112",
+    "rarity": "Promo",
+    "description": "",
+    "languages": [
+      "🇬🇧"
+    ],
+    "year": 2025,
+    "artist": "Kazumasa Yasukuni",
+    "setNumber": "MEP 112",
+    "series": "Mega Evolution",
+    "releaseProduct": "Delta Reign Build & Battle Box / Delta Reign Prerelease Events",
+    "releaseDate": "2026-10-23",
+    "energyType": "Fire",
+    "stage": "stage2",
+    "variants": [
+      "Expansion Stamp",
+      "Expansion Stamp (Staff)"
     ]
   }
 ]

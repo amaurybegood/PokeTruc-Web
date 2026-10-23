@@ -2142,7 +2142,7 @@
     },
     "imageName": "ho-oh",
     "generation": 2,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 251,
@@ -2155,7 +2155,7 @@
     },
     "imageName": "celebi",
     "generation": 2,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 252,
@@ -2168,7 +2168,7 @@
     },
     "imageName": "treecko",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 255,
@@ -2181,7 +2181,7 @@
     },
     "imageName": "torchic",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 258,
@@ -2207,7 +2207,7 @@
     },
     "imageName": "wurmple",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 282,
@@ -2220,7 +2220,7 @@
     },
     "imageName": "gardevoir",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 293,
@@ -2233,7 +2233,7 @@
     },
     "imageName": "whismur",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 352,
@@ -2259,7 +2259,7 @@
     },
     "imageName": "latias",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 381,
@@ -2272,7 +2272,7 @@
     },
     "imageName": "latios",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 382,
@@ -2285,7 +2285,7 @@
     },
     "imageName": "kyogre",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 383,
@@ -2311,7 +2311,7 @@
     },
     "imageName": "rayquaza",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 385,
@@ -2324,7 +2324,7 @@
     },
     "imageName": "jirachi",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 386,
@@ -2337,7 +2337,7 @@
     },
     "imageName": "deoxys",
     "generation": 3,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 393,
@@ -2363,7 +2363,7 @@
     },
     "imageName": "bidoof",
     "generation": 4,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 400,
@@ -2376,7 +2376,7 @@
     },
     "imageName": "bibarel",
     "generation": 4,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 445,
@@ -2402,7 +2402,7 @@
     },
     "imageName": "munchlax",
     "generation": 4,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 448,
@@ -2415,7 +2415,7 @@
     },
     "imageName": "lucario",
     "generation": 4,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 465,
@@ -2441,7 +2441,7 @@
     },
     "imageName": "magmortar",
     "generation": 4,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 470,
@@ -2454,7 +2454,7 @@
     },
     "imageName": "leafeon",
     "generation": 4,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 471,
@@ -2467,7 +2467,7 @@
     },
     "imageName": "glaceon",
     "generation": 4,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 494,
@@ -2493,7 +2493,7 @@
     },
     "imageName": "chandelure",
     "generation": 5,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 650,
@@ -2545,7 +2545,7 @@
     },
     "imageName": "sylveon",
     "generation": 6,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 711,
@@ -2558,7 +2558,7 @@
     },
     "imageName": "gourgeist",
     "generation": 6,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 719,
@@ -2584,7 +2584,7 @@
     },
     "imageName": "togedemaru",
     "generation": 7,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 778,
@@ -2649,7 +2649,7 @@
     },
     "imageName": "sprigatito",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 907,
@@ -2662,7 +2662,7 @@
     },
     "imageName": "floragato",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 908,
@@ -2675,7 +2675,7 @@
     },
     "imageName": "meowscarada",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 909,
@@ -2688,7 +2688,7 @@
     },
     "imageName": "fuecoco",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 910,
@@ -2701,7 +2701,7 @@
     },
     "imageName": "crocalor",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 912,
@@ -2714,7 +2714,7 @@
     },
     "imageName": "quaxly",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 913,
@@ -2727,7 +2727,7 @@
     },
     "imageName": "quaxwell",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 925,
@@ -2740,7 +2740,7 @@
     },
     "imageName": "maushold",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 937,
@@ -2753,7 +2753,7 @@
     },
     "imageName": "ceruledge",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 992,
@@ -2766,7 +2766,7 @@
     },
     "imageName": "iron-hands",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 1000,
@@ -2779,7 +2779,7 @@
     },
     "imageName": "gholdengo",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   },
   {
     "id": 1008,
@@ -2792,6 +2792,6 @@
     },
     "imageName": "miraidon",
     "generation": 9,
-    "researchStatus": "in_progress"
+    "researchStatus": "done"
   }
 ]
